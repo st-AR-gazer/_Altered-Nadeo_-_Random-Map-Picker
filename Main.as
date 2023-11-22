@@ -1,21 +1,24 @@
 
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
-// string map_uid = "91jOho3e0DKB7NlYpzBLOxjeoCm";
 
 string GetMapUrl(const string &in map_uid) {
-    // Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
-    // req.Start();
-    // while (!req.Finished()) yield();
+    NadeoServices::AddAudience("NadeoLiveServices");
+    while (!NadeoServices::IsAuthenticated("NadeoLiveServices")) {
+        yield();
+    }
+    Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
+    req.Start();
+    while (!req.Finished()) yield();
 
-    // if (req.ResponseCode() != 200) {
-    //     log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
-    //     log("Response body:", LogLevel::Error);
-    //     log(req.Body, LogLevel::Error);
-    //     return "";
-    // }
+    if (req.ResponseCode() != 200) {
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
+        log("Response body:", LogLevel::Error);
+        log(req.Body, LogLevel::Error);
+        return "";
+    }
 
-    // Json::Value res = Json::Parse(req.String());
-    string url = tm_map_endpoint + map_uid;//res["downloadUrl"];
+    Json::Value res = Json::Parse(req.String());
+    string url = res["downloadUrl"];
     return url;
 }
 
@@ -45,15 +48,11 @@ void PlayMap(const string &in map_uid) {
 
 
 
-
-
-
-
-
 void LoadNewMap() {
     array<string> uids = ReadUIDsFromFile("data.csv");
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
+        log("UID found in file", LogLevel::Info);
         PlayMap(randomUID);
     } else {
         log("No UIDs found in file", LogLevel::Error);
