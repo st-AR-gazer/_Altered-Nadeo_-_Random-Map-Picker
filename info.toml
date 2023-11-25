@@ -2,7 +2,7 @@
 name = "Alt map picker"
 author = "ar....."
 category = "zz_debug"
-version = "0.0.1"
+version = "0.1.0"
 
 [script]
 dependencies = [ "NadeoServices" ]
