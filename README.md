@@ -28,9 +28,6 @@ This plugin for TrackMania allows users to load and play custom maps from a spec
 - Main plugin files with the core logic.
 
 ## Important Functions
-- `CheckRequiredPermissions()`: Ensures the user's edition of the game supports the plugin's features.
-- `NotifyWarn()`: Displays a notification in the game with warning messages.
-- `RenderMenu()`: Renders the plugin menu in the game interface.
 
 ## Contributions
 - Contributions to the plugin are welcome. Please follow the existing coding standards and submit pull requests for any enhancements or bug fixes.
