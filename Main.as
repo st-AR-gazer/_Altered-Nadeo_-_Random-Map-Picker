@@ -1,7 +1,42 @@
 
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
 
-string GetMapUrl(const string &in map_uid) {
+string globalMapUrl = "";
+bool isWaitingForUrl = false;
+
+void Main() {
+    CheckRequiredPermissions();
+    setFirstUid();
+}
+
+void setFirstUid() {
+    array<string> uids = ReadUIDsFromFile("data.csv");
+    string firstUid = GetRandomUID(uids);
+
+    globalMapUrl = tm_map_endpoint + firstUid;
+
+    NadeoServices::AddAudience("NadeoLiveServices");
+    while (!NadeoServices::IsAuthenticated("NadeoLiveServices")) {
+        yield();
+    }
+    Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + firstUid);
+    req.Start();
+    while (!req.Finished()) yield();
+
+    if (req.ResponseCode() != 200) {
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
+        log("Response body:", LogLevel::Error);
+        log(req.Body, LogLevel::Error);
+        // return "";
+    }
+
+    Json::Value res = Json::Parse(req.String());
+    globalMapUrl = res["downloadUrl"];
+
+    print(globalMapUrl);
+}
+
+void GetMapUrl(const string &in map_uid) {
     NadeoServices::AddAudience("NadeoLiveServices");
     while (!NadeoServices::IsAuthenticated("NadeoLiveServices")) {
         yield();
@@ -14,12 +49,12 @@ string GetMapUrl(const string &in map_uid) {
         log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
         log("Response body:", LogLevel::Error);
         log(req.Body, LogLevel::Error);
-        return "";
+        // return "";
     }
 
     Json::Value res = Json::Parse(req.String());
-    string url = res["downloadUrl"];
-    return url;
+    globalMapUrl = res["downloadUrl"];
+    isWaitingForUrl = false;
 }
 
 
@@ -32,18 +67,34 @@ void PlayMap(const string &in map_uid) {
         return;
     }
 
-    string map_url = GetMapUrl(map_uid);
-    if (map_url == "") return;
+    // Reset the global URL variable and set the waiting flag
+    string map_url = globalMapUrl;
 
-    // circumvent possible main menu bug when the in-game menu is visible
+    globalMapUrl = "";
+    isWaitingForUrl = true;
+
+    // Start GetMapUrl as a coroutine
+    startnew(GetMapUrl, map_uid);
+
+    if (map_url.Length == 0) {
+        log("Failed to get map URL", LogLevel::Error);
+        return;
+    }
+
+    startnew(PlayMapCoroutine, map_url);
+}
+
+void PlayMapCoroutine(const string &in map_url) {
     CTrackMania@ app = cast<CTrackMania@>(GetApp());
     if (app.Network.PlaygroundClientScriptAPI.IsInGameMenuDisplayed) {
         app.Network.PlaygroundInterfaceScriptHandler.CloseInGameMenu(CGameScriptHandlerPlaygroundInterface::EInGameMenuResult::Quit);
     }
     app.BackToMainMenu();
+
     while (!app.ManiaTitleControlScriptAPI.IsReady) yield();
 
     app.ManiaTitleControlScriptAPI.PlayMap(map_url, "", "");
+
 }
 
 
@@ -53,7 +104,9 @@ void LoadNewMap() {
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
-        PlayMap(randomUID);
+        const string map_uid = randomUID;
+        // print("1 " + map_uid + " " + randomUID);
+        PlayMap(map_uid);
     } else {
         log("No UIDs found in file", LogLevel::Error);
     }

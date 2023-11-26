@@ -1,7 +1,3 @@
-void Main() {
-    CheckRequiredPermissions();
-}
-
 bool permissionsOkay = false;
 void CheckRequiredPermissions() {
     permissionsOkay = Permissions::PlayLocalMap();
