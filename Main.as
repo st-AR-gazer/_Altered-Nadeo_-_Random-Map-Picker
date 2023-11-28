@@ -4,34 +4,13 @@ const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/
 string globalMapUrl = "";
 bool isWaitingForUrl = false;
 
-void Main() {
-    CheckRequiredPermissions();
-    setFirstUid();
-}
-
 void setFirstUid() {
-    array<string> uids = ReadUIDsFromFile("data.csv");
-    string firstUid = GetRandomUID(uids);
+    array<string> uids = ReadUIDsFromFile("data/data.csv");
+    string map_uid = GetRandomUID(uids);
 
-    globalMapUrl = tm_map_endpoint + firstUid;
+    startnew(GetMapUrl, map_uid)
 
-    NadeoServices::AddAudience("NadeoLiveServices");
-    while (!NadeoServices::IsAuthenticated("NadeoLiveServices")) {
-        yield();
-    }
-    Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + firstUid);
-    req.Start();
-    while (!req.Finished()) yield();
-
-    if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
-        log("Response body:", LogLevel::Error);
-        log(req.Body, LogLevel::Error);
-        // return "";
-    }
-
-    Json::Value res = Json::Parse(req.String());
-    globalMapUrl = res["downloadUrl"];
+    globalMapUrl = tm_map_endpoint + map_uid;
 
     print(globalMapUrl);
 }
@@ -100,7 +79,7 @@ void PlayMapCoroutine(const string &in map_url) {
 
 
 void LoadNewMap() {
-    array<string> uids = ReadUIDsFromFile("data.csv");
+    array<string> uids = ReadUIDsFromFile("data/data.csv");
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
