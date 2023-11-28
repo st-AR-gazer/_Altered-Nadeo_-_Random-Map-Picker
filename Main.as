@@ -81,6 +81,7 @@ void LoadNewMap() {
         log("No UIDs found in file", LogLevel::Error);
     }
 }
+
 string GetRandomUID(const array<string> &in uids) {
     if (uids.Length == 0) return "";
     int randomIndex = Math::Rand(0, uids.Length - 1);
