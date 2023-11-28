@@ -1,5 +1,6 @@
 string currentVersionFile = "currentInstalledVersion.json";
-string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest.json";
+string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
+string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv"
 
 string GetCurrentInstalledVersion() {
     if (IO::FileExists(currentVersionFile)) {
