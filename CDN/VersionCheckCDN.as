@@ -1,4 +1,5 @@
 string currentVersionFile = "currentInstalledVersion.json";
+string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest.json";
 
 string GetCurrentInstalledVersion() {
     if (IO::FileExists(currentVersionFile)) {
@@ -15,7 +16,7 @@ string GetCurrentInstalledVersion() {
     return "";
 }
 
-void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
+void UpdateCurrentVersionIfDifferent(const string &in latestVersion, url) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (currentInstalledVersion != latestVersion) {
@@ -27,8 +28,25 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
         file.Close();
 
         print("Updated installed version to: " + latestVersion);
+        print("Downloading lastest version from CDN: " + latestVersion);
+
+        DownloadLatestData(url);
     } else {
         print("Current version is up-to-date.");
+    }
+}
+
+void DownloadLatestData() {
+    Net::HttpRequest req;
+    req.Method = Net::HttpMethod::Get;
+    req.Url = manifestUrl;
+
+    auto response = req.Start().Get();
+
+    if (response.IsSuccessful()) {
+        ParseManifest(response.String());
+    } else {
+        print("Error fetching manifest: " + response.String());
     }
 }
 
@@ -42,5 +60,22 @@ void ParseManifest(const string &in responseBody) {
     string latestVersion = manifest["latestVersion"];
     string url = manifest["url"];
 
-    UpdateCurrentVersionIfDifferent(latestVersion);
+    UpdateCurrentVersionIfDifferent(latestVersion, url);
 }
+
+
+
+void GetLatestFileInfo() {
+    Net::HttpRequest req;
+    req.Method = Net::HttpMethod::Get;
+    req.Url = manifestUrl;
+
+    auto response = req.Start().Get();
+
+    if (response.IsSuccessful()) {
+        ParseManifest(response.String());
+    } else {
+        print("Error fetching manifest: " + response.String());
+    }
+}
+

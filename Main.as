@@ -4,7 +4,7 @@ const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/
 string globalMapUrl = "";
 bool isWaitingForUrl = false;
 
-void setFirstUid() {
+void SetFirstUid() {
     array<string> uids = ReadUIDsFromFile("data/data.csv");
     string map_uid = GetRandomUID(uids);
 
