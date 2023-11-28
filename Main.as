@@ -10,7 +10,7 @@ void Main() {
 }
 
 void setFirstUid() {
-    array<string> uids = ReadUIDsFromFile("data.csv");
+    array<string> uids = ReadUIDsFromFile("data/data.csv");
     string firstUid = GetRandomUID(uids);
 
     globalMapUrl = tm_map_endpoint + firstUid;
@@ -100,7 +100,7 @@ void PlayMapCoroutine(const string &in map_url) {
 
 
 void LoadNewMap() {
-    array<string> uids = ReadUIDsFromFile("data.csv");
+    array<string> uids = ReadUIDsFromFile("data/data.csv");
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
