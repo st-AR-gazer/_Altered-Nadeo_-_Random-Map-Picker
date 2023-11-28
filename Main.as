@@ -7,10 +7,10 @@ bool isWaitingForUrl = false;
 void setFirstUid() {
     array<string> uids = ReadUIDsFromFile("data/data.csv");
     string map_uid = GetRandomUID(uids);
-    globalMapUrl = tm_map_endpoint + map_uid;
+
     startnew(GetMapUrl, map_uid);
 
-    
+    globalMapUrl = tm_map_endpoint + map_uid;
 
     print(globalMapUrl);
 }
