@@ -36,23 +36,17 @@ void GetMapUrl(const string &in map_uid) {
     isWaitingForUrl = false;
 }
 
-
 void PlayMap(const string &in map_uid) {
-    // this code with slight modifications from
-    // https://github.com/XertroV/tm-unbeaten-ats, licensed under the Unlicense
-
     if (!Permissions::PlayLocalMap()) {
         log("Lacking permissions to play local map", LogLevel::Warn);
         return;
     }
 
-    // Reset the global URL variable and set the waiting flag
     string map_url = globalMapUrl;
 
     globalMapUrl = "";
     isWaitingForUrl = true;
 
-    // Start GetMapUrl as a coroutine
     startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
@@ -76,15 +70,12 @@ void PlayMapCoroutine(const string &in map_url) {
 
 }
 
-
-
 void LoadNewMap() {
     array<string> uids = ReadUIDsFromFile("data/data.csv");
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
         const string map_uid = randomUID;
-        // print("1 " + map_uid + " " + randomUID);
         PlayMap(map_uid);
     } else {
         log("No UIDs found in file", LogLevel::Error);
