@@ -56,7 +56,6 @@ void PlayMap(const string &in map_uid) {
 
     startnew(PlayMapCoroutine, map_url);
 }
-
 void PlayMapCoroutine(const string &in map_url) {
     CTrackMania@ app = cast<CTrackMania@>(GetApp());
     if (app.Network.PlaygroundClientScriptAPI.IsInGameMenuDisplayed) {

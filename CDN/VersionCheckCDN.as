@@ -17,6 +17,37 @@ string GetCurrentInstalledVersion() {
     return "";
 }
 
+// 
+
+void GetLatestFileInfo() {
+    Net::HttpRequest req;
+    req.Method = Net::HttpMethod::Get;
+    req.Url = manifestUrl;
+    
+    req.Start();
+
+    while (!req.Finished()) yield();
+
+    if (req.IsSuccessful()) {
+        ParseManifest(req.String());
+    } else {
+        print("Error fetching manifest: " + req.String());
+    }
+}
+
+void ParseManifest(const string &in reqBody) {
+    Json::Value manifest = Json::Parse(reqBody);
+    if (manifest.GetType() != Json::Type::Object) {
+        print("Failed to parse JSON.");
+        return;
+    }
+
+    string latestVersion = manifest["latestVersion"];
+    string url = manifest["url"];
+
+    UpdateCurrentVersionIfDifferent(latestVersion, url);
+}
+
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion, url) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
@@ -40,43 +71,31 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion, url) {
 void DownloadLatestData() {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
-    req.Url = manifestUrl;
+    req.Url = url;
+    
+    req.Start();
 
-    auto response = req.Start().Get();
+    while (!req.Finished()) yield();
 
-    if (response.IsSuccessful()) {
-        ParseManifest(response.String());
+    if (req.IsSuccessful()) {
+
+        auto data = req.String();
+
+        StoreDatafile(data);
     } else {
-        print("Error fetching manifest: " + response.String());
+        print("Error fetching datafile: " + req.String());
     }
 }
+void StoreDatafile(const string &in data) {
+    string dataFilePath = "../data/data.csv";
 
-void ParseManifest(const string &in responseBody) {
-    Json::Value manifest = Json::Parse(responseBody);
-    if (manifest.GetType() != Json::Type::Object) {
-        print("Failed to parse JSON.");
-        return;
-    }
+    IO::File dataFile(dataFilePath, IO::FileMode::Write);
 
-    string latestVersion = manifest["latestVersion"];
-    string url = manifest["url"];
-
-    UpdateCurrentVersionIfDifferent(latestVersion, url);
-}
-
-
-
-void GetLatestFileInfo() {
-    Net::HttpRequest req;
-    req.Method = Net::HttpMethod::Get;
-    req.Url = manifestUrl;
-
-    auto response = req.Start().Get();
-
-    if (response.IsSuccessful()) {
-        ParseManifest(response.String());
+    if (dataFile.IsOpen()) {
+        dataFile.Write(data);
+        dataFile.Close();
+        print("Data file updated successfully.");
     } else {
-        print("Error fetching manifest: " + response.String());
+        print("Failed to open data file for writing.");
     }
 }
-
