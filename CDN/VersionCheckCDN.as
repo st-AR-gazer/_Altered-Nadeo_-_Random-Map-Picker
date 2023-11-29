@@ -68,7 +68,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in 
     }
 }
 
-auto url = "aaaaaa"
+auto url = "aaaaaa";
 
 void DownloadLatestData(url) {
     Net::HttpRequest req;
