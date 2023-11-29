@@ -28,7 +28,7 @@ void GetLatestFileInfo() {
 
     while (!req.Finished()) yield();
 
-    if (req.IsSuccessful()) {
+    if (req != null) {
         ParseManifest(req.String());
     } else {
         log("Error fetching manifest: " + req.String(), LogLevel::Error);
