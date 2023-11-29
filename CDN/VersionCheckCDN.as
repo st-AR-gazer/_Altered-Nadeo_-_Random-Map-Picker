@@ -48,7 +48,7 @@ void ParseManifest(const string &in reqBody) {
     UpdateCurrentVersionIfDifferent(latestVersion, url);
 }
 
-void UpdateCurrentVersionIfDifferent(const string &in latestVersion, url) {
+void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in url) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (currentInstalledVersion != latestVersion) {
