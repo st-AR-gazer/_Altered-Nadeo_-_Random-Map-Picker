@@ -68,7 +68,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in 
     }
 }
 
-void DownloadLatestData() {
+void DownloadLatestData(url) {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = url;
