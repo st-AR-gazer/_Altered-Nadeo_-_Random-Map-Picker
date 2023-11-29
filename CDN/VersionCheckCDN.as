@@ -1,6 +1,6 @@
 string currentVersionFile = "currentInstalledVersion.json";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
-//string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
+string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 
 string GetCurrentInstalledVersion() {
     if (IO::FileExists(currentVersionFile)) {
@@ -45,10 +45,10 @@ void ParseManifest(const string &in reqBody) {
     string latestVersion = manifest["latestVersion"];
     string url = manifest["url"];
 
-    UpdateCurrentVersionIfDifferent(latestVersion, url);
+    UpdateCurrentVersionIfDifferent(latestVersion);
 }
 
-void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in url) {
+void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (currentInstalledVersion != latestVersion) {
@@ -62,15 +62,13 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in 
         log("Updated installed version to: " + latestVersion, LogLevel::Info);
         log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
 
-        DownloadLatestData(url);
+        DownloadLatestData();
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
     }
 }
 
-auto url = "aaaaaa";
-
-void DownloadLatestData(url) {
+void DownloadLatestData() {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = url;
@@ -80,7 +78,6 @@ void DownloadLatestData(url) {
     while (!req.Finished()) yield();
 
     if (req != null) {
-
         auto data = req.String();
 
         StoreDatafile(data);
