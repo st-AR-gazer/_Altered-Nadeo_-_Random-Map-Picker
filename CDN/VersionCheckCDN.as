@@ -31,14 +31,14 @@ void GetLatestFileInfo() {
     if (req.IsSuccessful()) {
         ParseManifest(req.String());
     } else {
-        print("Error fetching manifest: " + req.String());
+        log("Error fetching manifest: " + req.String(), LogLevel::Error);
     }
 }
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        print("Failed to parse JSON.");
+        log("Failed to parse JSON.", LogLevel::Error);
         return;
     }
 
@@ -59,12 +59,12 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion, string &in 
         file.Write(Json::Write(newVersionJson));
         file.Close();
 
-        print("Updated installed version to: " + latestVersion);
-        print("Downloading lastest version from CDN: " + latestVersion);
+        log("Updated installed version to: " + latestVersion, LogLevel::Info);
+        log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
 
         DownloadLatestData(url);
     } else {
-        print("Current version is up-to-date.");
+        log("Current version is up-to-date.", LogLevel::Info);
     }
 }
 
@@ -77,13 +77,13 @@ void DownloadLatestData() {
 
     while (!req.Finished()) yield();
 
-    if (req.IsSuccessful()) {
+    if (req != null) {
 
         auto data = req.String();
 
         StoreDatafile(data);
     } else {
-        print("Error fetching datafile: " + req.String());
+        log("Error fetching datafile: " + req.String(), LogLevel::Error);
     }
 }
 void StoreDatafile(const string &in data) {
@@ -94,8 +94,8 @@ void StoreDatafile(const string &in data) {
     if (dataFile.IsOpen()) {
         dataFile.Write(data);
         dataFile.Close();
-        print("Data file updated successfully.");
+        log("Data file updated successfully.", LogLevel::Info);
     } else {
-        print("Failed to open data file for writing.");
+        log("Failed to open data file for writing.", LogLevel::Error);
     }
 }
