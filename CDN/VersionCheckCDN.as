@@ -1,28 +1,31 @@
-string currentVersionFile = "currentInstalledVersion.json";
+string currentVersionFile = "CDN/currentInstalledVersion.json";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
+string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
+
 
 string GetCurrentInstalledVersion() {
-    if (IO::FileExists(currentVersionFile)) {
-        IO::File file(currentVersionFile, IO::FileMode::Read);
-        
-        string infoFile;
-        IO::File infoFile(file);
-        infoFile.Open(IO::FileMode::Read);
-        infoFile.Read(infoFile);
-        infoFile.Close();
+    IO::FileSource file(currentVersionFile);
 
-        Json::Value currentVersionJson = Json::Parse(infoFile);
-        if (currentVersionJson.GetType() == Json::Type::Object) {
-            return currentVersionJson["installedVersion"];
-        }
+    string fileContents = file.ReadToEnd();
+
+    Json::Value currentVersionJson = Json::Parse(fileContents);
+
+    if (currentVersionJson.GetType() == Json::Type::Object) {
+        return currentVersionJson["latestVersion"];
     }
+
     return "";
 }
 
-// 
-
 void GetLatestFileInfo() {
+
+    auto test = GetCurrentInstalledVersion();
+
+    print(test);
+
+
+
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = manifestUrl;
@@ -93,8 +96,12 @@ void StoreDatafile(const string &in data) {
 
     IO::File dataFile(dataFilePath, IO::FileMode::Write);
 
-<<<<<<< HEAD
-    print("Got to datafile");
+    // // PREVIOUS OPEN IS WRONG CHANGE TO THIS:
+    // IO::File infoFile(currentVersionFile);
+    //     currentVersionFile.Open(IO::FileMode::Read);
+    //     mapFile.Open(IO::FileMode::Read);
+    // //
+
     // if (dataFile.IsOpen()) {
     //     dataFile.Write(data);
     //     dataFile.Close();
@@ -102,19 +109,4 @@ void StoreDatafile(const string &in data) {
     // } else {
     //     log("Failed to open data file for writing.", LogLevel::Error);
     // }
-=======
-    // PREVIOUS OPEN IS WRONG CHANGE TO THIS:
-    IO::File infoFile(currentVersionFile);
-        currentVersionFile.Open(IO::FileMode::Read);
-        mapFile.Open(IO::FileMode::Read);
-    //
-
-    if (dataFile.IsOpen()) {
-        dataFile.Write(data);
-        dataFile.Close();
-        log("Data file updated successfully.", LogLevel::Info);
-    } else {
-        log("Failed to open data file for writing.", LogLevel::Error);
-    }
->>>>>>> bb5b513620a26e54ba08608ae1bdd5f364215102
 }
