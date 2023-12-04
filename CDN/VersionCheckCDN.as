@@ -5,17 +5,14 @@ string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 string GetCurrentInstalledVersion() {
     if (IO::FileExists(currentVersionFile)) {
         IO::File file(currentVersionFile, IO::FileMode::Read);
-        string fileContent;
-        file.Read(fileContent);
         
+        string infoFile;
+        IO::File infoFile(file);
+        infoFile.Open(IO::FileMode::Read);
+        infoFile.Read(infoFile);
+        infoFile.Close();
 
-        IO::File infoFile(currentVersionFile);
-        currentVersionFile.Open(IO::FileMode::Read);
-        mapFile.Open(IO::FileMode::Read);
-
-        file.Close();
-
-        Json::Value currentVersionJson = Json::Parse(fileContent);
+        Json::Value currentVersionJson = Json::Parse(infoFile);
         if (currentVersionJson.GetType() == Json::Type::Object) {
             return currentVersionJson["installedVersion"];
         }
