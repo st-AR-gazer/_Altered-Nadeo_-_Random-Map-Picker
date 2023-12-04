@@ -11,7 +11,9 @@ string GetCurrentInstalledVersion() {
 
         Json::Value currentVersionJson = Json::Parse(fileContent);
         if (currentVersionJson.GetType() == Json::Type::Object) {
+
             return currentVersionJson["installedVersion"];
+            
         }
     }
     return "";
