@@ -11,9 +11,7 @@ string GetCurrentInstalledVersion() {
 
         Json::Value currentVersionJson = Json::Parse(fileContent);
         if (currentVersionJson.GetType() == Json::Type::Object) {
-
             return currentVersionJson["installedVersion"];
-            
         }
     }
     return "";
@@ -92,11 +90,12 @@ void StoreDatafile(const string &in data) {
 
     IO::File dataFile(dataFilePath, IO::FileMode::Write);
 
-    if (dataFile.IsOpen()) {
-        dataFile.Write(data);
-        dataFile.Close();
-        log("Data file updated successfully.", LogLevel::Info);
-    } else {
-        log("Failed to open data file for writing.", LogLevel::Error);
-    }
+    print("Got to datafile");
+    // if (dataFile.IsOpen()) {
+    //     dataFile.Write(data);
+    //     dataFile.Close();
+    //     log("Data file updated successfully.", LogLevel::Info);
+    // } else {
+    //     log("Failed to open data file for writing.", LogLevel::Error);
+    // }
 }
