@@ -7,6 +7,12 @@ string GetCurrentInstalledVersion() {
         IO::File file(currentVersionFile, IO::FileMode::Read);
         string fileContent;
         file.Read(fileContent);
+        
+
+        IO::File infoFile(currentVersionFile);
+        currentVersionFile.Open(IO::FileMode::Read);
+        mapFile.Open(IO::FileMode::Read);
+
         file.Close();
 
         Json::Value currentVersionJson = Json::Parse(fileContent);
@@ -89,6 +95,12 @@ void StoreDatafile(const string &in data) {
     string dataFilePath = "../data/data.csv";
 
     IO::File dataFile(dataFilePath, IO::FileMode::Write);
+
+    // PREVIOUS OPEN IS WRONG CHANGE TO THIS:
+    IO::File infoFile(currentVersionFile);
+        currentVersionFile.Open(IO::FileMode::Read);
+        mapFile.Open(IO::FileMode::Read);
+    //
 
     if (dataFile.IsOpen()) {
         dataFile.Write(data);
