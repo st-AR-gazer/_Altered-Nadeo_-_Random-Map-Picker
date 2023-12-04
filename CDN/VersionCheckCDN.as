@@ -1,7 +1,7 @@
 string currentVersionFile = "CDN/currentInstalledVersion.json";
-string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
+string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
-string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
+// string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
 
 
 string GetCurrentInstalledVersion() {
@@ -19,13 +19,6 @@ string GetCurrentInstalledVersion() {
 }
 
 void GetLatestFileInfo() {
-
-    auto test = GetCurrentInstalledVersion();
-
-    print(test);
-
-
-
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = manifestUrl;
@@ -35,6 +28,7 @@ void GetLatestFileInfo() {
     while (!req.Finished()) yield();
 
     if (req != null) {
+        print(req.String());
         ParseManifest(req.String());
     } else {
         log("Error fetching manifest: " + req.String(), LogLevel::Error);
@@ -92,21 +86,15 @@ void DownloadLatestData() {
     }
 }
 void StoreDatafile(const string &in data) {
-    string dataFilePath = "../data/data.csv";
+    string jsonStr = Json::Write(data);
 
-    IO::File dataFile(dataFilePath, IO::FileMode::Write);
+    IO::File file;
 
-    // // PREVIOUS OPEN IS WRONG CHANGE TO THIS:
-    // IO::File infoFile(currentVersionFile);
-    //     currentVersionFile.Open(IO::FileMode::Read);
-    //     mapFile.Open(IO::FileMode::Read);
-    // //
+    file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
 
-    // if (dataFile.IsOpen()) {
-    //     dataFile.Write(data);
-    //     dataFile.Close();
-    //     log("Data file updated successfully.", LogLevel::Info);
-    // } else {
-    //     log("Failed to open data file for writing.", LogLevel::Error);
-    // }
+    file.Write(jsonStr);
+
+    file.WriteLine();
+
+    file.Close();
 }
