@@ -5,11 +5,14 @@ string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 string GetCurrentInstalledVersion() {
     if (IO::FileExists(currentVersionFile)) {
         IO::File file(currentVersionFile, IO::FileMode::Read);
-        string fileContent;
-        file.Read(fileContent);
-        file.Close();
+        
+        string infoFile;
+        IO::File infoFile(file);
+        infoFile.Open(IO::FileMode::Read);
+        infoFile.Read(infoFile);
+        infoFile.Close();
 
-        Json::Value currentVersionJson = Json::Parse(fileContent);
+        Json::Value currentVersionJson = Json::Parse(infoFile);
         if (currentVersionJson.GetType() == Json::Type::Object) {
             return currentVersionJson["installedVersion"];
         }
@@ -90,6 +93,7 @@ void StoreDatafile(const string &in data) {
 
     IO::File dataFile(dataFilePath, IO::FileMode::Write);
 
+<<<<<<< HEAD
     print("Got to datafile");
     // if (dataFile.IsOpen()) {
     //     dataFile.Write(data);
@@ -98,4 +102,19 @@ void StoreDatafile(const string &in data) {
     // } else {
     //     log("Failed to open data file for writing.", LogLevel::Error);
     // }
+=======
+    // PREVIOUS OPEN IS WRONG CHANGE TO THIS:
+    IO::File infoFile(currentVersionFile);
+        currentVersionFile.Open(IO::FileMode::Read);
+        mapFile.Open(IO::FileMode::Read);
+    //
+
+    if (dataFile.IsOpen()) {
+        dataFile.Write(data);
+        dataFile.Close();
+        log("Data file updated successfully.", LogLevel::Info);
+    } else {
+        log("Failed to open data file for writing.", LogLevel::Error);
+    }
+>>>>>>> bb5b513620a26e54ba08608ae1bdd5f364215102
 }
