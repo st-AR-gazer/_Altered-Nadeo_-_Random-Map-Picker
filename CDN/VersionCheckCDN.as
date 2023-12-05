@@ -84,7 +84,7 @@ void StoreDatafile(const string &in data) {
 
     IO::File file;
 
-    file.Open("data/data.csv", IO::FileMode::Write);
+    file.Open("data/data copy.csv", IO::FileMode::Write);
 
 
     file.WriteLine();
