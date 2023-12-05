@@ -3,7 +3,6 @@ string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInst
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 // string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
 string latestVersion;
-string currentInstalledVersion;
 
 void GetLatestFileInfo() {
     Net::HttpRequest req;
@@ -81,10 +80,13 @@ void DownloadLatestData() {
 }
 
 void StoreDatafile(const string &in data) {
-    Json::Value json = Json::FromFile(currentVersionFile); 
+    string currentInstalledVersion = GetCurrentInstalledVersion();
 
+    
+    Json::Value json = Json::FromFile(currentVersionFile); 
+    
     if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
-        log("Current Version " + currentInstalledVersion + "Latest version " + latestVersion, LogLevel::Info);
+        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
         json["latestVersion"] = latestVersion;
     } else {
         log("JSON file does not have the expected structure or the 'latestVersion' key.", LogLevel::Error);
