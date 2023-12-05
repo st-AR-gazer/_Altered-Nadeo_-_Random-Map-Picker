@@ -1,8 +1,10 @@
-string currentVersionFile = "CDN/currentInstalledVersion.json";
-string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
+string pluginStorageDataPath = IO::FromStorageFolder("data.csv");
+string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
-// string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
+string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
+
 string latestVersion;
+
 
 void GetLatestFileInfo() {
     Net::HttpRequest req;
@@ -49,10 +51,9 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 }
 
 string GetCurrentInstalledVersion() {
-    IO::FileSource file(currentVersionFile);
+    IO::FileSource file(pluginStorageVersionPath);
 
     string fileContents = file.ReadToEnd();
-
     Json::Value currentVersionJson = Json::Parse(fileContents);
 
     if (currentVersionJson.GetType() == Json::Type::Object) {
@@ -73,7 +74,7 @@ void DownloadLatestData(const string &in latestVersion) {
 
     if (req != null) {
         auto data = req.String();
-        log("Feching new data successfull: \n" + "[the data would be here, but there's a lot of it and I'm lazy...]", LogLevel::Info);
+        log("Fetching new data successful: \n" + "[data]", LogLevel::Info);
         StoreDatafile(data, latestVersion);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
@@ -81,30 +82,22 @@ void DownloadLatestData(const string &in latestVersion) {
 }
 
 void StoreDatafile(const string &in data, const string &in latestVersion) {
-    string currentInstalledVersion = GetCurrentInstalledVersion();
+    IO::File file;
+    file.Open(pluginStorageDataPath, IO::FileMode::Write);
+    file.Write(data);
+    file.Close();
+
+    UpdateVersionFile(latestVersion);
+}
+
+void UpdateVersionFile(const string &in latestVersion) {
+    Json::Value json = Json::FromFile(pluginStorageVersionPath); 
     
-    Json::Value json = Json::FromFile(currentVersionFile); 
-    
-    if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
+    if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = latestVersion;
-        print(json["latestVersion"]);
-        print("^^^^^^");
-        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
-
+        Json::ToFile(pluginStorageVersionPath, json);
+        log("Updated to the most recent version: " + latestVersion, LogLevel::Info);
     } else {
-        log("JSON file does not have the expected structure or the 'latestVersion' key.", LogLevel::Error);
-        return;
+        log("JSON file does not have the expected structure.", LogLevel::Error);
     }
-
-    Json::ToFile(currentVersionFile, json);
-
-    log("Should have updated the version, probably...", LogLevel::Info);
 }
-
-
-
-/*
-void StoreDatafile(const string &in data) {
-
-}
-*/

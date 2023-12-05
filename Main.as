@@ -5,7 +5,7 @@ string globalMapUrl = "";
 bool isWaitingForUrl = false;
 
 void SetFirstUid() {
-    array<string> uids = ReadUIDsFromFile("data/data.csv");
+    array<string> uids = ReadUIDsFromFile(IO::FromStorageFolder("data.csv"));
     string map_uid = GetRandomUID(uids);
 
     startnew(GetMapUrl, map_uid);
@@ -70,7 +70,7 @@ void PlayMapCoroutine(const string &in map_url) {
 }
 
 void LoadNewMap() {
-    array<string> uids = ReadUIDsFromFile("data/data.csv");
+    array<string> uids = ReadUIDsFromFile(IO::FromStorageFolder("data.csv"));
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
