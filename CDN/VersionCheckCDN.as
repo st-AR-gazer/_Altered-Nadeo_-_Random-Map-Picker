@@ -101,7 +101,7 @@ void StoreDatafile(const string &in data) {
     versionFile.Close();
 
 
-    Log("Should have updated the version, probably...", LogLevel::Info);
+    log("Should have updated the version, probably...", LogLevel::Info);
 }
 
 
