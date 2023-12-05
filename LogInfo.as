@@ -8,16 +8,20 @@ enum LogLevel {
     Error
 };
 
+bool doDevLogging;
+
 void log(const string &in msg, LogLevel level = LogLevel::Info) {
-    switch(level) {
-        case LogLevel::Info: 
-            print("[INFO] " + msg); 
-            break;
-        case LogLevel::Warn: 
-            print("[WARN] " + msg); 
-            break;
-        case LogLevel::Error: 
-            print("[ERROR] " + msg); 
-            break;
+    if (doDevLogging) {
+        switch(level) {
+            case LogLevel::Info: 
+                print("[INFO] " + msg); 
+                break;
+            case LogLevel::Warn: 
+                print("[WARN] " + msg); 
+                break;
+            case LogLevel::Error: 
+                print("[ERROR] " + msg); 
+                break;
+        }
     }
 }
