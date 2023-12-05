@@ -111,58 +111,20 @@ void DownloadLatestData() {
 }*/
 
 void StoreDatafile(const string &in data) {
-    uint64 originalDataFileSize = IO::FileSize("data/data.csv");
-    string originalInstalledVersion = GetCurrentInstalledVersion(currentVersionFile); 
-
     IO::File dataFile;
-    if (dataFile.Open("data/data.csv", IO::FileMode::Write)) {
-        dataFile.Write(data);
-        dataFile.Close();
-        log("Attempted to write data to data/data.csv", LogLevel::Info);
-    } else {
-        log("Failed to open data/data.csv for writing", LogLevel::Error);
-        return;
-    }
+    dataFile.Open("data/data.csv", IO::FileMode::Write);
+    dataFile.Write(data);
+    dataFile.Close();
 
     Json::Value newVersionJson;
     newVersionJson["installedVersion"] = latestVersion;
 
     IO::File versionFile;
-    if (versionFile.Open(currentVersionFile, IO::FileMode::Write)) {
-        versionFile.Write(Json::Write(newVersionJson));
-        versionFile.Close();
-        log("Attempted to update installed version file: " + currentVersionFile, LogLevel::Info);
-    } else {
-        log("Failed to open " + currentVersionFile + " for writing", LogLevel::Error);
-        return;
-    }
-
-    uint64 newDataFileSize = IO::FileSize("data/data.csv");
-
-    if (newDataFileSize != originalDataFileSize) {
-        log("Data file size changed, data update was likely successful.", LogLevel::Info);
-    } else {
-        log("Data file size unchanged, data update may have failed.", LogLevel::Error);
-    }
-
-    string newInstalledVersion = GetCurrentInstalledVersion(currentVersionFile); 
-    if (newInstalledVersion == latestVersion) {
-        log("Updated installed version matches the latest version: " + latestVersion, LogLevel::Info);
-    } else {
-        log("Mismatch in version numbers. Latest: " + latestVersion + ", Installed: " + newInstalledVersion, LogLevel::Error);
-    }
+    versionFile.Open(currentVersionFile, IO::FileMode::Write);
+    versionFile.Write(Json::Write(newVersionJson));
+    versionFile.Close();
 }
 
-string GetCurrentInstalledVersion(const string &in filePath) {
-    IO::FileSource versionFile(filePath);
-    string fileContents = versionFile.ReadToEnd();
-    Json::Value currentVersionJson = Json::Parse(fileContents);
-
-    if (currentVersionJson.GetType() == Json::Type::Object && currentVersionJson.HasKey("installedVersion")) {
-        return currentVersionJson["installedVersion"];
-    }
-    return "";
-}
 
 
 /*
