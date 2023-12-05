@@ -29,7 +29,7 @@ void ParseManifest(const string &in reqBody) {
     }
 
     string latestVersion = manifest["latestVersion"];
-    print("aaaaaaaaaaaaaaaa " + latestVersion);
+    
     log("Updating the url, the local url is: " + url, LogLevel::Info);
     string url = manifest["url"];
     log("The url has been updated, the new url is: " + url, LogLevel::Info);
@@ -42,6 +42,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
+        print("aaaaaaa " + latestVersion);
         DownloadLatestData();
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
@@ -63,6 +64,8 @@ string GetCurrentInstalledVersion() {
 }
 
 void DownloadLatestData() {
+        print("aaaaaaa2 " + latestVersion);
+
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = url;
@@ -82,6 +85,7 @@ void DownloadLatestData() {
 
 void StoreDatafile(const string &in data) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
+    print("aaaaaaa3 " + latestVersion);
 
     
     Json::Value json = Json::FromFile(currentVersionFile); 
