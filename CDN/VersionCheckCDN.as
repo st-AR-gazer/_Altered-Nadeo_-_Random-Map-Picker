@@ -2,7 +2,7 @@ string currentVersionFile = "CDN/currentInstalledVersion.json";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 // string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
-
+string latestVersion;
 
 string GetCurrentInstalledVersion() {
     IO::FileSource file(currentVersionFile);
