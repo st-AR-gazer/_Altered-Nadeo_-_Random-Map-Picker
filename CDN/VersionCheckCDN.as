@@ -42,7 +42,6 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
-        print("aaaaaaa " + latestVersion);
         DownloadLatestData(latestVersion);
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
@@ -64,8 +63,6 @@ string GetCurrentInstalledVersion() {
 }
 
 void DownloadLatestData(const string &in latestVersion) {
-        print("aaaaaaa2 " + latestVersion);
-
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = url;
@@ -85,13 +82,13 @@ void DownloadLatestData(const string &in latestVersion) {
 
 void StoreDatafile(const string &in data, const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
-    print("aaaaaaa3 " + latestVersion);
-
     
     Json::Value json = Json::FromFile(currentVersionFile); 
     
     if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
         json["latestVersion"] = latestVersion;
+        print(json["latestVersion"]);
+        print("^^^^^^");
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
 
     } else {
