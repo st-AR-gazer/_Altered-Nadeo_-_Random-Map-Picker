@@ -91,26 +91,17 @@ void StoreDatafile(const string &in data) {
     file.Close();*/
 
 
-    Json::Value newVersionJson;
-    newVersionJson["installedVersion"] = latestVersion;
-
-    IO::File versionFile;
-    versionFile.Open(currentVersionFile, IO::FileMode::Write);
-    versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();
-
-    /*IO::File dataFile;
-    dataFile.Open("data/data.csv", IO::FileMode::Write);
-    dataFile.Write(data);
-    dataFile.Close();
 
     Json::Value newVersionJson;
-    newVersionJson["installedVersion"] = latestVersion;
+    newVersionJson["installedVersion"] = latestVersion; // Ensure latestVersion is valid here
 
     IO::File versionFile;
-    versionFile.Open(currentVersionFile, IO::FileMode::Write);
-    versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();*/
+    if (versionFile.Open(currentVersionFile, IO::FileMode::Write)) {
+        versionFile.Write(Json::Write(newVersionJson));
+        versionFile.Close();
+    } else {
+        // Handle the error of not being able to open the file
+    }
 }
 
 
