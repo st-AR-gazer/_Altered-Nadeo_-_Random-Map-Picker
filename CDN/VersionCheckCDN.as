@@ -63,7 +63,7 @@ string GetCurrentInstalledVersion() {
     return "";
 }
 
-void DownloadLatestData() {
+void DownloadLatestData(const string &in latestVersion) {
         print("aaaaaaa2 " + latestVersion);
 
     Net::HttpRequest req;
