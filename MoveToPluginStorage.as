@@ -7,8 +7,12 @@ void FileCheck() {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn);
         MoveFileToPluginStorage("data/data.csv", pluginStorageDataPath);
         MoveFileToPluginStorage("data/currentInstalledVersion.json", pluginStorageVersionPath);
+        log("Files have been moved to storage", LogLevel::Info);
         
         CreateCheckFile();
+        log("initCheck file created", LogLevel::Info);
+    } else {
+        log("initCheck file exists in plugin storage, not moving data", LogLevel::Info);
     }
 }
 
@@ -27,4 +31,3 @@ void CreateCheckFile() {
     checkFile.Open(checkFilePath, IO::FileMode::Write);
     checkFile.Close();
 }
-

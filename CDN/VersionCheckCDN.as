@@ -17,7 +17,7 @@ void GetLatestFileInfo() {
         log("Feching manifest successfull: \n" + req.String(), LogLevel::Info);
         ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: " + req.String(), LogLevel::Error);
+        log("Error fetching manifest: \n" + req.String(), LogLevel::Error);
     }
 }
 
