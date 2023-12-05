@@ -3,6 +3,7 @@ string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInst
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 // string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
 string latestVersion;
+string currentInstalledVersion;
 
 void GetLatestFileInfo() {
     Net::HttpRequest req;
