@@ -72,7 +72,15 @@ void DownloadLatestData() {
 
     if (req != null) {
         auto data = req.String();
-        log("Feching new data successfull: \n" + req.String(), LogLevel::Info);
+        std::string str = req.String();
+        
+        //
+        if (str.length() > 20) {
+            str = str.substr(0, 20);  // Get the first 20 characters
+        }
+        log("Fetching new data successfully: \n" + str, LogLevel::Info);
+        //
+
         StoreDatafile(data);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
