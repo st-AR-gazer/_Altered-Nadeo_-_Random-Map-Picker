@@ -100,4 +100,4 @@ void UpdateVersionFile(const string &in latestVersion) {
     } else {
         log("JSON file does not have the expected structure.", LogLevel::Error);
     }
-}
+} 
