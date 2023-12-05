@@ -29,7 +29,7 @@ void ParseManifest(const string &in reqBody) {
     }
 
     string latestVersion = manifest["latestVersion"];
-    prinf("aaaaaaaaaaaaaaaa " + latestVersion + " a " + manifest[latestVersion]);
+    print("aaaaaaaaaaaaaaaa " + latestVersion + " a " + manifest[latestVersion]);
     log("Updating the url, the local url is: " + url, LogLevel::Info);
     string url = manifest["url"];
     log("The url has been updated, the new url is: " + url, LogLevel::Info);
