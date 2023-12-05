@@ -87,8 +87,6 @@ void StoreDatafile(const string &in data, const string &in latestVersion) {
     
     if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
         json["latestVersion"] = latestVersion;
-        print(json["latestVersion"]);
-        print("^^^^^^");
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
 
     } else {
