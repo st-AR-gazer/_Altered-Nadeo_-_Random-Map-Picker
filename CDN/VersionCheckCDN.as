@@ -73,17 +73,18 @@ void DownloadLatestData() {
     if (req != null) {
         auto data = req.String();
         log("Feching new data successfull: \n" + "[the data would be here, but there's a lot of it and I'm lazy...]", LogLevel::Info);
-        StoreDatafile(data, newVersion);
+        StoreDatafile(data);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
     }
 }
 
-void StoreDatafile(const string &in data, const string &in newVersion) {
+void StoreDatafile(const string &in data) {
     Json::Value json = Json::FromFile(currentVersionFile); 
 
     if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
-        json["latestVersion"] = newVersion;
+        log("Current Version " + currentInstalledVersion + "Latest version " + latestVersion, LogLevel::Info);
+        json["latestVersion"] = latestVersion;
     } else {
         log("JSON file does not have the expected structure or the 'latestVersion' key.", LogLevel::Error);
         return;
