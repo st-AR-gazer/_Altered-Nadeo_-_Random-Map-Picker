@@ -100,6 +100,8 @@ void StoreDatafile(const string &in data) {
         versionFile.Write(Json::Write(newVersionJson));
         versionFile.Close();
     }
+
+    Log("Should have updated the version, probably...", LogLevel::Info)
 }
 
 
