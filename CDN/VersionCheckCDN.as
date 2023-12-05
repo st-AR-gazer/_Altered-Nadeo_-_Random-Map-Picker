@@ -97,9 +97,9 @@ void StoreDatafile(const string &in data) {
 
     IO::File versionFile;
     versionFile.Open(currentVersionFile, IO::FileMode::Write)) {
-    versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();
-    
+        versionFile.Write(Json::Write(newVersionJson));
+        versionFile.Close();
+    }
 }
 
 
