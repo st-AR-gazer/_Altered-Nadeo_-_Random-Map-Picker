@@ -96,7 +96,7 @@ void StoreDatafile(const string &in data) {
     newVersionJson["installedVersion"] = latestVersion; // Ensure latestVersion is valid here
 
     IO::File versionFile;
-    versionFile.Open(currentVersionFile, IO::FileMode::Write)) {
+    versionFile.Open(currentVersionFile, IO::FileMode::Write) {
         versionFile.Write(Json::Write(newVersionJson));
         versionFile.Close();
     }
