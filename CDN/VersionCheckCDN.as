@@ -92,7 +92,7 @@ void StoreDatafile(const string &in data) {
 
 
 
-    Json::Value newVersionJson;
+    Value@ Json::Object(newVersionJson);
     newVersionJson["installedVersion"] = latestVersion; // Ensure latestVersion is valid here
 
     IO::File versionFile;
