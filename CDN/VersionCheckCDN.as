@@ -52,16 +52,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (currentInstalledVersion != latestVersion) {
-        Json::Value newVersionJson;
-        newVersionJson["installedVersion"] = latestVersion;
-
-        IO::File file(currentVersionFile, IO::FileMode::Write);
-        file.Write(Json::Write(newVersionJson));
-        file.Close();
-
-        log("Updated installed version to: " + latestVersion, LogLevel::Info);
-        log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
-
+        log("Updating the current version: " + currentInstalledVersion " to the most up-to-date version: " + latestVersion, LogLevel::Info);
         DownloadLatestData();
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
@@ -89,12 +80,30 @@ void StoreDatafile(const string &in data) {
     string jsonStr = Json::Write(data);
 
     IO::File file;
-
-    file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
+    if (!file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write)) {
+        log("Failed to open file for writing: CDN/CurrentInstalledVersion.json", LogLevel::Error);
+        return;
+    }
 
     file.Write(jsonStr);
-
     file.WriteLine();
-
     file.Close();
+    log("Written data to CDN/CurrentInstalledVersion.json", LogLevel::Info);
+
+    Json::Value newVersionJson;
+    newVersionJson["installedVersion"] = latestVersion;
+
+    IO::File versionFile(currentVersionFile, IO::FileMode::Write);
+    if (!versionFile.IsOpen()) {
+        log("Failed to open file for writing: " + currentVersionFile, LogLevel::Error);
+        return;
+    }
+
+    versionFile.Write(Json::Write(newVersionJson));
+    versionFile.Close();
+    log("Updated installed version file: " + currentVersionFile, LogLevel::Info);
+
+    log("Updated installed version to: " + latestVersion, LogLevel::Info);
+    log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
 }
+
