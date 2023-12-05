@@ -72,7 +72,7 @@ void DownloadLatestData() {
 
     if (req != null) {
         auto data = req.String();
-
+        log("Feching new data successfull: \n" + req.String(), LogLevel::Info);
         StoreDatafile(data);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
