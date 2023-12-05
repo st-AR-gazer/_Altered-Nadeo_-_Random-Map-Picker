@@ -1,22 +1,8 @@
 string currentVersionFile = "CDN/currentInstalledVersion.json";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
-string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
+string url = "aaaa";
 // string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
 string latestVersion;
-
-string GetCurrentInstalledVersion() {
-    IO::FileSource file(currentVersionFile);
-
-    string fileContents = file.ReadToEnd();
-
-    Json::Value currentVersionJson = Json::Parse(fileContents);
-
-    if (currentVersionJson.GetType() == Json::Type::Object) {
-        return currentVersionJson["latestVersion"];
-    }
-
-    return "";
-}
 
 void GetLatestFileInfo() {
     Net::HttpRequest req;
@@ -28,7 +14,7 @@ void GetLatestFileInfo() {
     while (!req.Finished()) yield();
 
     if (req != null) {
-        print(req.String());
+        log("Feching manifest successfull: \n" + req.String(), LogLevel::Info);
         ParseManifest(req.String());
     } else {
         log("Error fetching manifest: " + req.String(), LogLevel::Error);
@@ -43,7 +29,9 @@ void ParseManifest(const string &in reqBody) {
     }
 
     string latestVersion = manifest["latestVersion"];
+    print("url is: " + url);
     string url = manifest["url"];
+    print("new url is: " + url);
 
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
@@ -57,6 +45,20 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
     }
+}
+
+string GetCurrentInstalledVersion() {
+    IO::FileSource file(currentVersionFile);
+
+    string fileContents = file.ReadToEnd();
+
+    Json::Value currentVersionJson = Json::Parse(fileContents);
+
+    if (currentVersionJson.GetType() == Json::Type::Object) {
+        return currentVersionJson["latestVersion"];
+    }
+
+    return "";
 }
 
 void DownloadLatestData() {
@@ -111,7 +113,7 @@ void DownloadLatestData() {
 }*/
 
 void StoreDatafile(const string &in data) {
-    IO::File dataFile;
+    /*IO::File dataFile;
     dataFile.Open("data/data.csv", IO::FileMode::Write);
     dataFile.Write(data);
     dataFile.Close();
@@ -122,7 +124,7 @@ void StoreDatafile(const string &in data) {
     IO::File versionFile;
     versionFile.Open(currentVersionFile, IO::FileMode::Write);
     versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();
+    versionFile.Close();*/
 }
 
 
