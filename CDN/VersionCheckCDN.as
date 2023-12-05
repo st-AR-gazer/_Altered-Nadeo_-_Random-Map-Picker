@@ -43,7 +43,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
         print("aaaaaaa " + latestVersion);
-        DownloadLatestData();
+        DownloadLatestData(latestVersion);
     } else {
         log("Current version is up-to-date.", LogLevel::Info);
     }
