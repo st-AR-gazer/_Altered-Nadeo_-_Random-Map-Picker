@@ -80,19 +80,24 @@ void DownloadLatestData() {
 }
 
 void StoreDatafile(const string &in data) {
-    string jsonStr = Json::Write(data);
+    /*string newDataFileContents = Json::Write(data);
 
     IO::File file;
 
     file.Open("data/data copy.csv", IO::FileMode::Write);
 
+    file.Write(newDataFileContents);
 
-    file.WriteLine();
-
-    file.Close();
-
+    file.Close();*/
 
 
+    Json::Value newVersionJson;
+    newVersionJson["installedVersion"] = latestVersion;
+
+    IO::File versionFile;
+    versionFile.Open(currentVersionFile, IO::FileMode::Write);
+    versionFile.Write(Json::Write(newVersionJson));
+    versionFile.Close();
 
     /*IO::File dataFile;
     dataFile.Open("data/data.csv", IO::FileMode::Write);
