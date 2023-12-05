@@ -1,6 +1,6 @@
 string currentVersionFile = "CDN/currentInstalledVersion.json";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
-string url = "aaaa";
+string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 // string currentVersionFileNEWTEST = "CDN/currentInstalledVersionNEW.json";
 string latestVersion;
 
@@ -29,9 +29,9 @@ void ParseManifest(const string &in reqBody) {
     }
 
     string latestVersion = manifest["latestVersion"];
-    print("url is: " + url);
+    log("Updating the url, the local url is: " + url, LogLevel::Info);
     string url = manifest["url"];
-    print("new url is: " + url);
+    log("The url has been updated, the new url is: " + url, LogLevel::Info);
 
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
