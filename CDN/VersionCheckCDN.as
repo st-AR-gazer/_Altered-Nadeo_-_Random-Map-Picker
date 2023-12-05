@@ -1,5 +1,3 @@
-string pluginStorageDataPath = IO::FromStorageFolder("data.csv");
-string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 string url = "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv";
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
 
