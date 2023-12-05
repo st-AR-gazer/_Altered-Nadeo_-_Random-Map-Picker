@@ -29,6 +29,7 @@ void ParseManifest(const string &in reqBody) {
     }
 
     string latestVersion = manifest["latestVersion"];
+    prinf("aaaaaaaaaaaaaaaa " + latestVersion + " a " + manifest[latestVersion]);
     log("Updating the url, the local url is: " + url, LogLevel::Info);
     string url = manifest["url"];
     log("The url has been updated, the new url is: " + url, LogLevel::Info);
@@ -86,8 +87,9 @@ void StoreDatafile(const string &in data) {
     Json::Value json = Json::FromFile(currentVersionFile); 
     
     if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
-        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
         json["latestVersion"] = latestVersion;
+        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
+
     } else {
         log("JSON file does not have the expected structure or the 'latestVersion' key.", LogLevel::Error);
         return;
