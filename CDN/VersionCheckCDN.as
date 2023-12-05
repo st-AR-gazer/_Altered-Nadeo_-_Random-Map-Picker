@@ -77,13 +77,13 @@ void DownloadLatestData(const string &in latestVersion) {
     if (req != null) {
         auto data = req.String();
         log("Feching new data successfull: \n" + "[the data would be here, but there's a lot of it and I'm lazy...]", LogLevel::Info);
-        StoreDatafile(data);
+        StoreDatafile(data, latestVersion);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
     }
 }
 
-void StoreDatafile(const string &in data) {
+void StoreDatafile(const string &in data, const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
     print("aaaaaaa3 " + latestVersion);
 
