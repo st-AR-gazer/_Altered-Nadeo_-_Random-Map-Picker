@@ -78,41 +78,22 @@ void DownloadLatestData() {
         log("Error fetching datafile: " + req.String(), LogLevel::Error);
     }
 }
-/*void StoreDatafile(const string &in data) {
+
+void StoreDatafile(const string &in data) {
     string jsonStr = Json::Write(data);
 
     IO::File file;
-    file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
-    bool writeSuccess = file.Write(jsonStr) > 0;
+
+    file.Open("data/data.csv", IO::FileMode::Write);
+
+
     file.WriteLine();
+
     file.Close();
 
-    if (writeSuccess) {
-        log("Written data to CDN/CurrentInstalledVersion.json", LogLevel::Info);
-    } else {
-        log("Failed to write data to CDN/CurrentInstalledVersion.json", LogLevel::Error);
-        return;
-    }
 
-    Json::Value newVersionJson;
-    newVersionJson["installedVersion"] = latestVersion;
 
-    IO::File versionFile(currentVersionFile, IO::FileMode::Write);
-    writeSuccess = versionFile.Write(Json::Write(newVersionJson)) > 0;
-    versionFile.Close();
 
-    if (writeSuccess) {
-        log("Updated installed version file: " + currentVersionFile, LogLevel::Info);
-    } else {
-        log("Failed to write updated version to " + currentVersionFile, LogLevel::Error);
-        return;
-    }
-
-    log("Updated installed version to: " + latestVersion, LogLevel::Info);
-    log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
-}*/
-
-void StoreDatafile(const string &in data) {
     /*IO::File dataFile;
     dataFile.Open("data/data.csv", IO::FileMode::Write);
     dataFile.Write(data);
@@ -131,16 +112,6 @@ void StoreDatafile(const string &in data) {
 
 /*
 void StoreDatafile(const string &in data) {
-    string jsonStr = Json::Write(data);
 
-    IO::File file;
-
-    file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
-
-    file.Write(jsonStr);
-
-    file.WriteLine();
-
-    file.Close();
 }
 */
