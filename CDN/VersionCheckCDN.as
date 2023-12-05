@@ -80,28 +80,31 @@ void StoreDatafile(const string &in data) {
     string jsonStr = Json::Write(data);
 
     IO::File file;
-    if (!file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write)) {
-        log("Failed to open file for writing: CDN/CurrentInstalledVersion.json", LogLevel::Error);
-        return;
-    }
-
-    file.Write(jsonStr);
+    file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
+    bool writeSuccess = file.Write(jsonStr) > 0;
     file.WriteLine();
     file.Close();
-    log("Written data to CDN/CurrentInstalledVersion.json", LogLevel::Info);
+
+    if (writeSuccess) {
+        log("Written data to CDN/CurrentInstalledVersion.json", LogLevel::Info);
+    } else {
+        log("Failed to write data to CDN/CurrentInstalledVersion.json", LogLevel::Error);
+        return;
+    }
 
     Json::Value newVersionJson;
     newVersionJson["installedVersion"] = latestVersion;
 
     IO::File versionFile(currentVersionFile, IO::FileMode::Write);
-    if (!versionFile.IsOpen()) {
-        log("Failed to open file for writing: " + currentVersionFile, LogLevel::Error);
+    writeSuccess = versionFile.Write(Json::Write(newVersionJson)) > 0;
+    versionFile.Close();
+
+    if (writeSuccess) {
+        log("Updated installed version file: " + currentVersionFile, LogLevel::Info);
+    } else {
+        log("Failed to write updated version to " + currentVersionFile, LogLevel::Error);
         return;
     }
-
-    versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();
-    log("Updated installed version file: " + currentVersionFile, LogLevel::Info);
 
     log("Updated installed version to: " + latestVersion, LogLevel::Info);
     log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
