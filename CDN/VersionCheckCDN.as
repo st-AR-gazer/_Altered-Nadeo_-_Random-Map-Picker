@@ -78,7 +78,8 @@ void DownloadLatestData() {
 }
 void StoreDatafile(const string &in data) {
     string jsonStr = Json::Write(data);
-
+    prinf(data);
+/*
     IO::File file;
     file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
     bool writeSuccess = file.Write(jsonStr) > 0;
@@ -107,6 +108,6 @@ void StoreDatafile(const string &in data) {
     }
 
     log("Updated installed version to: " + latestVersion, LogLevel::Info);
-    log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);
+    log("Downloading lastest version from CDN: " + latestVersion, LogLevel::Info);*/
 }
 
