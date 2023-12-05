@@ -78,7 +78,7 @@ void DownloadLatestData() {
 }
 void StoreDatafile(const string &in data) {
     string jsonStr = Json::Write(data);
-    prinf(data);
+    print(data);
 /*
     IO::File file;
     file.Open("CDN/CurrentInstalledVersion.json", IO::FileMode::Write);
