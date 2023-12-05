@@ -79,27 +79,17 @@ void DownloadLatestData() {
     }
 }
 
-void StoreDatafile(const string &in data) {
-    /*string newDataFileContents = Json::Write(data);
+void StoreDatafile(const string &in data, const string &in newVersion) {
+    Json::Value json = Json::FromFile(currentVersionFile); 
 
-    IO::File file;
+    if (json.GetType() == Json::Type::Object && json.HasKey("latestVersion")) {
+        json["latestVersion"] = newVersion;
+    } else {
+        log("JSON file does not have the expected structure or the 'latestVersion' key.", LogLevel::Error);
+        return;
+    }
 
-    file.Open("data/data copy.csv", IO::FileMode::Write);
-
-    file.Write(newDataFileContents);
-
-    file.Close();*/
-
-
-
-    Value@ Json::Object(newVersionJson);
-    newVersionJson["installedVersion"] = latestVersion; // Ensure latestVersion is valid here
-
-    IO::File versionFile;
-    versionFile.Open(currentVersionFile, IO::FileMode::Write);
-    versionFile.Write(Json::Write(newVersionJson));
-    versionFile.Close();
-
+    Json::ToFile(currentVersionFile, json);
 
     log("Should have updated the version, probably...", LogLevel::Info);
 }
