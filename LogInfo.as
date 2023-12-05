@@ -8,7 +8,7 @@ enum LogLevel {
     Error
 };
 
-bool doDevLogging;
+bool doDevLogging = true;
 
 void log(const string &in msg, LogLevel level = LogLevel::Info) {
     if (doDevLogging) {
