@@ -77,7 +77,7 @@ void DownloadLatestData(const string &in latestVersion) {
 
     if (req.ResponseCode() == 200) {
         auto data = req.String();
-        log("Fetching new data successful: \n" + "[data]", LogLevel::Info, 78);
+        log("Fetching new data successful: \n" + req, LogLevel::Info, 78);
         StoreDatafile(data, latestVersion);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error, 81);
@@ -99,8 +99,8 @@ void UpdateVersionFile(const string &in latestVersion) {
     if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = latestVersion;
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 100);
+        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 102);
     } else {
-        log("JSON file does not have the expected structure.", LogLevel::Error, 102);
+        log("JSON file does not have the expected structure.", LogLevel::Error, 104);
     }
-} 
+}
