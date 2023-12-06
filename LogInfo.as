@@ -11,7 +11,7 @@ enum LogLevel {
 bool doDevLogging = true;
 
 void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
-    string lineInfo = line >= 0 ? " Line: " + line : "";
+    string lineInfo = line >= 0 ? "" + line : " ";
     if (doDevLogging) {
         switch(level) {
             case LogLevel::Info: 
