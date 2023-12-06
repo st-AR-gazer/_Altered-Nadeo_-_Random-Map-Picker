@@ -78,6 +78,7 @@ void DownloadLatestData(const string &in latestVersion) {
     if (req.ResponseCode() == 200) {
         auto data = req.String();
 
+        auto tempData;
 
         if (req.String() is null) {
             tempData = "[DATA] - But with requests";
