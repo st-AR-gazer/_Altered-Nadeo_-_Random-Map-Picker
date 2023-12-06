@@ -13,39 +13,41 @@ void GetLatestFileInfo() {
 
     while (!req.Finished()) yield();
 
-    if (req != null) {
-        log("Feching manifest successfull: \n" + req.String(), LogLevel::Info);
-        string reqBody = req.String();
-        ParseManifest(reqBody);
+    if (req.StatusCode == 200) {
+        log("Fetching manifest successful: \n" + req.String(), LogLevel::Info, 17);
+        ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: \n" + req.String(), LogLevel::Error);
+        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 20);
     }
 }
 
 void ParseManifest(const string &in reqBody) {
+    log("Received JSON: " + reqBody, LogLevel::Info, 25);
+
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, 27);
+        log("Failed to parse JSON.", LogLevel::Error, 29);
         return;
     }
 
     string latestVersion = manifest["latestVersion"];
     
-    log("Updating the url, the local url is: " + url, LogLevel::Info);
-    string url = manifest["url"];
-    log("The url has been updated, the new url is: " + url, LogLevel::Info);
+    log("Updating the URL, the local URL is: " + url, LogLevel::Info, 35);
+    string newUrl = manifest["url"];
+    log("The URL has been updated, the new URL is: " + newUrl, LogLevel::Info, 37);
 
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
+
 
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (currentInstalledVersion != latestVersion) {
-        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info);
+        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 47);
         DownloadLatestData(latestVersion);
     } else {
-        log("Current version is up-to-date.", LogLevel::Info);
+        log("Current version is up-to-date.", LogLevel::Info, 50);
     }
 }
 
@@ -73,10 +75,10 @@ void DownloadLatestData(const string &in latestVersion) {
 
     if (req != null) {
         auto data = req.String();
-        log("Fetching new data successful: \n" + "[data]", LogLevel::Info);
+        log("Fetching new data successful: \n" + "[data]", LogLevel::Info, 78);
         StoreDatafile(data, latestVersion);
     } else {
-        log("Error fetching datafile: " + req.String(), LogLevel::Error);
+        log("Error fetching datafile: " + req.String(), LogLevel::Error, 81);
     }
 }
 
@@ -95,8 +97,8 @@ void UpdateVersionFile(const string &in latestVersion) {
     if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = latestVersion;
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + latestVersion, LogLevel::Info);
+        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 100);
     } else {
-        log("JSON file does not have the expected structure.", LogLevel::Error);
+        log("JSON file does not have the expected structure.", LogLevel::Error, 102);
     }
 } 
