@@ -21,7 +21,6 @@ void GetMapUrl(const string &in map_uid) {
         yield();
     }
     Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
-    log(req, LogLevel::Warn, 24);
     req.Start();
     while (!req.Finished()) yield();
 
@@ -31,7 +30,6 @@ void GetMapUrl(const string &in map_uid) {
         log(req.Body, LogLevel::Error);
         return;
     }
-    log(req.String(), LogLevel::Info, 33);
 
     Json::Value res = Json::Parse(req.String());
     globalMapUrl = res["downloadUrl"];
