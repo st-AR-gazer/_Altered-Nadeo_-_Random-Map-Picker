@@ -96,22 +96,16 @@ string GetRandomUID(const array<string> &in uids) {
 
 string[] ReadUIDsFromFile(const string&in filePath) {
     array<string> uids;
+    auto file = pluginStorageDataPath;
 
-    IO::File file();
-    file.Open(pluginStorageDataPath, IO::FileMode::Read);
-    string fileContents = file.ReadToEnd();
-    file.Close();
-
+    IO::File file(filePath, IO::FileMode::Read);
     while (!file.EOF()) {
         string line = file.ReadLine();
-        
-        log("Line \n" + line, LogLevel::Info, 108);
-        log("Line \n" + line.Length, LogLevel::Info, 108);
-        
-        if (line.Length > 0) {
+        if (line.Length() > 0) {
             uids.InsertLast(line);
         }
     }
-    
+    file.Close();
+
     return uids;
 }
