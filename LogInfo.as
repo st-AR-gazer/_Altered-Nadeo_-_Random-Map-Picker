@@ -14,7 +14,7 @@ enum LogLevel {
 };
 
 [Setting category="General" name="Show debug logs"]
-bool doDevLogging = true;
+bool doDevLogging = false;
 
 void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
     string lineInfo = line >= 0 ? "" + line : " ";
