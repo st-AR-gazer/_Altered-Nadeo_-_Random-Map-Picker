@@ -24,4 +24,4 @@ void log(const string &in msg, LogLevel level = LogLevel::Info) {
                 break;
         }
     }
-}
+} 
