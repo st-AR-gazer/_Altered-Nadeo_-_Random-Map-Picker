@@ -15,13 +15,13 @@ void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
     if (doDevLogging) {
         switch(level) {
             case LogLevel::Info: 
-                print("\\$0ff[INFO]" + lineInfo + " \\$fff" + msg); 
+                print("\\$0ff[INFO]" + " \\$fff" + "\\$066"+lineInfo+" \\$fff" + msg); 
                 break;
             case LogLevel::Warn: 
-                print("\\$ff0[WARN]" + lineInfo + " \\$fff" + msg); 
+                print("\\$ff0[WARN]" + " \\$fff" + "\\$660"+lineInfo+" \\$fff" + msg); 
                 break;
             case LogLevel::Error: 
-                print("\\$f00[ERROR]" + lineInfo + " \\$fff" + msg); 
+                print("\\$f00[ERROR]" + " \\$fff" + "\\$600"+lineInfo+" \\$fff" + msg); 
                 break;
         }
     }
