@@ -13,7 +13,7 @@ void GetLatestFileInfo() {
 
     while (!req.Finished()) yield();
 
-    if (req.StatusCode == 200) {
+    if (int ResponseCode(req) == 200) {
         log("Fetching manifest successful: \n" + req.String(), LogLevel::Info, 17);
         ParseManifest(req.String());
     } else {
