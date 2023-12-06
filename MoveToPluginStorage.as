@@ -19,12 +19,14 @@ void FileCheck() {
 void MoveFileToPluginStorage(const string &in originalPath, const string &in storagePath) {
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
-    print("aaaaaaaaaaaaaaaaaaaaaaaa" + fileContents);
+    log("Moving the file content\n" + "The content:\n" + fileContents, LogLevel::Info, 22)
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
     targetFile.Write(fileContents);
     targetFile.Close();
+
+    log("Finished moving the file", LogLevel::Info, 29);
 }
 
 void CreateCheckFile() {
