@@ -53,7 +53,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 
 string GetCurrentInstalledVersion() {
     IO::File file();
-    file.Open(pluginStorageVersionPath, IO::FileMode::Write);
+    file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
     
