@@ -24,7 +24,7 @@ void GetLatestFileInfo() {
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, __LINE__);
+        log("Failed to parse JSON.", LogLevel::Error);
         return;
     }
 
