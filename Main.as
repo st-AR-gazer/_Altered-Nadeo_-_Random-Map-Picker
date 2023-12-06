@@ -9,7 +9,7 @@ void SetFirstUid() {
     array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
 
     string map_uid = GetRandomUID(uids);
-    log("map_uid: \n" + map_uid, LogLevel::Info, 12);
+    log("map_uid: " + map_uid, LogLevel::Info, 12);
 
 
     startnew(GetMapUrl, map_uid);
@@ -77,7 +77,7 @@ void PlayMapCoroutine(const string &in map_url) {
 }
 
 void LoadNewMap() {
-    array<string> uids = ReadUIDsFromFile(IO::FromStorageFolder("data.csv"));
+    array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info);
@@ -97,7 +97,8 @@ string GetRandomUID(const array<string> &in uids) {
 string[] ReadUIDsFromFile(const string&in filePath) {
     array<string> uids;
 
-    IO::File file(pluginStorageDataPath, IO::FileMode::Read);
+    IO::File file(filePath, IO::FileMode::Read);
+
     while (!file.EOF()) {
         string line = file.ReadLine();
         if (line.Length() > 0) {
