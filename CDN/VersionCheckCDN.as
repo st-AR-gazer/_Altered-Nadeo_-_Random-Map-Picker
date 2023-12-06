@@ -80,9 +80,9 @@ void DownloadLatestData(const string &in latestVersion) {
 
 
         if (req.String() is null) {
-            tempData = "[DATA] - But with requests"
+            tempData = "[DATA] - But with requests";
         } else {
-            tempData = "[DATA] - But with nothing to show"
+            tempData = "[DATA] - But with nothing to show";
         }
 
         log("Fetching new data successful: \n" + tempData, LogLevel::Info, 78);
@@ -109,6 +109,6 @@ void UpdateVersionFile(const string &in latestVersion) {
         Json::ToFile(pluginStorageVersionPath, json);
         log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 102);
     } else {
-        log("JSON file does not have the expected structure." + " Json type is: " + json.GetType(), LogLevel::Error, 104);
+        log("JSON file does not have the expected structure.\n" + " Json type is: \n" + json.GetType(), LogLevel::Error, 104);
     }
 }
