@@ -28,7 +28,7 @@ void GetMapUrl(const string &in map_uid) {
         log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
         log("Response body:", LogLevel::Error);
         log(req.Body, LogLevel::Error);
-        return "";
+        return;
     }
 
     Json::Value res = Json::Parse(req.String());

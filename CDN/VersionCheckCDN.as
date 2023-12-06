@@ -75,7 +75,7 @@ void DownloadLatestData(const string &in latestVersion) {
 
     while (!req.Finished()) yield();
 
-    if (req != null) {
+    if (req.ResponseCode() == 200) {
         auto data = req.String();
         log("Fetching new data successful: \n" + "[data]", LogLevel::Info, 78);
         StoreDatafile(data, latestVersion);
