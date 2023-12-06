@@ -5,18 +5,13 @@ string globalMapUrl = "";
 bool isWaitingForUrl = false;
 
 void SetFirstUid() {
-    log("Plugin storage data path: \n" + pluginStorageDataPath, LogLevel::Info, 12);
     array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
 
     string map_uid = GetRandomUID(uids);
-    log("map_uid: " + map_uid, LogLevel::Info, 12);
-
 
     startnew(GetMapUrl, map_uid);
 
     globalMapUrl = tm_map_endpoint + map_uid;
-
-    log("First uid globalMapUrl: " + globalMapUrl, LogLevel::Info, 15);
 }
 
 void GetMapUrl(const string &in map_uid) {
@@ -26,8 +21,6 @@ void GetMapUrl(const string &in map_uid) {
     }
     Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
     
-    log("Req: \n" + tm_map_endpoint + map_uid, LogLevel::Info, 25);
-
     req.Start();
     while (!req.Finished()) yield();
 
