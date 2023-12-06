@@ -19,6 +19,7 @@ void FileCheck() {
 void MoveFileToPluginStorage(const string &in originalPath, const string &in storagePath) {
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
+    print("aaaaaaaaaaaaaaaaaaaaaaaa" + fileContents);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
