@@ -52,7 +52,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 }
 
 string GetCurrentInstalledVersion() {
-    IO::FileSource file(IO::FromStorageFolder("currentInstalledVersion.json"));
+    IO::File file(pluginStorageVersionPath);
 
     string fileContents = file.ReadToEnd();
     Json::Value currentVersionJson = Json::Parse(fileContents);
