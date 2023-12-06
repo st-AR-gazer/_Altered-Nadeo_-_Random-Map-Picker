@@ -10,18 +10,19 @@ enum LogLevel {
 
 bool doDevLogging = true;
 
-void log(const string &in msg, LogLevel level = LogLevel::Info) {
+void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
+    string lineInfo = line >= 0 ? " Line: " + line : "";
     if (doDevLogging) {
         switch(level) {
             case LogLevel::Info: 
-                print("\\$0ff[INFO] \\$fff" + msg); 
+                print(lineInfo + "\\$0ff[INFO]" + " \\$fff" + msg); 
                 break;
             case LogLevel::Warn: 
-                print("\\$ff0[WARN] \\$fff" + msg); 
+                print(lineInfo + "\\$ff0[WARN]" + " \\$fff" + msg); 
                 break;
             case LogLevel::Error: 
-                print("\\$f00[ERROR] \\$fff" + msg); 
+                print(lineInfo + "\\$f00[ERROR]" + " \\$fff" + msg); 
                 break;
         }
     }
-} 
+}
