@@ -9,7 +9,7 @@ void SetFirstUid() {
     log(uids, LogLevel::Info, 9);
 
     string map_uid = GetRandomUID(uids);
-    log("UIDs: \n" + map_uid, LogLevel::Info, 12);
+    log("map_uid: \n" + map_uid, LogLevel::Info, 12);
 
 
     startnew(GetMapUrl, map_uid);
