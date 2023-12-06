@@ -12,7 +12,7 @@ void SetFirstUid() {
 
     globalMapUrl = tm_map_endpoint + map_uid;
 
-    log("First uid globalMapUrl: " globalMapUrl, LogLevel::Info, 15);
+    log("First uid globalMapUrl: " + globalMapUrl, LogLevel::Info, 15);
 }
 
 void GetMapUrl(const string &in map_uid) {
@@ -34,7 +34,7 @@ void GetMapUrl(const string &in map_uid) {
         return;
     }
 
-    Json::Value res = Json::Parse(req.String());
+    Json::Value res = Json::Parse(req);
     globalMapUrl = res["downloadUrl"];
     isWaitingForUrl = false;
 }
