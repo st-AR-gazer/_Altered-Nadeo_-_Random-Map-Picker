@@ -34,7 +34,7 @@ void GetMapUrl(const string &in map_uid) {
         return;
     }
 
-    Json::Value res = Json::Parse(req);
+    Json::Value res = Json::Parse(req.String());
     globalMapUrl = res["downloadUrl"];
     isWaitingForUrl = false;
 }
