@@ -2,6 +2,10 @@ void NotifyWarn(const string &in msg) {
     UI::ShowNotification("Edition not supported", msg, vec4(1, .5, .1, .5), 10000);
 }
 
+void NotifyInfo(const string &in msg) {
+    UI::ShowNotification(msg, vec4(.3, 1, .1, .5), 10000);
+}
+
 enum LogLevel {
     Info,
     InfoG,
@@ -10,7 +14,7 @@ enum LogLevel {
 };
 
 [Setting category="General" name="Show debug logs"]
-bool doDevLogging = false;
+bool doDevLogging = true;
 
 void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
     string lineInfo = line >= 0 ? "" + line : " ";

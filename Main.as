@@ -65,6 +65,8 @@ void PlayMapCoroutine(const string &in map_url) {
 
     while (!app.ManiaTitleControlScriptAPI.IsReady) yield();
 
+    NotifyInfo("Started playing map");
+
     app.ManiaTitleControlScriptAPI.PlayMap(map_url, "", "");
 
 }
