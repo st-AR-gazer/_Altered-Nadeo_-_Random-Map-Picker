@@ -101,10 +101,13 @@ string[] ReadUIDsFromFile(const string&in filePath) {
     file.Open(pluginStorageDataPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
-    log("file content \n" + fileContents, LogLevel::Info, 106);
 
     while (!file.EOF()) {
         string line = file.ReadLine();
+        
+        log("Line \n" + line, LogLevel::Info, 108);
+        log("Line \n" + line.Length, LogLevel::Info, 108);
+        
         if (line.Length > 0) {
             uids.InsertLast(line);
         }
