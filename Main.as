@@ -32,6 +32,7 @@ void GetMapUrl(const string &in map_uid) {
     }
 
     Json::Value res = Json::Parse(req.String());
+    log(res, LogLevel::Info, 35);
     globalMapUrl = res["downloadUrl"];
     isWaitingForUrl = false;
 }
