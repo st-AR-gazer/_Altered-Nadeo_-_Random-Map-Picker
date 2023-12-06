@@ -19,7 +19,7 @@ void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
                 print("\\$0ff[INFO]" + " \\$fff" + "\\$0cc"+lineInfo+" \\$fff" + msg); 
                 break;
             case LogLevel::InfoG: 
-                print("\\$0f0[INFO-G]" + " \\$fff" + "\\$0cc"+lineInfo+" \\$fff" + msg); 
+                print("\\$0f0[INFO-G]" + " \\$fff" + "\\$0c0"+lineInfo+" \\$fff" + msg); 
                 break;
             case LogLevel::Warn: 
                 print("\\$ff0[WARN]" + " \\$fff" + "\\$cc0"+lineInfo+" \\$fff" + msg); 
