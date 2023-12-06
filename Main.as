@@ -90,10 +90,13 @@ string GetRandomUID(const array<string> &in uids) {
 string[] ReadUIDsFromFile(const string&in filePath) {
     array<string> uids;
 
-    IO::FileSource fileSource(filePath);
+    IO::File file();
+    file.Open(pluginStorageVersionPath, IO::FileMode::Write);
+    string fileContents = file.ReadToEnd();
+    file.Close();
 
-    while (!fileSource.EOF()) {
-        string line = fileSource.ReadLine();
+    while (!file.EOF()) {
+        string line = file.ReadLine();
         if (line.Length > 0) {
             uids.InsertLast(line);
         }
