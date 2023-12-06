@@ -7,7 +7,7 @@ bool isWaitingForUrl = false;
 void SetFirstUid() {
     log("Plugin storage data path: \n" + pluginStorageDataPath, LogLevel::Info, 12);
     array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
-    log("uids length (if == 0 returns ''): \n" + uids, LogLevel::Info, 12);
+    log("uids length (if == 0 returns ''): \n" + uids.Length(), LogLevel::Info, 12);
 
     string map_uid = GetRandomUID(uids);
     log("map_uid: \n" + map_uid, LogLevel::Info, 12);
