@@ -1,9 +1,9 @@
 void NotifyWarn(const string &in msg) {
-    UI::ShowNotification("Edition not supported", msg, vec4(1, .5, .1, .5), 10000);
+    UI::ShowNotification("Warning message", msg, vec4(1, .5, .1, .5), 10000);
 }
 
 void NotifyInfo(const string &in msg) {
-    UI::ShowNotification(msg, vec4(.3, 1, .1, .5), 10000);
+    UI::ShowNotification("Info message", msg, vec4(.3, 1, .1, .5), 10000);
 }
 
 enum LogLevel {
