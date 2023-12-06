@@ -96,12 +96,14 @@ string GetRandomUID(const array<string> &in uids) {
 
 string[] ReadUIDsFromFile(const string&in filePath) {
     array<string> uids;
-    log("uids length (if == 0 returns ''): \n" + uids.Length(), LogLevel::Info, 12);
-    
+    //log("uids length (if == 0 returns ''): \n" + uids.Length(), LogLevel::Info, 12);
+    // gets an error ^^^
+
     IO::File file();
     file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
+    log("file content \n" + fileContents, LogLevel::Info, 12);
 
     while (!file.EOF()) {
         string line = file.ReadLine();
