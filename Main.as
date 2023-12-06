@@ -101,7 +101,7 @@ string[] ReadUIDsFromFile(const string&in filePath) {
 
     while (!file.EOF()) {
         string line = file.ReadLine();
-        if (line.Length() > 0) {
+        if (line.Length > 0) {
             uids.InsertLast(line);
         }
     }
