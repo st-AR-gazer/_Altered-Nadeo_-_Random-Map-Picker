@@ -7,7 +7,7 @@ bool isWaitingForUrl = false;
 void SetFirstUid() {
     array<string> uids = ReadUIDsFromFile(IO::FromStorageFolder("data.csv"));
     //print(array<string> uids);
-    log(ReadUIDsFromFile(IO::FromStorageFolder("data.csv"), LogLevel::Info, 9);
+    log(ReadUIDsFromFile(IO::FromStorageFolder("data.csv"), LogLevel::Info, 9));
 
     string map_uid = GetRandomUID(uids);
     log("map_uid: \n" + map_uid, LogLevel::Info, 12);
