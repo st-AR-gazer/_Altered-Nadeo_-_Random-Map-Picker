@@ -79,14 +79,7 @@ void DownloadLatestData(const string &in latestVersion) {
         auto data = req.String();
 
         auto tempData;
-
-        if (req.String() is null) {
-            tempData = "[DATA] - But with requests";
-        } else {
-            tempData = "[DATA] - But with nothing to show";
-        }
-
-        log("Fetching new data successful: \n" + tempData, LogLevel::Info, 78);
+        log("Fetching new data successful: " + "[DATA] - Just imagine that there is some uids here", LogLevel::Info, 78);
         StoreDatafile(data, latestVersion);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error, 81);
