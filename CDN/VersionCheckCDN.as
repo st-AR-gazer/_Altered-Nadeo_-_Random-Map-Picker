@@ -78,7 +78,6 @@ void DownloadLatestData(const string &in latestVersion) {
     if (req.ResponseCode() == 200) {
         auto data = req.String();
 
-        auto tempData;
         log("Fetching new data successful: " + "[DATA] - Just imagine that there is some uids here", LogLevel::Info, 78);
         StoreDatafile(data, latestVersion);
     } else {
