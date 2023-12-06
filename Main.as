@@ -96,7 +96,7 @@ string GetRandomUID(const array<string> &in uids) {
 
 string[] ReadUIDsFromFile(const string&in filePath) {
     array<string> uids;
-    auto file = pluginStorageDataPath;
+    auto filePath = pluginStorageDataPath;
 
     IO::File file(filePath, IO::FileMode::Read);
     while (!file.EOF()) {
