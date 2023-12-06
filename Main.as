@@ -12,7 +12,7 @@ void SetFirstUid() {
 
     globalMapUrl = tm_map_endpoint + map_uid;
 
-    print(globalMapUrl);
+    log("First uid globalMapUrl: " globalMapUrl, LogLevel::Info, 15);
 }
 
 void GetMapUrl(const string &in map_uid) {
@@ -21,6 +21,9 @@ void GetMapUrl(const string &in map_uid) {
         yield();
     }
     Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
+    
+    log("Req: \n" req.String(), LogLevel::Info, 25);
+
     req.Start();
     while (!req.Finished()) yield();
 
