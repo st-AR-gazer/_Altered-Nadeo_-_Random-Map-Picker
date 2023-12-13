@@ -24,15 +24,15 @@ void GetLatestFileInfo() {
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, 29);
+        log("Failed to parse JSON.", LogLevel::Error, 27);
         return;
     }
 
     string latestVersion = manifest["latestVersion"];
     
-    log("Updating the URL, the local URL is: " + url, LogLevel::Info, 35);
+    log("Updating the URL, the local URL is: " + url, LogLevel::Info, 33);
     string newUrl = manifest["url"];
-    log("The URL has been updated, the new URL is: " + newUrl, LogLevel::Info, 37);
+    log("The URL has been updated, the new URL is: " + newUrl, LogLevel::Info, 35);
 
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
@@ -41,7 +41,7 @@ void ParseManifest(const string &in reqBody) {
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
     
-    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 45);
+    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 44);
 
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 47);
@@ -78,10 +78,10 @@ void DownloadLatestData(const string &in latestVersion) {
     if (req.ResponseCode() == 200) {
         auto data = req.String();
 
-        log("Fetching new data successful: " + "[DATA] - Just imagine that there are some uids here", LogLevel::Info, 78);
+        log("Fetching new data successful: " + "[DATA] - Just imagine that there are some uids here", LogLevel::Info, 81);
         StoreDatafile(data, latestVersion);
     } else {
-        log("Error fetching datafile: " + req.String(), LogLevel::Error, 81);
+        log("Error fetching datafile: " + req.String(), LogLevel::Error, 84);
     }
 }
 
@@ -100,8 +100,8 @@ void UpdateVersionFile(const string &in latestVersion) {
     if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = latestVersion;
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 102);
+        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 103);
     } else {
-        log("JSON file does not have the expected structure.\n" + " Json type is: \n" + json.GetType(), LogLevel::Error, 104);
+        log("JSON file does not have the expected structure.\n" + " Json type is: \n" + json.GetType(), LogLevel::Error, 105);
     }
 }

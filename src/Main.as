@@ -25,9 +25,9 @@ void GetMapUrl(const string &in map_uid) {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error);
-        log("Response body:", LogLevel::Error);
-        log(req.Body, LogLevel::Error);
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 28);
+        log("Response body:", LogLevel::Error, 29);
+        log(req.Body, LogLevel::Error, 30);
         return;
     }
 
@@ -38,7 +38,7 @@ void GetMapUrl(const string &in map_uid) {
 
 void PlayMap(const string &in map_uid) {
     if (!Permissions::PlayLocalMap()) {
-        log("Lacking permissions to play local map", LogLevel::Warn);
+        log("Lacking permissions to play local map", LogLevel::Warn, 41);
         return;
     }
 
@@ -50,7 +50,7 @@ void PlayMap(const string &in map_uid) {
     startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error);
+        log("Failed to get map URL", LogLevel::Error, 53);
         return;
     }
 
@@ -75,11 +75,11 @@ void LoadNewMap() {
     array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
     string randomUID = GetRandomUID(uids);
     if (randomUID != "") {
-        log("UID found in file", LogLevel::Info);
+        log("UID found in file", LogLevel::Info, 78);
         const string map_uid = randomUID;
         PlayMap(map_uid);
     } else {
-        log("No UIDs found in file", LogLevel::Error);
+        log("No UIDs found in file", LogLevel::Error, 82);
     }
 }
 
