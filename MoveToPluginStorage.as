@@ -3,7 +3,7 @@ string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion
 string checkFilePath = IO::FromStorageFolder("initCheck.txt");
 
 void FileCheck() {
-    if (!IO::FileExists(checkFilePath)) {
+    if (!IO::FileExists(checkFilePath) or !IO::FileExists(pluginStorageDataPath)) {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 7);
         MoveFileToPluginStorage("data/data.csv", pluginStorageDataPath);
         MoveFileToPluginStorage("data/currentInstalledVersion.json", pluginStorageVersionPath);
