@@ -1,4 +1,4 @@
-# Random Alt Map Picker
+# Altered Nadeo - Random Map Picker
 
 ## Overview
 This plugin for TrackMania allows users to load and play custom maps from a specified URL. It utilizes TrackMania's Nadeo live services API to fetch map URLs based on their UIDs.
@@ -24,16 +24,13 @@ This plugin for TrackMania allows users to load and play custom maps from a spec
 2. **Running the Plugin**: Access the plugin through the game's 'plugins' menu. Use the "Load New Altered Map" option to load a new map.
 
 ## File Structure
+- `info.toml`: Includes metadata about the plugin such as name ("Altered Nadeo - Alt Map Picker"), author, category, version (0.1.0), and dependencies.
+- `MoveToPluginStorage.as`: Manages file operations related to plugin storage, including data and version files.
+- `Render.as`: Contains code for rendering elements and handling game edition compatibility checks.
+- `Main.as`: Core functionality of the plugin, including fetching map URLs and managing global variables.
+- `VersionCheckCDN.as`: Manages version checking from a CDN, with URLs for fetching the latest version information.
+- `LogInfo.as`: Implements custom logging and notification functions, including various log levels.
 - `data.csv`: Contains the UIDs of the maps.
-- Main plugin files with the core logic.
-
-## Important Functions
-
-## Contributions
-- Contributions to the plugin are welcome. Please follow the existing coding standards and submit pull requests for any enhancements or bug fixes.
 
 ## License
 - The [Unlicense](https://unlicense.org/)
-
-## Disclaimer
-This plugin is not officially affiliated with TrackMania or Nadeo. It is a community-driven project! :)
