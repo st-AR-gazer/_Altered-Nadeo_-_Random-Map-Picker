@@ -6,4 +6,4 @@ version = "0.1.1"
 
 [script]
 dependencies = [ "NadeoServices" ]
-exports = ["src/Export.as"]
+exports = ["src/exports/Export.as"]
