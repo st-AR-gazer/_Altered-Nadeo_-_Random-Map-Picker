@@ -3,7 +3,6 @@ string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInst
 
 string latestVersion;
 
-
 void GetLatestFileInfo() {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
@@ -37,7 +36,6 @@ void ParseManifest(const string &in reqBody) {
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
 
-
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
     
@@ -46,6 +44,8 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 47);
         DownloadLatestData(latestVersion);
+        log("Downloading seasonal data.", LogLevel::Info, 49);
+        DownloadSeasonalData(latestVersion);
     } else {
         log("Current version is up-to-date.", LogLevel::Info, 50);
     }
