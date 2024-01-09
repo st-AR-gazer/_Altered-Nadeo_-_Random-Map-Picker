@@ -1,9 +1,5 @@
 string seasonalFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/By-Season/";
 
-string []
-
-string seasonalFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/By-Season/";
-
 string[] seasonalFiles = {
     "spring2020.json",
     "summer2020.json",
@@ -37,8 +33,13 @@ string[] seasonalFiles = {
 void DownloadSeasonalDataLoop() {
     for (int i = 0; i < seasonalFiles.length(); i++) {
         string url = seasonalFilePath + seasonalFiles[i];
+        if seasonalFiles[i] == null or seasonalFiles[i].Length == 0 {
+            log("Null has been reached, assuming end of altered seasonal maps" + url, LogLevel::Info, 73)
+            break;
+        }
         log("Downloading seasonal data from: " + url, LogLevel::Info, 73);
         DownloadSeasonalData(url);
+        sleep(5000);
     }
 }
 
