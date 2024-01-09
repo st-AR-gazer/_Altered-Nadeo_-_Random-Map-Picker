@@ -55,7 +55,7 @@ void DownloadSeasonalData(const string& in url) {
     if (req.ResponseCode() == 200) {
         auto data = req.String();
 
-        log("Fetching new data successful: " + "[DATA] - Just imagine that there are some uids here", LogLevel::Info, 81);
+        log("Fetching new data successful: " + "$f0f[DATA]", LogLevel::Info, 81);
         StoreDatafile(data);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error, 84);
