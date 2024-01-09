@@ -1,8 +1,9 @@
 [meta]
-name = "Alt map picker"
+name = "Altered Nadeo - Alt Map Picker"
 author = "ar....."
 category = "Altered Nadeo"
-version = "0.1.0"
+version = "0.1.1"
 
 [script]
 dependencies = [ "NadeoServices" ]
+exports = ["src/exports/Export.as"]

@@ -5,9 +5,7 @@ string globalMapUrl = "";
 bool isWaitingForUrl = false;
 
 void SetFirstUid() {
-    array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
-
-    string map_uid = GetRandomUID(uids);
+    string map_uid = GetRandomUID();
 
     startnew(GetMapUrl, map_uid);
 
@@ -72,8 +70,7 @@ void PlayMapCoroutine(const string &in map_url) {
 }
 
 void LoadNewMap() {
-    array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
-    string randomUID = GetRandomUID(uids);
+    string randomUID = GetRandomUID();
     if (randomUID != "") {
         log("UID found in file", LogLevel::Info, 78);
         const string map_uid = randomUID;
@@ -83,7 +80,9 @@ void LoadNewMap() {
     }
 }
 
-string GetRandomUID(const array<string> &in uids) {
+string GetRandomUID() {
+    const array<string> uids = ReadUIDsFromFile(pluginStorageDataPath);
+
     if (uids.Length == 0) return "";
     int randomIndex = Math::Rand(0, uids.Length - 1);
     return uids[randomIndex];
