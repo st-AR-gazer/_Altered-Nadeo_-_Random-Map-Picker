@@ -31,9 +31,9 @@ string[] seasonalFiles = {
 };
 
 void DownloadSeasonalDataLoop() {
-    for (int i = 0; i < seasonalFiles.length(); i++) {
+    for (int i = 0; i < seasonalFiles.Length(); i++) {
         string url = seasonalFilePath + seasonalFiles[i];
-        if seasonalFiles[i] == null or seasonalFiles[i].Length == 0 {
+        if seasonalFiles[i] == null or seasonalFiles[i].Length() == 0 {
             log("Null has been reached, assuming end of altered seasonal maps" + url, LogLevel::Info, 73)
             break;
         }
@@ -55,7 +55,7 @@ void DownloadSeasonalData(const string& in url) {
     if (req.ResponseCode() == 200) {
         auto data = req.String();
 
-        log("Fetching new data successful: " + "$f0f[DATA]", LogLevel::Info, 81);
+        log("Fetching new data successful: " + "$f0f" if(data.Length) print("[DATA]");, LogLevel::Info, 81);
         StoreDatafile(data);
     } else {
         log("Error fetching datafile: " + req.String(), LogLevel::Error, 84);
