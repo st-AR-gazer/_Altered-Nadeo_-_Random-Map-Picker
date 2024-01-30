@@ -7,5 +7,5 @@ void Main() {
     GetLatestFileInfo();
     log("CDN check completed, setting first UID", LogLevel::InfoG, 8);
     SetFirstUid();
-    log("First UID set, plugin is now available, and can be propperly used", LogLevel::InfoG, 10);
+    log("First UID set, plugin is now available, and can be propperly used, oly basic functionality can be set", LogLevel::InfoG, 10);
 }
