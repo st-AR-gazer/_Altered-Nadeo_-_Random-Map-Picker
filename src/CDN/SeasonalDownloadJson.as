@@ -34,7 +34,7 @@ void DownloadSeasonalDataLoop() {
     for (int i = 0; i < seasonalFiles.Length(); i++) {
         string url = seasonalFilePath + seasonalFiles[i];
         if seasonalFiles[i] == null or seasonalFiles[i].Length() == 0 {
-            log("Null has been reached, assuming end of altered seasonal maps" + url, LogLevel::Info, 73)
+            log("Null has been reached, assuming end of altered seasonal maps" + url, LogLevel::Info, 73);
             break;
         }
         log("Downloading seasonal data from: " + url, LogLevel::Info, 73);
