@@ -1,4 +1,5 @@
 void Main() {
+    PopulateSeasonalFilesArray();
     CheckRequiredPermissions();
     log("Permission check completed", LogLevel::InfoG, 3);
     FileCheck();

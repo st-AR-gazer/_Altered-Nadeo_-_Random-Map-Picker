@@ -1,49 +1,47 @@
 string seasonalFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/By-Season/";
 
-string[] seasonalFiles = {
-    "spring2020.json",
-    "summer2020.json",
-    "fall2020.json",
-    "winter2021.json",
-    "spring2021.json",
-    "summer2021.json",
-    "fall2021.json",
-    "winter2022.json",
-    "spring2022.json",
-    "summer2022.json",
-    "fall2022.json",
-    "winter2023.json",
-    "spring2023.json",
-    "summer2023.json",
-    "fall2023.json",
-    "winter2024.json",
-    "spring2024.json",
-    "summer2024.json",
-    "fall2024.json",
-    "winter2025.json",
-    "spring2025.json",
-    "summer2025.json",
-    "fall2025.json",
-    "winter2026.json",
-    "spring2026.json",
-    "summer2026.json",
-    "fall2026.json"
-};
+array<string> seasonalFiles;
+
+void PopulateSeasonalFilesArray() {
+    seasonalFiles.InsertLast("spring2020.json");
+    seasonalFiles.InsertLast("summer2020.json");
+    seasonalFiles.InsertLast("fall2020.json");
+    seasonalFiles.InsertLast("winter2021.json");
+    seasonalFiles.InsertLast("spring2021.json");
+    seasonalFiles.InsertLast("summer2021.json");
+    seasonalFiles.InsertLast("fall2021.json");
+    seasonalFiles.InsertLast("winter2022.json");
+    seasonalFiles.InsertLast("spring2022.json");
+    seasonalFiles.InsertLast("summer2022.json");
+    seasonalFiles.InsertLast("fall2022.json");
+    seasonalFiles.InsertLast("winter2023.json");
+    seasonalFiles.InsertLast("spring2023.json");
+    seasonalFiles.InsertLast("summer2023.json");
+    seasonalFiles.InsertLast("fall2023.json");
+    seasonalFiles.InsertLast("winter2024.json");
+    seasonalFiles.InsertLast("spring2024.json");
+    seasonalFiles.InsertLast("summer2024.json");
+    seasonalFiles.InsertLast("fall2024.json");
+    seasonalFiles.InsertLast("winter2025.json");
+    seasonalFiles.InsertLast("spring2025.json");
+    seasonalFiles.InsertLast("summer2025.json");
+    seasonalFiles.InsertLast("fall2025.json");
+    seasonalFiles.InsertLast("winter2026.json");
+    seasonalFiles.InsertLast("spring2026.json");
+    seasonalFiles.InsertLast("summer2026.json");
+    seasonalFiles.InsertLast("fall2026.json");
+}
 
 void DownloadSeasonalDataLoop() {
-    for (int i = 0; i < seasonalFiles.Length(); i++) {
+    for (uint i = 0; i < seasonalFiles.Length; i++) {
         string url = seasonalFilePath + seasonalFiles[i];
-        if seasonalFiles[i] == null or seasonalFiles[i].Length() == 0 {
-            log("Null has been reached, assuming end of altered seasonal maps" + url, LogLevel::Info, 73);
-            break;
-        }
         log("Downloading seasonal data from: " + url, LogLevel::Info, 73);
-        DownloadSeasonalData(url);
+        DownloadSeasonalData(url, seasonalFiles[i]);
         sleep(5000);
     }
 }
 
-void DownloadSeasonalData(const string& in url) {
+void DownloadSeasonalData(const string &in url, const string &in fileName) {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = url;
@@ -54,31 +52,35 @@ void DownloadSeasonalData(const string& in url) {
 
     if (req.ResponseCode() == 200) {
         auto data = req.String();
-
-        log("Fetching new data successful: " + "$f0f" if(data.Length) print("[DATA]");, LogLevel::Info, 81);
-        StoreDatafile(data);
+        log("Fetching new data successful: " + url, LogLevel::Info, 81);
+        StoreDatafile(data, fileName);
     } else {
-        log("Error fetching datafile: " + req.String(), LogLevel::Error, 84);
+        log("Error fetching datafile from: " + url, LogLevel::Error, 84);
     }
 }
 
-void StoreDatafile(const string& in data) {
+
+void StoreDatafile(const string &in data, const string &in fileName) {
+    string filePath = IO::FromStorageFolder("SeasonalSorting/" + fileName);
+
     IO::File file;
-    file.Open(pluginStorageDataPath, IO::FileMode::Write);
+    file.Open(filePath, IO::FileMode::Write);
     file.Write(data);
     file.Close();
-
-    UpdateVersionFile();
+    
+    log("Attempted to store datafile: " + filePath, LogLevel::Info, 100);
 }
 
+
+
 void UpdateVersionFile() {
-    Json::Value json = Json::FromFile(pluginStorageVersionPath); 
+    Json::Value json = Json::FromFile(pluginStorageVersionPath);
     
     if (json.GetType() == Json::Type::Object) {
-        json["latestVersion"] = seasonalFiles[seasonalFiles.length() - 1];
+        json["latestVersion"] = seasonalFiles[seasonalFiles.get_Length() - 1];
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + seasonalFiles[seasonalFiles.length() - 1], LogLevel::Info, 103);
+        log("Updated to the most recent version: " + seasonalFiles[seasonalFiles.get_Length() - 1], LogLevel::Info, 103);
     } else {
-        log("JSON file does not have the expected structure.\n" + " Json type is: \n" + json.GetType(), LogLevel::Error, 105);
+        log("JSON file does not have the expected structure.", LogLevel::Error, 105);
     }
 }
