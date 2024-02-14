@@ -3,6 +3,9 @@ string seasonalFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-Sy
 array<string> seasonalFiles;
 
 void PopulateSeasonalFilesArray() {
+    seasonalFiles.InsertLast("AllOfficialCompetitions.json");
+    seasonalFiles.InsertLast("AllSnowDiscovery.json");
+    seasonalFiles.InsertLast("AllTOTD.json");
     seasonalFiles.InsertLast("spring2020.json");
     seasonalFiles.InsertLast("summer2020.json");
     seasonalFiles.InsertLast("fall2020.json");
