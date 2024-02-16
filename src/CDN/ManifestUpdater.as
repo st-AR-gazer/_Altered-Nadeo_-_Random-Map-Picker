@@ -10,9 +10,9 @@ void FetchAndUpdateManifest() {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() == 200) {
-        log("Fetching manifest successful: \n" + req.String(), LogLevel::Info, 16);
+        log("Fetching manifest successful: \n" + req.String(), LogLevel::Info, 13);
         ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 19);
+        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 16);
     }
 }

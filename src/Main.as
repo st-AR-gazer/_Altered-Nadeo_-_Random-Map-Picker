@@ -15,16 +15,16 @@ void Main() {
     sleep(1000);
     FetchAndUpdateManifest();
     GetLatestFileInfo();
-    log("CDN check completed for old file", LogLevel::InfoG, 15);
+    log("CDN check completed for old file", LogLevel::InfoG, 18);
     DownloadNewFiles();
-    log("CDN check completed for new files", LogLevel::InfoG, 16);
-    log("setting first UID", LogLevel::Info, 17);
+    log("CDN check completed for new files", LogLevel::InfoG, 20);
+    log("setting first UID", LogLevel::Info, 21);
 
     PopulateSeasonalFilesArray();
-    log("Seasonal files array populated", LogLevel::InfoG, 18);
+    log("Seasonal files array populated", LogLevel::InfoG, 24);
     PopulateAlterationsFilesArray();
-    log("Alterations files array populated", LogLevel::InfoG, 20);
+    log("Alterations files array populated", LogLevel::InfoG, 26);
 
     SetFirstUid();
-    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 23);
+    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 29);
 }
