@@ -1,3 +1,4 @@
+namespace Legacy {
 
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
 
@@ -23,9 +24,9 @@ void GetMapUrl(const string &in map_uid) {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 26);
-        log("Response body:", LogLevel::Error, 27);
-        log(req.Body, LogLevel::Error, 28);
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 27);
+        log("Response body:", LogLevel::Error, 28);
+        log(req.Body, LogLevel::Error, 29);
         return;
     }
 
@@ -36,7 +37,7 @@ void GetMapUrl(const string &in map_uid) {
 
 void PlayMap(const string &in map_uid) {
     if (!Permissions::PlayLocalMap()) {
-        log("Lacking permissions to play local map", LogLevel::Warn, 39);
+        log("Lacking permissions to play local map", LogLevel::Warn, 40);
         return;
     }
 
@@ -48,7 +49,7 @@ void PlayMap(const string &in map_uid) {
     startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error, 51);
+        log("Failed to get map URL", LogLevel::Error, 52);
         return;
     }
 
@@ -71,11 +72,11 @@ void PlayMapCoroutine(const string &in map_url) {
 void LoadNewMap() {
     string randomUID = GetRandomUID();
     if (randomUID != "") {
-        log("UID found in file", LogLevel::Info, 74);
+        log("UID found in file", LogLevel::Info, 75);
         const string map_uid = randomUID;
         PlayMap(map_uid);
     } else {
-        log("No UIDs found in file", LogLevel::Error, 78);
+        log("No UIDs found in file", LogLevel::Error, 79);
     }
 }
 
@@ -102,3 +103,5 @@ string[] ReadUIDsFromFile(const string&in filePath) {
 
     return uids;
 }
+
+} // End of Legacy namespace
