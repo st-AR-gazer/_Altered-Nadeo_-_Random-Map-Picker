@@ -38,7 +38,7 @@ void PopulateSeasonalFilesArray() {
 void DownloadSeasonalDataLoop() {
     for (uint i = 0; i < seasonalFiles.Length; i++) {
         string url = seasonalFilePath + seasonalFiles[i];
-        log("Downloading seasonal data from: " + url, LogLevel::Info, 73);
+        log("Downloading seasonal data from: " + url, LogLevel::Info, 41);
         DownloadSeasonalData(url, seasonalFiles[i]);
         sleep(5000);
     }
@@ -55,10 +55,10 @@ void DownloadSeasonalData(const string &in url, const string &in fileName) {
 
     if (req.ResponseCode() == 200) {
         auto data = req.String();
-        log("Fetching new data successful: " + url, LogLevel::Info, 81);
+        log("Fetching new data successful: " + url, LogLevel::Info, 58);
         StoreDatafile(data, fileName);
     } else {
-        log("Error fetching datafile from: " + url, LogLevel::Error, 84);
+        log("Error fetching datafile from: " + url, LogLevel::Error, 61);
     }
 }
 
@@ -71,7 +71,7 @@ void StoreDatafile(const string &in data, const string &in fileName) {
     file.Write(data);
     file.Close();
     
-    log("Attempted to store datafile: " + filePath, LogLevel::Info, 100);
+    log("Attempted to store datafile: " + filePath, LogLevel::Info, 74);
 }
 
 
@@ -82,8 +82,8 @@ void UpdateVersionFile() {
     if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = seasonalFiles[seasonalFiles.get_Length() - 1];
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + seasonalFiles[seasonalFiles.get_Length() - 1], LogLevel::Info, 103);
+        log("Updated to the most recent version: " + seasonalFiles[seasonalFiles.get_Length() - 1], LogLevel::Info, 85);
     } else {
-        log("JSON file does not have the expected structure.", LogLevel::Error, 105);
+        log("JSON file does not have the expected structure.", LogLevel::Error, 87);
     }
 }
