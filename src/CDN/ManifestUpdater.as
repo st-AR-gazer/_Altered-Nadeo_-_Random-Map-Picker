@@ -1,4 +1,3 @@
-// ManifestUpdater.as
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
 
 void FetchAndUpdateManifest() {
