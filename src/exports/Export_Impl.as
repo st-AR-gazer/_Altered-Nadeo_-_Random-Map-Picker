@@ -1,4 +1,4 @@
 // string GetARandomAltMapUid() {
-//     string uid = GetRandomUID();
+//     string uid = Legacy::GetRandomUID();
 //     return uid;
 // }
