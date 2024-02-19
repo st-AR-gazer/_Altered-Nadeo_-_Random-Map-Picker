@@ -16,7 +16,7 @@ void Main() {
     FetchAndUpdateManifest();
     Legacy::GetLatestFileInfo();
     log("CDN check completed for old file", LogLevel::InfoG, 18);
-    DownloadNewFiles();
+    if (shouldDownloadNewFiles) DownloadNewFiles();
     log("CDN check completed for new files", LogLevel::InfoG, 20);
     log("setting first UID", LogLevel::Info, 21);
 

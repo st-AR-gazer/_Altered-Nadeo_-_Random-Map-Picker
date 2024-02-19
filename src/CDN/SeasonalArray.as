@@ -1,0 +1,32 @@
+void PopulateSeasonalFilesArray() {
+    seasonalFiles.InsertLast("AllOfficialCompetitions.json");
+    seasonalFiles.InsertLast("AllSnowDiscovery.json");
+    seasonalFiles.InsertLast("AllTOTD.json");
+    seasonalFiles.InsertLast("spring2020.json");
+    seasonalFiles.InsertLast("summer2020.json");
+    seasonalFiles.InsertLast("fall2020.json");
+    seasonalFiles.InsertLast("winter2021.json");
+    seasonalFiles.InsertLast("spring2021.json");
+    seasonalFiles.InsertLast("summer2021.json");
+    seasonalFiles.InsertLast("fall2021.json");
+    seasonalFiles.InsertLast("winter2022.json");
+    seasonalFiles.InsertLast("spring2022.json");
+    seasonalFiles.InsertLast("summer2022.json");
+    seasonalFiles.InsertLast("fall2022.json");
+    seasonalFiles.InsertLast("winter2023.json");
+    seasonalFiles.InsertLast("spring2023.json");
+    seasonalFiles.InsertLast("summer2023.json");
+    seasonalFiles.InsertLast("fall2023.json");
+    seasonalFiles.InsertLast("winter2024.json");
+    seasonalFiles.InsertLast("spring2024.json");
+    seasonalFiles.InsertLast("summer2024.json");
+    seasonalFiles.InsertLast("fall2024.json");
+    seasonalFiles.InsertLast("winter2025.json");
+    seasonalFiles.InsertLast("spring2025.json");
+    seasonalFiles.InsertLast("summer2025.json");
+    seasonalFiles.InsertLast("fall2025.json");
+    seasonalFiles.InsertLast("winter2026.json");
+    seasonalFiles.InsertLast("spring2026.json");
+    seasonalFiles.InsertLast("summer2026.json");
+    seasonalFiles.InsertLast("fall2026.json");
+}
