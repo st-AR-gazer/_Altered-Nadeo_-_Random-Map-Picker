@@ -1,3 +1,6 @@
+[Setting category="General" name="Download new files" description="If enabled, the plugin will download new files from CDN"];
+bool shouldDownloadNewFiles = true;
+
 void Main() {
     log("Main func has started", LogLevel::Info, 2);
     
@@ -15,7 +18,7 @@ void Main() {
     sleep(1000);
     FetchAndUpdateManifest();
     Legacy::GetLatestFileInfo();
-    log("CDN check completed for old file", LogLevel::InfoG, 18);
+    log("CDN check completed for old file", LogLevel::InfoG, 18);    
     if (shouldDownloadNewFiles) DownloadNewFiles();
     log("CDN check completed for new files", LogLevel::InfoG, 20);
     log("setting first UID", LogLevel::Info, 21);
