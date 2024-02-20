@@ -1,4 +1,4 @@
-string GetARandomAltMapUid() {
-    string uid = GetRandomUID();
-    return uid;
-}
+// string GetARandomAltMapUid() {
+//     string uid = GetRandomUID();
+//     return uid;
+// }

@@ -4,12 +4,12 @@ string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting
 // By-Alteration
 // By-Season
 
-void DownlaodFiles() {
+void DownloadFiles() {
     DownloadDataLoop(NewSortingSystemUrl + "By-Data/", dataFiles);
     // Should maybe set first UID here if the bug from the last code still persists
     log("Downloaded all data files", LogLevel::Info, 33);
-    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonFiles);
-    log("Downloaded all season files", LogLevel::Info, 35)
+    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles);
+    log("Downloaded all season files", LogLevel::Info, 35);
     DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles);
     log("Downloaded all alteration files", LogLevel::Info, 37);
 }
@@ -52,8 +52,6 @@ void StoreDatafile(const string &in data, const string &in fileName) {
     
     log("Attempted to store datafile: " + filePath, LogLevel::Info, 74);
 }
-
-
 
 void UpdateVersionFile() {
     Json::Value json = Json::FromFile(pluginStorageVersionPath);
