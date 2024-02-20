@@ -53,16 +53,19 @@ void StoreDatafile(const string &in data, const string &in fileName) {
     log("Attempted to store datafile: " + filePath, LogLevel::Info, 74);
 }
 
-void UpdateVersionFile() {
+void UpdateVersionFile(array<string>@ files) {
     Json::Value json = Json::FromFile(pluginStorageVersionPath);
     
     if (json.GetType() == Json::Type::Object) {
-        json["latestVersion"] = Files[Files.get_Length() - 1];
+        json["latestVersion"] = files[files.Length - 1];
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + Files[Files.get_Length() - 1], LogLevel::Info, 85);
+        log("Updated to the most recent version: " + files[files.Length - 1], LogLevel::Info, 85);
     } else {
         log("JSON file does not have the expected structure.", LogLevel::Error, 87);
     }
 }
 
-
+// Add when calling UpdateVersionFile, add corret file array 
+// UpdateVersionFile(dataFiles);
+// UpdateVersionFile(alterationFiles);
+// UpdateVersionFile(seasonFiles);
