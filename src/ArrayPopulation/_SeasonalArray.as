@@ -1,3 +1,5 @@
+array<string> seasonalFiles;
+
 void PopulateSeasonalFilesArray() {
     seasonalFiles.InsertLast("AllOfficialCompetitions.json");
     seasonalFiles.InsertLast("AllSnowDiscovery.json");

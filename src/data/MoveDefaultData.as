@@ -1,14 +1,12 @@
-namespace Legacy {
-
 string pluginStorageDataPath = IO::FromStorageFolder("data.csv");
 string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 string checkFilePath = IO::FromStorageFolder("initCheck.txt");
 
-void FileCheck() {
+void MoveDefaultDataFile() {
     if (!IO::FileExists(checkFilePath) or !IO::FileExists(pluginStorageDataPath)) {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 9);
-        MoveFileToPluginStorage("src/Legacy/data/data.csv", pluginStorageDataPath);
-        MoveFileToPluginStorage("src/Legacy/data/currentInstalledVersion.json", pluginStorageVersionPath);
+        MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPath);
+        MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
         log("Files have been moved to storage", LogLevel::Info, 12);
         
         CreateCheckFile();
@@ -35,6 +33,4 @@ void CreateCheckFile() {
     IO::File checkFile;
     checkFile.Open(checkFilePath, IO::FileMode::Write);
     checkFile.Close();
-}
-
 }

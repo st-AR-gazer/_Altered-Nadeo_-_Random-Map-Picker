@@ -2,7 +2,7 @@ import os
 import re
 
 def modify_log_statements(directory):
-    log_pattern = re.compile(r'(log\((.*), LogLevel::(\w+))(\s*, \d+)?\);')
+    log_pattern = re.compile(r'(log\((.*), LogLevel::(\w+))(\s*, (__LINE__|\d+))?(\);)')
     modifications = []
 
     for root, dirs, files in os.walk(directory):
@@ -24,8 +24,8 @@ def modify_log_statements(directory):
                     match = log_pattern.search(line)
                     if match:
                         file_modified = True
-                        log_statement_start, log_content, log_level, existing_number = match.groups()
-                        new_log_statement = f'{log_statement_start}, {i + 1});'
+                        log_statement_start, log_content, log_level, _, existing_number, closing_parenthesis = match.groups()
+                        new_log_statement = f'{log_statement_start}, {i + 1}{closing_parenthesis}'
                         lines[i] = line.replace(match.group(0), new_log_statement)
                         modified_lines.append(i + 1)
 
@@ -50,7 +50,7 @@ def main():
             print(f"  - {file_path}: Lines {', '.join(map(str, lines))}")
     else:
         print("No files were modified.")
-    input("Press Enter to exit...")
 
 if __name__ == "__main__":
     main()
+ 

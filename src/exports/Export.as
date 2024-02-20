@@ -1,1 +1,1 @@
-// import string GetARandomAltMapUid() from "AlteredNadeo_RandomMapPicker";
+import string GetARandomAltMapUid() from "AlteredNadeo_RandomMapPicker";

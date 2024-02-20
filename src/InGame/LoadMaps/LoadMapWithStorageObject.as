@@ -1,0 +1,1 @@
+// To be added // Get random StorageObject from json files, add render function so users can check a box for what alteration / season of alteration they want

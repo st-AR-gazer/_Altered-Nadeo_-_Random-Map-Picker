@@ -1,5 +1,3 @@
-namespace Legacy {
-
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
 
 string globalMapUrl = "";
@@ -103,5 +101,3 @@ string[] ReadUIDsFromFile(const string&in filePath) {
 
     return uids;
 }
-
-} // End of Legacy namespace

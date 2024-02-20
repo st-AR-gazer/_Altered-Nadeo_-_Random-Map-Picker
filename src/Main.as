@@ -2,32 +2,30 @@
 bool shouldDownloadNewFiles = true;
 
 void Main() {
-    log("Main func has started", LogLevel::Info, 2);
+    log("Main func has started", LogLevel::Info, 5);
     
     NadeoServices::AddAudience("NadeoClubServices");
     while (!NadeoServices::IsAuthenticated("NadeoClubServices")) { yield(); }
 
     CheckRequiredPermissions();
-    log("Permission check completed", LogLevel::InfoG, 8);
+
+    PopulateArrays(); // Hacky way to avoid inline arrays, thanks XertroV
+    log("Arrays populated", LogLevel::Info, 14);
     
-    Legacy::FileCheck();
-    log("Legacy file check completed, checking for a new file version on CDN", LogLevel::InfoG, 11);
-    FileCheck();
-    log("New file check completed, checking for a new file version on CDN", LogLevel::InfoG, 13);
+    FileCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
+    log("Local file check completed, fixing some files", LogLevel::InfoG, 17);
+
+    ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
+    sleep(1000);
+    log("Manifest check completed", LogLevel::InfoG, 21);
 
     sleep(1000);
-    FetchAndUpdateManifest();
-    Legacy::GetLatestFileInfo();
-    log("CDN check completed for old file", LogLevel::InfoG, 18);    
-    if (shouldDownloadNewFiles) DownloadNewFiles();
-    log("CDN check completed for new files", LogLevel::InfoG, 20);
-    log("setting first UID", LogLevel::Info, 21);
+    MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
+    if (shouldDownloadNewFiles) DownloadFiles();
+    log("CDN check completed for new file", LogLevel::InfoG, 25);
 
-    PopulateSeasonalFilesArray();
-    log("Seasonal files array populated", LogLevel::InfoG, 24);
-    PopulateAlterationsFilesArray();
-    log("Alterations files array populated", LogLevel::InfoG, 26);
+    sleep(1000);
 
-    Legacy::SetFirstUid();
-    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 29);
+    SetFirstUid();
+    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 41);
 }

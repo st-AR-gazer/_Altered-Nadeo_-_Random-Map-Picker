@@ -1,8 +1,18 @@
-string ByAlterationFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/By-Alteration/";
-string BySeasonFilePath = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/By-Season/";
+string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/";
 
-array<string> alterationFiles;
-array<string> seasonalFiles;
+// By-Data
+// By-Alteration
+// By-Season
+
+void DownlaodFiles() {
+    DownloadDataLoop(NewSortingSystemUrl + "By-Data/", dataFiles);
+    // Should maybe set first UID here if the bug from the last code still persists
+    log("Downloaded all data files", LogLevel::Info, 33);
+    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonFiles);
+    log("Downloaded all season files", LogLevel::Info, 35)
+    DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles);
+    log("Downloaded all alteration files", LogLevel::Info, 37);
+}
 
 void DownloadDataLoop(const string &in baseUrl, const array<string> &in files) {
     for (uint i = 0; i < files.Length; i++) {
@@ -56,3 +66,5 @@ void UpdateVersionFile() {
         log("JSON file does not have the expected structure.", LogLevel::Error, 87);
     }
 }
+
+

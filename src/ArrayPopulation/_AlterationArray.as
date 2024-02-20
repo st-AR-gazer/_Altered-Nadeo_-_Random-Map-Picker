@@ -1,3 +1,5 @@
+array<string> alterationFiles;
+
 void PopulateAlterationsFilesArray() {
     alterationFiles.InsertLast("1_Back.json");
     alterationFiles.InsertLast("1_Down.json");

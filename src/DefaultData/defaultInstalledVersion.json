@@ -1,0 +1,10 @@
+{
+    "latestVersion": "0.0.3",
+    "url": "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json",
+    "newUpdate": {
+        "1": "Checpointless.json",
+        "2": "Reverse.json",
+        "3": "Boosters.json",
+        "4": "BOSS.json"
+    }
+}
