@@ -4,7 +4,7 @@
 
 string FetchRandomFileUrlFromFiles(/*const array<string> &in fileNames*/) {
 
-    fileNames = AlterationFilesBasedOnSettings();
+    fileNames = GetAllFilesBasedOnSettings();
 
     uint totalObjects = 0;
     for (uint i = 0; i < fileNames.Length; ++i) {
