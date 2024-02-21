@@ -3,7 +3,7 @@ void ManifestCheck() {
 }
 
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
-string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
+// string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 
 void FetchManifest() {
     Net::HttpRequest req;
@@ -38,8 +38,8 @@ void ParseManifest(const string &in reqBody) {
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
     if (newUpdateFiles.GetType() == Json::Type::Array) {
-        for (uint i = 0; i < newUpdateFiles.Size(); i++) {
-            unUpdatedFiles.InsertLast(newUpdateFiles[i].GetString());
+        for (uint i = 0; i < newUpdateFiles.Length; i++) {
+            unUpdatedFiles.InsertLast(newUpdateFiles[i]);
             log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 43);
         }
     }
@@ -59,9 +59,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
 
     if (currentInstalledVersion != latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 61);
-        DownloadLatestData(latestVersion);
-        log("Downloading seasonal data.", LogLevel::Info, 63);
-        DownloadSeasonalData(latestVersion);
+        DownloadFiles();
     } else {
         log("Current version is up-to-date.", LogLevel::Info, 66);
     }

@@ -4,12 +4,12 @@ string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting
 // By-Alteration
 // By-Season
 
-void DownlaodFiles() {
+void DownloadFiles() {
     DownloadDataLoop(NewSortingSystemUrl + "By-Data/", dataFiles);
     // Should maybe set first UID here if the bug from the ported code still persists
     log("Downloaded all data files", LogLevel::Info, 33);
-    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonFiles);
-    log("Downloaded all season files", LogLevel::Info, 35)
+    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles);
+    log("Downloaded all season files", LogLevel::Info, 35);
     DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles);
     log("Downloaded all alteration files", LogLevel::Info, 37);
 }
@@ -53,18 +53,19 @@ void StoreDatafile(const string &in data, const string &in fileName) {
     log("Attempted to store datafile: " + filePath, LogLevel::Info, 74);
 }
 
-
-
-void UpdateVersionFile() {
+void UpdateVersionFile(array<string>@ files) {
     Json::Value json = Json::FromFile(pluginStorageVersionPath);
     
     if (json.GetType() == Json::Type::Object) {
-        json["latestVersion"] = Files[Files.get_Length() - 1];
+        json["latestVersion"] = files[files.Length - 1];
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + Files[Files.get_Length() - 1], LogLevel::Info, 85);
+        log("Updated to the most recent version: " + files[files.Length - 1], LogLevel::Info, 85);
     } else {
         log("JSON file does not have the expected structure.", LogLevel::Error, 87);
     }
 }
 
-
+// Add when calling UpdateVersionFile, add corret file array 
+// UpdateVersionFile(dataFiles);
+// UpdateVersionFile(alterationFiles);
+// UpdateVersionFile(seasonFiles);
