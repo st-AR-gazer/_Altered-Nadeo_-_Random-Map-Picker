@@ -34,10 +34,7 @@ void GetMapUrl(const string &in map_uid) {
 }
 
 void PlayMap(const string &in map_uid) {
-    if (!Permissions::PlayLocalMap()) {
-        log("Lacking permissions to play local map", LogLevel::Warn, 40);
-        return;
-    }
+    CheckRequiredPermissions();
 
     string map_url = globalMapUrl;
 

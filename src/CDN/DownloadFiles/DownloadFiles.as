@@ -6,7 +6,7 @@ string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting
 
 void DownlaodFiles() {
     DownloadDataLoop(NewSortingSystemUrl + "By-Data/", dataFiles);
-    // Should maybe set first UID here if the bug from the last code still persists
+    // Should maybe set first UID here if the bug from the ported code still persists
     log("Downloaded all data files", LogLevel::Info, 33);
     DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonFiles);
     log("Downloaded all season files", LogLevel::Info, 35)

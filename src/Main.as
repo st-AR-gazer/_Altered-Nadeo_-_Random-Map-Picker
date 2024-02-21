@@ -21,6 +21,7 @@ void Main() {
 
     sleep(1000);
     MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
+    g_lineCount = GetLineCount("src/DefaultData/data.csv"); // Sets the linecount, to be used in rendermenu func // Fix it so that it actually goes to the correct IO::
     if (shouldDownloadNewFiles) DownloadFiles();
     log("CDN check completed for new file", LogLevel::InfoG, 25);
 
@@ -28,4 +29,8 @@ void Main() {
 
     SetFirstUid();
     log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 41);
+}
+
+void Update(float dt) {
+    CheckForSeasonSettingsChange();
 }

@@ -2,7 +2,7 @@
 name = "Altered Nadeo - Alt Map Picker"
 author = "ar....."
 category = "Altered Nadeo"
-version = "1.2.0"
+version = "2.2.0"
 
 [script]
 dependencies = [ "NadeoServices" ]
