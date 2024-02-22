@@ -9,34 +9,32 @@ void FileCheck() {
 array<string> nonExistingFiles;
 
 void CheckIfFilesExist(string type) {
-    if (type == "Default") {
-        for (uint i = 0; i < dataFiles.Length; i++) {
-            string filePath = SaveLocationStoragePath + dataFiles[i];
-            if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 16);
-            } else {
-                nonExistingFiles.InsertLast(dataFiles[i]);
-            }
-        }
+    array<string> filesToCheck;
+
+    switch(type) {
+        case "Default":
+            filesToCheck = dataFiles;
+            log("Checking default files", LogLevel::D, 17);
+            break;
+        case "Season":
+            filesToCheck = seasonalFiles;
+            log("Checking seasonal files", LogLevel::D, 21);
+            break;
+        case "Alteration":
+            filesToCheck = alterationFiles;
+            log("Checking alteration files", LogLevel::D, 25);
+            break;
+        default:
+            log("Unknown file type: " + type, LogLevel::Error, 28);
+            return;
     }
-    else if (type == "Season") {
-        for (uint i = 0; i < seasonalFiles.Length; i++) {
-            string filePath = SaveLocationStoragePath + seasonalFiles[i];
-            if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 26);
-            } else {
-                nonExistingFiles.InsertLast(seasonalFiles[i]);
-            }
-        }
-    }
-    else if (type == "Alteration") {
-        for (uint i = 0; i < alterationFiles.Length; i++) {
-            string filePath = SaveLocationStoragePath + alterationFiles[i];
-            if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 36);
-            } else {
-                nonExistingFiles.InsertLast(alterationFiles[i]);
-            }
+
+    for (uint i = 0; i < filesToCheck.Length; i++) {
+        string filePath = SaveLocationStoragePath + filesToCheck[i];
+        if (IO::FileExists(filePath)) {
+            log("File exists: " + filePath, LogLevel::D, 32);
+        } else {
+            nonExistingFiles.InsertLast(filesToCheck[i]);
         }
     }
 }
