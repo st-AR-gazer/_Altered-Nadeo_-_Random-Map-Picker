@@ -20,16 +20,16 @@ void Main() {
     g_lineCount = GetLineCount(IO::FromStorageFolder("src/DefaultData/data.csv")); // Sets the linecount, to be used in rendermenu func // Fix it so that it actually goes to the correct IO::
     
     ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
-    log("Manifest check completed", LogLevel::InfoG, 20);
+    log("Manifest check completed", LogLevel::InfoG, 23);
     sleep(1000);
     
     if (shouldDownloadNewFiles) DownloadFiles();
-    log("CDN check completed for new file", LogLevel::InfoG, 26);
+    log("CDN check completed for new file", LogLevel::InfoG, 27);
 
     sleep(1000);
 
     SetFirstUid();
-    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 31);
+    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 32);
 }
 
 void Update(float dt) {

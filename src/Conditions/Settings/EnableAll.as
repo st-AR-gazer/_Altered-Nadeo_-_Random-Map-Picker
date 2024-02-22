@@ -1,4 +1,6 @@
-[Settings category="General" name="Enable All Settings"]
+[Setting category="General" name="Enable All Settings"]
+bool enableAllSettings = false;
+
 void SelectAllSettings() {
     IsUsing_OnlyWinterMaps = true;
     IsUsing_OnlySpringMaps = true;

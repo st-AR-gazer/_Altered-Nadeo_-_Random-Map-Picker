@@ -1,4 +1,6 @@
-[Settings category="General" name="Reset All Settings"]
+[Setting category="General" name="Deselect All Settings"]
+bool deselectAllSettings = false;
+
 void DeselectAllSettings() {
     IsUsing_OnlyWinterMaps = false;
     IsUsing_OnlySpringMaps = false;

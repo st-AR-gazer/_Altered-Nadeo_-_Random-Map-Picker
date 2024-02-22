@@ -17,10 +17,10 @@ void FetchManifest() {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() == 200) {
-        log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 18);
+        log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 20);
         ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 21);
+        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 23);
     }
 }
 
@@ -31,7 +31,7 @@ array<string> unUpdatedFiles;
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, 32);
+        log("Failed to parse JSON.", LogLevel::Error, 34);
         return;
     }
 
@@ -42,13 +42,13 @@ void ParseManifest(const string &in reqBody) {
     if (newUpdateFiles.GetType() == Json::Type::Array) {
         for (uint i = 0; i < newUpdateFiles.Length; i++) {
             unUpdatedFiles.InsertLast(newUpdateFiles[i]);
-            log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 43);
+            log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 45);
         }
     }
     
-    log("Updating the URL, the local URL is: " + manifestUrl, LogLevel::Info, 47);
+    log("Updating the URL, the local URL is: " + manifestUrl, LogLevel::Info, 49);
     string newUrl = manifest["url"];
-    log("The URL has been updated, the new URL is: " + newUrl, LogLevel::Info, 49);
+    log("The URL has been updated, the new URL is: " + newUrl, LogLevel::Info, 51);
     urlFromManifest = newUrl;
 
     UpdateCurrentVersionIfDifferent(latestVersion);
@@ -57,13 +57,13 @@ void ParseManifest(const string &in reqBody) {
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
     
-    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 58);
+    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 60);
 
     if (currentInstalledVersion != latestVersion) {
-        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 61);
+        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 63);
         DownloadFiles();
     } else {
-        log("Current version is up-to-date.", LogLevel::Info, 64);
+        log("Current version is up-to-date.", LogLevel::Info, 66);
     }
 }
 
