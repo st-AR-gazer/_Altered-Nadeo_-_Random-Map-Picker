@@ -39,7 +39,7 @@ void PlayMap(/*const string &in map_uid*/) {
     // startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error, 46);
+        log("Failed to get map URL", LogLevel::Error, 42);
         return;
     }
 
