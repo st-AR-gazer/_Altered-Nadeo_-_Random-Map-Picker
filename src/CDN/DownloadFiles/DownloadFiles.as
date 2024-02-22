@@ -1,4 +1,5 @@
 string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/";
+string OldSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/";
 
 // By-Data
 // By-Alteration
@@ -10,7 +11,10 @@ void DownloadFiles() {
     log("Downloaded all data files", LogLevel::Info, 10);
     DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles);
     log("Downloaded all season files", LogLevel::Info, 12);
-    DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles);
+
+    NewSortingSystemUrl = g_manifestUrl;
+
+    DownloadDataLoop(OldSortingSystemUrl + "data.csv", alterationFiles);
     log("Downloaded all alteration files", LogLevel::Info, 14);
 }
 

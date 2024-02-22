@@ -1,3 +1,5 @@
+string g_manifestUrl;
+
 void ManifestCheck() {
     FetchManifest();
 }
@@ -34,6 +36,7 @@ void ParseManifest(const string &in reqBody) {
     }
 
     latestVersion = manifest["latestVersion"];
+    g_manifestUrl = manifest["url"];
     urlFromManifest;
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
