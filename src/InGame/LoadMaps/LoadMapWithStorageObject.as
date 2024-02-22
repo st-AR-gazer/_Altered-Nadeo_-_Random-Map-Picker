@@ -2,31 +2,25 @@
 
 
 
-string FetchRandomFileUrlFromFiles(/*const array<string> &in fileNames*/) {
-
-    fileNames = GetAllFilesBasedOnSettings();
+string FetchRandomFileUrlFromFiles() {
+    array<string> fileNames = GetAllFilesBasedOnSettings();
 
     uint totalObjects = 0;
     for (uint i = 0; i < fileNames.Length; ++i) {
-        string content = IO::LoadStr(fileNames[i]);
-        Json::Value root;
-        Json::Read(content, root);
+        Json::Value root = Json::FromFile(fileNames[i]);
         totalObjects += root.Length;
     }
 
     uint randomIndex = Math::Rand(0, totalObjects);
-
     uint currentIndex = 0;
     for (uint i = 0; i < fileNames.Length; ++i) {
-        string content = IO::LoadStr(fileNames[i]);
-        Json::Value root;
-        Json::Read(content, root);
+        Json::Value root = Json::FromFile(fileNames[i]);
 
         if (currentIndex + root.Length > randomIndex) {
             uint localIndex = randomIndex - currentIndex;
             Json::Value selectedObject = root[localIndex];
             if (selectedObject.HasKey("fileUrl") && selectedObject["fileUrl"].GetType() == Json::Type::String) {
-                return selectedObject["fileUrl"].AsString();
+                return string(selectedObject["fileUrl"]);
             } else {
                 return "";
             }
@@ -49,7 +43,7 @@ void PlayMap(const string &in map_uid) {
     startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error, 52);
+        log("Failed to get map URL", LogLevel::Error, 46);
         return;
     }
 

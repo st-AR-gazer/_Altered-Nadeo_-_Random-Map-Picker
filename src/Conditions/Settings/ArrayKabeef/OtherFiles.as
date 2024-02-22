@@ -1,9 +1,9 @@
-array<string> GetAlterationFiles() {
+array<string> GetOtherFiles() {
     array<string> filesToInclude;
     // ByAlteration sorting
 
     // Include all snow, all comp, but only comp, and all totd
-    if (IsUsing_AllSnowDiscovary) {
+    if (IsUsing_AllSnowDiscovery) {
         filesToInclude.InsertLast(otherFilePath + "AllSnowDiscovery.json");
     }
     if (IsUsing_AllTOTD) {
@@ -25,5 +25,4 @@ array<string> GetAlterationFiles() {
     }
 
     return filesToInclude;
-    
-} 
+}

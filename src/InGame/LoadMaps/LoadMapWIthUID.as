@@ -22,9 +22,9 @@ void GetMapUrl(const string &in map_uid) {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 27);
-        log("Response body:", LogLevel::Error, 28);
-        log(req.Body, LogLevel::Error, 29);
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 25);
+        log("Response body:", LogLevel::Error, 26);
+        log(req.Body, LogLevel::Error, 27);
         return;
     }
 
@@ -33,7 +33,7 @@ void GetMapUrl(const string &in map_uid) {
     isWaitingForUrl = false;
 }
 
-void PlayMap(const string &in map_uid) {
+void PlayMapWithUID(const string &in map_uid) {
     CheckRequiredPermissions();
 
     string map_url = globalMapUrl;
@@ -44,13 +44,13 @@ void PlayMap(const string &in map_uid) {
     startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error, 52);
+        log("Failed to get map URL", LogLevel::Error, 47);
         return;
     }
 
-    startnew(PlayMapCoroutine, map_url);
+    startnew(PlayMapCoroutineWithUID, map_url);
 }
-void PlayMapCoroutine(const string &in map_url) {
+void PlayMapCoroutineWithUID(const string &in map_url) {
     CTrackMania@ app = cast<CTrackMania@>(GetApp());
     if (app.Network.PlaygroundClientScriptAPI.IsInGameMenuDisplayed) {
         app.Network.PlaygroundInterfaceScriptHandler.CloseInGameMenu(CGameScriptHandlerPlaygroundInterface::EInGameMenuResult::Quit);
@@ -67,11 +67,11 @@ void PlayMapCoroutine(const string &in map_url) {
 void LoadNewMap() {
     string randomUID = GetRandomUID();
     if (randomUID != "") {
-        log("UID found in file", LogLevel::Info, 75);
+        log("UID found in file", LogLevel::Info, 70);
         const string map_uid = randomUID;
-        PlayMap(map_uid);
+        PlayMapWithUID(map_uid);
     } else {
-        log("No UIDs found in file", LogLevel::Error, 79);
+        log("No UIDs found in file", LogLevel::Error, 74);
     }
 }
 

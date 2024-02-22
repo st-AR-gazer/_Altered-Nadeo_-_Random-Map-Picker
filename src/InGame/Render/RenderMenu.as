@@ -8,18 +8,16 @@ void RenderMenu() {
     }
 }
 
-int GetLineCount(const string& filePath) {
-    File@ file = File();
-    if (file.Open(filePath, IO::FileMode::Read)) {
-        int lineCount = 0;
-        while (!file.EOFReached()) {
-            file.ReadLine();
-            lineCount++;
-        }
-        file.Close();
-        return lineCount;
+int GetLineCount(string filePath) {
+    IO::File file;
+    file.Open(filePath, IO::FileMode::Read);
+    int lineCount = 0;
+    while (!file.EOF()) {
+        file.ReadLine();
+        lineCount++;
     }
-    return 0;
+    file.Close();
+    return lineCount;
 }
 
 

@@ -1,5 +1,7 @@
-[Settings category="BySeason" name="Deselect all BySeason settings"]
-void EnableAllBySeasonSettings() {
+[Setting category="BySeason" name="Deselect all BySeason settings"]
+bool enableAllBySeasonSetting = false;
+
+void EnableAllBySeasonSetting() {
     IsUsing_OnlyWinterMaps = true;
     IsUsing_OnlySpringMaps = true;
     IsUsing_OnlySummerMaps = true;

@@ -15,7 +15,7 @@ void FetchManifest() {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() == 200) {
-        log("Fetching manifest successful: \n" + req.String(), LogLevel::Info, 18);
+        log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 18);
         ParseManifest(req.String());
     } else {
         log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 21);
@@ -61,7 +61,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 61);
         DownloadFiles();
     } else {
-        log("Current version is up-to-date.", LogLevel::Info, 66);
+        log("Current version is up-to-date.", LogLevel::Info, 64);
     }
 }
 

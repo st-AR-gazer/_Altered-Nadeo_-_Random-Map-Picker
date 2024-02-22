@@ -13,7 +13,7 @@ void CheckIfFilesExist(string type) {
         for (uint i = 0; i < dataFiles.Length; i++) {
             string filePath = SaveLocationStoragePath + dataFiles[i];
             if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 14);
+                log("File exists: " + filePath, LogLevel::D, 16);
             } else {
                 nonExistingFiles.InsertLast(dataFiles[i]);
             }
@@ -23,7 +23,7 @@ void CheckIfFilesExist(string type) {
         for (uint i = 0; i < seasonalFiles.Length; i++) {
             string filePath = SaveLocationStoragePath + seasonalFiles[i];
             if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 24);
+                log("File exists: " + filePath, LogLevel::D, 26);
             } else {
                 nonExistingFiles.InsertLast(seasonalFiles[i]);
             }
@@ -33,7 +33,7 @@ void CheckIfFilesExist(string type) {
         for (uint i = 0; i < alterationFiles.Length; i++) {
             string filePath = SaveLocationStoragePath + alterationFiles[i];
             if (IO::FileExists(filePath)) {
-                log("File exists: " + filePath, LogLevel::D, 34);
+                log("File exists: " + filePath, LogLevel::D, 36);
             } else {
                 nonExistingFiles.InsertLast(alterationFiles[i]);
             }

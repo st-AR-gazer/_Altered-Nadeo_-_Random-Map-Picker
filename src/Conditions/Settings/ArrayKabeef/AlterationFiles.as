@@ -334,7 +334,7 @@ array<string> GetAlterationFiles() {
         if (IsUsing_Underwater) {
             filesToInclude.InsertLast(alterationFilePath + "Underwater.json");
         }
-        if (IsUsing_Underwater_Revers) {
+        if (IsUsing_Underwater_Reverse) {
             filesToInclude.InsertLast(alterationFilePath + "Underwater_Revers.json");
         }
         if (IsUsing_Walmart_Mini) {

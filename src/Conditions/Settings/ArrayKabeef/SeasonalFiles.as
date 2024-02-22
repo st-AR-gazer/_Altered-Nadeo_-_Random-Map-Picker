@@ -96,12 +96,6 @@ array<string> GetSeasonalFiles() {
     if (IsUsing_Spring2025Maps) {
         filesToInclude.InsertLast(seasonalFilePath + "Spring2025.json");
     }
-    if (IsUsing_Summer2025Maps) {
-        filesToInclude.InsertLast(seasonalFilePath + "Summer2025.json");
-    }
-    if (IsUsing_Fall2025Maps) {
-        filesToInclude.InsertLast(seasonalFilePath + "Fall2025.json");
-    }
     
     return filesToInclude;
 }

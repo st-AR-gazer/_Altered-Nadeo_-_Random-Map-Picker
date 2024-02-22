@@ -1,5 +1,7 @@
-[Settings category="ByAlteration" name="De-select all ByAlteration settings"]
-void DeselectAllByAlterationSettings() {
+[Setting category="ByAlteration" name="De-select all ByAlteration settings"]
+bool deselectAllByAlterationSetting = false;
+
+void DeselectAllByAlterationSetting() {
     IsUsing_AllOfficialCompetitions = false;
     IsUsing_MapIsNotObtainable = false;
     IsUsing_OfficialNadeo = false;

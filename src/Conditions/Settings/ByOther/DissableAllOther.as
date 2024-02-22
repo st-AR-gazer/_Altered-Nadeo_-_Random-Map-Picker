@@ -1,5 +1,7 @@
-[Settings category="ByOther" name="Deselect all other settings"]
-void DeselectAllByOtherSettings() {
+[Setting category="ByOther" name="Deselect all other settings"]
+bool deselectAllByOtherSetting = false;
+
+void DeselectAllByOtherSetting() {
     IsUsing_AllOfficialCompetitions = false;
     IsUsing_AllSnowDiscovery = false;
     IsUsing_AllTOTD = false;

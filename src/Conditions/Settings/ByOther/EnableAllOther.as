@@ -1,5 +1,7 @@
-[Settings category="ByOther" name="Enable all other settings"]
-void EnableAllByOtherSettings() {
+[Setting category="ByOther" name="Enable all other settings"]
+bool enableAllByOtherSetting = false;
+
+void EnableAllByOtherSetting() {
     IsUsing_AllOfficialCompetitions = true;
     IsUsing_AllSnowDiscovery = true;
     IsUsing_AllTOTD = true;

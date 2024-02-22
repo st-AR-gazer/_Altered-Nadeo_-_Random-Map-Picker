@@ -1,5 +1,7 @@
-[Settings category="ByAlteration" name="Select all ByAlteration settings"]
-void EnableAllByAlterationSettings() {
+[Setting category="ByAlteration" name="Select all ByAlteration settings"]
+bool selectAllByAlterationSetting = false;
+
+void EnableAllByAlterationSetting() {
     IsUsing_AllOfficialCompetitions = true;
     IsUsing_MapIsNotObtainable = true;
     IsUsing_OfficialNadeo = true;
