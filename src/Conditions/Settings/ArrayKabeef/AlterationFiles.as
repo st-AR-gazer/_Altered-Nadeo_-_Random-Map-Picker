@@ -1,10 +1,6 @@
 array<string> GetAlterationFiles() {
     array<string> filesToInclude;
-    // ByAlteration sorting
-
-
     
-
     // Environments
         if (IsUsing_Snow_) {
             filesToInclude.InsertLast(alterationFilePath + "_Snow_.json");

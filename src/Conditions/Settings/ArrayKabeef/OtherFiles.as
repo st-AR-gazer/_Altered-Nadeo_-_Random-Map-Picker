@@ -14,7 +14,7 @@ array<string> GetOtherFiles() {
     }
 
 
-    if (IsUsing__AllOfficialCompetitions) { // These are only the competition mapsm, they do not have any alteration
+    if (IsUsing__AllOfficialCompetitions) { // These are only the competition map, they do not have any alteration
         filesToInclude.InsertLast(alterationFilePath + "_AllOfficialCompetitions.json");
     }
     if (IsUsing_MapIsNotObtainable) {

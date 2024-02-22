@@ -1,7 +1,3 @@
-// To be added // Get random StorageObject from json files, add render function so users can check a box for what alteration / season of alteration they want
-
-
-
 string FetchRandomFileUrlFromFiles() {
     array<string> fileNames = GetAllFilesBasedOnSettings();
 
@@ -32,7 +28,7 @@ string FetchRandomFileUrlFromFiles() {
 }
 
 
-void PlayMap(const string &in map_uid) {
+void PlayMap(/*const string &in map_uid*/) {
     
 
     string map_url = FetchRandomFileUrlFromFiles();
@@ -40,7 +36,7 @@ void PlayMap(const string &in map_uid) {
     globalMapUrl = "";
     isWaitingForUrl = true;
 
-    startnew(GetMapUrl, map_uid);
+    // startnew(GetMapUrl, map_uid);
 
     if (map_url.Length == 0) {
         log("Failed to get map URL", LogLevel::Error, 46);
