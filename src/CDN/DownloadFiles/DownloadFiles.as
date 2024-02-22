@@ -14,7 +14,7 @@ void DownloadFiles() {
 
     if (g_manifestUrl !is null && g_manifestUrl != "") 
          { NewSortingSystemUrl = g_manifestUrl; NewSortingSystemUrl = NewSortingSystemUrl + "New-Sorting-System/"; } 
-    else { NewSortingSystemUrl = OldSortingSystemUrl };
+    else { NewSortingSystemUrl = OldSortingSystemUrl; }
 
     DownloadDataLoop(NewSortingSystemUrl + "data.csv", alterationFiles);
     log("Downloaded all alteration files", LogLevel::Info, 14);
