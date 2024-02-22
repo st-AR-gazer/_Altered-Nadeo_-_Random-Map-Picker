@@ -12,7 +12,7 @@ void DownloadFiles() {
     DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles);
     log("Downloaded all season files", LogLevel::Info, 12);
 
-    if (g_manifestUrl !is null || g_manifestUrl != "") 
+    if (g_manifestUrl != "")
          { NewSortingSystemUrl = g_manifestUrl; NewSortingSystemUrl = NewSortingSystemUrl + "New-Sorting-System/"; } 
     else { NewSortingSystemUrl = OldSortingSystemUrl; }
 
