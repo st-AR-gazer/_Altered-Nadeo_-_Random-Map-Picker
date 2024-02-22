@@ -42,7 +42,7 @@ void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
                 print("\\$333[Placeholder] " + " \\$z" + "\\$c00"+lineInfo+" \\$z" + msg); 
                 break;
             case LogLevel::D:
-                print("\\$777[D]  " + " \\$z" + "\\$0c0"+lineInfo+" \\$z" + msg); 
+                print("\\$777[D]     " + " \\$z" + "\\$777"+lineInfo+" \\$z" + msg); 
                 break;
         }
     }
