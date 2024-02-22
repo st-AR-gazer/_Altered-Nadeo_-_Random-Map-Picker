@@ -11,22 +11,18 @@ array<string> nonExistingFiles;
 void CheckIfFilesExist(string type) {
     array<string> filesToCheck;
 
-    switch(type) {
-        case "Default":
-            filesToCheck = dataFiles;
-            log("Checking default files", LogLevel::D, 17);
-            break;
-        case "Season":
-            filesToCheck = seasonalFiles;
-            log("Checking seasonal files", LogLevel::D, 21);
-            break;
-        case "Alteration":
-            filesToCheck = alterationFiles;
-            log("Checking alteration files", LogLevel::D, 25);
-            break;
-        default:
-            log("Unknown file type: " + type, LogLevel::Error, 28);
-            return;
+    if (type == "Default") {
+        filesToCheck = dataFiles;
+        log("Checking default files", LogLevel::D, 17);
+    } else if (type == "Season") {
+        filesToCheck = seasonalFiles;
+        log("Checking seasonal files", LogLevel::D, 21);
+    } else if (type == "Alteration") {
+        filesToCheck = alterationFiles;
+        log("Checking alteration files", LogLevel::D, 25);
+    } else {
+        log("Unknown file type: " + type, LogLevel::Error, 28);
+        return;
     }
 
     for (uint i = 0; i < filesToCheck.Length; i++) {
