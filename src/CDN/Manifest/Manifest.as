@@ -37,7 +37,6 @@ void ParseManifest(const string &in reqBody) {
 
     latestVersion = manifest["latestVersion"];
     g_manifestUrl = manifest["url"];
-    urlFromManifest;
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
     if (newUpdateFiles.GetType() == Json::Type::Array) {

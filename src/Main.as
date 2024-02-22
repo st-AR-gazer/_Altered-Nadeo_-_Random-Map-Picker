@@ -15,13 +15,14 @@ void Main() {
     FileCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
     log("Local file check completed, fixing some files", LogLevel::InfoG, 16);
 
-    ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
-    sleep(1000);
-    log("Manifest check completed", LogLevel::InfoG, 20);
-
     sleep(1000);
     MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
-    g_lineCount = GetLineCount("src/DefaultData/data.csv"); // Sets the linecount, to be used in rendermenu func // Fix it so that it actually goes to the correct IO::
+    g_lineCount = GetLineCount(IO::FromStorageFolder("src/DefaultData/data.csv")); // Sets the linecount, to be used in rendermenu func // Fix it so that it actually goes to the correct IO::
+    
+    ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
+    log("Manifest check completed", LogLevel::InfoG, 20);
+    sleep(1000);
+    
     if (shouldDownloadNewFiles) DownloadFiles();
     log("CDN check completed for new file", LogLevel::InfoG, 26);
 
