@@ -49,7 +49,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         log("Fetching new data successful: " + url, LogLevel::Info, 44);
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
-        array<string> errorFilesThatDidNotDownloadPropperly = {url, req.ResponseCode().String(), req.String(), fileName};
+        array<string> errorFilesThatDidNotDownloadPropperly = {url, "" + req.ResponseCode(), req.String(), fileName};
         log("File that returned an error: " + fileName, LogLevel::Error, 46);
         log("Error code: " + req.ResponseCode(), LogLevel::Error, 47);
         log("Error response: " + req.String(), LogLevel::Error, 48);
