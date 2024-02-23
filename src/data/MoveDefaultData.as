@@ -19,15 +19,15 @@ void MoveDefaultDataFile() {
 void MoveFileToPluginStorage(const string &in originalPath, const string &in storagePath) {
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
-    log("Moving the file content", LogLevel::Info, 20);
-    log("The content:\n" + fileContents, LogLevel::Info, 22);
+    log("Moving the file content", LogLevel::Info, 22);
+    log("The content:\n" + fileContents, LogLevel::Info, 23);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
     targetFile.Write(fileContents);
     targetFile.Close();
 
-    log("Finished moving the file", LogLevel::Info, 29);
+    log("Finished moving the file", LogLevel::Info, 30);
 }
 
 void CreateCheckFile() {
