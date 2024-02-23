@@ -44,6 +44,10 @@ void CheckDirs() {
         IO::CreateFolder(g_saveLocationStoragePath);
     }
 
+    if(!IO::FolderExists(g_saveLocationStoragePath + "By-Other/")) {
+        log("Creating folder: " + g_saveLocationStoragePath + "By-Other/", LogLevel::D, 56);
+        IO::CreateFolder(g_saveLocationStoragePath + "By-Other/");
+    }
     if(!IO::FolderExists(g_saveLocationStoragePath + "By-Season/")) {
         log("Creating folder: " + g_saveLocationStoragePath + "By-Season/", LogLevel::D, 48);
         IO::CreateFolder(g_saveLocationStoragePath + "By-Season/");
@@ -51,9 +55,5 @@ void CheckDirs() {
     if(!IO::FolderExists(g_saveLocationStoragePath + "By-Alteration/")) {
         log("Creating folder: " + g_saveLocationStoragePath + "By-Alteration/", LogLevel::D, 52);
         IO::CreateFolder(g_saveLocationStoragePath + "By-Alteration/");
-    }
-    if(!IO::FolderExists(g_saveLocationStoragePath + "By-Other/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Other/", LogLevel::D, 56);
-        IO::CreateFolder(g_saveLocationStoragePath + "By-Other/");
     }
 }

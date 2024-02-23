@@ -19,7 +19,8 @@ void MoveDefaultDataFile() {
 void MoveFileToPluginStorage(const string &in originalPath, const string &in storagePath) {
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
-    log("Moving the file content\n" + "The content:\n" + fileContents, LogLevel::Info, 22);
+    log("Moving the file content", logLevel::Info, 20);
+    log("The content:\n" + fileContents, LogLevel::Info, 22);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
