@@ -102,7 +102,7 @@ void PopulateAlterationsFilesArray() {
     alterationFiles.InsertLast("TMGL_Easy.json");
     alterationFiles.InsertLast("Tilted.json");
     alterationFiles.InsertLast("Underwater.json");
-    alterationFiles.InsertLast("Underwater_Revers.json");
+    alterationFiles.InsertLast("Underwater_Reverse.json");
     alterationFiles.InsertLast("Walmart_Mini.json");
     alterationFiles.InsertLast("Wet_Icy_Wood.json");
     alterationFiles.InsertLast("Wet_Wheels.json");
