@@ -46,10 +46,10 @@ void ParseManifest(const string &in reqBody) {
         }
     }
     
-    log("Updating the URL", logLevel::Info, 49); 
+    log("Updating the URL", LogLevel::Info, 49); 
     log("the manifest URL is: " + manifestUrl, LogLevel::Info, 50);
     string newUrl = manifest["url"];
-    log("The URL from the manifest has been updated", logLevel::Info, 50) 
+    log("The URL from the manifest has been updated", LogLevel::Info, 50);
     log("the new URL is: " + newUrl, LogLevel::Info, 53);
     g_urlFromManifest = newUrl;
 

@@ -14,18 +14,16 @@ int GetLineCount(string filePath) {
         return -1;
     }
 
+    int lineCount = 0;
+
     IO::File file;
     file.Open(filePath, IO::FileMode::Read);
-    log("Failed to open file: " + filePath, LogLevel::Error, 19);
-    return -1;
-    
-
-    int lineCount = 0;
     while (!file.EOF()) {
         file.ReadLine();
         lineCount++;
     }
     file.Close();
+    
     return lineCount;
 }
 
