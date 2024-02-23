@@ -1,16 +1,31 @@
 string g_saveLocationStoragePath = IO::FromStorageFolder("New-Sorting-System/");
 
+// Arrays to hold non-existing files for each category
+array<string> nonExistingDefaultFiles;
+array<string> nonExistingSeasonalFiles;
+array<string> nonExistingAlterationFiles;
+
 void FileCheck() {
     CheckDirs();
 
-    CheckIfFilesExist("Default");
-    CheckIfFilesExist("Season");
-    CheckIfFilesExist("Alteration");
+    CheckDefaultFiles();
+    CheckSeasonalFiles();
+    CheckAlterationFiles();
 }
 
-array<string> nonExistingFiles;
+void CheckDefaultFiles() {
+    CheckIfFilesExist("Default", nonExistingDefaultFiles);
+}
 
-void CheckIfFilesExist(string type) {
+void CheckSeasonalFiles() {
+    CheckIfFilesExist("Season", nonExistingSeasonalFiles);
+}
+
+void CheckAlterationFiles() {
+    CheckIfFilesExist("Alteration", nonExistingAlterationFiles);
+}
+
+void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
     array<string> filesToCheck;
 
     if (type == "Default") {
@@ -28,26 +43,35 @@ void CheckIfFilesExist(string type) {
     }
 
     for (uint i = 0; i < filesToCheck.Length; i++) {
-        string filePath = g_saveLocationStoragePath + filesToCheck[i];
+        string filePath = g_saveLocationStoragePath + GetCorrectLocation(type) + filesToCheck[i];
         if (IO::FileExists(filePath)) {
             log("File exists: " + filePath, LogLevel::D, 33);
         } else {
-            nonExistingFiles.InsertLast(filesToCheck[i]);
+            nonExistingFilesArray.InsertLast(filesToCheck[i]);
             log("File does not exist: " + filePath, LogLevel::D, 36);
         }
     }
 }
 
+void GetCorrectLocation(string type) {
+    if (type == "Default") {
+        return "By-Other/";
+    } else if (type == "Season") {
+        return "By-Season/";
+    } else if (type == "Alteration") {
+        return "By-Alteration/";
+    } else {
+        log("Unknown file type: " + type, LogLevel::Error, 26);
+        return "";
+    }
+}
+
 void CheckDirs() {
-    if(!IO::FolderExists(g_saveLocationStoragePath)) { // Creates a new folder with new sorting system
+    if(!IO::FolderExists(g_saveLocationStoragePath)) {
         log("Creating folder: " + g_saveLocationStoragePath, LogLevel::D, 43);
         IO::CreateFolder(g_saveLocationStoragePath);
     }
 
-    if(!IO::FolderExists(g_saveLocationStoragePath + "By-Other/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Other/", LogLevel::D, 56);
-        IO::CreateFolder(g_saveLocationStoragePath + "By-Other/");
-    }
     if(!IO::FolderExists(g_saveLocationStoragePath + "By-Season/")) {
         log("Creating folder: " + g_saveLocationStoragePath + "By-Season/", LogLevel::D, 48);
         IO::CreateFolder(g_saveLocationStoragePath + "By-Season/");
