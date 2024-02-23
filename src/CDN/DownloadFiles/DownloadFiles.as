@@ -59,14 +59,19 @@ void DownloadData(const string &in url, const string &in fileName, const string 
 }
 
 void StoreDatafile(const string &in data, const string &in fileName, const string &in filePath) {
+    string directory = filePath;
+    if (!IO::FolderExists(directory)) {
+        IO::CreateFolder(directory);
+    }
+
     string fullFilePathName = filePath + fileName;
 
     IO::File file;
     file.Open(fullFilePathName, IO::FileMode::Write);
     file.Write(data);
     file.Close();
-    
-    log("Attempted to store the viewing file at: " + fullFilePathName, LogLevel::Info, 60);
+
+    log("Data written to file: " + fullFilePathName, LogLevel::Info, 60);
 }
 
 void UpdateVersionFile(array<string>@ files) {
