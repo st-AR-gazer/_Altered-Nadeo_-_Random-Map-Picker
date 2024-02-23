@@ -1,7 +1,7 @@
 string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/";
 // string OldSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/";
 
-string localSaveLocation = IO::FromStorageFolder("New-Storage-System");
+string localSaveLocation = IO::FromStorageFolder("New-Storage-System/");
 
 // By-Data
 // By-Alteration
