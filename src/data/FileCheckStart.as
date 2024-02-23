@@ -53,7 +53,7 @@ void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
     }
 }
 
-void GetCorrectLocation(string type) {
+string GetCorrectLocation(string type) {
     if (type == "Default") {
         return "By-Other/";
     } else if (type == "Season") {
