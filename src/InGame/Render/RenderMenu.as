@@ -9,17 +9,15 @@ void RenderMenu() {
 }
 
 int GetLineCount(string filePath) {
-    // Check if the file exists before opening it
     if (!IO::FileExists(filePath)) {
-        log("File does not exist: " + filePath, LogLevel::Error, 14);
-        return -1; // Return -1 or appropriate error code
+        log("File does not exist: " + filePath, LogLevel::Error, 13);
+        return -1;
     }
 
     IO::File file;
-    // Attempt to open the file in read mode
     file.Open(filePath, IO::FileMode::Read);
-    log("Failed to open file: " + filePath, LogLevel::Error, 21);
-    return -1; // Return -1 or appropriate error code
+    log("Failed to open file: " + filePath, LogLevel::Error, 19);
+    return -1;
     
 
     int lineCount = 0;
