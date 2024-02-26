@@ -19,4 +19,6 @@ run_script('RecordNewFileState.py')
 
 run_script('CompareFileStates.py')
 
+run_script('CopyUpdatedFiles.py')
+
 run_script('CreateManifest.py')
