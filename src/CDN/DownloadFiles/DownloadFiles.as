@@ -7,7 +7,11 @@ string localSaveLocation = IO::FromStorageFolder("New-Sorting-System/");
 // By-Alteration
 // By-Season
 
+// string g_idStoragePath = IO::FromStorageFolder("id");
+
 void DownloadFiles() {
+    if (g_manifestJson["id"] = g_idStoragePath) { log("Manifest ID matches local ID, no need to update.", LogLevel::Info, 9); return; }
+    
     // if (g_manifestUrl != "")
     //      { NewSortingSystemUrl = g_manifestUrl; NewSortingSystemUrl = NewSortingSystemUrl + "New-Sorting-System/"; } 
     // else { t_dataSortingSystemUrl = OldSortingSystemUrl; }
