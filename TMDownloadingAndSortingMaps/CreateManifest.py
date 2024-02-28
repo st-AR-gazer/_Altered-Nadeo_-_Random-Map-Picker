@@ -10,7 +10,7 @@ data = {
     "url": "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv",
     "updatedFiles": {str(index+1): file_name for index, file_name in enumerate(updated_file_names)},
     "updateInstalledVersion": True,
-    "id": "x"
+    "id": 0
 }
 
 with open('latestInstalledVersion.json', 'w') as json_file:

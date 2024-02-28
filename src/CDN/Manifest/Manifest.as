@@ -104,7 +104,7 @@ void UpdateVersionFile(const string &in latestVersion) {
 
 string g_idStoragePath = IO::FromStorageFolder("id");
 
-void StoreManifestID(id) {
+void StoreManifestID(int id) {
     if (!IO::FileExists(g_idStoragePath)) {
         log("ID file does not exist, creating.", LogLevel::Info, 106);
     } else {
