@@ -105,6 +105,12 @@ void UpdateVersionFile(const string &in latestVersion) {
 string g_idStoragePath = IO::FromStorageFolder("id");
 
 void StoreManifestID(id) {
+    if (!IO::FileExists(g_idStoragePath)) {
+        log("ID file does not exist, creating.", LogLevel::Info, 106);
+    } else {
+        log("ID file already exists, overwriting.", LogLevel::Info, 104);
+    }
+
     IO::File file();
     file.Open(g_idStoragePath, IO::FileMode::Write);
     file.Write(id);
