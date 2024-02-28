@@ -6,7 +6,7 @@ with open('./FileStateChecking/updated_files.json', 'r') as json_file:
 updated_file_names = list(updated_files.keys())
 
 data = {
-    "latestVersion": "0.0.x",
+    "latestVersion": 0,
     "url": "http://maniacdn.net/ar_/Alt-Map-Picker/data.csv",
     "updatedFiles": {str(index+1): file_name for index, file_name in enumerate(updated_file_names)},
     "updateInstalledVersion": True,

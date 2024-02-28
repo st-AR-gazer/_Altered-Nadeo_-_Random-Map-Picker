@@ -28,20 +28,20 @@ void FetchManifest() {
 string latestVersion;
 string g_urlFromManifest;
 array<string> unUpdatedFiles;
+string g_manifestVersion;
+string g_currentInstalledVersion;
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
-    if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, 35);
-        return;
-    }
+    if (manifest.GetType() != Json::Type::Object) { log("Failed to parse JSON.", LogLevel::Error, 35); return; }
 
     g_manifestJson = manifest;
 
     latestVersion = manifest["latestVersion"];
     g_manifestUrl = manifest["url"];
+    g_manifestVersion = manifest["latestVersion"];
 
-    StoreManifestID(manifest["id"]);
+    StoreManifestID(manifest["id"]); // not in use...
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
     if (newUpdateFiles.GetType() == Json::Type::Array) {
@@ -63,6 +63,7 @@ void ParseManifest(const string &in reqBody) {
 
 void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     string currentInstalledVersion = GetCurrentInstalledVersion();
+    g_currentInstalledVersion = currentInstalledVersion;
     
     log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 63);
 
@@ -104,7 +105,7 @@ void UpdateVersionFile(const string &in latestVersion) {
 
 string g_idStoragePath = IO::FromStorageFolder("id");
 
-void StoreManifestID(int id) {
+void StoreManifestID(int id) { // not in use...
     if (!IO::FileExists(g_idStoragePath)) {
         log("ID file does not exist, creating.", LogLevel::Info, 106);
     } else {
