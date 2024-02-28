@@ -105,19 +105,8 @@ void UpdateVersionFile(const string &in latestVersion) {
 string g_idStoragePath = IO::FromStorageFolder("id");
 
 void StoreManifestID(id) {
-
     IO::File file();
     file.Open(g_idStoragePath, IO::FileMode::Write);
     file.Write(id);
     file.Close();
-    
-    Json::Value currentVersionJson = Json::Parse(fileContents);
-
-    if (currentVersionJson.GetType() == Json::Type::Object) {
-        currentVersionJson["id"] = id;
-        Json::ToFile(pluginStorageVersionPath, currentVersionJson);
-        log("Updated the manifest ID: " + id, LogLevel::Info, 95);
-    } else {
-        log("JSON file does not have the expected structure." + " Json type is: \n" + currentVersionJson.GetType(), LogLevel::Error, 97);
-    }
 }
