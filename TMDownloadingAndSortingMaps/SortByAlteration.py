@@ -126,6 +126,9 @@ alterations_dict = {
     "[Snow] Wood": ["[Snow] Wood"],
     "[Snow] Carswitch": ["Carswitch", "Snowcarswitch"],
 
+    "[Rally]": ["[Rally]", "RallyCar", "CarRally"],
+    "[Rally] Carswitch": ["Rallycarswitch"],
+
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
 
