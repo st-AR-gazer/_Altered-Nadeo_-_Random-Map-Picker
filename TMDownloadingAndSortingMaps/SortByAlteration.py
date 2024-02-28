@@ -112,14 +112,14 @@ def save_sorted_data(sorted_data, base_folder):
             json.dump(maps, file, indent=4, ensure_ascii=False)
 
 special_cases_array = [
-    "YEET Reverse", "[Snow] Wood"
+    "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless"
 ]
 
 alterations_dict = {
     #"xx-But": "XX-But",
 
     "[Snow]": ["[Snow]", "SnowCar", "CarSnow"],
-    "[Snow] Checkpointless": ["Checkpointless snow"],
+    "[Snow] Checkpointless": ["Checkpointless snow", "[Snow] Checkpointless", "[Snow] cpless"],
     "[Snow] Icy": ["Icy [Snow]", "[Snow] Icy"],
     "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)"],
     "[Snow] Wet-Plastic": ["(Snow) Wet-Plastic"],
@@ -259,6 +259,10 @@ snow_discovery_maps = [
     "SnowIsBack", "IcyHills", "SnowGlider", "WoodForce", "WetWood",
     "BreakOrSlide", "IcySnow", "WoodySlalom", "Temple", "Hairpins",
     "IAmSpeed", "BobLover", "SummerSnow", "SlippySnow", "Rock&Revel"
+]
+
+rally_discovery_maps = [
+
 ]
 
 official_competition_maps = [
@@ -1274,7 +1278,7 @@ sorted_maps = defaultdict(list)
 
 for filename, map_info in map_data.items():
     map_info['filename'] = filename
-    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
+    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, rally_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
     if category:
         sorted_maps[category].append(map_info)
 
