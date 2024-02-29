@@ -47,15 +47,15 @@ void ParseManifest(const string &in reqBody) {
     if (newUpdateFiles.GetType() == Json::Type::Array) {
         for (uint i = 0; i < newUpdateFiles.Length; i++) {
             unUpdatedFiles.InsertLast(newUpdateFiles[i]);
-            log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 46);
+            // log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 46);
         }
     }
     
-    log("Updating the URL", LogLevel::Info, 50); 
-    log("the manifest URL is: " + manifestUrl, LogLevel::Info, 51);
+    // log("Updating the URL", LogLevel::Info, 50); 
+    // log("the manifest URL is: " + manifestUrl, LogLevel::Info, 51);
     string newUrl = manifest["url"];
-    log("The URL from the manifest has been updated", LogLevel::Info, 53);
-    log("the new URL is: " + newUrl, LogLevel::Info, 54);
+    // log("The URL from the manifest has been updated", LogLevel::Info, 53);
+    // log("the new URL is: " + newUrl, LogLevel::Info, 54);
     g_urlFromManifest = newUrl;
 
     UpdateCurrentVersionIfDifferent(latestVersion);
