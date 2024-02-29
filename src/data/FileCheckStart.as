@@ -45,10 +45,12 @@ void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
     for (uint i = 0; i < filesToCheck.Length; i++) {
         string filePath = g_saveLocationStoragePath + GetCorrectLocation(type) + filesToCheck[i];
         if (IO::FileExists(filePath)) {
-            log("File exists: " + filePath, LogLevel::D, 48);
+            // This log has been temporarily disabled to avoid spamming the log
+            // log("File exists: " + filePath, LogLevel::D, 48);
         } else {
             nonExistingFilesArray.InsertLast(filesToCheck[i]);
-            log("File does not exist: " + filePath, LogLevel::D, 51);
+            // This log has been temporarily disabled to avoid spamming the log
+            // log("File does not exist: " + filePath, LogLevel::D, 51);
         }
     }
 }
