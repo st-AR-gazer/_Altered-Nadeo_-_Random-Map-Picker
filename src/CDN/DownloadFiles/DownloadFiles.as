@@ -14,6 +14,8 @@ void DownloadFiles() {
 
                    //Old Sorting System is deprecated
                    /*t_dataSortingSystemUrl + "data.csv"*/
+    // FetchManifest();
+    
     DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "ByOther/");
     log("Attempted to downloaded all 'other' files", LogLevel::Info, 18);
     
@@ -27,7 +29,6 @@ void DownloadFiles() {
 }
 
 void DownloadDataLoop(const string &in baseUrl, const array<string> &in files, const string &in localSaveLocation) {
-    FetchManifest();
     
     for (uint i = 0; i < files.Length; i++) {
         string localFilePath = localSaveLocation + files[i];
