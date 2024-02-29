@@ -42,7 +42,8 @@ void ParseManifest(const string &in reqBody) {
     g_manifestUrl = manifest["url"];
     g_manifestVersion = manifest["latestVersion"];
 
-    if (manifest["id"].GetType() != Json::Type::Null) { g_manifestID = manifest["id"]; }
+    if (manifest["id"].GetType() != Json::Type::Number) { g_manifestID = -1; }
+    else { g_manifestID = manifest["id"]; }
 
     StoreManifestID(g_manifestID); // not in use...
 
