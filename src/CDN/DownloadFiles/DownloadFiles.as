@@ -10,7 +10,7 @@ string localSaveLocation = IO::FromStorageFolder("New-Sorting-System/");
 // string g_idStoragePath = IO::FromStorageFolder("id");
 
 void DownloadFiles() {
-    if (g_manifestUrl != g_currentInstalledVersion) { log("Manifest Verstion does not match local version, updating the local files with the files spesified in the maniftest.", LogLevel::Warn, 9); } else  { return; }
+    if (g_manifestVersion != g_currentInstalledVersion) { log("Manifest Verstion does not match local version, updating the local files with the files spesified in the maniftest.", LogLevel::Warn, 9); } else  { return; }
     
     // if (g_manifestJson["id"] == g_idStoragePath) { log("Manifest ID matches local ID, no need to update.", LogLevel::Info, 9); return; }
     
@@ -21,6 +21,9 @@ void DownloadFiles() {
                    //Old Sorting System is deprecated
                    /*t_dataSortingSystemUrl + "data.csv"*/
     // FetchManifest();
+
+    bool TESTING;
+    if (TESTING) return;
     
     DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "ByOther/");
     log("Attempted to downloaded all 'other' files", LogLevel::Info, 18);

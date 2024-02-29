@@ -39,7 +39,18 @@ bool showPlaceholderLogs = true;
 
 
 void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
-    string lineInfo = line >= 0 ? (" " + line) : " ";
+    string lineInfo = line >= 0 ? " " + tostring(line) : "";
+    int lineLength = lineInfo.Length - 1;
+    string extraSpaces = "";
+    if (lineLength == 1) {        // 1 character
+        extraSpaces = "   ";      // Three extra spaces
+    } else if (lineLength == 2) { // 2 characters
+        extraSpaces = "  ";       // Two extra spaces
+    } else if (lineLength == 3) { // 3 characters
+        extraSpaces = " ";        // One extra space
+    }
+    lineInfo += extraSpaces;
+
     bool doLog = false;
 
     switch(level) {
@@ -54,13 +65,15 @@ void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
 
     if (doLog) {
         switch(level) {
-            case LogLevel::Info:  print("\\$0ff[INFO]  " +       "\\$z" + "\\$0cc" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::InfoG: print("\\$0f0[INFO-G]" +       "\\$z" + "\\$0c0" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::Warn:  print("\\$ff0[WARN]  " +       "\\$z" + "\\$cc0" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::Error: print("\\$f00[ERROR] " +       "\\$z" + "\\$c00" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::Test:  print("\\$aaa[TEST]  " +       "\\$z" + "\\$aaa" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::D:     print("\\$777[D]     " +       "\\$z" + "\\$777" + lineInfo + "\\$z" + msg); break;
-            case LogLevel::_:     print("\\$333[PLACEHOLDER] " + "\\$z" + "\\$333" + lineInfo + "\\$z" + msg); break;
+            case LogLevel::Info:  print("\\$0ff[INFO]  " + "\\$z" + "\\$0cc" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::InfoG: print("\\$0f0[INFO-G]" + "\\$z" + "\\$0c0" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::Warn:  print("\\$ff0[WARN]  " + "\\$z" + "\\$cc0" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::Error: print("\\$f00[ERROR] " + "\\$z" + "\\$c00" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::Test:  print("\\$aaa[TEST]  " + "\\$z" + "\\$aaa" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::D:     print("\\$777[D]     " + "\\$z" + "\\$777" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::_:     print("\\$333[PLACEH]" + "\\$z" + "\\$333" + lineInfo + "\\$z " + msg); break;
         }
     }
 }
+
+

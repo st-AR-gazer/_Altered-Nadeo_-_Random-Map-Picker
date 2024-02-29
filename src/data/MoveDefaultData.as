@@ -4,6 +4,7 @@ string pluginStorageDataPathNewSortingSystem = IO::FromStorageFolder("New-Sortin
 string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 string checkFilePath = IO::FromStorageFolder("initCheck.txt"); 
 
+
 void MoveDefaultDataFile() {
     if (!IO::FileExists(checkFilePath) || !IO::FileExists(pluginStorageDataPath)) {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 7);

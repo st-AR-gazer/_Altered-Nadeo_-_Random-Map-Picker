@@ -4,8 +4,8 @@ void ManifestCheck() {
     FetchManifest();
 }
 
-string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/latestInstalledVersion.json";
-string manifestUrlTEST = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/Test-Manifest-All-Instalations-STAR.json";
+string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
+string manifestUrlTEST = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
 // string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 
 void FetchManifest() {
@@ -29,8 +29,8 @@ void FetchManifest() {
 int latestVersion;
 string g_urlFromManifest;
 array<string> unUpdatedFiles;
-string g_manifestVersion;
-string g_currentInstalledVersion;
+int g_manifestVersion;
+int g_currentInstalledVersion;
 int g_manifestID = -1;
 
 void ParseManifest(const string &in reqBody) {
@@ -66,13 +66,14 @@ void ParseManifest(const string &in reqBody) {
     UpdateCurrentVersionIfDifferent(latestVersion);
 }
 
-void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
-    string currentInstalledVersion = GetCurrentInstalledVersion();
+void UpdateCurrentVersionIfDifferent(const int &in latestVersion) {
+    int currentInstalledVersion = GetCurrentInstalledVersion();
     g_currentInstalledVersion = currentInstalledVersion;
     
     log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 63);
+    bool shouldUpdateCurrentInstalledVersion = g_manifestJson["updateInstalledVersion"];
 
-    if ((currentInstalledVersion != latestVersion) && (g_manifestJson["updateInstalledVersion"] != false)) {
+    if ((currentInstalledVersion != latestVersion) && (!shouldUpdateCurrentInstalledVersion)) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 66);
         UpdateVersionFile(latestVersion);
         DownloadFiles();
@@ -81,7 +82,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     }
 }
 
-string GetCurrentInstalledVersion() {
+int GetCurrentInstalledVersion() {
     IO::File file();
     file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
@@ -93,10 +94,10 @@ string GetCurrentInstalledVersion() {
         return currentVersionJson["latestVersion"];
     }
 
-    return "";
+    return -1;
 }
 
-void UpdateVersionFile(const string &in latestVersion) {
+void UpdateVersionFile(const int &in latestVersion) {
     Json::Value json = Json::FromFile(pluginStorageVersionPath); 
     
     if (json.GetType() == Json::Type::Object) {
