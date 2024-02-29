@@ -30,6 +30,7 @@ string g_urlFromManifest;
 array<string> unUpdatedFiles;
 string g_manifestVersion;
 string g_currentInstalledVersion;
+int g_manifestID;
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
@@ -40,8 +41,9 @@ void ParseManifest(const string &in reqBody) {
     latestVersion = manifest["latestVersion"];
     g_manifestUrl = manifest["url"];
     g_manifestVersion = manifest["latestVersion"];
+    g_manifestID = manifest["id"];
 
-    StoreManifestID(manifest["id"]); // not in use...
+    StoreManifestID(g_manifestID); // not in use...
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
     if (newUpdateFiles.GetType() == Json::Type::Array) {
