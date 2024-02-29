@@ -35,10 +35,10 @@ void DownloadFiles() {
 }
 
 void DownloadDataLoop(const string &in baseUrl, const array<string> &in files, const string &in localSaveLocation) {
-    
+    bool updateAllFiles = g_manifestJson["updatedFiles"].HasKey("*") && g_manifestJson["updatedFiles"]["*"] == "*";
     for (uint i = 0; i < files.Length; i++) {
         string localFilePath = localSaveLocation + files[i];
-        if (unUpdatedFiles.Find(files[i]) != -1) {
+        if (unUpdatedFiles.Find(files[i]) != -1 || updateAllFiles/* || g_manifestJson["updatedFiles"].HasKey(files[i])*/) {
             if (!IO::FileExists(localFilePath)) {
                 string url = baseUrl + files[i];
                 log("Downloading updated file from: " + url, LogLevel::Info, 37);
