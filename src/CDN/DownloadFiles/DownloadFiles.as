@@ -41,7 +41,7 @@ void DownloadDataLoop(const string &in baseUrl, const array<string> &in files, c
         if (unUpdatedFiles.Find(files[i]) != -1 || updateAllFiles/* || g_manifestJson["updatedFiles"].HasKey(files[i])*/) {
             if (!IO::FileExists(localFilePath)) {
                 string url = baseUrl + files[i];
-                log("Downloading updated file from: " + url, LogLevel::Info, 37);
+                // log("Downloading updated file from: " + url, LogLevel::D, 37);
                 DownloadData(url, files[i], localSaveLocation);
                 sleep(5000);
             } else {
@@ -64,7 +64,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
 
     if (req.ResponseCode() == 200) {
         auto data = req.String();
-        log("Fetching new data successful: " + url, LogLevel::Info, 60);
+        /// log("Fetching new data successful: " + url, LogLevel::D, 60);
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
         array<string> errorFilesThatDidNotDownloadPropperly = {url, "" + req.ResponseCode(), req.String(), fileName};

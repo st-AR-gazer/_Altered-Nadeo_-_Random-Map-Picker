@@ -72,7 +72,7 @@ void UpdateCurrentVersionIfDifferent(const string &in latestVersion) {
     
     log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 63);
 
-    if (currentInstalledVersion != latestVersion) {
+    if ((currentInstalledVersion != latestVersion) && (g_manifestJson["updateInstalledVersion"] != false)) {
         log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 66);
         UpdateVersionFile(latestVersion);
         DownloadFiles();
