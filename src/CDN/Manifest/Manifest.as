@@ -26,7 +26,7 @@ void FetchManifest() {
     }
 }
 
-string latestVersion;
+int latestVersion;
 string g_urlFromManifest;
 array<string> unUpdatedFiles;
 string g_manifestVersion;
