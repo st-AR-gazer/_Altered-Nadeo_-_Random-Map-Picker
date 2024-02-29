@@ -30,7 +30,7 @@ string g_urlFromManifest;
 array<string> unUpdatedFiles;
 string g_manifestVersion;
 string g_currentInstalledVersion;
-int g_manifestID;
+int g_manifestID = -1;
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
@@ -41,7 +41,8 @@ void ParseManifest(const string &in reqBody) {
     latestVersion = manifest["latestVersion"];
     g_manifestUrl = manifest["url"];
     g_manifestVersion = manifest["latestVersion"];
-    g_manifestID = manifest["id"];
+
+    if (manifest["id"].GetType() != Json::Type::Null) { g_manifestID = manifest["id"]; }
 
     StoreManifestID(g_manifestID); // not in use...
 
@@ -108,6 +109,8 @@ void UpdateVersionFile(const string &in latestVersion) {
 string g_idStoragePath = IO::FromStorageFolder("id");
 
 void StoreManifestID(int id) { // not in use...
+    if (id == -1) { log("Id is null", LogLevel::D, 112); return; }
+    
     if (!IO::FileExists(g_idStoragePath)) {
         log("ID file does not exist, creating.", LogLevel::Info, 106);
     } else {
