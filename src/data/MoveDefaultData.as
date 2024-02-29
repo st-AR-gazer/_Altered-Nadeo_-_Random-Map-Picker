@@ -1,4 +1,6 @@
 string pluginStorageDataPath = IO::FromStorageFolder("data.csv");
+string pluginStorageDataPathNewSortingSystem = IO::FromStorageFolder("New-Sorting-System/Other-Data/data.csv");
+
 string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 string checkFilePath = IO::FromStorageFolder("initCheck.txt");
 
@@ -6,6 +8,7 @@ void MoveDefaultDataFile() {
     if (!IO::FileExists(checkFilePath) or !IO::FileExists(pluginStorageDataPath)) {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 7);
         MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPath);
+        MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPathNewSortingSystem);
         MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
         log("Files have been moved to storage", LogLevel::Info, 10);
         
