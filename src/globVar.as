@@ -7,4 +7,4 @@ string g_alterationStoragePath = IO::FromStorageFolder("New-Sorting-System/ByAlt
 
 string g_seasonStoragePath = IO::FromStorageFolder("New-Sorting-System/BySeason/");
 
-string g_manifestJson;
+Json::Value g_manifestJson;
