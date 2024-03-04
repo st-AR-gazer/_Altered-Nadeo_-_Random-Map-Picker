@@ -145,15 +145,15 @@ IsUsing_Reverse = true;
 
 Go to `src/Exports/Exports_impl.as` and find the correct location once again:
 ```c
-void SetPodium(bool value)      { if (value) { IsUsing_Podium = true; }                       if else (!value) { IsUsing_Podium = false; }                       else {return;} }
-void SetPoolHunters(bool value) { if (value) { IsUsing_Pool_Hunters = true; }                 if else (!value) { IsUsing_Pool_Hunters = false; }                 else {return;} }
-void SetPuzzle(bool value)      { if (value) { IsUsing_Puzzle = true; }                       if else (!value) { IsUsing_Puzzle = false; }                       else {return;} }
+void SetPodium(bool value)      { if (value) { IsUsing_Podium = true; }          if else (!value) { IsUsing_Podium = false; }          else {return;} }
+void SetPoolHunters(bool value) { if (value) { IsUsing_Pool_Hunters = true; }    if else (!value) { IsUsing_Pool_Hunters = false; }    else {return;} }
+void SetPuzzle(bool value)      { if (value) { IsUsing_Puzzle = true; }          if else (!value) { IsUsing_Puzzle = false; }          else {return;} }
 
-void SetRALLY(bool value)       { if (value) { IsUsing_Rally_ = true; }                       if else (!value) { IsUsing_Rally_ = false; }                       else {return;} } // This is the spot
+void SetRALLY(bool value)       { if (value) { IsUsing_Rally_ = true; }          if else (!value) { IsUsing_Rally_ = false; }          else {return;} } // This is the spot
 
-void SetRandom(bool value)      { if (value) { IsUsing_Random = true; }                       if else (!value) { IsUsing_Random = false; }                       else {return;} }
-void SetRandomD(bool value)     { if (value) { IsUsing_Random_Dankness = true; }              if else (!value) { IsUsing_Random_Dankness = false; }              else {return;} }
-void SetRandomE(bool value)     { if (value) { IsUsing_Random_Effects = true; }               if else (!value) { IsUsing_Random_Effects = false; }               else {return;} }
+void SetRandom(bool value)      { if (value) { IsUsing_Random = true; }          if else (!value) { IsUsing_Random = false; }          else {return;} }
+void SetRandomD(bool value)     { if (value) { IsUsing_Random_Dankness = true; } if else (!value) { IsUsing_Random_Dankness = false; } else {return;} }
+void SetRandomE(bool value)     { if (value) { IsUsing_Random_Effects = true; }  if else (!value) { IsUsing_Random_Effects = false; }  else {return;} }
 ```
 
 Next go to `src/Exports/Exports.as` and find the correct spot to add the alteraiton:
