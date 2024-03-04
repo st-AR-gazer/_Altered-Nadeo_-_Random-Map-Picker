@@ -3,6 +3,8 @@
 This guide provides step-by-step instructions on how to add a new alteration.
 For this explaination we're going to be adding "Rally"
 
+**NOTE:** I'm using Rally as an example since it is newly added so this explanination is actually incorrect, Envimix campaigns are sorted at the top of every list, the rally campaign should therefore be located there, please use this as a generic explanination for most alterations.
+
 Note that this is only part 1, part two tackles how to add it to the python script.
 
 
@@ -139,10 +141,41 @@ IsUsing_Reactor_Down = true;
 IsUsing_Reverse = true;
 ```
 
+## Step 7: Adding Alteration to Exports
+
+Go to `src/Exports/Exports_impl.as` and find the correct location once again:
+```c
+void SetPodium(bool value)      { if (value) { IsUsing_Podium = true; }                       if else (!value) { IsUsing_Podium = false; }                       else {return;} }
+void SetPoolHunters(bool value) { if (value) { IsUsing_Pool_Hunters = true; }                 if else (!value) { IsUsing_Pool_Hunters = false; }                 else {return;} }
+void SetPuzzle(bool value)      { if (value) { IsUsing_Puzzle = true; }                       if else (!value) { IsUsing_Puzzle = false; }                       else {return;} }
+
+void SetRALLY(bool value)       { if (value) { IsUsing_Rally_ = true; }                       if else (!value) { IsUsing_Rally_ = false; }                       else {return;} } // This is the spot
+
+void SetRandom(bool value)      { if (value) { IsUsing_Random = true; }                       if else (!value) { IsUsing_Random = false; }                       else {return;} }
+void SetRandomD(bool value)     { if (value) { IsUsing_Random_Dankness = true; }              if else (!value) { IsUsing_Random_Dankness = false; }              else {return;} }
+void SetRandomE(bool value)     { if (value) { IsUsing_Random_Effects = true; }               if else (!value) { IsUsing_Random_Effects = false; }               else {return;} }
+```
+
+Next go to `src/Exports/Exports.as` and find the correct spot to add the alteraiton:
+
+```c
+import void SetPodium(bool value)         from "AlteredNadeo_RandomMapPicker";
+import void SetPoolHunters(bool value)    from "AlteredNadeo_RandomMapPicker";
+import void SetPuzzle(bool value)         from "AlteredNadeo_RandomMapPicker";
+
+import void SetRALLY(bool value)          from "AlteredNadeo_RandomMapPicker"; // This is the spot
+
+import void SetRandom(bool value)         from "AlteredNadeo_RandomMapPicker";
+import void SetRandomDankness(bool value) from "AlteredNadeo_RandomMapPicker";
+import void SetRandomEffects(bool value)  from "AlteredNadeo_RandomMapPicker";
+```
+
+
+
+
 ## Summary
 
-You have successfully added an alteration to the project settings. Repeat this process for any additional alterations you wish to include. The process is the same for adding seasonal campaigns.
-
+You have successfully added an alteration to the project settings, and added it as an export. Repeat this process for any additional alterations you wish to include. The process is the same for adding seasonal campaigns.
 
 
 # Quick Guide to Adding an Alteration in Settings (Part 2.1)
