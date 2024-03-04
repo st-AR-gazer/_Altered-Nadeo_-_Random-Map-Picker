@@ -24,6 +24,10 @@ array<string> GetAlterationFiles() {
             filesToInclude.InsertLast(alterationFilePath + "_Stadium_.json");
         }
 
+        if (IsUsing_Rally_) {
+            filesToInclude.InsertLast(alterationFilePath + "_Rally_.json");
+        }
+
     // Other
 
         if (IsUsing_1Back) {

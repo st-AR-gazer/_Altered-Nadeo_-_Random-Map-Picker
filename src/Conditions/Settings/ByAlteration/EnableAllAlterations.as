@@ -12,6 +12,7 @@ void EnableAllByAlterationSetting() {
     IsUsing_Snow_Underwater = true;
     IsUsing_Snow_Wood = true;
     IsUsing_Stadium_ = true;
+    IsUsing_Rally_ = true;
     IsUsing_1Back = true;
     IsUsing_1Down = true;
     IsUsing_1Left = true;

@@ -30,6 +30,7 @@ void DeselectAllSettings() {
     IsUsing_Spring2025Maps = false;
 
     IsUsing_AllSnowDiscovery = false;
+    IsUsing_AllRallyDiscovery = false;
     IsUsing_AllTOTD = false;
     IsUsing_AllOfficialCompetitions = false;
 
@@ -41,7 +42,11 @@ void DeselectAllSettings() {
     IsUsing_Snow_Icy = false;
     IsUsing_Snow_Underwater = false;
     IsUsing_Snow_Wood = false;
-    IsUsing_Stadium_ = false;
+    
+    IsUsing_Stadium_ = false; 
+    
+    IsUsing_Rally_ = false;
+
     IsUsing_1Back = false;
     IsUsing_1Down = false;
     IsUsing_1Left = false;

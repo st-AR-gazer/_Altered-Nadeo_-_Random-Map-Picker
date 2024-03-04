@@ -13,5 +13,8 @@ bool IsUsing__AllOfficialCompetitions = false;
 [Setting category="ByOther" name="All Snow Discovery"]
 bool IsUsing_AllSnowDiscovery = false;
 
+[Setting category="ByOther" name="All Rally Discovery"]
+bool IsUsing_AllRallyDiscovery = false;
+
 [Setting category="ByOther" name="AllTOTD"]
 bool IsUsing_AllTOTD = false;

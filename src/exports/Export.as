@@ -2,6 +2,9 @@
 
 import Json::Value GetUserSettings() from "AlteredNadeo_RandomMapPicker";
 
+
+
+
 import void SetOnlyWinterMaps(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetOnlySpringMaps(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetOnlySummerMaps(bool value) from "AlteredNadeo_RandomMapPicker";

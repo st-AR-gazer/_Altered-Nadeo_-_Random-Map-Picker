@@ -6,6 +6,9 @@ array<string> GetOtherFiles() {
     if (IsUsing_AllSnowDiscovery) {
         filesToInclude.InsertLast(otherFilePath + "AllSnowDiscovery.json");
     }
+    if (IsUsing_AllRallyDiscovery) {
+        filesToInclude.InsertLast(otherFilePath + "AllRallyDiscovery.json");
+    }
     if (IsUsing_AllTOTD) {
         filesToInclude.InsertLast(otherFilePath + "AllTOTD.json");
     }

@@ -23,6 +23,9 @@
     [Setting category="ByAlteration" name="[Stadium]"]
     bool IsUsing_Stadium_ = true;
 
+    [Setting category="ByAlteration" name="[Rally]"]
+    bool IsUsing_Rally_ = true;
+
 // Other
 
     [Setting category="ByAlteration" name="1 Back"]

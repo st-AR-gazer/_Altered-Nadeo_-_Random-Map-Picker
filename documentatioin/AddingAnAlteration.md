@@ -5,172 +5,100 @@ For this explaination we're going to be adding "Rally"
 
 **NOTE:** I'm using Rally as an example since it is newly added so this explanination is actually incorrect, Envimix campaigns are sorted at the top of every list, the rally campaign should therefore be located there, please use this as a generic explanination for most alterations.
 
-Note that this is only part 1, part two tackles how to add it to the python script.
+**Note**: This is only part 1, part two tackles how to add it to the python script.
+(It can be found further down)
 
 
-## Step 1: Add Alteration to DisableAllAlterations
+## Step 0: Keeping the code 'clean'
 
-1. Navigate to the file: `src/Conditions/Settings/ByAlteration/DisableAllAlterations.as`
+Settings are sorted mostly alphabetically, but in this hirarcy:
 
-2. Locate the appropriate section within the file and add the alteration:
-   ```c
-   IsUsing_Random = false;
-   IsUsing_Random_Dankness = false;
-   IsUsing_Random_Effects = false;
+Type e.g Season; Alteration; Other
+Season.
 
-   IsUsing_Rally = false; // Add this line
+Season has one special case you can read more about it in the `AddingASeason` documentation located in `\documentation`
 
-   IsUsing_Reactor = false;
-   IsUsing_Reactor_Down = false;
-   IsUsing_Reverse = false;
-   ```
+Alterations does have a couple speical sorting cases
+
+```bash
+Envimix is sorted by itself.
+```
+There is no order to this yet, but when a new generation is added Snow(alpine) Rally and Dessert will be sorted as one group, moving onto the next.
+
+Other than that it's alphabetically sorted, in the rest of the documentation this will loosely be reffered to as 'finding the correct spot to place the setting'.
+
+**NOTE:** in `name=""` envimix is reffered to inside of `[]`
 
 
-## Step 2: Enable Alteration in EnableAllAlterations
 
-The process is the same for `src\Conditions\Settings\ArrayKabeef\EnableAllAlterations.as`
-The only difference is that they are all true this time:
+## Step 1: Adding the \[setting\]
+
+1. Adding the main setting
+
+Navigate to the file `src\Conditions\Settings\ByAlteration\IndividualEnableOrDissable.as` and add this in the correct location:
 ```c
-IsUsing_Random = true;
-IsUsing_Random_Dankness = true;
-IsUsing_Random_Effects = true;
+[Setting category="ByAlteration" name="[Rally]"]
+bool IsUsing_Rally_ = true;
+```
+(It's default state should be true)
 
-`IsUsing_Rally = true` // Add this line
+2. Adding the alteration to the global dissable all
 
-IsUsing_Reactor = true;
-IsUsing_Reactor_Down = true;
-IsUsing_Reverse = true;
+Navigate to the file `src\Conditions\Settings\DissableAll.as` and add this in the correct location:
+```c
+IsUsing_Rally_ = false;
 ```
 
-## Step 3: List Alterations Separately
+3. Adding the alteration to the global enable all
 
-This step is again mostly the same for  `src\Conditions\Settings\ArrayKabeef\` the only differnece is that each of the alterations this time are listed seperatly.
-
+Navigate to the file `src\Conditions\Settings\EnableAll.as` and add this in the correct location:
 ```c
-[Setting category="ByAlteration" name="Random"]
-bool IsUsing_Random = true;
-
-[Setting category="ByAlteration" name="Random Dankness"]
-bool IsUsing_Random_Dankness = true;
-
-[Setting category="ByAlteration" name="Random Effects"]
-bool IsUsing_Random_Effects = true;
-
-
-`[Setting category="ByAlteration" name="Rally"]` // Add this line // Name should be the same as the alteration
-`bool IsUsing_Rally = true;`                     // Add this line // Append `IsUsing_` to the start of alt name
-
-
-[Setting category="ByAlteration" name="Reactor"]
-bool IsUsing_Reactor = true;
-
-[Setting category="ByAlteration" name="Reactor Down"]
-bool IsUsing_Reactor_Down = true;
-
-[Setting category="ByAlteration" name="Reverse"]
-bool IsUsing_Reverse = true;
+IsUsing_Rally_ = true;
 ```
 
-### NOTE: 
-The rest of the code relies on this, so while everything works without the others, the setting will not show up if this is not here.
+4. Adding the alteration to the files that should be included in a downlaod:
 
-
-## Step 4: Update AlterationFiles
-
-Next go to `src\Conditions\Settings\ArrayKabeef\AlterationFiles.as` and find the correct location again:
-
+Navigate to the file `src\Conditions\Settings\ArrayKabeef\AlterationFiles.as` and add this in the correct location:
 ```c
-if (IsUsing_Random) {
-    filesToInclude.InsertLast(alterationFilePath + "Random.json");
-}
-if (IsUsing_Random_Dankness) {
-    filesToInclude.InsertLast(alterationFilePath + "Random_Dankness.json");
-}
-if (IsUsing_Random_Effects) {
-    filesToInclude.InsertLast(alterationFilePath + "Random_Effects.json");
-}
-
-if (IsUsing_Rally) {                                                // Add this line
-    filesToInclude.InsertLast(alterationFilePath + "_Rally_.json"); // Add this line
-}                                                                   // Add this line
-
-if (IsUsing_Reactor) {
-    filesToInclude.InsertLast(alterationFilePath + "Reactor.json");
-}
-if (IsUsing_Reactor_Down) {
-    filesToInclude.InsertLast(alterationFilePath + "Reactor_Down.json");
-}
-if (IsUsing_Reverse) {
-    filesToInclude.InsertLast(alterationFilePath + "Reverse.json");
+if (IsUsing_Rally_) {
+    filesToInclude.InsertLast(alterationFilePath + "_Rally_.json");
 }
 ```
 
-### NOTE: 
-Make sure that the file name is correct, alterations that use anything other than a "\_" to separete differenct characters are not supported by ManiaCDN and are automatically converted to a "\_", this means that "\[Rally\].json" is converted to "\_Rally\_.json".
+5. Adding the alteration to dissable all alterations:
 
-
-## Step 5: Update DisableAll
-
-Go to `src\Conditions\Settings\DissableAll.as` and find the correct location.
-
+Navigate to the file `src\Conditions\Settings\ByAlteration\DissableAllAlteration.as` and add this in the correct location:
 ```c
-IsUsing_Random = false;
-IsUsing_Random_Dankness = false;
-IsUsing_Random_Effects = false;
-
-`IsUsing_Rally = false;` // Add this line
-
-IsUsing_Reactor = false;
-IsUsing_Reactor_Down = false;
-IsUsing_Reverse = false;
+IsUsing_Rally_ = false;
 ```
 
-## Step 6: Update EnableAll
+6. Adding the alteration to enable all alterations:
 
-Go to `src\Conditions\Settings\EnableAll.as` and find the correct location.
-
+Navigate to the file `src\Conditions\Settings\ByAlteration\EnableAllAlteration.as` and add this in the correct location:
 ```c
-IsUsing_Random = true;
-IsUsing_Random_Dankness = true;
-IsUsing_Random_Effects = true;
-
-`IsUsing_Rally = true;` // Add this line
-
-IsUsing_Reactor = true;
-IsUsing_Reactor_Down = true;
-IsUsing_Reverse = true;
+IsUsing_Rally_ = true;
 ```
 
-## Step 7: Adding Alteration to Exports
+7. Adding the alteration to Exports
 
-Go to `src/Exports/Exports_impl.as` and find the correct location once again:
-```c
-void SetPodium(bool value)      { if (value) { IsUsing_Podium = true; }          if else (!value) { IsUsing_Podium = false; }          else {return;} }
-void SetPoolHunters(bool value) { if (value) { IsUsing_Pool_Hunters = true; }    if else (!value) { IsUsing_Pool_Hunters = false; }    else {return;} }
-void SetPuzzle(bool value)      { if (value) { IsUsing_Puzzle = true; }          if else (!value) { IsUsing_Puzzle = false; }          else {return;} }
-
-void SetRALLY(bool value)       { if (value) { IsUsing_Rally_ = true; }          if else (!value) { IsUsing_Rally_ = false; }          else {return;} } // This is the spot
-
-void SetRandom(bool value)      { if (value) { IsUsing_Random = true; }          if else (!value) { IsUsing_Random = false; }          else {return;} }
-void SetRandomD(bool value)     { if (value) { IsUsing_Random_Dankness = true; } if else (!value) { IsUsing_Random_Dankness = false; } else {return;} }
-void SetRandomE(bool value)     { if (value) { IsUsing_Random_Effects = true; }  if else (!value) { IsUsing_Random_Effects = false; }  else {return;} }
-```
-
-Next go to `src/Exports/Exports.as` and find the correct spot to add the alteraiton:
+Navigate to the file `src\Exports\Export_Impl.as` and add this in the correct location:
 
 ```c
-import void SetPodium(bool value)         from "AlteredNadeo_RandomMapPicker";
-import void SetPoolHunters(bool value)    from "AlteredNadeo_RandomMapPicker";
-import void SetPuzzle(bool value)         from "AlteredNadeo_RandomMapPicker";
-
-import void SetRALLY(bool value)          from "AlteredNadeo_RandomMapPicker"; // This is the spot
-
-import void SetRandom(bool value)         from "AlteredNadeo_RandomMapPicker";
-import void SetRandomDankness(bool value) from "AlteredNadeo_RandomMapPicker";
-import void SetRandomEffects(bool value)  from "AlteredNadeo_RandomMapPicker";
+bool SetRALLY(bool value) { if (value) { IsUsing_Rally_ = true; } else if (!value) { IsUsing_Rally_ = false; } else {return IsUsing_Rally_;} }
 ```
 
+Now scroll up a big and add this line to the correct location:
+```c
+byAlteration["[Rally]"] = IsUsing_Rally_;
+```
 
+8. Adding the alteration to Exports p2
+
+navigate to the file `` and add this to the correct location:
+```c
+import void SetRALLY(bool value) from "AlteredNadeo_RandomMapPicker";
+```
+Envimix alterations are reffered to with capitol case.
 
 
 ## Summary

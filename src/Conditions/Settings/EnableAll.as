@@ -30,6 +30,7 @@ void SelectAllSettings() {
     IsUsing_Spring2025Maps = true;
 
     IsUsing_AllSnowDiscovery = true;
+    IsUsing_AllRallyDiscovery = true;
     IsUsing_AllTOTD = true;
     IsUsing_AllOfficialCompetitions = true;
 
@@ -41,7 +42,11 @@ void SelectAllSettings() {
     IsUsing_Snow_Icy = true;
     IsUsing_Snow_Underwater = true;
     IsUsing_Snow_Wood = true;
+    
     IsUsing_Stadium_ = true;
+
+    IsUsing_Rally_ = true;
+
     IsUsing_1Back = true;
     IsUsing_1Down = true;
     IsUsing_1Left = true;
