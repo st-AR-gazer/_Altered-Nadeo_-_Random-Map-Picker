@@ -14,7 +14,9 @@ def get_access_token(username, password):
     url = "https://prod.trackmania.core.nadeo.online/v2/authentication/token/basic"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Basic {encode_credentials(username, password)}"
+        "Authorization": f"Basic {encode_credentials(username, password)}",
+        "User-Agent": "I'm downloading all the altered nadeo maps to keep a plugin project up to date, this should only happnen once a month or so",
+        "From": "@ar___ on discord (or ar@xjk.yt through e-mail, though disocrd is preferred :D)",
     }
     body = {"audience": "NadeoServices"}
     response = requests.post(url, headers=headers, json=body)
