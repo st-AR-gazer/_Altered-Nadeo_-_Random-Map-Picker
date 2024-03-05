@@ -90,6 +90,8 @@ int GetCurrentInstalledVersion() {
     file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
+
+    log("Current version file contents: " + fileContents, LogLevel::Info, 79);
     
     Json::Value currentVersionJson = Json::Parse(fileContents);
 

@@ -47,17 +47,13 @@ string testPath = IO::FromStorageFolder("test.json");
 
 void CheckCurrentInstalledVersionType() { // NOT IN USE
     IO::File file();
-    file.Open(testPath, IO::FileMode::Read);
+    file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
     
     Json::Value currentVersionJson = Json::Parse(fileContents);
 
     if (currentVersionJson.GetType() == Json::Type::Object) {
-        if (currentVersionJson["latestVersion"].GetType() != Json::Type::Number) {
-            log("latestVersion in currentInstalledVersion is not an int.", LogLevel::Error, 80); 
-            log("Overwriting the currently installed version with the new default.", LogLevel::Info, 85);
-            MoveDefaultDataFile(true);
-        }
+        return currentVersionJson["latestVersion"];
     }
 }
