@@ -43,7 +43,7 @@ void CreateCheckFile() {
 
 
 
-string CheckCurrentInstalledVersionType() {
+void CheckCurrentInstalledVersionType() {
     IO::File file();
     file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
