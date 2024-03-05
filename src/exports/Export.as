@@ -1,5 +1,5 @@
 // import string GetARandomAltMapUid() from "AlteredNadeo_RandomMapPicker";
-
+/*
 import Json::Value GetUserSettings() from "AlteredNadeo_RandomMapPicker";
 
 
@@ -58,8 +58,7 @@ import void SetBetter_Mixed(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBetter_Reverse(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBlind(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBobsleigh(bool value) from "AlteredNadeo_RandomMapPicker";
-import void SetThereAndBack(bool value) from "AlteredNadeo_RandomMapPicker";
-import void SetThereAndBack(bool value) from "AlteredNadeo_RandomMapPicker";
+import void SetBoomerangThereAndBack(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBoosterless(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBroken(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetBumper(bool value) from "AlteredNadeo_RandomMapPicker";
@@ -169,3 +168,4 @@ import void SetAllRallyDiscovery(bool value) from "AlteredNadeo_RandomMapPicker"
 import void SetMapIsNotObtainable(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetOfficialNadeo(bool value) from "AlteredNadeo_RandomMapPicker";
 import void SetAllTOTD(bool value) from "AlteredNadeo_RandomMapPicker";
+*/

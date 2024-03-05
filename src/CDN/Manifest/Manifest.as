@@ -46,7 +46,7 @@ void ParseManifest(const string &in reqBody) {
     if (manifest["id"].GetType() != Json::Type::Number) { g_manifestID = -1; }
     else { g_manifestID = manifest["id"]; }
 
-    StoreManifestID(g_manifestID); // not in use...
+    // StoreManifestID(g_manifestID); // not in use...
 
     Json::Value newUpdateFiles = manifest["newUpdate"];
     if (newUpdateFiles.GetType() == Json::Type::Array) {
@@ -111,17 +111,17 @@ void UpdateVersionFile(const int &in latestVersion) {
 
 string g_idStoragePath = IO::FromStorageFolder("id");
 
-void StoreManifestID(int id) { // not in use...
-    if (id == -1) { log("Id is null", LogLevel::D, 112); return; }
+// void StoreManifestID(int id) { // not in use...
+//     if (id == -1) { log("Id is null", LogLevel::D, 112); return; }
     
-    if (!IO::FileExists(g_idStoragePath)) {
-        log("ID file does not exist, creating.", LogLevel::Info, 106);
-    } else {
-        log("ID file already exists, overwriting.", LogLevel::Info, 104);
-    }
+//     if (!IO::FileExists(g_idStoragePath)) {
+//         log("ID file does not exist, creating.", LogLevel::Info, 106);
+//     } else {
+//         log("ID file already exists, overwriting.", LogLevel::Info, 104);
+//     }
 
-    IO::File file();
-    file.Open(g_idStoragePath, IO::FileMode::Write);
-    file.Write(id);
-    file.Close();
-}
+//     IO::File file();
+//     file.Open(g_idStoragePath, IO::FileMode::Write);
+//     file.Write(id);
+//     file.Close();
+// }

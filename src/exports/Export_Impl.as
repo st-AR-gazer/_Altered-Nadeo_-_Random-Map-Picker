@@ -3,6 +3,7 @@
 //     return uid;
 // }
 
+/*
 Json::Value GetUserSettings() {
     Json::Value settings;
 
@@ -245,7 +246,7 @@ bool SetBetter_Mixed(bool value)           { if (value) { IsUsing_Better_Mixed =
 bool SetBetter_Reverse(bool value)         { if (value) { IsUsing_Better_Reverse = true; }               else if (!value) { IsUsing_Better_Reverse = false; }               else {return IsUsing_Better_Reverse;} }
 bool SetBlind(bool value)                  { if (value) { IsUsing_Blind = true; }                        else if (!value) { IsUsing_Blind = false; }                        else {return IsUsing_Blind;} }
 bool SetBobsleigh(bool value)              { if (value) { IsUsing_Bobsleigh = true; }                    else if (!value) { IsUsing_Bobsleigh = false; }                    else {return IsUsing_Bobsleigh;} }
-bool SetThereAndBack(bool value)           { if (value) { IsUsing_Boomerang_There_and_Back = true; }     else if (!value) { IsUsing_Boomerang_There_and_Back = false; }     else {return IsUsing_Boomerang_There_and_Back;} }
+bool SetBoomerangThereAndBack(bool value)  { if (value) { IsUsing_Boomerang_There_and_Back = true; }     else if (!value) { IsUsing_Boomerang_There_and_Back = false; }     else {return IsUsing_Boomerang_There_and_Back;} }
 bool SetBoosterless(bool value)            { if (value) { IsUsing_Boosterless = true; }                  else if (!value) { IsUsing_Boosterless = false; }                  else {return IsUsing_Boosterless;} }
 bool SetBroken(bool value)                 { if (value) { IsUsing_Broken = true; }                       else if (!value) { IsUsing_Broken = false; }                       else {return IsUsing_Broken;} }
 bool SetBumper(bool value)                 { if (value) { IsUsing_Bumper = true; }                       else if (!value) { IsUsing_Bumper = false; }                       else {return IsUsing_Bumper;} }
@@ -355,3 +356,4 @@ bool SetAllRallyDiscovery(bool value)              { if (value) { IsUsing_AllRal
 bool SetMapIsNotObtainable(bool value)             { if (value) { IsUsing_MapIsNotObtainable = true; }       else if (!value) { IsUsing_MapIsNotObtainable = false; }       else {return IsUsing_MapIsNotObtainable;} }
 bool SetOfficialNadeo(bool value)                  { if (value) { IsUsing_OfficialNadeo = true; }            else if (!value) { IsUsing_OfficialNadeo = false; }            else {return IsUsing_OfficialNadeo;} }
 bool SetAllTOTD(bool value)                        { if (value) { IsUsing_AllTOTD = true; }                  else if (!value) { IsUsing_AllTOTD = false; }                  else {return IsUsing_AllTOTD;} }
+*/
