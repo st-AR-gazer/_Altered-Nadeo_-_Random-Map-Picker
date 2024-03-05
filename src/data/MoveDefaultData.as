@@ -10,6 +10,7 @@ void MoveDefaultDataFile(bool fileBypass) {
         log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 7);
         MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPath);
         MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPathNewSortingSystem);
+        if (fileBypass) log("test", LogLevel::Test, 8);
         MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
         log("Files have been moved to storage", LogLevel::Info, 10);
         
@@ -25,7 +26,7 @@ void MoveFileToPluginStorage(const string &in originalPath, const string &in sto
     string fileContents = originalFile.ReadToEnd();
     log("Moving the file content", LogLevel::Info, 22);
     log("The content:\n" + /*fileContents +*/ "The filecontents are not included since it clogs log... xdd...", LogLevel::Info, 23);
-    log("The content:\n" + fileContents, LogLevel::Info, 23);
+    // log("The content:\n" + fileContents, LogLevel::Info, 23);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
