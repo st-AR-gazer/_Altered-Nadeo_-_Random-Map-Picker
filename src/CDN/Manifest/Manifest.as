@@ -49,7 +49,7 @@ void ParseManifest(const string &in reqBody) {
     // StoreManifestID(g_manifestID); // not in use...
 
 
-    Json::Value newUpdateFiles = manifest["newUpdate"];
+    Json::Value newUpdateFiles = manifest["updatedFiles"];
 
     if (newUpdateFiles.HasKey("*")) {
         for (uint i = 0; i < alterationFiles.Length; i++) {
