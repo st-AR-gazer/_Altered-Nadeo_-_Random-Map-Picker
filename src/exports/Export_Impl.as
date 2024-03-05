@@ -197,27 +197,27 @@ string SetOnlyFallMaps(bool value) {
     return "Sorry this currently isn't implemented";
 }
 
-bool SetSpring2020Maps(bool value) { if (value) { IsUsing_Spring2020Maps = true; } else if { IsUsing_Spring2020Maps = false; } else {return IsUsing_Spring2020Maps;} }
-bool SetSummer2020Maps(bool value) { if (value) { IsUsing_Summer2020Maps = true; } else if { IsUsing_Summer2020Maps = false; } else {return IsUsing_Summer2020Maps;} }
-bool SetFall2020Maps(bool value)   { if (value) { IsUsing_Fall2020Maps = true; }   else if { IsUsing_Fall2020Maps = false; }   else {return IsUsing_Fall2020Maps;} }
-bool SetWinter2021Maps(bool value) { if (value) { IsUsing_Winter2021Maps = true; } else if { IsUsing_Winter2021Maps = false; } else {return IsUsing_Winter2021Maps;} }
-bool SetSpring2021Maps(bool value) { if (value) { IsUsing_Spring2021Maps = true; } else if { IsUsing_Spring2021Maps = false; } else {return IsUsing_Spring2021Maps;} }
-bool SetSummer2021Maps(bool value) { if (value) { IsUsing_Summer2021Maps = true; } else if { IsUsing_Summer2021Maps = false; } else {return IsUsing_Summer2021Maps;} }
-bool SetFall2021Maps(bool value)   { if (value) { IsUsing_Fall2021Maps = true; }   else if { IsUsing_Fall2021Maps = false; }   else {return IsUsing_Fall2021Maps;} }
-bool SetWinter2022Maps(bool value) { if (value) { IsUsing_Winter2022Maps = true; } else if { IsUsing_Winter2022Maps = false; } else {return IsUsing_Winter2022Maps;} }
-bool SetSpring2022Maps(bool value) { if (value) { IsUsing_Spring2022Maps = true; } else if { IsUsing_Spring2022Maps = false; } else {return IsUsing_Spring2022Maps;} }
-bool SetSummer2022Maps(bool value) { if (value) { IsUsing_Summer2022Maps = true; } else if { IsUsing_Summer2022Maps = false; } else {return IsUsing_Summer2022Maps;} }
-bool SetFall2022Maps(bool value)   { if (value) { IsUsing_Fall2022Maps = true; }   else if { IsUsing_Fall2022Maps = false; }   else {return IsUsing_Fall2022Maps;} }
-bool SetWinter2023Maps(bool value) { if (value) { IsUsing_Winter2023Maps = true; } else if { IsUsing_Winter2023Maps = false; } else {return IsUsing_Winter2023Maps;} }
-bool SetSpring2023Maps(bool value) { if (value) { IsUsing_Spring2023Maps = true; } else if { IsUsing_Spring2023Maps = false; } else {return IsUsing_Spring2023Maps;} }
-bool SetSummer2023Maps(bool value) { if (value) { IsUsing_Summer2023Maps = true; } else if { IsUsing_Summer2023Maps = false; } else {return IsUsing_Summer2023Maps;} }
-bool SetFall2023Maps(bool value)   { if (value) { IsUsing_Fall2023Maps = true; }   else if { IsUsing_Fall2023Maps = false; }   else {return IsUsing_Fall2023Maps;} }
-bool SetWinter2024Maps(bool value) { if (value) { IsUsing_Winter2024Maps = true; } else if { IsUsing_Winter2024Maps = false; } else {return IsUsing_Winter2024Maps;} }
-bool SetSpring2024Maps(bool value) { if (value) { IsUsing_Spring2024Maps = true; } else if { IsUsing_Spring2024Maps = false; } else {return IsUsing_Spring2024Maps;} }
-bool SetSummer2024Maps(bool value) { if (value) { IsUsing_Summer2024Maps = true; } else if { IsUsing_Summer2024Maps = false; } else {return IsUsing_Summer2024Maps;} }
-bool SetFall2024Maps(bool value)   { if (value) { IsUsing_Fall2024Maps = true; }   else if { IsUsing_Fall2024Maps = false; }   else {return IsUsing_Fall2024Maps;} }
-bool SetWinter2025Maps(bool value) { if (value) { IsUsing_Winter2025Maps = true; } else if { IsUsing_Winter2025Maps = false; } else {return IsUsing_Winter2025Maps;} }
-bool SetSpring2025Maps(bool value) { if (value) { IsUsing_Spring2025Maps = true; } else if { IsUsing_Spring2025Maps = false; } else {return IsUsing_Spring2025Maps;} }
+bool SetSpring2020Maps(bool value) { if (value) { IsUsing_Spring2020Maps = true; } else if (!value) { IsUsing_Spring2020Maps = false; } else {return IsUsing_Spring2020Maps;} }
+bool SetSummer2020Maps(bool value) { if (value) { IsUsing_Summer2020Maps = true; } else if (!value) { IsUsing_Summer2020Maps = false; } else {return IsUsing_Summer2020Maps;} }
+bool SetFall2020Maps(bool value)   { if (value) { IsUsing_Fall2020Maps = true; }   else if (!value) { IsUsing_Fall2020Maps = false; }   else {return IsUsing_Fall2020Maps;} }
+bool SetWinter2021Maps(bool value) { if (value) { IsUsing_Winter2021Maps = true; } else if (!value) { IsUsing_Winter2021Maps = false; } else {return IsUsing_Winter2021Maps;} }
+bool SetSpring2021Maps(bool value) { if (value) { IsUsing_Spring2021Maps = true; } else if (!value) { IsUsing_Spring2021Maps = false; } else {return IsUsing_Spring2021Maps;} }
+bool SetSummer2021Maps(bool value) { if (value) { IsUsing_Summer2021Maps = true; } else if (!value) { IsUsing_Summer2021Maps = false; } else {return IsUsing_Summer2021Maps;} }
+bool SetFall2021Maps(bool value)   { if (value) { IsUsing_Fall2021Maps = true; }   else if (!value) { IsUsing_Fall2021Maps = false; }   else {return IsUsing_Fall2021Maps;} }
+bool SetWinter2022Maps(bool value) { if (value) { IsUsing_Winter2022Maps = true; } else if (!value) { IsUsing_Winter2022Maps = false; } else {return IsUsing_Winter2022Maps;} }
+bool SetSpring2022Maps(bool value) { if (value) { IsUsing_Spring2022Maps = true; } else if (!value) { IsUsing_Spring2022Maps = false; } else {return IsUsing_Spring2022Maps;} }
+bool SetSummer2022Maps(bool value) { if (value) { IsUsing_Summer2022Maps = true; } else if (!value) { IsUsing_Summer2022Maps = false; } else {return IsUsing_Summer2022Maps;} }
+bool SetFall2022Maps(bool value)   { if (value) { IsUsing_Fall2022Maps = true; }   else if (!value) { IsUsing_Fall2022Maps = false; }   else {return IsUsing_Fall2022Maps;} }
+bool SetWinter2023Maps(bool value) { if (value) { IsUsing_Winter2023Maps = true; } else if (!value) { IsUsing_Winter2023Maps = false; } else {return IsUsing_Winter2023Maps;} }
+bool SetSpring2023Maps(bool value) { if (value) { IsUsing_Spring2023Maps = true; } else if (!value) { IsUsing_Spring2023Maps = false; } else {return IsUsing_Spring2023Maps;} }
+bool SetSummer2023Maps(bool value) { if (value) { IsUsing_Summer2023Maps = true; } else if (!value) { IsUsing_Summer2023Maps = false; } else {return IsUsing_Summer2023Maps;} }
+bool SetFall2023Maps(bool value)   { if (value) { IsUsing_Fall2023Maps = true; }   else if (!value) { IsUsing_Fall2023Maps = false; }   else {return IsUsing_Fall2023Maps;} }
+bool SetWinter2024Maps(bool value) { if (value) { IsUsing_Winter2024Maps = true; } else if (!value) { IsUsing_Winter2024Maps = false; } else {return IsUsing_Winter2024Maps;} }
+bool SetSpring2024Maps(bool value) { if (value) { IsUsing_Spring2024Maps = true; } else if (!value) { IsUsing_Spring2024Maps = false; } else {return IsUsing_Spring2024Maps;} }
+bool SetSummer2024Maps(bool value) { if (value) { IsUsing_Summer2024Maps = true; } else if (!value) { IsUsing_Summer2024Maps = false; } else {return IsUsing_Summer2024Maps;} }
+bool SetFall2024Maps(bool value)   { if (value) { IsUsing_Fall2024Maps = true; }   else if (!value) { IsUsing_Fall2024Maps = false; }   else {return IsUsing_Fall2024Maps;} }
+bool SetWinter2025Maps(bool value) { if (value) { IsUsing_Winter2025Maps = true; } else if (!value) { IsUsing_Winter2025Maps = false; } else {return IsUsing_Winter2025Maps;} }
+bool SetSpring2025Maps(bool value) { if (value) { IsUsing_Spring2025Maps = true; } else if (!value) { IsUsing_Spring2025Maps = false; } else {return IsUsing_Spring2025Maps;} }
 
 bool SetSNOW(bool value)                   { if (value) { IsUsing_Snow_ = true; }                        else if (!value) { IsUsing_Snow_ = false; }                        else {return IsUsing_Snow_;} }
 bool SetSNOW_Carswitch(bool value)         { if (value) { IsUsing_Snow_Carswitch = true; }               else if (!value) { IsUsing_Snow_Carswitch = false; }               else {return IsUsing_Snow_Carswitch;} }
