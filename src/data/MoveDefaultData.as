@@ -24,7 +24,7 @@ void MoveFileToPluginStorage(const string &in originalPath, const string &in sto
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
     log("Moving the file content", LogLevel::Info, 22);
-    log("The content:\n" + /*fileContents*/ "The filecontents are not included since it clogs log, and that's a bit annoying when debuging xdd...", LogLevel::Info, 23);
+    log("The content:\n" + /*fileContents +*/ "The filecontents are not included since it clogs log... xdd...", LogLevel::Info, 23);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
@@ -50,7 +50,8 @@ void CheckCurrentInstalledVersionType() { // NOT IN USE
 
     if (currentVersionJson.GetType() == Json::Type::Object) {
         if (currentVersionJson["latestVersion"].GetType() != Json::Type::Number) {
-            log("The latestVersion key in the JSON file does not have the expected type. This is likely due to you being on an old version of the plugin. Overwriting the currently installed version with the new default.", LogLevel::Error, 85);
+            log("latestVersion in currentInstalledVersion is not an int.", LogLevel::Error, 80); 
+            log("Overwriting the currently installed version with the new default.", LogLevel::Info, 85);
             MoveDefaultDataFile(true);
         }
     }
