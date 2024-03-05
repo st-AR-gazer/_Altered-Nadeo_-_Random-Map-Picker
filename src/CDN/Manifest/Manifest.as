@@ -22,7 +22,7 @@ void FetchManifest() {
         log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 21);
         ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: \n" + req.String(), LogLevel::Error, 24);
+        log(req.ResponseCode() + " code — Error fetching manifest: \n" + req.String(), LogLevel::Error, 24);
     }
 }
 
@@ -48,12 +48,26 @@ void ParseManifest(const string &in reqBody) {
 
     // StoreManifestID(g_manifestID); // not in use...
 
+
     Json::Value newUpdateFiles = manifest["newUpdate"];
-    if (newUpdateFiles.GetType() == Json::Type::Array) {
+
+    if (newUpdateFiles.HasKey("*")) {
+        for (uint i = 0; i < alterationFiles.Length; i++) {
+            unUpdatedFiles.InsertLast(alterationFiles[i]);
+        }
+        for (uint i = 0; i < dataFiles.Length; i++) {
+            unUpdatedFiles.InsertLast(dataFiles[i]);
+        }
+        for (uint i = 0; i < seasonalFiles.Length; i++) {
+            unUpdatedFiles.InsertLast(seasonalFiles[i]);
+        }
+    } else if (newUpdateFiles.GetType() == Json::Type::Array) {
         for (uint i = 0; i < newUpdateFiles.Length; i++) {
             unUpdatedFiles.InsertLast(newUpdateFiles[i]);
             // log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 46);
         }
+    } else {
+        log("newUpdateFiles is not an array or wildcard key.", LogLevel::Error, 48);
     }
     
     // log("Updating the URL", LogLevel::Info, 50); 

@@ -8,6 +8,8 @@ For this explaination we're going to be adding "Rally"
 **Note**: This is only part 1, part two tackles how to add it to the python script.
 (It can be found further down)
 
+**NOTE**: ManiaCDN, the CDN service I use to upload the files, do not store files without normalizing them. This means that the file `[Rally].json` would turn into `_Rally_.json`, this is means that some filenames will be 'off' when downloading them. Do not change the name of the file to work around this,
+
 
 ## Step 0: Keeping the code 'clean'
 
@@ -99,6 +101,15 @@ navigate to the file `` and add this to the correct location:
 import void SetRALLY(bool value) from "AlteredNadeo_RandomMapPicker";
 ```
 Envimix alterations are reffered to with capitol case.
+
+9. Navigate to `src\ArrayPopulation\_AlterationArray.as` and add this to the correct location:
+
+```c
+alterationFiles.InsertLast("_Rally_.json");
+```
+
+
+
 
 
 ## Summary

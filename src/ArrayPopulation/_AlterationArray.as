@@ -74,6 +74,7 @@ void PopulateAlterationsFilesArray() {
     alterationFiles.InsertLast("Podium.json");
     alterationFiles.InsertLast("Pool_Hunters.json");
     alterationFiles.InsertLast("Puzzle.json");
+    alterationFiles.InsertLast("_Rally_.json");
     alterationFiles.InsertLast("Random.json");
     alterationFiles.InsertLast("Random_Dankness.json");
     alterationFiles.InsertLast("Random_Effects.json");
