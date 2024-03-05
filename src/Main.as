@@ -16,7 +16,8 @@ void Main() {
     log("Local file check completed, fixing some files", LogLevel::InfoG, 16);
 
     sleep(1000);
-    MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
+    CheckCurrentInstalledVersionType(true);
+    MoveDefaultDataFile(false); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
     g_lineCount = GetLineCount(IO::FromStorageFolder("New-Sorting-System/ByOther/data.csv")); // Sets the linecount, to be used in rendermenu func
     
     ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
