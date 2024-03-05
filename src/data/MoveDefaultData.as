@@ -25,6 +25,7 @@ void MoveFileToPluginStorage(const string &in originalPath, const string &in sto
     string fileContents = originalFile.ReadToEnd();
     log("Moving the file content", LogLevel::Info, 22);
     log("The content:\n" + /*fileContents +*/ "The filecontents are not included since it clogs log... xdd...", LogLevel::Info, 23);
+    log("The content:\n" + fileContents, LogLevel::Info, 23);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
