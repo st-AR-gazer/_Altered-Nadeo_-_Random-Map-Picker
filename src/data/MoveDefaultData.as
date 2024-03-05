@@ -42,9 +42,12 @@ void CreateCheckFile() {
     checkFile.Close();
 }
 
+string testPath = IO::FromStorageFolder("test.json");
+
+
 void CheckCurrentInstalledVersionType() { // NOT IN USE
     IO::File file();
-    file.Open(pluginStorageVersionPath, IO::FileMode::Read);
+    file.Open(testPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
     file.Close();
     
