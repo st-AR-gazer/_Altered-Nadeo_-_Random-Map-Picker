@@ -94,10 +94,6 @@ int GetCurrentInstalledVersion() {
     Json::Value currentVersionJson = Json::Parse(fileContents);
 
     if (currentVersionJson.GetType() == Json::Type::Object) {
-        if (currentVersionJson["latestVersion"].GetType() != Json::Type::Number) {
-            log("The latestVersion key in the JSON file does not have the expected type. This is likely due to you being on an old version of the plugin. Overwriting the currently installed version with the new default.", LogLevel::Error, 85);
-            return "0.0.0";
-        }
         return currentVersionJson["latestVersion"];
     }
 

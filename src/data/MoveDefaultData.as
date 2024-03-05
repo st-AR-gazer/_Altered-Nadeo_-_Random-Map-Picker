@@ -51,6 +51,7 @@ void CheckCurrentInstalledVersionType() { // NOT IN USE
     if (currentVersionJson.GetType() == Json::Type::Object) {
         if (currentVersionJson["latestVersion"].GetType() != Json::Type::Number) {
             log("The latestVersion key in the JSON file does not have the expected type. This is likely due to you being on an old version of the plugin. Overwriting the currently installed version with the new default.", LogLevel::Error, 85);
+            MoveDefaultDataFile(true);
         }
     }
 }
