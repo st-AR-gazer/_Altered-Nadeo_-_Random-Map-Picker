@@ -71,11 +71,11 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
         array<string> errorFilesThatDidNotDownloadPropperly = {url, "" + req.ResponseCode(), req.String(), fileName};
-        log("File that returned an error: " + fileName, LogLevel::Error, 64);
-        log("Error code: " + req.ResponseCode(), LogLevel::Error, 65);
-        log("Error response: " + req.String(), LogLevel::Error, 66);
+        // log("File that returned an error: " + fileName, LogLevel::Error, 64);
+        // log("Error code: " + req.ResponseCode(), LogLevel::Error, 65);
+        // log("Error response: " + req.String(), LogLevel::Error, 66);
         log("Error fetching datafile from: " + url, LogLevel::Error, 67); // Keep this after removing the rest?
-        print("\n");
+        // print("\n");
     }
 }
 
