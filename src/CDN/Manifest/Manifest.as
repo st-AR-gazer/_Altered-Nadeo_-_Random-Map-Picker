@@ -5,13 +5,13 @@ void ManifestCheck() {
 }
 
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
-string manifestUrlTEST = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
+// string manifestUrlTEST = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
 // string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 
 void FetchManifest() {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
-    req.Url = manifestUrlTEST;
+    req.Url = manifestUrl;
     
     req.Start();
 
