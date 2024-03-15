@@ -7,21 +7,19 @@ void ToggleEscapeCharacters() {
     includeEscapeCharacters = !includeEscapeCharacters;
 }
 
-int HexToInt(string hex) {
-    hex = startColorGlobal;
+int HexCharToInt(string ch) {
+    if (ch >= '0' && ch <= '9') return ch - '0';
+    if (ch >= 'A' && ch <= 'F') return 10 + (ch - 'A');
+    if (ch >= 'a' && ch <= 'f') return 10 + (ch - 'a');
+    return 0;
+}
+
+int HexToInt(const string &in hex) {
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
-        value *= 16;
-        // print(hex[i]);
         string ch = hex[i];
-
-        if (ch >= "0" && ch <= "9") {
-            value += int(ch[0] - '0');
-        } else if (ch >= "A" && ch <= "F") {
-            value += 10 + int(ch[0] - 'A');
-        } else if (ch >= "a" && ch <= "f") {
-            value += 10 + int(ch[0] - 'a');
-        }
+        int num = HexCharToInt(ch);
+        value = value * 16 + num;
     }
     return value;
 }
