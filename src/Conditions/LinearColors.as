@@ -7,7 +7,7 @@ void ToggleEscapeCharacters() {
     includeEscapeCharacters = !includeEscapeCharacters;
 }
 
-int HexToInt(const string &in hex) {
+int HexToInt(string hex) {
     hex = startColorGlobal;
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
