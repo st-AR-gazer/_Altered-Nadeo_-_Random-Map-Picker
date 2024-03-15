@@ -18,8 +18,12 @@ int HexToInt(const string &in hex) {
             value += 10 + (charValue - 65);
         } else if (charValue >= 97 && charValue <= 102) { // 'a' to 'f'
             value += 10 + (charValue - 97);
+        } else {
+            log("Invalid character in hex string: " + hex[i], LogLevel::Error, 74);
+            return -1;
         }
     }
+    print("value: " + value);
     return value;
 }
 
@@ -48,6 +52,7 @@ array<string> InterpolateColors(int steps) {
         string color = "#" + rHex + gHex + bHex;
         colorArray.InsertLast(color);
     }
+    print("colorArray: " + colorArray);
 
     return colorArray;
 }
@@ -63,6 +68,8 @@ string FormatColorCode(const string &in hexColor) {
     string formattedColor = includeEscapeCharacters ? "\\\\$" : "$";
     formattedColor += rHex + gHex + bHex;
 
+    print("formattedColor: " + formattedColor)
+
     return formattedColor;
 }
 
@@ -76,6 +83,8 @@ string ColorizeString(const string &in inputString) {
         string colorCode = FormatColorCode(colors[i]);
         coloredString += colorCode + inputString[i];
     }
+
+    print("coloredString: " + coloredString);
 
     return coloredString;
 }
