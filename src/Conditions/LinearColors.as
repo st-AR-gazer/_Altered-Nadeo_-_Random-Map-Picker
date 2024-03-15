@@ -68,7 +68,7 @@ string FormatColorCode(const string &in hexColor) {
     string formattedColor = includeEscapeCharacters ? "\\$" : "$";
     formattedColor += rHex + gHex + bHex;
 
-    print("formattedColor: " + formattedColor);
+    // print("formattedColor: " + formattedColor);
 
     return formattedColor;
 }
@@ -81,8 +81,7 @@ string ColorizeString(const string &in inputString) {
 
     for (uint i = 0; i < inputString.Length; ++i) {
         string colorCode = FormatColorCode(colors[i]);
-        string characterAsString = "" + inputString[i];
-                                        print("inputString[i]: " + inputString[i]);
+        string characterAsString = inputString.SubStr(i, 1);
         coloredString += colorCode + characterAsString;
     }
 
