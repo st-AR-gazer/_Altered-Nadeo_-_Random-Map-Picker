@@ -14,7 +14,7 @@ int HexCharToInt(string ch) {
     return 0;
 }
 
-int HexToInt(const string &in hex) {
+int HexToInt(string hex) {
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
         string ch = hex[i];
