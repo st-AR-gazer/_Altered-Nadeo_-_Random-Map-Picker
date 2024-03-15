@@ -65,7 +65,7 @@ string FormatColorCode(const string &in hexColor) {
     string gHex = Text::Format("%1X", g / 17);
     string bHex = Text::Format("%1X", b / 17);
 
-    string formattedColor = includeEscapeCharacters ? "\\\\$" : "$";
+    string formattedColor = includeEscapeCharacters ? "\\$" : "$";
     formattedColor += rHex + gHex + bHex;
 
     print("formattedColor: " + formattedColor);
@@ -81,7 +81,8 @@ string ColorizeString(const string &in inputString) {
 
     for (uint i = 0; i < inputString.Length; ++i) {
         string colorCode = FormatColorCode(colors[i]);
-        coloredString += colorCode + inputString[i];
+        string characterAsString = "" + inputString[i];
+        coloredString += colorCode + characterAsString;
     }
 
     print("coloredString: " + coloredString);
