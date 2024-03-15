@@ -45,7 +45,12 @@ array<string> InterpolateColors(int steps) {
         int r = sR + int(float(eR - sR) / (steps - 1) * step);
         int g = sG + int(float(eG - sG) / (steps - 1) * step);
         int b = sB + int(float(eB - sB) / (steps - 1) * step);
-        string color = "#" + Text::Format("%02X%02X%02X", r, g, b);
+
+        string rHex = Text::Format("%02X", r);
+        string gHex = Text::Format("%02X", g);
+        string bHex = Text::Format("%02X", b);
+
+        string color = "#" + rHex + gHex + bHex;
         colorArray.InsertLast(color);
     }
 
