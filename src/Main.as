@@ -2,7 +2,7 @@
 bool shouldDownloadNewFiles = true;
 
 void Main() {
-    HexToInt();
+    test();
 
     return;
 
