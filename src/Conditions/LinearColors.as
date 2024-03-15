@@ -63,7 +63,18 @@ string FormatColorCode(const string &in hexColor) {
     r /= 17;
     g /= 17;
     b /= 17;
-    string formattedColor = includeEscapeCharacters ? "\\\\$" + Text::Format("%1X%1X%1X", r, g, b) : "$" + Text::Format("%1X%1X%1X", r, g, b);
+
+    string rHex = Text::Format("%1X", r);
+    string gHex = Text::Format("%1X", g);
+    string bHex = Text::Format("%1X", b);
+
+    rHex = rHex.Length < 2 ? "0" + rHex : rHex;
+    gHex = gHex.Length < 2 ? "0" + gHex : gHex;
+    bHex = bHex.Length < 2 ? "0" + bHex : bHex;
+
+    string formattedColor = includeEscapeCharacters ? "\\\\$" : "$";
+    formattedColor += rHex + gHex + bHex;
+
     return formattedColor;
 }
 
