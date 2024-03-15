@@ -23,7 +23,7 @@ int HexToInt(const string &in hex) {
             return -1;
         }
     }
-    print("value: " + value);
+    // print("value: " + value);
     return value;
 }
 
@@ -82,10 +82,11 @@ string ColorizeString(const string &in inputString) {
     for (uint i = 0; i < inputString.Length; ++i) {
         string colorCode = FormatColorCode(colors[i]);
         string characterAsString = "" + inputString[i];
+                                        print("inputString[i]: " + inputString[i]);
         coloredString += colorCode + characterAsString;
     }
 
-    print("coloredString: " + coloredString);
+    // print("coloredString: " + coloredString);
 
     return coloredString;
 }
