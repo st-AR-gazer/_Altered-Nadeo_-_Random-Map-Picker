@@ -11,9 +11,10 @@ int HexToInt(const string &in hex) {
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
         value *= 16;
-        if (hex[i] >= '0' && hex[i] <= '9') value += int(hex[i] - '0');
-        else if (hex[i] >= 'A' && hex[i] <= 'F') value += 10 + int(hex[i] - 'A');
-        else if (hex[i] >= 'a' && hex[i] <= 'f') value += 10 + int(hex[i] - 'a');
+        int charValue = int(hex[i]);
+        if (charValue >= int('0') && charValue <= int('9')) value += charValue - int('0');
+        else if (charValue >= int('A') && charValue <= int('F')) value += 10 + (charValue - int('A'));
+        else if (charValue >= int('a') && charValue <= int('f')) value += 10 + (charValue - int('a'));
     }
     return value;
 }
