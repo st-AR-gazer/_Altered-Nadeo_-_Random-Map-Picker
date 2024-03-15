@@ -52,7 +52,7 @@ array<string> InterpolateColors(int steps) {
         string color = "#" + rHex + gHex + bHex;
         colorArray.InsertLast(color);
     }
-    print("colorArray: " + colorArray);
+    //print("colorArray: " + colorArray);
 
     return colorArray;
 }
