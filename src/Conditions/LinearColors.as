@@ -68,7 +68,7 @@ string FormatColorCode(const string &in hexColor) {
     string formattedColor = includeEscapeCharacters ? "\\\\$" : "$";
     formattedColor += rHex + gHex + bHex;
 
-    print("formattedColor: " + formattedColor)
+    print("formattedColor: " + formattedColor);
 
     return formattedColor;
 }
