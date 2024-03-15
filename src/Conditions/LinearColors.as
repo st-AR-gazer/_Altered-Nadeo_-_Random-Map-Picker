@@ -11,12 +11,19 @@ int HexToInt(const string &in hex) {
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
         value *= 16;
-        if (hex[i] >= '0' && hex[i] <= '9') value += int(hex[i] - '0');
-        else if (hex[i] >= 'A' && hex[i] <= 'F') value += 10 + int(hex[i] - 'A');
-        else if (hex[i] >= 'a' && hex[i] <= 'f') value += 10 + int(hex[i] - 'a');
+        string ch = hex[i];
+
+        if (ch >= "0" && ch <= "9") {
+            value += int(ch[0] - '0');
+        } else if (ch >= "A" && ch <= "F") {
+            value += 10 + int(ch[0] - 'A');
+        } else if (ch >= "a" && ch <= "f") {
+            value += 10 + int(ch[0] - 'a');
+        }
     }
     return value;
 }
+
 
 void HexToRgb(const string &in hex, int &out r, int &out g, int &out b) {
     r = HexToInt(hex.SubStr(1, 2));
