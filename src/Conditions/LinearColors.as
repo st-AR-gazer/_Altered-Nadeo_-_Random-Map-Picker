@@ -12,16 +12,16 @@ int HexToInt(string hex) {
     int value = 0;
     for (uint i = 0; i < hex.Length; ++i) {
         value *= 16;
-        print(hex[i]);
-        // string ch = hex[i];
+        // print(hex[i]);
+        string ch = hex[i];
 
-        // if (ch >= "0" && ch <= "9") {
-        //     value += int(ch[0] - '0');
-        // } else if (ch >= "A" && ch <= "F") {
-        //     value += 10 + int(ch[0] - 'A');
-        // } else if (ch >= "a" && ch <= "f") {
-        //     value += 10 + int(ch[0] - 'a');
-        // }
+        if (ch >= "0" && ch <= "9") {
+            value += int(ch[0] - '0');
+        } else if (ch >= "A" && ch <= "F") {
+            value += 10 + int(ch[0] - 'A');
+        } else if (ch >= "a" && ch <= "f") {
+            value += 10 + int(ch[0] - 'a');
+        }
     }
     return value;
 }
