@@ -12,9 +12,13 @@ int HexToInt(const string &in hex) {
     for (uint i = 0; i < hex.Length; ++i) {
         value *= 16;
         int charValue = hex[i];
-        if (charValue >= '0' && charValue <= '9') value += charValue - '0';
-        else if (charValue >= 'A' && charValue <= 'F') value += 10 + (charValue - 'A');
-        else if (charValue >= 'a' && charValue <= 'f') value += 10 + (charValue - 'a');
+        if (charValue >= 48 && charValue <= 57) { // '0' to '9'
+            value += charValue - 48;
+        } else if (charValue >= 65 && charValue <= 70) { // 'A' to 'F'
+            value += 10 + (charValue - 65);
+        } else if (charValue >= 97 && charValue <= 102) { // 'a' to 'f'
+            value += 10 + (charValue - 97);
+        }
     }
     return value;
 }
