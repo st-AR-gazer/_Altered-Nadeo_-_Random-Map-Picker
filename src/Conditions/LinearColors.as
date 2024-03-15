@@ -7,30 +7,22 @@ void ToggleEscapeCharacters() {
     includeEscapeCharacters = !includeEscapeCharacters;
 }
 
-int HexCharToInt(string ch) {
-    if (ch >= '0' && ch <= '9') return ch - '0';
-    if (ch >= 'A' && ch <= 'F') return 10 + (ch - 'A');
-    if (ch >= 'a' && ch <= 'f') return 10 + (ch - 'a');
-    return 0;
-}
-
-int HexToInt(string hex) {
+int HexToInt(const string &in hex) {
     int value = 0;
-    //for (uint i = 0; i < hex.Length; ++i) {
-        string ch = hex[i];
-        int num = HexCharToInt(ch);
-        value = value * 16 + num;
-    //}
+    for (uint i = 0; i < hex.Length; ++i) {
+        value *= 16;
+        if (hex[i] >= '0' && hex[i] <= '9') value += int(hex[i] - '0');
+        else if (hex[i] >= 'A' && hex[i] <= 'F') value += 10 + int(hex[i] - 'A');
+        else if (hex[i] >= 'a' && hex[i] <= 'f') value += 10 + int(hex[i] - 'a');
+    }
     return value;
 }
-
 
 void HexToRgb(const string &in hex, int &out r, int &out g, int &out b) {
     r = HexToInt(hex.SubStr(1, 2));
     g = HexToInt(hex.SubStr(3, 2));
     b = HexToInt(hex.SubStr(5, 2));
 }
-
 
 array<string> InterpolateColors(int steps) {
     array<string> colorArray;
