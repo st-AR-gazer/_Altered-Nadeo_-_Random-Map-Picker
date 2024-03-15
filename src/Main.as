@@ -2,6 +2,10 @@
 bool shouldDownloadNewFiles = true;
 
 void Main() {
+    HexToInt
+
+    return;
+
     log("Main func has started", LogLevel::Info, 5);
     
     NadeoServices::AddAudience("NadeoClubServices");
