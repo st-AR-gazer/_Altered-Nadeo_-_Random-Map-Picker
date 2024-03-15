@@ -16,11 +16,11 @@ int HexCharToInt(string ch) {
 
 int HexToInt(string hex) {
     int value = 0;
-    for (uint i = 0; i < hex.Length; ++i) {
+    //for (uint i = 0; i < hex.Length; ++i) {
         string ch = hex[i];
         int num = HexCharToInt(ch);
         value = value * 16 + num;
-    }
+    //}
     return value;
 }
 
