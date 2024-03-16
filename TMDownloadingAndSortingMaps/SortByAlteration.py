@@ -112,7 +112,7 @@ def save_sorted_data(sorted_data, base_folder):
             json.dump(maps, file, indent=4, ensure_ascii=False)
 
 special_cases_array = [
-    "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless"
+    "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless", "[Rally] CP1 is End"
 ]
 
 alterations_dict = {
@@ -128,6 +128,7 @@ alterations_dict = {
 
     "[Rally]": ["[Rally]", "RallyCar", "CarRally"],
     "[Rally] Carswitch": ["Rallycarswitch"],
+    "[Rally] CP1 is End": ["[Rally] CP1 is End", "RallyCar CP1 is End", "Rally CP1-End", "Rally CP1End", "Rally CP1 Ends", "Rally Cp1 is End"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
