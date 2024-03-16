@@ -23,7 +23,6 @@ int HexToInt(const string &in hex) {
             return -1;
         }
     }
-    // print("value: " + value);
     return value;
 }
 
@@ -52,7 +51,6 @@ array<string> InterpolateColors(int steps) {
         string color = "#" + rHex + gHex + bHex;
         colorArray.InsertLast(color);
     }
-    //print("colorArray: " + colorArray);
 
     return colorArray;
 }
@@ -68,8 +66,6 @@ string FormatColorCode(const string &in hexColor) {
     string formattedColor = includeEscapeCharacters ? "\\$" : "$";
     formattedColor += rHex + gHex + bHex;
 
-    // print("formattedColor: " + formattedColor);
-
     return formattedColor;
 }
 
@@ -84,8 +80,6 @@ string ColorizeString(const string &in inputString) {
         string characterAsString = inputString.SubStr(i, 1);
         coloredString += colorCode + characterAsString;
     }
-
-    // print("coloredString: " + coloredString);
 
     return coloredString;
 }
