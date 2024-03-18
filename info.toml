@@ -7,4 +7,4 @@ siteid = 483
 
 [script]
 dependencies = [ "NadeoServices" ]
-exports = ["src/Exports/Export.as"]
+exports = [ "src/exports/Export.as" ]
