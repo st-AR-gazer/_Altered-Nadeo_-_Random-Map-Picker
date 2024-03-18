@@ -198,15 +198,7 @@ string SetOnlyFallMaps(bool value) {
     return "Sorry this currently isn't implemented";
 }
 
-bool SetSpring2020Maps(bool value) { 
-    if (value) { 
-        IsUsing_Spring2020Maps = true; 
-    } else (!value); { 
-        IsUsing_Spring2020Maps = false; 
-    }; 
-    return IsUsing_Spring2020Maps; 
-}
-
+bool SetSpring2020Maps(bool value) { if (value) { IsUsing_Spring2020Maps = true; } else (!value); { IsUsing_Spring2020Maps = false; } return IsUsing_Spring2020Maps; }
 bool SetSummer2020Maps(bool value) { if (value) { IsUsing_Summer2020Maps = true; } else (!value); { IsUsing_Summer2020Maps = false; } return IsUsing_Summer2020Maps; }
 bool SetFall2020Maps(bool value)   { if (value) { IsUsing_Fall2020Maps = true; }   else (!value); { IsUsing_Fall2020Maps = false; }   return IsUsing_Fall2020Maps; }
 bool SetWinter2021Maps(bool value) { if (value) { IsUsing_Winter2021Maps = true; } else (!value); { IsUsing_Winter2021Maps = false; } return IsUsing_Winter2021Maps; }
