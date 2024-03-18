@@ -2,10 +2,6 @@
 bool shouldDownloadNewFiles = true;
 
 void Main() {
-    test();
-
-    return;
-
     log("Main func has started", LogLevel::Info, 5);
     
     NadeoServices::AddAudience("NadeoClubServices");

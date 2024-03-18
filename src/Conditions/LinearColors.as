@@ -83,11 +83,3 @@ string ColorizeString(const string &in inputString) {
 
     return coloredString;
 }
-
-void test() {
-    string testString = "Altered";
-    string coloredString = ColorizeString(testString);
-    string testString2 = "Nadeo!";
-    string coloredString2 = ColorizeString(testString2);
-    log(coloredString + " " + coloredString2, LogLevel::Info, 74);
-}
