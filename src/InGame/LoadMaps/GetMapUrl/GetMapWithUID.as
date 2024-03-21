@@ -14,7 +14,7 @@ void SetFirstUid() {
 void LoadMapFromUID() {
     string mapUID = GetRandomUID();
     if (mapUID.Length == 0) {
-        log("No UID found", LogLevel::Error, 17);
+        log("No UID found", LogLevel::Error);
         return;
     }
 
@@ -24,7 +24,7 @@ void LoadMapFromUID() {
     while (isWaitingForUrl) yield();
 
     if (globalMapUrl.Length == 0) {
-        log("Failed to get map URL from UID", LogLevel::Error, 27);
+        log("Failed to get map URL from UID", LogLevel::Error);
         return;
     }
 
@@ -42,9 +42,9 @@ void GetMapUrl(const string &in map_uid) {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 45);
-        log("Response body:", LogLevel::Error, 46);
-        log(req.Body, LogLevel::Error, 47);
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 25);
+        log("Response body:", LogLevel::Error, 26);
+        log(req.Body, LogLevel::Error, 27);
         return;
     }
 
