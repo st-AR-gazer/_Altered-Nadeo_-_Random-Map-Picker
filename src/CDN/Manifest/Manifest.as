@@ -19,10 +19,10 @@ void FetchManifest() {
 
     if (req.ResponseCode() == 200) {
         // g_manifestJson = req.String(); // Useless as a global?
-        log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 21);
+        log("Fetching manifest successful, code " + req.ResponseCode() + ": \n" + req.String(), LogLevel::Info, 22);
         ParseManifest(req.String());
     } else {
-        log(req.ResponseCode() + " code — Error fetching manifest: \n" + req.String(), LogLevel::Error, 24);
+        log(req.ResponseCode() + " code — Error fetching manifest: \n" + req.String(), LogLevel::Error, 25);
     }
 }
 
@@ -35,7 +35,7 @@ int g_manifestID = -1;
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
-    if (manifest.GetType() != Json::Type::Object) { log("Failed to parse JSON.", LogLevel::Error, 35); return; }
+    if (manifest.GetType() != Json::Type::Object) { log("Failed to parse JSON.", LogLevel::Error, 38); return; }
 
     g_manifestJson = manifest;
 
@@ -64,17 +64,17 @@ void ParseManifest(const string &in reqBody) {
     } else if (newUpdateFiles.GetType() == Json::Type::Array) {
         for (uint i = 0; i < newUpdateFiles.Length; i++) {
             unUpdatedFiles.InsertLast(newUpdateFiles[i]);
-            // log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 46);
+            // log("Unupdated file index[" + i + "]: " + unUpdatedFiles[i], LogLevel::Info, 67);
         }
     } else {
-        log("newUpdateFiles is not an array or wildcard key.", LogLevel::Error, 48);
+        log("newUpdateFiles is not an array or wildcard key.", LogLevel::Error, 70);
     }
     
-    // log("Updating the URL", LogLevel::Info, 50); 
-    // log("the manifest URL is: " + manifestUrl, LogLevel::Info, 51);
+    // log("Updating the URL", LogLevel::Info, 73); 
+    // log("the manifest URL is: " + manifestUrl, LogLevel::Info, 74);
     string newUrl = manifest["url"];
-    // log("The URL from the manifest has been updated", LogLevel::Info, 53);
-    // log("the new URL is: " + newUrl, LogLevel::Info, 54);
+    // log("The URL from the manifest has been updated", LogLevel::Info, 76);
+    // log("the new URL is: " + newUrl, LogLevel::Info, 77);
     g_urlFromManifest = newUrl;
 
     UpdateCurrentVersionIfDifferent(latestVersion);
@@ -85,15 +85,15 @@ void UpdateCurrentVersionIfDifferent(const int &in latestVersion) {
     int currentInstalledVersion = GetCurrentInstalledVersion();
     g_currentInstalledVersion = currentInstalledVersion;
     
-    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 63);
+    log("this is the currentinstalledversion: " + currentInstalledVersion + "  this is the latest installed version: " + latestVersion, LogLevel::Info, 88);
     bool shouldUpdateCurrentInstalledVersion = g_manifestJson["updateInstalledVersion"];
 
     if ((currentInstalledVersion != latestVersion) && (!shouldUpdateCurrentInstalledVersion)) {
-        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 66);
+        log("Updating the current version: " + currentInstalledVersion + " to the most up-to-date version: " + latestVersion, LogLevel::Info, 92);
         UpdateVersionFile(latestVersion);
         DownloadFiles();
     } else {
-        log("Current version is up-to-date.", LogLevel::Info, 70);
+        log("Current version is up-to-date.", LogLevel::Info, 96);
     }
 }
 
@@ -105,7 +105,7 @@ int GetCurrentInstalledVersion() {
     string fileContents = file.ReadToEnd();
     file.Close();
 
-    log("Current version file contents: " + fileContents, LogLevel::Info, 79);
+    log("Current version file contents: " + fileContents, LogLevel::Info, 108);
     
     Json::Value currentVersionJson = Json::Parse(fileContents);
 
@@ -122,21 +122,21 @@ void UpdateVersionFile(const int &in latestVersion) {
     if (json.GetType() == Json::Type::Object) {
         json["latestVersion"] = latestVersion;
         Json::ToFile(pluginStorageVersionPath, json);
-        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 95);
+        log("Updated to the most recent version: " + latestVersion, LogLevel::Info, 125);
     } else {
-        log("JSON file does not have the expected structure." + " Json type is: \n" + json.GetType(), LogLevel::Error, 97);
+        log("JSON file does not have the expected structure." + " Json type is: \n" + json.GetType(), LogLevel::Error, 127);
     }
 }
 
 string g_idStoragePath = IO::FromStorageFolder("id");
 
 // void StoreManifestID(int id) { // not in use...
-//     if (id == -1) { log("Id is null", LogLevel::D, 112); return; }
+//     if (id == -1) { log("Id is null", LogLevel::D, 134); return; }
     
 //     if (!IO::FileExists(g_idStoragePath)) {
-//         log("ID file does not exist, creating.", LogLevel::Info, 106);
+//         log("ID file does not exist, creating.", LogLevel::Info, 137);
 //     } else {
-//         log("ID file already exists, overwriting.", LogLevel::Info, 104);
+//         log("ID file already exists, overwriting.", LogLevel::Info, 139);
 //     }
 
 //     IO::File file();

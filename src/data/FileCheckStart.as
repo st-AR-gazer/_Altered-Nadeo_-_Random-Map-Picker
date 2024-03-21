@@ -32,15 +32,15 @@ void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
 
     if (type == "Default") {
         filesToCheck = dataFiles;
-        log("Checking default files", LogLevel::D, 33);
+        log("Checking default files", LogLevel::D, 35);
     } else if (type == "Season") {
         filesToCheck = seasonalFiles;
-        log("Checking seasonal files", LogLevel::D, 36);
+        log("Checking seasonal files", LogLevel::D, 38);
     } else if (type == "Alteration") {
         filesToCheck = alterationFiles;
-        log("Checking alteration files", LogLevel::D, 39);
+        log("Checking alteration files", LogLevel::D, 41);
     } else {
-        log("Unknown file type: " + type, LogLevel::Error, 41);
+        log("Unknown file type: " + type, LogLevel::Error, 43);
         return;
     }
 
@@ -48,11 +48,11 @@ void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
         string filePath = g_saveLocationStoragePath + GetCorrectLocation(type) + filesToCheck[i];
         if (IO::FileExists(filePath)) {
             // This log has been temporarily disabled to avoid spamming the log
-            // log("File exists: " + filePath, LogLevel::D, 48);
+            // log("File exists: " + filePath, LogLevel::D, 51);
         } else {
             nonExistingFilesArray.InsertLast(filesToCheck[i]);
             // This log has been temporarily disabled to avoid spamming the log
-            // log("File does not exist: " + filePath, LogLevel::D, 51);
+            // log("File does not exist: " + filePath, LogLevel::D, 55);
         }
     }
 }
@@ -65,23 +65,23 @@ string GetCorrectLocation(string type) {
     } else if (type == "Alteration") {
         return "By-Alteration/";
     } else {
-        log("Unknown file type: " + type, LogLevel::Error, 64);
+        log("Unknown file type: " + type, LogLevel::Error, 68);
         return "";
     }
 }
 
 void CheckDirs() {
     if(!IO::FolderExists(g_saveLocationStoragePath)) {
-        log("Creating folder: " + g_saveLocationStoragePath, LogLevel::D, 71);
+        log("Creating folder: " + g_saveLocationStoragePath, LogLevel::D, 75);
         IO::CreateFolder(g_saveLocationStoragePath);
     }
 
     if(!IO::FolderExists(g_saveLocationStoragePath + "By-Season/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Season/", LogLevel::D, 76);
+        log("Creating folder: " + g_saveLocationStoragePath + "By-Season/", LogLevel::D, 80);
         IO::CreateFolder(g_saveLocationStoragePath + "By-Season/");
     }
     if(!IO::FolderExists(g_saveLocationStoragePath + "By-Alteration/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Alteration/", LogLevel::D, 80);
+        log("Creating folder: " + g_saveLocationStoragePath + "By-Alteration/", LogLevel::D, 84);
         IO::CreateFolder(g_saveLocationStoragePath + "By-Alteration/");
     }
 }
@@ -96,18 +96,18 @@ void ShouldDeleteDownloadedManifest() {
         string localInstalledVersion = stringInstalledCurrentVersion();
 
         if ((localInstalledVersion == "0.0.0") || (localInstalledVersion == "0.0.1") || (localInstalledVersion == "0.0.2") || (localInstalledVersion == "0.0.3") || (localInstalledVersion == "0.0.4")) {
-            log("Manifest file contains the old manifest structure, deleting local manifest (it will be re-added in about 2 sec xdd (probably))", LogLevel::Info, 10);
+            log("Manifest file contains the old manifest structure, deleting local manifest (it will be re-added in about 2 sec xdd (probably))", LogLevel::Info, 99);
             IO::Delete(IO::FromStorageFolder("currentInstalledVersion.json"));
 
             CreateCheckFile2();
         } else {
-            log("YEK, this should only happen if it's your first install, please ignore this if it is :ok:", LogLevel::Error, 13);
-            log("(this was added as a failsafe for the like 20 people who installed the plugin before the manifest change)", LogLevel::Error, 13);
+            log("YEK, this should only happen if it's your first install, please ignore this if it is :ok:", LogLevel::Error, 104);
+            log("(this was added as a failsafe for the like 20 people who installed the plugin before the manifest change)", LogLevel::Error, 105);
             CreateCheckFile2();
         }
 
     } else {
-        log("initCheck file exists in plugin storage, not moving data", LogLevel::Info, 15);
+        log("initCheck file exists in plugin storage, not moving data", LogLevel::Info, 110);
     }
 }
 
