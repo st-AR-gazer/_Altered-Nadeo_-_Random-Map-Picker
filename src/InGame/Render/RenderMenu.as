@@ -3,7 +3,12 @@ int g_lineCount;
 void RenderMenu() {
     int lineCount = g_lineCount - 1;
     if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Load New Altered Map", "There are " + lineCount + " possible maps!")) {
-        LoadNewMap();
+        
+        if (useStorageObjectOverUID) {
+            LoadMapFromStorageObject();
+        } else {
+            LoadMapFromUID();
+        }
     }
 }
 

@@ -1,3 +1,14 @@
+void LoadMapFromStorageObject() {
+    string mapUrl = FetchRandomFileUrlFromFiles();
+
+    if (mapUrl.Length == 0) {
+        log("Failed to get map URL from storage objects", LogLevel::Error);
+        return;
+    }
+
+    PlayMap(mapUrl);
+}
+
 string FetchRandomFileUrlFromFiles() {
     array<string> fileNames = GetAllFilesBasedOnSettings();
 
@@ -11,7 +22,6 @@ string FetchRandomFileUrlFromFiles() {
     uint currentIndex = 0;
     for (uint i = 0; i < fileNames.Length; ++i) {
         Json::Value root = Json::FromFile(fileNames[i]);
-
         if (currentIndex + root.Length > randomIndex) {
             uint localIndex = randomIndex - currentIndex;
             Json::Value selectedObject = root[localIndex];
@@ -26,37 +36,3 @@ string FetchRandomFileUrlFromFiles() {
 
     return "";
 }
-
-
-void PlayMap(/*const string &in map_uid*/) {
-    
-
-    string map_url = FetchRandomFileUrlFromFiles();
-
-    globalMapUrl = "";
-    isWaitingForUrl = true;
-
-    // startnew(GetMapUrl, map_uid);
-
-    if (map_url.Length == 0) {
-        log("Failed to get map URL", LogLevel::Error, 42);
-        return;
-    }
-
-    startnew(PlayMapCoroutine, map_url);
-}
-void PlayMapCoroutine(const string &in map_url) {
-    CTrackMania@ app = cast<CTrackMania@>(GetApp());
-    if (app.Network.PlaygroundClientScriptAPI.IsInGameMenuDisplayed) {
-        app.Network.PlaygroundInterfaceScriptHandler.CloseInGameMenu(CGameScriptHandlerPlaygroundInterface::EInGameMenuResult::Quit);
-    }
-    app.BackToMainMenu();
-
-    while (!app.ManiaTitleControlScriptAPI.IsReady) yield();
-
-    NotifyInfo("Started playing map");
-
-    app.ManiaTitleControlScriptAPI.PlayMap(map_url, "", "");
-}
-
-
