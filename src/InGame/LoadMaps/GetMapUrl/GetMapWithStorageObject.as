@@ -2,7 +2,7 @@ void LoadMapFromStorageObject() {
     string mapUrl = FetchRandomFileUrlFromFiles();
 
     if (mapUrl.Length == 0) {
-        log("Failed to get map URL from storage objects", LogLevel::Error);
+        log("Failed to get map URL from storage objects", LogLevel::Error, 5);
         return;
     }
 

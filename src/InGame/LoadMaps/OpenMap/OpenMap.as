@@ -1,6 +1,6 @@
 void PlayMap(const string &in map_url) {
     if (map_url.Length == 0) {
-        log("Map URL is empty", LogLevel::Error);
+        log("Map URL is empty", LogLevel::Error, 3);
         return;
     }
 

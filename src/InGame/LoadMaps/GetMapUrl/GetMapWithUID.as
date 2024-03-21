@@ -1,12 +1,20 @@
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
 
-string globalMapUrl = ""; // Consider if this needs to be global or managed differently.
-bool isWaitingForUrl = false; // Same consideration as above.
+string globalMapUrl = "";
+bool isWaitingForUrl = false;
+
+void SetFirstUid() {
+    string map_uid = GetRandomUID();
+
+    startnew(GetMapUrl, map_uid);
+
+    globalMapUrl = tm_map_endpoint + map_uid;
+}
 
 void LoadMapFromUID() {
     string mapUID = GetRandomUID();
     if (mapUID.Length == 0) {
-        log("No UID found", LogLevel::Error);
+        log("No UID found", LogLevel::Error, 17);
         return;
     }
 
@@ -16,7 +24,7 @@ void LoadMapFromUID() {
     while (isWaitingForUrl) yield();
 
     if (globalMapUrl.Length == 0) {
-        log("Failed to get map URL from UID", LogLevel::Error);
+        log("Failed to get map URL from UID", LogLevel::Error, 27);
         return;
     }
 
@@ -34,9 +42,9 @@ void GetMapUrl(const string &in map_uid) {
     while (!req.Finished()) yield();
 
     if (req.ResponseCode() != 200) {
-        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 25);
-        log("Response body:", LogLevel::Error, 26);
-        log(req.Body, LogLevel::Error, 27);
+        log("TM API request returned response code " + req.ResponseCode(), LogLevel::Error, 45);
+        log("Response body:", LogLevel::Error, 46);
+        log(req.Body, LogLevel::Error, 47);
         return;
     }
 
