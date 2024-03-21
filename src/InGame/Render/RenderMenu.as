@@ -5,22 +5,7 @@ void RenderMenu() {
     if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Load New Altered Map", "There are " + lineCount + " possible maps!")) {
         LoadNewMap();
     }
-    
-    // if (UI::BeginMenu("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Altered Map Settings", "There are " + lineCount + " possible maps!")) {
-
-    //     if (UI::MenuItem("Show in editor", "", true)) {
-            
-    //     }
-    // }
-    // if (UI::BeginMenu(Text::FormatOpenplanetColor(CheckpointOuterColor.xyz) + Icons::Circle + menuColor + " Unclaimed Checkpoint indicator")) {
-    //     if (UI::MenuItem(menuOptionColor(show) + "Show when driving", "", show)) {
-    //         show = !show;
-    //     }
-    // }
 }
-
-// void RenderMenu() {
-// }
 
 int GetLineCount(string filePath) {
     log("Getting line count for file: " + filePath, LogLevel::Info, 26);
