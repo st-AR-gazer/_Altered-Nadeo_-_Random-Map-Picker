@@ -1,6 +1,6 @@
 string alterationFilePath = IO::FromStorageFolder("New-Sorting-System/ByAlteration/");
 string seasonalFilePath = IO::FromStorageFolder("New-Sorting-System/BySeason/");
-string otherFilePath = IO::FromStorageFolder("New-Sorting-System/Other/");
+string otherFilePath = IO::FromStorageFolder("New-Sorting-System/ByOther/");
 
 array<string> GetAllFilesBasedOnSettings() {
     array<string> allFiles;

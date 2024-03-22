@@ -59,11 +59,11 @@ void CheckIfFilesExist(string type, array<string>& nonExistingFilesArray) {
 
 string GetCorrectLocation(string type) {
     if (type == "Default") {
-        return "By-Other/";
+        return "ByOther/";
     } else if (type == "Season") {
-        return "By-Season/";
+        return "BySeason/";
     } else if (type == "Alteration") {
-        return "By-Alteration/";
+        return "ByAlteration/";
     } else {
         log("Unknown file type: " + type, LogLevel::Error, 68);
         return "";
@@ -76,13 +76,13 @@ void CheckDirs() {
         IO::CreateFolder(g_saveLocationStoragePath);
     }
 
-    if(!IO::FolderExists(g_saveLocationStoragePath + "By-Season/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Season/", LogLevel::D, 80);
-        IO::CreateFolder(g_saveLocationStoragePath + "By-Season/");
+    if(!IO::FolderExists(g_saveLocationStoragePath + "BySeason/")) {
+        log("Creating folder: " + g_saveLocationStoragePath + "BySeason/", LogLevel::D, 80);
+        IO::CreateFolder(g_saveLocationStoragePath + "BySeason/");
     }
-    if(!IO::FolderExists(g_saveLocationStoragePath + "By-Alteration/")) {
-        log("Creating folder: " + g_saveLocationStoragePath + "By-Alteration/", LogLevel::D, 84);
-        IO::CreateFolder(g_saveLocationStoragePath + "By-Alteration/");
+    if(!IO::FolderExists(g_saveLocationStoragePath + "ByAlteration/")) {
+        log("Creating folder: " + g_saveLocationStoragePath + "ByAlteration/", LogLevel::D, 84);
+        IO::CreateFolder(g_saveLocationStoragePath + "ByAlteration/");
     }
 }
 

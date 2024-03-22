@@ -3,10 +3,6 @@ string NewSortingSystemUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting
 
 string localSaveLocation = IO::FromStorageFolder("New-Sorting-System/");
 
-// By-Data
-// By-Alteration
-// By-Season
-
 // string g_idStoragePath = IO::FromStorageFolder("id");
 
 void DownloadFiles() {
@@ -25,12 +21,12 @@ void DownloadFiles() {
     bool TESTING;
     if (TESTING) return;
     
-    DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "ByOther/");
+    DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "By-Other/");
     log("Attempted to downloaded all 'other' files", LogLevel::Info, 29);
     
     
     // Should maybe set first UID here if the bug from the ported code still persists
-    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles, localSaveLocation + "BySeason/");
+    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles, localSaveLocation + "By-Season/");
     log("Attempted to downloaded all season files", LogLevel::Info, 34);
     
     DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles, localSaveLocation + "ByAlteration/");
