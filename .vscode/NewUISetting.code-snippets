@@ -1,0 +1,13 @@
+{
+    "Add New Plugin Setting": {
+		"scope": "angelscript",
+        "prefix": "newset",
+        "body": [
+            "newValue = UI::Checkbox('${1:Description}', IsUsing_${2});",
+            "if (newValue != IsUsing_$2) { IsUsing_$2 = newValue; }",
+            "",
+            "${3}"
+        ],
+        "description": "Add a new plugin setting"
+    }
+}
