@@ -6,7 +6,6 @@ int currentTab;
 void RenderInterface() {
     if (!showInterface) {return;}
     if (GetApp() is null) {showInterface = false; return;}
-    //if (cast<CGameCtnEditorFree>(GetApp().Editor) is null) {showInterface = false; return;}
 
     UI::SetNextWindowPos(100, 100, UI::Cond::Once);
     switch (currentTab) {
@@ -24,7 +23,9 @@ void RenderInterface() {
         break;
     }
 
-    if (UI::Begin("Altered Campaign Helper", showInterface, UI::WindowFlags::NoResize)) {
+    if (UI::Begin(ColorizeString("Altered") + ColorizeString("Nadeo") + "Random Map Picker Settings", showInterface, UI::WindowFlags::NoResize)) {
+
+        // ALTERED SURFACES
 
         UI::BeginTabBar("HUH who uses more than 1 tab bar?", UI::TabBarFlags::NoCloseWithMiddleMouseButton);
         UI::PushStyleColor(UI::Col::Tab, vec4(0.5, 0.5, 0.5, 0.75));
@@ -85,6 +86,43 @@ void RenderInterface() {
             if (newValue != IsUsing_Underwater) { IsUsing_Underwater = newValue; }
 
             UI::Separator();
+
+            UI::EndTabItem();
+        }
+
+        // ALTERED EFFECTS
+
+        UI::PopStyleColor(2);
+        UI::PushStyleColor(UI::Col::Tab, vec4(0.5, 0.5, 0.5, 0.75));
+        UI::PushStyleColor(UI::Col::TabHovered, vec4(1.2, 1.2, 1.2, 0.85));
+        UI::PushStyleColor(UI::Col::TabActive, vec4(0.5, 0.5, 0.5, 1.0));
+
+        if (UI::BeginTabItem("Altered Effects")) {
+            currentTab = 0;
+            UI::Text('All the altered nadeo effect alterations');
+            UI::SameLine();
+            UI::Text("There are currently " + "[PLACEHOLDER]" + " effect alterations");
+
+            bool newValue;
+
+            newValue = UI::Checkbox('Cruise', IsUsing_Cruise);
+            if (newValue != IsUsing_Cruise) { IsUsing_Cruise = newValue; }
+            
+            newValue = UI::Checkbox('Fragile', IsUsing_Fragile);
+            if (newValue != IsUsing_Fragile) { IsUsing_Fragile = newValue; }
+            
+            newValue = UI::Checkbox('Freewheel', IsUsing_Freewheel);
+            if (newValue != IsUsing_Freewheel) { IsUsing_Freewheel = newValue; }
+            
+            newValue = UI::Checkbox('Glider', IsUsing_Glider);
+            if (newValue != IsUsing_Glider) { IsUsing_Glider = newValue; }
+            
+            newValue = UI::Checkbox('No-Brake', IsUsing_No_brakes);
+            if (newValue != IsUsing_No_brakes) { IsUsing_No_brakes = newValue; }
+            
+            
+
+            
 
             UI::EndTabItem();
         }
