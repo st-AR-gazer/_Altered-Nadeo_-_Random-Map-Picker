@@ -1,5 +1,5 @@
-{
-    "Hairpins (1-DOWN).Map.Gbx": {
+[
+    {
         "author": "bd3f04a8-17a0-433e-a828-b4ca1f346a60",
         "authorScore": 29459,
         "bronzeScore": 45000,
@@ -20,7 +20,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4c9af49f-0ceb-456e-8ce3-f5c73d547835",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4bf50661-2dcb-4c3d-bfd4-dcfee153ac18.jpg"
     },
-    "IAmSpeed (1-DOWN).Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 28159,
         "bronzeScore": 43000,
@@ -41,7 +41,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b46de5cd-d8d5-4647-be9f-86056c27768b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b7e7a841-b831-40b7-bd81-ad119f7e409e.jpg"
     },
-    "IcySnow (1-DOWN).Map.Gbx": {
+    {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "authorScore": 26015,
         "bronzeScore": 40000,
@@ -62,7 +62,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7f724bb5-a836-4d1b-bc49-e9acbfe86351",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dbbe5357-6eea-44e9-a134-890e00bd8651.jpg"
     },
-    "SummerSnow (1-DOWN).Map.Gbx": {
+    {
         "author": "bd3f04a8-17a0-433e-a828-b4ca1f346a60",
         "authorScore": 64502,
         "bronzeScore": 97000,
@@ -83,7 +83,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f522e802-ac15-42b3-92bb-940023e1c668",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/86baa60f-fa2f-41ad-88ad-f2c4ee163db2.jpg"
     },
-    "SlippySnow (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 41754,
         "bronzeScore": 63000,
@@ -104,7 +104,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/44011d21-1aee-4fbb-ab68-17dc34b9c002",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/901b1a90-cc4e-4dc2-a0db-5f6e29050190.jpg"
     },
-    "Temple (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 32956,
         "bronzeScore": 50000,
@@ -125,7 +125,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ffb9e309-9ff5-4d0e-b35f-e3a4d46634d3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/914166aa-252b-4e99-96d9-c881a2d2f24b.jpg"
     },
-    "SnowGlider (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 22029,
         "bronzeScore": 34000,
@@ -146,7 +146,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c846fde7-5565-452d-8dbb-08dee55cef47",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/404acd23-c3dc-47e3-b176-8af3a89e25fb.jpg"
     },
-    "Rock&Revel (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 47676,
         "bronzeScore": 72000,
@@ -167,7 +167,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/742a48b6-c664-4c79-ae5b-8aa15e1aa841",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ef3b9c54-367d-4d5c-8f9c-ee2cf8866493.jpg"
     },
-    "WoodForce (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 27624,
         "bronzeScore": 42000,
@@ -188,7 +188,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/944f53b8-ed83-4a53-abe1-c3b97d5bc0a3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/775efd83-4058-4d79-a13f-0751a615ac16.jpg"
     },
-    "BreakOrSlide (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 39777,
         "bronzeScore": 60000,
@@ -209,7 +209,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4fe7bdcf-111e-438d-a6ba-dcc9b1d8e505",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6d1de97e-1a07-40ca-9231-b2d691056990.jpg"
     },
-    "WoodySlalom (1-DOWN).Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 21608,
         "bronzeScore": 33000,
@@ -230,7 +230,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2b96355c-3e4c-4937-a009-548c7b13da1f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5964478b-35b1-43bd-9a19-6a3b77495461.jpg"
     },
-    "SnowIsBack (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 33626,
         "bronzeScore": 51000,
@@ -251,7 +251,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4df02afc-23ca-447e-9064-d9e2e26c1cac",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/606857c9-a6dd-46df-ba2e-6de3ce04f177.jpg"
     },
-    "WetWood (1-DOWN).Map.Gbx": {
+    {
         "author": "7c714e67-7ebe-42de-a132-78562ba6efc7",
         "authorScore": 24039,
         "bronzeScore": 37000,
@@ -272,7 +272,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1ef26c1f-59a0-4793-80ff-ac3606b5e0bd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3d0c461f-9a98-44ca-a268-e23a36a8b92c.jpg"
     },
-    "BobLover (1-DOWN).Map.Gbx": {
+    {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "authorScore": 26376,
         "bronzeScore": 40000,
@@ -293,7 +293,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/634f4070-1670-4d77-82c4-704396785e92",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f24c21da-e70e-44db-8db3-90e6d437ea1c.jpg"
     },
-    "IcyHills (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 25358,
         "bronzeScore": 39000,
@@ -314,7 +314,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b8737b0d-40b1-4cc7-bbe3-460a4f6a458b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/472bdf9c-4b5c-477b-b439-c4c3cc13d214.jpg"
     },
-    "BobLover Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 22067,
         "bronzeScore": 34000,
@@ -335,7 +335,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d1b2cbfa-398b-4a40-9d78-422fd1f74b29",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dfdcf3c1-94f3-44c2-bfa3-46ba501279af.jpg"
     },
-    "IAmSpeed [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 35693,
         "bronzeScore": 54000,
@@ -356,7 +356,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c97bbe5e-cd4f-4585-9206-08c3d636ab64",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fc9016ee-e3ed-4d30-a04f-18fbf41e0c50.jpg"
     },
-    "Rock&Revel [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 31050,
         "bronzeScore": 47000,
@@ -377,7 +377,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fe4ffeb8-ebd1-4ca5-99e5-21bb303a82aa",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d3c4f61b-5ec5-45c0-80e6-22e2ad93fd19.jpg"
     },
-    "WoodForce [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 34601,
         "bronzeScore": 52000,
@@ -398,7 +398,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/76a6a57c-422b-43ba-8cdf-7880219964df",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ee0a6ba7-ec56-46e3-8e0b-e6428325fefc.jpg"
     },
-    "SummerSnow [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 66207,
         "bronzeScore": 100000,
@@ -419,7 +419,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3195a5ec-31f0-4e8e-93e6-99b2c2048f1c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5b6cc997-2598-4791-a3a8-aea32d291756.jpg"
     },
-    "IcyHills [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 18303,
         "bronzeScore": 28000,
@@ -440,7 +440,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1dbb3111-40ef-4d97-8596-5d8220c210e7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f92166e5-1ed6-48c3-8195-c6691f5271e7.jpg"
     },
-    "Temple [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 26983,
         "bronzeScore": 41000,
@@ -461,7 +461,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/264ba0ca-0fca-4d5a-aebf-5c7953c4182d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a9f10c3a-a560-4f36-9e61-32c6213f7b29.jpg"
     },
-    "Hairpins [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 32820,
         "bronzeScore": 50000,
@@ -482,7 +482,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e1851dae-09a1-44c1-a8d0-58d6204f6518",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7c3150e1-3f8e-445b-aca4-49441e01f8be.jpg"
     },
-    "BreakOrSlide [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 30457,
         "bronzeScore": 46000,
@@ -503,7 +503,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/71a2dd9c-1ae7-4df4-8199-cf5f4e42353b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5e5cecae-278f-4efb-a6ed-cf22bcef7861.jpg"
     },
-    "WetWood [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 19460,
         "bronzeScore": 30000,
@@ -524,7 +524,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/758a83e7-1d9e-410b-95ba-34cc8787302d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/25011d77-6144-4f21-b4c8-fb6f025d0efc.jpg"
     },
-    "SnowIsBack [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 24973,
         "bronzeScore": 38000,
@@ -545,7 +545,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4e9e00e7-7e34-4eda-981e-392b2690ad8a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/81097833-ef6e-4e5b-b4d5-e09468ec752a.jpg"
     },
-    "WoodySlalom [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 24465,
         "bronzeScore": 37000,
@@ -566,7 +566,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/759a623c-b9a2-499b-a8be-06ae4b49a95c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/88e6bd07-4504-4f23-ba70-b8eefd615dfe.jpg"
     },
-    "IcySnow [Snow].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 27436,
         "bronzeScore": 42000,
@@ -587,7 +587,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5c278d65-ebf2-4cea-8264-9632150dea31",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e470db47-e5ee-427b-ac82-5f1ff9278564.jpg"
     },
-    "SummerSnow - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 73211,
         "bronzeScore": 110000,
@@ -608,7 +608,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/98137006-5f98-4296-bb23-259078322477",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bd275a68-056b-40cf-bb89-cbc74b75db7e.jpg"
     },
-    "BobLover - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 25362,
         "bronzeScore": 39000,
@@ -629,7 +629,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3ab40b89-ac39-4ed1-9efb-f6977d9d1e24",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/83d736b7-e0f6-4d97-b287-772078fabfeb.jpg"
     },
-    "IAmSpeed - Flooded.Map.Gbx": {
+    {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "authorScore": 32844,
         "bronzeScore": 50000,
@@ -650,7 +650,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/698bd14c-bc7b-4292-a761-7f4add7edb17",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/941249d8-39f4-4fae-aa19-2f06d02be7eb.jpg"
     },
-    "Rock&Revel - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 25807,
         "bronzeScore": 39000,
@@ -671,7 +671,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4b36dd21-0d1b-49c2-b70a-f1c31f6df77b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/83ff5acf-c715-4ade-930f-f9885b07edd7.jpg"
     },
-    "Hairpins - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 30361,
         "bronzeScore": 46000,
@@ -692,7 +692,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8560eeef-17f7-4017-a567-90e3b8dab6e6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/412c5001-67c0-4a2e-935d-2d0978e0ea7b.jpg"
     },
-    "BreakOrSlide - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 26555,
         "bronzeScore": 40000,
@@ -713,7 +713,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5634c5d5-5490-4a3e-a8ee-003b8f1c7aca",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dfaea034-4434-42cb-9130-c10c50acba02.jpg"
     },
-    "IcySnow - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 17611,
         "bronzeScore": 27000,
@@ -734,7 +734,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7ad0f446-679e-4053-a673-631496d9fe41",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9fd8ee5d-87c5-4e91-8a9d-f85d1b8d1d39.jpg"
     },
-    "WoodySlalom - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 16793,
         "bronzeScore": 26000,
@@ -755,7 +755,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/99c71912-4aa5-4196-ae1e-dcf6fe648c97",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3603bd97-8c23-4b1e-861e-7606a7a447aa.jpg"
     },
-    "Temple - Flooded.Map.Gbx": {
+    {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "authorScore": 17554,
         "bronzeScore": 27000,
@@ -776,7 +776,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/32babd34-31cc-4d21-b456-bfde13539640",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/23fc20d4-4458-46c5-a289-d11c394c3e69.jpg"
     },
-    "SlippySnow - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 27376,
         "bronzeScore": 42000,
@@ -797,7 +797,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fe190367-8afe-4345-bf35-2e3c439eca72",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fcbcef39-4e50-4436-9d56-787b474b9629.jpg"
     },
-    "WetWood - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 14993,
         "bronzeScore": 23000,
@@ -818,7 +818,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/83d97754-8313-4628-8a6c-2634e52c555d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2b35953c-15a7-4776-8555-72023c7c23fc.jpg"
     },
-    "SnowIsBack - Flooded.Map.Gbx": {
+    {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "authorScore": 26580,
         "bronzeScore": 40000,
@@ -839,7 +839,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6755fc03-e994-45a1-8356-044eff9fb1f4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9de9cc27-bd00-4022-ada5-df3b6c0e615a.jpg"
     },
-    "IcyHills - Flooded.Map.Gbx": {
+    {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "authorScore": 16927,
         "bronzeScore": 26000,
@@ -860,7 +860,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bb41852f-d064-46da-b7d9-7e66e299dd46",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/82b77246-16fd-4d17-aaa6-be894d2ed575.jpg"
     },
-    "SnowGlider - Flooded.Map.Gbx": {
+    {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "authorScore": 15564,
         "bronzeScore": 24000,
@@ -881,7 +881,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6c02ff3b-4a9a-4734-899b-ca333d938f7e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f6dd20b1-e101-4874-8574-ddd6f5926d78.jpg"
     },
-    "WoodForce - Flooded.Map.Gbx": {
+    {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
         "authorScore": 22354,
         "bronzeScore": 34000,
@@ -902,7 +902,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9474b61d-ba80-4439-8220-e0e7a10afea6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/27efe8f0-06af-473b-9b43-0aa2d0ccaa3a.jpg"
     },
-    "SnowIsBack Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 23806,
         "bronzeScore": 36000,
@@ -923,7 +923,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/88840d94-95b0-4dde-8990-1d94c920e9db",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/13aad987-7044-437d-96cf-37a3016a7a3a.jpg"
     },
-    "IcyHills Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 21147,
         "bronzeScore": 32000,
@@ -944,7 +944,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/264240b6-7d4a-4c05-8ce0-d5cb33bde905",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/17cf1b73-6033-42a5-b6c0-4e6a3060b9fe.jpg"
     },
-    "SnowGlider Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 19802,
         "bronzeScore": 30000,
@@ -965,7 +965,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6847787c-110e-4c90-b991-daf71c4f7a33",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d9ba4abc-1e8e-47c4-b300-d8c2c40e52d6.jpg"
     },
-    "WoodForce Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 26958,
         "bronzeScore": 41000,
@@ -986,7 +986,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/00dfad8a-1a6b-42c9-9a3f-579863f2d1d8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7d996a4c-c709-40d6-bb7c-c3eb8f8a756e.jpg"
     },
-    "WetWood Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 18836,
         "bronzeScore": 29000,
@@ -1007,7 +1007,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/28acc7c8-dd62-401d-a9ee-99d306849408",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/16152d10-08c6-453c-839a-b262aff1474a.jpg"
     },
-    "BreakOrSlide Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 29707,
         "bronzeScore": 45000,
@@ -1028,7 +1028,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f55fc75d-adaf-41cc-a417-d3615bb723e8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f899998a-2ab3-4962-b5db-2ff16354c365.jpg"
     },
-    "IcySnow Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 23569,
         "bronzeScore": 36000,
@@ -1049,7 +1049,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a5e9135c-0963-46f9-a204-c7a1c962245a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bea9cb43-4cec-4a77-8eaf-d1e3cd541081.jpg"
     },
-    "WoodySlalom Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 17990,
         "bronzeScore": 27000,
@@ -1070,7 +1070,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/243c0a86-44dd-4133-9a55-b3400cef9d71",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/701394df-335a-4084-abf3-506252b4170e.jpg"
     },
-    "Hairpins Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 32494,
         "bronzeScore": 49000,
@@ -1091,7 +1091,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1b476bc9-d464-4739-bcb3-f99ea188b8b2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/813ff3b1-b539-41d7-818f-cf6acbfa0f27.jpg"
     },
-    "Temple Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 23556,
         "bronzeScore": 36000,
@@ -1112,7 +1112,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3220e409-39b7-48bf-ade6-dceea6e5c8aa",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/93fac296-f445-46e5-958c-992a9b9cb46e.jpg"
     },
-    "Rock&Revel Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 31392,
         "bronzeScore": 48000,
@@ -1133,7 +1133,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/00072bba-981a-4958-b25e-aab2438ba2f9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d6c0dc59-2c6e-4a4d-942a-2c90acc60e30.jpg"
     },
-    "IAmSpeed Magnet.Map.Gbx": {
+    {
         "author": "fc8467b8-b253-457f-b8bb-3bbd2bb5bfdd",
         "authorScore": 42298,
         "bronzeScore": 64000,
@@ -1154,7 +1154,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2ff92949-feea-448f-81a2-e1f75f118172",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ad8d655e-5a57-4680-afbc-20d18103294d.jpg"
     },
-    "SummerSnow Magnet.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 169844,
         "bronzeScore": 255000,
@@ -1175,7 +1175,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/28741925-4560-40c9-af1a-3b7f9d8dcc33",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c856afaf-6501-4b7e-81ec-994bbbddb01b.jpg"
     },
-    "SnowGlider - Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 397034,
         "bronzeScore": 596000,
@@ -1196,7 +1196,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2dd7a2ee-7762-4a46-85e9-cd75334f65e1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1e298421-a592-4336-8053-ba5666c40bb6.jpg"
     },
-    "WetWood - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 18470,
         "bronzeScore": 28000,
@@ -1217,7 +1217,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7a5a9669-1753-4879-b601-b4550a2d62a8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a18b3ca6-6519-4b6b-8a08-fdf2127f83a7.jpg"
     },
-    "Hairpins - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 30449,
         "bronzeScore": 46000,
@@ -1238,7 +1238,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/937529d5-a187-4d12-9c6e-1d43baedaf72",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d03e3b57-fa64-47fd-bab5-3f107ad781d2.jpg"
     },
-    "WoodForce - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 178764,
         "bronzeScore": 269000,
@@ -1259,7 +1259,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5a881bd3-8ede-4b9e-bb52-7f72a2aac438",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aea1d907-97d1-4bb7-98e1-ab47a8b5fdcd.jpg"
     },
-    "SnowIsBack - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 22460,
         "bronzeScore": 34000,
@@ -1280,7 +1280,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/387f5530-91ab-4736-ba84-7dd1d2f079dc",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/57e75f4b-19f2-45ea-bfac-0abfaa666e69.jpg"
     },
-    "SlippySnow - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 87829,
         "bronzeScore": 132000,
@@ -1301,7 +1301,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7db876ae-c788-43fe-b52e-9cf301e3db4f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/109c0b5e-c427-410f-96ea-730bd0b9345c.jpg"
     },
-    "IAmSpeed - Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 138599,
         "bronzeScore": 208000,
@@ -1322,7 +1322,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9d8abd52-f301-493e-8011-54db07678105",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4b938b9e-540e-4a73-b744-126d9096f83f.jpg"
     },
-    "WoodySlalom - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 25247,
         "bronzeScore": 38000,
@@ -1343,7 +1343,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/75f0ebc3-84b1-42c1-9b65-f9a2d8016e08",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1151c795-5a21-4871-89a8-1e8a2908a5b6.jpg"
     },
-    "IcySnow - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 32311,
         "bronzeScore": 49000,
@@ -1364,7 +1364,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3efc9ce6-3dd4-469c-b8dc-887a8d80b98b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/eb06c26d-433e-44d7-a43e-48f43ba09643.jpg"
     },
-    "BreakOrSlide - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 150559,
         "bronzeScore": 226000,
@@ -1385,7 +1385,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e4cfa74c-bbc3-469e-a8c1-20771240e8a2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aea5a718-a15f-4973-9982-eb90cfd39743.jpg"
     },
-    "Temple - Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 229682,
         "bronzeScore": 345000,
@@ -1406,7 +1406,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7ce2bc61-d636-48d3-ab2c-2c3233177095",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/71cce0fb-a386-4652-9b42-fce09ad4e2f2.jpg"
     },
-    "BobLover - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 51941,
         "bronzeScore": 78000,
@@ -1427,7 +1427,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1d20bf54-c508-40a0-8c28-75d215cc794a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c9dbb55b-fe2a-42bc-8ba5-6fe3ef5be99c.jpg"
     },
-    "Rock&Revel - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 91505,
         "bronzeScore": 138000,
@@ -1448,7 +1448,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4bd77617-42eb-4c3a-b316-a527cac3e44d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e6874994-bc9f-4776-a0f9-37fc4774f0d4.jpg"
     },
-    "SummerSnow - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 427405,
         "bronzeScore": 642000,
@@ -1469,7 +1469,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/621f8250-a45c-4260-b372-915fa8088931",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ad54a784-1544-4fb3-8783-d8769c53b929.jpg"
     },
-    "IcyHills - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 23481,
         "bronzeScore": 36000,
@@ -1490,7 +1490,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a9baa235-d32d-4508-985d-ef300c70178d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ffd91ca0-bfb9-4c44-99c3-2d8821d04504.jpg"
     },
-    "BobLover - Checkpointless.Map.Gbx": {
+    {
         "author": "92375a2f-edb6-4f12-aa06-7ae91303a4cf",
         "authorScore": 61225,
         "bronzeScore": 92000,
@@ -1511,7 +1511,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/779d2f14-0999-4c8b-9df0-b5e10e7092fa",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a9e18f36-5266-43af-a395-05ad1b3bb817.jpg"
     },
-    "Hairpins [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 27377,
         "bronzeScore": 42000,
@@ -1532,7 +1532,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/71d82e46-c705-4054-9614-6f91be0c3a5a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bb244f77-5e17-49a7-92c4-b27784107388.jpg"
     },
-    "Rock&Revel [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 37200,
         "bronzeScore": 56000,
@@ -1553,7 +1553,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/50a42a0f-9b25-40d3-ab71-8e6f86955ae2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fee31aa3-0237-4378-a27a-2d363a20ddc4.jpg"
     },
-    "SnowGlider [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 20843,
         "bronzeScore": 32000,
@@ -1574,7 +1574,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/10a62349-b546-45a2-b4c1-12706190b877",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/05b92fce-0e1b-45c3-9e8e-887ea8af664d.jpg"
     },
-    "BobLover [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 23963,
         "bronzeScore": 36000,
@@ -1595,7 +1595,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2e272434-800f-4644-a6ae-0cb061db76a7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9481fcd5-b34a-4e50-94f1-c2c7fb8e4cb9.jpg"
     },
-    "Temple [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 23731,
         "bronzeScore": 36000,
@@ -1616,7 +1616,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f5e3c8a6-80e7-493f-ac37-af06a92786d7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/14c92428-da7f-4750-9e3c-d0d00c50b5bd.jpg"
     },
-    "IcyHills [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 19271,
         "bronzeScore": 29000,
@@ -1637,7 +1637,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b9898866-d11e-4234-89e2-bd63496a62fe",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/345ef235-377c-4107-843b-035ca194e9ee.jpg"
     },
-    "SnowIsBack [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 19942,
         "bronzeScore": 30000,
@@ -1658,7 +1658,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/46df7798-fd24-4826-84a6-8d8e1489f756",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/984879c3-d65e-41a0-b690-4c65a5c80be4.jpg"
     },
-    "IcySnow [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 25315,
         "bronzeScore": 38000,
@@ -1679,7 +1679,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ce4ab5be-55eb-4fed-8c8e-28b26676757f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0954e352-62c6-4a21-83fd-edebd1e97487.jpg"
     },
-    "SlippySnow [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 32727,
         "bronzeScore": 50000,
@@ -1700,7 +1700,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b86bf0fa-2ccb-4d96-a494-c4eb8e42cc2a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/05e6dc14-fcb4-4364-a810-eeb6bcacd26e.jpg"
     },
-    "BreakOrSlide [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 27684,
         "bronzeScore": 42000,
@@ -1721,7 +1721,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b354e4c9-613f-4e69-afad-f4a78c8f8838",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f0db3fc4-471d-495a-8e31-88ed3f7864ac.jpg"
     },
-    "SummerSnow [Stadium].Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 68294,
         "bronzeScore": 103000,
@@ -1742,7 +1742,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7d51ae1d-9d1d-4b49-a7f4-7226f2d2bfa6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/858c9e4a-eeee-4e8e-9e03-7b4a48c0ebb9.jpg"
     },
-    "IcyHills - Checkpointless.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 24170,
         "bronzeScore": 37000,
@@ -1763,7 +1763,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b55d48a6-6723-4114-8b34-62c23303a405",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/88835a30-5f30-421c-9c44-183692d96ff9.jpg"
     },
-    "WoodForce - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 137084,
         "bronzeScore": 206000,
@@ -1784,7 +1784,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/41421f79-f285-48e3-a351-db7d5da8d294",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f27e7345-06f4-40ec-ac64-eda0d1f19ec1.jpg"
     },
-    "Hairpins - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 32435,
         "bronzeScore": 49000,
@@ -1805,7 +1805,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c6f17094-6b78-40d8-8246-f8e9e3d3e9a5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/40c20207-96b5-463e-a5ec-2a337c959267.jpg"
     },
-    "WoodySlalom - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 18733,
         "bronzeScore": 29000,
@@ -1826,7 +1826,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bbc62f39-bf7c-4070-bed5-ffcb0e72d877",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2a45d72b-d3ee-43fb-ac13-4c6c49558be9.jpg"
     },
-    "IAmSpeed - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 38638,
         "bronzeScore": 58000,
@@ -1847,7 +1847,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/53daf73b-eeb6-491f-abc8-b3f6617b59f3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8c93aac3-af10-4bf0-8294-a670093bfc95.jpg"
     },
-    "IcySnow - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 27184,
         "bronzeScore": 41000,
@@ -1868,7 +1868,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/82d00c6a-6244-40de-8b1a-ed3a48474b08",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8bb1b444-6cf5-457e-8082-abe834768729.jpg"
     },
-    "Rock&Revel - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 88853,
         "bronzeScore": 134000,
@@ -1889,7 +1889,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/804cc114-7092-4e98-bd07-b212e0cab178",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fa1c6bbd-c83b-4aa0-b2d5-59fc1cb2cdc9.jpg"
     },
-    "WetWood - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 24280,
         "bronzeScore": 37000,
@@ -1910,7 +1910,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/21f0ab55-c3b9-47e2-a467-9538d72bccf0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/af2150ac-944e-4246-8326-6d08aa723400.jpg"
     },
-    "BreakOrSlide - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 80833,
         "bronzeScore": 122000,
@@ -1931,7 +1931,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bdb60d28-67af-4415-9444-71f041f92bd8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bd67810a-abee-4bca-a765-be600c8b313c.jpg"
     },
-    "SnowIsBack - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 25163,
         "bronzeScore": 38000,
@@ -1952,7 +1952,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/76029032-b0a2-480a-bc17-fb95488f89d7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ba97e55d-0bc1-4a87-8483-c0b923901c41.jpg"
     },
-    "SnowGlider - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 19833,
         "bronzeScore": 30000,
@@ -1973,7 +1973,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ffc60be3-11d0-4090-889b-f520d4fc0011",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/052a9f0a-551d-42e9-9f6e-c5dd293fbbb5.jpg"
     },
-    "Temple - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 12389,
         "bronzeScore": 19000,
@@ -1994,7 +1994,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fb5001d8-e498-45ef-8a6a-0bcfbaf80470",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ab691a4d-7f05-4833-bf7c-986db94fe3ad.jpg"
     },
-    "BobLover.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 24618,
         "bronzeScore": 37000,
@@ -2015,7 +2015,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/aa275055-29ba-48ae-9623-7e229f9737cd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bde53d35-6780-4337-a56f-b2b2d464377b.jpg"
     },
-    "SnowIsBack.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 26972,
         "bronzeScore": 41000,
@@ -2036,7 +2036,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5b244c36-da6d-45f2-bbd3-c97ed4b5efc0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/647ea926-6959-439e-a6e2-e7a78caa9529.jpg"
     },
-    "SlippySnow.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 33200,
         "bronzeScore": 50000,
@@ -2057,7 +2057,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2604c016-9ba7-4015-bc41-1b3b157f06f0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d764f303-ed68-485c-bc41-808674022e00.jpg"
     },
-    "SnowGlider.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 20118,
         "bronzeScore": 31000,
@@ -2078,7 +2078,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/64e0e9c0-8c40-4ce5-ad17-227da380aaf2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/43a0e481-5d16-479a-b2ad-1efd23402998.jpg"
     },
-    "Rock&Revel.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 33000,
         "bronzeScore": 50000,
@@ -2099,7 +2099,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e8c8d2bb-26ea-4116-ad1d-49dafb128064",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c9f54a5f-7640-484b-9338-99dd3fe00a18.jpg"
     },
-    "Hairpins.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 29135,
         "bronzeScore": 44000,
@@ -2120,7 +2120,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ae6a8e68-5e33-442b-959f-fb60a83eeb4a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/56d8a41d-c494-47ee-bfb2-f4ee24ef110d.jpg"
     },
-    "IcySnow.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 26498,
         "bronzeScore": 40000,
@@ -2141,7 +2141,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fd28ddff-dcc1-4e9c-a9cf-8fcd29929108",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aeba16c9-175e-4f85-93a8-a5c715d9fda2.jpg"
     },
-    "WoodySlalom.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 19053,
         "bronzeScore": 29000,
@@ -2162,7 +2162,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/21f66427-68a3-4b75-8269-207095b8ea72",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6485ab23-6909-4a7e-8246-2b8e5efe2b36.jpg"
     },
-    "SummerSnow.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 67171,
         "bronzeScore": 101000,
@@ -2183,7 +2183,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ff8dec99-6a90-4d41-8623-6745221e4912",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e65ba138-ad42-48ba-9ff7-fc229d9c8386.jpg"
     },
-    "BreakOrSlide.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 33220,
         "bronzeScore": 50000,
@@ -2204,7 +2204,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ce54b8fa-bcd9-4ce4-b932-b8bf9150db0b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2ad2f9c1-e669-4932-8ac9-1f3fff00e8b1.jpg"
     },
-    "IcyHills.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 21330,
         "bronzeScore": 32000,
@@ -2225,7 +2225,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c4422d83-0044-46ed-931e-0f8452054b34",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/34f4bf99-8587-47c0-a4a8-8cb41804312b.jpg"
     },
-    "IAmSpeed.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 26013,
         "bronzeScore": 40000,
@@ -2246,7 +2246,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dfdb08de-2dcb-44c6-9e45-a7b9743864c4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ed806007-8f63-4ab0-b34c-ba53fdfeeb0b.jpg"
     },
-    "WoodForce.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 24435,
         "bronzeScore": 37000,
@@ -2267,7 +2267,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/269bd6e3-38e4-41bc-ab8a-b052baa986fb",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/99754ac0-7d8b-4dcb-942f-9927db45a8fe.jpg"
     },
-    "WetWood.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 23098,
         "bronzeScore": 35000,
@@ -2288,7 +2288,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5324c90b-ef8d-45e6-9004-014751ab283d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9f8e5416-c632-4fd6-b6e9-870404c34f27.jpg"
     },
-    "Temple.Map.Gbx": {
+    {
         "author": "7cd60a75-609a-4e64-b286-16f329878249",
         "authorScore": 26078,
         "bronzeScore": 40000,
@@ -2309,4 +2309,4 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d60c330f-0d83-4a8d-82ec-b8ab301aa771",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5a66d9d1-c965-481f-81c2-2bdd94f2afc5.jpg"
     }
-}
+]

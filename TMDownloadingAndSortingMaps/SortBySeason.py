@@ -115,8 +115,8 @@ def parse_map_category(filename, name, map_data):
         return "AllSnowDiscovery"
     elif is_exact_match(name, all_TOTD_maps, filename, True):
         return "AllTOTD"
-    # elif is_exact_match(name, official_competition_maps, filename, False):
-    #     return "AllOfficialCompetitions"
+    elif is_exact_match(name, official_competition_maps, filename, False):
+        return "AllOfficialCompetitions"
     return "_AllUnknownMaps"
 
 def sort_maps_by_category(data):
@@ -130,8 +130,9 @@ def save_sorted_data(sorted_data, base_folder):
     if not os.path.exists(base_folder):
         os.makedirs(base_folder)
     for category, maps in sorted_data.items():
+        maps_list = list(maps.values())
         with open(os.path.join(base_folder, f"{category}.json"), 'w', encoding='utf-8') as file:
-            json.dump(maps, file, indent=4, ensure_ascii=False)
+            json.dump(maps_list, file, indent=4, ensure_ascii=False)
 
 
 
@@ -225,7 +226,7 @@ special_uids = [
     {"uid": "JrTT0xgcml25nw0qWkFcCJsrsF0", "name": "Super20", "season": "summer", "year": "2023", "alteration": "SuperSized"},
     {"uid": "f1wKtCAAR6MJjmU4YwB3P0W8lJd", "name": "Super21", "season": "summer", "year": "2023", "alteration": "SuperSized"},
     {"uid": "Xw38iuF1ZHk3iQsiYGPZAdDLIwb", "name": "Super22", "season": "summer", "year": "2023", "alteration": "SuperSized"},    
-    {"uid": "Xw38iuF1ZHk3iQsiYGPZAdDLIwb", "name": "Super22", "season": "summer", "year": "2023", "alteration": "SuperSized"}, # :YEK: Why are there two of them xdd
+    {"uid": "Kp6EpmUMZxYkjpKD9ZGihoPl1A9", "name": "Super22", "season": "summer", "year": "2023", "alteration": "SuperSized"}, # :YEK: Why are there two of them xdd
     {"uid": "RTAhySbG71EA7VO_rQy38MjGID5", "name": "Super23", "season": "summer", "year": "2023", "alteration": "SuperSized"},
     {"uid": "tbUB3ytvxSt0wf1jp09lZNsxa1h", "name": "Super24", "season": "summer", "year": "2023", "alteration": "SuperSized"},
     {"uid": "QfVhvf2NisC80Sn44siqqSBCWBi", "name": "Super25", "season": "summer", "year": "2023", "alteration": "SuperSized"},

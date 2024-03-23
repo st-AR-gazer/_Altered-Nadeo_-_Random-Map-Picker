@@ -2,7 +2,7 @@ void LoadMapFromStorageObject() {
     string mapUrl = FetchRandomFileUrlFromFiles();
 
     if (mapUrl.Length == 0) {
-        log("Failed to get map URL from storage objects", LogLevel::Error, 5);
+        log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 5); // will always be empty xdd
         return;
     }
 
@@ -16,10 +16,14 @@ string FetchRandomFileUrlFromFiles() {
     for (uint i = 0; i < fileNames.Length; ++i) {
         Json::Value root = Json::FromFile(fileNames[i]);
 
+        if (IO::FileExists(fileNames[i]) == false) {
+            log("File does not exist: " + fileNames[i], LogLevel::Error, 21);
+            continue;
+        }
         if (root.GetType() == Json::Type::Array && root.Length > 0) {
             totalObjects += root.Length;
         } else {
-            log("Probably worked I guess xdd: " + fileNames[i], LogLevel::Info, 22);
+            log("\\$8dd" + "File cannot be loaded or is in an improper format: " + fileNames[i], LogLevel::Error, 22);
         }
     }
 
@@ -46,4 +50,3 @@ string FetchRandomFileUrlFromFiles() {
 
     return "";
 }
-

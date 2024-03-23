@@ -6,6 +6,16 @@ int activeTab = 0;
 void RenderInterface() {
     UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker Settings", showInterface, UI::WindowFlags::AlwaysAutoResize);
 
+    if (UI::Button("Open Map")) { 
+        if (useStorageObjectOverUID) {
+            LoadMapFromStorageObject();
+        } else {
+            LoadMapFromUID();
+        }
+    }
+
+    UI::Separator();
+
     // Row 1: Main Settings
     if (UI::Button("General Settings")) activeTab = 0;
     UI::SameLine();
@@ -246,6 +256,7 @@ void RenderSummer() {
         IsUsing_Summer2024Maps = false;
     }
 }
+
 void RenderFall() { 
     UI::Text('Content for "Fall"');
 
@@ -303,8 +314,8 @@ void RenderSeasonalOther() {
     newValue = UI::Checkbox('Training', IsUsing_Trainig);
     if (newValue != IsUsing_Trainig) { IsUsing_Trainig = newValue; }
     
-    newValue = UI::Checkbox('Official TMGL / TMWR maps', IsUsing_AllOfficialCompetitions);
-    if (newValue != IsUsing_AllOfficialCompetitions) { IsUsing_AllOfficialCompetitions = newValue; }
+    newValue = UI::Checkbox('Official TMGL / TMWR maps', IsUsing__AllOfficialCompetitions);
+    if (newValue != IsUsing__AllOfficialCompetitions) { IsUsing__AllOfficialCompetitions = newValue; }
 }
 
 
@@ -710,8 +721,8 @@ void RenderExtra() {
     newValue = UI::Checkbox('Training', IsUsing_Trainig);
     if (newValue != IsUsing_Trainig) { IsUsing_Trainig = newValue; }
     
-    newValue = UI::Checkbox('Official Competitions (TMGL, TMWT)', IsUsing__AllOfficialCompetitions);
-    if (newValue != IsUsing__AllOfficialCompetitions) { IsUsing__AllOfficialCompetitions = newValue; }
+    newValue = UI::Checkbox('Alterations of Official Competitions (TMGL, TMWT)', IsUsing_AllOfficialCompetitions);
+    if (newValue != IsUsing_AllOfficialCompetitions) { IsUsing_AllOfficialCompetitions = newValue; }
     
     newValue = UI::Checkbox('Official Nadeo', IsUsing_OfficialNadeo);
     if (newValue != IsUsing_OfficialNadeo) { IsUsing_OfficialNadeo = newValue; }

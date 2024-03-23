@@ -317,6 +317,19 @@ all_TOTD_maps = [
 # have a mistake of some sort, like a typo in the name or a wrong season/year.
 special_uids = [
     # 
+    
+    # Other maps
+    
+        {"uid": "7QzByRVA_7pLuA_aFJgJR_Z0wOk", "name": "Spring 2022 - 11 - one back", "season": "spring", "year": "2022", "alteration": "1 Back"},
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     # xx but maps that cannot be propperly sorted. 
     #{

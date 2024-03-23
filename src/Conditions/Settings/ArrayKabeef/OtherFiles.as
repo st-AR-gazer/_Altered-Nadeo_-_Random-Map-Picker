@@ -4,16 +4,16 @@ array<string> GetOtherFiles() {
 
     // Include all snow, all comp, but only comp, and all totd
     if (IsUsing_AllSnowDiscovery) {
-        filesToInclude.InsertLast(otherFilePath + "AllSnowDiscovery.json");
+        filesToInclude.InsertLast(seasonalFilePath + "AllSnowDiscovery.json");
     }
     if (IsUsing_AllRallyDiscovery) {
-        filesToInclude.InsertLast(otherFilePath + "AllRallyDiscovery.json");
+        filesToInclude.InsertLast(seasonalFilePath + "AllRallyDiscovery.json");
     }
     if (IsUsing_AllTOTD) {
-        filesToInclude.InsertLast(otherFilePath + "AllTOTD.json");
+        filesToInclude.InsertLast(seasonalFilePath + "AllTOTD.json");
     }
     if (IsUsing_AllOfficialCompetitions) {
-        filesToInclude.InsertLast(otherFilePath + "AllOfficialCompetitions.json");
+        filesToInclude.InsertLast(seasonalFilePath + "AllOfficialCompetitions.json");
     }
 
 

@@ -1,5 +1,5 @@
-{
-    "Fall 02 (BLIND).Map.Gbx": {
+[
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 77361,
         "bronzeScore": 117000,
@@ -20,7 +20,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b372b138-3021-4eab-9811-139205985e71",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a04bc460-26ff-4b41-915e-0e635e9dae6b.jpg"
     },
-    "Fall 03 (BLIND).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 56039,
         "bronzeScore": 85000,
@@ -41,7 +41,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8cf5c751-63b4-407a-8417-017c30ea5d6a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7c0b4c98-f190-4b9d-bb69-5ad73ae927e5.jpg"
     },
-    "Fall 01 (BLIND).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 1271962,
         "bronzeScore": 1908000,
@@ -62,7 +62,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/837d6b86-98dd-4ead-99ae-3b3e14b46019",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ea16af98-2a90-4827-b642-5eed800c5a03.jpg"
     },
-    "Fall 13 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 38348,
         "bronzeScore": 58000,
@@ -83,7 +83,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d572a22d-1e4b-4c02-a30b-2a9b71be44b9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6062cfd9-bc97-4c20-93ac-73935696c901.jpg"
     },
-    "Fall 24 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 56911,
         "bronzeScore": 86000,
@@ -104,7 +104,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6177753b-25ec-4ed9-8c47-62254532ef94",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c95106f5-952f-4f4c-9d60-118d0d7589c7.jpg"
     },
-    "Fall 22 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 55411,
         "bronzeScore": 84000,
@@ -125,7 +125,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c74d6f6b-4e12-4a17-861d-2d9fdffd0c5a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d499a863-49ec-4624-9551-27d0b15217d5.jpg"
     },
-    "Fall 21 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 56546,
         "bronzeScore": 85000,
@@ -146,7 +146,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/40c0ec92-560b-41c6-a78a-106ea7e55992",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1a2910ce-fe9e-4f11-b062-6e9dabd476d5.jpg"
     },
-    "Fall 09 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 38863,
         "bronzeScore": 59000,
@@ -167,7 +167,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8d687b5f-93a9-48b1-8c33-3fce57ac9b09",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c07e0619-178f-4898-b303-8e113525e1c4.jpg"
     },
-    "Fall 14 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 32771,
         "bronzeScore": 50000,
@@ -188,7 +188,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2907fb2e-de1f-4956-ae85-0e6da2b8b288",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bab15e8e-081a-4c13-852a-0d692b502a07.jpg"
     },
-    "Fall 12 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 37575,
         "bronzeScore": 57000,
@@ -209,7 +209,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a41f30f4-a670-43dc-8527-4cb8ff19ba2c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/37c51e4f-d4f9-431f-b88b-f7e30ba68d84.jpg"
     },
-    "Fall 03 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 21946,
         "bronzeScore": 33000,
@@ -230,7 +230,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8e03b2b7-14b6-45d5-b1dd-059b0896ccde",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/52b1a038-1cee-4560-8e41-eebdf50d5169.jpg"
     },
-    "Fall 02 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 18621,
         "bronzeScore": 28000,
@@ -251,7 +251,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f829ac91-dc6f-4506-b634-b647bed34798",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fb7157b4-cc1d-4222-8ea9-d80c9232977b.jpg"
     },
-    "Fall 01 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 18525,
         "bronzeScore": 28000,
@@ -272,7 +272,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2a9c9412-380d-4d72-8337-290dcdd4d37f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/65febd8d-625a-46c0-8f6e-e98c03b5f1a1.jpg"
     },
-    "Fall 20 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 49165,
         "bronzeScore": 74000,
@@ -293,7 +293,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/91eb9561-dc9e-4f44-9268-55af321b25f0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3336dcd4-e98f-4c4a-929f-9966876facfb.jpg"
     },
-    "Fall 08 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 32126,
         "bronzeScore": 49000,
@@ -314,7 +314,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/02c9bbc1-a7dd-43f9-b334-c12b98dce80b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c4f1dfa8-fafa-4307-901b-270bae3a9f78.jpg"
     },
-    "Fall 11 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 28110,
         "bronzeScore": 43000,
@@ -335,7 +335,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/59fd682f-6c06-4216-a7d7-a524f93bc1cd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5e97990a-7e4c-4226-9928-7af3d4df982f.jpg"
     },
-    "Fall 17 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 44851,
         "bronzeScore": 68000,
@@ -356,7 +356,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4fbe84dd-e4bc-4f77-bb27-c141621c3dcd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dd6b90b8-2f7a-45b5-8c9b-d76537123148.jpg"
     },
-    "Fall 16 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 48535,
         "bronzeScore": 73000,
@@ -377,7 +377,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dbc02f39-39cb-440d-8502-4b09b200b216",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/758dfa34-8788-45f5-b0a3-d09231c70a59.jpg"
     },
-    "Fall 04 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 27798,
         "bronzeScore": 42000,
@@ -398,7 +398,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ab88b2d0-0d37-4d47-a1c6-38fa389ab91d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ae389601-6cf9-4f8a-9aa4-afcd900f0768.jpg"
     },
-    "Fall 10 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 33794,
         "bronzeScore": 51000,
@@ -419,7 +419,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fb6dfc54-9419-4252-85a1-b0c3233874cc",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/95a2f1b2-4c89-4e8c-a506-beb70a07ee2c.jpg"
     },
-    "Fall 19 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 53121,
         "bronzeScore": 80000,
@@ -440,7 +440,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a616587b-8883-4633-a896-bcdae7757bb9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/95f9a394-6728-4843-b698-1907cb3c698d.jpg"
     },
-    "Fall 18 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 43873,
         "bronzeScore": 66000,
@@ -461,7 +461,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1238ec9d-45c2-49b4-8ca9-36cab5b73ba6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/81dc1355-678d-4c5d-b91a-030e38044a0c.jpg"
     },
-    "Fall 06 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 29474,
         "bronzeScore": 45000,
@@ -482,7 +482,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/609baf0f-fdc1-45ee-afa9-d4c7f089ae1a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ce5db4b2-7275-4f62-96aa-7b33066f5271.jpg"
     },
-    "Fall 15 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 45086,
         "bronzeScore": 68000,
@@ -503,7 +503,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/83f7456d-864a-46eb-994e-970a95ed34e9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9c68fc95-08e4-47da-8339-a4c0fc821aff.jpg"
     },
-    "Fall 25 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 77028,
         "bronzeScore": 116000,
@@ -524,7 +524,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5bc41b46-746f-4bf0-b898-a49ffb38a351",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/71579212-8947-477e-b5b4-166adc3258dc.jpg"
     },
-    "Fall 07 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 31335,
         "bronzeScore": 48000,
@@ -545,7 +545,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f6779011-0d06-4166-9dbd-024bb5fa8b7c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/76c5a26a-4c3c-4657-bd9c-9b34ac38cc32.jpg"
     },
-    "Fall 05 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 43428,
         "bronzeScore": 66000,
@@ -566,7 +566,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/59079723-2ceb-4069-ad74-2470eae2544a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aaf02e83-9feb-4cd5-8ba1-730c2607b1f2.jpg"
     },
-    "Fall 23 (Mirror).Map.Gbx": {
+    {
         "author": "ccdf7498-44ce-4d22-b467-fd353f5102d7",
         "authorScore": 49386,
         "bronzeScore": 75000,
@@ -587,7 +587,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d5522a67-1c9c-4926-a92a-56037643dd01",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a64a40a9-95d3-4ad8-89ed-9bacbd67c563.jpg"
     },
-    "Fall 2020 - 24 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 60531,
         "bronzeScore": 91000,
@@ -608,7 +608,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1a3882c1-148f-4cbf-ae27-f15e917751e2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6213e7ec-0de1-4480-88eb-431913dd1445.jpg"
     },
-    "Fall 2020 - 23 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 51134,
         "bronzeScore": 77000,
@@ -629,7 +629,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2263a167-fb91-466e-8fe7-d9cdd4a1aa95",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c34cb8d7-57eb-4338-8794-559772c78675.jpg"
     },
-    "Fall 2020 - 22 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 137858,
         "bronzeScore": 207000,
@@ -650,7 +650,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/120e389e-506e-4f97-8275-a65b40aa475c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/06ffbfd9-c79a-4e0c-a20c-b2d84b50a885.jpg"
     },
-    "Fall 2020 - 25 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 91230,
         "bronzeScore": 137000,
@@ -671,7 +671,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0223b6b6-2cf9-426c-b410-83d8899ed5f4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d327bc55-25ce-4fa6-b5bd-51d4e0c6d962.jpg"
     },
-    "Fall 2020 - 21 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 53386,
         "bronzeScore": 81000,
@@ -692,7 +692,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dea048a3-a4e1-4722-9eb4-e5cbd8d6267b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e0fdc2ad-7a19-4e65-be32-78ae1b3af632.jpg"
     },
-    "Fall 2020 - 19 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 53342,
         "bronzeScore": 81000,
@@ -713,7 +713,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ad675b4d-576e-4874-a7be-39dd04431098",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/afc0fedf-516a-4b0a-be90-e10110b3e100.jpg"
     },
-    "Fall 2020 - 20 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 64648,
         "bronzeScore": 97000,
@@ -734,7 +734,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/50b1882d-3ffb-472a-a5d0-c2bb272a9f4a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d3f54630-fbe3-4efc-82b9-9b85b379d444.jpg"
     },
-    "Fall 2020 - 18 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 44765,
         "bronzeScore": 68000,
@@ -755,7 +755,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4bc2ff96-469e-4369-b718-afcb7432be36",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9875b415-47a9-47d1-ab72-38b51a513fe2.jpg"
     },
-    "Fall 2020 - 17 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 47357,
         "bronzeScore": 72000,
@@ -776,7 +776,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/12511eb3-ade0-48eb-993b-24d95a51ae13",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/50af5925-1dd2-4b91-ae21-4c85e2d9c56e.jpg"
     },
-    "Fall 2020 - 15 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 49951,
         "bronzeScore": 75000,
@@ -797,7 +797,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bb207d9e-e1fc-4b96-8343-e1084be43b4a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7f96e59c-eeee-44bd-9a4e-bcd5e72c828d.jpg"
     },
-    "Fall 2020 - 16 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 52930,
         "bronzeScore": 80000,
@@ -818,7 +818,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b9a7a704-7f17-4965-a28b-dc11d2cea888",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e5ebc074-9101-49d0-b887-5c9de536c353.jpg"
     },
-    "Fall 2020 - 14 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 29758,
         "bronzeScore": 45000,
@@ -839,7 +839,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ed280085-97d5-4385-b0c3-e00ca304d443",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2028228f-86eb-49f8-81b3-2756e301699c.jpg"
     },
-    "Fall 2020 - 12 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 39542,
         "bronzeScore": 60000,
@@ -860,7 +860,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3998db45-2cff-4357-866f-58d5be8fc79b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/53dafef4-04bd-45cf-a628-a1f714538a2e.jpg"
     },
-    "Fall 2020 - 13 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 39820,
         "bronzeScore": 60000,
@@ -881,7 +881,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3b2400fb-2f58-4ce9-945d-9443da0a0124",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/de8e2ef3-3bc3-4506-a483-4a31a30fd411.jpg"
     },
-    "Fall 2020 - 11 - snowcar (unvalidated).Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 1999999999,
         "bronzeScore": 36473000,
@@ -902,7 +902,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c5991e86-0a38-4d22-ae89-0bf0105010b5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/443527fd-3fb6-4109-a3fd-b0da9f773704.jpg"
     },
-    "Fall 2020 - 10 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 38150,
         "bronzeScore": 58000,
@@ -923,7 +923,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/32b512af-830d-404a-b1aa-843896cf945f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a3cd1cec-d9ce-49e7-ae05-c916f4613f14.jpg"
     },
-    "Fall 2020 - 09 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 37288,
         "bronzeScore": 56000,
@@ -944,7 +944,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bda910d8-ecb7-4c47-bc48-9ccac17b08c3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a3509f5c-0a1a-4382-ac5f-32bddbf9dab8.jpg"
     },
-    "Fall 2020 - 07 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 38414,
         "bronzeScore": 58000,
@@ -965,7 +965,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/63d35468-19f5-4e3b-99c8-b808321d8298",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/41fc90d1-0239-42a2-adb3-0ec6cf19178d.jpg"
     },
-    "Fall 2020 - 08 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 41305,
         "bronzeScore": 62000,
@@ -986,7 +986,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/606c07f7-cae2-4094-a80c-f30733932d0d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/65424442-7729-43c6-b3f9-cb2339c0e816.jpg"
     },
-    "Fall 2020 - 05 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 53590,
         "bronzeScore": 81000,
@@ -1007,7 +1007,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0e6b0e99-32fb-4ec1-b959-ce8230ff8f8e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cd665ca7-c243-485f-8a4d-6a90795e07b7.jpg"
     },
-    "Fall 2020 - 06 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 40461,
         "bronzeScore": 61000,
@@ -1028,7 +1028,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b479017c-97d8-4b8e-9649-d17c2a8994f2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/627c8d16-c818-4e2d-96bc-c1d24233055b.jpg"
     },
-    "Fall 2020 - 04 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 29179,
         "bronzeScore": 44000,
@@ -1049,7 +1049,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/88adb2f4-f195-4727-bfe8-40803cf09a3d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d7f80533-bfe1-4a01-b4f6-f2fcc485792a.jpg"
     },
-    "Fall 2020 - 03 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 28834,
         "bronzeScore": 44000,
@@ -1070,7 +1070,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/81e41308-7fd1-4af0-849e-9a979e22de4e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c8e3da99-dba0-4880-a5b6-1fbb2c09ed34.jpg"
     },
-    "Fall 2020 - 02 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 23620,
         "bronzeScore": 36000,
@@ -1091,7 +1091,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fa6dc56e-3fc1-49b1-8b0b-b9883fd31ac5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/433b91f5-b4d0-4609-9738-cb4ff3fbc2d8.jpg"
     },
-    "Fall 2020 - 01 - snowcar.Map.Gbx": {
+    {
         "author": "cd81f22a-c92f-48b9-8aa3-72f904c62b66",
         "authorScore": 23088,
         "bronzeScore": 35000,
@@ -1112,7 +1112,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c313df6e-3dc2-4d3c-b879-de976c9390c5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e7af04c8-4221-407b-9c72-6718e78f279e.jpg"
     },
-    "YEET Fall 2020 - 01.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 13225,
         "bronzeScore": 20000,
@@ -1133,7 +1133,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0fa9f649-f37d-4cf0-848b-66a9f8a8d4cf",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4a4805b9-0fd5-4827-950d-22e3cb46d709.jpg"
     },
-    "YEET_Fall_2020_-_09.Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 11805,
         "bronzeScore": 18000,
@@ -1154,7 +1154,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/555acce6-7919-4d2d-a5f9-e1b3f8ecf539",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/70c5fb34-eaef-4a72-b4eb-ae85290a5f2f.jpg"
     },
-    "YEET Fall 2020 - 03.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 11324,
         "bronzeScore": 17000,
@@ -1175,7 +1175,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d09b55f1-3cc6-4bf2-a6d0-b2613dff19bd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/027217c0-ef97-4c6e-8332-9ff2fa3cb8a6.jpg"
     },
-    "YEET Fall 2020 - 04.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 15682,
         "bronzeScore": 24000,
@@ -1196,7 +1196,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ff510127-a582-4bb9-8b57-42fcec13720a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2dde3ffd-ff8f-4a6f-ab96-3e0519d00059.jpg"
     },
-    "YEET Fall 2020 - 12.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 13738,
         "bronzeScore": 21000,
@@ -1217,7 +1217,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d59625ca-9bea-4eaf-af37-e66c1cb8c8f5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fa15c553-fc4a-4454-9c7e-a0931beb63d3.jpg"
     },
-    "YEET Fall 2020 - 22.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 14437,
         "bronzeScore": 22000,
@@ -1238,7 +1238,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/86c83c4a-1d58-431f-b1e4-a788d442be21",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/25c6398d-2e8b-44cf-b589-de1709144d3d.jpg"
     },
-    "YEET Fall 2020 - 21.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 16524,
         "bronzeScore": 25000,
@@ -1259,7 +1259,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e44a8f48-5c7e-4c30-bb72-7dec7413714d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5d88c757-a3a7-4d71-9faf-93e2f4867eab.jpg"
     },
-    "YEET_Fall_2020_-_10.Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 15568,
         "bronzeScore": 24000,
@@ -1280,7 +1280,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/45254ec8-919e-4a99-b55f-64a79cb3ae67",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f2f06ed4-e154-43b2-b01b-34624c27f7a4.jpg"
     },
-    "YEET Fall 2020 - 23.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 9582,
         "bronzeScore": 15000,
@@ -1301,7 +1301,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/79097221-3606-46d7-a41f-e60fa22226da",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3258cb53-5890-4d33-8b27-bd1dd8133739.jpg"
     },
-    "YEET Fall 2020 - 15.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 17469,
         "bronzeScore": 27000,
@@ -1322,7 +1322,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/066dbcfe-ded7-4275-9d28-f20ff1b58509",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a0750e5d-9f34-48c1-80ad-b442ce1410c5.jpg"
     },
-    "YEET Fall 2020 - 02.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 12338,
         "bronzeScore": 19000,
@@ -1343,7 +1343,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/382fa0d0-64e3-4b06-8786-a1d4549bd191",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/79ad7e9d-92c1-44fb-9bfa-b3cdc2139641.jpg"
     },
-    "YEET_Fall_2020_-_08.Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 7738,
         "bronzeScore": 12000,
@@ -1364,7 +1364,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/629705a4-fae8-4487-b0f1-4e0d0e9151b1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5378e29c-bee2-41ea-b3bf-f149fe37a971.jpg"
     },
-    "YEET_Fall_2020_-_07.Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 21838,
         "bronzeScore": 33000,
@@ -1385,7 +1385,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/849713ef-6b0c-468f-bddb-61b134331e29",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/05d22aad-f221-4978-b5e1-d0d46da3a94b.jpg"
     },
-    "YEET_Fall_2020_-_20.Map.Gbx": {
+    {
         "author": "3d803f03-f99a-4784-ad5e-a28ab3740dd3",
         "authorScore": 11536,
         "bronzeScore": 18000,
@@ -1406,7 +1406,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/10a56973-5c39-496d-b815-c9ed7a716196",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/629cc4d9-6543-459d-8c52-6a720f8a8ca7.jpg"
     },
-    "YEET_Fall_2020_-_19.Map.Gbx": {
+    {
         "author": "3d803f03-f99a-4784-ad5e-a28ab3740dd3",
         "authorScore": 21737,
         "bronzeScore": 33000,
@@ -1427,7 +1427,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1632bf1e-26ba-4009-be4f-da9b7f59f4cb",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b8696d1c-9077-4220-a494-522f1adfef28.jpg"
     },
-    "YEET Fall 2020 - 11.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 16299,
         "bronzeScore": 25000,
@@ -1448,7 +1448,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a370deba-882a-46f1-bb13-5d0626f641d0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2f5ea303-6600-415a-a9d6-9370c5ccbccc.jpg"
     },
-    "YEET Fall 2020 - 13.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 21844,
         "bronzeScore": 33000,
@@ -1469,7 +1469,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/931f4867-c0b2-4dc0-bf89-3cb0d8d23704",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e99e7d21-1649-44bb-9587-53c00c6d1f79.jpg"
     },
-    "YEET Fall 2020 - 24.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 15224,
         "bronzeScore": 23000,
@@ -1490,7 +1490,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/52ab0b10-e1a0-4a83-b364-9a00648da0e1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9ac46ade-df13-48f0-8e69-4dd88b4d0cda.jpg"
     },
-    "YEET Fall 2020 - 25.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 19725,
         "bronzeScore": 30000,
@@ -1511,7 +1511,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e4ba98a8-082c-46f4-aaff-0cfeabb638bd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e5b8e154-7f60-4e9d-a342-1caa476dc1db.jpg"
     },
-    "YEET_Fall_2020_-_17.Map.Gbx": {
+    {
         "author": "3d803f03-f99a-4784-ad5e-a28ab3740dd3",
         "authorScore": 17264,
         "bronzeScore": 26000,
@@ -1532,7 +1532,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bcef5b89-8c97-409a-a554-43e8c58ae7af",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/86194682-b1a1-4238-9cf7-5ff1a14f82ad.jpg"
     },
-    "YEET Fall 2020 - 05.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 14069,
         "bronzeScore": 22000,
@@ -1553,7 +1553,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7c12da7f-352f-4f4d-a5ab-cfdff34441c8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/21349207-32e4-4a3f-92fd-67dbe740e1ad.jpg"
     },
-    "YEET_Fall_2020_-_16.Map.Gbx": {
+    {
         "author": "3d803f03-f99a-4784-ad5e-a28ab3740dd3",
         "authorScore": 26479,
         "bronzeScore": 40000,
@@ -1574,7 +1574,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/00640851-fd60-4de4-92ac-904ad5feb759",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/126d5d57-f1df-4622-b4f3-dabf53e03a8c.jpg"
     },
-    "YEET_Fall_2020_-_18.Map.Gbx": {
+    {
         "author": "3d803f03-f99a-4784-ad5e-a28ab3740dd3",
         "authorScore": 10556,
         "bronzeScore": 16000,
@@ -1595,7 +1595,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8c22fd71-7309-4701-9fd4-aa2c5cadb039",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/503d5fea-1ae7-49c8-ae7c-ee495fb27bca.jpg"
     },
-    "YEET_Fall_2020_-_06.Map.Gbx": {
+    {
         "author": "6b082671-4028-4ae1-ad8e-022810594300",
         "authorScore": 21708,
         "bronzeScore": 33000,
@@ -1616,7 +1616,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f1ad275e-a5fa-49ac-bdad-9a1238be4470",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bd260e8e-3865-4c70-a785-62cac4ce5b60.jpg"
     },
-    "YEET Fall 2020 - 14.Map.Gbx": {
+    {
         "author": "a395d9ea-3b7d-4183-ae4b-8397c94ca610",
         "authorScore": 10732,
         "bronzeScore": 17000,
@@ -1637,7 +1637,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1284949d-f252-43a3-957a-62ee5bfdfdd7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6cf9cc85-b63d-4dc5-bf22-dd888ac54281.jpg"
     },
-    "Fall 2020 - 08 (UW Reverse).Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 100258,
         "bronzeScore": 151000,
@@ -1658,7 +1658,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/790938e3-a67e-41ec-b7f4-2e127f57a4ab",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/83a02571-3e65-441b-a460-7d3efe217178.jpg"
     },
-    "Fall_2020_-_22_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 271381,
         "bronzeScore": 408000,
@@ -1679,7 +1679,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/223af62a-a70d-4cea-9d31-ab7507f73eda",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/96e5e4c1-8dca-4f33-8ac6-40a18f507275.jpg"
     },
-    "Fall_2020_-_23_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 365708,
         "bronzeScore": 549000,
@@ -1700,7 +1700,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ac78b80e-3a65-4e03-aa4c-809b823641b1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/757e9f15-6d52-47d3-83c1-ed3ef5975482.jpg"
     },
-    "Fall_2020_-_24_UW_Reverse.Map.Gbx": {
+    {
         "author": "50d81a00-7517-47e1-a842-78c4a737f644",
         "authorScore": 1089402,
         "bronzeScore": 1635000,
@@ -1721,7 +1721,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/252b0688-a4be-4034-ba5e-a48ab33b44ae",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1c9653d0-673b-4e45-a63a-39c9b2e82f46.jpg"
     },
-    "Fall_2020_-_25_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 229002,
         "bronzeScore": 344000,
@@ -1742,7 +1742,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/34afbaad-6c9a-4d95-b19b-0b7c917d75d0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5dc1f7b1-0d67-4034-b8aa-cfc4d67dbac3.jpg"
     },
-    "Fall_2020_-_20_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 286342,
         "bronzeScore": 430000,
@@ -1763,7 +1763,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c3188845-dba3-41ba-b2dd-d040717d9f6e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7f9c666c-5d5d-4265-a2da-8bc0b6734aa7.jpg"
     },
-    "Fall_2020_-_18_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 206683,
         "bronzeScore": 311000,
@@ -1784,7 +1784,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cd330097-11d2-4233-937e-5403dee2c07b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9efcd89c-eb4a-431a-8190-6ef2e86e1acc.jpg"
     },
-    "Fall_2020_-_11_UW_Reverse.Map.Gbx": {
+    {
         "author": "50d81a00-7517-47e1-a842-78c4a737f644",
         "authorScore": 265255,
         "bronzeScore": 398000,
@@ -1805,7 +1805,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9635d202-2c63-4d65-ab01-9fcbaca90a21",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7b058864-e4ec-4bc9-8586-a55ee12866ec.jpg"
     },
-    "Fall_2020_-_12_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 155616,
         "bronzeScore": 234000,
@@ -1826,7 +1826,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1fe8c234-40fe-410e-86df-8ca06901b411",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b2c02545-1eef-4f37-b5b7-bc9145e97fea.jpg"
     },
-    "Fall_2020_-_13_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 131930,
         "bronzeScore": 198000,
@@ -1847,7 +1847,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/92a81857-732b-44f2-9d69-495c756c2298",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/403ef4c3-a219-455b-ac10-0fa555c8c882.jpg"
     },
-    "Fall_2020_-_15_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 225367,
         "bronzeScore": 339000,
@@ -1868,7 +1868,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7038636f-c989-4582-a5c4-6b0348a3e8a0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/34ee8bec-174f-4df7-8b50-57b028871cd4.jpg"
     },
-    "Fall_2020_-_16_UW_Reverse.Map.Gbx": {
+    {
         "author": "50d81a00-7517-47e1-a842-78c4a737f644",
         "authorScore": 559940,
         "bronzeScore": 840000,
@@ -1889,7 +1889,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4d64fd30-12ae-4a59-bd7d-82e58404b5b8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e3cfe8d2-5a63-4df2-8378-d1286b7de3f0.jpg"
     },
-    "Fall_2020_-_17_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 161976,
         "bronzeScore": 243000,
@@ -1910,7 +1910,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a6225a86-2c3e-4790-81d8-f1d34a7e25df",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b3103a41-d362-404e-8dc3-90da6221083c.jpg"
     },
-    "Fall_2020_-_19_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 226622,
         "bronzeScore": 340000,
@@ -1931,7 +1931,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a5fc9195-a4a0-45a5-8615-e3da20a38eec",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/935c28e8-791f-41f0-bdd7-5cdec98ed01d.jpg"
     },
-    "Fall_2020_-_21_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 154782,
         "bronzeScore": 233000,
@@ -1952,7 +1952,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/84fe4242-0a5f-4865-ab66-5f64887baaa9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/493a59c9-3c16-40a3-ab8c-b01842b9e3c7.jpg"
     },
-    "Fall_2020_-_01_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 150242,
         "bronzeScore": 226000,
@@ -1973,7 +1973,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/63552d76-1774-492d-8145-4e07f8f619d4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b103e430-f62a-42e4-a5c0-4fb0bfc3297b.jpg"
     },
-    "Fall_2020_-_03_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 63208,
         "bronzeScore": 95000,
@@ -1994,7 +1994,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3a934b21-a701-468e-a627-70002b22029f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2d41c2f3-a813-4945-9c9f-3e44bc7f7a73.jpg"
     },
-    "Fall_2020_-_02_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 129332,
         "bronzeScore": 194000,
@@ -2015,7 +2015,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8cd45432-559a-42ca-87b4-383fe14b8c29",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/db8a06b3-2c24-424d-9ec9-0b895884f001.jpg"
     },
-    "Fall_2020_-_04_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 244709,
         "bronzeScore": 368000,
@@ -2036,7 +2036,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ed54b23b-ebde-4f2c-8e21-4e7d0ff75824",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cca75892-3f74-4270-9dad-6aa328ffdddf.jpg"
     },
-    "Fall_2020_-_05_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 324952,
         "bronzeScore": 488000,
@@ -2057,7 +2057,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d6b099f2-8392-4c23-945e-b116668e06a0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4aab30ba-a085-43c9-8a41-f178089b74a3.jpg"
     },
-    "Fall_2020_-_06_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 95696,
         "bronzeScore": 144000,
@@ -2078,7 +2078,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/58e35777-3431-481b-9944-2247ce7bebc4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d2fd65b9-add7-4fe0-a28b-44aed6c5b251.jpg"
     },
-    "Fall_2020_-_07_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 104872,
         "bronzeScore": 158000,
@@ -2099,7 +2099,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e9b98daf-29d6-489f-b5aa-b6bfd7400e4f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8b8d395b-26f5-4494-a5ed-f21ba086a045.jpg"
     },
-    "Fall_2020_-_09_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 160110,
         "bronzeScore": 241000,
@@ -2120,7 +2120,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fdba7884-8f94-4d1d-bb04-b6c9d83847e0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1c8f103b-3813-44a0-8aa1-649a1d9b2779.jpg"
     },
-    "Fall_2020_-_10_UW_Reverse.Map.Gbx": {
+    {
         "author": "3538fdfa-49f7-4c85-a72f-be3a449cbe83",
         "authorScore": 131466,
         "bronzeScore": 198000,
@@ -2141,7 +2141,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/801a146c-f578-4e4f-b0ec-9c8d8ee4566d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6011752e-6eba-4c43-8a94-f03ff4cf65c0.jpg"
     },
-    "Fall 2020 - 21 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 201424,
         "bronzeScore": 303000,
@@ -2162,7 +2162,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fd37346c-a8de-48b1-bef2-120146e06be9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c67d29ba-922e-48ea-86de-a0f53d5c5a0a.jpg"
     },
-    "Fall 2020 - 15 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 62947,
         "bronzeScore": 95000,
@@ -2183,7 +2183,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7f9d38ed-c8cd-438a-973e-5e7074672ec7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c6548143-7119-456a-956c-98fe039c9569.jpg"
     },
-    "Fall 2020 Checkpoin't - 14.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 46443,
         "bronzeScore": 70000,
@@ -2204,7 +2204,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5ab3b9ff-77ba-4e45-92ac-29401a1ad244",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8add0d43-29fa-497d-96cb-07c417075a46.jpg"
     },
-    "Fall 2020 Checkpoin't - 20.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 96573,
         "bronzeScore": 145000,
@@ -2225,7 +2225,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/babceb99-0570-490e-a04d-8282bc9a40e6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a4ded922-3979-4a65-ab7e-f5dbaa9cb5da.jpg"
     },
-    "Fall 2020 Checkpoin't - 18.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 127122,
         "bronzeScore": 191000,
@@ -2246,7 +2246,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ca9af635-8632-426e-a001-9a9bf0559bed",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1f981fb3-589e-44eb-9f88-542ab1cfbd90.jpg"
     },
-    "Fall 2020 Checkpoin't - 24.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 96615,
         "bronzeScore": 145000,
@@ -2267,7 +2267,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b3da35f9-f4f5-49ac-a6c0-c1476a6c2d08",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0ee88f98-3a50-48b2-a987-b8d490553c37.jpg"
     },
-    "Fall 2020 Checkpoin't - 01.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 31509,
         "bronzeScore": 48000,
@@ -2288,7 +2288,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d29a84bc-8d64-4540-b78f-ec788d1f2238",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3781fcb0-953e-4bb1-a2ab-cb11642d217d.jpg"
     },
-    "Fall 2020 Checkpoin't - 25.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 258427,
         "bronzeScore": 388000,
@@ -2309,7 +2309,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/353d1919-438b-4f51-ab3e-5c980d4cc280",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2e7df21e-a2b9-48a7-aeb9-ce447fef1df2.jpg"
     },
-    "Fall 2020 Checkpoin't - 05.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 97232,
         "bronzeScore": 146000,
@@ -2330,7 +2330,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7f6a4708-6ec7-4f3e-967e-e7bc83173392",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e49fe49c-6f9e-4cb8-b615-7e41941f9fe3.jpg"
     },
-    "Fall 2020 Checkpoin't - 07.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 60328,
         "bronzeScore": 91000,
@@ -2351,7 +2351,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e1d21667-8a06-4ff4-85d5-c8425bb36189",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/74714fac-b5fa-45cf-816d-caf7cd833d1b.jpg"
     },
-    "Fall 2020 Checkpoin't - 19.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 222388,
         "bronzeScore": 334000,
@@ -2372,7 +2372,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/75cab8e7-ee55-47fe-a451-40763f42dd1d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0ddd976b-9818-4cd9-8be4-6ded549aa7fa.jpg"
     },
-    "Fall 2020 Checkpoin't - 15.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 338801,
         "bronzeScore": 509000,
@@ -2393,7 +2393,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/11da0488-a465-4430-a529-3cd53add8e21",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c91df707-96f2-4d4a-8f2d-f9340c6c3041.jpg"
     },
-    "Fall 2020 Checkpoin't - 17.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 83598,
         "bronzeScore": 126000,
@@ -2414,7 +2414,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/80a7b6d9-7aed-4cce-9af0-7a74fc11ef94",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9292a8cf-9c3c-4f0b-8046-38d0e6afc40a.jpg"
     },
-    "Fall 2020 Checkpoin't - 22.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 137956,
         "bronzeScore": 207000,
@@ -2435,7 +2435,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/25881e1e-edbd-42df-aa83-cd2c766b9ea1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cf1c098a-4c80-43df-a6fc-25480859a178.jpg"
     },
-    "Fall 2020 Checkpoin't - 12.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 70708,
         "bronzeScore": 107000,
@@ -2456,7 +2456,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/526bba30-b504-4563-a622-ebc8875e131c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5c2e161b-9579-436a-bbb1-f7895028ca46.jpg"
     },
-    "Fall 2020 Checkpoin't - 16.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 142832,
         "bronzeScore": 215000,
@@ -2477,7 +2477,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a189e98f-6a0c-40f3-b7dd-c4dc11c86209",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/73dcfe5a-5c89-44ba-b992-2fadadc8738c.jpg"
     },
-    "Fall 2020 Checkpoin't - 23.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 90594,
         "bronzeScore": 136000,
@@ -2498,7 +2498,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b8f2bbc0-f289-4e4c-9e27-cf17e2663e52",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0e788471-9ac9-4651-a6e1-fe68442b4cb0.jpg"
     },
-    "Fall 2020 Checkpoin't - 09.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 63117,
         "bronzeScore": 95000,
@@ -2519,7 +2519,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/52a4860c-278a-486a-ad9b-18d3a966eed0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/56881816-01b9-4165-bda2-de1247767782.jpg"
     },
-    "Fall 2020 Checkpoin't - 13.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 140478,
         "bronzeScore": 211000,
@@ -2540,7 +2540,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/02cfda2c-a31d-4739-9649-8c5fa98f766d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d9f2c5bd-060b-449a-b6e8-075e4089a620.jpg"
     },
-    "Fall 2020 Checkpoin't - 06.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 61452,
         "bronzeScore": 93000,
@@ -2561,7 +2561,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6a135b4d-47b9-4623-af8a-678c3ce3c69d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8f6ff2d6-e4cc-45a4-9ff6-13066dbb383c.jpg"
     },
-    "Fall 2020 Checkpoin't - 03.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 31351,
         "bronzeScore": 48000,
@@ -2582,7 +2582,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/921ca78f-1e17-4509-82be-80dfec9ea148",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dfc82549-58f5-490a-8fa6-7782966a917d.jpg"
     },
-    "Fall 2020 Checkpoin't - 10.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 94843,
         "bronzeScore": 143000,
@@ -2603,7 +2603,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/61df7d4a-99f5-4a1c-97f2-d473f5cace83",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c413d0af-ba7f-4b25-958f-de17301168be.jpg"
     },
-    "Fall 2020 Checkpoin't - 21.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 172675,
         "bronzeScore": 260000,
@@ -2624,7 +2624,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/33f0d114-37e8-4ff3-9a9f-568309a48fa8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/84568ba3-0b76-41a5-8736-6534e4d31252.jpg"
     },
-    "Fall 2020 Checkpoin't - 11.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 59386,
         "bronzeScore": 90000,
@@ -2645,7 +2645,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/38ee751a-f8f2-442b-a2bc-1c9bf10bc495",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dd7911a1-6576-4424-9b61-9eade97d39dd.jpg"
     },
-    "Fall 2020 Checkpoin't - 02.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 34436,
         "bronzeScore": 52000,
@@ -2666,7 +2666,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/56d59d5d-ec79-42d6-ab92-deea4481b2f2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f22e8f7d-6b6a-492d-9a47-03ee57fa991d.jpg"
     },
-    "Fall 2020 Checkpoin't - 04.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 56438,
         "bronzeScore": 85000,
@@ -2687,7 +2687,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/77fdc753-44d7-4eaa-a80d-c14217965f13",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e206603f-1699-4652-a698-c983c2a9a8d1.jpg"
     },
-    "Fall 2020 Checkpoin't - 08.Map.Gbx": {
+    {
         "author": "b2aaf54a-2577-4f6b-86a6-cd45779db291",
         "authorScore": 62722,
         "bronzeScore": 95000,
@@ -2708,7 +2708,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dbed343f-6233-43a6-8330-ef3eee7421a8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/06ca0b42-e9fe-4e55-a710-49df861ebcee.jpg"
     },
-    "50D13B119BD719424C7B69CBB1F294140FC6E33787BBDBC6D436D82C9BC59859793CD74D0B4FB42C1897CF28B3DF2A57.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 231007,
         "bronzeScore": 347000,
@@ -2729,7 +2729,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/626ed674-eceb-4510-8983-ab0953e16c15",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2b64ee25-a62b-423c-9cbb-bd601961178a.jpg"
     },
-    "3A7A548DEA69D0D37D2322553D36A6AD7EFC81998744AC969CAFDB4DFA7C2D40D1B9C31ED6B85BFBE7C25B30D7FD43A1.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 60171,
         "bronzeScore": 91000,
@@ -2750,7 +2750,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e67a853e-7f76-4e00-8ab1-01555428e95e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f9130f30-8bd0-4965-9fcf-225eaf81ddac.jpg"
     },
-    "6CE38DF76CB3CEFB9E85AAB92B104E633D91EFF65A2DA389F4DD7CA675C7DF18B879E1DCEF7EA5D4DEED9610CF56A3AC.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 134777,
         "bronzeScore": 203000,
@@ -2771,7 +2771,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/64011f6c-86dc-413b-821b-8aa67a62e771",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/550e9274-6655-4877-b829-51bc9c14504f.jpg"
     },
-    "0210C5294D5D417325DAB08C5EBFD171B77D66EE98F53E526095390286A5104A1C9434837F003C9D98E1AD2E64E00EE3.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 160429,
         "bronzeScore": 241000,
@@ -2792,7 +2792,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/38ea2fcb-6273-4011-85e2-094b7d50f210",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0c05689c-127b-4650-8c25-6dd1fa0675f8.jpg"
     },
-    "676289AF0B559EC5B08F5BA10472F74AACE01492C32FFE09EE4E34A667655772EDEB177B5E67F2A338A68A419B4CE2DF.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 35578,
         "bronzeScore": 54000,
@@ -2813,7 +2813,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/44ab8047-d691-41d3-a615-620d936268f9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c50f1af0-0a5f-4b24-ae68-086355f2bd68.jpg"
     },
-    "Fall 2020 - 12 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 66418,
         "bronzeScore": 100000,
@@ -2834,7 +2834,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ac3a2617-a347-4fd6-b792-b8c78daadea0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d0acbdec-0333-46e4-b181-f6151eeeeb20.jpg"
     },
-    "Fall 2020 - 18 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 82827,
         "bronzeScore": 125000,
@@ -2855,7 +2855,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0e683239-d0c2-48d5-81fd-a148581a721e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/38114683-54d7-4e16-af02-09e561a4f2ec.jpg"
     },
-    "Fall 2020 - 17 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 63109,
         "bronzeScore": 95000,
@@ -2876,7 +2876,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b40696eb-4ba6-465b-91c7-9a613ab1bfc8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5162c700-040e-46b9-b6cf-a57ec022ef74.jpg"
     },
-    "Fall 2020 - 16 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 175634,
         "bronzeScore": 264000,
@@ -2897,7 +2897,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9d2a37c3-d9ab-47fe-a321-70d0883aedda",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cd5b1ea6-32b5-4430-8d8d-a3158b62149d.jpg"
     },
-    "Fall 2020 - 14 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 63179,
         "bronzeScore": 95000,
@@ -2918,7 +2918,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/faf91656-56a2-4779-85c6-5f0d8cc8519c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/790d4930-2044-4d7f-af58-f3886fc0ad9d.jpg"
     },
-    "Fall 2020 - 13 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 36415,
         "bronzeScore": 55000,
@@ -2939,7 +2939,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f6382c30-d360-42e3-8d5d-03df255ad910",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/811309ce-23f4-42c1-9379-0a024a6fdf66.jpg"
     },
-    "Fall 2020 - 09 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 0,
         "bronzeScore": 1000,
@@ -2960,7 +2960,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8455f2c0-0a02-4eb4-9f11-5838406939c0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/91c4eefc-4e70-4c6d-a22a-6b6e47dab498.jpg"
     },
-    "Fall 2020 - 08 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 52614,
         "bronzeScore": 79000,
@@ -2981,7 +2981,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5cdc7913-90b5-4e4a-b9bc-8d74331e9745",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/162df60c-9ba6-4305-8900-b97b8f20aba4.jpg"
     },
-    "Fall 2020 - 07 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 44188,
         "bronzeScore": 67000,
@@ -3002,7 +3002,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d2c01e68-c6ea-4544-8d94-367a937b7317",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b60785a4-529a-4c95-a7d3-8b92444e10cc.jpg"
     },
-    "Fall 2020 - 05 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 33467,
         "bronzeScore": 51000,
@@ -3023,7 +3023,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/374b46d6-319d-49a0-8738-6865121624a9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/67c9b92a-d4b4-4ccd-801e-dff571705167.jpg"
     },
-    "Fall 2020 - 04 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 18486,
         "bronzeScore": 28000,
@@ -3044,7 +3044,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/62c6fc20-6afe-4ab8-9754-5f4fa8bcfc5a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0b6ddb3d-8089-4b25-be31-e1935ca5abe0.jpg"
     },
-    "Fall 2020 - 01 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 68141,
         "bronzeScore": 103000,
@@ -3065,7 +3065,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7c0b4d1d-54a3-42fc-96fa-aa203b187c95",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c1a88619-e445-47e5-8bbe-239c7e5c721c.jpg"
     },
-    "Fall 2020 - 03 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 35170,
         "bronzeScore": 53000,
@@ -3086,7 +3086,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cb9f7359-ed38-4b44-b716-aa003a6771cd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e6cd1ff1-6c6e-4074-a465-61536008a934.jpg"
     },
-    "Fall 2020 - 22 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 81776,
         "bronzeScore": 123000,
@@ -3107,7 +3107,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/df11a656-1b5e-4eb5-9010-387f03b3dc50",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/17f58b44-65e0-41ef-a7a5-5bbe8175a6f4.jpg"
     },
-    "Fall 2020 - 25 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 110542,
         "bronzeScore": 166000,
@@ -3128,7 +3128,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/93a04b33-daef-4ad1-857e-df40d66defc4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7858578a-ac23-49e3-817c-53f1073d9b1b.jpg"
     },
-    "Fall 2020 - 20 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 0,
         "bronzeScore": 1000,
@@ -3149,7 +3149,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5fe14c37-16f9-47d9-8736-957bf9d1f67f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7d881e2f-4fdc-4499-8e34-2dc78a159c79.jpg"
     },
-    "Fall 2020 - 24 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 95019,
         "bronzeScore": 143000,
@@ -3170,7 +3170,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/87c0be4e-1b01-45aa-a6f3-c2cbc52b3ea6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/96f34c56-8fd3-42c9-8af7-f2133488c022.jpg"
     },
-    "Fall 2020 - 19 - CPLess, Reverse.Map.Gbx": {
+    {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
         "authorScore": 0,
         "bronzeScore": 1000,
@@ -3191,7 +3191,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c96186d9-9c1b-4cde-960a-f8e57ce03a3b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6c3fc0bc-3f81-48ee-afc5-40944d6c5441.jpg"
     },
-    "Fall 2020 - 22 (Underwater).Map.Gbx": {
+    {
         "author": "6363bb0c-e16a-4d39-9d11-02be25b13661",
         "authorScore": 1297288,
         "bronzeScore": 1946000,
@@ -3212,7 +3212,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/758e801c-f609-43b5-9aa2-11bd54aaf745",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/704b815c-5c6a-43e1-a8a4-31b8ddcf05be.jpg"
     },
-    "Fall_2020_-_19_-_Checkpointless.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 226146,
         "bronzeScore": 340000,
@@ -3233,7 +3233,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/31b2d846-d19a-4dc2-b8bb-dfc3fbc09321",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/42ada1e1-c96d-44ae-98fe-079e2b097b78.jpg"
     },
-    "Fall 2020 - 20 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 52476,
         "bronzeScore": 79000,
@@ -3254,7 +3254,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/37f97c5e-30de-4790-b24d-bcd24d842c3a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d2b89435-3018-46c1-b9ba-a0dee535a009.jpg"
     },
-    "Fall 2020 - 18 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 41337,
         "bronzeScore": 63000,
@@ -3275,7 +3275,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/37e87026-6e18-418d-8b43-a03c1f0089cf",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d2d7fea2-1996-4d3c-95ce-7b9c9869a924.jpg"
     },
-    "Fall 2020 - 22 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 54653,
         "bronzeScore": 82000,
@@ -3296,7 +3296,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b7d42b8b-e311-4646-9061-9a2a92759183",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b45577c8-32d7-4227-9b6d-c5f20b9245a0.jpg"
     },
-    "Fall 2020 - 23 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 44798,
         "bronzeScore": 68000,
@@ -3317,7 +3317,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5b34ccef-86c7-4d21-b367-c16e82136da8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/924c013b-0ba7-4612-b3ac-cdc9df9cb5d5.jpg"
     },
-    "Fall 2020 - 19 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 19953,
         "bronzeScore": 30000,
@@ -3338,7 +3338,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d7198a0e-f7c4-462c-a602-bda9971bc647",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/454a8626-4601-4058-b1d9-7705aec449a3.jpg"
     },
-    "Fall 2020 - 17 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 75312,
         "bronzeScore": 113000,
@@ -3359,7 +3359,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/77f08640-9482-40a5-b3a0-5855ee796d01",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e6dde298-0aae-4499-ac55-f9928152db00.jpg"
     },
-    "Fall 2020 - 16 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 23601,
         "bronzeScore": 36000,
@@ -3380,7 +3380,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/44f55778-b7b9-4cdd-8972-e05b41718bad",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3de3b6d3-ecb0-4d7b-a32d-f3f6b07dfb0e.jpg"
     },
-    "Fall 2020 - 24 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 82277,
         "bronzeScore": 124000,
@@ -3401,7 +3401,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/054410b4-2000-4ecb-939a-1df07e695b06",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d8046aca-2e49-4891-9e5e-41b9fd2116cb.jpg"
     },
-    "Fall 2020 - 21 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 29451,
         "bronzeScore": 45000,
@@ -3422,7 +3422,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/23b16dd6-0090-47d3-a50d-b86d7e2fcc50",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/56588f6c-3a61-4d1f-a181-4bcfe326af6a.jpg"
     },
-    "Fall 2020 - 25 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 57908,
         "bronzeScore": 87000,
@@ -3443,7 +3443,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6a512815-27c5-4587-b895-fffbaf5896a9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c20bbb6c-2290-4048-bb10-e3409620451a.jpg"
     },
-    "Fall 2020 - 08 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 34736,
         "bronzeScore": 53000,
@@ -3464,7 +3464,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cf555a14-fa31-4676-a7ec-55d92a8e0621",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/63040835-b98c-49cd-a873-74fe2326a933.jpg"
     },
-    "Fall 2020 - 03 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 15210,
         "bronzeScore": 23000,
@@ -3485,7 +3485,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6f2448a2-3d16-4459-bde1-f7c362e7fd18",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/52cdd28c-d9f1-4776-afff-6f39f5e1eb70.jpg"
     },
-    "Fall 2020 - 12 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 7187,
         "bronzeScore": 11000,
@@ -3506,7 +3506,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9bb7dd69-b8cd-43be-b831-a7116485bde7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f072f1c2-d875-42f6-8b8a-f25321497081.jpg"
     },
-    "Fall 2020 - 07 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 38883,
         "bronzeScore": 59000,
@@ -3527,7 +3527,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a0b4e9a2-3764-44d6-abd2-6ea31ab86466",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3058a434-f50d-454f-acdd-fd79727a2dfd.jpg"
     },
-    "Fall 2020 - 04 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 31154,
         "bronzeScore": 47000,
@@ -3548,7 +3548,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e32acfb7-e66e-42d8-b66d-109cf6be5c93",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2254251d-def7-4744-91b7-b78c9f882fe6.jpg"
     },
-    "Fall 2020 - 10 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 40547,
         "bronzeScore": 61000,
@@ -3569,7 +3569,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/777dfd7d-60a9-4b2f-a4a8-e045fcc80b4c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bed37600-a263-4e99-8f92-8b4242c5425d.jpg"
     },
-    "Fall 2020 - 06 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 17682,
         "bronzeScore": 27000,
@@ -3590,7 +3590,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/50e26d11-5e08-4c58-8ec7-77b4ab14cd9c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aad04762-454c-4b32-8d96-5149ece69f46.jpg"
     },
-    "Fall 2020 - 05 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 66228,
         "bronzeScore": 100000,
@@ -3611,7 +3611,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cbbca588-710b-4e4a-bf61-5ddf4abf0dc8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ead8cae5-18fa-4777-b8ee-a40e4c116123.jpg"
     },
-    "Fall 2020 - 13 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 30692,
         "bronzeScore": 47000,
@@ -3632,7 +3632,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b93bd41e-7711-427e-888e-217067384d87",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1973cd6c-8684-4fc3-a5b9-57d44a79925d.jpg"
     },
-    "Fall 2020 - 14 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 21965,
         "bronzeScore": 33000,
@@ -3653,7 +3653,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ce7def4b-5be4-4210-ad99-384028af411b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/266545e8-96e1-4cab-aa77-4d24e1bfe83f.jpg"
     },
-    "Fall 2020 - 02 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 44232,
         "bronzeScore": 67000,
@@ -3674,7 +3674,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a799586c-bc34-40de-bc1e-a9de42cd0db4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/166d99bd-4687-4528-b79f-0331928cff04.jpg"
     },
-    "Fall 2020 - 09 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 37698,
         "bronzeScore": 57000,
@@ -3695,7 +3695,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/31164e57-a669-4ad7-b80c-864ff6300904",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/757ff8cb-4473-46b4-b903-0e1a2e1c38ef.jpg"
     },
-    "Fall 2020 - 11 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 24834,
         "bronzeScore": 38000,
@@ -3716,7 +3716,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7b9fbc59-5cbf-4226-858e-d58467bcbbac",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/df45a54b-de08-452e-8f8a-5e412d7e6e8d.jpg"
     },
-    "Fall 2020 - 15 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 17271,
         "bronzeScore": 26000,
@@ -3737,7 +3737,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3a233c5e-cdaa-471b-b960-b1c8a242e870",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/aa324daf-9dec-4ffd-ba6e-bd734a060b35.jpg"
     },
-    "Fall 2020 - 01 (Puzzle).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 17227,
         "bronzeScore": 26000,
@@ -3758,7 +3758,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5072bbc0-2bd5-474d-b630-95ec81fd4a3d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5de15da0-1abc-486d-84c5-0b698fa3977b.jpg"
     },
-    "Fall 2020 - 24 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 127565,
         "bronzeScore": 192000,
@@ -3779,7 +3779,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/129b21d2-cb33-4678-a2ba-112a641f3f39",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0ee814e0-de5d-4738-90fc-9fd9a1b33490.jpg"
     },
-    "Fall 2020 - 01 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 42062,
         "bronzeScore": 64000,
@@ -3800,7 +3800,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d6e1e938-eeec-41ee-b9ec-621284eebb91",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cfda72b8-1cdb-477c-a6e1-4ff54b5748ea.jpg"
     },
-    "Fall 2020 - 25 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 193899,
         "bronzeScore": 291000,
@@ -3821,7 +3821,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b34d55e8-9648-4989-a019-1c7f1ba17a50",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/263b0c38-10be-4aae-8a43-87988ef09d4b.jpg"
     },
-    "Fall 2020 - 20 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 98613,
         "bronzeScore": 148000,
@@ -3842,7 +3842,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f87ab675-e4da-4344-8673-dc3c61b4d432",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1505d78e-9665-46b1-adb1-1634eb367d34.jpg"
     },
-    "Fall 2020 - 23 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 115243,
         "bronzeScore": 173000,
@@ -3863,7 +3863,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/82c2638f-ba0d-4848-9791-555579b0fb96",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6bef7c24-3a8c-42b9-a261-a25a92175fc5.jpg"
     },
-    "Fall 2020 - 22 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 86888,
         "bronzeScore": 131000,
@@ -3884,7 +3884,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7e7aa58b-225f-4bf6-a547-d74f77d00d0d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ecd2bc50-a7b0-4910-b69a-b0b1a41cc268.jpg"
     },
-    "Fall 2020 - 21 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 173337,
         "bronzeScore": 261000,
@@ -3905,7 +3905,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d70cdbba-7f8f-4dfb-8214-e287b47fda70",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5bb9dfa8-b3d3-441e-8a45-a8cce42ec4ae.jpg"
     },
-    "Fall 2020 - 19 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 133188,
         "bronzeScore": 200000,
@@ -3926,7 +3926,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d71e7cf0-3f63-458c-80cb-25de6493aaf6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/15f50484-80f9-4ad0-8bd9-803a3d6f1e6d.jpg"
     },
-    "Fall 2020 - 18 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 76718,
         "bronzeScore": 116000,
@@ -3947,7 +3947,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0917580a-d351-4717-a7ac-8b0cb3af3645",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/74271530-e655-4c00-8ed5-fbb14b3d899e.jpg"
     },
-    "Fall 2020 - 17 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 78425,
         "bronzeScore": 118000,
@@ -3968,7 +3968,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a8cb53c8-145a-4e9a-9556-131d5eeadd0e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5fef4240-c7ba-4ada-a85a-17b9741aec33.jpg"
     },
-    "Fall 2020 - 16 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 79358,
         "bronzeScore": 120000,
@@ -3989,7 +3989,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d471880d-ff51-4169-93f8-f6d69be3c035",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1925b68f-d8df-41dc-82e4-61dd0b33412a.jpg"
     },
-    "Fall 2020 - 15 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 69168,
         "bronzeScore": 104000,
@@ -4010,7 +4010,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6b9a6c08-5a45-4130-b631-ac7f2693f258",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d446888a-dca8-41fe-b360-12fff20c7196.jpg"
     },
-    "Fall 2020 - 14 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 52899,
         "bronzeScore": 80000,
@@ -4031,7 +4031,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/022f973f-bf85-447d-a6b3-122d57b957dc",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5ea630cc-51a4-4936-a06a-4fb61529d165.jpg"
     },
-    "Fall 2020 - 13 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 80138,
         "bronzeScore": 121000,
@@ -4052,7 +4052,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e80aa85c-910d-40a4-934a-821b70e0b179",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6585a907-774d-4073-b96b-3b30475d99b5.jpg"
     },
-    "Fall 2020 - 12 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 141028,
         "bronzeScore": 212000,
@@ -4073,7 +4073,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8bccc355-bd1d-4071-ad30-1f84091f1994",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5a12d138-2b2a-4900-920b-d0f8951993c0.jpg"
     },
-    "Fall 2020 - 11 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 38578,
         "bronzeScore": 58000,
@@ -4094,7 +4094,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d0838da1-b4f6-465a-b950-28e82844e743",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2bb28ed9-82b8-4904-9154-ae8459e5a5e0.jpg"
     },
-    "Fall 2020 - 10 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 53407,
         "bronzeScore": 81000,
@@ -4115,7 +4115,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/975de039-f321-4e54-9582-73cbd1620281",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cb7b2634-4c92-432d-b32f-e8ff8cf1ff20.jpg"
     },
-    "Fall 2020 - 09 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 114179,
         "bronzeScore": 172000,
@@ -4136,7 +4136,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dfc71102-03ae-4252-99c5-1aa60ac1aa4d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d48def56-3297-4cae-8676-cfc4c5662f57.jpg"
     },
-    "Fall 2020 - 08 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 90708,
         "bronzeScore": 137000,
@@ -4157,7 +4157,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3ab23873-8c7c-4db3-a856-e71df86cad36",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/88abcf62-ab73-4268-acbb-b7aaadf32ba0.jpg"
     },
-    "Fall 2020 - 07 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 79044,
         "bronzeScore": 119000,
@@ -4178,7 +4178,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ce6961a2-81c2-4918-9d78-ef47c903c9a4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f98eb59c-f5b5-4a0a-856f-94f4ce6adef1.jpg"
     },
-    "Fall 2020 - 05 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 80889,
         "bronzeScore": 122000,
@@ -4199,7 +4199,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c4300034-e459-44c9-b537-ddd694d6629e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b5d2b61a-29eb-44f3-82be-e2a5e0453a47.jpg"
     },
-    "Fall 2020 - 06 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 45359,
         "bronzeScore": 69000,
@@ -4220,7 +4220,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2b12fb91-0bfd-40dc-a2a7-33cbd796c853",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/bf5a674f-6691-48cc-b83d-8eeb51ae9994.jpg"
     },
-    "Fall 2020 - 04 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 39867,
         "bronzeScore": 60000,
@@ -4241,7 +4241,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/70aa510e-8710-455a-aef7-49a115bc4450",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/51c2cb9a-9f96-4a34-9eb4-3b07f968a1d0.jpg"
     },
-    "Fall 2020 - 02 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 33147,
         "bronzeScore": 50000,
@@ -4262,7 +4262,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ed4143a8-f87b-4aaf-8924-d2ed31c54fa7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9f4c5cac-c0dc-49d4-9444-6e87085cbfa7.jpg"
     },
-    "Fall 2020 - 03 (1-DOWN).Map.Gbx": {
+    {
         "author": "b2a577ba-081e-44a9-8181-bd0b6c01c3a1",
         "authorScore": 42532,
         "bronzeScore": 64000,
@@ -4283,7 +4283,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6a6c1acc-b762-46a6-a735-d46c91c88dfe",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/75dc3c3e-8207-461a-a22a-2c9b3a11d955.jpg"
     },
-    "Fall_2020_-_23_Underwater.Map.Gbx": {
+    {
         "author": "6363bb0c-e16a-4d39-9d11-02be25b13661",
         "authorScore": 330242,
         "bronzeScore": 496000,
@@ -4304,7 +4304,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0a202cf3-5ed4-4f90-a52b-011818fa4c67",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/03c41e66-a2f5-4acb-8082-6e08c82dc1ba.jpg"
     },
-    "Fall 2020 - 24 (Underwater).Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 325804,
         "bronzeScore": 489000,
@@ -4325,7 +4325,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1164aa5a-53b8-4e53-a9bb-2afdf403e788",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/120f24b9-d3a6-472d-a5a1-94f6cde1f191.jpg"
     },
-    "Fall 2020 - 05 (Underwater).Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 350968,
         "bronzeScore": 527000,
@@ -4346,7 +4346,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b3d3b0db-440b-47ab-b4fd-74d91500f452",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/24190f90-6a25-450f-89e5-dde74d3dc32e.jpg"
     },
-    "Fall 2020 - 13 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 115624,
         "bronzeScore": 174000,
@@ -4367,7 +4367,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/39b9d216-2253-47a2-b307-00d9d3b31bb5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e38f871a-6b15-4eda-a5d8-efcc5069dc66.jpg"
     },
-    "Fall 2020 - 20 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 189159,
         "bronzeScore": 284000,
@@ -4388,7 +4388,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fa33a6c4-47dc-4719-a405-fa5c080d73c7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/78a9a8f2-33dc-4ceb-9f2b-391f65aeb2ab.jpg"
     },
-    "Fall 2020 - 19 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 157417,
         "bronzeScore": 237000,
@@ -4409,7 +4409,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1a15d363-206c-42da-b7a3-802885969c4c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d77112d0-8a05-4597-ae03-fd8164d802cc.jpg"
     },
-    "Fall 2020 - 12 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 118125,
         "bronzeScore": 178000,
@@ -4430,7 +4430,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/aa8b29cc-a7c4-45d1-9517-68a414606fa8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/13ef1cab-2458-40e0-b96b-8e7189d2b480.jpg"
     },
-    "Fall 2020 - 17 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 166067,
         "bronzeScore": 250000,
@@ -4451,7 +4451,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/be58918a-8a76-4d23-bfd6-ec2d34db7aca",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f949d458-113d-4a7f-9146-15db51e91615.jpg"
     },
-    "Fall 2020 - 21 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 174923,
         "bronzeScore": 263000,
@@ -4472,7 +4472,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0ce3e670-6f80-4103-ba10-0949ecc25807",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7b983c88-9451-4597-ad9c-ff3946f8ae09.jpg"
     },
-    "Fall 2020 - 18 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 202354,
         "bronzeScore": 304000,
@@ -4493,7 +4493,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e22f2531-d477-4624-bede-94ee23935225",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9edfcefc-281f-412d-a84e-ac699607d277.jpg"
     },
-    "Fall 2020 - 11 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 152325,
         "bronzeScore": 229000,
@@ -4514,7 +4514,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/17cb8360-32d6-4422-beaf-a98c3a4fd015",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ad308947-6074-413b-9f2c-4d67b3b83be4.jpg"
     },
-    "Fall 2020 - 14 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 140981,
         "bronzeScore": 212000,
@@ -4535,7 +4535,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/26e05bcc-06ce-46a3-b5b9-31388ae94264",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ce857360-7eea-4f5a-87b5-82e0291a9e84.jpg"
     },
-    "Fall 2020 - 16 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 273980,
         "bronzeScore": 411000,
@@ -4556,7 +4556,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/64c54e21-f4c1-42dd-a5d8-9e4c437a0a15",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b5786862-3c89-47ad-b704-ee90feb1d9c7.jpg"
     },
-    "Fall 2020 - 25 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 270947,
         "bronzeScore": 407000,
@@ -4577,7 +4577,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4ba2783a-5f0a-42d9-a872-57789edcdeaf",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5f849404-2e0b-40ee-915d-29830307bdee.jpg"
     },
-    "Fall 2020 - 08 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 109672,
         "bronzeScore": 165000,
@@ -4598,7 +4598,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/daec0334-8365-4b1c-835f-2450387b630c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/431e068b-5fbb-43a3-97b6-453150e02f8f.jpg"
     },
-    "Fall 2020 - 02 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 62721,
         "bronzeScore": 95000,
@@ -4619,7 +4619,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a73e14c7-0a24-40d9-8c02-c9146aa34074",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/eebda67d-1247-46d6-bd2a-29339863f5ee.jpg"
     },
-    "Fall 2020 - 01 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 78522,
         "bronzeScore": 118000,
@@ -4640,7 +4640,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e5bb1fd4-89ed-44aa-bd4d-558dcabadd1b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ce4f5501-dc2c-4afd-b5bf-df133f76b9ab.jpg"
     },
-    "Fall 2020 - 03 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 95945,
         "bronzeScore": 144000,
@@ -4661,7 +4661,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/420ce82f-e30c-42ed-b237-d74d7d9993f8",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a2168c72-5a7c-4102-aad8-f51c8d1a5414.jpg"
     },
-    "Fall 2020 - 06 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 93072,
         "bronzeScore": 140000,
@@ -4682,7 +4682,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e4086862-faef-41bb-926c-0035793ef94e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c0f12cab-8edf-4c1d-a5f8-10bb670b6b0c.jpg"
     },
-    "Fall 2020 - 04 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 84097,
         "bronzeScore": 127000,
@@ -4703,7 +4703,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6b16e909-3821-46af-8573-ed346dba0e4b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/51311019-7504-472c-9f2d-bf48c0c0dbcd.jpg"
     },
-    "Fall 2020 - 07 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 104456,
         "bronzeScore": 157000,
@@ -4724,7 +4724,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/18979941-adf9-4893-85f2-db40f0a3cef6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/30cac9c0-4777-498b-b76a-8ed860c9e0ab.jpg"
     },
-    "Fall 2020 - 10 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 125815,
         "bronzeScore": 189000,
@@ -4745,7 +4745,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/24ec9ba0-08ed-4a36-8548-6f0edce62f31",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2ea4e044-efd3-4e11-84af-677b1a0cb198.jpg"
     },
-    "Fall 2020 - 09 (Underwater).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 120096,
         "bronzeScore": 181000,
@@ -4766,7 +4766,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ab901a9d-5d38-49bb-93e3-680882b7958b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/733122c8-359c-4684-8bf5-487cde96695f.jpg"
     },
-    "Fall_2020_-_01_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 657870,
         "bronzeScore": 987000,
@@ -4787,7 +4787,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2d1975d2-840e-4aba-a430-fbaec2290e46",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a908fa7c-0626-4afa-a786-8c99e61acf04.jpg"
     },
-    "Fall 2020 - 14 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 74208,
         "bronzeScore": 112000,
@@ -4808,7 +4808,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/86ed6264-5b27-47ff-a179-2b64a0082290",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d8f98169-bcd7-4975-a2e9-6bf4c019d931.jpg"
     },
-    "Fall 2020 - 15.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 47158,
         "bronzeScore": 71000,
@@ -4829,7 +4829,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/df57efb2-98da-4722-9c12-b30671455a8b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/79bcc750-d0a3-4204-af7d-d8f9728ba044.jpg"
     },
-    "Fall 2020 - 13 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 278029,
         "bronzeScore": 418000,
@@ -4850,7 +4850,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/12149b65-5eb0-438d-9829-72e8a5922127",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5e0bc603-bab9-4613-a5bf-e7ae16bfae34.jpg"
     },
-    "Fall 2020 - 18 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 26267,
         "bronzeScore": 40000,
@@ -4871,7 +4871,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9681b93e-2466-47e2-9b04-72ce75a738f5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/846b2c68-fda9-4c4a-abd6-a0f1e252a8ae.jpg"
     },
-    "Fall 2020 - 17.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 46227,
         "bronzeScore": 70000,
@@ -4892,7 +4892,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/13d7f3ca-3ffc-478a-9cdf-db777ca137b9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/211c41a4-1e30-42cf-91a0-45afaa45ee34.jpg"
     },
-    "Fall 2020 - 15 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 49860,
         "bronzeScore": 75000,
@@ -4913,7 +4913,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/89af9494-5b0e-48d9-9088-ad4d95927aff",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/71bf2737-d875-43f7-9b6b-cb7ec27689ec.jpg"
     },
-    "IceFall 2020 - 11.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 51306,
         "bronzeScore": 77000,
@@ -4934,7 +4934,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/891cd56f-cb2b-4559-9974-b8a67bf72d19",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/eec23a2f-0757-40cc-a37b-e9cc40487145.jpg"
     },
-    "IceFall 2020 - 02.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 46953,
         "bronzeScore": 71000,
@@ -4955,7 +4955,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/237c1327-e950-4b39-a1ac-da43f323224c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cfe7d54d-a1ed-4b4a-b48f-88822511eab6.jpg"
     },
-    "IceFall 2020 - 04.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 35162,
         "bronzeScore": 53000,
@@ -4976,7 +4976,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/234f0879-9da2-4878-8d42-34aaefc68ad5",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0a48742d-2614-4a43-a605-6db8d13e1f4a.jpg"
     },
-    "Fall 2020 - 16.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 49631,
         "bronzeScore": 75000,
@@ -4997,7 +4997,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1868e058-706b-4813-b803-0114dd31d70a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c3790815-48dd-492b-a31f-ca2a4467866a.jpg"
     },
-    "05CF83D672EA52C97AF8444DE007542210BF6FDD9D0245CBEAA5D9361FCFEA9349DFDAA5E1D09A922929640F7D49CDF6.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 125854,
         "bronzeScore": 189000,
@@ -5018,7 +5018,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0bf78a06-7045-4c67-a169-2225ea4365a4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f7a43501-750c-4b51-9b4c-6a2f8347a266.jpg"
     },
-    "3D88792682F65CDC1AED98F0A397EC329727804720204D7716896DAA5713831A0CC3B75C7D8A4C8F9E922819226707A3.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 67784,
         "bronzeScore": 102000,
@@ -5039,7 +5039,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0dc1563e-86b5-4ecf-bd8a-f2df68017a4f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b1e3b2df-e9e0-4505-bdb0-248e44ccb095.jpg"
     },
-    "Fall 2020 - 12.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 39097,
         "bronzeScore": 59000,
@@ -5060,7 +5060,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d6ae0d94-668e-4bc7-b998-4a4f44092895",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c245ca2e-2597-41b7-81cf-05ba493d5445.jpg"
     },
-    "Fall_2020_-_09_-_Checkpointless.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 80814,
         "bronzeScore": 122000,
@@ -5081,7 +5081,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/eef91cfc-34d2-479d-8de5-7277a41438e1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ee9ac4bd-26fb-4ea3-b374-b35360a9a660.jpg"
     },
-    "Fall 2020 - 02 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 27694,
         "bronzeScore": 42000,
@@ -5102,7 +5102,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cc5abbe2-de69-4a4f-a6ca-fd465bbaf14d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0afc06e1-a0b1-407b-bcd1-e8dfb249656e.jpg"
     },
-    "Fall 2020 - 03 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 13085,
         "bronzeScore": 20000,
@@ -5123,7 +5123,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9d2d50b7-3a03-4ad4-a46c-6a945544e0b9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f43bac1f-c539-48e4-923f-531560379f4c.jpg"
     },
-    "Fall 2020 - 07 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 54405,
         "bronzeScore": 82000,
@@ -5144,7 +5144,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/19b588f8-876d-412a-805a-4556bbb3bfdc",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7fd29169-87d5-46ac-8c42-3883401057cd.jpg"
     },
-    "Fall 2020 - 04 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 22466,
         "bronzeScore": 34000,
@@ -5165,7 +5165,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/60fed8c1-d379-43a7-b70c-56a4350343af",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2154a949-0d0d-4027-a288-94e53e692fc4.jpg"
     },
-    "Fall 2020 - 23.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 50816,
         "bronzeScore": 77000,
@@ -5186,7 +5186,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6ed483a0-4db8-46d1-9243-f3085313f82d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e0dd403f-d5ee-4957-8b71-6a86a0013240.jpg"
     },
-    "Fall 2020 - 14 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 457632,
         "bronzeScore": 687000,
@@ -5207,7 +5207,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/19080b64-c3b9-4d62-8873-0d0257ad2129",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9f0168ed-be6a-4a3b-b5aa-bc2bdfa9903e.jpg"
     },
-    "Fall 2020 - 07 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 117250,
         "bronzeScore": 176000,
@@ -5228,7 +5228,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e5eda475-4eb7-4e0d-8b0c-ea6431df74e6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7596cfbe-b983-46d9-a8bf-97d3066cd009.jpg"
     },
-    "IceFall 2020 - 03.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 23508,
         "bronzeScore": 36000,
@@ -5249,7 +5249,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/413fbc03-eaa1-4152-87f3-5eefb4c152fd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d7254903-9b2e-4691-b986-4dfe93f5b6a6.jpg"
     },
-    "Fall 2020 - 21.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 57494,
         "bronzeScore": 87000,
@@ -5270,7 +5270,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/49b8cff9-3026-48c4-9b06-3b4f8e8c14af",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fd2122eb-4033-4c66-aa66-f1c2813a8cb3.jpg"
     },
-    "Fall_2020_-_17_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 165748,
         "bronzeScore": 249000,
@@ -5291,7 +5291,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/94251620-1ce7-4c90-a1c1-8d6cb128d37b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e7b48e54-cbb3-4317-afcf-3a9d0a8ee58f.jpg"
     },
-    "Fall 2020 - 11 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 88760,
         "bronzeScore": 134000,
@@ -5312,7 +5312,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bc4eb112-5f3f-49c6-9613-0102e8e5cf40",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/725a1e1e-73cb-4122-80a9-43e84a2d27fb.jpg"
     },
-    "Fall 2020 - 16 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 1328240,
         "bronzeScore": 1993000,
@@ -5333,7 +5333,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9fff7859-bae1-4a40-8b37-2a002686ae4a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c1ae0edc-8ffe-40a8-866e-31100fa50022.jpg"
     },
-    "Fall 2020 - 05 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 108062,
         "bronzeScore": 163000,
@@ -5354,7 +5354,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cdfca0e5-39d8-4701-9792-29f51ac8149f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/600bb4d8-f5ff-4a36-af6c-9baee25ccf5c.jpg"
     },
-    "Fall 2020 - 01.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 19291,
         "bronzeScore": 29000,
@@ -5375,7 +5375,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3a9ef804-69ab-48e0-9be5-54da39305fd9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/48f6e3db-0153-4cef-81bf-9b68504dcbd6.jpg"
     },
-    "BB69578F7B1847DFE78DCCB64FF08A63E8F56B0657236D908AA846497AE01E4B557B838079BEEC3856F2292AE11355BC.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 229497,
         "bronzeScore": 345000,
@@ -5396,7 +5396,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/67bbdf1f-d5f5-437e-934e-e9ebdfc4642a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d5cb28f8-fb6d-4240-a2d4-3439480bb020.jpg"
     },
-    "Fall 2020 - 10 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 403104,
         "bronzeScore": 605000,
@@ -5417,7 +5417,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8a9b5d89-d2ff-41bc-8432-fab4fa492503",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6f1d4c11-2f4c-4358-82a6-c464562e80d3.jpg"
     },
-    "Fall 2020 - 08 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 44560,
         "bronzeScore": 67000,
@@ -5438,7 +5438,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9a0a24e0-2dab-406c-9ef5-51c814c996a6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/48c1b986-ea76-4fa9-bf85-826c87ccdad2.jpg"
     },
-    "Fall 2020 - 23 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 250713,
         "bronzeScore": 377000,
@@ -5459,7 +5459,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/506354c0-f2b1-46f1-a41e-a11143319635",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9d0b2504-d503-4ab5-9711-9a62a403f2d1.jpg"
     },
-    "Fall 2020 - 13.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 36571,
         "bronzeScore": 55000,
@@ -5480,7 +5480,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4b61907e-f5dd-42df-b9f1-55d7942a4ae6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/85ff0a77-1928-4d84-b3a3-888e4639676f.jpg"
     },
-    "9C30748A151EE0C7DE56194FACB3E009B2CDDC503D378C42A552C33E2FA366A3AA92D93ECEF6937797B0E3D183C0ADEE.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 76031,
         "bronzeScore": 115000,
@@ -5501,7 +5501,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/67cc7a7e-5e67-4b62-859e-ffc784ad2b59",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/540a045e-a1ea-4f54-809b-b44af5c4160d.jpg"
     },
-    "Fall 2020 - 12 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 39006,
         "bronzeScore": 59000,
@@ -5522,7 +5522,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1036b330-7c33-4b69-a3fd-4b948cc46cba",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cafad920-c6ce-4a82-b503-9633dd87b761.jpg"
     },
-    "Fall 2020 - 10 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 60969,
         "bronzeScore": 92000,
@@ -5543,7 +5543,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fdeb2402-ddb3-4bb8-b30c-ee6f41c8682f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/15a9478f-1082-4b6f-90e8-2218a33758f0.jpg"
     },
-    "Fall 2020 - 07.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 33883,
         "bronzeScore": 51000,
@@ -5564,7 +5564,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fb89abf4-070c-404f-88f6-7325c3ca8da1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/330c886f-02c9-4f6c-9e41-a6a395de2387.jpg"
     },
-    "Fall 2020 - 11 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 54878,
         "bronzeScore": 83000,
@@ -5585,7 +5585,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c31e236e-0298-499d-8334-0cd0fbec16cb",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9e6120f4-b7bd-4a2a-ae6a-db696ca7404c.jpg"
     },
-    "IceFall 2020 - 05.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 72125,
         "bronzeScore": 109000,
@@ -5606,7 +5606,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/76a1a1a0-030f-4eae-8df5-726178735eb6",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/75156615-e9b4-41bd-9da0-6e6c83019547.jpg"
     },
-    "Fall 2020 - 22 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 202620,
         "bronzeScore": 304000,
@@ -5627,7 +5627,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/72cacdb4-3c82-4014-86e3-cb281c46d1b1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/97e0d094-b9e9-41c0-995d-7f29cf9834fc.jpg"
     },
-    "Fall 2020 - 04.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 27965,
         "bronzeScore": 42000,
@@ -5648,7 +5648,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/584df6ce-5d10-4c97-b9ac-14b1ac533dbe",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3015d916-855d-4c7d-a03f-c3ae6f3917cf.jpg"
     },
-    "Fall 2020 - 03 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 544833,
         "bronzeScore": 818000,
@@ -5669,7 +5669,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2c314bfe-b4b2-40c2-aa7f-5b24edec0983",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6af13ba7-c436-4571-9c9c-c4d38fdc6dc6.jpg"
     },
-    "Fall 2020 - 15 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 22624,
         "bronzeScore": 34000,
@@ -5690,7 +5690,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/be203241-a0f0-4c53-8732-b2283e365670",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5322ff11-0985-4580-a28f-30761311e73c.jpg"
     },
-    "Fall 2020 - 20 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 338758,
         "bronzeScore": 509000,
@@ -5711,7 +5711,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ed24be59-bdd4-4232-bbb2-fee7d4de8453",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/caefe248-603b-4c15-84e1-8805b113eea5.jpg"
     },
-    "Fall 2020 - 01 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 1105213,
         "bronzeScore": 1658000,
@@ -5732,7 +5732,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d602ad48-5f96-4fd9-9a1e-601e0fd1457d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/30b7132c-06dc-431c-a324-5742bee6350d.jpg"
     },
-    "7E4BC878AB5F7FD4AFC7D3C0EB6FF28EC59DE146B7B587DFB4C906EC923DFD1EA7DC003A690530391E318EFB3CD15A7C.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 79448,
         "bronzeScore": 120000,
@@ -5753,7 +5753,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/69359775-2d13-4f78-b176-ebc3532c99f2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b02cde51-bf1d-4286-8115-27c151a00559.jpg"
     },
-    "Fall 2020 - 18 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 170920,
         "bronzeScore": 257000,
@@ -5774,7 +5774,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b3288a68-2133-44b8-888e-2e078f15d931",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/fd5886d9-e918-49e9-a7ee-b18a5f9b66f1.jpg"
     },
-    "Fall 2020 - 17 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 86456,
         "bronzeScore": 130000,
@@ -5795,7 +5795,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/787834cc-c2c0-48a9-b7fe-78c3f0f248a7",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/936409d1-9caa-4dc0-acd7-97350e51f764.jpg"
     },
-    "Fall_2020_-_24_-_Reverse.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 865983,
         "bronzeScore": 1299000,
@@ -5816,7 +5816,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9f720669-01c4-426b-9c95-ed4b03a806cd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c1f32d3f-ee1d-47e0-9653-24e0776b5231.jpg"
     },
-    "Fall_2020_-_09_-_Reverse.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 13832779,
         "bronzeScore": 20750000,
@@ -5837,7 +5837,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/503800cf-0c09-4f64-aa71-65f310d8894e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/06301e84-8a26-4c2a-a1be-5219428afba9.jpg"
     },
-    "Fall 2020 - 19 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 279039,
         "bronzeScore": 419000,
@@ -5858,7 +5858,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ad93e259-de28-4de0-a0ed-47b1bdc249ee",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b97fd50e-716b-4e2b-b5e5-b01844997461.jpg"
     },
-    "Fall 2020 - 20.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 52438,
         "bronzeScore": 79000,
@@ -5879,7 +5879,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/06ebd756-1969-4cc3-ac5b-876566886ac0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9ca47564-4f73-43ec-8cb3-d66f312487b7.jpg"
     },
-    "Fall 2020 - 13 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 48665,
         "bronzeScore": 73000,
@@ -5900,7 +5900,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1e763f6a-9d58-4b6a-9168-6e449812892d",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4c12ea7b-9cf2-4921-8ff3-547d41077ce3.jpg"
     },
-    "5686D27BAECE72E82D0D8DD69A9099FB1E409F38EF161950C392EE76B8AD1F4EDCF49506981A69A73D361EC8F3FE6146.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 171227,
         "bronzeScore": 257000,
@@ -5921,7 +5921,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7073c355-1ab6-43aa-b462-1552043fbc73",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/afcde474-9c6a-4444-ad90-a20fbae1228e.jpg"
     },
-    "Fall 2020 - 19 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 60868,
         "bronzeScore": 92000,
@@ -5942,7 +5942,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/98215515-c8a8-4059-8285-adb315126aaa",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/230fcf27-6dce-4cfd-a396-402e5d15dcb9.jpg"
     },
-    "Fall 2020 - 22 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 60046,
         "bronzeScore": 91000,
@@ -5963,7 +5963,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4484ccbe-57d9-4509-acb3-1f5b548870a3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b72b5707-da15-4334-845a-d8746723620a.jpg"
     },
-    "Fall 2020 - 05 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 34923,
         "bronzeScore": 53000,
@@ -5984,7 +5984,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c646831f-5284-4d12-8174-d5b7f97a545b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/11968db3-c965-4d09-ade6-d1340c27d741.jpg"
     },
-    "6E89D599F112C4EB7B3FFBC82C0F60B693BD2E943595F88F363D911B9FD21D3EDCA9BB09CE9E56C93559DFA1BAF6C855.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 206444,
         "bronzeScore": 310000,
@@ -6005,7 +6005,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f6471ab9-eca0-4128-a9e5-b8fe589b2ad2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2b2cc4ae-9ce7-4eb1-b5e5-249aa5813161.jpg"
     },
-    "Fall 2020 - 23 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 12520,
         "bronzeScore": 19000,
@@ -6026,7 +6026,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/01f7809a-67fc-4cdc-99dd-689e79ff691c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/77a68253-fb83-4e36-9410-78e7f0b7db9e.jpg"
     },
-    "Fall_2020_-_17_-_Checkpointless.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 36777,
         "bronzeScore": 56000,
@@ -6047,7 +6047,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b6b2af0e-dbf1-44c5-8f8c-04441ffb1a57",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2119e61e-ff4d-4af4-8eaa-8f972034538b.jpg"
     },
-    "IceFall 2020 - 06.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 52277,
         "bronzeScore": 79000,
@@ -6068,7 +6068,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/510a0e41-8b91-48d0-a0b6-20651a6fd671",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/75c79d51-b876-47b0-81f7-736775ee4bf1.jpg"
     },
-    "Fall_2020_-_05_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 799035,
         "bronzeScore": 1199000,
@@ -6089,7 +6089,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8c043b7b-256e-4d0e-81b8-69e25283f8bf",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cf681616-83f7-4263-8de6-77ace9c4f165.jpg"
     },
-    "Fall 2020 - 21 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 82568,
         "bronzeScore": 124000,
@@ -6110,7 +6110,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fd9dc1a7-9d00-406c-b234-0884469ae89c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/77badb09-5214-42cb-997e-310c6d6499df.jpg"
     },
-    "Fall 2020 - 25 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 142485,
         "bronzeScore": 214000,
@@ -6131,7 +6131,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9e58f583-2d80-4d0f-a1da-2b6886598b39",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1c7552cf-48ab-456b-9cac-1ba9fc43482b.jpg"
     },
-    "Fall 2020 - 04 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 94542,
         "bronzeScore": 142000,
@@ -6152,7 +6152,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/61e09354-4b79-45eb-a06a-ac689ce6a13b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/deba37f1-c2c4-40fa-be8e-94be000bfc11.jpg"
     },
-    "C137A0DD70A7F9646CE29471072A7AB34CB8E66B69AA99EB76DACAEAA5B0C37A314D1F777617DCB354BF15FAD5538B33.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 59189,
         "bronzeScore": 89000,
@@ -6173,7 +6173,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/dcbf9040-0bb7-493d-85e7-91a34ddeac9e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/2e92ea0c-3d96-4685-80a9-0bfed0743548.jpg"
     },
-    "Fall 2020 - 04 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 83108,
         "bronzeScore": 125000,
@@ -6194,7 +6194,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c9afc4fd-e000-43f5-974b-c60bbe226cf0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/92c4ca04-b548-4aaa-b4ee-e4df837fda90.jpg"
     },
-    "Fall 2020 - 15 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 123361,
         "bronzeScore": 186000,
@@ -6215,7 +6215,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ba06a198-3648-4b9f-acd3-d3af73458f23",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dcf02c7e-5c02-4fc2-85b9-3f07c569d4de.jpg"
     },
-    "Fall 2020 - 20 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 47802,
         "bronzeScore": 72000,
@@ -6236,7 +6236,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/69346462-d9c3-46e9-bb6f-9c808730464e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8835542e-bea3-42e1-b52c-5f8032f6069d.jpg"
     },
-    "Fall_2020_-_08_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 112027,
         "bronzeScore": 169000,
@@ -6257,7 +6257,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a2314866-12b6-4535-bffd-a6751fa97a64",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6bc1cff5-2741-4eba-a40b-29a26328d0f6.jpg"
     },
-    "Fall 2020 - 14.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 35046,
         "bronzeScore": 53000,
@@ -6278,7 +6278,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/08dac3ef-9b59-4ecc-82af-0623ca662805",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4d6e4dfe-690d-431b-8471-c610ed593c27.jpg"
     },
-    "BCC75C20C7861DBD9BB7F43194E2B77292204B68045CCEE315CBF1ED496C93625D0557F6A0C54ADBF151562C83E727BE.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 104719,
         "bronzeScore": 158000,
@@ -6299,7 +6299,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/bc3a6fc6-4720-4f2d-afcf-f4886bb9a410",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/467012a9-d175-4845-a5f6-f42e35f7245d.jpg"
     },
-    "Fall 2020 - 22 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 105621,
         "bronzeScore": 159000,
@@ -6320,7 +6320,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/723e930d-ba62-4ddc-8dc4-2e9612f3d73c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d2b91d78-9cf6-4669-a632-a5e8b3d09c7e.jpg"
     },
-    "8081A87CBBF04FF8FB29829AB94381A272FF335637B0B284E1C8281053687B6ECDE1A1CE9F21E7F0BDDAE7E266FC465C.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 55715,
         "bronzeScore": 84000,
@@ -6341,7 +6341,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e59f3a4e-6ee3-4542-9a7d-d71d1f506fd9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/da8e0bab-f1dc-4a4e-895b-0fcb6b22dc8e.jpg"
     },
-    "Fall_2020_-_20_-_Reverse.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 277256,
         "bronzeScore": 416000,
@@ -6362,7 +6362,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1675734f-551c-49d1-9451-c259fad4dca9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/070d4f27-665a-4a11-8f5a-4345db86929b.jpg"
     },
-    "Fall 2020 - 25 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 122903,
         "bronzeScore": 185000,
@@ -6383,7 +6383,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2d77cda2-5866-44bc-bf52-8b80d4def32e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0f3306eb-54e9-4a6e-94a4-948564002820.jpg"
     },
-    "Fall 2020 - 11 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 31915,
         "bronzeScore": 48000,
@@ -6404,7 +6404,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ee675e70-52a4-4eca-b6e4-ce538f9821a9",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/43a01913-09d4-47df-b0eb-3e602c5232ea.jpg"
     },
-    "Fall 2020 - 02 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 30214,
         "bronzeScore": 46000,
@@ -6425,7 +6425,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8c6d419c-586f-4290-9152-107aefc74b9e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/304ff5c1-a0ca-43a4-ba8b-d73bbffde432.jpg"
     },
-    "Fall 2020 - 03 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 29543,
         "bronzeScore": 45000,
@@ -6446,7 +6446,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7abe300b-db6c-4877-a92f-45bf1009e055",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/54bdda79-ff9e-4654-99da-ffdc7bd38d9c.jpg"
     },
-    "Fall 2020 - 10 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 95055,
         "bronzeScore": 143000,
@@ -6467,7 +6467,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/040eb84e-9b88-4790-83ca-a22345e2ae09",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/13e25893-f6b1-4dbc-b50a-254eea4c3371.jpg"
     },
-    "Fall 2020 - 12 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 94407,
         "bronzeScore": 142000,
@@ -6488,7 +6488,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a8c0bf79-64cb-4d24-895a-42253bb0711f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/29f1272f-4bcd-45f4-8fcd-fd297645846e.jpg"
     },
-    "BDB2C7D59EA4719F1FE347A338E1AE239EBC8C3D1E3196E0FD46F83D9A4D8D671B5257098A51589E82C39DDF65347B77.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 64966,
         "bronzeScore": 98000,
@@ -6509,7 +6509,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/532c1b25-1a46-4126-b3e7-45d2a36b82fb",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e4eaf124-c457-4b5b-b223-59adb8fddeb5.jpg"
     },
-    "IceFall 2020 - 15.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 65474,
         "bronzeScore": 99000,
@@ -6530,7 +6530,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0b58752a-9dbe-4b7f-8ab2-64e8d5633a48",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/002d2879-b313-42cd-9608-1c6a9108493a.jpg"
     },
-    "Fall 2020 - 09.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 37574,
         "bronzeScore": 57000,
@@ -6551,7 +6551,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/506f2c6f-bb0d-49ef-9b76-48a8806733e0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/01f06d0f-4122-4ea3-b8b5-1cde301fb329.jpg"
     },
-    "Fall 2020 - 24 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 43769,
         "bronzeScore": 66000,
@@ -6572,7 +6572,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cefef2f8-2849-41c8-a92f-0bc12d7ab6f2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/32c7d0d3-839e-4ec6-903d-a137060d2043.jpg"
     },
-    "Fall 2020 - 25.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 77692,
         "bronzeScore": 117000,
@@ -6593,7 +6593,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ee42089f-aeea-4742-b93d-c1763d1982d2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/cf656560-e29c-4f29-bfc6-eed15a19b2e8.jpg"
     },
-    "Fall 2020 - 19.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 53997,
         "bronzeScore": 81000,
@@ -6614,7 +6614,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/18ae6c86-b140-4be4-952a-dd3507fd3004",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6b5b23df-e663-4bf7-b5f7-ce200c49bfa2.jpg"
     },
-    "Fall 2020 - 03.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 23508,
         "bronzeScore": 36000,
@@ -6635,7 +6635,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9e98f6c2-2221-4c2f-9e0c-88b33ed1a34f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e48236b6-c4b7-41b8-9b8e-e2ce1edf67c2.jpg"
     },
-    "Fall 2020 - 14 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 28010,
         "bronzeScore": 43000,
@@ -6656,7 +6656,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/113017a5-00eb-4718-90b4-f65c0ae5c79b",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/379953c5-35e5-44da-9ec0-70e554b5545c.jpg"
     },
-    "Fall 2020 - 06.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 30401,
         "bronzeScore": 46000,
@@ -6677,7 +6677,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1fda413f-a3c6-492e-9157-53faaf19089c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6f499088-149a-4ae2-8c57-8e4367e15533.jpg"
     },
-    "Fall 2020 - 08 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 37394,
         "bronzeScore": 57000,
@@ -6698,7 +6698,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a3f26358-93ee-4072-9c83-b3fcbbb101e4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9231e055-6d9c-488d-89c0-e16a0d2631e9.jpg"
     },
-    "2C32FF063EE16C5788ADAE366CE8797430A63545601B24F11DFB794A614ED268E31893EE171D8D73F3666E3B17363CC3.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 76467,
         "bronzeScore": 115000,
@@ -6719,7 +6719,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/281627a9-e19d-4e50-93e6-1ba0413a4e34",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/72ad674a-591f-4a1b-af2a-b25e8bf8c3db.jpg"
     },
-    "Fall 2020 - 12 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 34596,
         "bronzeScore": 52000,
@@ -6740,7 +6740,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2c4d9ea3-30ed-4f46-9c79-103327b803c0",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ab07a754-b4ff-4572-b1bd-00c6b6963581.jpg"
     },
-    "Fall 2020 - 10.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 36041,
         "bronzeScore": 55000,
@@ -6761,7 +6761,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ebf0358e-f199-4b26-8540-33f7320564e1",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d443c819-7cfc-48d5-a1da-6f2e40ab489f.jpg"
     },
-    "Fall 2020 - 05.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 44013,
         "bronzeScore": 67000,
@@ -6782,7 +6782,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d6b8dfcd-a317-4ba7-a0c3-8f668db06757",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/64193fda-bcc5-4587-beac-3423173e9890.jpg"
     },
-    "Fall_2020_-_25_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 466158,
         "bronzeScore": 700000,
@@ -6803,7 +6803,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/27ffa36d-f4d8-4c23-a378-a10dd9ab7fbd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7dcfc898-aa13-4e79-a470-268ee9257efa.jpg"
     },
-    "Fall 2020 - 18 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 71954,
         "bronzeScore": 108000,
@@ -6824,7 +6824,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/28786ea1-2189-4363-843f-268bac73ce4a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ff6a97ef-9cd0-44e3-943d-fad05f64f9d1.jpg"
     },
-    "Fall 2020 - 02.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 18843,
         "bronzeScore": 29000,
@@ -6845,7 +6845,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2ee142fc-6555-4e29-bad8-0f850dddbb2e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/5233e729-1810-4e89-bf0d-b9d832562680.jpg"
     },
-    "Fall_2020_-_21_-_1-UP.Map.Gbx": {
+    {
         "author": "cc1dc734-76eb-4308-82a8-00c940369d6e",
         "authorScore": 488984,
         "bronzeScore": 734000,
@@ -6866,7 +6866,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1672e82c-bdf2-49a5-8458-dd4af1a491fd",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/824061b7-2dfe-47ba-9df5-f224cd5c0301.jpg"
     },
-    "Fall 2020 - 24.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 57935,
         "bronzeScore": 87000,
@@ -6887,7 +6887,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/08ab71bb-de48-43af-b313-71acf53ce48a",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9387fe0f-7db7-4105-a95e-522d6aadd558.jpg"
     },
-    "Fall 2020 - 23 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 191807,
         "bronzeScore": 288000,
@@ -6908,7 +6908,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f871ca7e-3bb5-40a1-8772-5701865e12c4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6978427e-907d-42a0-9b2b-5ed10379fc29.jpg"
     },
-    "3F849EBFCD7C4280B5B47747A55DF0597D66DC9F65625348D18F7E6787E2B56CF2F4BEA59203DAB533042F585A867790.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 58120,
         "bronzeScore": 88000,
@@ -6929,7 +6929,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2d289818-53a7-4de7-8d12-633cf3e1e762",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/336ee64d-f569-4234-8d32-710160d68555.jpg"
     },
-    "88D000487EA821E84086E10AF70839F7B4BE5371ECFFFC0FF4C27C84EEE558FC821D3F259ABE84FFB268B0BC718DE21E.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 78066,
         "bronzeScore": 118000,
@@ -6950,7 +6950,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/cbbb824d-77bf-4c59-a521-61de3b1629de",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/09199d33-03f4-4fc9-a0bd-aa10a94684a6.jpg"
     },
-    "Fall 2020 - 24 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 135467,
         "bronzeScore": 204000,
@@ -6971,7 +6971,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9a321a76-8236-4e9e-9f01-34f6b1c71dc2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/25206a4c-0981-49c6-bc8d-1be311d00f32.jpg"
     },
-    "Fall 2020 - 22.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 56623,
         "bronzeScore": 85000,
@@ -6992,7 +6992,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/93ec7a66-fd62-4b8f-a336-97c31d36ca4e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/576c525c-9be4-44a5-aad0-6648e6f68140.jpg"
     },
-    "Fall 2020 - 16 - Checkpointless.Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 120488,
         "bronzeScore": 181000,
@@ -7013,7 +7013,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1a2525a9-cfcf-4b31-8d09-37314cdefbf2",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/350048db-5e10-4da1-9eba-2b2de6512223.jpg"
     },
-    "58332E6F0B7482CB48998B31CD9A7B2626C4010E2159C0A8509CD803935FC908888201AE71D973518BD8F1656AD88DC8.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 1335642,
         "bronzeScore": 2004000,
@@ -7034,7 +7034,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/12340914-b652-4153-82a3-028cd8293a8e",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/d644ebef-7713-49d2-beb1-2176af7cbc40.jpg"
     },
-    "Fall 2020 - 06 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 34489,
         "bronzeScore": 52000,
@@ -7055,7 +7055,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/9769973f-ebac-4b60-b539-dbeca10f95ad",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/6a747235-da05-44eb-8144-ebd33a6f8e4c.jpg"
     },
-    "Fall 2020 - 07 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 50008,
         "bronzeScore": 76000,
@@ -7076,7 +7076,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0027a593-7a55-4049-ae74-d7072ab84373",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/36aad218-14e8-46d2-b0ff-e935b27b4812.jpg"
     },
-    "Fall_2020_-_09_-_1-UP.Map.Gbx": {
+    {
         "author": "cc1dc734-76eb-4308-82a8-00c940369d6e",
         "authorScore": 1202503,
         "bronzeScore": 1804000,
@@ -7097,7 +7097,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f5012480-4198-45f2-beba-95d77626b597",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/321f53d6-fc43-411f-8a9f-4a1f2bf27858.jpg"
     },
-    "Fall_2020_-_06_1-UP.Map.Gbx": {
+    {
         "author": "06de3f39-a001-43e7-b7fe-ca9772817b7c",
         "authorScore": 144515,
         "bronzeScore": 217000,
@@ -7118,7 +7118,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c07039c3-0f88-46b7-8059-cfec8d588aa4",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/42c6c995-10c4-409c-8b0e-fc7cd95777a0.jpg"
     },
-    "D41BD8FEF671B9AAD88AA0C718E730698E91186D6BFE094EDD90E65361F38154CAE4F9B50DBE0567ABBAC175868CA761.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 97001,
         "bronzeScore": 146000,
@@ -7139,7 +7139,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d21296be-3541-4bf7-b7d1-ac11a8d5cc71",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/154246f2-c98c-4311-84fb-bc738f41a79f.jpg"
     },
-    "IceFall 2020 - 01.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 32626,
         "bronzeScore": 49000,
@@ -7160,7 +7160,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e1f212ce-d4de-465a-aba2-80dd8045a08f",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/153c1b48-a838-4487-9fe2-a8232f4fea60.jpg"
     },
-    "Fall 2020 - 11.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 29777,
         "bronzeScore": 45000,
@@ -7181,7 +7181,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4f8b984c-dd37-45ae-9b5a-126575af5e98",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/48086d1c-6221-47de-8083-8805cc36ab6d.jpg"
     },
-    "Fall 2020 - 13 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 235309,
         "bronzeScore": 353000,
@@ -7202,7 +7202,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2cce85fc-f011-4f4a-b239-e70e1bb55912",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/46a7ce54-44a3-451a-af68-427837725752.jpg"
     },
-    "Fall 2020 - 16 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 163278,
         "bronzeScore": 245000,
@@ -7223,7 +7223,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/64b21f61-d25a-4a90-a325-a3fabcf9f18c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b3a1c6ee-e5ea-43e1-ad71-eb256acbf705.jpg"
     },
-    "Fall 2020 - 01 - Checkpointless.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 31762,
         "bronzeScore": 48000,
@@ -7244,7 +7244,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6b15cca3-8b99-4830-b314-bb243bd70b6c",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0a917302-962a-4a86-9454-3b65def8ab71.jpg"
     },
-    "Fall 2020 - 21 - Reverse.Map.Gbx": {
+    {
         "author": "374d79ae-e3cf-4231-9ee3-276d414b48dd",
         "authorScore": 63115,
         "bronzeScore": 95000,
@@ -7265,7 +7265,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e7e8d801-0f33-47a4-a2c8-5b6aa4c41c62",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f68c18ff-089c-408f-9964-bed93539f683.jpg"
     },
-    "Fall 2020 - 02 (1-UP).Map.Gbx": {
+    {
         "author": "d49d8035-e682-4c3d-90a4-fa605a12dff4",
         "authorScore": 31054,
         "bronzeScore": 47000,
@@ -7286,7 +7286,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/de9489c0-eec3-4051-8b4d-165f6c84ea57",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4deff8f0-7578-482d-9fde-f9e9de0dbef1.jpg"
     },
-    "IceFall 2020 - 07.Map.Gbx": {
+    {
         "author": "1e64ec02-5384-431b-9a34-c180e2e072f7",
         "authorScore": 64199,
         "bronzeScore": 97000,
@@ -7307,7 +7307,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2eef8f48-ccfa-4e52-84c1-e681fdfcde11",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/174e4d20-3d95-495b-a22b-db92fd91874d.jpg"
     },
-    "Fall 2020 - 18.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 41418,
         "bronzeScore": 63000,
@@ -7328,7 +7328,7 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4cb15a72-fe44-4b34-bffa-515c55d4b691",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ee46429e-9024-4615-82ce-36849d81bf33.jpg"
     },
-    "Fall 2020 - 08.Map.Gbx": {
+    {
         "author": "d2372a08-a8a1-46cb-97fb-23a161d85ad0",
         "authorScore": 33888,
         "bronzeScore": 51000,
@@ -7349,4 +7349,4 @@
         "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/d470e60b-80b6-4259-a679-eab7ffbbc6a3",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/45b58345-f15a-48e1-a333-d603136952f2.jpg"
     }
-}
+]
