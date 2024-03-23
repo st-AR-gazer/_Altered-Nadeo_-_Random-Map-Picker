@@ -112,19 +112,19 @@ def save_sorted_data(sorted_data, base_folder):
             json.dump(maps, file, indent=4, ensure_ascii=False)
 
 special_cases_array = [
-    "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless", "[Rally] CP1 is End"
+    "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless", "[Rally] CP1 is End", "[Stadium] Wet Wood", "[Snow] Wet-Plastic"
 ]
 
 alterations_dict = {
     #"xx-But": "XX-But",
 
     "[Snow]": ["[Snow]", "SnowCar", "CarSnow"],
+    "[Snow] Carswitch": ["Carswitch", "Snowcarswitch"],
     "[Snow] Checkpointless": ["Checkpointless snow", "[Snow] Checkpointless", "[Snow] cpless"],
     "[Snow] Icy": ["Icy [Snow]", "[Snow] Icy"],
     "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)"],
     "[Snow] Wet-Plastic": ["(Snow) Wet-Plastic"],
     "[Snow] Wood": ["[Snow] Wood"],
-    "[Snow] Carswitch": ["Carswitch", "Snowcarswitch"],
 
     "[Rally]": ["[Rally]", "RallyCar", "CarRally"],
     "[Rally] Carswitch": ["Rallycarswitch"],
@@ -132,6 +132,7 @@ alterations_dict = {
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
+    "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
 
     "1 Down": ["1 Down", "1-Down", "1Down", ],
     # "1 Forward": ["1 Forward", "1-Forward", "1Forward"], # This is not included since it is the same as 1-back
@@ -242,6 +243,7 @@ alterations_dict = {
     "Underwater": ["Underwater", "UNW"],
     "Underwater Reverse": ["Underwater Reverse", "Underwater-Reverse", "UnderwaterReverse", "UNW Reverse", "UNW-Reverse", "UNWReverse", "UNWR", "UW Reverse", "UW-Reverse", "UWReverse", "UWR"],
     "Walmart Mini": ["Walmart Mini", "WalmartMini", "Walmart-Mini"],
+    "Wet Plastic": ["Wet Plastic", "WetPlastic", "Wet-Plastic"],
     "Wet Wheels": ["Wet Wheels", "WetWheels", "Wet-Wheels"],
     "Wet Wood": ["Wet Wood", "WetWood", "Wet-Wood"],
     "Wet Icy Wood": ["Wet Icy Wood", "WetIcyWood", "Wet-Icy-Wood"],

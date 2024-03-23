@@ -10,7 +10,11 @@ void RenderMenu() {
         }
     }
     if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Open Settings")) {
-        showInterface = showInterface ? true : false;
+        if (showInterface) {
+            showInterface = false;
+        } else {
+            showInterface = true;
+        }
     }
 }
 

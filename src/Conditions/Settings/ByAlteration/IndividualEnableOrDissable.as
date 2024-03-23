@@ -17,14 +17,28 @@
     [Setting category="ByAlteration" name="[Snow] Underwater"]
     bool IsUsing_Snow_Underwater = true;
 
+    [Setting category="ByAlteration" name="[Snow] Wet Plastic"]
+    bool IsUsing_Snow_Wet_Plastic = true;
+
     [Setting category="ByAlteration" name="[Snow] Wood"]
     bool IsUsing_Snow_Wood = true;
+
 
     [Setting category="ByAlteration" name="[Stadium]"]
     bool IsUsing_Stadium_ = true;
 
+    [Setting category="ByAlteration" name="[Stadium] Wet Wood"]
+    bool IsUsing_Stadium_Wet_Wood = true;
+
+
     [Setting category="ByAlteration" name="[Rally]"]
     bool IsUsing_Rally_ = true;
+
+    [Setting category="ByAlteration" name="[Rally] CP1 is End"]
+    bool IsUsing_Rally_CP1_is_End = true;
+    
+    [Setting category="ByAlteration" name="[Rally] Underwater"]
+    bool IsUsing_Rally_Underwater = true;
 
 // Other
 
@@ -336,6 +350,9 @@
 
     [Setting category="ByAlteration" name="Walmart Mini"]
     bool IsUsing_Walmart_Mini = true;
+
+    [Setting category="ByAlteration" name="Wet Plastic"]
+    bool IsUsing_Wet_Plastic = true;
 
     [Setting category="ByAlteration" name="Wet Icy Wood"]
     bool IsUsing_Wet_Icy_Wood = true;

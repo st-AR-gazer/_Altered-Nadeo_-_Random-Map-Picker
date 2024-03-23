@@ -13,6 +13,9 @@
 
 // Season Specific
 
+    [Setting category="BySeason" name="Training Maps"]
+    bool IsUsing_Trainig = false;
+
     [Setting category="BySeason" name="Spring 2020 Maps"]
     bool IsUsing_Spring2020Maps = false;
 

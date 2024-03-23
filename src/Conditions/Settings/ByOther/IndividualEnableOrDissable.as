@@ -1,3 +1,4 @@
+// NOT inc altered campaigns
 [Setting category="ByAlteration" name="All Official Competitions"]
 bool IsUsing_AllOfficialCompetitions = false;
 
@@ -7,6 +8,7 @@ bool IsUsing_MapIsNotObtainable = false;
 [Setting category="ByAlteration" name="Official Nadeo"]
 bool IsUsing_OfficialNadeo = true;
 
+// inc altered campaigns
 [Setting category="ByOther" name="All Official Competitions (Other)"]
 bool IsUsing__AllOfficialCompetitions = false;
 
