@@ -21,12 +21,12 @@ void DownloadFiles() {
     bool TESTING;
     if (TESTING) return;
     
-    DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "By-Other/");
+    DownloadDataLoop(NewSortingSystemUrl + "By-Other/", dataFiles, localSaveLocation + "ByOther/");
     log("Attempted to downloaded all 'other' files", LogLevel::Info, 29);
     
     
     // Should maybe set first UID here if the bug from the ported code still persists
-    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles, localSaveLocation + "By-Season/");
+    DownloadDataLoop(NewSortingSystemUrl + "By-Season/", seasonalFiles, localSaveLocation + "BySeason/");
     log("Attempted to downloaded all season files", LogLevel::Info, 34);
     
     DownloadDataLoop(NewSortingSystemUrl + "By-Alteration/", alterationFiles, localSaveLocation + "ByAlteration/");
@@ -38,14 +38,17 @@ void DownloadDataLoop(const string &in baseUrl, const array<string> &in files, c
     for (uint i = 0; i < files.Length; i++) {
         string localFilePath = localSaveLocation + files[i];
         if (unUpdatedFiles.Find(files[i]) != -1 || updateAllFiles/* || g_manifestJson["updatedFiles"].HasKey(files[i])*/) {
-            if (!IO::FileExists(localFilePath)) {
-                string url = baseUrl + files[i];
-                // log("Downloading updated file from: " + url, LogLevel::D, 47);
-                DownloadData(url, files[i], localSaveLocation);
-                sleep(5000);
-            } else {
-                log("File already exists, skipping download: " + localFilePath, LogLevel::Info, 51);
-            }
+
+            // FILE EXIST CHECK IS ONLY THERE FOR TESTING
+
+            // if (!IO::FileExists(localFilePath)) {
+            string url = baseUrl + files[i];
+            // log("Downloading updated file from: " + url, LogLevel::D, 47);
+            DownloadData(url, files[i], localSaveLocation);
+            sleep(5000);
+            // } else {
+            //     log("File already exists, skipping download: " + localFilePath, LogLevel::Info, 51);
+            // }
         } else {
             log("File not listed as updated in manifest, skipping download: " + files[i], LogLevel::Info, 54);
         }
@@ -70,7 +73,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         // log("File that returned an error: " + fileName, LogLevel::Error, 74);
         // log("Error code: " + req.ResponseCode(), LogLevel::Error, 75);
         // log("Error response: " + req.String(), LogLevel::Error, 76);
-        log("Error fetching datafile from: " + url, LogLevel::Error, 77); // Keep this after removing the rest?
+        log("Response code" + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 77); // Keep this after removing the rest?
         // print("\n");
     }
 }

@@ -501,7 +501,6 @@ special_uids = [
     
     {"uid": "kf3ZUiaYI8kv_L5sbtgdq1meHx2", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "alteration": "Glider"},  # 
     {"uid": "GfE32ssQZQNYwcvmqOFLvZgV6t",  "name": "Summer 2021 - 03",   "season": "Summer",    "year": "2021", "alteration": "Glider"},  # Check if these are glider or engine off
-    {"uid": "ru99q3ft_HMZMZo8bio5bGI6uTe", "name": "Fall 2021 - 13",     "season": "Fall",      "year": "2021", "alteration": "Cruise"},
     {"uid": "ydT2UJI8qoRZDWx3mKM5kmY_G7d", "name": "Summer 2021 - 05",   "season": "Summer",    "year": "2021", "alteration": "Cruise"},
     {"uid": "ZKhHU0i38ePcVzpHnSFDXyYdIa8", "name": "Summer 2021 - 07",   "season": "Summer",    "year": "2021", "alteration": "Cruise"},
     {"uid": "biiKGPRLiKF00yL1qr3OSQh1VKj", "name": "Summer 2021 - 20",   "season": "Summer",    "year": "2021", "alteration": "Cruise"},
@@ -544,6 +543,7 @@ special_uids = [
     {"uid": "qkh8_5A_Y2WBiRQVKzjrvV0pjFc", "name": "Fall 2021 - 09",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
     {"uid": "1kHWRxSUjIru0zAaQBB1wz_xUOe", "name": "Fall 2021 - 10",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
     {"uid": "UtEetwBp3t5PxK2tlc59WXzj8Cf", "name": "Fall 2021 - 11",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
+    {"uid": "ru99q3ft_HMZMZo8bio5bGI6uTe", "name": "Fall 2021 - 13",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
     {"uid": "YjsLl7gR2_dvCebFUCW67Mdb3al", "name": "Fall 2021 - 16",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
     {"uid": "n0xktqGhqmAfqCfqV_8hidDjHLk", "name": "Fall 2021 - 24",     "season": "Fall",      "year": "2021", "alteration": "No-Steer"},
     {"uid": "fEgu6l1d5fQIzQfcQssdei4jbKk", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "alteration": "No-Steer"},

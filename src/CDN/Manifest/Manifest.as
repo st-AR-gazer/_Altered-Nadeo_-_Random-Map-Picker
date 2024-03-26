@@ -5,7 +5,9 @@ void ManifestCheck() {
 }
 
 string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
-// string manifestUrlTEST = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json";
+// string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/Test-Manifest-All-Instalations-STAR.json";
+// string manifestUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/manifest/Test-Manifest-All-Instalations-Manual.json";
+
 // string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
 
 void FetchManifest() {
