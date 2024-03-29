@@ -129,8 +129,11 @@ alterations_dict = {
     "[Rally]": ["[Rally]", "RallyCar", "CarRally"],
     "[Rally] Carswitch": ["Rallycarswitch"],
     "[Rally] CP1 is End": ["[Rally] CP1 is End", "RallyCar CP1 is End", "Rally CP1-End", "Rally CP1End", "Rally CP1 Ends", "Rally Cp1 is End"],
+    "[Rally] Icy": ["Icy [Rally]", "[Rally] Icy", "Ricy"],
+    "[Rally] Underwater": ["[Rally] (UW)"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
+    
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
     "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
 
