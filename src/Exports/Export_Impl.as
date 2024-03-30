@@ -50,7 +50,7 @@
 //     byAlteration["1 Left"] = IsUsing_1Left;
 //     byAlteration["1 Right"] = IsUsing_1Right;
 //     byAlteration["1 Up"] = IsUsing_1Up;
-//     byAlteration["2D"] = IsUsing_2D;
+//     byAlteration["2D"] = IsUsing_Flat_2D;
 //     byAlteration["2 Up"] = IsUsing_2Up;
 //     byAlteration["A08"] = IsUsing_A08;
 //     byAlteration["Antibooster"] = IsUsing_Antibooster;
@@ -60,7 +60,7 @@
 //     byAlteration["Better Reverse"] = IsUsing_Better_Reverse;
 //     byAlteration["Blind"] = IsUsing_Blind;
 //     byAlteration["Bobsleigh"] = IsUsing_Bobsleigh;
-//     byAlteration["Boomerang / There'N'Back"] = IsUsing_Boomerang_There_and_Back;
+//     byAlteration["Boomerang / There'N'Back"] = IsUsing_There_and_Back_Boomerang;
 //     byAlteration["Boosterless"] = IsUsing_Boosterless;
 //     byAlteration["Broken"] = IsUsing_Broken;
 //     byAlteration["Bumper"] = IsUsing_Bumper;
@@ -73,7 +73,7 @@
 //     byAlteration["Checkpointless"] = IsUsing_Checkpointless;
 //     byAlteration["Checkpointless Reverse"] = IsUsing_Checkpointless_Reverse;
 //     byAlteration["Cleaned"] = IsUsing_Cleaned;
-//     byAlteration["Colors Combined"] = IsUsing_Colors_Combined;
+//     byAlteration["Colors Combined"] = IsUsing_Colours_Combined;
 //     byAlteration["Cruise"] = IsUsing_Cruise;
 //     byAlteration["Dirt"] = IsUsing_Dirt;
 //     byAlteration["Earthquake"] = IsUsing_Earthquake;
@@ -106,10 +106,10 @@
 //     byAlteration["Mixed"] = IsUsing_Mixed;
 //     byAlteration["Ngolo / Cacti"] = IsUsing_Ngolo_Cacti;
 //     byAlteration["No-Steer"] = IsUsing_No_Steer;
-//     byAlteration["No-brakes"] = IsUsing_No_brakes;
+//     byAlteration["No-brakes"] = IsUsing_No_Brakes;
 //     byAlteration["No-cut"] = IsUsing_No_cut;
-//     byAlteration["No-grip"] = IsUsing_No_grip;
-//     byAlteration["No gear 5"] = IsUsing_No_gear_5;
+//     byAlteration["No-grip"] = IsUsing_No_Grip;
+//     byAlteration["No gear 5"] = IsUsing_No_Gear_5;
 //     byAlteration["Penalty"] = IsUsing_Penalty;
 //     byAlteration["Pipe"] = IsUsing_Pipe;
 //     byAlteration["Plastic"] = IsUsing_Plastic;
@@ -236,7 +236,7 @@
 // bool Set1Left(bool value)                  { if (value) { IsUsing_1Left = true; }                        else (!value); { IsUsing_1Left = false; }                        return IsUsing_1Left; }
 // bool Set1Right(bool value)                 { if (value) { IsUsing_1Right = true; }                       else (!value); { IsUsing_1Right = false; }                       return IsUsing_1Right; }
 // bool Set1Up(bool value)                    { if (value) { IsUsing_1Up = true; }                          else (!value); { IsUsing_1Up = false; }                          return IsUsing_1Up; }
-// bool Set2D(bool value)                     { if (value) { IsUsing_2D = true; }                           else (!value); { IsUsing_2D = false; }                           return IsUsing_2D; }
+// bool Set2D(bool value)                     { if (value) { IsUsing_Flat_2D = true; }                           else (!value); { IsUsing_Flat_2D = false; }                           return IsUsing_Flat_2D; }
 // bool Set2Up(bool value)                    { if (value) { IsUsing_2Up = true; }                          else (!value); { IsUsing_2Up = false; }                          return IsUsing_2Up; }
 // bool SetA08(bool value)                    { if (value) { IsUsing_A08 = true; }                          else (!value); { IsUsing_A08 = false; }                          return IsUsing_A08; }
 // bool SetAntibooster(bool value)            { if (value) { IsUsing_Antibooster = true; }                  else (!value); { IsUsing_Antibooster = false; }                  return IsUsing_Antibooster; }
@@ -246,7 +246,7 @@
 // bool SetBetter_Reverse(bool value)         { if (value) { IsUsing_Better_Reverse = true; }               else (!value); { IsUsing_Better_Reverse = false; }               return IsUsing_Better_Reverse; }
 // bool SetBlind(bool value)                  { if (value) { IsUsing_Blind = true; }                        else (!value); { IsUsing_Blind = false; }                        return IsUsing_Blind; }
 // bool SetBobsleigh(bool value)              { if (value) { IsUsing_Bobsleigh = true; }                    else (!value); { IsUsing_Bobsleigh = false; }                    return IsUsing_Bobsleigh; }
-// bool SetBoomerangThereAndBack(bool value)  { if (value) { IsUsing_Boomerang_There_and_Back = true; }     else (!value); { IsUsing_Boomerang_There_and_Back = false; }     return IsUsing_Boomerang_There_and_Back; }
+// bool SetBoomerangThereAndBack(bool value)  { if (value) { IsUsing_There_and_Back_Boomerang = true; }     else (!value); { IsUsing_There_and_Back_Boomerang = false; }     return IsUsing_There_and_Back_Boomerang; }
 // bool SetBoosterless(bool value)            { if (value) { IsUsing_Boosterless = true; }                  else (!value); { IsUsing_Boosterless = false; }                  return IsUsing_Boosterless; }
 // bool SetBroken(bool value)                 { if (value) { IsUsing_Broken = true; }                       else (!value); { IsUsing_Broken = false; }                       return IsUsing_Broken; }
 // bool SetBumper(bool value)                 { if (value) { IsUsing_Bumper = true; }                       else (!value); { IsUsing_Bumper = false; }                       return IsUsing_Bumper; }
@@ -259,7 +259,7 @@
 // bool SetCheckpointless(bool value)         { if (value) { IsUsing_Checkpointless = true; }               else (!value); { IsUsing_Checkpointless = false; }               return IsUsing_Checkpointless; }
 // bool SetCheckpointless_Reverse(bool value) { if (value) { IsUsing_Checkpointless_Reverse = true; }       else (!value); { IsUsing_Checkpointless_Reverse = false; }       return IsUsing_Checkpointless_Reverse; }
 // bool SetCleaned(bool value)                { if (value) { IsUsing_Cleaned = true; }                      else (!value); { IsUsing_Cleaned = false; }                      return IsUsing_Cleaned; }
-// bool SetColorsCombined(bool value)         { if (value) { IsUsing_Colors_Combined = true; }              else (!value); { IsUsing_Colors_Combined = false; }              return IsUsing_Colors_Combined; }
+// bool SetColorsCombined(bool value)         { if (value) { IsUsing_Colours_Combined = true; }              else (!value); { IsUsing_Colours_Combined = false; }              return IsUsing_Colours_Combined; }
 // bool SetCruise(bool value)                 { if (value) { IsUsing_Cruise = true; }                       else (!value); { IsUsing_Cruise = false; }                       return IsUsing_Cruise; }
 // bool SetDirt(bool value)                   { if (value) { IsUsing_Dirt = true; }                         else (!value); { IsUsing_Dirt = false; }                         return IsUsing_Dirt; }
 // bool SetEarthquake(bool value)             { if (value) { IsUsing_Earthquake = true; }                   else (!value); { IsUsing_Earthquake = false; }                   return IsUsing_Earthquake; }
@@ -292,10 +292,10 @@
 // bool SetMixed(bool value)                  { if (value) { IsUsing_Mixed = true; }                        else (!value); { IsUsing_Mixed = false; }                        return IsUsing_Mixed; }
 // bool SetNgolo_Cacti(bool value)            { if (value) { IsUsing_Ngolo_Cacti = true; }                  else (!value); { IsUsing_Ngolo_Cacti = false; }                  return IsUsing_Ngolo_Cacti; }
 // bool SetNoSteer(bool value)                { if (value) { IsUsing_No_Steer = true; }                     else (!value); { IsUsing_No_Steer = false; }                     return IsUsing_No_Steer; }
-// bool SetNoBrakes(bool value)               { if (value) { IsUsing_No_brakes = true; }                    else (!value); { IsUsing_No_brakes = false; }                    return IsUsing_No_brakes; }
+// bool SetNoBrakes(bool value)               { if (value) { IsUsing_No_Brakes = true; }                    else (!value); { IsUsing_No_Brakes = false; }                    return IsUsing_No_Brakes; }
 // bool SetNoCut(bool value)                  { if (value) { IsUsing_No_cut = true; }                       else (!value); { IsUsing_No_cut = false; }                       return IsUsing_No_cut; }
-// bool SetNoGrip(bool value)                 { if (value) { IsUsing_No_grip = true; }                      else (!value); { IsUsing_No_grip = false; }                      return IsUsing_No_grip; }
-// bool SetNoGear5(bool value)                { if (value) { IsUsing_No_gear_5 = true; }                    else (!value); { IsUsing_No_gear_5 = false; }                    return IsUsing_No_gear_5; }
+// bool SetNoGrip(bool value)                 { if (value) { IsUsing_No_Grip = true; }                      else (!value); { IsUsing_No_Grip = false; }                      return IsUsing_No_Grip; }
+// bool SetNoGear5(bool value)                { if (value) { IsUsing_No_Gear_5 = true; }                    else (!value); { IsUsing_No_Gear_5 = false; }                    return IsUsing_No_Gear_5; }
 // bool SetPenalty(bool value)                { if (value) { IsUsing_Penalty = true; }                      else (!value); { IsUsing_Penalty = false; }                      return IsUsing_Penalty; }
 // bool SetPipe(bool value)                   { if (value) { IsUsing_Pipe = true; }                         else (!value); { IsUsing_Pipe = false; }                         return IsUsing_Pipe; }
 // bool SetPlastic(bool value)                { if (value) { IsUsing_Plastic = true; }                      else (!value); { IsUsing_Plastic = false; }                      return IsUsing_Plastic; }

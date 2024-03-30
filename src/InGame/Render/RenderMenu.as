@@ -2,14 +2,8 @@ int g_lineCount;
 
 void RenderMenu() {
     int lineCount = g_lineCount - 1;
-    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Load New Altered Map", "There are " + lineCount + " possible maps!")) {
-        if (useStorageObjectOverUID) {
-            LoadMapFromStorageObject();
-        } else {
-            LoadMapFromUID();
-        }
-    }
-    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Open Settings")) {
+    
+    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Random " + ColorizeString("Altered") + "\\$z Map Settings", "There are " + lineCount + " possible maps!")) {
         if (showInterface) {
             showInterface = false;
         } else {
@@ -34,14 +28,3 @@ int GetLineCount(string filePath) {
     
     return lineCount;
 }
-
-/*
-void RenderMenu() {
-    if (UI::MenuItem("Criminal")) {
-        placeholder();
-    }
-    if (UI::MenuItem("Scum")) {
-        placeholder2();
-    }
-}
-*/

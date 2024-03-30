@@ -1,5 +1,5 @@
-[Setting category="General" name="Deselect All Settings"]
-bool deselectAllSettings = false;
+// [Setting category="General" name="Deselect All Settings"]
+// bool deselectAllSettings = false;
 
 void DeselectAllSettings() {
     IsUsing_OnlyWinterMaps = false;
@@ -52,7 +52,7 @@ void DeselectAllSettings() {
     IsUsing_1Left = false;
     IsUsing_1Right = false;
     IsUsing_1Up = false;
-    IsUsing_2D = false;
+    IsUsing_Flat_2D = false;
     IsUsing_2Up = false;
     IsUsing_A08 = false;
     IsUsing_Antibooster = false;
@@ -62,7 +62,7 @@ void DeselectAllSettings() {
     IsUsing_Better_Reverse = false;
     IsUsing_Blind = false;
     IsUsing_Bobsleigh = false;
-    IsUsing_Boomerang_There_and_Back = false;
+    IsUsing_There_and_Back_Boomerang = false;
     IsUsing_Boosterless = false;
     IsUsing_Broken = false;
     IsUsing_Bumper = false;
@@ -75,7 +75,7 @@ void DeselectAllSettings() {
     IsUsing_Checkpointless = false;
     IsUsing_Checkpointless_Reverse = false;
     IsUsing_Cleaned = false;
-    IsUsing_Colors_Combined = false;
+    IsUsing_Colours_Combined = false;
     IsUsing_Cruise = false;
     IsUsing_Dirt = false;
     IsUsing_Earthquake = false;
@@ -108,10 +108,10 @@ void DeselectAllSettings() {
     IsUsing_Mixed = false;
     IsUsing_Ngolo_Cacti = false;
     IsUsing_No_Steer = false;
-    IsUsing_No_brakes = false;
+    IsUsing_No_Brakes = false;
     IsUsing_No_cut = false;
-    IsUsing_No_grip = false;
-    IsUsing_No_gear_5 = false;
+    IsUsing_No_Grip = false;
+    IsUsing_No_Gear_5 = false;
     IsUsing_Penalty = false;
     IsUsing_Pipe = false;
     IsUsing_Plastic = false;

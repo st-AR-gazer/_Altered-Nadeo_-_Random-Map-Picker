@@ -388,14 +388,14 @@ void RenderEffects() {
     newValue = UI::Checkbox('Glider', IsUsing_Glider);
     if (newValue != IsUsing_Glider) { IsUsing_Glider = newValue; }
     
-    newValue = UI::Checkbox('No-Brake', IsUsing_No_brakes);
-    if (newValue != IsUsing_No_brakes) { IsUsing_No_brakes = newValue; }
+    newValue = UI::Checkbox('No-Brake', IsUsing_No_Brakes);
+    if (newValue != IsUsing_No_Brakes) { IsUsing_No_Brakes = newValue; }
 
     newValue = UI::Checkbox('No-Effect', IsUsing_Effectless);
     if (newValue != IsUsing_Effectless) { IsUsing_Effectless = newValue; }
     
-    newValue = UI::Checkbox('No-Grip', IsUsing_No_grip);
-    if (newValue != IsUsing_No_grip) { IsUsing_No_grip = newValue; }
+    newValue = UI::Checkbox('No-Grip', IsUsing_No_Grip);
+    if (newValue != IsUsing_No_Grip) { IsUsing_No_Grip = newValue; }
     
     newValue = UI::Checkbox('No-Steer', IsUsing_No_Steer);
     if (newValue != IsUsing_No_Steer) { IsUsing_No_Steer = newValue; }
@@ -457,8 +457,8 @@ void RenderFinishLocation() {
     newValue = UI::Checkbox('Manslaoughter', IsUsing_Manslaughter);
     if (newValue != IsUsing_Manslaughter) { IsUsing_Manslaughter = newValue; }
 
-    newValue = UI::Checkbox('No-Gear-5', IsUsing_No_gear_5);
-    if (newValue != IsUsing_No_gear_5) { IsUsing_No_gear_5 = newValue; }
+    newValue = UI::Checkbox('No-Gear-5', IsUsing_No_Gear_5);
+    if (newValue != IsUsing_No_Gear_5) { IsUsing_No_Gear_5 = newValue; }
 
     newValue = UI::Checkbox('Podium', IsUsing_Podium);
     if (newValue != IsUsing_Podium) { IsUsing_Podium = newValue; }
@@ -478,8 +478,8 @@ void RenderFinishLocation() {
     newValue = UI::Checkbox('Sky is the Finish', IsUsing_Sky_is_the_Finish);
     if (newValue != IsUsing_Sky_is_the_Finish) { IsUsing_Sky_is_the_Finish = newValue; }
 
-    newValue = UI::Checkbox('There and Back', IsUsing_Boomerang_There_and_Back);
-    if (newValue != IsUsing_Boomerang_There_and_Back) { IsUsing_Boomerang_There_and_Back = newValue; }
+    newValue = UI::Checkbox('There and Back', IsUsing_There_and_Back_Boomerang);
+    if (newValue != IsUsing_There_and_Back_Boomerang) { IsUsing_There_and_Back_Boomerang = newValue; }
 
     newValue = UI::Checkbox('YEP-Tree Puzzle', IsUsing_YEP_Tree_Puzzle);
     if (newValue != IsUsing_YEP_Tree_Puzzle) { IsUsing_YEP_Tree_Puzzle = newValue; }
@@ -592,8 +592,8 @@ void RenderAlterationalOther() {
     newValue = UI::Checkbox('XX-But', IsUsing_XX_But);
     if (newValue != IsUsing_XX_But) { IsUsing_XX_But = newValue; }
     
-    newValue = UI::Checkbox('Flat / 2D', IsUsing_2D);
-    if (newValue != IsUsing_2D) { IsUsing_2D = newValue; }
+    newValue = UI::Checkbox('Flat / 2D', IsUsing_Flat_2D);
+    if (newValue != IsUsing_Flat_2D) { IsUsing_Flat_2D = newValue; }
     
     newValue = UI::Checkbox('a08', IsUsing_A08);
     if (newValue != IsUsing_A08) { IsUsing_A08 = newValue; }
@@ -628,8 +628,8 @@ void RenderAlterationalOther() {
     newValue = UI::Checkbox('Cleaned', IsUsing_Cleaned);
     if (newValue != IsUsing_Cleaned) { IsUsing_Cleaned = newValue; }
     
-    newValue = UI::Checkbox('Colours Combined', IsUsing_Colors_Combined);
-    if (newValue != IsUsing_Colors_Combined) { IsUsing_Colors_Combined = newValue; }
+    newValue = UI::Checkbox('Colours Combined', IsUsing_Colours_Combined);
+    if (newValue != IsUsing_Colours_Combined) { IsUsing_Colours_Combined = newValue; }
     
     newValue = UI::Checkbox('CP Boost Swap', IsUsing_CP_Boost);
     if (newValue != IsUsing_CP_Boost) { IsUsing_CP_Boost = newValue; }
