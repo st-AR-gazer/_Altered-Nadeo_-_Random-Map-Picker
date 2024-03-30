@@ -1,16 +1,3 @@
-void DeselectAllAlterations() {
-    DeselectAlteredSurface();
-    DeselectAlteredEffects();
-    DeselectAlteredFinishLocation();
-    DeselectAlteredEnviroments();
-    DeselectAlteredMulti();
-    DeseletAlteredOther();
-    
-    IsUsing_TMGL_Easy = false;
-    IsUsing__AllOfficialCompetitions = false;
-    IsUsing_AllTOTD = false;
-}
-
 void DeselectAlteredSurface() {
     IsUsing_Dirt = false;
     IsUsing_Fast_Magnet = false;
@@ -106,7 +93,7 @@ void DeselectAlteredMulti() {
     IsUsing_YEET_Reverse = false;
 }
 
-void DeseletAlteredOther() {
+void DeselectAlteredOther() {
     IsUsing_XX_But = false;
     IsUsing_Flat_2D = false;
     IsUsing_A08 = false;
@@ -119,7 +106,7 @@ void DeseletAlteredOther() {
     IsUsing_Ngolo_Cacti = false;
     IsUsing_Checkpoin_t = false;
     IsUsing_Cleaned = false;
-    IsUsing_Colors_Combined = false;
+    IsUsing_Colours_Combined = false;
     IsUsing_CP_Boost = false;
     IsUsing_CP1_Kept = false;
     IsUsing_CPfull = false;
@@ -149,10 +136,7 @@ void DeseletAlteredOther() {
 }
 
 void DeselectAlteredExtraCampaigns() {
-    IsUsing_Trainig = false;
     IsUsing_TMGL_Easy = false;
     IsUsing__AllOfficialCompetitions = false;
-    IsUsing_AllOfficialCompetitions = false;
     IsUsing_OfficialNadeo = false;
-    IsUsing_AllTOTD = false;
 }

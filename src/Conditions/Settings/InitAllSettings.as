@@ -23,6 +23,9 @@ bool IsUsing_Magnet = false;
 [Setting category="Alteration" name="Mixed"]
 bool IsUsing_Mixed = false;
 
+[Setting category="Alteration" name="Better Mixed"] // Not in the discord (in mixed)
+bool IsUsing_Better_Mixed = false;
+
 [Setting category="Alteration" name="Penalty"]
 bool IsUsing_Penalty = false;
 
@@ -32,6 +35,9 @@ bool IsUsing_Plastic = false;
 [Setting category="Alteration" name="Road"]
 bool IsUsing_Road = false;
 
+[Setting category="Alteration" name="Road Dirt"] // Not in the discord (in dirt)
+bool IsUsing_Road_Dirt = false;
+
 [Setting category="Alteration" name="Wood"]
 bool IsUsing_Wood = false;
 
@@ -40,6 +46,9 @@ bool IsUsing_Bobsleigh = false;
 
 [Setting category="Alteration" name="Pipe"]
 bool IsUsing_Pipe = false;
+
+[Setting category="Alteration" name="Platform"] // Not in the discord (in road (I think xdd))
+bool IsUsing_Platform = false;
 
 [Setting category="Alteration" name="Sausage"]
 bool IsUsing_Sausage = false;
@@ -211,6 +220,9 @@ bool IsUsing_Rally_Icy = false;
 [Setting category="Alteration" name="Checkpointless Reverse"]
 bool IsUsing_Checkpointless_Reverse = false;
 
+[Setting category="Alteration" name="Ice Reactor"] // Not in the discord (in Training (maybe icy too))
+bool IsUsing_Icy_Reactor = false;
+
 [Setting category="Alteration" name="Ice Reverse"]
 bool IsUsing_Ice_Reverse = false;
 
@@ -288,9 +300,6 @@ bool IsUsing_Broken = false;
 [Setting category="Alteration" name="Bumper"]
 bool IsUsing_Bumper = false;
 
-[Setting category="Alteration" name="Ngolo / Cacti"]
-bool IsUsing_Ngolo_Cacti = false;
-
 [Setting category="Alteration" name="Checkpoin't"]
 bool IsUsing_Checkpoin_t = false;
 
@@ -342,6 +351,12 @@ bool IsUsing_Mini_RPG = false;
 [Setting category="Alteration" name="Mirrored"]
 bool IsUsing_Mirrored = false;
 
+[Setting category="Alteration" name="Ngolo / Cacti"]
+bool IsUsing_Ngolo_Cacti = false;
+
+[Setting category="Alteration" name="No Cut"] // Not in the discord (In Training)
+bool IsUsing_No_Cut = false;
+
 [Setting category="Alteration" name="Pool Hunters"]
 bool IsUsing_Pool_Hunters = false;
 
@@ -350,6 +365,9 @@ bool IsUsing_Random = false;
 
 [Setting category="Alteration" name="Ring CP"]
 bool IsUsing_Ring_CP = false;
+
+[Setting category="Alteration" name="Scuba Diving"] // Not in the discord (In Training)
+bool IsUsing_Scuba_Diving = false;
 
 [Setting category="Alteration" name="Sections Joined"]
 bool IsUsing_Sections_joined = false;
@@ -363,6 +381,9 @@ bool IsUsing_Speedlimit = false;
 [Setting category="Alteration" name="Start 1 Down"]
 bool IsUsing_Start_1_Down = false;
 
+[Setting category="Alteration" name="Staricase"] // Not in the discord (In Training)
+bool IsUsing_Staircase = false;
+
 [Setting category="Alteration" name="Supersized"]
 bool IsUsing_Supersized = false;
 
@@ -374,6 +395,9 @@ bool IsUsing_Symmetrical = false;
 
 [Setting category="Alteration" name="Tilted"]
 bool IsUsing_Tilted = false;
+
+[Setting category="Alteration" name="Wallmart Mini"] // Not in the discord (In Training)
+bool IsUsing_Walmart_Mini = false;
 
 [Setting category="Alteration" name="YEET"]
 bool IsUsing_YEET = false;
@@ -469,5 +493,23 @@ bool IsUsing_Spring2025Maps = false;
 [Setting category="Alteration" name="Summer 2025"]
 bool IsUsing_Summer2025Maps = false;
 
+// Not on the discord
+
+[Setting category="Alteration" name="Hard"] // No clue where it is since it doesn't seem like it's tracked anywhere...
+bool IsUsing_Hard = false;                  // I have to get a WR to check where it is :xdd:
+
+
+
+
 
 // Other
+
+[Setting category="Alteration" name="Snow Discovery"]
+bool IsUsing_AllSnowDiscovery = false;
+
+[Setting category="Alteration" name="Rally Discovery"]
+bool IsUsing_AllRallyDiscovery = false;
+
+[Setting category="Alteration" name="Desert Discovery"]
+bool IsUsing_AllDesertDiscovery = false;
+

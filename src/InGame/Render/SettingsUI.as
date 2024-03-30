@@ -391,8 +391,8 @@ void RenderEffects() {
     newValue = UI::Checkbox('No-Brake', IsUsing_No_Brakes);
     if (newValue != IsUsing_No_Brakes) { IsUsing_No_Brakes = newValue; }
 
-    newValue = UI::Checkbox('No-Effect', IsUsing_Effectless);
-    if (newValue != IsUsing_Effectless) { IsUsing_Effectless = newValue; }
+    newValue = UI::Checkbox('No-Effect', IsUsing_No_Effects);
+    if (newValue != IsUsing_No_Effects) { IsUsing_No_Effects = newValue; }
     
     newValue = UI::Checkbox('No-Grip', IsUsing_No_Grip);
     if (newValue != IsUsing_No_Grip) { IsUsing_No_Grip = newValue; }

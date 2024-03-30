@@ -24,7 +24,7 @@ void Main() {
     log("Manifest check completed", LogLevel::InfoG, 24);
     sleep(1000);
     
-    if (shouldDownloadNewFiles) DownloadFiles();
+    if (shouldDownloadNewFiles) DownloadConsolidatedMapFile();
     log("CDN check completed for new file", LogLevel::InfoG, 28);
 
     sleep(1000);

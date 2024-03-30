@@ -1,0 +1,1 @@
+Only use DeselectOrSelectAllAlterations(bool shouldSelect), true = everything is selected, false = everything is deselected

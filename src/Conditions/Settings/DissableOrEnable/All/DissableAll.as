@@ -2,10 +2,10 @@
 // bool deselectAllSettings = false;
 
 void DeselectAllSettings() {
-    IsUsing_OnlyWinterMaps = false;
-    IsUsing_OnlySpringMaps = false;
-    IsUsing_OnlySummerMaps = false;
-    IsUsing_OnlyFallMaps = false;
+    // IsUsing_OnlyWinterMaps = false;
+    // IsUsing_OnlySpringMaps = false;
+    // IsUsing_OnlySummerMaps = false;
+    // IsUsing_OnlyFallMaps = false;
     
     IsUsing_Spring2020Maps = false;
     IsUsing_Summer2020Maps = false;
@@ -79,7 +79,7 @@ void DeselectAllSettings() {
     IsUsing_Cruise = false;
     IsUsing_Dirt = false;
     IsUsing_Earthquake = false;
-    IsUsing_Effectless = false;
+    IsUsing_No_Effects = false;
     IsUsing_Egocentrism = false;
     IsUsing_Fast = false;
     IsUsing_Fast_Magnet = false;
@@ -109,7 +109,7 @@ void DeselectAllSettings() {
     IsUsing_Ngolo_Cacti = false;
     IsUsing_No_Steer = false;
     IsUsing_No_Brakes = false;
-    IsUsing_No_cut = false;
+    IsUsing_No_Cut = false;
     IsUsing_No_Grip = false;
     IsUsing_No_Gear_5 = false;
     IsUsing_Penalty = false;

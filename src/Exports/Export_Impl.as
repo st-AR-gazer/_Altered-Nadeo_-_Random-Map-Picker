@@ -77,7 +77,7 @@
 //     byAlteration["Cruise"] = IsUsing_Cruise;
 //     byAlteration["Dirt"] = IsUsing_Dirt;
 //     byAlteration["Earthquake"] = IsUsing_Earthquake;
-//     byAlteration["Effectless"] = IsUsing_Effectless;
+//     byAlteration["Effectless"] = IsUsing_No_Effects;
 //     byAlteration["Egocentrism"] = IsUsing_Egocentrism;
 //     byAlteration["Fast"] = IsUsing_Fast;
 //     byAlteration["Fast Magnet"] = IsUsing_Fast_Magnet;
@@ -107,7 +107,7 @@
 //     byAlteration["Ngolo / Cacti"] = IsUsing_Ngolo_Cacti;
 //     byAlteration["No-Steer"] = IsUsing_No_Steer;
 //     byAlteration["No-brakes"] = IsUsing_No_Brakes;
-//     byAlteration["No-cut"] = IsUsing_No_cut;
+//     byAlteration["No-cut"] = IsUsing_No_Cut;
 //     byAlteration["No-grip"] = IsUsing_No_Grip;
 //     byAlteration["No gear 5"] = IsUsing_No_Gear_5;
 //     byAlteration["Penalty"] = IsUsing_Penalty;
@@ -263,7 +263,7 @@
 // bool SetCruise(bool value)                 { if (value) { IsUsing_Cruise = true; }                       else (!value); { IsUsing_Cruise = false; }                       return IsUsing_Cruise; }
 // bool SetDirt(bool value)                   { if (value) { IsUsing_Dirt = true; }                         else (!value); { IsUsing_Dirt = false; }                         return IsUsing_Dirt; }
 // bool SetEarthquake(bool value)             { if (value) { IsUsing_Earthquake = true; }                   else (!value); { IsUsing_Earthquake = false; }                   return IsUsing_Earthquake; }
-// bool SetEffectless(bool value)             { if (value) { IsUsing_Effectless = true; }                   else (!value); { IsUsing_Effectless = false; }                   return IsUsing_Effectless; }
+// bool SetEffectless(bool value)             { if (value) { IsUsing_No_Effects = true; }                   else (!value); { IsUsing_No_Effects = false; }                   return IsUsing_No_Effects; }
 // bool SetEgocentrism(bool value)            { if (value) { IsUsing_Egocentrism = true; }                  else (!value); { IsUsing_Egocentrism = false; }                  return IsUsing_Egocentrism; }
 // bool SetFast(bool value)                   { if (value) { IsUsing_Fast = true; }                         else (!value); { IsUsing_Fast = false; }                         return IsUsing_Fast; }
 // bool SetFastMagnet(bool value)             { if (value) { IsUsing_Fast_Magnet = true; }                  else (!value); { IsUsing_Fast_Magnet = false; }                  return IsUsing_Fast_Magnet; }
@@ -293,7 +293,7 @@
 // bool SetNgolo_Cacti(bool value)            { if (value) { IsUsing_Ngolo_Cacti = true; }                  else (!value); { IsUsing_Ngolo_Cacti = false; }                  return IsUsing_Ngolo_Cacti; }
 // bool SetNoSteer(bool value)                { if (value) { IsUsing_No_Steer = true; }                     else (!value); { IsUsing_No_Steer = false; }                     return IsUsing_No_Steer; }
 // bool SetNoBrakes(bool value)               { if (value) { IsUsing_No_Brakes = true; }                    else (!value); { IsUsing_No_Brakes = false; }                    return IsUsing_No_Brakes; }
-// bool SetNoCut(bool value)                  { if (value) { IsUsing_No_cut = true; }                       else (!value); { IsUsing_No_cut = false; }                       return IsUsing_No_cut; }
+// bool SetNoCut(bool value)                  { if (value) { IsUsing_No_Cut = true; }                       else (!value); { IsUsing_No_Cut = false; }                       return IsUsing_No_Cut; }
 // bool SetNoGrip(bool value)                 { if (value) { IsUsing_No_Grip = true; }                      else (!value); { IsUsing_No_Grip = false; }                      return IsUsing_No_Grip; }
 // bool SetNoGear5(bool value)                { if (value) { IsUsing_No_Gear_5 = true; }                    else (!value); { IsUsing_No_Gear_5 = false; }                    return IsUsing_No_Gear_5; }
 // bool SetPenalty(bool value)                { if (value) { IsUsing_Penalty = true; }                      else (!value); { IsUsing_Penalty = false; }                      return IsUsing_Penalty; }
