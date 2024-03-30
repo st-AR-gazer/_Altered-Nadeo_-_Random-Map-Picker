@@ -4,6 +4,8 @@ bool showInterface;
 int activeTab = 0;
 
 void RenderInterface() {
+    if (!showInterface) return;
+
     UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker Settings", showInterface, UI::WindowFlags::AlwaysAutoResize);
 
     if (UI::Button("Open Map")) { 
