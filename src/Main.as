@@ -20,11 +20,10 @@ void Main() {
     MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
     g_lineCount = GetLineCount(IO::FromStorageFolder("New-Sorting-System/ByOther/data.csv")); // Sets the linecount, to be used in rendermenu func
     
-    ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
+    FetchManifest(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
     log("Manifest check completed", LogLevel::InfoG, 24);
     sleep(1000);
     
-    if (shouldDownloadNewFiles) DownloadConsolidatedMapFile();
     log("CDN check completed for new file", LogLevel::InfoG, 28);
 
     sleep(1000);

@@ -2,7 +2,8 @@ void LoadMapFromStorageObject() {
     string mapUrl = FetchRandomMapUrl();
 
     if (mapUrl.Length == 0) {
-        log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 5); // will always be empty xdd
+        log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 5); // mapUrl will always be empty xdd
+        NotifyWarn("Failed to get map URL from storage objects. Please try and use with UID in General Alteratin settings.");
         return;
     }
 
@@ -13,21 +14,34 @@ Json::Value LoadMapsFromConsolidatedFile() {
     string filePath = IO::FromStorageFolder("Data/consolidated_maps.json");
     
     if (!IO::FileExists(filePath)) {
-        log("Consolidated map file does not exist: " + filePath, LogLevel::Error, 16);
+        log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 16);
+        
+        Json::Value dummyMap = Json::Object();
+        dummyMap["fileUrl"] = "dummy_url";
+
+        
+        Json::Value mapArray = Json::Array();
+        mapArray.Add(dummyMap);
+
+        
+        Json::ToFile(filePath, mapArray);
+
+        
+        return mapArray;
     }
     
     Json::Value maps = Json::FromFile(filePath);
-    
-    if (maps.GetType() != Json::Type::Array) {
-        log("Unexpected JSON format in: " + filePath, LogLevel::Error, 22);
-        return Json::Value();
-    }
-    
     return maps;
 }
 
 string FetchRandomMapUrl() {
-    Json::Value@ allMaps = LoadMapsFromConsolidatedFile();
+    Json::Value allMaps = LoadMapsFromConsolidatedFile();
+
+    if (allMaps.Length == 1 && allMaps[0].HasKey("fileUrl") && allMaps[0]["fileUrl"] == "dummy_url") {
+        log("Dummy map data found. No real maps available.", LogLevel::Error, 70);
+        return "";
+    }
+    
     array<Json::Value@> seasonFilteredMaps;
     array<Json::Value@> finalFilteredMaps;
 
@@ -39,8 +53,12 @@ string FetchRandomMapUrl() {
             seasonFilteredMaps.InsertLast(map);
         }
     }
-    for (uint i = 0; i < allMaps.get_Length(); ++i) {
-        @seasonFilteredMaps[i] = allMaps[i];
+    for (uint i = 0; i < allMaps.Length; ++i) {
+        Json::Value map = allMaps[i];
+        
+        if (MatchesSeasonalSettings(map)) {
+            seasonFilteredMaps.InsertLast(map);
+        }
     }
 
     // Filter 'alteration' settings
@@ -242,14 +260,14 @@ bool MatchesAlterationSettings(Json::Value map) {
 
 bool NoSeasonalSettingActive() {
     log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 244);
-    NotifyInfo("No season is selected, automatically selecting all seasons.");
+    NotifyWarn("No season is selected, automatically selecting all seasons.");
     DeselectOrSelectAllSeasons(true);
     return true;
 }
 
 bool NoAlterationSettingActive() {
     log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 251);
-    NotifyInfo("No alteration is selected, automatically selecting all alterations.");
+    NotifyWarn("No alteration is selected, automatically selecting all alterations.");
     DeselectOrSelectAllAlterations(true);
     return true;
 }

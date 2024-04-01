@@ -7,12 +7,14 @@ void DownloadConsolidatedMapFile() {
     } else {
         return;
     }
+
+    if (!shouldDownloadNewFiles) return;
     
     DownloadData(baseDataUrl + "consolidated_maps.json", "consolidated_maps.json", localSaveLocation);
     log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 12);
 
     DownloadData(baseDataUrl + "data.csv", "data.csv", localSaveLocation);
-    log("Attempted to download the data CSV file", LogLevel::Info, 15);
+    log("Attempted to download the data.csv file", LogLevel::Info, 15);
 }
 
 void DownloadData(const string &in url, const string &in fileName, const string &in localSaveLocation) {

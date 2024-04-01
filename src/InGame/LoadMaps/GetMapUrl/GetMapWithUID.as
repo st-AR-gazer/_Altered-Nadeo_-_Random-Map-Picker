@@ -2,6 +2,7 @@ const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/
 
 string globalMapUrl = "";
 bool isWaitingForUrl = false;
+bool isLoadingMapFromUID = false;
 
 void SetFirstUid() {
     string map_uid = GetRandomUID();
@@ -9,6 +10,13 @@ void SetFirstUid() {
     startnew(GetMapUrl, map_uid);
 
     globalMapUrl = tm_map_endpoint + map_uid;
+}
+
+void LoadMapFromUIDProxy() {
+    if (!isLoadingMapFromUID) {
+        isLoadingMapFromUID = true;
+        startnew(LoadMapFromUID);
+    }
 }
 
 void LoadMapFromUID() {
@@ -29,6 +37,7 @@ void LoadMapFromUID() {
     }
 
     PlayMap(globalMapUrl);
+    isLoadingMapFromUID = false;
 }
 
 void GetMapUrl(const string &in map_uid) {

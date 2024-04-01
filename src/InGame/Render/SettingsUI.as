@@ -12,7 +12,7 @@ void RenderInterface() {
         if (useStorageObjectOverUID) {
             LoadMapFromStorageObject();
         } else {
-            LoadMapFromUID();
+            LoadMapFromUIDProxy();
         }
     }
 

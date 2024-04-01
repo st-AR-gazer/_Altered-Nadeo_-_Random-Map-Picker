@@ -9,9 +9,9 @@ int g_currentInstalledVersion;
 int g_manifestID = -1;
 array<string> unUpdatedFiles;
 
-void ManifestCheck() {
-    FetchManifest();
-}
+// void ManifestCheck() {
+//     FetchManifest();
+// }
 
 void FetchManifest() {
     Net::HttpRequest req;
@@ -36,11 +36,11 @@ void ParseManifest(const string &in reqBody) {
     }
 
     g_manifestVersion = manifest["latestVersion"];
-    g_urlFromManifest = manifest["url"];
+    // g_urlFromManifest = manifest["url"];
     
-    if (manifest["id"].GetType() == Json::Type::Number) {
-        g_manifestID = manifest["id"];
-    }
+    // if (manifest["id"].GetType() == Json::Type::Number) {
+    //     g_manifestID = manifest["id"];
+    // }
 
     UpdateCurrentVersionIfDifferent(g_manifestVersion);
 }
@@ -64,7 +64,7 @@ int GetCurrentInstalledVersion() {
 }
 
 void UpdateVersionFile(const int &in latestVersion) {
-    Json::Value json = Json::Value(Json::Type::Object);
+    Json::Value json = Json::Object();
     json["latestVersion"] = latestVersion;
     Json::ToFile(pluginStorageVersionPath, json);
 }
