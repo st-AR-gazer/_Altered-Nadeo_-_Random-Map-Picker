@@ -18,6 +18,8 @@ void RenderInterface() {
 
     UI::Separator();
 
+    // Active TABS
+
     // Row 1: Main Settings
     if (UI::Button("General Settings")) activeTab = 0;
     UI::SameLine();

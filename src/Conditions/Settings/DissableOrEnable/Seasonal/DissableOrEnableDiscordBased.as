@@ -1,19 +1,15 @@
-void DeselectOrSelectAllDiscoveryCampaigns(bool shouldSelect) {
+void DeselectOrSelectAllSeasons(bool shouldSelect) {
     if (!shouldSelect) {
-        DeselectDiscoveryCampaigns();
+        DeselectWinter();
+        DeselectSpring();
+        DeselectSummer();
+        DeselectFall();
+        DeselectSeasonalOther();
     } else {
-        SelectDiscoveryCampaigns();
+        SelectWinter();
+        SelectSpring();
+        SelectSummer();
+        SelectFall();
+        SelectSeasonalOther();
     }
-}
-
-void DeselectDiscoveryCampaigns() {
-    IsUsing_AllSnowDiscovery = true;
-    IsUsing_AllRallyDiscovery = true;
-    IsUsing_AllDesertDiscovery = true;
-}
-
-void SelectDiscoveryCampaigns() {
-    IsUsing_AllSnowDiscovery = true;
-    IsUsing_AllRallyDiscovery = true;
-    IsUsing_AllDesertDiscovery = true;
 }
