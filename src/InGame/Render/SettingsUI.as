@@ -259,12 +259,6 @@ void RenderSeasonalOther() {
     newValue = UI::Checkbox('Official Nadeo Maps', IsUsing_OfficialNadeo);
     if (newValue != IsUsing_OfficialNadeo) { IsUsing_OfficialNadeo = newValue; }
     
-    newValue = UI::Checkbox('Snow Discovery', IsUsing_AllSnowDiscovery);
-    if (newValue != IsUsing_AllSnowDiscovery) { IsUsing_AllSnowDiscovery = newValue; }
-    
-    newValue = UI::Checkbox('Rally Discovery', IsUsing_AllRallyDiscovery);
-    if (newValue != IsUsing_AllRallyDiscovery) { IsUsing_AllRallyDiscovery = newValue; }
-    
     newValue = UI::Checkbox('Altered TOTD', IsUsing_AllTOTD);
     if (newValue != IsUsing_AllTOTD) { IsUsing_AllTOTD = newValue; }
     
