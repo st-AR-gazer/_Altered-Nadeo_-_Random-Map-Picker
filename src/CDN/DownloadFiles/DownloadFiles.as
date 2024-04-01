@@ -1,9 +1,11 @@
 string baseDataUrl = "http://maniacdn.net/ar_/Alt-Map-Picker/Data/";
 string localSaveLocation = IO::FromStorageFolder("Data/");
 
-void DownloadConsolidatedMapFile() {
+void DownloadDataFromCDN() {
+    g_currentInstalledVersion = GetCurrentInstalledVersion();
+
     if (g_manifestVersion != g_currentInstalledVersion) {
-        log("Manifest Version does not match local version, updating the local file with the version specified in the manifest.", LogLevel::Warn, 6);
+        log("Manifest Version " + g_manifestVersion + " does not match local version " + g_currentInstalledVersion + ", updating the local file with the version specified in the manifest.", LogLevel::Warn, 8);
     } else {
         return;
     }
@@ -11,10 +13,10 @@ void DownloadConsolidatedMapFile() {
     if (!shouldDownloadNewFiles) return;
     
     DownloadData(baseDataUrl + "consolidated_maps.json", "consolidated_maps.json", localSaveLocation);
-    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 14);
+    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 16);
 
     DownloadData(baseDataUrl + "data.csv", "data.csv", localSaveLocation);
-    log("Attempted to download the data.csv file", LogLevel::Info, 17);
+    log("Attempted to download the data.csv file", LogLevel::Info, 19);
 }
 
 void DownloadData(const string &in url, const string &in fileName, const string &in localSaveLocation) {
@@ -30,14 +32,13 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         auto data = req.String();
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
-        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 33);
+        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 35);
     }
 }
 
 void StoreDatafile(const string &in data, const string &in fileName, const string &in filePath) {
-    string directory = filePath;
-    if (!IO::FolderExists(directory)) {
-        IO::CreateFolder(directory);
+    if (!IO::FolderExists(filePath)) {
+        IO::CreateFolder(filePath);
     }
 
     string fullFilePathName = filePath + fileName;
@@ -47,5 +48,5 @@ void StoreDatafile(const string &in data, const string &in fileName, const strin
     file.Write(data);
     file.Close();
 
-    log("Data written to file: " + fullFilePathName, LogLevel::Info, 50);
+    log("Data written to file: " + fullFilePathName, LogLevel::Info, 51);
 }

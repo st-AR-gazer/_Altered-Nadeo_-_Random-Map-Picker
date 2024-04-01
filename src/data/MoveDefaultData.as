@@ -1,41 +1,39 @@
-string pluginStorageDataPath = IO::FromStorageFolder("data.csv");
-string pluginStorageDataPathNewSortingSystem = IO::FromStorageFolder("New-Sorting-System/Other-Data/data.csv");
+string pluginStorageDataPath = IO::FromStorageFolder("Data/data.csv");
 
 string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json");
-string checkFilePath = IO::FromStorageFolder("initCheck.txt"); 
+string checkFilePath = IO::FromStorageFolder("initDefaultDataCheck.txt"); 
 
 
 void MoveDefaultDataFile() {
     if (!IO::FileExists(checkFilePath) || !IO::FileExists(pluginStorageDataPath)) {
-        log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 10);
+        log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Warn, 9);
         MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPath);
-        MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPathNewSortingSystem);
         MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
-        log("Files have been moved to storage", LogLevel::Info, 14);
+        log("Files have been moved to storage", LogLevel::Info, 12);
         
-        CreateCheckFile();
-        log("initCheck file created", LogLevel::Info, 17);
+        CreateDefaultDataCheckFile();
+        log("initDefaultDataCheckFile created", LogLevel::Info, 15);
     } else {
-        log("initCheck file exists in plugin storage, not moving data", LogLevel::Info, 19);
+        log("initDefaultDataCheckFile exists in plugin storage, not moving data", LogLevel::Info, 17);
     }
 }
 
 void MoveFileToPluginStorage(const string &in originalPath, const string &in storagePath) {
     IO::FileSource originalFile(originalPath);
     string fileContents = originalFile.ReadToEnd();
-    log("Moving the file content", LogLevel::Info, 26);
-    log("The content:\n" + /*fileContents +*/ "The filecontents are not included since it clogs log... xdd...", LogLevel::Info, 27);
-    // log("The content:\n" + fileContents, LogLevel::Info, 28);
+    log("Moving the file content", LogLevel::Info, 24);
+    log("The content:\n" + /*fileContents +*/ "The filecontents are not included since it clogs log... xdd...", LogLevel::Info, 25);
+    // log("The content:\n" + fileContents, LogLevel::Info, 26);
 
     IO::File targetFile;
     targetFile.Open(storagePath, IO::FileMode::Write);
     targetFile.Write(fileContents);
     targetFile.Close();
 
-    log("Finished moving the file", LogLevel::Info, 35);
+    log("Finished moving the file", LogLevel::Info, 33);
 }
 
-void CreateCheckFile() {
+void CreateDefaultDataCheckFile() {
     IO::File checkFile;
     checkFile.Open(checkFilePath, IO::FileMode::Write);
     checkFile.Close();
@@ -44,6 +42,8 @@ void CreateCheckFile() {
 
 
 void CheckCurrentInstalledVersionType() {
+    DoesFileExist(pluginStorageVersionPath, true);
+
     IO::File file();
     file.Open(pluginStorageVersionPath, IO::FileMode::Read);
     string fileContents = file.ReadToEnd();
@@ -54,7 +54,7 @@ void CheckCurrentInstalledVersionType() {
     if (currentVersionJson.GetType() == Json::Type::Object) {
         if (currentVersionJson.HasKey("latestVersion")) {
             if (currentVersionJson["latestVersion"].GetType() == Json::Type::String) {
-                log("Your version is a string, setting it to an int by using the default 'currentInstall' in defaultData", LogLevel::Error, 57);
+                log("Your version is a string, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Error, 57);
                 MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
             }
         }

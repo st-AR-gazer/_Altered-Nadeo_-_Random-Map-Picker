@@ -9,9 +9,9 @@ int g_currentInstalledVersion;
 int g_manifestID = -1;
 array<string> unUpdatedFiles;
 
-// void ManifestCheck() {
-//     FetchManifest();
-// }
+void ManifestCheck() {
+    FetchManifest();
+}
 
 void FetchManifest() {
     Net::HttpRequest req;
@@ -49,9 +49,9 @@ void UpdateCurrentVersionIfDifferent(const int &in latestVersion) {
     int currentInstalledVersion = GetCurrentInstalledVersion();
     g_currentInstalledVersion = currentInstalledVersion;
     
-    if (currentInstalledVersion != latestVersion) {
+    if (currentInstalledVersion != latestVersion/* || !IO::FileExists("Data/consolidated_maps.json") || !IO::FileExists("Data/data.csv")*/) {
+        DownloadDataFromCDN();
         UpdateVersionFile(latestVersion);
-        DownloadConsolidatedMapFile();
     }
 }
 
