@@ -13,6 +13,7 @@ void DeselectAlteredSurface() {
     IsUsing_Bobsleigh = false;
     IsUsing_Pipe = false;
     IsUsing_Sausage = false;
+    IsUsing_Surfaceless = false;
     IsUsing_Underwater = false;
 }
 
@@ -66,6 +67,7 @@ void DeselectAlteredEnviroments() {
     IsUsing_Snow_Checkpointless = false;
     IsUsing_Snow_Icy = false;
     IsUsing_Snow_Underwater = false;
+    IsUsing_Snow_Wet_Plastic = false;
     IsUsing_Snow_Wood = false;
     IsUsing_Rally_ = false;
     IsUsing_Rally_Carswitch = false;
@@ -95,10 +97,10 @@ void DeselectAlteredMulti() {
 
 void DeselectAlteredOther() {
     IsUsing_XX_But = false;
-    IsUsing_Flat_2D = false;
     IsUsing_A08 = false;
     IsUsing_Antibooster = false;
     IsUsing_Backwards = false;
+    IsUsing_Blind = false;
     IsUsing_Boosterless = false;
     IsUsing_BOSS = false;
     IsUsing_Broken = false;
@@ -112,6 +114,8 @@ void DeselectAlteredOther() {
     IsUsing_CPfull = false;
     IsUsing_Checkpointless = false;
     IsUsing_CPLink = false;
+    IsUsing_Egocentrism = false;
+    IsUsing_Flat_2D = false;
     IsUsing_Got_Rotated_CPs_Rotated_90__ = false;
     IsUsing_Earthquake = false;
     IsUsing_Fast = false;
@@ -139,4 +143,8 @@ void DeselectAlteredExtraCampaigns() {
     IsUsing_TMGL_Easy = false;
     IsUsing__AllOfficialCompetitions = false;
     IsUsing_OfficialNadeo = false;
+
+    IsUsing_AllTOTD = false;
+    IsUsing_Trainig = false;
+    IsUsing_AllOfficialCompetitions = false;
 }

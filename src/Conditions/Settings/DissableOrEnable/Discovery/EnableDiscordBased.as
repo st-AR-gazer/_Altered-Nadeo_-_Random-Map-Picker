@@ -7,6 +7,7 @@ void SelectWinter() {
 }
 
 void SelectSpring() {
+    IsUsing_Spring2020Maps = true;
     IsUsing_Spring2021Maps = true;
     IsUsing_Spring2022Maps = true;
     IsUsing_Spring2023Maps = true;
@@ -15,6 +16,7 @@ void SelectSpring() {
 }
 
 void SelectSummer() {
+    IsUsing_Summer2020Maps = true;
     IsUsing_Summer2021Maps = true;
     IsUsing_Summer2022Maps = true;
     IsUsing_Summer2023Maps = true;
@@ -23,6 +25,7 @@ void SelectSummer() {
 }
 
 void SelectFall() {
+    IsUsing_Fall2020Maps = true;
     IsUsing_Fall2021Maps = true;
     IsUsing_Fall2022Maps = true;
     IsUsing_Fall2023Maps = true;
@@ -30,8 +33,11 @@ void SelectFall() {
 }
 
 void SelectSeasonalOther() {
+    IsUsing_OfficialNadeo = true; // Not sorted in BySeason, but makes sense to include here
+    IsUsing__AllOfficialCompetitions = true; // Not sorted in BySeason, but makes sense to include here
+
     IsUsing_Trainig = true;
-    IsUsing_AllOfficialCompetitions = true;
+    // IsUsing_AllOfficialCompetitions = true; // Sorted in ByAlteration
     IsUsing_AllTOTD = true;
     
     IsUsing_AllSnowDiscovery = true;

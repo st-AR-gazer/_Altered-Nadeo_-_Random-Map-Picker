@@ -41,23 +41,25 @@ void RenderInterface() {
     if (UI::Button("Fall")) activeTab = 5;
     UI::SameLine();
     if (UI::Button("Seasonal Other")) activeTab = 6;
+    UI::SameLine();
+    if (UI::Button("Discovery Campaigns")) activeTab = 7;
 
     UI::Separator();
 
     // Row 3: Alterational Alterations
-    if (UI::Button("Surfaces")) activeTab = 7;
+    if (UI::Button("Surfaces")) activeTab = 8;
     UI::SameLine();
-    if (UI::Button("Effects")) activeTab = 8;
+    if (UI::Button("Effects")) activeTab = 9;
     UI::SameLine();
-    if (UI::Button("Finish Location")) activeTab = 9;
+    if (UI::Button("Finish Location")) activeTab = 10;
     UI::SameLine();
-    if (UI::Button("Enviroments")) activeTab = 10;
+    if (UI::Button("Enviroments")) activeTab = 11;
     UI::SameLine();
-    if (UI::Button("Multi")) activeTab = 11;
+    if (UI::Button("Multi")) activeTab = 12;
     UI::SameLine();
-    if (UI::Button("Other")) activeTab = 12;
+    if (UI::Button("Other")) activeTab = 13;
     UI::SameLine();
-    if (UI::Button("Extra")) activeTab = 13;
+    if (UI::Button("Extra")) activeTab = 14;
 
 
     switch (activeTab) {
@@ -83,24 +85,27 @@ void RenderInterface() {
             RenderSeasonalOther();
             break;
         case 7:
-            RenderSurfaces();
+            RenderDiscoveryCampaigns();
             break;
         case 8:
-            RenderEffects();
+            RenderSurfaces();
             break;
         case 9:
-            RenderFinishLocation();
+            RenderEffects();
             break;
         case 10:
-            RenderEnviroments();
+            RenderFinishLocation();
             break;
         case 11:
-            RenderMulti();
+            RenderEnviroments();
             break;
         case 12:
-            RenderAlterationalOther();
+            RenderMulti();
             break;
         case 13:
+            RenderAlterationalOther();
+            break;
+        case 14:
             RenderExtra();
             break;
         
@@ -163,21 +168,9 @@ void RenderWinter() {
     newValue = UI::Checkbox('Winter 2025', IsUsing_Winter2025Maps);
     if (newValue != IsUsing_Winter2025Maps) { IsUsing_Winter2025Maps = newValue; }
 
-    if (UI::Button("Enable All winter maps settings")) {
-        IsUsing_Winter2021Maps = true;
-        IsUsing_Winter2022Maps = true;
-        IsUsing_Winter2023Maps = true;
-        IsUsing_Winter2024Maps = true;
-        IsUsing_Winter2025Maps = true;
-    }
+    if (UI::Button("Enable All winter maps settings")) { SelectWinter(); }
 
-    if (UI::Button("Disable All winter maps settings")) {
-        IsUsing_Winter2021Maps = false;
-        IsUsing_Winter2022Maps = false;
-        IsUsing_Winter2023Maps = false;
-        IsUsing_Winter2024Maps = false;
-        IsUsing_Winter2025Maps = false;
-    }
+    if (UI::Button("Disable All winter maps settings")) { DeselectWinter(); }
 }
 
 void RenderSpring() { 
@@ -203,23 +196,9 @@ void RenderSpring() {
     newValue = UI::Checkbox('Spring 2025', IsUsing_Spring2025Maps);
     if (newValue != IsUsing_Spring2025Maps) { IsUsing_Spring2025Maps = newValue; }
 
-    if (UI::Button("Enable All spring maps settings")) {
-        IsUsing_Spring2020Maps = true;
-        IsUsing_Spring2021Maps = true;
-        IsUsing_Spring2022Maps = true;
-        IsUsing_Spring2023Maps = true;
-        IsUsing_Spring2024Maps = true;
-        IsUsing_Spring2025Maps = true;
-    }
+    if (UI::Button("Enable All spring maps settings")) { SelectSpring(); }
 
-    if (UI::Button("Disable All spring maps settings")) {
-        IsUsing_Spring2020Maps = false;
-        IsUsing_Spring2021Maps = false;
-        IsUsing_Spring2022Maps = false;
-        IsUsing_Spring2023Maps = false;
-        IsUsing_Spring2024Maps = false;
-        IsUsing_Spring2025Maps = false;
-    }
+    if (UI::Button("Disable All spring maps settings")) { DeselectSpring(); }
 }
 
 void RenderSummer() { 
@@ -242,21 +221,9 @@ void RenderSummer() {
     newValue = UI::Checkbox('Summer 2024', IsUsing_Summer2024Maps);
     if (newValue != IsUsing_Summer2024Maps) { IsUsing_Summer2024Maps = newValue; }
 
-    if (UI::Button("Enable All summer maps settings")) {
-        IsUsing_Summer2020Maps = true;
-        IsUsing_Summer2021Maps = true;
-        IsUsing_Summer2022Maps = true;
-        IsUsing_Summer2023Maps = true;
-        IsUsing_Summer2024Maps = true;
-    }
+    if (UI::Button("Enable All summer maps settings")) { SelectSummer(); }
 
-    if (UI::Button("Disable All summer maps settings")) {
-        IsUsing_Summer2020Maps = false;
-        IsUsing_Summer2021Maps = false;
-        IsUsing_Summer2022Maps = false;
-        IsUsing_Summer2023Maps = false;
-        IsUsing_Summer2024Maps = false;
-    }
+    if (UI::Button("Disable All summer maps settings")) { DeselectSummer(); }
 }
 
 void RenderFall() { 
@@ -279,21 +246,9 @@ void RenderFall() {
     newValue = UI::Checkbox('Fall 2024', IsUsing_Fall2024Maps);
     if (newValue != IsUsing_Fall2024Maps) { IsUsing_Fall2024Maps = newValue; }
 
-    if (UI::Button("Enable All fall maps settings")) {
-        IsUsing_Fall2020Maps = true;
-        IsUsing_Fall2021Maps = true;
-        IsUsing_Fall2022Maps = true;
-        IsUsing_Fall2023Maps = true;
-        IsUsing_Fall2024Maps = true;
-    }
+    if (UI::Button("Enable All fall maps settings")) { SelectFall(); }
 
-    if (UI::Button("Disable All fall maps settings")) {
-        IsUsing_Fall2020Maps = false;
-        IsUsing_Fall2021Maps = false;
-        IsUsing_Fall2022Maps = false;
-        IsUsing_Fall2023Maps = false;
-        IsUsing_Fall2024Maps = false;
-    }
+    if (UI::Button("Disable All fall maps settings")) { DeselectFall(); }
 }
 
 void RenderSeasonalOther() {
@@ -318,8 +273,27 @@ void RenderSeasonalOther() {
     
     newValue = UI::Checkbox('Official TMGL / TMWR maps', IsUsing__AllOfficialCompetitions);
     if (newValue != IsUsing__AllOfficialCompetitions) { IsUsing__AllOfficialCompetitions = newValue; }
+
+    if (UI::Button("Enable All seasonal maps settings")) { DeselectOrSelectAllSeasons(true); }
+
+    if (UI::Button("Disable All seasonal maps settings")) { DeselectOrSelectAllSeasons(false); }
 }
 
+void RenderDiscoveryCampaigns() {
+    UI::Text("All the altered nadeo car discovery campaign alterations");
+
+    bool newValue;
+
+    newValue = UI::Checkbox('Snow Discovery', IsUsing_AllSnowDiscovery);
+    if (newValue != IsUsing_AllSnowDiscovery) { IsUsing_AllSnowDiscovery = newValue; }
+    
+    newValue = UI::Checkbox('Rally Discovery', IsUsing_AllRallyDiscovery);
+    if (newValue != IsUsing_AllRallyDiscovery) { IsUsing_AllRallyDiscovery = newValue; }
+
+    if (UI::Button("Enable All discovery campaign settings")) { SelectDiscoveryCampaigns(); }
+
+    if (UI::Button("Disable All discovery campaign settings")) { DeselectDiscoveryCampaigns(); }
+}
 
 
 void RenderSurfaces() {
@@ -371,6 +345,10 @@ void RenderSurfaces() {
     
     newValue = UI::Checkbox("Underwater", IsUsing_Underwater);
     if (newValue != IsUsing_Underwater) { IsUsing_Underwater = newValue; }
+
+    if (UI::Button("Enable All surface settings")) { SelectAlteredSurface(); }
+
+    if (UI::Button("Disable All surface settings")) { DeselectAlteredSurface(); }
 }
 
 void RenderEffects() { 
@@ -422,6 +400,10 @@ void RenderEffects() {
     
     newValue = UI::Checkbox('Worn Tires', IsUsing_Worn_Tires);
     if (newValue != IsUsing_Worn_Tires) { IsUsing_Worn_Tires = newValue; }
+
+    if (UI::Button("Enable All effect settings")) { SelectAlteredEffects(); }
+
+    if (UI::Button("Disable All effect settings")) { DeselectAlteredEffects(); }
 }
 
 void RenderFinishLocation() { 
@@ -488,6 +470,10 @@ void RenderFinishLocation() {
 
     newValue = UI::Checkbox('Inclined', IsUsing_Inclined);
     if (newValue != IsUsing_Inclined) { IsUsing_Inclined = newValue; }
+
+    if (UI::Button("Enable All finish location settings")) { SelectAlteredFinishLocation(); }
+
+    if (UI::Button("Disable All finish location settings")) { DeselectAlteredFinishLocation(); }
 }
 
 void RenderEnviroments() { 
@@ -530,6 +516,10 @@ void RenderEnviroments() {
     
     newValue = UI::Checkbox('[Rally] Underwater', IsUsing_Rally_Underwater);
     if (newValue != IsUsing_Rally_Underwater) { IsUsing_Rally_Underwater = newValue; }
+
+    if (UI::Button("Enable All enviroment settings")) { SelectAlteredEnviroments(); }
+
+    if (UI::Button("Disable All enviroment settings")) { DeselectAlteredEnviroments(); }
 }
 
 void RenderMulti() { 
@@ -583,7 +573,11 @@ void RenderMulti() {
     if (newValue != IsUsing_YEET_Random_Puzzle) { IsUsing_YEET_Random_Puzzle = newValue; }
     
     newValue = UI::Checkbox('YEET Reverse', IsUsing_YEET_Reverse);
-    if (newValue != IsUsing_YEET_Reverse) { IsUsing_YEET_Reverse = newValue; } 
+    if (newValue != IsUsing_YEET_Reverse) { IsUsing_YEET_Reverse = newValue; }
+
+    if (UI::Button("Enable All multi settings")) { SelectAlteredMulti(); }
+
+    if (UI::Button("Disable All multi settings")) { DeselectAlteredMulti(); }
 }
 
 void RenderAlterationalOther() { 
@@ -713,6 +707,10 @@ void RenderAlterationalOther() {
     
     newValue = UI::Checkbox('YEET Down', IsUsing_YEET_Down);
     if (newValue != IsUsing_YEET_Down) { IsUsing_YEET_Down = newValue; }
+
+    if (UI::Button("Enable All other settings")) { SelectAlteredOther(); }
+
+    if (UI::Button("Disable All other settings")) { DeselectAlteredOther(); }
 }
 
 void RenderExtra() { 
@@ -731,178 +729,8 @@ void RenderExtra() {
     
     newValue = UI::Checkbox('Altered TOTD', IsUsing_AllTOTD);
     if (newValue != IsUsing_AllTOTD) { IsUsing_AllTOTD = newValue; }
+
+    if (UI::Button("Enable All extra settings")) { SelectAlteredExtraCampaigns(); }
+
+    if (UI::Button("Disable All extra settings")) { DeselectAlteredExtraCampaigns(); }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-bool placeholderValue;
-bool showInterface;
-
-int currentTab;
-
-void RenderInterface() {
-    // 
-
-   
-
-    if (UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker Settings", showInterface, UI::WindowFlags::AlwaysAutoResize)) {
-        UI::BeginTabBar("SettingTabBar", UI::TabBarFlags::NoCloseWithMiddleMouseButton);
-            if (UI::BeginTabItem("General Settings")) {
-            currentTab = 6;
-            
-            UI::Text('[PLACEHOLDER]');
-
-            bool newValue;
-
-            newValue = UI::Checkbox('Training', IsUsing_Trainig);
-            if (newValue != IsUsing_Trainig) { IsUsing_Trainig = newValue; }
-            
-            
-            UI::EndTabItem();
-        }
-        UI::EndTabBar();
-
-        UI::BeginTabBar("MainTabBar", UI::TabBarFlags::NoCloseWithMiddleMouseButton);
-
-        // ALTERED SURFACES
-
-        UI::PushStyleColor(UI::Col::Tab, vec4(0.5, 0.5, 0.5, 0.75));
-        UI::PushStyleColor(UI::Col::TabHovered, vec4(1.2, 1.2, 1.2, 0.85));
-        UI::PushStyleColor(UI::Col::TabActive, vec4(0.5, 0.5, 0.5, 1.0));
-
-
-
-        // ALTERED EFFECTS
-
-        UI::PopStyleColor(3);
-
-        
-
-        // ALTERED FINISH LOCATION
-
-        
-
-        // ALTERED ENVIROMENTS (ENVIMIX)
-        
-
-
-        // Multi Alterations
-        
-        if (UI::BeginTabItem("Multi")) {
-            currentTab = 4;
-
-            
-            
-            UI::EndTabItem();
-        }
-
-        // Other Alterations
-
-
-        if (UI::BeginTabItem("Other")) {
-            currentTab = 5;
-            
-            
-            
-            UI::EndTabItem();
-        }
-
-
-        // Extra Campaigns
-
-
-        if (UI::BeginTabItem("Extra")) {
-            currentTab = 6;
-            
-
-            
-            UI::EndTabItem();
-        }
-
-
-
-
-
-        // UI::PopStyleColor(3);
-        // UI::PushStyleColor(UI::Col::Tab, vec4(0.5, 0.5, 0.5, 0.75));
-        // UI::PushStyleColor(UI::Col::TabHovered, vec4(1.2, 1.2, 1.2, 0.85));
-        // UI::PushStyleColor(UI::Col::TabActive, vec4(0.5, 0.5, 0.5, 1.0));
-        // if (UI::BeginTabItem("Misc")) {
-        //     currentTab = 2;
-        //     placeholderValue = UI::Checkbox('###autoColor', placeholderValue);
-        //     UI::SameLine();
-        //     UI::TextWrapped('Auto select colour when opening a campaign (or altered campaign) map in editor');
-        //     placeholderValue = UI::Checkbox('###cpWarning', placeholderValue);
-        //     UI::SameLine();
-        //     UI::TextWrapped('Warn if the checkpoint count is different to the unaltered map \n(when entering drive mode)');
-        //     placeholderValue = UI::Checkbox('###nameColor', placeholderValue);
-        //     UI::SameLine();
-        //     UI::TextWrapped('Color the name in plugins list');
-        //     UI::Text('Variant highlight mode:');
-        //     if (UI::BeginCombo('##0', "test", UI::ComboFlags::None)) {
-        //         if (UI::Selectable("placeholder", placeholderValue, UI::SelectableFlags::None)) {
-        //             placeholderValue = placeholderValue;
-        //         }
-                
-        //         UI::EndCombo();
-        //     }
-        //     placeholderValue = UI::Checkbox('###overlayhitbox', placeholderValue);
-        //     UI::SameLine();
-        //     UI::TextWrapped('Require hitbox match on custom overlays (may have issues on support mode tilt/slope blocks)\n(not checked on checkpoints)');
-        //     placeholderValue = UI::Checkbox('###debugDots', placeholderValue);
-        //     UI::SameLine();
-        //     UI::TextWrapped('Show debug position dots');
-
-        //     UI::EndTabItem();
-        // }
-        // UI::PopStyleColor(3);
-        UI::EndTabBar();
-
-        
-
-
-    }*/
-    /*if (shouldRefresh) {
-        checkNoFilters();
-    }*/
-  //  UI::End();
-//}
