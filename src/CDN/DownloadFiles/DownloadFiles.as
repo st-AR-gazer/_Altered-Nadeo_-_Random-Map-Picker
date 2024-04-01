@@ -11,10 +11,10 @@ void DownloadConsolidatedMapFile() {
     if (!shouldDownloadNewFiles) return;
     
     DownloadData(baseDataUrl + "consolidated_maps.json", "consolidated_maps.json", localSaveLocation);
-    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 12);
+    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 14);
 
     DownloadData(baseDataUrl + "data.csv", "data.csv", localSaveLocation);
-    log("Attempted to download the data.csv file", LogLevel::Info, 15);
+    log("Attempted to download the data.csv file", LogLevel::Info, 17);
 }
 
 void DownloadData(const string &in url, const string &in fileName, const string &in localSaveLocation) {
@@ -30,7 +30,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         auto data = req.String();
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
-        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 31);
+        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 33);
     }
 }
 
@@ -47,5 +47,5 @@ void StoreDatafile(const string &in data, const string &in fileName, const strin
     file.Write(data);
     file.Close();
 
-    log("Data written to file: " + fullFilePathName, LogLevel::Info, 48);
+    log("Data written to file: " + fullFilePathName, LogLevel::Info, 50);
 }

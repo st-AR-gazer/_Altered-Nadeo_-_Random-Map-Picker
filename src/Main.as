@@ -24,12 +24,12 @@ void Main() {
     log("Manifest check completed", LogLevel::InfoG, 24);
     sleep(1000);
     
-    log("CDN check completed for new file", LogLevel::InfoG, 28);
+    log("CDN check completed for new file", LogLevel::InfoG, 27);
 
     sleep(1000);
 
     SetFirstUid();
-    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 33);
+    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 32);
 }
 
 void Update(float dt) {

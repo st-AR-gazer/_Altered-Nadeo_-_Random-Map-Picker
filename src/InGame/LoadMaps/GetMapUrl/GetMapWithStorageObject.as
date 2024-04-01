@@ -14,7 +14,7 @@ Json::Value LoadMapsFromConsolidatedFile() {
     string filePath = IO::FromStorageFolder("Data/consolidated_maps.json");
     
     if (!IO::FileExists(filePath)) {
-        log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 16);
+        log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 17);
         
         Json::Value dummyMap = Json::Object();
         dummyMap["fileUrl"] = "dummy_url";
@@ -38,7 +38,7 @@ string FetchRandomMapUrl() {
     Json::Value allMaps = LoadMapsFromConsolidatedFile();
 
     if (allMaps.Length == 1 && allMaps[0].HasKey("fileUrl") && allMaps[0]["fileUrl"] == "dummy_url") {
-        log("Dummy map data found. No real maps available.", LogLevel::Error, 70);
+        log("Dummy map data found. No real maps available.", LogLevel::Error, 41);
         return "";
     }
     
@@ -84,7 +84,7 @@ string FetchRandomMapUrl() {
         }
     }
 
-    log("No maps match the selected criteria", LogLevel::Error, 69);
+    log("No maps match the selected criteria", LogLevel::Error, 87);
     return "";
 }
 
@@ -259,14 +259,14 @@ bool MatchesAlterationSettings(Json::Value map) {
 }
 
 bool NoSeasonalSettingActive() {
-    log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 244);
+    log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 262);
     NotifyWarn("No season is selected, automatically selecting all seasons.");
     DeselectOrSelectAllSeasons(true);
     return true;
 }
 
 bool NoAlterationSettingActive() {
-    log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 251);
+    log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 269);
     NotifyWarn("No alteration is selected, automatically selecting all alterations.");
     DeselectOrSelectAllAlterations(true);
     return true;
