@@ -8,3 +8,5 @@ string g_alterationStoragePath = IO::FromStorageFolder("New-Sorting-System/ByAlt
 string g_seasonStoragePath = IO::FromStorageFolder("New-Sorting-System/BySeason/");
 
 Json::Value g_manifestJson;
+
+const bool isUsingStorageObjectOverAPI = true; // Change when kovca releases his API

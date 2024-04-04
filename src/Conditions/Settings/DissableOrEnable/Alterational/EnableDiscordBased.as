@@ -130,11 +130,13 @@ void SelectAlteredOther() {
     IsUsing_Sections_joined = true;
     IsUsing_Select_DEL = true;
     IsUsing_Speedlimit = true;
+    IsUsing_Staircase = true;
     IsUsing_Start_1_Down = true;
     IsUsing_Supersized = true;
     IsUsing_Straight_to_the_Finish = true;
     IsUsing_Symmetrical = true;
     IsUsing_Tilted = true;
+    IsUsing_Walmart_Mini = true;
     IsUsing_YEET = true;
     IsUsing_YEET_Down = true;
 }
