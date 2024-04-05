@@ -236,7 +236,7 @@ alterations_dict = {
     "Speedlimit": ["Speedlimit", "Speed-Limit", "Speed Limit"],
     "Staircase": ["Staircase"],
     "Start 1-Down": ["Start 1 Down", "Start1Down", "Start-1-Down", "Start1-Down", "Start 1-Down"],
-    "sw2u1l-cpu-f2d1r": ["sw2u1l-cpu-f2d1r", "Start Water 2 Up 1 Left, Checkpoints Unlinked, Finish 2 Down 1 Right"],
+    "sw2u1l-cpu-f2d1r": ["sw2u1l-cpu-f2d1r", "Start water 2 up 1 left - Checkpoints unlinked - Finish 2 down 1 right"],
     "Supersized": ["Supersized", "SuperSized", "Super-Sized", "Big", "Super01", "Super02", "Super03", "Super04", "Super05", "Super06", "Super07", "Super08", "Super09", "Super10", "Super11", "Super12", "Super13", "Super14", "Super15", "Super16", "Super17", "Super18", "Super19", "Super20", "Super21", "Super22", "Super23", "Super24", "Super25"],
     "Surfaceless": ["Surfaceless"],
     "Straight to the Finish": ["Straight to the Finish", "STTF", "StraighttotheFinish", "Straight-to-the-Finish", "Straighttothe-Finish", "Straight to the-Finish"],
