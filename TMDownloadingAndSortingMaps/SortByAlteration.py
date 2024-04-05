@@ -268,7 +268,12 @@ snow_discovery_maps = [
 ]
 
 rally_discovery_maps = [
-
+    "RallyIsBack", "RallyB1 Reloaded", "BumpyRally", "CastleWall",
+    "GrippyRally", "NightWatch", "NewSlopes", "GreenStage",
+    "RallyC1 Reloaded", "2laps2cars", "Ralleigh", "Dirt2024",
+    "RallyOnRoad", "TransforMania", "DeepEase", "ClassicRally",
+    "Radium", "WetRally", "FrostyMorning", "Rastic", "Offroad",
+    "MixedStage", "Snolly", "IAmSpeed2", "PowerStage"
 ]
 
 official_competition_maps = [
