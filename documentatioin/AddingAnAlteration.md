@@ -50,6 +50,10 @@ if (newValue != IsUsing_) { IsUsing_ = newValue; }
 
 **Note:** If a category has changed name, simply update the `TAB NAME` to the new name. If an alteration has moved categories, cut it from its current location and move it to the correct tab.
 
+## Step 4: Add the setting to `bool MatchesAlterationSettings(Json::Value map)` 
+ADD SOME DOCUMENTATION HERE
+
+
 ## Summary
 
 You have successfully added an alteration to the project settings, (and added it as an export. `NOT ADDED TO DOC YET`) Repeat this process for any additional alterations you wish to include. The process is the same for adding seasonal campaigns.

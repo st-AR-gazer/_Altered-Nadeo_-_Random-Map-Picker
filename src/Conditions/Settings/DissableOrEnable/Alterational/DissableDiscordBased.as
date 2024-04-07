@@ -130,11 +130,13 @@ void DeselectAlteredOther() {
     IsUsing_Sections_joined = false;
     IsUsing_Select_DEL = false;
     IsUsing_Speedlimit = false;
+    IsUsing_Staircase = false;
     IsUsing_Start_1_Down = false;
     IsUsing_Supersized = false;
     IsUsing_Straight_to_the_Finish = false;
     IsUsing_Symmetrical = false;
     IsUsing_Tilted = false;
+    IsUsing_Walmart_Mini = false;
     IsUsing_YEET = false;
     IsUsing_YEET_Down = false;
 }

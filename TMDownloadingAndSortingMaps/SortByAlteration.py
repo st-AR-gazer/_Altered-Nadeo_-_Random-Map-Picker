@@ -236,7 +236,7 @@ alterations_dict = {
     "Speedlimit": ["Speedlimit", "Speed-Limit", "Speed Limit"],
     "Staircase": ["Staircase"],
     "Start 1-Down": ["Start 1 Down", "Start1Down", "Start-1-Down", "Start1-Down", "Start 1-Down"],
-    "sw2u1l-cpu-f2d1r": ["sw2u1l-cpu-f2d1r"],
+    "sw2u1l-cpu-f2d1r": ["sw2u1l-cpu-f2d1r", "Start water 2 up 1 left - Checkpoints unlinked - Finish 2 down 1 right"],
     "Supersized": ["Supersized", "SuperSized", "Super-Sized", "Big", "Super01", "Super02", "Super03", "Super04", "Super05", "Super06", "Super07", "Super08", "Super09", "Super10", "Super11", "Super12", "Super13", "Super14", "Super15", "Super16", "Super17", "Super18", "Super19", "Super20", "Super21", "Super22", "Super23", "Super24", "Super25"],
     "Surfaceless": ["Surfaceless"],
     "Straight to the Finish": ["Straight to the Finish", "STTF", "StraighttotheFinish", "Straight-to-the-Finish", "Straighttothe-Finish", "Straight to the-Finish"],
@@ -268,7 +268,12 @@ snow_discovery_maps = [
 ]
 
 rally_discovery_maps = [
-
+    "RallyIsBack", "RallyB1 Reloaded", "BumpyRally", "CastleWall",
+    "GrippyRally", "NightWatch", "NewSlopes", "GreenStage",
+    "RallyC1 Reloaded", "2laps2cars", "Ralleigh", "Dirt2024",
+    "RallyOnRoad", "TransforMania", "DeepEase", "ClassicRally",
+    "Radium", "WetRally", "FrostyMorning", "Rastic", "Offroad",
+    "MixedStage", "Snolly", "IAmSpeed2", "PowerStage"
 ]
 
 official_competition_maps = [
@@ -1284,6 +1289,32 @@ special_uids = [
         {"uid": "blqenheIuLxhUSUXNRp1iSc1jfh", "name": "Winter 2024 - 23", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo"},
         {"uid": "8AAJstK0fIhQO0_AO8RkRgQCzB3", "name": "Winter 2024 - 24", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo"},
         {"uid": "V0HLAzazg1MRNvFaUJiff_X_jo0", "name": "Winter 2024 - 25", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo"},
+
+        {"uid": "yQ4ktCXu3SAxyRx9gar8hj7kVBb", "name": "Spring 2024 - 01", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "6y_26o7fxz0Es3t0e0EPBE7vF_k", "name": "Spring 2024 - 02", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "Qu0RAm2OEVhA8PtlHygSvwAP6af", "name": "Spring 2024 - 03", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "cg6LF9Dgogww_hL0I9rGoC4oXDb", "name": "Spring 2024 - 04", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "gLjlftQPuk5kBY2dpiabyAxXt2l", "name": "Spring 2024 - 05", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "lhLGScZNfT71Ti36T12QthclEx",  "name": "Spring 2024 - 06", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "OoIkCPCGS03kGSUVLdYQFYXp8z1", "name": "Spring 2024 - 07", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "k4TKkf1JSlWTEEZdCc9UCNTokk6", "name": "Spring 2024 - 08", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "2BlomISK77gQVgS6IvPahcbtEBm", "name": "Spring 2024 - 09", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "YnTMlq4EWuhP_3t07V1ltFN1d9i", "name": "Spring 2024 - 10", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "Dvta7ireTIDL0eM8yr41A9Bqrhj", "name": "Spring 2024 - 11", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "u7DgMxUjOS3QMoo6RK41_wVwUo8", "name": "Spring 2024 - 12", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "23qJ3GhkSPunIOi6hJGi53kN7Z6", "name": "Spring 2024 - 13", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "16SHL4He1HX73RGnwg1gw0XnVk5", "name": "Spring 2024 - 14", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "zmGw8qZpyugRtoRjIzv94NJEt00", "name": "Spring 2024 - 15", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "ANp_5I0olt_0vmies5vdxLkH1e2", "name": "Spring 2024 - 16", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "_oXHWr6nTCmZTUoLsLcC6Qn8VJl", "name": "Spring 2024 - 17", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "iX8qS5DXRjfaMqxYcToN75oXxzj", "name": "Spring 2024 - 18", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "jHJiEQ2HARFfrj4llyscCEajxla", "name": "Spring 2024 - 19", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "8zvR_6FvQnEAUs_Ng4mCDwkEe53", "name": "Spring 2024 - 20", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "mz96XbMuvGhHuAzHWWu_8Csfzb9", "name": "Spring 2024 - 21", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "23TjgtcgWtsOT8c8_YXmStk9yT1", "name": "Spring 2024 - 22", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "zNvVW_NnRdxDIQm6T6EbPDkYg20", "name": "Spring 2024 - 23", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "dQHEGKXg1PcUDL8pI5YGOfHtyum", "name": "Spring 2024 - 24", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
+        {"uid": "bPpUQZuGgy56BE4ST2e9lb3Ln66", "name": "Spring 2024 - 25", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo"},
     #}
 
 

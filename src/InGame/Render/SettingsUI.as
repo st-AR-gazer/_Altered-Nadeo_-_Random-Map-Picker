@@ -590,14 +590,21 @@ void RenderAlterationalOther() {
     newValue = UI::Checkbox('a08', IsUsing_A08);
     if (newValue != IsUsing_A08) { IsUsing_A08 = newValue; }
     
+    if (!isUsingStorageObjectOverAPI) {
+        newValue = UI::Checkbox('Altered Camera', IsUsing_Altered_Camera);
+        if (newValue != IsUsing_Altered_Camera) { IsUsing_Altered_Camera = newValue; }
+    }
+
     newValue = UI::Checkbox('Antibooster', IsUsing_Antibooster);
     if (newValue != IsUsing_Antibooster) { IsUsing_Antibooster = newValue; }
     
     newValue = UI::Checkbox('Backwards', IsUsing_Backwards);
     if (newValue != IsUsing_Backwards) { IsUsing_Backwards = newValue; }
     
-    newValue = UI::Checkbox('Blind', IsUsing_Blind);
-    if (newValue != IsUsing_Blind) { IsUsing_Blind = newValue; }
+    if (isUsingStorageObjectOverAPI) {
+        newValue = UI::Checkbox('Blind', IsUsing_Blind);
+        if (newValue != IsUsing_Blind) { IsUsing_Blind = newValue; }
+    }
     
     newValue = UI::Checkbox('Boosterless', IsUsing_Boosterless);
     if (newValue != IsUsing_Boosterless) { IsUsing_Boosterless = newValue; }
@@ -683,6 +690,11 @@ void RenderAlterationalOther() {
     newValue = UI::Checkbox('Speedlimit', IsUsing_Speedlimit);
     if (newValue != IsUsing_Speedlimit) { IsUsing_Speedlimit = newValue; }
     
+    if (isUsingStorageObjectOverAPI) {
+        newValue = UI::Checkbox('Staircase', IsUsing_Staircase);
+        if (newValue != IsUsing_Staircase) { IsUsing_Staircase = newValue; }
+    }
+
     newValue = UI::Checkbox('Start 1-Down', IsUsing_Start_1_Down);
     if (newValue != IsUsing_Start_1_Down) { IsUsing_Start_1_Down = newValue; }
     
@@ -697,6 +709,11 @@ void RenderAlterationalOther() {
     
     newValue = UI::Checkbox('Tilted', IsUsing_Tilted);
     if (newValue != IsUsing_Tilted) { IsUsing_Tilted = newValue; }
+
+    if (isUsingStorageObjectOverAPI) {
+        newValue = UI::Checkbox('Walmart Mini', IsUsing_Walmart_Mini);
+        if (newValue != IsUsing_Walmart_Mini) { IsUsing_Walmart_Mini = newValue; }
+    }
     
     newValue = UI::Checkbox('YEET', IsUsing_YEET);
     if (newValue != IsUsing_YEET) { IsUsing_YEET = newValue; }

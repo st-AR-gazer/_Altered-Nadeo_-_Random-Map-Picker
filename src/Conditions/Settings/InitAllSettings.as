@@ -279,6 +279,9 @@ bool IsUsing_Flat_2D = false;
 [Setting category="Alteration" name="a08"]
 bool IsUsing_A08 = false;
 
+[Setting category="Alteration" name="Altered Camera"] // Added for the API Kovacs is releasing
+bool IsUsing_Altered_Camera = false;
+
 [Setting category="Alteration" name="Antiboosters"]
 bool IsUsing_Antibooster = false;
 
