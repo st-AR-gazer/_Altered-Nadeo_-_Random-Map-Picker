@@ -55,11 +55,22 @@ void UpdateCurrentVersionIfDifferent(const int &in latestVersion) {
     }
 }
 
+// string pluginStorageVersionPath = IO::FromStorageFolder("currentInstalledVersion.json"); // In MoveDefaultData.as
+
 int GetCurrentInstalledVersion() {
-    Json::Value json = Json::FromFile(pluginStorageVersionPath);
+
+    IO::File file;
+    file.Open(pluginStorageVersionPath, IO::FileMode::Read);
+    string fileContents = file.ReadToEnd();
+    file.Close();
+
+    Json::Value json = Json::Parse(fileContents);
+
     if (json.GetType() == Json::Type::Object) {
         return json["latestVersion"];
     }
+
+    log("JSON is not an object. JSON is: " + tostring(json.GetType()), LogLevel::Error, 34);
     return -1;
 }
 

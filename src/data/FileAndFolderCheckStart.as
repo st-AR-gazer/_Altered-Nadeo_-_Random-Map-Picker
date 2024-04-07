@@ -14,8 +14,9 @@ void CheckDirs() {
 }
 
 void DoesFileExist(string path, bool createFile) {
-    if (!IO::FileExists(path)) {
-        log("File does not exist: " + path, LogLevel::Error, 18);
+    if (IO::FileExists(path)) {
+        log("File exists, not overwriting: " + path, LogLevel::Info, 18);
+        return;
     }
     if (createFile) {
         IO::File f;

@@ -16,25 +16,32 @@ enum LogLevel {
     _
 };
 
+[Setting category="~DEV" name="Show default OP logs"]
+bool showDefaultLogs = false;
+
 [Setting category="~DEV" name="Show Debug logs"]
 bool showDebugLogs = true;
 
-[Setting category="~DEV" name="Show Info logs"]
+
+[Setting category="~DEV" name="Show Info logs (INFO)"]
 bool showInfoLogs = true;
 
-[Setting category="~DEV" name="Show InfoG logs"]
+[Setting category="~DEV" name="Show InfoG logs (INFO-G)"]
 bool showInfoGLogs = true;
 
-[Setting category="~DEV" name="Show Warn logs"]
+[Setting category="~DEV" name="Show Warn logs (WARN)"]
 bool showWarnLogs = true;
 
-[Setting category="~DEV" name="Show Error logs"]
+[Setting category="~DEV" name="Show Error logs (ERROR)"]
 bool showErrorLogs = true;
 
-[Setting category="~DEV" name="Show Test logs"]
+[Setting category="~DEV" name="Show Test logs (TEST)"]
 bool showTestLogs = true;
 
-[Setting category="~DEV" name="Show Placeholder logs"]
+[Setting category="~DEV" name="Show Debug logs (D)"]
+bool showDLogs = true;
+
+[Setting category="~DEV" name="Show Placeholder logs (PLACEHOLDER)"]
 bool showPlaceholderLogs = true;
 
 
@@ -59,21 +66,21 @@ void log(const string &in msg, LogLevel level = LogLevel::Info, int line = -1) {
         case LogLevel::Warn:  doLog = showWarnLogs;        break;
         case LogLevel::Error: doLog = showErrorLogs;       break;
         case LogLevel::Test:  doLog = showTestLogs;        break;
-        case LogLevel::D:     doLog = showDebugLogs;       break;
+        case LogLevel::D:     doLog = showDLogs;           break;
         case LogLevel::_:     doLog = showPlaceholderLogs; break;
     }
 
+    if (!showDebugLogs) return;
+
     if (doLog) {
         switch(level) {
-            case LogLevel::Info:  print("\\$0ff[INFO]  " + "\\$z" + "\\$0cc" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::InfoG: print("\\$0f0[INFO-G]" + "\\$z" + "\\$0c0" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::Warn:  print("\\$ff0[WARN]  " + "\\$z" + "\\$cc0" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::Error: print("\\$f00[ERROR] " + "\\$z" + "\\$c00" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::Test:  print("\\$aaa[TEST]  " + "\\$z" + "\\$aaa" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::D:     print("\\$777[D]     " + "\\$z" + "\\$777" + lineInfo + "\\$z " + msg); break;
-            case LogLevel::_:     print("\\$333[PLACEH]" + "\\$z" + "\\$333" + lineInfo + "\\$z " + msg); break;
+            case LogLevel::Info:  if(!showDefaultLogs) { print("\\$0ff[INFO]  " +       "\\$z" + "\\$0cc" + lineInfo + "\\$z" + msg); } else { trace(msg); } break;
+            case LogLevel::InfoG: if(!showDefaultLogs) { print("\\$0f0[INFO-G]" +       "\\$z" + "\\$0c0" + lineInfo + "\\$z" + msg); } else { trace(msg); } break;
+            case LogLevel::Warn:  if(!showDefaultLogs) { print("\\$ff0[WARN]  " +       "\\$z" + "\\$cc0" + lineInfo + "\\$z" + msg); } else { warn(msg);  } break;
+            case LogLevel::Error: if(!showDefaultLogs) { print("\\$f00[ERROR] " +       "\\$z" + "\\$c00" + lineInfo + "\\$z" + msg); } else { error(msg); } break;
+            case LogLevel::Test:  if(!showDefaultLogs) { print("\\$aaa[TEST]  " +       "\\$z" + "\\$aaa" + lineInfo + "\\$z" + msg); } else { trace(msg); } break;
+            case LogLevel::D:     if(!showDefaultLogs) { print("\\$777[D]     " +       "\\$z" + "\\$777" + lineInfo + "\\$z" + msg); } else { trace(msg); } break;
+            case LogLevel::_:     if(!showDefaultLogs) { print("\\$333[PLACEHOLDER] " + "\\$z" + "\\$333" + lineInfo + "\\$z" + msg); } else { trace(msg); } break;
         }
     }
 }
-
-
