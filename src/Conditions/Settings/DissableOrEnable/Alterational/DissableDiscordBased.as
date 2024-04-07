@@ -77,6 +77,7 @@ void DeselectAlteredEnviroments() {
 }
 
 void DeselectAlteredMulti() {
+    IsUsing_100WetIcyWood = false;
     IsUsing_Checkpointless_Reverse = false;
     IsUsing_Ice_Reverse = false;
     IsUsing_Ice_Reverse_Reactor = false;

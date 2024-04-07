@@ -217,6 +217,9 @@ bool IsUsing_Rally_Icy = false;
 
 // Multi Alterations
 
+[Setting category="Alteration" name="100% Wet Icy Wood"]
+bool IsUsing_100WetIcyWood = false;
+
 [Setting category="Alteration" name="Checkpointless Reverse"]
 bool IsUsing_Checkpointless_Reverse = false;
 

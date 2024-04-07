@@ -523,6 +523,9 @@ void RenderMulti() {
 
     bool newValue;
 
+    newValue = UI::Checkbox('100% Wet Icy Wood', IsUsing_100WetIcyWood);
+    if (newValue != IsUsing_100WetIcyWood) { IsUsing_100WetIcyWood = newValue; }
+
     newValue = UI::Checkbox('Checkpointless Reverse', IsUsing_Checkpointless_Reverse);
     if (newValue != IsUsing_Checkpointless_Reverse) { IsUsing_Checkpointless_Reverse = newValue; }
     

@@ -136,6 +136,8 @@ alterations_dict = {
     
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
     "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
+    
+    "100% Wet Icy Wheels": ["100% Wet Icy Wheels", "100% Wet-Icy-Wheels", "100% WetIcyWheels", "100%WetIcyWheels"],
 
     "1 Down": ["1 Down", "1-Down", "1Down", ],
     # "1 Forward": ["1 Forward", "1-Forward", "1Forward"], # This is not included since it is the same as 1-back

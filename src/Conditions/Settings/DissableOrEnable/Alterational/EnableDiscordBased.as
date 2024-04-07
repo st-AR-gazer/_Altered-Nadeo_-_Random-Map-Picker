@@ -77,6 +77,7 @@ void SelectAlteredEnviroments() {
 }
 
 void SelectAlteredMulti() {
+    IsUsing_100WetIcyWood = true;
     IsUsing_Checkpointless_Reverse = true;
     IsUsing_Ice_Reverse = true;
     IsUsing_Ice_Reverse_Reactor = true;
