@@ -112,7 +112,7 @@ bool MatchesSeasonalSettings(Json::Value map) {
     if (IsUsing_AllRallyDiscovery  && map["season"] == "AllRallyDiscovery")  return true;
     if (IsUsing_AllDesertDiscovery && map["season"] == "AllDesertDiscovery") return true;
 
-    if (IsUsing__AllOfficialCompetitions && map["season"] == "!AllOfficialCompetitions") return true;
+    if (IsUsing__AllOfficialCompetitions && map["alteration"] == "!AllOfficialCompetitions") return true;
     if (IsUsing_AllOfficialCompetitions  && map["season"] == "AllOfficialCompetitions")  return true;
 
     if (IsUsing_AllTOTD && map["season"] == "AllTOTD") return true;
