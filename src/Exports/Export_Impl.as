@@ -3,7 +3,6 @@ string GetARandomAltMapUid() {
     return uid;
 }
 
-
 Json::Value GetUserSettings() {
     Json::Value settings;
 
@@ -190,175 +189,224 @@ Json::Value GetUserSettings() {
     return settings;
 }
 
-// string SetOnlyWinterMaps(bool value) {
-//     return "Sorry this currently isn't implemented";
-// }
-// string SetOnlySpringMaps(bool value) {
-//     return "Sorry this currently isn't implemented";
-// }
-// string SetOnlySummerMaps(bool value) {
-//     return "Sorry this currently isn't implemented";
-// }
-// string SetOnlyFallMaps(bool value) {
-//     return "Sorry this currently isn't implemented";
-// }
+void SetSeason(string t_season, bool t_shouldUse) {
+    if (t_season.ToLower() == "spring 2020") { IsUsing_Spring2020Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2020") { IsUsing_Summer2020Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "fall 2020") { IsUsing_Fall2020Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "winter 2021") { IsUsing_Winter2021Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "spring 2021") { IsUsing_Spring2021Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2021") { IsUsing_Summer2021Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "fall 2021") { IsUsing_Fall2021Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "winter 2022") { IsUsing_Winter2022Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "spring 2022") { IsUsing_Spring2022Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2022") { IsUsing_Summer2022Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "fall 2022") { IsUsing_Fall2022Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "winter 2023") { IsUsing_Winter2023Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "spring 2023") { IsUsing_Spring2023Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2023") { IsUsing_Summer2023Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "fall 2023") { IsUsing_Fall2023Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "winter 2024") { IsUsing_Winter2024Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "spring 2024") { IsUsing_Spring2024Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2024") { IsUsing_Summer2024Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "fall 2024") { IsUsing_Fall2024Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "winter 2025") { IsUsing_Winter2025Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "spring 2025") { IsUsing_Spring2025Maps = t_shouldUse; }
+    else if (t_season.ToLower() == "summer 2025") { IsUsing_Summer2025Maps = t_shouldUse; }
+}
 
-// bool SetSpring2020Maps(bool value) { if (value) { IsUsing_Spring2020Maps = true; } else (!value); { IsUsing_Spring2020Maps = false; } return IsUsing_Spring2020Maps; }
-// bool SetSummer2020Maps(bool value) { if (value) { IsUsing_Summer2020Maps = true; } else (!value); { IsUsing_Summer2020Maps = false; } return IsUsing_Summer2020Maps; }
-// bool SetFall2020Maps(bool value)   { if (value) { IsUsing_Fall2020Maps = true; }   else (!value); { IsUsing_Fall2020Maps = false; }   return IsUsing_Fall2020Maps; }
-// bool SetWinter2021Maps(bool value) { if (value) { IsUsing_Winter2021Maps = true; } else (!value); { IsUsing_Winter2021Maps = false; } return IsUsing_Winter2021Maps; }
-// bool SetSpring2021Maps(bool value) { if (value) { IsUsing_Spring2021Maps = true; } else (!value); { IsUsing_Spring2021Maps = false; } return IsUsing_Spring2021Maps; }
-// bool SetSummer2021Maps(bool value) { if (value) { IsUsing_Summer2021Maps = true; } else (!value); { IsUsing_Summer2021Maps = false; } return IsUsing_Summer2021Maps; }
-// bool SetFall2021Maps(bool value)   { if (value) { IsUsing_Fall2021Maps = true; }   else (!value); { IsUsing_Fall2021Maps = false; }   return IsUsing_Fall2021Maps; }
-// bool SetWinter2022Maps(bool value) { if (value) { IsUsing_Winter2022Maps = true; } else (!value); { IsUsing_Winter2022Maps = false; } return IsUsing_Winter2022Maps; }
-// bool SetSpring2022Maps(bool value) { if (value) { IsUsing_Spring2022Maps = true; } else (!value); { IsUsing_Spring2022Maps = false; } return IsUsing_Spring2022Maps; }
-// bool SetSummer2022Maps(bool value) { if (value) { IsUsing_Summer2022Maps = true; } else (!value); { IsUsing_Summer2022Maps = false; } return IsUsing_Summer2022Maps; }
-// bool SetFall2022Maps(bool value)   { if (value) { IsUsing_Fall2022Maps = true; }   else (!value); { IsUsing_Fall2022Maps = false; }   return IsUsing_Fall2022Maps; }
-// bool SetWinter2023Maps(bool value) { if (value) { IsUsing_Winter2023Maps = true; } else (!value); { IsUsing_Winter2023Maps = false; } return IsUsing_Winter2023Maps; }
-// bool SetSpring2023Maps(bool value) { if (value) { IsUsing_Spring2023Maps = true; } else (!value); { IsUsing_Spring2023Maps = false; } return IsUsing_Spring2023Maps; }
-// bool SetSummer2023Maps(bool value) { if (value) { IsUsing_Summer2023Maps = true; } else (!value); { IsUsing_Summer2023Maps = false; } return IsUsing_Summer2023Maps; }
-// bool SetFall2023Maps(bool value)   { if (value) { IsUsing_Fall2023Maps = true; }   else (!value); { IsUsing_Fall2023Maps = false; }   return IsUsing_Fall2023Maps; }
-// bool SetWinter2024Maps(bool value) { if (value) { IsUsing_Winter2024Maps = true; } else (!value); { IsUsing_Winter2024Maps = false; } return IsUsing_Winter2024Maps; }
-// bool SetSpring2024Maps(bool value) { if (value) { IsUsing_Spring2024Maps = true; } else (!value); { IsUsing_Spring2024Maps = false; } return IsUsing_Spring2024Maps; }
-// bool SetSummer2024Maps(bool value) { if (value) { IsUsing_Summer2024Maps = true; } else (!value); { IsUsing_Summer2024Maps = false; } return IsUsing_Summer2024Maps; }
-// bool SetFall2024Maps(bool value)   { if (value) { IsUsing_Fall2024Maps = true; }   else (!value); { IsUsing_Fall2024Maps = false; }   return IsUsing_Fall2024Maps; }
-// bool SetWinter2025Maps(bool value) { if (value) { IsUsing_Winter2025Maps = true; } else (!value); { IsUsing_Winter2025Maps = false; } return IsUsing_Winter2025Maps; }
-// bool SetSpring2025Maps(bool value) { if (value) { IsUsing_Spring2025Maps = true; } else (!value); { IsUsing_Spring2025Maps = false; } return IsUsing_Spring2025Maps; }
+void SetAlteration(string t_alteration, bool t_shouldUse) {
+    if (t_alteration.ToLower() == "dirt") { IsUsing_Dirt = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fast fagnet") { IsUsing_Fast_Magnet = t_shouldUse; }
+    else if (t_alteration.ToLower() == "flooded") { IsUsing_Flooded = t_shouldUse; }
+    else if (t_alteration.ToLower() == "grass") { IsUsing_Grass = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ice") { IsUsing_Ice = t_shouldUse; }
+    else if (t_alteration.ToLower() == "magnet") { IsUsing_Magnet = t_shouldUse; }
+    else if (t_alteration.ToLower() == "mixed") { IsUsing_Mixed = t_shouldUse; }
+    else if (t_alteration.ToLower() == "better mixed") { IsUsing_Better_Mixed = t_shouldUse; }
+    else if (t_alteration.ToLower() == "penalty") { IsUsing_Penalty = t_shouldUse; }
+    else if (t_alteration.ToLower() == "plastic") { IsUsing_Plastic = t_shouldUse; }
+    else if (t_alteration.ToLower() == "road") { IsUsing_Road = t_shouldUse; }
+    else if (t_alteration.ToLower() == "road dirt") { IsUsing_Road_Dirt = t_shouldUse; }
+    else if (t_alteration.ToLower() == "wood") { IsUsing_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "bobsleigh") { IsUsing_Bobsleigh = t_shouldUse; }
+    else if (t_alteration.ToLower() == "pipe") { IsUsing_Pipe = t_shouldUse; }
+    else if (t_alteration.ToLower() == "platform") { IsUsing_Platform = t_shouldUse; }
+    else if (t_alteration.ToLower() == "sausage") { IsUsing_Sausage = t_shouldUse; }
+    else if (t_alteration.ToLower() == "surfaceless") { IsUsing_Surfaceless = t_shouldUse; }
+    else if (t_alteration.ToLower() == "underwater") { IsUsing_Underwater = t_shouldUse; }
 
-// bool SetSNOW(bool value)                   { if (value) { IsUsing_Snow_ = true; }                        else (!value); { IsUsing_Snow_ = false; }                        return IsUsing_Snow_; }
-// bool SetSNOW_Carswitch(bool value)         { if (value) { IsUsing_Snow_Carswitch = true; }               else (!value); { IsUsing_Snow_Carswitch = false; }               return IsUsing_Snow_Carswitch; }
-// bool SetSNOW_Checkpointless(bool value)    { if (value) { IsUsing_Snow_Checkpointless = true; }          else (!value); { IsUsing_Snow_Checkpointless = false; }          return IsUsing_Snow_Checkpointless; }
-// bool SetSNOW_Icy(bool value)               { if (value) { IsUsing_Snow_Icy = true; }                     else (!value); { IsUsing_Snow_Icy = false; }                     return IsUsing_Snow_Icy; }
-// bool SetSNOW_Underwater(bool value)        { if (value) { IsUsing_Snow_Underwater = true; }              else (!value); { IsUsing_Snow_Underwater = false; }              return IsUsing_Snow_Underwater; }
-// bool SetSNOW_Wood(bool value)              { if (value) { IsUsing_Snow_Wood = true; }                    else (!value); { IsUsing_Snow_Wood = false; }                    return IsUsing_Snow_Wood; }
+    else if (t_alteration.ToLower() == "cruise") { IsUsing_Cruise = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fragile") { IsUsing_Fragile = t_shouldUse; }
+    else if (t_alteration.ToLower() == "full fragile") { IsUsing_Full_Fragile = t_shouldUse; }
+    else if (t_alteration.ToLower() == "freewheel") { IsUsing_Freewheel = t_shouldUse; }
+    else if (t_alteration.ToLower() == "glider") { IsUsing_Glider = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no brake") { IsUsing_No_Brakes = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no effect") { IsUsing_No_Effects = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no grip") { IsUsing_No_Grip = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no steering") { IsUsing_No_Steer = t_shouldUse; }
+    else if (t_alteration.ToLower() == "random dankness") { IsUsing_Random_Dankness = t_shouldUse; }
+    else if (t_alteration.ToLower() == "random effects") { IsUsing_Random_Effects = t_shouldUse; }
+    else if (t_alteration.ToLower() == "reactor (up)") { IsUsing_Reactor = t_shouldUse; }
+    else if (t_alteration.ToLower() == "reactor down") { IsUsing_Reactor_Down = t_shouldUse; }
+    else if (t_alteration.ToLower() == "slowmo") { IsUsing_Slowmo = t_shouldUse; }
+    else if (t_alteration.ToLower() == "wet wheels") { IsUsing_Wet_Wheels = t_shouldUse; }
+    else if (t_alteration.ToLower() == "worn tires") { IsUsing_Worn_Tires = t_shouldUse; }
 
-// bool SetSTADIUM(bool value)                { if (value) { IsUsing_Stadium_ = true; }                     else (!value); { IsUsing_Stadium_ = false; }                     return IsUsing_Stadium_; }
+    else if (t_alteration.ToLower() == "1 down") { IsUsing_1Down = t_shouldUse; }
+    else if (t_alteration.ToLower() == "1 back / forward") { IsUsing_1Back = t_shouldUse; }
+    else if (t_alteration.ToLower() == "1 left") { IsUsing_1Left = t_shouldUse; }
+    else if (t_alteration.ToLower() == "1 right") { IsUsing_1Right = t_shouldUse; }
+    else if (t_alteration.ToLower() == "1 up") { IsUsing_1Up = t_shouldUse; }
+    else if (t_alteration.ToLower() == "2 up") { IsUsing_2Up = t_shouldUse; }
+    else if (t_alteration.ToLower() == "better reverse / reverse magna") { IsUsing_Better_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cp1 is end") { IsUsing_CP1_is_End = t_shouldUse }
+    else if (t_alteration.ToLower() == "floor fin") { IsUsing_Floor_Fin = t_shouldUse; }
+    else if (t_alteration.ToLower() == "mansloughter") { IsUsing_Manslaughter = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no gear 5") { IsUsing_No_Gear_5 = t_shouldUse; }
+    else if (t_alteration.ToLower() == "podium") { IsUsing_Podium = t_shouldUse; }
+    else if (t_alteration.ToLower() == "puzzle") { IsUsing_Puzzle = t_shouldUse; }
+    else if (t_alteration.ToLower() == "reverse") { IsUsing_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "roofing") { IsUsing_Roofing = t_shouldUse; }
+    else if (t_alteration.ToLower() == "short") { IsUsing_Short = t_shouldUse; }
+    else if (t_alteration.ToLower() == "sky is the finish") { IsUsing_Sky_is_the_Finish = t_shouldUse; }
+    else if (t_alteration.ToLower() == "there and back / boomerang") { IsUsing_There_and_Back_Boomerang = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yep tree puzzle") { IsUsing_YEP_Tree_Puzzle = t_shouldUse; }
+    else if (t_alteration.ToLower() == "inclined") { IsUsing_Inclined = t_shouldUse; }
 
-// bool SetRALLY(bool value)                  { if (value) { IsUsing_Rally_ = true; }                       else (!value); { IsUsing_Rally_ = false; }                       return IsUsing_Rally_; }
+    else if (t_alteration.ToLower() == "[stadium]") { IsUsing_Stadium_ = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[stadium] wet wood") { IsUsing_Stadium_Wet_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow]") { IsUsing_Snow_ = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] carswitch") { IsUsing_Snow_Carswitch = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] checkpointless") { IsUsing_Snow_Checkpointless = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] ice") { IsUsing_Snow_Icy = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] underwater") { IsUsing_Snow_Underwater; }
+    else if (t_alteration.ToLower() == "[snow] wet plastic") { IsUsing_Snow_Wet_Plastic = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] wood") { IsUsing_Snow_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally]") { IsUsing_Rally_ = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally] carswitch") { IsUsing_Rally_Carswitch = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally] cp1 is end") { IsUsing_Rally_CP1_is_End = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally] underwater") { IsUsing_Rally_Underwater = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally] ice") { IsUsing_Rally_Icy = t_shouldUse; }
 
-// bool Set1Back(bool value)                  { if (value) { IsUsing_1Back = true; }                        else (!value); { IsUsing_1Back = false; }                        return IsUsing_1Back; }
-// bool Set1Down(bool value)                  { if (value) { IsUsing_1Down = true; }                        else (!value); { IsUsing_1Down = false; }                        return IsUsing_1Down; }
-// bool Set1Left(bool value)                  { if (value) { IsUsing_1Left = true; }                        else (!value); { IsUsing_1Left = false; }                        return IsUsing_1Left; }
-// bool Set1Right(bool value)                 { if (value) { IsUsing_1Right = true; }                       else (!value); { IsUsing_1Right = false; }                       return IsUsing_1Right; }
-// bool Set1Up(bool value)                    { if (value) { IsUsing_1Up = true; }                          else (!value); { IsUsing_1Up = false; }                          return IsUsing_1Up; }
-// bool Set2D(bool value)                     { if (value) { IsUsing_Flat_2D = true; }                           else (!value); { IsUsing_Flat_2D = false; }                           return IsUsing_Flat_2D; }
-// bool Set2Up(bool value)                    { if (value) { IsUsing_2Up = true; }                          else (!value); { IsUsing_2Up = false; }                          return IsUsing_2Up; }
-// bool SetA08(bool value)                    { if (value) { IsUsing_A08 = true; }                          else (!value); { IsUsing_A08 = false; }                          return IsUsing_A08; }
-// bool SetAntibooster(bool value)            { if (value) { IsUsing_Antibooster = true; }                  else (!value); { IsUsing_Antibooster = false; }                  return IsUsing_Antibooster; }
-// bool SetBoss(bool value)                   { if (value) { IsUsing_BOSS = true; }                         else (!value); { IsUsing_BOSS = false; }                         return IsUsing_BOSS; }
-// bool SetBackwards(bool value)              { if (value) { IsUsing_Backwards = true; }                    else (!value); { IsUsing_Backwards = false; }                    return IsUsing_Backwards; }
-// bool SetBetter_Mixed(bool value)           { if (value) { IsUsing_Better_Mixed = true; }                 else (!value); { IsUsing_Better_Mixed = false; }                 return IsUsing_Better_Mixed; }
-// bool SetBetter_Reverse(bool value)         { if (value) { IsUsing_Better_Reverse = true; }               else (!value); { IsUsing_Better_Reverse = false; }               return IsUsing_Better_Reverse; }
-// bool SetBlind(bool value)                  { if (value) { IsUsing_Blind = true; }                        else (!value); { IsUsing_Blind = false; }                        return IsUsing_Blind; }
-// bool SetBobsleigh(bool value)              { if (value) { IsUsing_Bobsleigh = true; }                    else (!value); { IsUsing_Bobsleigh = false; }                    return IsUsing_Bobsleigh; }
-// bool SetBoomerangThereAndBack(bool value)  { if (value) { IsUsing_There_and_Back_Boomerang = true; }     else (!value); { IsUsing_There_and_Back_Boomerang = false; }     return IsUsing_There_and_Back_Boomerang; }
-// bool SetBoosterless(bool value)            { if (value) { IsUsing_Boosterless = true; }                  else (!value); { IsUsing_Boosterless = false; }                  return IsUsing_Boosterless; }
-// bool SetBroken(bool value)                 { if (value) { IsUsing_Broken = true; }                       else (!value); { IsUsing_Broken = false; }                       return IsUsing_Broken; }
-// bool SetBumper(bool value)                 { if (value) { IsUsing_Bumper = true; }                       else (!value); { IsUsing_Bumper = false; }                       return IsUsing_Bumper; }
-// bool SetCP1Kept(bool value)                { if (value) { IsUsing_CP1_Kept = true; }                     else (!value); { IsUsing_CP1_Kept = false; }                     return IsUsing_CP1_Kept; }
-// bool SetCP1IsEnd(bool value)               { if (value) { IsUsing_CP1_is_End = true; }                   else (!value); { IsUsing_CP1_is_End = false; }                   return IsUsing_CP1_is_End; }
-// bool SetCPLink(bool value)                 { if (value) { IsUsing_CPLink = true; }                       else (!value); { IsUsing_CPLink = false; }                       return IsUsing_CPLink; }
-// bool SetCPBoost(bool value)                { if (value) { IsUsing_CP_Boost = true; }                     else (!value); { IsUsing_CP_Boost = false; }                     return IsUsing_CP_Boost; }
-// bool SetCPfull(bool value)                 { if (value) { IsUsing_CPfull = true; }                       else (!value); { IsUsing_CPfull = false; }                       return IsUsing_CPfull; }
-// bool SetCheckpoin_t(bool value)            { if (value) { IsUsing_Checkpoin_t = true; }                  else (!value); { IsUsing_Checkpoin_t = false; }                  return IsUsing_Checkpoin_t; }
-// bool SetCheckpointless(bool value)         { if (value) { IsUsing_Checkpointless = true; }               else (!value); { IsUsing_Checkpointless = false; }               return IsUsing_Checkpointless; }
-// bool SetCheckpointless_Reverse(bool value) { if (value) { IsUsing_Checkpointless_Reverse = true; }       else (!value); { IsUsing_Checkpointless_Reverse = false; }       return IsUsing_Checkpointless_Reverse; }
-// bool SetCleaned(bool value)                { if (value) { IsUsing_Cleaned = true; }                      else (!value); { IsUsing_Cleaned = false; }                      return IsUsing_Cleaned; }
-// bool SetColorsCombined(bool value)         { if (value) { IsUsing_Colours_Combined = true; }              else (!value); { IsUsing_Colours_Combined = false; }              return IsUsing_Colours_Combined; }
-// bool SetCruise(bool value)                 { if (value) { IsUsing_Cruise = true; }                       else (!value); { IsUsing_Cruise = false; }                       return IsUsing_Cruise; }
-// bool SetDirt(bool value)                   { if (value) { IsUsing_Dirt = true; }                         else (!value); { IsUsing_Dirt = false; }                         return IsUsing_Dirt; }
-// bool SetEarthquake(bool value)             { if (value) { IsUsing_Earthquake = true; }                   else (!value); { IsUsing_Earthquake = false; }                   return IsUsing_Earthquake; }
-// bool SetEffectless(bool value)             { if (value) { IsUsing_No_Effects = true; }                   else (!value); { IsUsing_No_Effects = false; }                   return IsUsing_No_Effects; }
-// bool SetEgocentrism(bool value)            { if (value) { IsUsing_Egocentrism = true; }                  else (!value); { IsUsing_Egocentrism = false; }                  return IsUsing_Egocentrism; }
-// bool SetFast(bool value)                   { if (value) { IsUsing_Fast = true; }                         else (!value); { IsUsing_Fast = false; }                         return IsUsing_Fast; }
-// bool SetFastMagnet(bool value)             { if (value) { IsUsing_Fast_Magnet = true; }                  else (!value); { IsUsing_Fast_Magnet = false; }                  return IsUsing_Fast_Magnet; }
-// bool SetFlipped(bool value)                { if (value) { IsUsing_Flipped = true; }                      else (!value); { IsUsing_Flipped = false; }                      return IsUsing_Flipped; }
-// bool SetFlooded(bool value)                { if (value) { IsUsing_Flooded = true; }                      else (!value); { IsUsing_Flooded = false; }                      return IsUsing_Flooded; }
-// bool SetFloorFin(bool value)               { if (value) { IsUsing_Floor_Fin = true; }                    else (!value); { IsUsing_Floor_Fin = false; }                    return IsUsing_Floor_Fin; }
-// bool SetFragile(bool value)                { if (value) { IsUsing_Fragile = true; }                      else (!value); { IsUsing_Fragile = false; }                      return IsUsing_Fragile; }
-// bool SetFreewheel(bool value)              { if (value) { IsUsing_Freewheel = true; }                    else (!value); { IsUsing_Freewheel = false; }                    return IsUsing_Freewheel; }
-// bool SetGlider(bool value)                 { if (value) { IsUsing_Glider = true; }                       else (!value); { IsUsing_Glider = false; }                       return IsUsing_Glider; }
-// bool SetGotRotated_CPsRotated(bool value)  { if (value) { IsUsing_Got_Rotated_CPs_Rotated_90__ = true; } else (!value); { IsUsing_Got_Rotated_CPs_Rotated_90__ = false; } return IsUsing_Got_Rotated_CPs_Rotated_90__; }
-// bool SetGrass(bool value)                  { if (value) { IsUsing_Grass = true; }                        else (!value); { IsUsing_Grass = false; }                        return IsUsing_Grass; }
-// bool SetHard(bool value)                   { if (value) { IsUsing_Hard = true; }                         else (!value); { IsUsing_Hard = false; }                         return IsUsing_Hard; }
-// bool SetHoles(bool value)                  { if (value) { IsUsing_Holes = true; }                        else (!value); { IsUsing_Holes = false; }                        return IsUsing_Holes; }
-// bool SetIce(bool value)                    { if (value) { IsUsing_Ice = true; }                          else (!value); { IsUsing_Ice = false; }                          return IsUsing_Ice; }
-// bool SetIce_Reverse(bool value)            { if (value) { IsUsing_Ice_Reverse = true; }                  else (!value); { IsUsing_Ice_Reverse = false; }                  return IsUsing_Ice_Reverse; }
-// bool SetIce_Reverse_Reactor(bool value)    { if (value) { IsUsing_Ice_Reverse_Reactor = true; }          else (!value); { IsUsing_Ice_Reverse_Reactor = false; }          return IsUsing_Ice_Reverse_Reactor; }
-// bool SetIce_Short(bool value)              { if (value) { IsUsing_Ice_Short = true; }                    else (!value); { IsUsing_Ice_Short = false; }                    return IsUsing_Ice_Short; }
-// bool SetIcy_Reactor(bool value)            { if (value) { IsUsing_Icy_Reactor = true; }                  else (!value); { IsUsing_Icy_Reactor = false; }                  return IsUsing_Icy_Reactor; }
-// bool SetInclined(bool value)               { if (value) { IsUsing_Inclined = true; }                     else (!value); { IsUsing_Inclined = false; }                     return IsUsing_Inclined; }
-// bool SetLunatic(bool value)                { if (value) { IsUsing_Lunatic = true; }                      else (!value); { IsUsing_Lunatic = false; }                      return IsUsing_Lunatic; }
-// bool SetMagnet(bool value)                 { if (value) { IsUsing_Magnet = true; }                       else (!value); { IsUsing_Magnet = false; }                       return IsUsing_Magnet; }
-// bool SetMagnet_Reverse(bool value)         { if (value) { IsUsing_Magnet_Reverse = true; }               else (!value); { IsUsing_Magnet_Reverse = false; }               return IsUsing_Magnet_Reverse; }
-// bool SetManslaughter(bool value)           { if (value) { IsUsing_Manslaughter = true; }                 else (!value); { IsUsing_Manslaughter = false; }                 return IsUsing_Manslaughter; }
-// bool SetMiniRPG(bool value)                { if (value) { IsUsing_Mini_RPG = true; }                     else (!value); { IsUsing_Mini_RPG = false; }                     return IsUsing_Mini_RPG; }
-// bool SetMirrored(bool value)               { if (value) { IsUsing_Mirrored = true; }                     else (!value); { IsUsing_Mirrored = false; }                     return IsUsing_Mirrored; }
-// bool SetMixed(bool value)                  { if (value) { IsUsing_Mixed = true; }                        else (!value); { IsUsing_Mixed = false; }                        return IsUsing_Mixed; }
-// bool SetNgolo_Cacti(bool value)            { if (value) { IsUsing_Ngolo_Cacti = true; }                  else (!value); { IsUsing_Ngolo_Cacti = false; }                  return IsUsing_Ngolo_Cacti; }
-// bool SetNoSteer(bool value)                { if (value) { IsUsing_No_Steer = true; }                     else (!value); { IsUsing_No_Steer = false; }                     return IsUsing_No_Steer; }
-// bool SetNoBrakes(bool value)               { if (value) { IsUsing_No_Brakes = true; }                    else (!value); { IsUsing_No_Brakes = false; }                    return IsUsing_No_Brakes; }
-// bool SetNoCut(bool value)                  { if (value) { IsUsing_No_Cut = true; }                       else (!value); { IsUsing_No_Cut = false; }                       return IsUsing_No_Cut; }
-// bool SetNoGrip(bool value)                 { if (value) { IsUsing_No_Grip = true; }                      else (!value); { IsUsing_No_Grip = false; }                      return IsUsing_No_Grip; }
-// bool SetNoGear5(bool value)                { if (value) { IsUsing_No_Gear_5 = true; }                    else (!value); { IsUsing_No_Gear_5 = false; }                    return IsUsing_No_Gear_5; }
-// bool SetPenalty(bool value)                { if (value) { IsUsing_Penalty = true; }                      else (!value); { IsUsing_Penalty = false; }                      return IsUsing_Penalty; }
-// bool SetPipe(bool value)                   { if (value) { IsUsing_Pipe = true; }                         else (!value); { IsUsing_Pipe = false; }                         return IsUsing_Pipe; }
-// bool SetPlastic(bool value)                { if (value) { IsUsing_Plastic = true; }                      else (!value); { IsUsing_Plastic = false; }                      return IsUsing_Plastic; }
-// bool SetPlastic_Reverse(bool value)        { if (value) { IsUsing_Plastic_Reverse = true; }              else (!value); { IsUsing_Plastic_Reverse = false; }              return IsUsing_Plastic_Reverse; }
-// bool SetPlatform(bool value)               { if (value) { IsUsing_Platform = true; }                     else (!value); { IsUsing_Platform = false; }                     return IsUsing_Platform; }
-// bool SetPodium(bool value)                 { if (value) { IsUsing_Podium = true; }                       else (!value); { IsUsing_Podium = false; }                       return IsUsing_Podium; }
-// bool SetPoolHunters(bool value)            { if (value) { IsUsing_Pool_Hunters = true; }                 else (!value); { IsUsing_Pool_Hunters = false; }                 return IsUsing_Pool_Hunters; }
-// bool SetPuzzle(bool value)                 { if (value) { IsUsing_Puzzle = true; }                       else (!value); { IsUsing_Puzzle = false; }                       return IsUsing_Puzzle; }
-// bool SetRandom(bool value)                 { if (value) { IsUsing_Random = true; }                       else (!value); { IsUsing_Random = false; }                       return IsUsing_Random; }
-// bool SetRandomDankness(bool value)         { if (value) { IsUsing_Random_Dankness = true; }              else (!value); { IsUsing_Random_Dankness = false; }              return IsUsing_Random_Dankness; }
-// bool SetRandomEffects(bool value)          { if (value) { IsUsing_Random_Effects = true; }               else (!value); { IsUsing_Random_Effects = false; }               return IsUsing_Random_Effects; }
-// bool SetReactor(bool value)                { if (value) { IsUsing_Reactor = true; }                      else (!value); { IsUsing_Reactor = false; }                      return IsUsing_Reactor; }
-// bool SetReactorDown(bool value)            { if (value) { IsUsing_Reactor_Down = true; }                 else (!value); { IsUsing_Reactor_Down = false; }                 return IsUsing_Reactor_Down; }
-// bool SetReverse(bool value)                { if (value) { IsUsing_Reverse = true; }                      else (!value); { IsUsing_Reverse = false; }                      return IsUsing_Reverse; }
-// bool SetRingCP(bool value)                 { if (value) { IsUsing_Ring_CP = true; }                      else (!value); { IsUsing_Ring_CP = false; }                      return IsUsing_Ring_CP; }
-// bool SetRoad(bool value)                   { if (value) { IsUsing_Road = true; }                         else (!value); { IsUsing_Road = false; }                         return IsUsing_Road; }
-// bool SetRoad_Dirt(bool value)              { if (value) { IsUsing_Road_Dirt = true; }                    else (!value); { IsUsing_Road_Dirt = false; }                    return IsUsing_Road_Dirt; }
-// bool SetRoofing(bool value)                { if (value) { IsUsing_Roofing = true; }                      else (!value); { IsUsing_Roofing = false; }                      return IsUsing_Roofing; }
-// bool SetSausage(bool value)                { if (value) { IsUsing_Sausage = true; }                      else (!value); { IsUsing_Sausage = false; }                      return IsUsing_Sausage; }
-// bool SetScubaDiving(bool value)            { if (value) { IsUsing_Scuba_Diving = true; }                 else (!value); { IsUsing_Scuba_Diving = false; }                 return IsUsing_Scuba_Diving; }
-// bool SetSectionsjoined(bool value)         { if (value) { IsUsing_Sections_joined = true; }              else (!value); { IsUsing_Sections_joined = false; }              return IsUsing_Sections_joined; }
-// bool SetSelectDEL(bool value)              { if (value) { IsUsing_Select_DEL = true; }                   else (!value); { IsUsing_Select_DEL = false; }                   return IsUsing_Select_DEL; }
-// bool SetShort(bool value)                  { if (value) { IsUsing_Short = true; }                        else (!value); { IsUsing_Short = false; }                        return IsUsing_Short; }
-// bool SetSkyIsTheFinish(bool value)         { if (value) { IsUsing_Sky_is_the_Finish = true; }            else (!value); { IsUsing_Sky_is_the_Finish = false; }            return IsUsing_Sky_is_the_Finish; }
-// bool SetSkyIsTheFinishReverse(bool value)  { if (value) { IsUsing_Sky_is_the_Finish_Reverse = true; }    else (!value); { IsUsing_Sky_is_the_Finish_Reverse = false; }    return IsUsing_Sky_is_the_Finish_Reverse; }
-// bool SetSlowmo(bool value)                 { if (value) { IsUsing_Slowmo = true; }                       else (!value); { IsUsing_Slowmo = false; }                       return IsUsing_Slowmo; }
-// bool SetSpeedlimit(bool value)             { if (value) { IsUsing_Speedlimit = true; }                   else (!value); { IsUsing_Speedlimit = false; }                   return IsUsing_Speedlimit; }
-// bool SetStaircase(bool value)              { if (value) { IsUsing_Staircase = true; }                    else (!value); { IsUsing_Staircase = false; }                    return IsUsing_Staircase; }
-// bool SetStart1Down(bool value)             { if (value) { IsUsing_Start_1_Down = true; }                 else (!value); { IsUsing_Start_1_Down = false; }                 return IsUsing_Start_1_Down; }
-// bool SetStraightToTheFinish(bool value)    { if (value) { IsUsing_Straight_to_the_Finish = true; }       else (!value); { IsUsing_Straight_to_the_Finish = false; }       return IsUsing_Straight_to_the_Finish; }
-// bool SetSupersized(bool value)             { if (value) { IsUsing_Supersized = true; }                   else (!value); { IsUsing_Supersized = false; }                   return IsUsing_Supersized; }
-// bool SetSurfaceless(bool value)            { if (value) { IsUsing_Surfaceless = true; }                  else (!value); { IsUsing_Surfaceless = false; }                  return IsUsing_Surfaceless; }
-// bool Set_sw2u1l_cpu_f2d1r(bool value)      { if (value) { IsUsing_sw2u1l_cpu_f2d1r = true; }             else (!value); { IsUsing_sw2u1l_cpu_f2d1r = false; }             return IsUsing_sw2u1l_cpu_f2d1r; }
-// bool SetSymmetrical(bool value)            { if (value) { IsUsing_Symmetrical = true; }                  else (!value); { IsUsing_Symmetrical = false; }                  return IsUsing_Symmetrical; }
-// bool SetTMGL_Easy(bool value)              { if (value) { IsUsing_TMGL_Easy = true; }                    else (!value); { IsUsing_TMGL_Easy = false; }                    return IsUsing_TMGL_Easy; }
-// bool SetTilted(bool value)                 { if (value) { IsUsing_Tilted = true; }                       else (!value); { IsUsing_Tilted = false; }                       return IsUsing_Tilted; }
-// bool SetUnderwater(bool value)             { if (value) { IsUsing_Underwater = true; }                   else (!value); { IsUsing_Underwater = false; }                   return IsUsing_Underwater; }
-// bool SetUnderwater_Reverse(bool value)     { if (value) { IsUsing_Underwater_Reverse = true; }           else (!value); { IsUsing_Underwater_Reverse = false; }           return IsUsing_Underwater_Reverse; }
-// bool SetWalmartMini(bool value)            { if (value) { IsUsing_Walmart_Mini = true; }                 else (!value); { IsUsing_Walmart_Mini = false; }                 return IsUsing_Walmart_Mini; }
-// bool SetWetIcyWood(bool value)             { if (value) { IsUsing_Wet_Icy_Wood = true; }                 else (!value); { IsUsing_Wet_Icy_Wood = false; }                 return IsUsing_Wet_Icy_Wood; }
-// bool SetWetWheels(bool value)              { if (value) { IsUsing_Wet_Wheels = true; }                   else (!value); { IsUsing_Wet_Wheels = false; }                   return IsUsing_Wet_Wheels; }
-// bool SetWetWood(bool value)                { if (value) { IsUsing_Wet_Wood = true; }                     else (!value); { IsUsing_Wet_Wood = false; }                     return IsUsing_Wet_Wood; }
-// bool SetWood(bool value)                   { if (value) { IsUsing_Wood = true; }                         else (!value); { IsUsing_Wood = false; }                         return IsUsing_Wood; }
-// bool SetWornTires(bool value)              { if (value) { IsUsing_Worn_Tires = true; }                   else (!value); { IsUsing_Worn_Tires = false; }                   return IsUsing_Worn_Tires; }
-// bool SetXX_But(bool value)                 { if (value) { IsUsing_XX_But = true; }                       else (!value); { IsUsing_XX_But = false; }                       return IsUsing_XX_But; }
-// bool SetYEET(bool value)                   { if (value) { IsUsing_YEET = true; }                         else (!value); { IsUsing_YEET = false; }                         return IsUsing_YEET; }
-// bool SetYEET_Down(bool value)              { if (value) { IsUsing_YEET_Down = true; }                    else (!value); { IsUsing_YEET_Down = false; }                    return IsUsing_YEET_Down; }
-// bool SetYEET_Puzzle(bool value)            { if (value) { IsUsing_YEET_Puzzle = true; }                  else (!value); { IsUsing_YEET_Puzzle = false; }                  return IsUsing_YEET_Puzzle; }
-// bool SetYEET_Random_Puzzle(bool value)     { if (value) { IsUsing_YEET_Random_Puzzle = true; }           else (!value); { IsUsing_YEET_Random_Puzzle = false; }           return IsUsing_YEET_Random_Puzzle; }
-// bool SetYEET_Reverse(bool value)           { if (value) { IsUsing_YEET_Reverse = true; }                 else (!value); { IsUsing_YEET_Reverse = false; }                 return IsUsing_YEET_Reverse; }
-// bool SetYeet_Max_Up(bool value)            { if (value) { IsUsing_Yeet_Max_Up = true; }                  else (!value); { IsUsing_Yeet_Max_Up = false; }                  return IsUsing_Yeet_Max_Up; }
-// bool SetYEP_Tree_Puzzle(bool value)        { if (value) { IsUsing_YEP_Tree_Puzzle = true; }              else (!value); { IsUsing_YEP_Tree_Puzzle = false; }              return IsUsing_YEP_Tree_Puzzle; }
+    else if (t_alteration.ToLower() == "100% wet icy wood") { IsUsing_100WetIcyWood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "checkpointless reverse") { IsUsing_Checkpointless_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ice reactor") { IsUsing_Icy_Reactor = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ice reverse") { IsUsing_Ice_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ice reverse reactor") { IsUsing_Ice_Reverse_Reactor = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ice short") { IsUsing_Ice_Short = t_shouldUse; }
+    else if (t_alteration.ToLower() == "magnet reverse") { IsUsing_Magnet_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "plastic reverse") { IsUsing_Plastic_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "sky is the finish reverse") { IsUsing_Sky_is_the_Finish_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "start water 2 up 1 left checkpoints unlinked finish 2 down 1 right") { IsUsing_sw2u1l_cpu_f2d1r = t_shouldUse; }
+    else if (t_alteration.ToLower() == "sw2u1l cpu f2d1r") { IsUsing_sw2u1l_cpu_f2d1r; }
+    else if (t_alteration.ToLower() == "underwater reverse") { IsUsing_Underwater_Reverse = t_shouldUse; }
+    else if (t_alteration.ToLower() == "wet plastic") { IsUsing_Wet_Plastic = t_shouldUse; }
+    else if (t_alteration.ToLower() == "wet wood") { IsUsing_Wet_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "wet icy wood") { IsUsing_Wet_Icy_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet max up") { IsUsing_Yeet_Max_Up = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet puzzle") { IsUsing_YEET_Puzzle = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet random puzzle") { IsUsing_YEET_Random_Puzzle = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet reverse") { IsUsing_YEET_Reverse = t_shouldUse; }
 
-// bool SetAllOfficialCompetitions(bool value)        { if (value) { IsUsing_AllOfficialCompetitions = true; }  else (!value); { IsUsing_AllOfficialCompetitions = false; }  return IsUsing_AllOfficialCompetitions; }
-// bool SetAllAlteredOfficialCompetitions(bool value) { if (value) { IsUsing__AllOfficialCompetitions = true; } else (!value); { IsUsing__AllOfficialCompetitions = false; } return IsUsing__AllOfficialCompetitions; }
-// bool SetAllSnowDiscovery(bool value)               { if (value) { IsUsing_AllSnowDiscovery = true; }         else (!value); { IsUsing_AllSnowDiscovery = false; }         return IsUsing_AllSnowDiscovery; }
-// bool SetAllRallyDiscovery(bool value)              { if (value) { IsUsing_AllRallyDiscovery = true; }        else (!value); { IsUsing_AllRallyDiscovery = false; }        return IsUsing_AllRallyDiscovery; }
-// bool SetMapIsNotObtainable(bool value)             { if (value) { IsUsing_MapIsNotObtainable = true; }       else (!value); { IsUsing_MapIsNotObtainable = false; }       return IsUsing_MapIsNotObtainable; }
-// bool SetOfficialNadeo(bool value)                  { if (value) { IsUsing_OfficialNadeo = true; }            else (!value); { IsUsing_OfficialNadeo = false; }            return IsUsing_OfficialNadeo; }
-// bool SetAllTOTD(bool value)                        { if (value) { IsUsing_AllTOTD = true; }                  else (!value); { IsUsing_AllTOTD = false; }                  return IsUsing_AllTOTD; }
-// ;
+    else if (t_alteration.ToLower() == "xx-but") { IsUsing_XX_But = t_shouldUse; }
+    else if (t_alteration.ToLower() == "flat / 2d") { IsUsing_Flat_2D = t_shouldUse; }
+    else if (t_alteration.ToLower() == "a08") { IsUsing_A08 = t_shouldUse; }
+    else if (t_alteration.ToLower() == "altered camera") { IsUsing_Altered_Camera = t_shouldUse; }
+    else if (t_alteration.ToLower() == "antiboosters") { IsUsing_Antibooster = t_shouldUse; }
+    else if (t_alteration.ToLower() == "backwards") { IsUsing_Backwards = t_shouldUse; }
+    else if (t_alteration.ToLower() == "blind (altered camera)") { IsUsing_Blind = t_shouldUse; }
+    else if (t_alteration.ToLower() == "boosterless") { IsUsing_Boosterless = t_shouldUse; }
+    else if (t_alteration.ToLower() == "boss / overlayed") { IsUsing_BOSS = t_shouldUse; }
+    else if (t_alteration.ToLower() == "broken") { IsUsing_Broken = t_shouldUse; }
+    else if (t_alteration.ToLower() == "bumper") { IsUsing_Bumper = t_shouldUse; }
+    else if (t_alteration.ToLower() == "checkpoin't") { IsUsing_Checkpoin_t = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cleaned") { IsUsing_Cleaned = t_shouldUse; }
+    else if (t_alteration.ToLower() == "colour combined") { IsUsing_Colours_Combined = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cp/boost swap") { IsUsing_CP_Boost = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cp1 kept") { IsUsing_CP1_Kept = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cpfull") { IsUsing_CPfull = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cpless") { IsUsing_Checkpointless = t_shouldUse; }
+    else if (t_alteration.ToLower() == "cplink") { IsUsing_CPLink = t_shouldUse; }
+    else if (t_alteration.ToLower() == "got rotated / cps rotated 90°") { IsUsing_Got_Rotated_CPs_Rotated_90__ = t_shouldUse; }
+    else if (t_alteration.ToLower() == "earthquake") { IsUsing_Earthquake = t_shouldUse; }
+    else if (t_alteration.ToLower() == "egocentrism (altered camera)") { IsUsing_Egocentrism = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fast") { IsUsing_Fast = t_shouldUse; }
+    else if (t_alteration.ToLower() == "flipped") { IsUsing_Flipped = t_shouldUse; }
+    else if (t_alteration.ToLower() == "holes") { IsUsing_Holes = t_shouldUse; }
+    else if (t_alteration.ToLower() == "lunatic") { IsUsing_Lunatic = t_shouldUse; }
+    else if (t_alteration.ToLower() == "mini rpg") { IsUsing_Mini_RPG = t_shouldUse; }
+    else if (t_alteration.ToLower() == "mirrored") { IsUsing_Mirrored = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ngolo / cacti") { IsUsing_Ngolo_Cacti = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no cut") { IsUsing_No_Cut = t_shouldUse; }
+    else if (t_alteration.ToLower() == "pool hunters") { IsUsing_Pool_Hunters = t_shouldUse; }
+    else if (t_alteration.ToLower() == "random") { IsUsing_Random = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ring cp") { IsUsing_Ring_CP = t_shouldUse; }
+    else if (t_alteration.ToLower() == "scuba diving") { IsUsing_Scuba_Diving = t_shouldUse; }
+    else if (t_alteration.ToLower() == "sections joined") { IsUsing_Sections_joined = t_shouldUse; }
+    else if (t_alteration.ToLower() == "select del") { IsUsing_Select_DEL = t_shouldUse; }
+    else if (t_alteration.ToLower() == "speedlimit") { IsUsing_Speedlimit = t_shouldUse; }
+    else if (t_alteration.ToLower() == "start 1 down") { IsUsing_Start_1_Down = t_shouldUse; }
+    else if (t_alteration.ToLower() == "staircase") { IsUsing_Staircase = t_shouldUse; }
+    else if (t_alteration.ToLower() == "supersized") { IsUsing_Supersized = t_shouldUse; }
+    else if (t_alteration.ToLower() == "straight to the finish") { IsUsing_Straight_to_the_Finish = t_shouldUse; }
+    else if (t_alteration.ToLower() == "symmetrical") { IsUsing_Symmetrical = t_shouldUse; }
+    else if (t_alteration.ToLower() == "tilted") { IsUsing_Tilted = t_shouldUse; }
+    else if (t_alteration.ToLower() == "walmart mini") { IsUsing_Walmart_Mini = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet") { IsUsing_YEET = t_shouldUse; }
+    else if (t_alteration.ToLower() == "yeet down") { IsUsing_YEET_Down = t_shouldUse; }
+
+    else if (t_alteration.ToLower() == "training") { IsUsing_Trainig = t_shouldUse; }
+    else if (t_alteration.ToLower() == "tmgl / tmwt easy mode") { IsUsing_TMGL_Easy = t_shouldUse; }
+    else if (t_alteration.ToLower() == "competitions (with alterations)") { IsUsing__AllOfficialCompetitions = t_shouldUse; }
+    else if (t_alteration.ToLower() == "competitions (without alterations)") { IsUsing_AllOfficialCompetitions = t_shouldUse; }
+    else if (t_alteration.ToLower() == "unaltered nadeo") { IsUsing_OfficialNadeo = t_shouldUse; }
+    else if (t_alteration.ToLower() == "altered totd") { IsUsing_AllTOTD = t_shouldUse; }
+
+    else if (t_alteration.ToLower() == "spring 2020") { IsUsing_Spring2020Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2020") { IsUsing_Summer2020Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fall 2020") { IsUsing_Fall2020Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "winter 2021") { IsUsing_Winter2021Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "spring 2021") { IsUsing_Spring2021Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2021") { IsUsing_Summer2021Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fall 2021") { IsUsing_Fall2021Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "winter 2022") { IsUsing_Winter2022Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "spring 2022") { IsUsing_Spring2022Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2022") { IsUsing_Summer2022Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fall 2022") { IsUsing_Fall2022Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "winter 2023") { IsUsing_Winter2023Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "spring 2023") { IsUsing_Spring2023Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2023") { IsUsing_Summer2023Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fall 2023") { IsUsing_Fall2023Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "winter 2024") { IsUsing_Winter2024Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "spring 2024") { IsUsing_Spring2024Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2024") { IsUsing_Summer2024Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "fall 2024") { IsUsing_Fall2024Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "winter 2025") { IsUsing_Winter2025Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "spring 2025") { IsUsing_Spring2025Maps = t_shouldUse; }
+    else if (t_alteration.ToLower() == "summer 2025") { IsUsing_Summer2025Maps = t_shouldUse; }
+}
+
+void SetFullSeason(string t_fullSeason, bool t_shouldUse) {
+    if (t_fullSeason.ToLower() == "winter") { IsUsing_Winter2021Maps = t_shouldUse; 
+                                              IsUsing_Winter2022Maps = t_shouldUse; 
+                                              IsUsing_Winter2023Maps = t_shouldUse; 
+                                              IsUsing_Winter2024Maps = t_shouldUse; 
+                                              IsUsing_Winter2025Maps = t_shouldUse; }
+    else if (t_fullSeason.ToLower() == "spring") { IsUsing_Spring2020Maps = t_shouldUse; 
+                                                   IsUsing_Spring2021Maps = t_shouldUse; 
+                                                   IsUsing_Spring2022Maps = t_shouldUse; 
+                                                   IsUsing_Spring2023Maps = t_shouldUse; 
+                                                   IsUsing_Spring2024Maps = t_shouldUse; 
+                                                   IsUsing_Spring2025Maps = t_shouldUse; }
+    else if (t_fullSeason.ToLower() == "summer") { IsUsing_Summer2020Maps = t_shouldUse; 
+                                                   IsUsing_Summer2021Maps = t_shouldUse; 
+                                                   IsUsing_Summer2022Maps = t_shouldUse; 
+                                                   IsUsing_Summer2023Maps = t_shouldUse; 
+                                                   IsUsing_Summer2024Maps = t_shouldUse; 
+                                                   IsUsing_Summer2025Maps = t_shouldUse; }
+    else if (t_fullSeason.ToLower() == "fall") { IsUsing_Fall2020Maps = t_shouldUse; 
+                                                 IsUsing_Fall2021Maps = t_shouldUse; 
+                                                 IsUsing_Fall2022Maps = t_shouldUse; 
+                                                 IsUsing_Fall2023Maps = t_shouldUse; 
+                                                 IsUsing_Fall2024Maps = t_shouldUse; }
+}
