@@ -57,9 +57,9 @@ void CheckCurrentInstalledVersionType() {
                 log("Your version is a string, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Error, 57);
                 MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
             }
-            // log("Your version is an int, no need to change it", LogLevel::Info, 61);
+            // log("Your version is an int, no need to change it", LogLevel::Info, 60);
         }
-        // log("Your version is an object, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Error, 64);
+        // log("Your version is an object, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Error, 62);
     }
-    // log("Your version is not an object :YEK:", LogLevel::Error, 67);
+    // log("Your version is not an object :YEK:", LogLevel::Error, 64);
 }

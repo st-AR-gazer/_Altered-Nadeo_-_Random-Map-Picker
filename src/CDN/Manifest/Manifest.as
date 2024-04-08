@@ -70,7 +70,7 @@ int GetCurrentInstalledVersion() {
         return json["latestVersion"];
     }
 
-    log("JSON is not an object. JSON is: " + tostring(json.GetType()), LogLevel::Error, 34);
+    log("JSON is not an object. JSON is: " + tostring(json.GetType()), LogLevel::Error, 73);
     return -1;
 }
 
