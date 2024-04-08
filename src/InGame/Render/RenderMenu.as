@@ -3,7 +3,7 @@ int g_lineCount;
 void RenderMenu() {
     int lineCount = g_lineCount - 1;
     
-    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Random " + ColorizeString("Altered") + "\\$z Map Settings", "There are " + lineCount + " possible maps!")) {
+    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Random " + ColorizeString("Altered") + "\\$z Map", "There are " + lineCount + " possible maps!")) {
         if (showInterface) {
             showInterface = false;
         } else {
