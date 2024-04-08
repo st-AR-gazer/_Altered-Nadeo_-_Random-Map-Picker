@@ -2,12 +2,13 @@
 bool shouldDownloadNewFiles = true;
 
 void Main() {
-    log("Main func has started", LogLevel::Info, 5);
+    // log("Main func has started", LogLevel::Info, 5);
     
     NadeoServices::AddAudience("NadeoClubServices");
     while (!NadeoServices::IsAuthenticated("NadeoClubServices")) { yield(); }
 
     CheckRequiredPermissions();
+    PopulateAlterationsArrays();
     
     FileAndFolderCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
     log("Local file check completed, fixing some files", LogLevel::InfoG, 13);

@@ -1,189 +1,194 @@
-// string GetARandomAltMapUid() {
-//     string uid = GetRandomUID();
-//     return uid;
-// }
+string GetARandomAltMapUid() {
+    string uid = GetRandomUID();
+    return uid;
+}
 
 
-// Json::Value GetUserSettings() {
-//     Json::Value settings;
+Json::Value GetUserSettings() {
+    Json::Value settings;
 
-//     Json::Value bySeason;
-//     bySeason["Only Winter Maps"] = IsUsing_OnlyWinterMaps;
-//     bySeason["Only Spring Maps"] = IsUsing_OnlySpringMaps;
-//     bySeason["Only Summer Maps"] = IsUsing_OnlySummerMaps;
-//     bySeason["Only Fall Maps"] = IsUsing_OnlyFallMaps;
-//     // Season Specific
-//     bySeason["Only Spring 2020 Maps"] = IsUsing_Spring2020Maps;
-//     bySeason["Only Summer 2020 Maps"] = IsUsing_Summer2020Maps;
-//     bySeason["Only Fall 2020 Maps"] = IsUsing_Winter2021Maps;
-//     bySeason["Only Winter 2021 Maps"] = IsUsing_Winter2021Maps;
-//     bySeason["Only Spring 2021 Maps"] = IsUsing_Summer2021Maps;
-//     bySeason["Only Summer 2021 Maps"] = IsUsing_Summer2021Maps;
-//     bySeason["Only Fall 2021 Maps"] = IsUsing_Fall2021Maps;
-//     bySeason["Only Winter 2022 Maps"] = IsUsing_Winter2022Maps;
-//     bySeason["Only Spring 2022 Maps"] = IsUsing_Spring2022Maps;
-//     bySeason["Only Summer 2022 Maps"] = IsUsing_Summer2022Maps;
-//     bySeason["Only Fall 2022 Maps"] = IsUsing_Fall2022Maps;
-//     bySeason["Only Winter 2023 Maps"] = IsUsing_Winter2023Maps;
-//     bySeason["Only Spring 2023 Maps"] = IsUsing_Spring2023Maps;
-//     bySeason["Only Summer 2023 Maps"] = IsUsing_Summer2023Maps;
-//     bySeason["Only Fall 2023 Maps"] = IsUsing_Fall2023Maps;
-//     bySeason["Only Winter 2024 Maps"] = IsUsing_Winter2024Maps;
-//     bySeason["Only Spring 2024 Maps"] = IsUsing_Spring2024Maps;
-//     bySeason["Only Summer 2024 Maps"] = IsUsing_Summer2024Maps;
-//     bySeason["Only Fall 2024 Maps"] = IsUsing_Fall2024Maps;
-//     bySeason["Only Winter 2025 Maps"] = IsUsing_Winter2025Maps;
-//     bySeason["Only Spring 2025 Maps"] = IsUsing_Spring2025Maps;
+    // Altered Surface
+    settings["Alteration"]["Surface"]["Dirt"] = IsUsing_Dirt;
+    settings["Alteration"]["Surface"]["Fast Magnet"] = IsUsing_Fast_Magnet;
+    settings["Alteration"]["Surface"]["Flooded"] = IsUsing_Flooded;
+    settings["Alteration"]["Surface"]["Grass"] = IsUsing_Grass;
+    settings["Alteration"]["Surface"]["Ice"] = IsUsing_Ice;
+    settings["Alteration"]["Surface"]["Magnet"] = IsUsing_Magnet;
+    settings["Alteration"]["Surface"]["Mixed"] = IsUsing_Mixed;
+    settings["Alteration"]["Surface"]["Better Mixed"] = IsUsing_Better_Mixed;
+    settings["Alteration"]["Surface"]["Penalty"] = IsUsing_Penalty;
+    settings["Alteration"]["Surface"]["Plastic"] = IsUsing_Plastic;
+    settings["Alteration"]["Surface"]["Road"] = IsUsing_Road;
+    settings["Alteration"]["Surface"]["Road Dirt"] = IsUsing_Road_Dirt;
+    settings["Alteration"]["Surface"]["Wood"] = IsUsing_Wood;
+    settings["Alteration"]["Surface"]["Bobsleigh"] = IsUsing_Bobsleigh;
+    settings["Alteration"]["Surface"]["Pipe"] = IsUsing_Pipe;
+    settings["Alteration"]["Surface"]["Platform"] = IsUsing_Platform;
+    settings["Alteration"]["Surface"]["Sausage"] = IsUsing_Sausage;
+    settings["Alteration"]["Surface"]["Surfaceless"] = IsUsing_Surfaceless;
+    settings["Alteration"]["Surface"]["Underwater"] = IsUsing_Underwater;
 
-//     // ByAlteration settings
-//     Json::Value byAlteration;
-//     byAlteration["[Snow]"] = IsUsing_Snow_;
-//     byAlteration["[Snow] Carswitch"] = IsUsing_Snow_Carswitch;
-//     byAlteration["[Snow] Checkpointless"] = IsUsing_Snow_Checkpointless;
-//     byAlteration["[Snow] Icy"] = IsUsing_Snow_Icy;
-//     byAlteration["[Snow] Underwater"] = IsUsing_Snow_Underwater;
-//     byAlteration["[Snow] Wood"] = IsUsing_Snow_Wood;
-//     byAlteration["[Stadium]"] = IsUsing_Stadium_;
-//     byAlteration["[Rally]"] = IsUsing_Rally_;
-//     byAlteration["1 Back"] = IsUsing_1Back;
-//     byAlteration["1 Down"] = IsUsing_1Down;
-//     byAlteration["1 Left"] = IsUsing_1Left;
-//     byAlteration["1 Right"] = IsUsing_1Right;
-//     byAlteration["1 Up"] = IsUsing_1Up;
-//     byAlteration["2D"] = IsUsing_Flat_2D;
-//     byAlteration["2 Up"] = IsUsing_2Up;
-//     byAlteration["A08"] = IsUsing_A08;
-//     byAlteration["Antibooster"] = IsUsing_Antibooster;
-//     byAlteration["BOSS"] = IsUsing_BOSS;
-//     byAlteration["Backwards"] = IsUsing_Backwards;
-//     byAlteration["Better Mixed"] = IsUsing_Better_Mixed;
-//     byAlteration["Better Reverse"] = IsUsing_Better_Reverse;
-//     byAlteration["Blind"] = IsUsing_Blind;
-//     byAlteration["Bobsleigh"] = IsUsing_Bobsleigh;
-//     byAlteration["Boomerang / There'N'Back"] = IsUsing_There_and_Back_Boomerang;
-//     byAlteration["Boosterless"] = IsUsing_Boosterless;
-//     byAlteration["Broken"] = IsUsing_Broken;
-//     byAlteration["Bumper"] = IsUsing_Bumper;
-//     byAlteration["CP1 Kept"] = IsUsing_CP1_Kept;
-//     byAlteration["CP1 is End"] = IsUsing_CP1_is_End;
-//     byAlteration["CPLink"] = IsUsing_CPLink;
-//     byAlteration["CP Boost Swap"] = IsUsing_CP_Boost;
-//     byAlteration["CPfull"] = IsUsing_CPfull;
-//     byAlteration["Checkpoin't"] = IsUsing_Checkpoin_t;
-//     byAlteration["Checkpointless"] = IsUsing_Checkpointless;
-//     byAlteration["Checkpointless Reverse"] = IsUsing_Checkpointless_Reverse;
-//     byAlteration["Cleaned"] = IsUsing_Cleaned;
-//     byAlteration["Colors Combined"] = IsUsing_Colours_Combined;
-//     byAlteration["Cruise"] = IsUsing_Cruise;
-//     byAlteration["Dirt"] = IsUsing_Dirt;
-//     byAlteration["Earthquake"] = IsUsing_Earthquake;
-//     byAlteration["Effectless"] = IsUsing_No_Effects;
-//     byAlteration["Egocentrism"] = IsUsing_Egocentrism;
-//     byAlteration["Fast"] = IsUsing_Fast;
-//     byAlteration["Fast Magnet"] = IsUsing_Fast_Magnet;
-//     byAlteration["Flipped"] = IsUsing_Flipped;
-//     byAlteration["Flooded"] = IsUsing_Flooded;
-//     byAlteration["Floor Fin"] = IsUsing_Floor_Fin;
-//     byAlteration["Fragile"] = IsUsing_Fragile;
-//     byAlteration["Freewheel"] = IsUsing_Freewheel;
-//     byAlteration["Glider"] = IsUsing_Glider;
-//     byAlteration["Got Rotated / CPs Rotated 90°"] = IsUsing_Got_Rotated_CPs_Rotated_90__;
-//     byAlteration["Grass"] = IsUsing_Grass;
-//     byAlteration["Hard"] = IsUsing_Hard;
-//     byAlteration["Holes"] = IsUsing_Holes;
-//     byAlteration["Ice"] = IsUsing_Ice;
-//     byAlteration["Ice Reverse"] = IsUsing_Ice_Reverse;
-//     byAlteration["Ice Reverse Reactor"] = IsUsing_Ice_Reverse_Reactor;
-//     byAlteration["Ice Short"] = IsUsing_Ice_Short;
-//     byAlteration["Icy Reactor"] = IsUsing_Icy_Reactor;
-//     byAlteration["Inclined"] = IsUsing_Inclined;
-//     byAlteration["Lunatic"] = IsUsing_Lunatic;
-//     byAlteration["Magnet"] = IsUsing_Magnet;
-//     byAlteration["Magnet Reverse"] = IsUsing_Magnet_Reverse;
-//     byAlteration["Manslaughter"] = IsUsing_Manslaughter;
-//     byAlteration["Mini RPG"] = IsUsing_Mini_RPG;
-//     byAlteration["Mirrored"] = IsUsing_Mirrored;
-//     byAlteration["Mixed"] = IsUsing_Mixed;
-//     byAlteration["Ngolo / Cacti"] = IsUsing_Ngolo_Cacti;
-//     byAlteration["No-Steer"] = IsUsing_No_Steer;
-//     byAlteration["No-brakes"] = IsUsing_No_Brakes;
-//     byAlteration["No-cut"] = IsUsing_No_Cut;
-//     byAlteration["No-grip"] = IsUsing_No_Grip;
-//     byAlteration["No gear 5"] = IsUsing_No_Gear_5;
-//     byAlteration["Penalty"] = IsUsing_Penalty;
-//     byAlteration["Pipe"] = IsUsing_Pipe;
-//     byAlteration["Plastic"] = IsUsing_Plastic;
-//     byAlteration["Plastic Reverse"] = IsUsing_Plastic_Reverse;
-//     byAlteration["Platform"] = IsUsing_Platform;
-//     byAlteration["Podium"] = IsUsing_Podium;
-//     byAlteration["Pool Hunters"] = IsUsing_Pool_Hunters;
-//     byAlteration["Puzzle"] = IsUsing_Puzzle;
-//     byAlteration["Random"] = IsUsing_Random;
-//     byAlteration["Random Dankness"] = IsUsing_Random_Dankness;
-//     byAlteration["Random Effects"] = IsUsing_Random_Effects;
-//     byAlteration["Reactor"] = IsUsing_Reactor;
-//     byAlteration["Reactor Down"] = IsUsing_Reactor_Down;
-//     byAlteration["Reverse"] = IsUsing_Reverse;
-//     byAlteration["Ring CP"] = IsUsing_Ring_CP;
-//     byAlteration["Road"] = IsUsing_Road;
-//     byAlteration["Road Dirt"] = IsUsing_Road_Dirt;
-//     byAlteration["Roofing"] = IsUsing_Roofing;
-//     byAlteration["Sausage"] = IsUsing_Sausage;
-//     byAlteration["Scuba Diving"] = IsUsing_Scuba_Diving;
-//     byAlteration["Sections-joined"] = IsUsing_Sections_joined;
-//     byAlteration["Select DEL"] = IsUsing_Select_DEL;
-//     byAlteration["Short"] = IsUsing_Short;
-//     byAlteration["Sky is the Finish"] = IsUsing_Sky_is_the_Finish;
-//     byAlteration["Sky is the Finish Reverse"] = IsUsing_Sky_is_the_Finish_Reverse;
-//     byAlteration["Slowmo"] = IsUsing_Slowmo;
-//     byAlteration["Speedlimit"] = IsUsing_Speedlimit;
-//     byAlteration["Staircase"] = IsUsing_Staircase;
-//     byAlteration["Start 1-Down"] = IsUsing_Start_1_Down;
-//     byAlteration["Straight to the Finish"] = IsUsing_Straight_to_the_Finish;
-//     byAlteration["Supersized"] = IsUsing_Supersized;
-//     byAlteration["Surfaceless"] = IsUsing_Surfaceless;
-//     byAlteration["Symmetrical"] = IsUsing_Symmetrical;
-//     byAlteration["TMGL Easy"] = IsUsing_TMGL_Easy;
-//     byAlteration["Tilted"] = IsUsing_Tilted;
-//     byAlteration["Underwater"] = IsUsing_Underwater;
-//     byAlteration["Underwater Reverse"] = IsUsing_Underwater_Reverse;
-//     byAlteration["Walmart Mini"] = IsUsing_Walmart_Mini;
-//     byAlteration["Wet Icy Wood"] = IsUsing_Wet_Icy_Wood;
-//     byAlteration["Wet Wheels"] = IsUsing_Wet_Wheels;
-//     byAlteration["Wet Wood"] = IsUsing_Wet_Wood;
-//     byAlteration["Wood"] = IsUsing_Wood;
-//     byAlteration["Worn Tires"] = IsUsing_Worn_Tires;
-//     byAlteration["XX-But"] = IsUsing_XX_But;
-//     byAlteration["YEET"] = IsUsing_YEET;
-//     byAlteration["YEET Down"] = IsUsing_YEET_Down;
-//     byAlteration["YEET Puzzle"] = IsUsing_YEET_Puzzle;
-//     byAlteration["YEET Random Puzzle"] = IsUsing_YEET_Random_Puzzle;
-//     byAlteration["YEET Reverse"] = IsUsing_YEET_Reverse;
-//     byAlteration["Yeet Max-Up"] = IsUsing_Yeet_Max_Up;
-//     byAlteration["YEP Tree Puzzle"] = IsUsing_YEP_Tree_Puzzle;
-//     byAlteration["sw2u1l-cpu-f2d1r"] = IsUsing_sw2u1l_cpu_f2d1r;
-
-
-//     // ByOther settings
-//     Json::Value byOther;
-//     byOther["All Official Competitions"] = IsUsing_AllOfficialCompetitions;
-//     byOther["Map Is Not Obtainable"] = IsUsing_MapIsNotObtainable;
-//     byOther["All official campaigns"] = IsUsing_OfficialNadeo;
-//     byOther["All TOTDs"] = IsUsing_AllTOTD;
-
-//     byOther["All Official Competitions (Other)"] = IsUsing__AllOfficialCompetitions;
+    // Altered Effects
+    settings["Alteration"]["Effects"]["Cruise"] = IsUsing_Cruise;
+    settings["Alteration"]["Effects"]["Fragile"] = IsUsing_Fragile;
+    settings["Alteration"]["Effects"]["Full Fragile"] = IsUsing_Full_Fragile;
+    settings["Alteration"]["Effects"]["Freewheel"] = IsUsing_Freewheel;
+    settings["Alteration"]["Effects"]["Glider"] = IsUsing_Glider;
+    settings["Alteration"]["Effects"]["No Brake"] = IsUsing_No_Brakes;
+    settings["Alteration"]["Effects"]["No Effect"] = IsUsing_No_Effects;
+    settings["Alteration"]["Effects"]["No Grip"] = IsUsing_No_Grip;
+    settings["Alteration"]["Effects"]["No Steering"] = IsUsing_No_Steer;
+    settings["Alteration"]["Effects"]["Random Dankness"] = IsUsing_Random_Dankness;
+    settings["Alteration"]["Effects"]["Random Effects"] = IsUsing_Random_Effects;
+    settings["Alteration"]["Effects"]["Reactor (Up)"] = IsUsing_Reactor;
+    settings["Alteration"]["Effects"]["Reactor Down"] = IsUsing_Reactor_Down;
+    settings["Alteration"]["Effects"]["Slowmo"] = IsUsing_Slowmo;
+    settings["Alteration"]["Effects"]["Wet Wheels"] = IsUsing_Wet_Wheels;
+    settings["Alteration"]["Effects"]["Worn Tires"] = IsUsing_Worn_Tires;
     
-//     byOther["All Snow Discovery"] = IsUsing_AllSnowDiscovery;
-//     byOther["All Rally Discovery"] = IsUsing_AllRallyDiscovery;
+    // Altered Finish Location
+    settings["Alteration"]["Finish Location"]["1 Down"] = IsUsing_1Down;
+    settings["Alteration"]["Finish Location"]["1 Back / Forward"] = IsUsing_1Back;
+    settings["Alteration"]["Finish Location"]["1 Left"] = IsUsing_1Left;
+    settings["Alteration"]["Finish Location"]["1 Right"] = IsUsing_1Right;
+    settings["Alteration"]["Finish Location"]["1 Up"] = IsUsing_1Up;
+    settings["Alteration"]["Finish Location"]["2 Up"] = IsUsing_2Up;
+    settings["Alteration"]["Finish Location"]["Better Reverse / Reverse Magna"] = IsUsing_Better_Reverse;
+    settings["Alteration"]["Finish Location"]["CP1 is End"] = IsUsing_CP1_is_End;
+    settings["Alteration"]["Finish Location"]["Floor Fin"] = IsUsing_Floor_Fin;
+    settings["Alteration"]["Finish Location"]["Mansloughter"] = IsUsing_Manslaughter;
+    settings["Alteration"]["Finish Location"]["No Gear 5"] = IsUsing_No_Gear_5;
+    settings["Alteration"]["Finish Location"]["Podium"] = IsUsing_Podium;
+    settings["Alteration"]["Finish Location"]["Puzzle"] = IsUsing_Puzzle;
+    settings["Alteration"]["Finish Location"]["Reverse"] = IsUsing_Reverse;
+    settings["Alteration"]["Finish Location"]["Roofing"] = IsUsing_Roofing;
+    settings["Alteration"]["Finish Location"]["Short"] = IsUsing_Short;
+    settings["Alteration"]["Finish Location"]["Sky is the Finish"] = IsUsing_Sky_is_the_Finish;
+    settings["Alteration"]["Finish Location"]["There and Back / Boomerang"] = IsUsing_There_and_Back_Boomerang;
+    settings["Alteration"]["Finish Location"]["YEP Tree Puzzle"] = IsUsing_YEP_Tree_Puzzle;
+    settings["Alteration"]["Finish Location"]["Inclined"] = IsUsing_Inclined;
 
+    // Altered Environment (Envimix)
+    settings["Alteration"]["Environment"]["[Stadium]"] = IsUsing_Stadium_;
+    settings["Alteration"]["Environment"]["[Stadium] Wet Wood"] = IsUsing_Stadium_Wet_Wood;
+    settings["Alteration"]["Environment"]["[Snow]"] = IsUsing_Snow_;
+    settings["Alteration"]["Environment"]["[Snow] Carswitch"] = IsUsing_Snow_Carswitch;
+    settings["Alteration"]["Environment"]["[Snow] Checkpointless"] = IsUsing_Snow_Checkpointless;
+    settings["Alteration"]["Environment"]["[Snow] Ice"] = IsUsing_Snow_Icy;
+    settings["Alteration"]["Environment"]["[Snow] Underwater"] = IsUsing_Snow_Underwater;
+    settings["Alteration"]["Environment"]["[Snow] Wet Plastic"] = IsUsing_Snow_Wet_Plastic;
+    settings["Alteration"]["Environment"]["[Snow] Wood"] = IsUsing_Snow_Wood;
+    settings["Alteration"]["Environment"]["[Rally]"] = IsUsing_Rally_;
+    settings["Alteration"]["Environment"]["[Rally] Carswitch"] = IsUsing_Rally_Carswitch;
+    settings["Alteration"]["Environment"]["[Rally] CP1 is End"] = IsUsing_Rally_CP1_is_End;
+    settings["Alteration"]["Environment"]["[Rally] Underwater"] = IsUsing_Rally_Underwater;
+    settings["Alteration"]["Environment"]["[Rally] Ice"] = IsUsing_Rally_Icy;
 
-//     // Add categories to settings object
-//     settings["BySeason"] = bySeason;
-//     settings["ByAlteration"] = byAlteration;
-//     settings["ByOther"] = byOther;
+    // Multi Alterations
+    settings["Alteration"]["Multi"]["100% Wet Icy Wood"] = IsUsing_100WetIcyWood;
+    settings["Alteration"]["Multi"]["Checkpointless Reverse"] = IsUsing_Checkpointless_Reverse;
+    settings["Alteration"]["Multi"]["Ice Reactor"] = IsUsing_Icy_Reactor;
+    settings["Alteration"]["Multi"]["Ice Reverse"] = IsUsing_Ice_Reverse;
+    settings["Alteration"]["Multi"]["Ice Reverse Reactor"] = IsUsing_Ice_Reverse_Reactor;
+    settings["Alteration"]["Multi"]["Ice Short"] = IsUsing_Ice_Short;
+    settings["Alteration"]["Multi"]["Magnet Reverse"] = IsUsing_Magnet_Reverse;
+    settings["Alteration"]["Multi"]["Plastic Reverse"] = IsUsing_Plastic_Reverse;
+    settings["Alteration"]["Multi"]["Sky is the Finish Reverse"] = IsUsing_Sky_is_the_Finish_Reverse;
+    settings["Alteration"]["Multi"]["Start Water 2 Up 1 Left Checkpoints Unlinked Finish 2 Down 1 Right"] = IsUsing_sw2u1l_cpu_f2d1r;
+    settings["Alteration"]["Multi"]["Underwater Reverse"] = IsUsing_Underwater_Reverse;
+    settings["Alteration"]["Multi"]["Wet Plastic"] = IsUsing_Wet_Plastic;
+    settings["Alteration"]["Multi"]["Wet Wood"] = IsUsing_Wet_Wood;
+    settings["Alteration"]["Multi"]["Wet Icy Wood"] = IsUsing_Wet_Icy_Wood;
+    settings["Alteration"]["Multi"]["YEET Max Up"] = IsUsing_Yeet_Max_Up;
+    settings["Alteration"]["Multi"]["YEET Puzzle"] = IsUsing_YEET_Puzzle;
+    settings["Alteration"]["Multi"]["YEET Random Puzzle"] = IsUsing_YEET_Random_Puzzle;
+    settings["Alteration"]["Multi"]["YEET Reverse"] = IsUsing_YEET_Reverse;
 
-//     return settings;
-// }
+    // Other Alterations
+    settings["Alteration"]["Other"]["XX-But"] = IsUsing_XX_But;
+    settings["Alteration"]["Other"]["Flat / 2D"] = IsUsing_Flat_2D;
+    settings["Alteration"]["Other"]["a08"] = IsUsing_A08;
+    settings["Alteration"]["Other"]["Altered Camera"] = IsUsing_Altered_Camera;
+    settings["Alteration"]["Other"]["Antiboosters"] = IsUsing_Antibooster;
+    settings["Alteration"]["Other"]["Backwards"] = IsUsing_Backwards;
+    settings["Alteration"]["Other"]["Blind (Altered Camera)"] = IsUsing_Blind;
+    settings["Alteration"]["Other"]["Boosterless"] = IsUsing_Boosterless;
+    settings["Alteration"]["Other"]["BOSS / Overlayed"] = IsUsing_BOSS;
+    settings["Alteration"]["Other"]["Broken"] = IsUsing_Broken;
+    settings["Alteration"]["Other"]["Bumper"] = IsUsing_Bumper;
+    settings["Alteration"]["Other"]["Checkpoin't"] = IsUsing_Checkpoin_t;
+    settings["Alteration"]["Other"]["Cleaned"] = IsUsing_Cleaned;
+    settings["Alteration"]["Other"]["Colour Combined"] = IsUsing_Colours_Combined;
+    settings["Alteration"]["Other"]["CP/Boost Swap"] = IsUsing_CP_Boost;
+    settings["Alteration"]["Other"]["CP1 Kept"] = IsUsing_CP1_Kept;
+    settings["Alteration"]["Other"]["CPfull"] = IsUsing_CPfull;
+    settings["Alteration"]["Other"]["CPLess"] = IsUsing_Checkpointless;
+    settings["Alteration"]["Other"]["CPLink"] = IsUsing_CPLink;
+    settings["Alteration"]["Other"]["Got Rotated / CPs Rotated 90°"] = IsUsing_Got_Rotated_CPs_Rotated_90__;
+    settings["Alteration"]["Other"]["Earthquake"] = IsUsing_Earthquake;
+    settings["Alteration"]["Other"]["Egocentrism (Altered Camera)"] = IsUsing_Egocentrism;
+    settings["Alteration"]["Other"]["Fast"] = IsUsing_Fast;
+    settings["Alteration"]["Other"]["Flipped"] = IsUsing_Flipped;
+    settings["Alteration"]["Other"]["Holes"] = IsUsing_Holes;
+    settings["Alteration"]["Other"]["Lunatic"] = IsUsing_Lunatic;
+    settings["Alteration"]["Other"]["Mini RPG"] = IsUsing_Mini_RPG;
+    settings["Alteration"]["Other"]["Mirrored"] = IsUsing_Mirrored;
+    settings["Alteration"]["Other"]["Ngolo / Cacti"] = IsUsing_Ngolo_Cacti;
+    settings["Alteration"]["Other"]["No Cut"] = IsUsing_No_Cut;
+    settings["Alteration"]["Other"]["Pool Hunters"] = IsUsing_Pool_Hunters;
+    settings["Alteration"]["Other"]["Random"] = IsUsing_Random;
+    settings["Alteration"]["Other"]["Ring CP"] = IsUsing_Ring_CP;
+    settings["Alteration"]["Other"]["Scuba Diving"] = IsUsing_Scuba_Diving;
+    settings["Alteration"]["Other"]["Sections Joined"] = IsUsing_Sections_joined;
+    settings["Alteration"]["Other"]["Select DEL"] = IsUsing_Select_DEL;
+    settings["Alteration"]["Other"]["Speedlimit"] = IsUsing_Speedlimit;
+    settings["Alteration"]["Other"]["Start 1 Down"] = IsUsing_Start_1_Down;
+    settings["Alteration"]["Other"]["Staircase"] = IsUsing_Staircase;
+    settings["Alteration"]["Other"]["Supersized"] = IsUsing_Supersized;
+    settings["Alteration"]["Other"]["Straight to the Finish"] = IsUsing_Straight_to_the_Finish;
+    settings["Alteration"]["Other"]["Symmetrical"] = IsUsing_Symmetrical;
+    settings["Alteration"]["Other"]["Tilted"] = IsUsing_Tilted;
+    settings["Alteration"]["Other"]["Walmart Mini"] = IsUsing_Walmart_Mini;
+    settings["Alteration"]["Other"]["YEET"] = IsUsing_YEET;
+    settings["Alteration"]["Other"]["YEET Down"] = IsUsing_YEET_Down;
+
+    // Extra Campaigns
+    settings["Alteration"]["Extra Campaigns"]["Training"] = IsUsing_Trainig;
+    settings["Alteration"]["Extra Campaigns"]["TMGL / TMWT Easy mode"] = IsUsing_TMGL_Easy;
+    settings["Alteration"]["Extra Campaigns"]["Competitions (With Alterations)"] = IsUsing__AllOfficialCompetitions;
+    settings["Alteration"]["Extra Campaigns"]["Competitions (Without Alterations)"] = IsUsing_AllOfficialCompetitions;
+    settings["Alteration"]["Extra Campaigns"]["Unaltered Nadeo"] = IsUsing_OfficialNadeo;
+    settings["Alteration"]["Extra Campaigns"]["Altered TOTD"] = IsUsing_AllTOTD;
+
+    // Seasons
+    settings["Alteration"]["Seasons"]["Spring 2020"] = IsUsing_Spring2020Maps;
+    settings["Alteration"]["Seasons"]["Summer 2020"] = IsUsing_Summer2020Maps;
+    settings["Alteration"]["Seasons"]["Fall 2020"] = IsUsing_Fall2020Maps;
+    settings["Alteration"]["Seasons"]["Winter 2021"] = IsUsing_Winter2021Maps;
+    settings["Alteration"]["Seasons"]["Spring 2021"] = IsUsing_Spring2021Maps;
+    settings["Alteration"]["Seasons"]["Summer 2021"] = IsUsing_Summer2021Maps;
+    settings["Alteration"]["Seasons"]["Fall 2021"] = IsUsing_Fall2021Maps;
+    settings["Alteration"]["Seasons"]["Winter 2022"] = IsUsing_Winter2022Maps;
+    settings["Alteration"]["Seasons"]["Spring 2022"] = IsUsing_Spring2022Maps;
+    settings["Alteration"]["Seasons"]["Summer 2022"] = IsUsing_Summer2022Maps;
+    settings["Alteration"]["Seasons"]["Fall 2022"] = IsUsing_Fall2022Maps;
+    settings["Alteration"]["Seasons"]["Winter 2023"] = IsUsing_Winter2023Maps;
+    settings["Alteration"]["Seasons"]["Spring 2023"] = IsUsing_Spring2023Maps;
+    settings["Alteration"]["Seasons"]["Summer 2023"] = IsUsing_Summer2023Maps;
+    settings["Alteration"]["Seasons"]["Fall 2023"] = IsUsing_Fall2023Maps;
+    settings["Alteration"]["Seasons"]["Winter 2024"] = IsUsing_Winter2024Maps;
+    settings["Alteration"]["Seasons"]["Spring 2024"] = IsUsing_Spring2024Maps;
+    settings["Alteration"]["Seasons"]["Summer 2024"] = IsUsing_Summer2024Maps;
+    settings["Alteration"]["Seasons"]["Fall 2024"] = IsUsing_Fall2024Maps;
+    settings["Alteration"]["Seasons"]["Winter 2025"] = IsUsing_Winter2025Maps;
+    settings["Alteration"]["Seasons"]["Spring 2025"] = IsUsing_Spring2025Maps;
+    settings["Alteration"]["Seasons"]["Summer 2025"] = IsUsing_Summer2025Maps;
+
+    // Not on the discord
+    settings["Alteration"]["Not on Discord"]["Hard"] = IsUsing_Hard;
+
+    return settings;
+}
 
 // string SetOnlyWinterMaps(bool value) {
 //     return "Sorry this currently isn't implemented";
