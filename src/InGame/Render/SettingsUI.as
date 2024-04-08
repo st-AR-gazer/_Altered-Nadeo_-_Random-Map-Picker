@@ -22,9 +22,9 @@ void RenderInterface() {
 
     g_searchBar = UI::InputText("##Alteration Search Bar", g_searchBar, UI::InputTextFlags::None);
     UI::SameLine();
-    if (UI::Button("Alteration Search Page")) activeTab = 15;
+    if (UI::Button("Search " + Icons::Search)) activeTab = 15;
     UI::SameLine();
-    if (UI::Button("Clear Search")) g_searchBar = "";
+    if (UI::Button("Clear Search " + Icons::TimesCircleO)) g_searchBar = "";
 
     UI::Separator();
 
@@ -161,6 +161,7 @@ void RenderGeneralAlterationSettings() {
     
 }
 
+// ###################################### Seasons #############################################################
 
 // ############################################################################################################
 void RenderWinter() { 
@@ -674,7 +675,6 @@ void PopulateAlterationsArrays() {
     alterationNames.InsertLast("Underwater");
     alterationFuncs.InsertLast(@RenderS_Underwater);
 
-
     // Effects
     alterationNames.InsertLast("Cruise");
     alterationFuncs.InsertLast(@RenderS_Cruise);
@@ -750,7 +750,6 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Inclined);
 
     // Enviroments
-
     alterationNames.InsertLast("[Stadium]");
     alterationFuncs.InsertLast(@RenderS_Stadium_);
     alterationNames.InsertLast("[Stadium] Wet Wood");
