@@ -10,10 +10,16 @@ void RenderInterface() {
 
     UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker Settings", showInterface, UI::WindowFlags::AlwaysAutoResize);
 
-    if (UI::Button("Open Map")) { 
-        if (useStorageObjectOverUID) {
+    if (useStorageObjectOverUID && !IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
+        UI::Text("Using Storage Object is dissabled untill consolidated_maps.json is downloaded from ManiaCDN.");
+    } 
+    if (useStorageObjectOverUID && IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
+        if (UI::Button("Open Map")) {
             LoadMapFromStorageObject();
-        } else {
+        }
+    }
+    if (!useStorageObjectOverUID) {
+        if (UI::Button("Open Map")) {
             LoadMapFromUIDProxy();
         }
     }
