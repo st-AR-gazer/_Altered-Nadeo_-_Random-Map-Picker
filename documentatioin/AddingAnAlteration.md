@@ -1,3 +1,5 @@
+## Adding an alteration in SettingUI is outdated
+
 # Quick Guide to Adding an Alteration in Settings (Part 1)
 
 This documentation aims to guide you through the process of adding a new alteration, season, or discovery campaign to your project. It is divided into two main parts. The first part covers the addition of alterations, and the second part delves into updating the python script for sorting maps with alterations.
@@ -41,12 +43,17 @@ if (UI::Button("TAB NAME")) activeTab = -1;
 ``` 
 (if you do not change the active tab for the other ones I will come to your house and move your entire setup 5cm to the left)
 
-2. **Adding the Visual Part**: Navigate to the correct 'tab' location and add the setting using the `newset` command configured in `/.vscode`, simplifying the process. Fill in the missing information:
+2. **Adding the Visual Part**: Navigate to the correct 'tab' location and add the setting, a 'recent' change has made the `newset` obsolete, so we will be adding a "RenderS_{SOMEVOID}" to the location, and then we will add the void under with the correct inforamtion. 
 
 ```c
-newValue = UI::Checkbox('${1:ButtonName}', IsUsing_);
-if (newValue != IsUsing_) { IsUsing_ = newValue; }
+void RenderNN() { 
+    RenderS_100WetIcyWood();
+}
+
+void RenderS_100WetIcyWood() { IsUsing_100WetIcyWood = UI::Checkbox("100% Wet-Icy-Wood", IsUsing_100WetIcyWood); }
 ```
+
+Make sure to ALSO add the name of the alteration to the `alterationNames` and `alterationFuncs` arrays as they are used for the 'search' option.
 
 **Note:** If a category has changed name, simply update the `TAB NAME` to the new name. If an alteration has moved categories, cut it from its current location and move it to the correct tab.
 
