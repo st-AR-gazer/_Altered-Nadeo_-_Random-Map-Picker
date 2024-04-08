@@ -259,7 +259,7 @@ void SetAlteration(string t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "1 up") { IsUsing_1Up = t_shouldUse; }
     else if (t_alteration.ToLower() == "2 up") { IsUsing_2Up = t_shouldUse; }
     else if (t_alteration.ToLower() == "better reverse / reverse magna") { IsUsing_Better_Reverse = t_shouldUse; }
-    else if (t_alteration.ToLower() == "cp1 is end") { IsUsing_CP1_is_End = t_shouldUse }
+    else if (t_alteration.ToLower() == "cp1 is end") { IsUsing_CP1_is_End = t_shouldUse; }
     else if (t_alteration.ToLower() == "floor fin") { IsUsing_Floor_Fin = t_shouldUse; }
     else if (t_alteration.ToLower() == "mansloughter") { IsUsing_Manslaughter = t_shouldUse; }
     else if (t_alteration.ToLower() == "no gear 5") { IsUsing_No_Gear_5 = t_shouldUse; }
