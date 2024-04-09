@@ -90,7 +90,7 @@ string FetchRandomMapUrl() {
             Json::Value map = seasonFilteredMaps[i];
             
             if (MatchesAlterationSettings(map)) {
-                finalFilteredMaps.InsertLast(map);
+                FilteredMaps.InsertLast(map);
             }
             if (Time::Now - startTime > 20) {
                 yield();
@@ -98,10 +98,11 @@ string FetchRandomMapUrl() {
             }
         }
 
-        if (finalFilteredMaps.IsEmpty() && NoAlterationSettingActive()) {
-            finalFilteredMaps = seasonFilteredMaps;
+        if (FilteredMaps.IsEmpty() && NoAlterationSettingActive()) {
+            FilteredMaps = seasonFilteredMaps;
         }
-    } else {
+    } 
+    else {
         // Filter out 'season', 'year' and 'alteration' settings ()
         for (uint i = 0; i < allMaps.Length; ++i) {
             Json::Value map = allMaps[i];
@@ -116,13 +117,11 @@ string FetchRandomMapUrl() {
         }
     }
 
-
-
     // Select random from filtered
     if (!FilteredMaps.IsEmpty()) {
         uint randomIndex = Math::Rand(0, FilteredMaps.Length);
         Json::Value@ selectedMap = FilteredMaps[randomIndex];
-        
+
         if (selectedMap !is null && selectedMap.HasKey("fileUrl") && selectedMap["fileUrl"].GetType() == Json::Type::String) {
             isWaitingForStorageObject = false;
             return string(selectedMap["fileUrl"]);
@@ -279,6 +278,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Fast                         && map["alteration"] == "Fast") return true;
     if (IsUsing_Flipped                      && map["alteration"] == "Flipped") return true;
     if (IsUsing_Got_Rotated_CPs_Rotated_90__ && map["alteration"] == "Got Rotated_CPs Rotated 90°") return true;
+    if (IsUsing_Hard                         && map["alteration"] == "Hard") return true; // NOTE TO SELF: It DOES find hard even though the log says it doesn't
     if (IsUsing_Holes                        && map["alteration"] == "Holes") return true;
     if (IsUsing_Lunatic                      && map["alteration"] == "Lunatic") return true;
     if (IsUsing_Mini_RPG                     && map["alteration"] == "Mini RPG") return true;
@@ -346,7 +346,7 @@ bool IsAlterationSettingActive() {
     IsUsing_XX_But || IsUsing_Flat_2D || IsUsing_A08 || IsUsing_Antibooster || IsUsing_Backwards || IsUsing_Boosterless || IsUsing_BOSS || 
     IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
     IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
-    IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
+    IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Hard || IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
     IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
     IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
     IsUsing_YEET_Down || 

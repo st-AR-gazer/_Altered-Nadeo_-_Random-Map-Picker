@@ -121,6 +121,7 @@ void DeselectAlteredOther() {
     IsUsing_Earthquake = false;
     IsUsing_Fast = false;
     IsUsing_Flipped = false;
+    IsUsing_Hard = false; // Not on the discord
     IsUsing_Holes = false;
     IsUsing_Lunatic = false;
     IsUsing_Mini_RPG = false;

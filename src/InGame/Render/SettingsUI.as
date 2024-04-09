@@ -30,8 +30,8 @@ void RenderInterface() {
     // Active TABS
 
     // Row 1: Main Settings
-    if (UI::Button("General Settings")) activeTab = 0;
-    UI::SameLine();
+//  if (UI::Button("General Settings")) activeTab = 0;
+//  UI::SameLine();
     if (UI::Button("General Alteration Settings")) activeTab = 1;
 
     // if (activeMainTab == 0) {
@@ -74,10 +74,10 @@ void RenderInterface() {
 
 
     switch (activeTab) {
-        case 0:
+        case 1:
             RenderGeneralSettings();
             break;
-        case 1:
+        case 0:
             RenderGeneralAlterationSettings();
             break;
         case 2:
