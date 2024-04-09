@@ -128,7 +128,7 @@ string FetchRandomMapUrl() {
         }
     }
 
-    log("No maps match the selected criteria", LogLevel::Error, 82);
+    log("No maps match the selected criteria", LogLevel::Error, 131);
     isWaitingForStorageObject = false;
     return "";
 }
@@ -355,14 +355,14 @@ bool IsAlterationSettingActive() {
 }
 
 bool NoSeasonalSettingActive() {
-    log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 262);
+    log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 358);
     NotifyWarn("No season is selected, automatically selecting all seasons.");
     DeselectOrSelectAllSeasons(true);
     return true;
 }
 
 bool NoAlterationSettingActive() {
-    log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 269);
+    log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 365);
     NotifyWarn("No alteration is selected, automatically selecting all alterations.");
     DeselectOrSelectAllAlterations(true);
     return true;
