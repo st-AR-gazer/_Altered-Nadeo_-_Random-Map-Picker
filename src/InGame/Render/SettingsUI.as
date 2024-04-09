@@ -13,15 +13,8 @@ void RenderInterface() {
     if (useStorageObjectOverUID && !IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
         UI::Text("Using Storage Object is dissabled untill consolidated_maps.json is downloaded from ManiaCDN.");
     } 
-    if (useStorageObjectOverUID && IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
-        if (UI::Button("Open Map")) {
-            LoadMapFromStorageObject();
-        }
-    }
-    if (!useStorageObjectOverUID) {
-        if (UI::Button("Open Map")) {
-            LoadMapFromUIDProxy();
-        }
+    if (UI::Button("Open Map")) {
+        toOpenMap = true;
     }
 
     UI::Separator();
@@ -153,6 +146,11 @@ void RenderGeneralAlterationSettings() {
 
     newValue = UI::Checkbox("Use Storage Object Over UID", useStorageObjectOverUID);
     if (newValue != useStorageObjectOverUID) { useStorageObjectOverUID = newValue; }
+    
+    newValue = UI::Checkbox('CumulativeSelections', shoulduseCumulativeSelections);
+    if (newValue != shoulduseCumulativeSelections) { shoulduseCumulativeSelections = newValue; }
+    
+    
 
     // set maximum AT / gold / silver / bronze times
 
@@ -547,6 +545,7 @@ void RenderAlterationalOther() {
     RenderS_Egocentrism();
     RenderS_Fast();
     RenderS_Flipped();
+    RenderS_Hard();
     RenderS_Holes();
     RenderS_Lunatic();
     RenderS_Mini_RPG();
@@ -596,6 +595,7 @@ void RenderS_Earthquake() {                 IsUsing_Earthquake =                
 void RenderS_Egocentrism() {                IsUsing_Egocentrism =                UI::Checkbox("Egocentrism", IsUsing_Egocentrism); }
 void RenderS_Fast() {                       IsUsing_Fast =                       UI::Checkbox("Fast", IsUsing_Fast); }
 void RenderS_Flipped() {                    IsUsing_Flipped =                    UI::Checkbox("Flipped", IsUsing_Flipped); }
+void RenderS_Hard() {                       IsUsing_Hard =                       UI::Checkbox("Hard", IsUsing_Hard); }
 void RenderS_Holes() {                      IsUsing_Holes =                      UI::Checkbox("Holes", IsUsing_Holes); }
 void RenderS_Lunatic() {                    IsUsing_Lunatic =                    UI::Checkbox("Lunatic", IsUsing_Lunatic); }
 void RenderS_Mini_RPG() {                   IsUsing_Mini_RPG =                   UI::Checkbox("Mini-RPG", IsUsing_Mini_RPG); }
@@ -868,6 +868,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Fast);
     alterationNames.InsertLast("Flipped");
     alterationFuncs.InsertLast(@RenderS_Flipped);
+    alterationNames.InsertLast("Hard");
+    alterationFuncs.InsertLast(@RenderS_Hard);
     alterationNames.InsertLast("Holes");
     alterationFuncs.InsertLast(@RenderS_Holes);
     alterationNames.InsertLast("Lunatic");
