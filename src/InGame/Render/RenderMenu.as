@@ -1,9 +1,8 @@
 int g_lineCount;
 
 void RenderMenu() {
-    int lineCount = g_lineCount - 1;
     
-    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Random " + ColorizeString("Altered") + "\\$z Map", "There are " + lineCount + " possible maps!")) {
+    if (UI::MenuItem("\\$29e" + Icons::Connectdevelop + Icons::Random + "\\$z Random " + ColorizeString("Altered") + "\\$z Map", "There are " + g_lineCount + " possible maps!")) {
         if (showInterface) {
             showInterface = false;
         } else {
@@ -12,19 +11,17 @@ void RenderMenu() {
     }
 }
 
-int GetLineCount(string filePath) {
+void GetLineCount(const string &in filePath) {
     log("Getting line count for file: " + filePath, LogLevel::Info, 16);
-    if (!IO::FileExists(filePath)) { log("File does not exist: " + filePath, LogLevel::Error, 17); return -1; }
+    g_lineCount = -1;
+    if (!IO::FileExists(filePath)) { log("File does not exist: " + filePath, LogLevel::Error, 17); return; }
 
-    int lineCount = 0;
 
     IO::File file;
     file.Open(filePath, IO::FileMode::Read);
     while (!file.EOF()) {
         file.ReadLine();
-        lineCount++;
+        g_lineCount++;
     }
     file.Close();
-    
-    return lineCount;
 }

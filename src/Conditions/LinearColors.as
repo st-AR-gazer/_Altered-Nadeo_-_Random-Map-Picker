@@ -9,7 +9,7 @@ void ToggleEscapeCharacters() {
 
 int HexToInt(const string &in hex) {
     int value = 0;
-    for (uint i = 0; i < hex.Length; ++i) {
+    for (int i = 0; i < hex.Length; ++i) {
         value *= 16;
         int charValue = hex[i];
         if (charValue >= 48 && charValue <= 57) { // '0' to '9'
@@ -75,7 +75,7 @@ string ColorizeString(const string &in inputString) {
     array<string> colors = InterpolateColors(inputString.Length);
     string coloredString;
 
-    for (uint i = 0; i < inputString.Length; ++i) {
+    for (int i = 0; i < inputString.Length; ++i) {
         string colorCode = FormatColorCode(colors[i]);
         string characterAsString = inputString.SubStr(i, 1);
         coloredString += colorCode + characterAsString;

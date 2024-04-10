@@ -8,123 +8,125 @@ string g_searchBar = "";
 void RenderInterface() {
     if (!showInterface) return;
 
-    UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker", showInterface, UI::WindowFlags::AlwaysAutoResize);
+    if (UI::Begin(ColorizeString("Altered") + " " + ColorizeString("Nadeo") + "\\$z Random Map Picker", showInterface, UI::WindowFlags::AlwaysAutoResize)) {
 
-    if (useStorageObjectOverUID && !IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
-        UI::Text("Using Storage Object is dissabled untill consolidated_maps.json is downloaded from ManiaCDN.");
-    } 
-    if (UI::Button("Open Map")) {
-        toOpenMap = true;
+        if (useStorageObjectOverUID && !IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
+            UI::Text("Using Storage Object is disabled untill consolidated_maps.json is downloaded from ManiaCDN.");
+        } 
+        if (UI::Button("Open Map")) {
+            toOpenMap = true;
+        }
+
+        UI::Separator();
+
+        g_searchBar = UI::InputText("##Alteration Search Bar", g_searchBar, UI::InputTextFlags::None);
+        UI::SameLine();
+        if (UI::Button("Search " + Icons::Search)) activeTab = 15;
+        UI::SameLine();
+        if (UI::Button("Clear Search " + Icons::TimesCircleO)) g_searchBar = "";
+
+        UI::Separator();
+
+        // Active TABS
+
+        // Row 1: Main Settings
+    //  if (UI::Button("General Settings")) activeTab = 0;
+    //  UI::SameLine();
+
+        if (UI::Button("General Alteration Settings")) activeTab = 0;
+
+        // if (activeMainTab == 0) {
+        //     UI::Text("AAAAAAAAAAAAAAAAAAAAA");
+        // } else if (activeMainTab == 1) {
+        //     UI::Text("BBBBBBBBBBBBBBBBBBBBB");
+        // }
+
+        UI::Separator();
+
+        // Row 2: Seasonal Alterations
+        if (UI::Button("Winter")) activeTab = 2;
+        UI::SameLine();
+        if (UI::Button("Spring")) activeTab = 3;
+        UI::SameLine();
+        if (UI::Button("Summer")) activeTab = 4;
+        UI::SameLine();
+        if (UI::Button("Fall")) activeTab = 5;
+        UI::SameLine();
+        if (UI::Button("Seasonal Other")) activeTab = 6;
+        UI::SameLine();
+        if (UI::Button("Discovery Campaigns")) activeTab = 7;
+
+        UI::Separator();
+
+        // Row 3: Alterational Alterations
+        if (UI::Button("Surfaces")) activeTab = 8;
+        UI::SameLine();
+        if (UI::Button("Effects")) activeTab = 9;
+        UI::SameLine();
+        if (UI::Button("Finish Location")) activeTab = 10;
+        UI::SameLine();
+        if (UI::Button("Enviroments")) activeTab = 11;
+        UI::SameLine();
+        if (UI::Button("Multi")) activeTab = 12;
+        UI::SameLine();
+        if (UI::Button("Other")) activeTab = 13;
+        UI::SameLine();
+        if (UI::Button("Extra")) activeTab = 14;
+
+        UI::Separator();
+
+        switch (activeTab) {
+            case 1:
+                RenderGeneralSettings();
+                break;
+            case 0:
+                RenderGeneralAlterationSettings();
+                break;
+            case 2:
+                RenderWinter();
+                break;
+            case 3:
+                RenderSpring();
+                break;
+            case 4:
+                RenderSummer();
+                break;
+            case 5:
+                RenderFall();
+                break;
+            case 6:
+                RenderSeasonalOther();
+                break;
+            case 7:
+                RenderDiscoveryCampaigns();
+                break;
+            case 8:
+                RenderSurfaces();
+                break;
+            case 9:
+                RenderEffects();
+                break;
+            case 10:
+                RenderFinishLocation();
+                break;
+            case 11:
+                RenderEnviroments();
+                break;
+            case 12:
+                RenderMulti();
+                break;
+            case 13:
+                RenderAlterationalOther();
+                break;
+            case 14:
+                RenderExtra();
+                break;
+            case 15:
+                RenderSearch();
+                break;
+            
+        }
     }
-
-    UI::Separator();
-
-    g_searchBar = UI::InputText("##Alteration Search Bar", g_searchBar, UI::InputTextFlags::None);
-    UI::SameLine();
-    if (UI::Button("Search " + Icons::Search)) activeTab = 15;
-    UI::SameLine();
-    if (UI::Button("Clear Search " + Icons::TimesCircleO)) g_searchBar = "";
-
-    UI::Separator();
-
-    // Active TABS
-
-    // Row 1: Main Settings
-//  if (UI::Button("General Settings")) activeTab = 0;
-//  UI::SameLine();
-    if (UI::Button("General Alteration Settings")) activeTab = 0;
-
-    // if (activeMainTab == 0) {
-    //     UI::Text("AAAAAAAAAAAAAAAAAAAAA");
-    // } else if (activeMainTab == 1) {
-    //     UI::Text("BBBBBBBBBBBBBBBBBBBBB");
-    // }
-
-    UI::Separator();
-
-    // Row 2: Seasonal Alterations
-    if (UI::Button("Winter")) activeTab = 2;
-    UI::SameLine();
-    if (UI::Button("Spring")) activeTab = 3;
-    UI::SameLine();
-    if (UI::Button("Summer")) activeTab = 4;
-    UI::SameLine();
-    if (UI::Button("Fall")) activeTab = 5;
-    UI::SameLine();
-    if (UI::Button("Seasonal Other")) activeTab = 6;
-    UI::SameLine();
-    if (UI::Button("Discovery Campaigns")) activeTab = 7;
-
-    UI::Separator();
-
-    // Row 3: Alterational Alterations
-    if (UI::Button("Surfaces")) activeTab = 8;
-    UI::SameLine();
-    if (UI::Button("Effects")) activeTab = 9;
-    UI::SameLine();
-    if (UI::Button("Finish Location")) activeTab = 10;
-    UI::SameLine();
-    if (UI::Button("Enviroments")) activeTab = 11;
-    UI::SameLine();
-    if (UI::Button("Multi")) activeTab = 12;
-    UI::SameLine();
-    if (UI::Button("Other")) activeTab = 13;
-    UI::SameLine();
-    if (UI::Button("Extra")) activeTab = 14;
-
-
-    switch (activeTab) {
-        case 1:
-            RenderGeneralSettings();
-            break;
-        case 0:
-            RenderGeneralAlterationSettings();
-            break;
-        case 2:
-            RenderWinter();
-            break;
-        case 3:
-            RenderSpring();
-            break;
-        case 4:
-            RenderSummer();
-            break;
-        case 5:
-            RenderFall();
-            break;
-        case 6:
-            RenderSeasonalOther();
-            break;
-        case 7:
-            RenderDiscoveryCampaigns();
-            break;
-        case 8:
-            RenderSurfaces();
-            break;
-        case 9:
-            RenderEffects();
-            break;
-        case 10:
-            RenderFinishLocation();
-            break;
-        case 11:
-            RenderEnviroments();
-            break;
-        case 12:
-            RenderMulti();
-            break;
-        case 13:
-            RenderAlterationalOther();
-            break;
-        case 14:
-            RenderExtra();
-            break;
-        case 15:
-            RenderSearch();
-            break;
-        
-    }
-
     UI::End();
 }
 
@@ -646,8 +648,8 @@ array<string> alterationNames;
 array<RENDER_FUNC@> alterationFuncs;
 
 void PopulateAlterationsArrays() {
-    alterationNames.Resize(0);
-    alterationFuncs.Resize(0);
+    alterationNames = {};
+    alterationFuncs = {};
 
     // Surfaces
     alterationNames.InsertLast("Dirt");

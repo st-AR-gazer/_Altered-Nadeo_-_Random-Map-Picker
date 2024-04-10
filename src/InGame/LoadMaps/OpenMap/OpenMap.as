@@ -4,7 +4,7 @@ void PlayMap(const string &in map_url) {
         return;
     }
 
-    startnew(PlayMapCoroutine, map_url);
+    PlayMapCoroutine(map_url);
 }
 
 void PlayMapCoroutine(const string &in map_url) {
@@ -14,7 +14,10 @@ void PlayMapCoroutine(const string &in map_url) {
     }
     app.BackToMainMenu();
 
-    while (!app.ManiaTitleControlScriptAPI.IsReady) yield();
+    while (!app.ManiaTitleControlScriptAPI.IsReady) {
+        yield();
+        startTime = Time::Now;
+    }
 
     NotifyInfo("Started playing map");
 

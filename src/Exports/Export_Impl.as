@@ -189,7 +189,7 @@ Json::Value GetUserSettings() {
     return settings;
 }
 
-void SetSeason(string t_season, bool t_shouldUse) {
+void SetSeason(const string &in t_season, bool t_shouldUse) {
     if (t_season.ToLower() == "spring 2020") { IsUsing_Spring2020Maps = t_shouldUse; }
     else if (t_season.ToLower() == "summer 2020") { IsUsing_Summer2020Maps = t_shouldUse; }
     else if (t_season.ToLower() == "fall 2020") { IsUsing_Fall2020Maps = t_shouldUse; }
@@ -214,7 +214,7 @@ void SetSeason(string t_season, bool t_shouldUse) {
     else if (t_season.ToLower() == "summer 2025") { IsUsing_Summer2025Maps = t_shouldUse; }
 }
 
-void SetAlteration(string t_alteration, bool t_shouldUse) {
+void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     if (t_alteration.ToLower() == "dirt") { IsUsing_Dirt = t_shouldUse; }
     else if (t_alteration.ToLower() == "fast fagnet") { IsUsing_Fast_Magnet = t_shouldUse; }
     else if (t_alteration.ToLower() == "flooded") { IsUsing_Flooded = t_shouldUse; }
@@ -386,7 +386,7 @@ void SetAlteration(string t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "summer 2025") { IsUsing_Summer2025Maps = t_shouldUse; }
 }
 
-void SetFullSeason(string t_fullSeason, bool t_shouldUse) {
+void SetFullSeason(const string &in t_fullSeason, bool t_shouldUse) {
     if (t_fullSeason.ToLower() == "winter") { IsUsing_Winter2021Maps = t_shouldUse; 
                                               IsUsing_Winter2022Maps = t_shouldUse; 
                                               IsUsing_Winter2023Maps = t_shouldUse; 

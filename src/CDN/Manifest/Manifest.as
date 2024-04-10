@@ -9,17 +9,16 @@ int g_currentInstalledVersion;
 int g_manifestID = -1;
 array<string> unUpdatedFiles;
 
-void ManifestCheck() {
-    FetchManifest();
-}
-
 void FetchManifest() {
     Net::HttpRequest req;
     req.Method = Net::HttpMethod::Get;
     req.Url = manifestUrl;
     req.Start();
 
-    while (!req.Finished()) yield();
+    while (!req.Finished()) {
+        yield();
+        startTime = Time::Now;
+    }
 
     if (req.ResponseCode() == 200) {
         ParseManifest(req.String());

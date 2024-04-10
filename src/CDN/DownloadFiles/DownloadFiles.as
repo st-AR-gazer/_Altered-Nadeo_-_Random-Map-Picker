@@ -26,7 +26,10 @@ void DownloadData(const string &in url, const string &in fileName, const string 
     
     req.Start();
 
-    while (!req.Finished()) yield();
+    while (!req.Finished()) {
+        yield();
+        startTime = Time::Now;
+    }
 
     if (req.ResponseCode() == 200) {
         auto data = req.String();

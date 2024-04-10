@@ -1,22 +1,11 @@
 const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/token/map/";
 
 string globalMapUrl = "";
-bool isWaitingForUrl = false;
-bool isLoadingMapFromUID = false;
 
 void SetFirstUid() {
     string map_uid = GetRandomUID();
 
-    startnew(GetMapUrl, map_uid);
-
-    globalMapUrl = tm_map_endpoint + map_uid;
-}
-
-void LoadMapFromUIDProxy() {
-    if (!isLoadingMapFromUID) {
-        isLoadingMapFromUID = true;
-        startnew(LoadMapFromUID);
-    }
+    GetMapUrl(map_uid);
 }
 
 void LoadMapFromUID() {
@@ -26,10 +15,7 @@ void LoadMapFromUID() {
         return;
     }
 
-    isWaitingForUrl = true;
-    startnew(GetMapUrl, mapUID);
-
-    while (isWaitingForUrl) yield();
+    GetMapUrl(mapUID);
 
     if (globalMapUrl.Length == 0) {
         log("Failed to get map URL from UID", LogLevel::Error, 35);
@@ -37,13 +23,13 @@ void LoadMapFromUID() {
     }
 
     PlayMap(globalMapUrl);
-    isLoadingMapFromUID = false;
 }
 
 void GetMapUrl(const string &in map_uid) {
     NadeoServices::AddAudience("NadeoLiveServices");
     while (!NadeoServices::IsAuthenticated("NadeoLiveServices")) {
         yield();
+        startTime = Time::Now;
     }
     Net::HttpRequest@ req = NadeoServices::Get("NadeoLiveServices", tm_map_endpoint + map_uid);
     
@@ -59,7 +45,6 @@ void GetMapUrl(const string &in map_uid) {
 
     Json::Value res = Json::Parse(req.String());
     globalMapUrl = res["downloadUrl"];
-    isWaitingForUrl = false;
 }
 
 string GetRandomUID() {

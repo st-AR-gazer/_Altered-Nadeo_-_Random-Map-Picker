@@ -1,9 +1,7 @@
-bool isWaitingForStorageObject;
+Json::Value allMaps;
 
 void LoadMapFromStorageObject() {
     string mapUrl = FetchRandomMapUrl();
-
-    while (isWaitingForStorageObject) yield();
 
     if (mapUrl.Length == 0) {
         log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 9); // mapUrl will always be empty xdd
@@ -11,42 +9,35 @@ void LoadMapFromStorageObject() {
         return;
     }
 
-    isWaitingForStorageObject = true;
-
     PlayMap(mapUrl);
 }
 
-Json::Value LoadMapsFromConsolidatedFile() {
+void LoadMapsFromConsolidatedFile() {
     string filePath = IO::FromStorageFolder("Data/consolidated_maps.json");
     
-    if (!IO::FileExists(filePath)) {
-        log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 23);
+    // if (!IO::FileExists(filePath)) {
+    //     log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 23);
         
-        Json::Value dummyMap = Json::Object();
-        dummyMap["fileUrl"] = "dummy_url";
+    //     Json::Value dummyMap = Json::Object();
+    //     dummyMap["fileUrl"] = "dummy_url";
 
-        
-        Json::Value mapArray = Json::Array();
-        mapArray.Add(dummyMap);
+    //     Json::Value mapArray = Json::Array();
+    //     mapArray.Add(dummyMap);
 
-        
-        Json::ToFile(filePath, mapArray);
+    //     Json::ToFile(filePath, mapArray);
 
-        
-        return mapArray;
-    }
+    //     return mapArray;
+    // }
     
-    Json::Value maps = Json::FromFile(filePath);
-    return maps;
+    allMaps = Json::FromFile(filePath);
 }
 
 string FetchRandomMapUrl() {
-    Json::Value allMaps = LoadMapsFromConsolidatedFile();
 
-    if (allMaps.Length == 1 && allMaps[0].HasKey("fileUrl") && allMaps[0]["fileUrl"] == "dummy_url") {
-        log("Dummy map data found. No real maps available.", LogLevel::Error, 47);
-        return "";
-    }
+    // if (allMaps.Length == 1 && allMaps[0].HasKey("fileUrl") && allMaps[0]["fileUrl"] == "dummy_url") {
+    //     log("Dummy map data found. No real maps available.", LogLevel::Error, 47);
+    //     return "";
+    // }
     
     array<Json::Value@> FilteredMaps;
 
@@ -55,65 +46,16 @@ string FetchRandomMapUrl() {
         startTime = Time::Now;
     }
 
-    const bool shoulduseCumulativeSelections = true;
-
-    if (shoulduseCumulativeSelections) {
-        array<Json::Value@> seasonFilteredMaps;
-        array<Json::Value@> finalFilteredMaps;
-
-        // Filter out 'season' and 'year' settings
-        for (uint i = 0; i < allMaps.Length; ++i) {
-            Json::Value map = allMaps[i];
-            
-            if (MatchesSeasonalSettings(map)) {
-                seasonFilteredMaps.InsertLast(map);
-            }
-            if (Time::Now - startTime > 20) {
-                yield();
-                startTime = Time::Now;
-            }
+    // Filter out 'season', 'year' and 'alteration' settings ()
+    for (uint i = 0; i < allMaps.Length; ++i) {
+        Json::Value map = allMaps[i];
+        
+        if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map)) {
+            FilteredMaps.InsertLast(map);
         }
-        for (uint i = 0; i < allMaps.Length; ++i) {
-            Json::Value map = allMaps[i];
-            
-            if (MatchesSeasonalSettings(map)) {
-                seasonFilteredMaps.InsertLast(map);
-            }
-            if (Time::Now - startTime > 20) {
-                yield();
-                startTime = Time::Now;
-            }
-        }
-
-        // Filter 'alteration' settings
-        for (uint i = 0; i < seasonFilteredMaps.Length; ++i) {
-            Json::Value map = seasonFilteredMaps[i];
-            
-            if (MatchesAlterationSettings(map)) {
-                FilteredMaps.InsertLast(map);
-            }
-            if (Time::Now - startTime > 20) {
-                yield();
-                startTime = Time::Now;
-            }
-        }
-
-        if (FilteredMaps.IsEmpty() && NoAlterationSettingActive()) {
-            FilteredMaps = seasonFilteredMaps;
-        }
-    } 
-    else {
-        // Filter out 'season', 'year' and 'alteration' settings ()
-        for (uint i = 0; i < allMaps.Length; ++i) {
-            Json::Value map = allMaps[i];
-            
-            if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map)) {
-                FilteredMaps.InsertLast(map);
-            }
-            if (Time::Now - startTime > 20) {
-                yield();
-                startTime = Time::Now;
-            }
+        if (Time::Now - startTime > 20) {
+            yield();
+            startTime = Time::Now;
         }
     }
 
@@ -123,13 +65,11 @@ string FetchRandomMapUrl() {
         Json::Value@ selectedMap = FilteredMaps[randomIndex];
 
         if (selectedMap !is null && selectedMap.HasKey("fileUrl") && selectedMap["fileUrl"].GetType() == Json::Type::String) {
-            isWaitingForStorageObject = false;
             return string(selectedMap["fileUrl"]);
         }
     }
 
     log("No maps match the selected criteria", LogLevel::Error, 131);
-    isWaitingForStorageObject = false;
     return "";
 }
 
@@ -139,18 +79,23 @@ bool MatchesSeasonalSettings(Json::Value map) {
     if (IsUsing_Spring2020Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2020") return true;
     if (IsUsing_Summer2020Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2020") return true;
     if (IsUsing_Fall2020Maps   && (map["season"] == "Fall"   || map["season"] == "fall")   && map["year"] == "2020") return true;
+    if (IsUsing_Winter2021Maps && (map["season"] == "Winter" || map["season"] == "winter") && map["year"] == "2021") return true;
     if (IsUsing_Spring2021Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2021") return true;
     if (IsUsing_Summer2021Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2021") return true;
     if (IsUsing_Fall2021Maps   && (map["season"] == "Fall"   || map["season"] == "fall")   && map["year"] == "2021") return true;
+    if (IsUsing_Winter2022Maps && (map["season"] == "Winter" || map["season"] == "winter") && map["year"] == "2022") return true;
     if (IsUsing_Spring2022Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2022") return true;
     if (IsUsing_Summer2022Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2022") return true;
     if (IsUsing_Fall2022Maps   && (map["season"] == "Fall"   || map["season"] == "fall")   && map["year"] == "2022") return true;
+    if (IsUsing_Winter2023Maps && (map["season"] == "Winter" || map["season"] == "winter") && map["year"] == "2023") return true;
     if (IsUsing_Spring2023Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2023") return true;
     if (IsUsing_Summer2023Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2023") return true;
     if (IsUsing_Fall2023Maps   && (map["season"] == "Fall"   || map["season"] == "fall")   && map["year"] == "2023") return true;
+    if (IsUsing_Winter2024Maps && (map["season"] == "Winter" || map["season"] == "winter") && map["year"] == "2024") return true;
     if (IsUsing_Spring2024Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2024") return true;
     if (IsUsing_Summer2024Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2024") return true;
     if (IsUsing_Fall2024Maps   && (map["season"] == "Fall"   || map["season"] == "fall")   && map["year"] == "2024") return true;
+    if (IsUsing_Winter2025Maps && (map["season"] == "Winter" || map["season"] == "winter") && map["year"] == "2025") return true;
     if (IsUsing_Spring2025Maps && (map["season"] == "Spring" || map["season"] == "spring") && map["year"] == "2025") return true;
     if (IsUsing_Summer2025Maps && (map["season"] == "Summer" || map["season"] == "summer") && map["year"] == "2025") return true;
 
@@ -310,60 +255,47 @@ bool MatchesAlterationSettings(Json::Value map) {
 
 bool IsSeasonSettingActive() {
     return IsUsing_Spring2020Maps || IsUsing_Summer2020Maps || IsUsing_Fall2020Maps || 
-           IsUsing_Spring2021Maps || IsUsing_Summer2021Maps || IsUsing_Fall2021Maps ||   IsUsing_Spring2022Maps || 
-           IsUsing_Summer2022Maps || IsUsing_Fall2022Maps   || IsUsing_Spring2023Maps || IsUsing_Summer2023Maps || 
-           IsUsing_Fall2023Maps   || IsUsing_Spring2024Maps || IsUsing_Summer2024Maps || IsUsing_Fall2024Maps || 
-           IsUsing_Spring2025Maps || IsUsing_Summer2025Maps || 
-           
-           IsUsing_AllSnowDiscovery || IsUsing_AllRallyDiscovery || IsUsing_AllDesertDiscovery || 
-           IsUsing__AllOfficialCompetitions || IsUsing_AllOfficialCompetitions || IsUsing_AllTOTD;
+        IsUsing_Winter2021Maps || IsUsing_Spring2021Maps || IsUsing_Summer2021Maps || IsUsing_Fall2021Maps || 
+        IsUsing_Winter2022Maps || IsUsing_Spring2022Maps || IsUsing_Summer2022Maps || IsUsing_Fall2022Maps || 
+        IsUsing_Winter2023Maps || IsUsing_Spring2023Maps || IsUsing_Summer2023Maps || IsUsing_Fall2023Maps || 
+        IsUsing_Winter2024Maps || IsUsing_Spring2024Maps || IsUsing_Summer2024Maps || IsUsing_Fall2024Maps || 
+        IsUsing_Winter2025Maps || IsUsing_Spring2025Maps || IsUsing_Summer2025Maps || 
+        
+        IsUsing_AllSnowDiscovery || IsUsing_AllRallyDiscovery || IsUsing_AllDesertDiscovery || 
+        IsUsing__AllOfficialCompetitions || IsUsing_AllOfficialCompetitions || IsUsing_AllTOTD;
 }
 
 bool IsAlterationSettingActive() {
     return 
-    IsUsing_Dirt || IsUsing_Fast_Magnet || IsUsing_Flooded || IsUsing_Grass || IsUsing_Ice || IsUsing_Magnet || IsUsing_Mixed || 
-    IsUsing_Better_Mixed || IsUsing_Penalty || IsUsing_Plastic || IsUsing_Road || IsUsing_Wood || IsUsing_Bobsleigh || IsUsing_Pipe || 
-    IsUsing_Sausage || IsUsing_Underwater || 
-    
-    IsUsing_Cruise || IsUsing_Fragile || IsUsing_Full_Fragile || IsUsing_Freewheel || IsUsing_Glider || IsUsing_No_Brakes || 
-    IsUsing_No_Effects || IsUsing_No_Grip || IsUsing_No_Steer || IsUsing_Random_Dankness || IsUsing_Random_Effects || IsUsing_Reactor || 
-    IsUsing_Reactor_Down || IsUsing_Slowmo || IsUsing_Wet_Wheels || IsUsing_Worn_Tires || 
-    
-    IsUsing_1Down || IsUsing_1Back || IsUsing_1Left || IsUsing_1Right || IsUsing_1Up || IsUsing_2Up || IsUsing_Better_Reverse || 
-    IsUsing_CP1_is_End || IsUsing_Floor_Fin || IsUsing_Inclined || IsUsing_Manslaughter || IsUsing_No_Gear_5 || IsUsing_Podium || 
-    IsUsing_Puzzle || IsUsing_Reverse || IsUsing_Roofing || IsUsing_Short || IsUsing_Sky_is_the_Finish || IsUsing_There_and_Back_Boomerang || 
-    IsUsing_YEP_Tree_Puzzle || 
-    
-    IsUsing_Stadium_ || IsUsing_Stadium_Wet_Wood || IsUsing_Snow_ || IsUsing_Snow_Carswitch || IsUsing_Snow_Checkpointless || 
-    IsUsing_Snow_Icy || IsUsing_Snow_Underwater || IsUsing_Snow_Wet_Plastic || IsUsing_Snow_Wood || IsUsing_Rally_ || IsUsing_Rally_Carswitch || 
-    IsUsing_Rally_CP1_is_End || IsUsing_Rally_Underwater || IsUsing_Rally_Icy || 
-    
-    IsUsing_Checkpointless_Reverse || IsUsing_Ice_Reverse || IsUsing_Ice_Reverse_Reactor || IsUsing_Ice_Short || IsUsing_Magnet_Reverse || 
-    IsUsing_Plastic_Reverse || IsUsing_Sky_is_the_Finish_Reverse || IsUsing_sw2u1l_cpu_f2d1r || IsUsing_Underwater_Reverse || 
-    IsUsing_Wet_Plastic || IsUsing_Wet_Wood || IsUsing_Wet_Icy_Wood || IsUsing_Yeet_Max_Up || IsUsing_YEET_Puzzle || 
-    IsUsing_YEET_Random_Puzzle || IsUsing_YEET_Reverse || 
-    
-    IsUsing_XX_But || IsUsing_Flat_2D || IsUsing_A08 || IsUsing_Antibooster || IsUsing_Backwards || IsUsing_Boosterless || IsUsing_BOSS || 
-    IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
-    IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
-    IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Hard || IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
-    IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
-    IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
-    IsUsing_YEET_Down || 
-    
-    IsUsing_TMGL_Easy || IsUsing_AllOfficialCompetitions || IsUsing_OfficialNadeo;
-}
-
-bool NoSeasonalSettingActive() {
-    log("No season is selected, automatically selecting all seasons.", LogLevel::Info, 358);
-    NotifyWarn("No season is selected, automatically selecting all seasons.");
-    DeselectOrSelectAllSeasons(true);
-    return true;
-}
-
-bool NoAlterationSettingActive() {
-    log("No alteration is selected, automatically selecting all alterations.", LogLevel::Info, 365);
-    NotifyWarn("No alteration is selected, automatically selecting all alterations.");
-    DeselectOrSelectAllAlterations(true);
-    return true;
+        IsUsing_Dirt || IsUsing_Fast_Magnet || IsUsing_Flooded || IsUsing_Grass || IsUsing_Ice || IsUsing_Magnet || IsUsing_Mixed || 
+        IsUsing_Better_Mixed || IsUsing_Penalty || IsUsing_Plastic || IsUsing_Road || IsUsing_Wood || IsUsing_Bobsleigh || IsUsing_Pipe || 
+        IsUsing_Sausage || IsUsing_Underwater || 
+        
+        IsUsing_Cruise || IsUsing_Fragile || IsUsing_Full_Fragile || IsUsing_Freewheel || IsUsing_Glider || IsUsing_No_Brakes || 
+        IsUsing_No_Effects || IsUsing_No_Grip || IsUsing_No_Steer || IsUsing_Random_Dankness || IsUsing_Random_Effects || IsUsing_Reactor || 
+        IsUsing_Reactor_Down || IsUsing_Slowmo || IsUsing_Wet_Wheels || IsUsing_Worn_Tires || 
+        
+        IsUsing_1Down || IsUsing_1Back || IsUsing_1Left || IsUsing_1Right || IsUsing_1Up || IsUsing_2Up || IsUsing_Better_Reverse || 
+        IsUsing_CP1_is_End || IsUsing_Floor_Fin || IsUsing_Inclined || IsUsing_Manslaughter || IsUsing_No_Gear_5 || IsUsing_Podium || 
+        IsUsing_Puzzle || IsUsing_Reverse || IsUsing_Roofing || IsUsing_Short || IsUsing_Sky_is_the_Finish || IsUsing_There_and_Back_Boomerang || 
+        IsUsing_YEP_Tree_Puzzle || 
+        
+        IsUsing_Stadium_ || IsUsing_Stadium_Wet_Wood || IsUsing_Snow_ || IsUsing_Snow_Carswitch || IsUsing_Snow_Checkpointless || 
+        IsUsing_Snow_Icy || IsUsing_Snow_Underwater || IsUsing_Snow_Wet_Plastic || IsUsing_Snow_Wood || IsUsing_Rally_ || IsUsing_Rally_Carswitch || 
+        IsUsing_Rally_CP1_is_End || IsUsing_Rally_Underwater || IsUsing_Rally_Icy || 
+        
+        IsUsing_Checkpointless_Reverse || IsUsing_Ice_Reverse || IsUsing_Ice_Reverse_Reactor || IsUsing_Ice_Short || IsUsing_Magnet_Reverse || 
+        IsUsing_Plastic_Reverse || IsUsing_Sky_is_the_Finish_Reverse || IsUsing_sw2u1l_cpu_f2d1r || IsUsing_Underwater_Reverse || 
+        IsUsing_Wet_Plastic || IsUsing_Wet_Wood || IsUsing_Wet_Icy_Wood || IsUsing_Yeet_Max_Up || IsUsing_YEET_Puzzle || 
+        IsUsing_YEET_Random_Puzzle || IsUsing_YEET_Reverse || 
+        
+        IsUsing_XX_But || IsUsing_Flat_2D || IsUsing_A08 || IsUsing_Antibooster || IsUsing_Backwards || IsUsing_Boosterless || IsUsing_BOSS || 
+        IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
+        IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
+        IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Hard || IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
+        IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
+        IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
+        IsUsing_YEET_Down || 
+        
+        IsUsing_TMGL_Easy || IsUsing_AllOfficialCompetitions || IsUsing_OfficialNadeo;
 }

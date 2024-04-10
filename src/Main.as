@@ -6,36 +6,35 @@ uint64 startTime;
 
 void Main() {
     // log("Main func has started", LogLevel::Info, 8);
-    startTime = Time::Now;
     
     NadeoServices::AddAudience("NadeoClubServices");
     while (!NadeoServices::IsAuthenticated("NadeoClubServices")) { yield(); }
+    startTime = Time::Now;
 
-    CheckRequiredPermissions();
+    if (!CheckRequiredPermissions()) {return;}
     PopulateAlterationsArrays();
-    
+
     FileAndFolderCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
     log("Local file check completed, fixing some files", LogLevel::InfoG, 18);
 
-    // sleep(500);
     if (Time::Now - startTime > 20) {
         yield();
         startTime = Time::Now;
     }
     CheckCurrentInstalledVersionType(); // On legacy installs it will change the local string version to the new int format
     MoveDefaultDataFile(); // By default only the data file is installed, everything is built around using it from plugin-storage so we have to move it there first.
-    g_lineCount = GetLineCount(IO::FromStorageFolder("Data/data.csv")); // Sets the linecount, to be used in rendermenu func
+    GetLineCount(IO::FromStorageFolder("Data/data.csv")); // Sets the linecount, to be used in rendermenu func
     
-    ManifestCheck(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
+    FetchManifest(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
     log("Manifest check completed", LogLevel::InfoG, 30);
-    // sleep(500);
-    log("CDN check completed for new file", LogLevel::InfoG, 32);
 
-    // sleep(500);
-    // if (Time::Now - startTime > 20) {
-    //     yield();
-    //     startTime = Time::Now
-    // }
+    // log("CDN check completed for new file", LogLevel::InfoG, 32);
+
+    if (Time::Now - startTime > 20) {
+        yield();
+        startTime = Time::Now;
+    }
+    LoadMapsFromConsolidatedFile();
 
     SetFirstUid();
     log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 41);
@@ -47,13 +46,10 @@ void Main() {
                 LoadMapFromStorageObject();
             }
             if (!useStorageObjectOverUID) {
-                LoadMapFromUIDProxy();
+                LoadMapFromUID();
             }
         }
         yield();
+        startTime = Time::Now;
     }   
-}
-
-void Update(float dt) {
-    // CheckForSeasonSettingsChange(); // Might add automatic select / deselect in the future (if you select a season, it will deselect the other ones)
 }
