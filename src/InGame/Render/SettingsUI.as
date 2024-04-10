@@ -32,7 +32,7 @@ void RenderInterface() {
     // Row 1: Main Settings
 //  if (UI::Button("General Settings")) activeTab = 0;
 //  UI::SameLine();
-    if (UI::Button("General Alteration Settings")) activeTab = 1;
+    if (UI::Button("General Alteration Settings")) activeTab = 0;
 
     // if (activeMainTab == 0) {
     //     UI::Text("AAAAAAAAAAAAAAAAAAAAA");
