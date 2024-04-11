@@ -121,7 +121,7 @@ void SelectAlteredOther() {
     IsUsing_Earthquake = true;
     IsUsing_Fast = true;
     IsUsing_Flipped = true;
-    IsUsing_Hard = true; // Not on the discord
+    // IsUsing_Hard = true; // Not on the discord // Is actally Lunatic
     IsUsing_Holes = true;
     IsUsing_Lunatic = true;
     IsUsing_Mini_RPG = true;

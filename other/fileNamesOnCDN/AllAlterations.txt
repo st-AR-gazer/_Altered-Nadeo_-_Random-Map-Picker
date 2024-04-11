@@ -51,7 +51,7 @@ Freewheel
 Glider
 Got_Rotated_CPs_Rotated_90__
 Grass
-Hard
+Hard (is actually Lunatic)
 Holes
 Ice
 Ice_Reverse

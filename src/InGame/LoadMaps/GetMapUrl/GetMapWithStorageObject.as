@@ -223,7 +223,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Fast                         && map["alteration"] == "Fast") return true;
     if (IsUsing_Flipped                      && map["alteration"] == "Flipped") return true;
     if (IsUsing_Got_Rotated_CPs_Rotated_90__ && map["alteration"] == "Got Rotated_CPs Rotated 90°") return true;
-    if (IsUsing_Hard                         && map["alteration"] == "Hard") return true; // NOTE TO SELF: It DOES find hard even though the log says it doesn't
+    // if (IsUsing_Hard                         && map["alteration"] == "Hard") return true; // NOTE TO SELF: It DOES find hard even though the log says it doesn't // Is actally Lunatic
     if (IsUsing_Holes                        && map["alteration"] == "Holes") return true;
     if (IsUsing_Lunatic                      && map["alteration"] == "Lunatic") return true;
     if (IsUsing_Mini_RPG                     && map["alteration"] == "Mini RPG") return true;
@@ -292,7 +292,7 @@ bool IsAlterationSettingActive() {
         IsUsing_XX_But || IsUsing_Flat_2D || IsUsing_A08 || IsUsing_Antibooster || IsUsing_Backwards || IsUsing_Boosterless || IsUsing_BOSS || 
         IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
         IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
-        IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Hard || IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
+        IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || /*IsUsing_Hard ||  // Is actally Lunatic */IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
         IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
         IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
         IsUsing_YEET_Down || 

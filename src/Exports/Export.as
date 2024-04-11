@@ -1,4 +1,5 @@
 import string GetARandomAltMapUid() from "AlteredNadeo_RandomMapPicker";
+import string GetARandomAltMapStorageObject() from "AlteredNadeo_RandomMapPicker";
 
 import Json::Value GetUserSettings() from "AlteredNadeo_RandomMapPicker";
 

@@ -42,7 +42,7 @@ Freewheel.json
 Glider.json
 Got_Rotated_CPs_Rotated_90__.json
 Grass.json
-Hard.json
+Hard.json (is actually Lunatic)
 Holes.json
 Ice.json
 Ice_Reverse.json

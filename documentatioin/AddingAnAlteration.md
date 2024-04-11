@@ -53,17 +53,71 @@ void RenderNN() {
 void RenderS_100WetIcyWood() { IsUsing_100WetIcyWood = UI::Checkbox("100% Wet-Icy-Wood", IsUsing_100WetIcyWood); }
 ```
 
-Make sure to ALSO add the name of the alteration to the `alterationNames` and `alterationFuncs` arrays as they are used for the 'search' option.
+Make sure to ALSO add the name of the alteration to the `alterationNames` and `alterationFuncs` arrays as they are used for the 'search' option, These are found the the bottom of the page.
 
 **Note:** If a category has changed name, simply update the `TAB NAME` to the new name. If an alteration has moved categories, cut it from its current location and move it to the correct tab.
 
-## Step 4: Add the setting to `bool MatchesAlterationSettings(Json::Value map)` 
-ADD SOME DOCUMENTATION HERE
+
+## Step 4: Add the Setting to `bool MatchesAlterationSettings(Json::Value map)`
+
+This step ensures that the newly added alteration setting is recognized and processed correctly when filtering maps. The `MatchesAlterationSettings` function and `MatchSeasonalSettings` both help with determining whether a map matches the current alteration settings activated by the user. Here is how to add an alteration too them. 
+
+### Add Your Alteration
+
+Within the `MatchesAlterationSettings` function, you'll need to add a new conditional check for your alteration setting. This involves verifying if the setting is active (`IsUsing_YourNewAlteration`) and if the map's alteration attribute matches your alteration's identifier.
+
+Here's an example of what this might look like for an alteration named "YourNewAlteration":
+
+```c
+if (IsUsing_YourNewAlteration && map["alteration"] == "YourNewAlteration") return true;
+```
+
+Ensure that your condition correctly checks both the setting's activation status and the match between the map's alteration attribute and your alteration's name.
 
 
-## Summary
+**Note:** It's very important that the alteration identifier used in your condition (`"YourNewAlteration"`) matches exactly with what's expected in the map's JSON attribute. Inconsistencies here can lead to your alteration not being correctly identified, resulting in filtering errors. Here is an example of what the JSON looks like, look for the 'alteration' key.
 
-You have successfully added an alteration to the project settings, (and added it as an export. `NOT ADDED TO DOC YET`) Repeat this process for any additional alterations you wish to include. The process is the same for adding seasonal campaigns.
+```json
+{
+    "author": "5c9f57d9-2b40-4560-8a6f-3140905a9e4e",
+    "authorScore": 42985,
+    "bronzeScore": 65000,
+    "collectionName": "Stadium",
+    "createdWithGamepadEditor": null,
+    "createdWithSimpleEditor": null,
+    "filename": "Summer 2022 - 11 Broken.Map.Gbx",
+    "goldScore": 46000,
+    "isPlayable": true,
+    "mapId": "3fa6070a-6ae8-414f-a7c2-0d2374ce326e",
+    "mapStyle": "",
+    "mapType": "TrackMania\\TM_Race",
+    "mapUid": "AAPneKouvGKTiRSw3ZrgGHXO41m",
+    "name": "Summer 2022 - 11 Broken",
+    "silverScore": 52000,
+    "submitter": "5c9f57d9-2b40-4560-8a6f-3140905a9e4e",
+    "timestamp": "2022-08-24T21:27:45+00:00",
+    "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/44963995-e0ff-4640-8039-92fe96c4d5c8",
+    "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/15f577ef-60c2-4a70-be0f-a240079fcf40.jpg",
+    "season": "Summer",
+    "year": "2022",
+    "alteration": "Broken"
+}
+```
+
+## Step 5: Add the Setting to the Exports
+
+After integrating your new setting into the application's logic, it's also decently important to ensure that this setting is correctly exported so that other plugins can use it. Though I don't think anyone will bother XertroV asked for it, and I'm happy to oblidge xdd. 
+To add this new alteration to exports go to `\src\Exports\Export_Impl.as` and find the `GetUserSettings` function, and include your new alteration, ensuring that it's saved and retrievable as part of the user's settings.
+
+### Update the Settings Structure
+
+Within the `GetUserSettings` function, locate the appropriate section for your new setting. The settings are categorized for better organization (e.g., `Surface`, `Effects`, `Finish Location`, etc.). They are catagorized based on how it is on the Altered Nadeo discord, please use this as reference when adding/moving/removing things PeepoShy.
+
+For example, if you're adding a new `Surface` alteration named "NewSurfaceType", you would add the following line under the `Surface` category:
+
+```c
+settings["Alteration"]["Surface"]["NewSurfaceType"] = IsUsing_NewSurfaceType;
+```
 
 
 # Quick Guide to Adding an Alteration in Settings (Part 2.1)

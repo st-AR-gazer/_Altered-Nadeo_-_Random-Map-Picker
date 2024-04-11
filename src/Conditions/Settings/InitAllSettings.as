@@ -501,9 +501,9 @@ bool IsUsing_Summer2025Maps = false;
 
 // Not on the discord
 
-[Setting category="Alteration" name="Hard"] // No clue where it is since it doesn't seem like it's tracked anywhere...
-bool IsUsing_Hard = false;                  // I have to get a WR to check where it is :xdd:
-
+// [Setting category="Alteration" name="Hard"] // No clue where it is since it doesn't seem like it's tracked anywhere...
+// bool IsUsing_Hard = false;                  // I have to get a WR to check where it is :xdd:
+                                               // Is actually Lunatic
 
 
 

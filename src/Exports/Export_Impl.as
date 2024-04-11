@@ -1,6 +1,6 @@
 string GetARandomAltMapUid() {
-    string uid = GetRandomUID();
-    return uid;
+    string t_uid = GetRandomUID();
+    return t_uid;
 }
 
 Json::Value GetUserSettings() {
@@ -184,7 +184,7 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Seasons"]["Summer 2025"] = IsUsing_Summer2025Maps;
 
     // Not on the discord
-    settings["Alteration"]["Not on Discord"]["Hard"] = IsUsing_Hard;
+    // settings["Alteration"]["Not on Discord"]["Hard"] = IsUsing_Hard; // Is actally Lunatic
 
     return settings;
 }
