@@ -3,6 +3,11 @@ string GetARandomAltMapUid() {
     return t_uid;
 }
 
+string GetARandomAltMapStorageObject() {
+    string t_storageObject = FetchRandomMapUrl();
+    return t_storageObject;
+}
+
 Json::Value GetUserSettings() {
     Json::Value settings;
 
