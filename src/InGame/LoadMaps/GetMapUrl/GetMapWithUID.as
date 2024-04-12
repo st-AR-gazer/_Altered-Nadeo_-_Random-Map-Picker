@@ -2,12 +2,6 @@ const string tm_map_endpoint = "https://live-services.trackmania.nadeo.live/api/
 
 string globalMapUrl = "";
 
-void SetFirstUid() {
-    string map_uid = GetRandomUID();
-
-    GetMapUrl(map_uid);
-}
-
 void LoadMapFromUID() {
     string mapUID = GetRandomUID();
     if (mapUID.Length == 0) {

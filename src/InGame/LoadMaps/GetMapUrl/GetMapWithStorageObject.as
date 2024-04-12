@@ -15,30 +15,10 @@ void LoadMapFromStorageObject() {
 void LoadMapsFromConsolidatedFile() {
     string filePath = IO::FromStorageFolder("Data/consolidated_maps.json");
     
-    // if (!IO::FileExists(filePath)) {
-    //     log("Consolidated map file does not exist. Creating a new one with dummy data: " + filePath, LogLevel::Error, 23);
-        
-    //     Json::Value dummyMap = Json::Object();
-    //     dummyMap["fileUrl"] = "dummy_url";
-
-    //     Json::Value mapArray = Json::Array();
-    //     mapArray.Add(dummyMap);
-
-    //     Json::ToFile(filePath, mapArray);
-
-    //     return mapArray;
-    // }
-    
     allMaps = Json::FromFile(filePath);
 }
 
 string FetchRandomMapUrl() {
-
-    // if (allMaps.Length == 1 && allMaps[0].HasKey("fileUrl") && allMaps[0]["fileUrl"] == "dummy_url") {
-    //     log("Dummy map data found. No real maps available.", LogLevel::Error, 47);
-    //     return "";
-    // }
-    
     array<Json::Value@> FilteredMaps;
 
     if (Time::Now - startTime > 20) {

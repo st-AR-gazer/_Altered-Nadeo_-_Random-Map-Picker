@@ -6,12 +6,15 @@ void SelectAlteredSurface() {
     IsUsing_Ice = true;
     IsUsing_Magnet = true;
     IsUsing_Mixed = true;
+    IsUsing_Better_Mixed = true;
     IsUsing_Penalty = true;
     IsUsing_Plastic = true;
     IsUsing_Road = true;
+    IsUsing_Road_Dirt = true;
     IsUsing_Wood = true;
     IsUsing_Bobsleigh = true;
     IsUsing_Pipe = true;
+    IsUsing_Platform = true;
     IsUsing_Sausage = true;
     IsUsing_Surfaceless = true;
     IsUsing_Underwater = true;
@@ -79,6 +82,7 @@ void SelectAlteredEnviroments() {
 void SelectAlteredMulti() {
     IsUsing_100WetIcyWood = true;
     IsUsing_Checkpointless_Reverse = true;
+    IsUsing_Icy_Reactor = true;
     IsUsing_Ice_Reverse = true;
     IsUsing_Ice_Reverse_Reactor = true;
     IsUsing_Ice_Short = true;
@@ -107,6 +111,7 @@ void SelectAlteredOther() {
     IsUsing_Broken = true;
     IsUsing_Bumper = true;
     IsUsing_Ngolo_Cacti = true;
+    IsUsing_No_Cut = true;
     IsUsing_Checkpoin_t = true;
     IsUsing_Cleaned = true;
     IsUsing_Colours_Combined = true;
@@ -129,6 +134,7 @@ void SelectAlteredOther() {
     IsUsing_Pool_Hunters = true;
     IsUsing_Random = true;
     IsUsing_Ring_CP = true;
+    IsUsing_Scuba_Diving = true;
     IsUsing_Sections_joined = true;
     IsUsing_Select_DEL = true;
     IsUsing_Speedlimit = true;

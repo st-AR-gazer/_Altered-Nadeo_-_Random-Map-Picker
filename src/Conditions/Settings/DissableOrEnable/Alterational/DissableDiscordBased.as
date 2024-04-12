@@ -6,12 +6,15 @@ void DeselectAlteredSurface() {
     IsUsing_Ice = false;
     IsUsing_Magnet = false;
     IsUsing_Mixed = false;
+    IsUsing_Better_Mixed = false;
     IsUsing_Penalty = false;
     IsUsing_Plastic = false;
     IsUsing_Road = false;
+    IsUsing_Road_Dirt = false;
     IsUsing_Wood = false;
     IsUsing_Bobsleigh = false;
     IsUsing_Pipe = false;
+    IsUsing_Platform = false;
     IsUsing_Sausage = false;
     IsUsing_Surfaceless = false;
     IsUsing_Underwater = false;
@@ -79,6 +82,7 @@ void DeselectAlteredEnviroments() {
 void DeselectAlteredMulti() {
     IsUsing_100WetIcyWood = false;
     IsUsing_Checkpointless_Reverse = false;
+    IsUsing_Icy_Reactor = false;
     IsUsing_Ice_Reverse = false;
     IsUsing_Ice_Reverse_Reactor = false;
     IsUsing_Ice_Short = false;
@@ -107,6 +111,7 @@ void DeselectAlteredOther() {
     IsUsing_Broken = false;
     IsUsing_Bumper = false;
     IsUsing_Ngolo_Cacti = false;
+    IsUsing_No_Cut = false;
     IsUsing_Checkpoin_t = false;
     IsUsing_Cleaned = false;
     IsUsing_Colours_Combined = false;
@@ -129,6 +134,7 @@ void DeselectAlteredOther() {
     IsUsing_Pool_Hunters = false;
     IsUsing_Random = false;
     IsUsing_Ring_CP = false;
+    IsUsing_Scuba_Diving = false;
     IsUsing_Sections_joined = false;
     IsUsing_Select_DEL = false;
     IsUsing_Speedlimit = false;

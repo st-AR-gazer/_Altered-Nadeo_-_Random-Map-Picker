@@ -311,11 +311,14 @@ void RenderSurfaces() {
     RenderS_Ice();
     RenderS_Magnet();
     RenderS_Mixed();
+    RenderS_Better_Mixed();
     RenderS_Penalty();
     RenderS_Plastic();
     RenderS_Road();
+    RenderS_Road_Dirt();
     RenderS_Bobsleigh();
     RenderS_Pipe();
+    RenderS_Platform();
     RenderS_Sausage();
     RenderS_Surfaceless();
     RenderS_Underwater();
@@ -324,21 +327,24 @@ void RenderSurfaces() {
     if (UI::Button("Disable All surface settings")) { DeselectAlteredSurface(); }
 }
 
-void RenderS_Dirt() {        IsUsing_Dirt =        UI::Checkbox("Dirt", IsUsing_Dirt); }
-void RenderS_Fast_Magnet() { IsUsing_Fast_Magnet = UI::Checkbox("Fast Magnet", IsUsing_Fast_Magnet); }
-void RenderS_Flooded() {     IsUsing_Flooded =     UI::Checkbox("Flooded", IsUsing_Flooded); }
-void RenderS_Grass() {       IsUsing_Grass =       UI::Checkbox("Grass", IsUsing_Grass); }
-void RenderS_Ice() {         IsUsing_Ice =         UI::Checkbox("Ice", IsUsing_Ice); }
-void RenderS_Magnet() {      IsUsing_Magnet =      UI::Checkbox("Magnet", IsUsing_Magnet); }
-void RenderS_Mixed() {       IsUsing_Mixed =       UI::Checkbox("Mixed", IsUsing_Mixed); }
-void RenderS_Penalty() {     IsUsing_Penalty =     UI::Checkbox("Penalty", IsUsing_Penalty); }
-void RenderS_Plastic() {     IsUsing_Plastic =     UI::Checkbox("Plastic", IsUsing_Plastic); }
-void RenderS_Road() {        IsUsing_Road =        UI::Checkbox("Road", IsUsing_Road); }
-void RenderS_Bobsleigh() {   IsUsing_Bobsleigh =   UI::Checkbox("Bobsleigh", IsUsing_Bobsleigh); }
-void RenderS_Pipe() {        IsUsing_Pipe =        UI::Checkbox("Pipe", IsUsing_Pipe); }
-void RenderS_Sausage() {     IsUsing_Sausage =     UI::Checkbox("Sausage", IsUsing_Sausage); }
-void RenderS_Surfaceless() { IsUsing_Surfaceless = UI::Checkbox("Surfaceless", IsUsing_Surfaceless); }
-void RenderS_Underwater() {  IsUsing_Underwater =  UI::Checkbox("Underwater", IsUsing_Underwater); }
+void RenderS_Dirt() {         IsUsing_Dirt =         UI::Checkbox("Dirt", IsUsing_Dirt); }
+void RenderS_Fast_Magnet() {  IsUsing_Fast_Magnet =  UI::Checkbox("Fast Magnet", IsUsing_Fast_Magnet); }
+void RenderS_Flooded() {      IsUsing_Flooded =      UI::Checkbox("Flooded", IsUsing_Flooded); }
+void RenderS_Grass() {        IsUsing_Grass =        UI::Checkbox("Grass", IsUsing_Grass); }
+void RenderS_Ice() {          IsUsing_Ice =          UI::Checkbox("Ice", IsUsing_Ice); }
+void RenderS_Magnet() {       IsUsing_Magnet =       UI::Checkbox("Magnet", IsUsing_Magnet); }
+void RenderS_Mixed() {        IsUsing_Mixed =        UI::Checkbox("Mixed", IsUsing_Mixed); }
+void RenderS_Better_Mixed() { IsUsing_Better_Mixed = UI::Checkbox("Better Mixed", IsUsing_Better_Mixed); }
+void RenderS_Penalty() {      IsUsing_Penalty =      UI::Checkbox("Penalty", IsUsing_Penalty); }
+void RenderS_Plastic() {      IsUsing_Plastic =      UI::Checkbox("Plastic", IsUsing_Plastic); }
+void RenderS_Road() {         IsUsing_Road =         UI::Checkbox("Road", IsUsing_Road); }
+void RenderS_Road_Dirt() {    IsUsing_Road_Dirt =    UI::Checkbox("Road-Dirt", IsUsing_Road_Dirt); }
+void RenderS_Bobsleigh() {    IsUsing_Bobsleigh =    UI::Checkbox("Bobsleigh", IsUsing_Bobsleigh); }
+void RenderS_Pipe() {         IsUsing_Pipe =         UI::Checkbox("Pipe", IsUsing_Pipe); }
+void RenderS_Platform() {     IsUsing_Platform =     UI::Checkbox("Platform", IsUsing_Platform); }
+void RenderS_Sausage() {      IsUsing_Sausage =      UI::Checkbox("Sausage", IsUsing_Sausage); }
+void RenderS_Surfaceless() {  IsUsing_Surfaceless =  UI::Checkbox("Surfaceless", IsUsing_Surfaceless); }
+void RenderS_Underwater() {   IsUsing_Underwater =   UI::Checkbox("Underwater", IsUsing_Underwater); }
 // ############################################################################################################
 
 
@@ -478,6 +484,7 @@ void RenderMulti() {
 
     RenderS_100WetIcyWood();
     RenderS_Checkpointless_Reverse();
+    RenderS_Icy_Reactor();
     RenderS_Ice_Reverse();
     RenderS_Ice_Reverse_Reactor();
     RenderS_Ice_Short();
@@ -500,6 +507,7 @@ void RenderMulti() {
 
 void RenderS_100WetIcyWood() {             IsUsing_100WetIcyWood =             UI::Checkbox("100% Wet-Icy-Wood", IsUsing_100WetIcyWood); }
 void RenderS_Checkpointless_Reverse() {    IsUsing_Checkpointless_Reverse =    UI::Checkbox("Checkpointless Reverse", IsUsing_Checkpointless_Reverse); }
+void RenderS_Icy_Reactor() {               IsUsing_Icy_Reactor =               UI::Checkbox("Icy Reactor", IsUsing_Icy_Reactor); }
 void RenderS_Ice_Reverse() {               IsUsing_Ice_Reverse =               UI::Checkbox("Ice Reverse", IsUsing_Ice_Reverse); }
 void RenderS_Ice_Reverse_Reactor() {       IsUsing_Ice_Reverse_Reactor =       UI::Checkbox("Ice Reverse Reactor", IsUsing_Ice_Reverse_Reactor); }
 void RenderS_Ice_Short() {                 IsUsing_Ice_Short =                 UI::Checkbox("Ice Short", IsUsing_Ice_Short); }
@@ -534,6 +542,7 @@ void RenderAlterationalOther() {
     RenderS_Broken();
     RenderS_Bumper();
     RenderS_Ngolo_Cacti();
+    RenderS_No_Cut();
     RenderS_Checkpoin_t();
     RenderS_Cleaned();
     RenderS_Colours_Combined();
@@ -555,6 +564,7 @@ void RenderAlterationalOther() {
     RenderS_Pool_Hunters();
     RenderS_Random();
     RenderS_Ring_CP();
+    RenderS_Scuba_Diving();
     RenderS_Sections_joined();
     RenderS_Select_DEL();
     RenderS_Speedlimit();
@@ -584,6 +594,7 @@ void RenderS_BOSS() {                       IsUsing_BOSS =                      
 void RenderS_Broken() {                     IsUsing_Broken =                     UI::Checkbox("Broken", IsUsing_Broken); }
 void RenderS_Bumper() {                     IsUsing_Bumper =                     UI::Checkbox("Bumper", IsUsing_Bumper); }
 void RenderS_Ngolo_Cacti() {                IsUsing_Ngolo_Cacti =                UI::Checkbox("Ngolo Cacti", IsUsing_Ngolo_Cacti); }
+void RenderS_No_Cut() {                     IsUsing_No_Cut =                     UI::Checkbox("No Cut", IsUsing_No_Cut); }
 void RenderS_Checkpoin_t() {                IsUsing_Checkpoin_t =                UI::Checkbox("Checkpoin-t", IsUsing_Checkpoin_t); }
 void RenderS_Cleaned() {                    IsUsing_Cleaned =                    UI::Checkbox("Cleaned", IsUsing_Cleaned); }
 void RenderS_Colours_Combined() {           IsUsing_Colours_Combined =           UI::Checkbox("Colours Combined", IsUsing_Colours_Combined); }
@@ -605,6 +616,7 @@ void RenderS_Mirrored() {                   IsUsing_Mirrored =                  
 void RenderS_Pool_Hunters() {               IsUsing_Pool_Hunters =               UI::Checkbox("Pool Hunters", IsUsing_Pool_Hunters); }
 void RenderS_Random() {                     IsUsing_Random =                     UI::Checkbox("Random", IsUsing_Random); }
 void RenderS_Ring_CP() {                    IsUsing_Ring_CP =                    UI::Checkbox("Ring CP", IsUsing_Ring_CP); }
+void RenderS_Scuba_Diving() {               IsUsing_Scuba_Diving =               UI::Checkbox("Scuba Diving", IsUsing_Scuba_Diving); }
 void RenderS_Sections_joined() {            IsUsing_Sections_joined =            UI::Checkbox("Sections joined", IsUsing_Sections_joined); }
 void RenderS_Select_DEL() {                 IsUsing_Select_DEL =                 UI::Checkbox("Select DEL", IsUsing_Select_DEL); }
 void RenderS_Speedlimit() {                 IsUsing_Speedlimit =                 UI::Checkbox("Speedlimit", IsUsing_Speedlimit); }
@@ -666,16 +678,22 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Magnet);
     alterationNames.InsertLast("Mixed");
     alterationFuncs.InsertLast(@RenderS_Mixed);
+    alterationNames.InsertLast("Better Mixed");
+    alterationFuncs.InsertLast(@RenderS_Better_Mixed);
     alterationNames.InsertLast("Penalty");
     alterationFuncs.InsertLast(@RenderS_Penalty);
     alterationNames.InsertLast("Plastic");
     alterationFuncs.InsertLast(@RenderS_Plastic);
     alterationNames.InsertLast("Road");
     alterationFuncs.InsertLast(@RenderS_Road);
+    alterationNames.InsertLast("Road Dirt");
+    alterationFuncs.InsertLast(@RenderS_Road_Dirt);
     alterationNames.InsertLast("Bobsleigh");
     alterationFuncs.InsertLast(@RenderS_Bobsleigh);
     alterationNames.InsertLast("Pipe");
     alterationFuncs.InsertLast(@RenderS_Pipe);
+    alterationNames.InsertLast("Platform");
+    alterationFuncs.InsertLast(@RenderS_Platform);
     alterationNames.InsertLast("Sausage");
     alterationFuncs.InsertLast(@RenderS_Sausage);
     alterationNames.InsertLast("Surfaceless");
@@ -788,6 +806,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_100WetIcyWood);
     alterationNames.InsertLast("Checkpointless Reverse");
     alterationFuncs.InsertLast(@RenderS_Checkpointless_Reverse);
+    alterationNames.InsertLast("Icy Reactor");
+    alterationFuncs.InsertLast(@RenderS_Icy_Reactor);
     alterationNames.InsertLast("Ice Reverse");
     alterationFuncs.InsertLast(@RenderS_Ice_Reverse);
     alterationNames.InsertLast("Ice Reverse Reactor");
@@ -844,6 +864,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Bumper);
     alterationNames.InsertLast("Ngolo Cacti");
     alterationFuncs.InsertLast(@RenderS_Ngolo_Cacti);
+    alterationNames.InsertLast("No Cut");
+    alterationFuncs.InsertLast(@RenderS_No_Cut);
     alterationNames.InsertLast("Checkpoin-t");
     alterationFuncs.InsertLast(@RenderS_Checkpoin_t);
     alterationNames.InsertLast("Cleaned");
@@ -886,6 +908,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Random);
     alterationNames.InsertLast("Ring CP");
     alterationFuncs.InsertLast(@RenderS_Ring_CP);
+    alterationNames.InsertLast("Scuba Diving");
+    alterationFuncs.InsertLast(@RenderS_Scuba_Diving);
     alterationNames.InsertLast("Sections joined");
     alterationFuncs.InsertLast(@RenderS_Sections_joined);
     alterationNames.InsertLast("Select DEL");

@@ -36,9 +36,6 @@ void Main() {
     }
     LoadMapsFromConsolidatedFile();
 
-    SetFirstUid();
-    log("First UID set, the base version of plugin is now available, and can be propperly used, only basic functionality can be set", LogLevel::InfoG, 41);
-    
     while (true) {
         if (toOpenMap) {
             toOpenMap = false;
