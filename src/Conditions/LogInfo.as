@@ -1,5 +1,5 @@
 void NotifyWarn(const string &in msg) {
-    UI::ShowNotification("Altered Random Map Picker", msg, vec4(1, .5, .1, .5), 6000);
+    UI::ShowNotification("Altered Random Map Picker", msg, vec4(1, .5, .1, .5), 10000);
 }
 
 void NotifyInfo(const string &in msg) {

@@ -1,3 +1,26 @@
+// Map Score
+
+[Setting category="Map Score" name="Author Score Min"]
+int IsUsing_authorScoreMin = 0;
+[Setting category="Map Score" name="Author Score Max"]
+int IsUsing_authorScoreMax = -1;
+
+[Setting category="Map Score" name="Gold Score Min"]
+int IsUsing_goldScoreMin = 0;
+[Setting category="Map Score" name="Gold Score Max"]
+int IsUsing_goldScoreMax = -1;
+
+[Setting category="Map Score" name="Silver Score Min"]
+int IsUsing_silverScoreMin = 0;
+[Setting category="Map Score" name="Silver Score Max"]
+int IsUsing_silverScoreMax = -1;
+
+[Setting category="Map Score" name="Bronze Score Min"]
+int IsUsing_bronzeScoreMin = 0;
+[Setting category="Map Score" name="Bronze Score Max"]
+int IsUsing_bronzeScoreMax = -1;
+
+
 // Alterations
 
 // Altered Surface

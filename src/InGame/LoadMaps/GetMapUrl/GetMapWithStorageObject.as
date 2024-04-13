@@ -5,7 +5,8 @@ void LoadMapFromStorageObject() {
 
     if (mapUrl.Length == 0) {
         log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 9); // mapUrl will always be empty xdd
-        NotifyWarn("Failed to get map URL from storage objects. Please try and use with UID in General Alteratin settings.");
+        NotifyWarn("Unable to retrieve the map URL from storage objects. \nThis issue is likely due to the absence of maps matching your specified criteria. Please adjust your selections of alterations and/or seasons to ensure that there are available maps.");
+
         return;
     }
 
@@ -26,18 +27,25 @@ string FetchRandomMapUrl() {
         startTime = Time::Now;
     }
 
-    // Filter out 'season', 'year' and 'alteration' settings ()
+    // Filter out 'season', 'year' and 'alteration' settings, and score settings
     for (uint i = 0; i < allMaps.Length; ++i) {
         Json::Value map = allMaps[i];
         
-        if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map)) {
-            FilteredMaps.InsertLast(map);
+        if (shoulduseCumulativeSelections) {
+            if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map) && MatchesScoreSettings(map)) {
+                FilteredMaps.InsertLast(map);
+            }
+        } else {
+            if ((MatchesSeasonalSettings(map) || MatchesAlterationSettings(map)) && MatchesScoreSettings(map)) {
+                FilteredMaps.InsertLast(map);
+            }
         }
         if (Time::Now - startTime > 20) {
             yield();
             startTime = Time::Now;
         }
     }
+
 
     // Select random from filtered
     if (!FilteredMaps.IsEmpty()) {
@@ -230,6 +238,24 @@ bool MatchesAlterationSettings(Json::Value map) {
  // if (IsUsing_AllTOTD                      && map["alteration"] == "") return true; // This is in 'season' not 'alteration'
 
     return false;
+}
+
+bool MatchesScoreSettings(const Json::Value& map) {
+    int authorScore = map["authorScore"];
+    int goldScore = map["goldScore"];
+    int silverScore = map["silverScore"];
+    int bronzeScore = map["bronzeScore"];
+
+    if ((authorScore < IsUsing_authorScoreMin) || (IsUsing_authorScoreMax != -1 && authorScore > IsUsing_authorScoreMax))
+        return false;
+    if ((goldScore < IsUsing_goldScoreMin) || (IsUsing_goldScoreMax != -1 && goldScore > IsUsing_goldScoreMax))
+        return false;
+    if ((silverScore < IsUsing_silverScoreMin) || (IsUsing_silverScoreMax != -1 && silverScore > IsUsing_silverScoreMax))
+        return false;
+    if ((bronzeScore < IsUsing_bronzeScoreMin) || (IsUsing_bronzeScoreMax != -1 && bronzeScore > IsUsing_bronzeScoreMax))
+        return false;
+
+    return true;
 }
 
 

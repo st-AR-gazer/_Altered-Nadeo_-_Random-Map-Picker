@@ -148,13 +148,26 @@ void RenderGeneralAlterationSettings() {
 
     newValue = UI::Checkbox("Use Storage Object Over UID", useStorageObjectOverUID);
     if (newValue != useStorageObjectOverUID) { useStorageObjectOverUID = newValue; }
-    
+    SimpleTooltip("If enabled, the plugin will use the 'consolidated_maps.json' file to extract the URL. This means that when toggled off this setting will not allow you to select what alteration you want.");
+
     newValue = UI::Checkbox('CumulativeSelections', shoulduseCumulativeSelections);
     if (newValue != shoulduseCumulativeSelections) { shoulduseCumulativeSelections = newValue; }
-    
-    
+    SimpleTooltip("If enabled, the plugin will use the 'consolidated_maps.json' file to extract the URL. This means that when toggled off this setting will not allow you to select what alteration you want.");
+
+    UI::Separator();
 
     // set maximum AT / gold / silver / bronze times
+    UI::Text("Score Settings:");
+    SimpleTooltip("The default values are set to '-1' this represents the maximum score possible.")
+    IsUsing_authorScoreMin = UI::InputInt("Minimum Author Score", IsUsing_authorScoreMin);
+    IsUsing_authorScoreMax = UI::InputInt("Maximum Author Score", IsUsing_authorScoreMax);
+    IsUsing_goldScoreMin = UI::InputInt("Minimum Gold Score", IsUsing_goldScoreMin);
+    IsUsing_goldScoreMax = UI::InputInt("Maximum Gold Score", IsUsing_goldScoreMax);
+    IsUsing_silverScoreMin = UI::InputInt("Minimum Silver Score", IsUsing_silverScoreMin);
+    IsUsing_silverScoreMax = UI::InputInt("Maximum Silver Score", IsUsing_silverScoreMax);
+    IsUsing_bronzeScoreMin = UI::InputInt("Minimum Bronze Score", IsUsing_bronzeScoreMin);
+    IsUsing_bronzeScoreMax = UI::InputInt("Maximum Bronze Score", IsUsing_bronzeScoreMax);
+    // 
 
     if (UI::Button("Enable All settings")) {
         SelectAllSettings();
@@ -163,15 +176,23 @@ void RenderGeneralAlterationSettings() {
     if (UI::Button("Disable All settings")) {
         DeselectAllSettings();
     }
-    
-    
 }
+
+void SimpleTooltip(const string &in msg) {
+    if (UI::IsItemHovered()) {
+        UI::SetNextWindowSize(400, 0, UI::Cond::Appearing);
+        UI::BeginTooltip();
+        UI::TextWrapped(msg);
+        UI::EndTooltip();
+    }
+}
+
 
 // ###################################### Seasons #############################################################
 
 // ############################################################################################################
 void RenderWinter() { 
-    UI::Text('Content for "Winter"');
+    UI::Text('All "Winter" Alterations');
 
     RenderS_Winter2021();
     RenderS_Winter2022();
@@ -193,7 +214,7 @@ void RenderS_Winter2025() { IsUsing_Winter2025Maps = UI::Checkbox("Winter 2025",
 
 // ############################################################################################################
 void RenderSpring() { 
-    UI::Text('Content for "Spring"');
+    UI::Text('All "Spring" Alterations');
 
     RenderS_Spring2020();
     RenderS_Spring2021();
@@ -217,7 +238,7 @@ void RenderS_Spring2025() { IsUsing_Spring2025Maps = UI::Checkbox("Spring 2025",
 
 // ############################################################################################################
 void RenderSummer() { 
-    UI::Text('Content for "Summer"');
+    UI::Text('All "Summer" Alterations');
 
     RenderS_Summer2020();
     RenderS_Summer2021();
@@ -241,7 +262,7 @@ void RenderS_Summer2025() { IsUsing_Summer2025Maps = UI::Checkbox("Summer 2025",
 
 // ############################################################################################################
 void RenderFall() { 
-    UI::Text('Content for "Fall"');
+    UI::Text('All "Fall" Alterations');
 
     RenderS_Fall2020();
     RenderS_Fall2021();
