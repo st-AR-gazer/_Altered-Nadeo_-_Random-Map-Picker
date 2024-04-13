@@ -11,6 +11,16 @@ string GetARandomAltMapStorageObject() {
 Json::Value GetUserSettings() {
     Json::Value settings;
 
+    // Score
+    settings["Score"]["Author"]["Max"] = IsUsing_authorScoreMax;
+    settings["Score"]["Author"]["Min"] = IsUsing_authorScoreMin;
+    settings["Score"]["Gold"]["Max"] = IsUsing_goldScoreMax;
+    settings["Score"]["Gold"]["Min"] = IsUsing_goldScoreMin;
+    settings["Score"]["Silver"]["Max"] = IsUsing_silverScoreMax;
+    settings["Score"]["Silver"]["Min"] = IsUsing_silverScoreMin;
+    settings["Score"]["Bronze"]["Max"] = IsUsing_bronzeScoreMax;
+    settings["Score"]["Bronze"]["Min"] = IsUsing_bronzeScoreMin;
+
     // Altered Surface
     settings["Alteration"]["Surface"]["Dirt"] = IsUsing_Dirt;
     settings["Alteration"]["Surface"]["Fast Magnet"] = IsUsing_Fast_Magnet;

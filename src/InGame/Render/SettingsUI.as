@@ -158,7 +158,7 @@ void RenderGeneralAlterationSettings() {
 
     // set maximum AT / gold / silver / bronze times
     UI::Text("Score Settings:");
-    SimpleTooltip("The default values are set to '-1' this represents the maximum score possible.")
+    SimpleTooltip("The default values are set to '-1' this represents the maximum score possible.");
     IsUsing_authorScoreMin = UI::InputInt("Minimum Author Score", IsUsing_authorScoreMin);
     IsUsing_authorScoreMax = UI::InputInt("Maximum Author Score", IsUsing_authorScoreMax);
     IsUsing_goldScoreMin = UI::InputInt("Minimum Gold Score", IsUsing_goldScoreMin);
