@@ -23,14 +23,14 @@ void FetchManifest() {
     if (req.ResponseCode() == 200) {
         ParseManifest(req.String());
     } else {
-        log("Error fetching manifest: " + req.ResponseCode(), LogLevel::Error, 27);
+        log("Error fetching manifest: " + req.ResponseCode(), LogLevel::Error, 26);
     }
 }
 
 void ParseManifest(const string &in reqBody) {
     Json::Value manifest = Json::Parse(reqBody);
     if (manifest.GetType() != Json::Type::Object) {
-        log("Failed to parse JSON.", LogLevel::Error, 34);
+        log("Failed to parse JSON.", LogLevel::Error, 33);
         return;
     }
 
@@ -69,7 +69,7 @@ int GetCurrentInstalledVersion() {
         return json["latestVersion"];
     }
 
-    log("JSON is not an object. JSON is: " + tostring(json.GetType()), LogLevel::Error, 73);
+    log("JSON is not an object. JSON is: " + tostring(json.GetType()), LogLevel::Error, 72);
     return -1;
 }
 

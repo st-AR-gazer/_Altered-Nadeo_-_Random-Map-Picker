@@ -26,9 +26,9 @@ void Main() {
     GetLineCount(IO::FromStorageFolder("Data/data.csv")); // Sets the linecount, to be used in rendermenu func
     
     FetchManifest(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
-    log("Manifest check completed", LogLevel::InfoG, 30);
+    log("Manifest check completed", LogLevel::InfoG, 29);
 
-    // log("CDN check completed for new file", LogLevel::InfoG, 32);
+    // log("CDN check completed for new file", LogLevel::InfoG, 31);
 
     if (Time::Now - startTime > 20) {
         yield();

@@ -35,7 +35,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         auto data = req.String();
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
-        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 35);
+        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 38);
     }
 }
 
@@ -51,5 +51,5 @@ void StoreDatafile(const string &in data, const string &in fileName, const strin
     file.Write(data);
     file.Close();
 
-    log("Data written to file: " + fullFilePathName, LogLevel::Info, 51);
+    log("Data written to file: " + fullFilePathName, LogLevel::Info, 54);
 }

@@ -12,7 +12,7 @@ void RenderMenu() {
 }
 
 void GetLineCount(const string &in filePath) {
-    log("Getting line count for file: " + filePath, LogLevel::Info, 16);
+    log("Getting line count for file: " + filePath, LogLevel::Info, 15);
     g_lineCount = -1;
     if (!IO::FileExists(filePath)) { log("File does not exist: " + filePath, LogLevel::Error, 17); return; }
 

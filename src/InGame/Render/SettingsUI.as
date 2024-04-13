@@ -138,6 +138,7 @@ void RenderGeneralSettings() {
 
     // bool newValue;
 
+    // func no longer in use
 
 }
 
