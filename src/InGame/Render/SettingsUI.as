@@ -34,6 +34,12 @@ void RenderInterface() {
     //  UI::SameLine();
 
         if (UI::Button("General Alteration Settings")) activeTab = 0;
+        UI::SameLine();
+        if (UI::Button("General Settings")) activeTab = 1;
+        if (shouldOpenDevTab) {
+            UI::SameLine();
+            if (UI::Button("~Dev")) activeTab = 99;
+        }
 
         // if (activeMainTab == 0) {
         //     UI::Text("AAAAAAAAAAAAAAAAAAAAA");
@@ -125,21 +131,41 @@ void RenderInterface() {
                 RenderSearch();
                 break;
             
+            case 99:
+                RenderDev();
+                break;
+            
         }
     }
     UI::End();
 }
 
 
+void RenderDev() {
+    UI::Text("Some dings for diagnosing issues and such");
+
+    if (UI::Button("Copy User settings to clipboard")) {
+        Json::Value settings = GetUserSettings();
+
+        string settingsStr = PrettyPrintJSON(settings);
+
+        IO::SetClipboard(settingsStr);
+    }
+}
+
 
 
 void RenderGeneralSettings() { 
     UI::Text("All the altered nadeo general settings");
 
-    // bool newValue;
+    bool newValue;
 
-    // func no longer in use
-
+    newValue = UI::Checkbox('Check for manifest updates', checkForUpdates);
+    if (newValue != checkForUpdates) { checkForUpdates = newValue; }
+    
+    newValue = UI::Checkbox('Open DEV Tab', shouldOpenDevTab);
+    if (newValue != shouldOpenDevTab) { shouldOpenDevTab = newValue; }
+    
 }
 
 void RenderGeneralAlterationSettings() { 

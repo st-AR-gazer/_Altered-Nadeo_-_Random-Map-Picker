@@ -9,9 +9,15 @@ string GetARandomAltMapStorageObject() {
 }
 
 Json::Value GetUserSettings() {
-    Json::Value settings;
+    Json::Value settings = Json::Object();
 
     // Score
+    settings["Score"] = Json::Object();
+    settings["Score"]["Author"] = Json::Object();
+    settings["Score"]["Gold"] = Json::Object();
+    settings["Score"]["Silver"] = Json::Object();
+    settings["Score"]["Bronze"] = Json::Object();
+
     settings["Score"]["Author"]["Max"] = IsUsing_authorScoreMax;
     settings["Score"]["Author"]["Min"] = IsUsing_authorScoreMin;
     settings["Score"]["Gold"]["Max"] = IsUsing_goldScoreMax;
@@ -21,7 +27,11 @@ Json::Value GetUserSettings() {
     settings["Score"]["Bronze"]["Max"] = IsUsing_bronzeScoreMax;
     settings["Score"]["Bronze"]["Min"] = IsUsing_bronzeScoreMin;
 
+    // Alterations
+    settings["Alteration"] = Json::Object();
     // Altered Surface
+    settings["Alteration"]["Surface"] = Json::Object();
+
     settings["Alteration"]["Surface"]["Dirt"] = IsUsing_Dirt;
     settings["Alteration"]["Surface"]["Fast Magnet"] = IsUsing_Fast_Magnet;
     settings["Alteration"]["Surface"]["Flooded"] = IsUsing_Flooded;
@@ -43,6 +53,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Surface"]["Underwater"] = IsUsing_Underwater;
 
     // Altered Effects
+    settings["Alteration"]["Effects"] = Json::Object();
+
     settings["Alteration"]["Effects"]["Cruise"] = IsUsing_Cruise;
     settings["Alteration"]["Effects"]["Fragile"] = IsUsing_Fragile;
     settings["Alteration"]["Effects"]["Full Fragile"] = IsUsing_Full_Fragile;
@@ -61,6 +73,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Effects"]["Worn Tires"] = IsUsing_Worn_Tires;
     
     // Altered Finish Location
+    settings["Alteration"]["Finish Location"] = Json::Object();
+
     settings["Alteration"]["Finish Location"]["1 Down"] = IsUsing_1Down;
     settings["Alteration"]["Finish Location"]["1 Back / Forward"] = IsUsing_1Back;
     settings["Alteration"]["Finish Location"]["1 Left"] = IsUsing_1Left;
@@ -83,6 +97,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Finish Location"]["Inclined"] = IsUsing_Inclined;
 
     // Altered Environment (Envimix)
+    settings["Alteration"]["Environment"] = Json::Object();
+
     settings["Alteration"]["Environment"]["[Stadium]"] = IsUsing_Stadium_;
     settings["Alteration"]["Environment"]["[Stadium] Wet Wood"] = IsUsing_Stadium_Wet_Wood;
     settings["Alteration"]["Environment"]["[Snow]"] = IsUsing_Snow_;
@@ -99,6 +115,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Environment"]["[Rally] Ice"] = IsUsing_Rally_Icy;
 
     // Multi Alterations
+    settings["Alteration"]["Multi"] = Json::Object();
+
     settings["Alteration"]["Multi"]["100% Wet Icy Wood"] = IsUsing_100WetIcyWood;
     settings["Alteration"]["Multi"]["Checkpointless Reverse"] = IsUsing_Checkpointless_Reverse;
     settings["Alteration"]["Multi"]["Ice Reactor"] = IsUsing_Icy_Reactor;
@@ -119,6 +137,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Multi"]["YEET Reverse"] = IsUsing_YEET_Reverse;
 
     // Other Alterations
+    settings["Alteration"]["Other"] = Json::Object();
+
     settings["Alteration"]["Other"]["XX-But"] = IsUsing_XX_But;
     settings["Alteration"]["Other"]["Flat / 2D"] = IsUsing_Flat_2D;
     settings["Alteration"]["Other"]["a08"] = IsUsing_A08;
@@ -167,6 +187,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Other"]["YEET Down"] = IsUsing_YEET_Down;
 
     // Extra Campaigns
+    settings["Alteration"]["Extra Campaigns"] = Json::Object();
+
     settings["Alteration"]["Extra Campaigns"]["Training"] = IsUsing_Trainig;
     settings["Alteration"]["Extra Campaigns"]["TMGL / TMWT Easy mode"] = IsUsing_TMGL_Easy;
     settings["Alteration"]["Extra Campaigns"]["Competitions (With Alterations)"] = IsUsing__AllOfficialCompetitions;
@@ -175,6 +197,8 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Extra Campaigns"]["Altered TOTD"] = IsUsing_AllTOTD;
 
     // Seasons
+    settings["Alteration"]["Seasons"] = Json::Object();
+
     settings["Alteration"]["Seasons"]["Spring 2020"] = IsUsing_Spring2020Maps;
     settings["Alteration"]["Seasons"]["Summer 2020"] = IsUsing_Summer2020Maps;
     settings["Alteration"]["Seasons"]["Fall 2020"] = IsUsing_Fall2020Maps;

@@ -8,6 +8,8 @@ void PlayMap(const string &in map_url) {
 }
 
 void PlayMapCoroutine(const string &in map_url) {
+    if (!CheckRequiredPermissions()) { return; } // Important to check permissions right before they are required for something, do not rely on something a previous prems check :ok:
+
     CTrackMania@ app = cast<CTrackMania@>(GetApp());
     if (app.Network.PlaygroundClientScriptAPI.IsInGameMenuDisplayed) {
         app.Network.PlaygroundInterfaceScriptHandler.CloseInGameMenu(CGameScriptHandlerPlaygroundInterface::EInGameMenuResult::Quit);
