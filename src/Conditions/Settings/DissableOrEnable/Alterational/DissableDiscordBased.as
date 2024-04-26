@@ -34,6 +34,7 @@ void DeselectAlteredEffects() {
     IsUsing_Random_Effects = false;
     IsUsing_Reactor = false;
     IsUsing_Reactor_Down = false;
+    IsUsing_RNG_Booster = false;
     IsUsing_Slowmo = false;
     IsUsing_Wet_Wheels = false;
     IsUsing_Worn_Tires = false;
