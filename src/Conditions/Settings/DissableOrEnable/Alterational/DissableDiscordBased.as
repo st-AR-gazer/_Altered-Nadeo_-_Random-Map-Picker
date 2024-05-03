@@ -143,6 +143,7 @@ void DeselectAlteredOther() {
     IsUsing_Start_1_Down = false;
     IsUsing_Supersized = false;
     IsUsing_Straight_to_the_Finish = false;
+    IsUsing_Stunt = false;
     IsUsing_Symmetrical = false;
     IsUsing_Tilted = false;
     IsUsing_Walmart_Mini = false;

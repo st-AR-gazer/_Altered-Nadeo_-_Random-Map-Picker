@@ -181,6 +181,7 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Other"]["Staircase"] = IsUsing_Staircase;
     settings["Alteration"]["Other"]["Supersized"] = IsUsing_Supersized;
     settings["Alteration"]["Other"]["Straight to the Finish"] = IsUsing_Straight_to_the_Finish;
+    settings["Alteration"]["Other"]["Stunt"] = IsUsing_Stunt;
     settings["Alteration"]["Other"]["Symmetrical"] = IsUsing_Symmetrical;
     settings["Alteration"]["Other"]["Tilted"] = IsUsing_Tilted;
     settings["Alteration"]["Other"]["Walmart Mini"] = IsUsing_Walmart_Mini;
@@ -389,6 +390,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "staircase") { IsUsing_Staircase = t_shouldUse; }
     else if (t_alteration.ToLower() == "supersized") { IsUsing_Supersized = t_shouldUse; }
     else if (t_alteration.ToLower() == "straight to the finish") { IsUsing_Straight_to_the_Finish = t_shouldUse; }
+    else if (t_alteration.ToLower() == "stunt") { IsUsing_Stunt = t_shouldUse;}
     else if (t_alteration.ToLower() == "symmetrical") { IsUsing_Symmetrical = t_shouldUse; }
     else if (t_alteration.ToLower() == "tilted") { IsUsing_Tilted = t_shouldUse; }
     else if (t_alteration.ToLower() == "walmart mini") { IsUsing_Walmart_Mini = t_shouldUse; }

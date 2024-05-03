@@ -622,6 +622,7 @@ void RenderAlterationalOther() {
     RenderS_Start_1_Down();
     RenderS_Supersized();
     RenderS_Straight_to_the_Finish();
+    RenderS_Stunt();
     RenderS_Symmetrical();
     RenderS_Tilted();
     RenderS_Walmart_Mini();
@@ -674,6 +675,7 @@ void RenderS_Staircase() {                  IsUsing_Staircase =                 
 void RenderS_Start_1_Down() {               IsUsing_Start_1_Down =               UI::Checkbox("Start 1 Down", IsUsing_Start_1_Down); }
 void RenderS_Supersized() {                 IsUsing_Supersized =                 UI::Checkbox("Supersized", IsUsing_Supersized); }
 void RenderS_Straight_to_the_Finish() {     IsUsing_Straight_to_the_Finish =     UI::Checkbox("Straight to the Finish", IsUsing_Straight_to_the_Finish); }
+void RenderS_Stunt() {                      IsUsing_Stunt =                      UI::Checkbox("Stunt", IsUsing_Stunt); }
 void RenderS_Symmetrical() {                IsUsing_Symmetrical =                UI::Checkbox("Symmetrical", IsUsing_Symmetrical); }
 void RenderS_Tilted() {                     IsUsing_Tilted =                     UI::Checkbox("Tilted", IsUsing_Tilted); }
 void RenderS_Walmart_Mini() {               IsUsing_Walmart_Mini =               UI::Checkbox("Walmart Mini", IsUsing_Walmart_Mini); }
@@ -976,6 +978,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Supersized);
     alterationNames.InsertLast("Straight to the Finish");
     alterationFuncs.InsertLast(@RenderS_Straight_to_the_Finish);
+    alterationNames.InsertLast("Stunt");
+    alterationFuncs.InsertLast(@RenderS_Stunt);
     alterationNames.InsertLast("Symmetrical");
     alterationFuncs.InsertLast(@RenderS_Symmetrical);
     alterationNames.InsertLast("Tilted");

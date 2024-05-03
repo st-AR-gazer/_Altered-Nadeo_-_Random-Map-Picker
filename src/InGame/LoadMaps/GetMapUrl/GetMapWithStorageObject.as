@@ -226,6 +226,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Start_1_Down                 && map["alteration"] == "Start 1-Down") return true;
     if (IsUsing_Supersized                   && map["alteration"] == "Supersized") return true;
     if (IsUsing_Straight_to_the_Finish       && map["alteration"] == "Straight to the Finish") return true;
+    if (IsUsing_Stunt                        && map["alteration"] == "Stunt") return true;
     if (IsUsing_Symmetrical                  && map["alteration"] == "Symmetrical") return true;
     if (IsUsing_Tilted                       && map["alteration"] == "Tilted") return true;
     if (IsUsing_YEET                         && map["alteration"] == "YEET") return true;
@@ -301,7 +302,7 @@ bool IsAlterationSettingActive() {
         IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
         IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || /*IsUsing_Hard ||  // Is actally Lunatic */IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
         IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
-        IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
+        IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Stunt || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
         IsUsing_YEET_Down || 
         
         IsUsing_TMGL_Easy || IsUsing_AllOfficialCompetitions || IsUsing_OfficialNadeo;

@@ -143,6 +143,7 @@ void SelectAlteredOther() {
     IsUsing_Start_1_Down = true;
     IsUsing_Supersized = true;
     IsUsing_Straight_to_the_Finish = true;
+    IsUsing_Stunt = true;
     IsUsing_Symmetrical = true;
     IsUsing_Tilted = true;
     IsUsing_Walmart_Mini = true;
