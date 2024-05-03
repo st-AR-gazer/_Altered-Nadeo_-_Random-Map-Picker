@@ -241,6 +241,7 @@ alterations_dict = {
     "Supersized": ["Supersized", "SuperSized", "Super-Sized", "Big", "Super01", "Super02", "Super03", "Super04", "Super05", "Super06", "Super07", "Super08", "Super09", "Super10", "Super11", "Super12", "Super13", "Super14", "Super15", "Super16", "Super17", "Super18", "Super19", "Super20", "Super21", "Super22", "Super23", "Super24", "Super25"],
     "Surfaceless": ["Surfaceless"],
     "Straight to the Finish": ["Straight to the Finish", "STTF", "StraighttotheFinish", "Straight-to-the-Finish", "Straighttothe-Finish", "Straight to the-Finish"],
+    "Stunt": ["Stunt"],
     "Symmetrical": ["Symmetrical"],
     "TMGL Easy": ["TMGL Easy", "TMGLEasy", "TMGL-Easy", "[EASY MODE]"],
     "Tilted": ["Tilted"],

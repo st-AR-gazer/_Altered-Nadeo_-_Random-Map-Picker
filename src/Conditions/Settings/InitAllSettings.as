@@ -419,6 +419,9 @@ bool IsUsing_Supersized = false;
 [Setting category="Alteration" name="Straight to the Finish"]
 bool IsUsing_Straight_to_the_Finish = false;
 
+[Setting category="Alteration" name="Stunt"]
+bool IsUsing_Stunt = false;
+
 [Setting category="Alteration" name="Symmetrical"]
 bool IsUsing_Symmetrical = false;
 
