@@ -225,6 +225,7 @@ alterations_dict = {
     "Ring CP": ["Ring CP", "RingCP", "Ring-CP", "RingCP%", "Ring CP%", "Ring-CP%"],
     "Road": ["Road", "Asphalt", "Tarmac", "(Tech)"],
     "Roofing": ["Roofing"],
+    "RNG Booster": ["RNG Booster"],
     "Sausage": ["Sausage"],
     "Sections Joined": ["Section 1 Joined", "Section 2 Joined", "Section 3 Joined", "Section 4 Joined", "Section 5 Joined", "Section 6 Joined", "Section 7 Joined", "Section 8 Joined", "Section 9 Joined", "Section 10 Joined", "Section 11 Joined", "Section 12 Joined", "Section 13 Joined", "Section 14 Joined", "Section 15 Joined", "Section 16 Joined", "Section 17 Joined", "Section 18 Joined", "Section 19 Joined", "Section 20 Joined", "Section 21 Joined", "Section 22 Joined", "Section 23 Joined", "Section 24 Joined", "Section 25 Joined", "Section 26 Joined", "Section 27 Joined", "Section 28 Joined", "Section 29 Joined", "Section 30 Joined", "Last Section Joined"],
     "Select DEL": ["Select DEL", "Select-DEL", "SelectDEL"],

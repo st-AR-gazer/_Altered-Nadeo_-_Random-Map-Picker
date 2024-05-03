@@ -68,6 +68,7 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Effects"]["Random Effects"] = IsUsing_Random_Effects;
     settings["Alteration"]["Effects"]["Reactor (Up)"] = IsUsing_Reactor;
     settings["Alteration"]["Effects"]["Reactor Down"] = IsUsing_Reactor_Down;
+    settings["Alteration"]["Effects"]["RNG Booster"] = IsUsing_RNG_Booster;
     settings["Alteration"]["Effects"]["Slowmo"] = IsUsing_Slowmo;
     settings["Alteration"]["Effects"]["Wet Wheels"] = IsUsing_Wet_Wheels;
     settings["Alteration"]["Effects"]["Worn Tires"] = IsUsing_Worn_Tires;

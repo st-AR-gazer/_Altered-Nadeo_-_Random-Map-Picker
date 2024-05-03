@@ -132,6 +132,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Random_Effects               && map["alteration"] == "Random Effects") return true;
     if (IsUsing_Reactor                      && map["alteration"] == "Reactor") return true;
     if (IsUsing_Reactor_Down                 && map["alteration"] == "Reactor Down") return true;
+    if (IsUsing_RNG_Booster                  && map["alteration"] == "RNG Booster") return true;
     if (IsUsing_Slowmo                       && map["alteration"] == "Slowmo") return true;
     if (IsUsing_Wet_Wheels                   && map["alteration"] == "Wet Wheels") return true;
     if (IsUsing_Worn_Tires                   && map["alteration"] == "Worn Tires") return true;

@@ -34,6 +34,7 @@ void SelectAlteredEffects() {
     IsUsing_Random_Effects = true;
     IsUsing_Reactor = true;
     IsUsing_Reactor_Down = true;
+    IsUsing_RNG_Booster = true;
     IsUsing_Slowmo = true;
     IsUsing_Wet_Wheels = true;
     IsUsing_Worn_Tires = true;

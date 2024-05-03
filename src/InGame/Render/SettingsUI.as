@@ -412,6 +412,7 @@ void RenderEffects() {
     RenderS_Random_Effects();
     RenderS_Reactor();
     RenderS_Reactor_Down();
+    RenderS_RNG_Booster();
     RenderS_Slowmo();
     RenderS_Wet_Wheels();
     RenderS_Worn_Tires();
@@ -432,6 +433,7 @@ void RenderS_Random_Dankness() { IsUsing_Random_Dankness = UI::Checkbox("Random 
 void RenderS_Random_Effects() {  IsUsing_Random_Effects =  UI::Checkbox("Random Effects", IsUsing_Random_Effects); }
 void RenderS_Reactor() {         IsUsing_Reactor =         UI::Checkbox("Reactor", IsUsing_Reactor); }
 void RenderS_Reactor_Down() {    IsUsing_Reactor_Down =    UI::Checkbox("Reactor Down", IsUsing_Reactor_Down); }
+void RenderS_RNG_Booster() {     IsUsing_RNG_Booster =     UI::Checkbox("RNG-Booster", IsUsing_RNG_Booster); }
 void RenderS_Slowmo() {          IsUsing_Slowmo =          UI::Checkbox("Slowmo", IsUsing_Slowmo); }
 void RenderS_Wet_Wheels() {      IsUsing_Wet_Wheels =      UI::Checkbox("Wet Wheels", IsUsing_Wet_Wheels); }
 void RenderS_Worn_Tires() {      IsUsing_Worn_Tires =      UI::Checkbox("Worn Tires", IsUsing_Worn_Tires); }
@@ -776,6 +778,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Reactor);
     alterationNames.InsertLast("Reactor Down");
     alterationFuncs.InsertLast(@RenderS_Reactor_Down);
+    alterationNames.InsertLast("RNG Booster");
+    alterationFuncs.InsertLast(@RNG_Booster);
     alterationNames.InsertLast("Slowmo");
     alterationFuncs.InsertLast(@RenderS_Slowmo);
     alterationNames.InsertLast("Wet Wheels");
