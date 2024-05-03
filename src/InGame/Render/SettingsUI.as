@@ -777,7 +777,7 @@ void PopulateAlterationsArrays() {
     alterationNames.InsertLast("Reactor Down");
     alterationFuncs.InsertLast(@RenderS_Reactor_Down);
     alterationNames.InsertLast("RNG Booster");
-    alterationFuncs.InsertLast(@RNG_Booster);
+    alterationFuncs.InsertLast(@RenderS_RNG_Booster);
     alterationNames.InsertLast("Slowmo");
     alterationFuncs.InsertLast(@RenderS_Slowmo);
     alterationNames.InsertLast("Wet Wheels");
