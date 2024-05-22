@@ -129,6 +129,7 @@ void SelectAlteredOther() {
     IsUsing_Flipped = true;
     // IsUsing_Hard = true; // Not on the discord // Is actally Lunatic
     IsUsing_Holes = true;
+    IsUsing_Ground_Clippers = true;
     IsUsing_Lunatic = true;
     IsUsing_Mini_RPG = true;
     IsUsing_Mirrored = true;

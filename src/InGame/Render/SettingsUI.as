@@ -607,6 +607,7 @@ void RenderAlterationalOther() {
     RenderS_Fast();
     RenderS_Flipped();
     // RenderS_Hard(); // Is actally Lunatic
+    RenderS_Ground_Clippers();
     RenderS_Holes();
     RenderS_Lunatic();
     RenderS_Mini_RPG();
@@ -659,6 +660,7 @@ void RenderS_Earthquake() {                 IsUsing_Earthquake =                
 void RenderS_Egocentrism() {                IsUsing_Egocentrism =                UI::Checkbox("Egocentrism", IsUsing_Egocentrism); }
 void RenderS_Fast() {                       IsUsing_Fast =                       UI::Checkbox("Fast", IsUsing_Fast); }
 void RenderS_Flipped() {                    IsUsing_Flipped =                    UI::Checkbox("Flipped", IsUsing_Flipped); }
+void RenderS_Ground_Clippers() {            IsUsing_Ground_Clippers =            UI::Checkbox("Ground Clippers", IsUsing_Ground_Clippers); }
 // void RenderS_Hard() {                       IsUsing_Hard =                       UI::Checkbox("Hard", IsUsing_Hard); } // Is actally Lunatic
 void RenderS_Holes() {                      IsUsing_Holes =                      UI::Checkbox("Holes", IsUsing_Holes); }
 void RenderS_Lunatic() {                    IsUsing_Lunatic =                    UI::Checkbox("Lunatic", IsUsing_Lunatic); }
@@ -946,6 +948,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Fast);
     alterationNames.InsertLast("Flipped");
     alterationFuncs.InsertLast(@RenderS_Flipped);
+    alterationNames.InsertLast("Ground Clippers");
+    alterationFuncs.InsertLast(@RenderS_Ground_Clippers);
     // alterationNames.InsertLast("Hard");        // Is actally Lunatic
     // alterationFuncs.InsertLast(@RenderS_Hard); // Is actally Lunatic
     alterationNames.InsertLast("Holes");

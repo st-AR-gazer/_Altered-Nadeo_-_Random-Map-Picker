@@ -164,6 +164,7 @@ Json::Value GetUserSettings() {
     settings["Alteration"]["Other"]["Egocentrism (Altered Camera)"] = IsUsing_Egocentrism;
     settings["Alteration"]["Other"]["Fast"] = IsUsing_Fast;
     settings["Alteration"]["Other"]["Flipped"] = IsUsing_Flipped;
+    settings["Alteration"]["Other"]["Ground Clippers"] = IsUsing_Ground_Clippers;
     settings["Alteration"]["Other"]["Holes"] = IsUsing_Holes;
     settings["Alteration"]["Other"]["Lunatic"] = IsUsing_Lunatic;
     settings["Alteration"]["Other"]["Mini RPG"] = IsUsing_Mini_RPG;
@@ -373,6 +374,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "egocentrism (altered camera)") { IsUsing_Egocentrism = t_shouldUse; }
     else if (t_alteration.ToLower() == "fast") { IsUsing_Fast = t_shouldUse; }
     else if (t_alteration.ToLower() == "flipped") { IsUsing_Flipped = t_shouldUse; }
+    else if (t_alteration.ToLower() == "ground clippers") { IsUsing_Ground_Clippers = t_shouldUse; }
     else if (t_alteration.ToLower() == "holes") { IsUsing_Holes = t_shouldUse; }
     else if (t_alteration.ToLower() == "lunatic") { IsUsing_Lunatic = t_shouldUse; }
     else if (t_alteration.ToLower() == "mini rpg") { IsUsing_Mini_RPG = t_shouldUse; }

@@ -371,6 +371,9 @@ bool IsUsing_Fast = false;
 [Setting category="Alteration" name="Flipped"]
 bool IsUsing_Flipped = false;
 
+[Setting category="Alteration" name="Ground Clippers"]
+bool IsUsing_Ground_Clippers = false;
+
 [Setting category="Alteration" name="Holes"]
 bool IsUsing_Holes = false;
 

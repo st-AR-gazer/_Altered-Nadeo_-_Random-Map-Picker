@@ -187,6 +187,7 @@ alterations_dict = {
     "Glider": ["Glider"],
     "Got Rotated_CPs Rotated 90°": ["Got Rotated", "CPs Rotated 90°", "CPs Rotated 90"],
     "Grass": ["Grass", "Grassy"],
+    "Ground Clippers": ["Ground Clippers"],
     "Holes": ["Holes"],
     "Ice": ["Ice", "Icy"],
     "Ice Reverse": ["Ice Reverse", "Ice-Reverse", "IceReverse", "Icy Reverse", "Icy-Reverse", "IcyReverse", "IR", "IceRev", "Ice-Rev", "IceRev", "IcyRev", "Icy-Rev", "IcyRev"],

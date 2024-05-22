@@ -58,14 +58,14 @@ Make sure to ALSO add the name of the alteration to the `alterationNames` and `a
 **Note:** If a category has changed name, simply update the `TAB NAME` to the new name. If an alteration has moved categories, cut it from its current location and move it to the correct tab.
 
 
-## Step 4: Add the Setting to `bool MatchesAlterationSettings(Json::Value map)`
+### Step 4: Add the Setting to `bool MatchesAlterationSettings(Json::Value map)`
 
 Got to `/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as`
 This step ensures that the newly added alteration setting is recognized and processed correctly when filtering maps. The `MatchesAlterationSettings` function and `MatchSeasonalSettings` both help with determining whether a map matches the current alteration settings activated by the user. Here is how to add an alteration too them. 
 
 This should also be added to "IsAlterationSettingActive", (when it is time to update the seasonal settings, this should also be updated, but for IsSeasonSettingActive instead of alteration)
 
-### Add Your Alteration
+#### Add Your Alteration
 
 Within the `MatchesAlterationSettings` function, you'll need to add a new conditional check for your alteration setting. This involves verifying if the setting is active (`IsUsing_YourNewAlteration`) and if the map's alteration attribute matches your alteration's identifier.
 
@@ -107,12 +107,12 @@ Ensure that your condition correctly checks both the setting's activation status
 }
 ```
 
-## Step 5: Add the Setting to the Exports
+### Step 5: Add the Setting to the Exports
 
 After integrating your new setting into the application's logic, it's also decently important to ensure that this setting is correctly exported so that other plugins can use it. Though I don't think anyone will bother XertroV asked for it, and I'm happy to oblidge xdd. 
 To add this new alteration to exports go to `\src\Exports\Export_Impl.as` and find the `GetUserSettings` function, and include your new alteration, ensuring that it's saved and retrievable as part of the user's settings.
 
-### Update the Settings Structure
+#### Update the Settings Structure
 
 Within the `GetUserSettings` function, locate the appropriate section for your new setting. The settings are categorized for better organization (e.g., `Surface`, `Effects`, `Finish Location`, etc.). They are catagorized based on how it is on the Altered Nadeo discord, please use this as reference when adding/moving/removing things PeepoShy.
 
