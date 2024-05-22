@@ -36,6 +36,7 @@ void RenderInterface() {
         if (UI::Button("General Alteration Settings")) activeTab = 0;
         UI::SameLine();
         if (UI::Button("General Settings")) activeTab = 1;
+        if (UI::Button("Profiles")) activeTab = 98;
         if (shouldOpenDevTab) {
             UI::SameLine();
             if (UI::Button("~Dev")) activeTab = 99;
@@ -130,7 +131,10 @@ void RenderInterface() {
             case 15:
                 RenderSearch();
                 break;
-            
+
+            case 98:
+                RenderProfiles();
+                break;
             case 99:
                 RenderDev();
                 break;
@@ -153,7 +157,38 @@ void RenderDev() {
     }
 }
 
+string profileURL = "";
+string profileName = "";
+void RenderProfiles() {
+    UI::Text("Download profiles from URL: ");
+    profileURL = UI::InputText("Profile URL", profileURL, UI::InputTextFlags::None);
+    if (UI::Button("Download Profile")) {
+        Profiles::DownloadProfile(profileURL);
+    }
+    UI::Separator();
 
+    UI::Text("Create a new profile: ");
+    profileName = UI::InputText("Profile Name", profileName, UI::InputTextFlags::None);
+    if (UI::Button("Create New Profile")) {
+        Profiles::CreateNewProfile(profileName);
+    }
+    UI::Separator();
+
+    UI::Text("List of Local Profiles: ");
+    array<string> profiles = Profiles::GetLocalProfiles();
+    for (uint i = 0; i < profiles.Length; i++) {
+        if (UI::Button(profiles[i])) {
+            Profiles::LoadProfile(profiles[i]);
+        }
+    }
+
+    UI::Separator();
+
+    if (UI::Button("Save Current Settings as Profile")) {
+        Json::Value settings = Profiles::GetUserSettingsForProfile();
+        Profiles::SaveProfile(profileName, settings);
+    }
+}
 
 void RenderGeneralSettings() { 
     UI::Text("All the altered nadeo general settings");
