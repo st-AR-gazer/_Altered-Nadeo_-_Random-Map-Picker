@@ -67,7 +67,8 @@ namespace Profiles {
         array<string> keys = settingsObject.GetKeys();
         for (uint i = 0; i < keys.Length; i++) {
             string key = keys[i];
-            if (Json::AsBool(settingsObject[key])) {
+            Json::Value settingValue = settingsObject[key];
+            if (settingValue.GetType() == Json::Type::Boolean && bool(settingValue)) {
                 profile.Add(key);
             }
         }

@@ -1,3 +1,6 @@
+namespace _LinCol 
+{
+
 bool includeEscapeCharacters = true;
 
 string startColorGlobal = "#0033CC";
@@ -83,3 +86,5 @@ string ColorizeString(const string &in inputString) {
 
     return coloredString;
 }
+
+} // namespace linColor
