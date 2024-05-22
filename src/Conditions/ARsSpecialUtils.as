@@ -68,13 +68,13 @@ namespace _Json {
 
             if (!inString) {
                 if (currentChar == "{" || currentChar == "[") {
-                    pretty += currentChar + "\n" + Indent(depth + 1);
+                    pretty += currentChar + "\n" + Hidden::Indent(depth + 1);
                     ++depth;
                 } else if (currentChar == "}" || currentChar == "]") {
                     --depth;
-                    pretty += "\n" + Indent(depth) + currentChar;
+                    pretty += "\n" + Hidden::Indent(depth) + currentChar;
                 } else if (currentChar == ",") {
-                    pretty += currentChar + "\n" + Indent(depth);
+                    pretty += currentChar + "\n" + Hidden::Indent(depth);
                 } else if (currentChar == ":") {
                     pretty += currentChar + " ";
                 } else {
@@ -88,7 +88,7 @@ namespace _Json {
         return pretty;
     }
 
-    namespace {
+    namespace Hidden {
         string Indent(int depth) {
             string indent;
             for (int i = 0; i < depth; ++i) {
