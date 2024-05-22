@@ -14,7 +14,7 @@ namespace Profiles {
             yield();
         }
         if (req.ResponseCode() == 200) {
-            int lastSlashIndex = url.LastIndexOf("/");
+            int lastSlashIndex = Text::LastIndexOf(url, "/");
             string profileName = url.SubStr(lastSlashIndex + 1);
             IO::File file(profilesFolder + profileName, IO::FileMode::Write);
             file.Write(req.String());
@@ -63,60 +63,30 @@ namespace Profiles {
         }
     }
 
+    void AddSettingsToProfile(const Json::Value &in settingsObject, Json::Value &inout profile) {
+        array<string> keys = settingsObject.GetKeys();
+        for (uint i = 0; i < keys.Length; i++) {
+            string key = keys[i];
+            if (Json::AsBool(settingsObject[key])) {
+                profile.Add(key);
+            }
+        }
+    }
+
     Json::Value GetUserSettingsForProfile() {
-        Json::Value settings = Json::Array();
+        Json::Value profile = Json::Array();
         Json::Value userSettings = GetUserSettings();
 
         // Add logic to flatten userSettings into a JSON array
-        for (int i = 0; i < userSettings["Alteration"]["Surface"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Surface"].GetKeys()[i];
-            if (userSettings["Alteration"]["Surface"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Effects"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Effects"].GetKeys()[i];
-            if (userSettings["Alteration"]["Effects"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Finish Location"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Finish Location"].GetKeys()[i];
-            if (userSettings["Alteration"]["Finish Location"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Environment"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Environment"].GetKeys()[i];
-            if (userSettings["Alteration"]["Environment"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Multi"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Multi"].GetKeys()[i];
-            if (userSettings["Alteration"]["Multi"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Other"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Other"].GetKeys()[i];
-            if (userSettings["Alteration"]["Other"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Extra Campaigns"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Extra Campaigns"].GetKeys()[i];
-            if (userSettings["Alteration"]["Extra Campaigns"][key]) {
-                settings.Add(key);
-            }
-        }
-        for (int i = 0; i < userSettings["Alteration"]["Seasons"].GetKeys().Length; i++) {
-            string key = userSettings["Alteration"]["Seasons"].GetKeys()[i];
-            if (userSettings["Alteration"]["Seasons"][key]) {
-                settings.Add(key);
-            }
-        }
+        AddSettingsToProfile(userSettings["Alteration"]["Surface"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Effects"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Finish Location"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Environment"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Multi"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Other"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Extra Campaigns"], profile);
+        AddSettingsToProfile(userSettings["Alteration"]["Seasons"], profile);
 
-        return settings;
+        return profile;
     }
 }
