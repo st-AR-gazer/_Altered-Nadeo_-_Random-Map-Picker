@@ -7,20 +7,30 @@ void FileAndFolderCheck() {
     ShouldDeleteDownloadedManifest();
 }
 
+void ShouldDeleteDownloadedManifest() {
+    /*
+    string path = g_dataFolder + "manifest.json";
+    if (IO::FileExists(path)) {
+        log("Deleting downloaded manifest: " + path, 23, 14, "ShouldDeleteDownloadedManifest");
+        IO::Delete(path);
+    }
+    */
+}
+
 void CheckDirs() {
     if (!IO::FolderExists(g_dataFolder)) {
-        log("Creating folder: " + g_dataFolder, LogLevel::D, 12, "CheckDirs");
+        log("Creating folder: " + g_dataFolder, LogLevel::Dark, 22, "CheckDirs");
         IO::CreateFolder(g_dataFolder);
     }
     if (!IO::FolderExists(g_profilesFolder)) {
-        log("Creating folder: " + g_profilesFolder, LogLevel::D, 16, "CheckDirs");
+        log("Creating folder: " + g_profilesFolder, LogLevel::Dark, 26, "CheckDirs");
         IO::CreateFolder(g_profilesFolder);
     }
 }
 
 void DoesFileExist(const string &in path, bool createFile) {
     if (IO::FileExists(path)) {
-        log("File exists, not overwriting: " + path, 23, "DoesFileExist");
+        log("File exists, not overwriting: " + path, LogLevel::Info, 33, "DoesFileExist");
         return;
     }
     if (createFile) {
