@@ -11,7 +11,7 @@ void ShouldDeleteDownloadedManifest() {
     /*
     string path = g_dataFolder + "manifest.json";
     if (IO::FileExists(path)) {
-        log("Deleting downloaded manifest: " + path, 23, 14, "ShouldDeleteDownloadedManifest");
+        log("Deleting downloaded manifest: " + path, LogLevel::Info, 14, "ShouldDeleteDownloadedManifest");
         IO::Delete(path);
     }
     */

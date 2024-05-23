@@ -6,7 +6,7 @@ string checkFilePath = IO::FromStorageFolder("initDefaultDataCheck.txt");
 
 void MoveDefaultDataFile() {
     if (!IO::FileExists(checkFilePath) || !IO::FileExists(pluginStorageDataPath)) {
-        log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", 9, "MoveDefaultDataFile");
+        log("initCheck file does not exist in plugin storage, moving data and currentInstalledVersion to PluginStorage", LogLevel::Info, 9, "MoveDefaultDataFile");
         MoveFileToPluginStorage("src/DefaultData/data.csv", pluginStorageDataPath);
         MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
         log("Files have been moved to storage", LogLevel::Info, 12, "MoveDefaultDataFile");
@@ -14,7 +14,7 @@ void MoveDefaultDataFile() {
         CreateDefaultDataCheckFile();
         log("initDefaultDataCheckFile created", LogLevel::Info, 15, "MoveDefaultDataFile");
     } else {
-        log("initDefaultDataCheckFile exists in plugin storage, not moving data", 17, "MoveDefaultDataFile");
+        log("initDefaultDataCheckFile exists in plugin storage, not moving data", LogLevel::Info, 17, "MoveDefaultDataFile");
     }
 }
 
@@ -54,12 +54,12 @@ void CheckCurrentInstalledVersionType() {
     if (currentVersionJson.GetType() == Json::Type::Object) {
         if (currentVersionJson.HasKey("latestVersion")) {
             if (currentVersionJson["latestVersion"].GetType() == Json::Type::String) {
-                log("Your version is a string, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", 57, "CheckCurrentInstalledVersionType");
+                log("Your version is a string, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Info, 57, "CheckCurrentInstalledVersionType");
                 MoveFileToPluginStorage("src/DefaultData/defaultInstalledVersion.json", pluginStorageVersionPath);
             }
-            // log("Your version is an int, no need to change it", 60, "CheckCurrentInstalledVersionType");
+            // log("Your version is an int, no need to change it", LogLevel::Info, 60, "CheckCurrentInstalledVersionType");
         }
-        // log("Your version is an object, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", 62, "CheckCurrentInstalledVersionType");
+        // log("Your version is an object, setting it to an int by using the default 'currentInstall' in defaultData (only happens on logacy installs)", LogLevel::Info, 62, "CheckCurrentInstalledVersionType");
     }
     // log("Your version is not an object :YEK:", LogLevel::Error, 64, "CheckCurrentInstalledVersionType");
 }

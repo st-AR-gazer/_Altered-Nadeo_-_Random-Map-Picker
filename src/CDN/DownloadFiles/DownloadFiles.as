@@ -5,7 +5,7 @@ void DownloadDataFromCDN() {
     g_currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (g_manifestVersion != g_currentInstalledVersion) {
-        log("Manifest Version " + g_manifestVersion + " does not match local version " + g_currentInstalledVersion + ", updating the local file with the version specified in the manifest.", 8, "DownloadDataFromCDN");
+        log("Manifest Version " + g_manifestVersion + " does not match local version " + g_currentInstalledVersion + ", updating the local file with the version specified in the manifest.", LogLevel::Info, 8, "DownloadDataFromCDN");
     } else {
         return;
     }

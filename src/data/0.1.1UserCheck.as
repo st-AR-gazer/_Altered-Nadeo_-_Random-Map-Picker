@@ -7,18 +7,18 @@ void ShouldDeleteDownloadedManifest() {
         string localInstalledVersion = stringInstalledCurrentVersion();
 
         if ((localInstalledVersion == "0.0.0") || (localInstalledVersion == "0.0.1") || (localInstalledVersion == "0.0.2") || (localInstalledVersion == "0.0.3") || (localInstalledVersion == "0.0.4")) {
-            log("Manifest file contains the old manifest structure, deleting local manifest (it will be re-added in about 2 sec xdd (probably))", 10, "ShouldDeleteDownloadedManifest");
+            log("Manifest file contains the old manifest structure, deleting local manifest (it will be re-added in about 2 sec xdd (probably))", LogLevel::Info, 10, "ShouldDeleteDownloadedManifest");
             IO::Delete(IO::FromStorageFolder("currentInstalledVersion.json"));
 
             CreateCheckFile2();
         } else {
-            log("YEK, this should only happen if it's your first install, 15, "ShouldDeleteDownloadedManifest");
+            log("YEK, this should only happen if it's your first install", LogLevel::Info, 15, "ShouldDeleteDownloadedManifest");
             log("(this was added as a failsafe for the like 20 people who installed the plugin before the manifest change)", LogLevel::Error, 16, "ShouldDeleteDownloadedManifest");
             CreateCheckFile2();
         }
 
     } else {
-        log("initCheck file exists in plugin storage, not moving data", 21, "ShouldDeleteDownloadedManifest");
+        log("initCheck file exists in plugin storage, not moving data", LogLevel::Info, 21, "ShouldDeleteDownloadedManifest");
     }
 }
 
