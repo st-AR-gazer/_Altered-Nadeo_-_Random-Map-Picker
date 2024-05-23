@@ -5,7 +5,7 @@ bool toOpenMap = false;
 uint64 startTime;
 
 void Main() {
-    // log("Main func has started", LogLevel::Info, 8);
+    // log("Main func has started", LogLevel::Info, 8, "Main");
     
     NadeoServices::AddAudience("NadeoClubServices");
     while (!NadeoServices::IsAuthenticated("NadeoClubServices")) { yield(); }
@@ -15,7 +15,7 @@ void Main() {
     PopulateAlterationsArrays();
 
     FileAndFolderCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
-    log("Local file check completed, fixing some files", LogLevel::InfoG, 18);
+    log("Local file check completed, fixing some files", 18, "Main");
 
     if (Time::Now - startTime > 20) {
         yield();
@@ -26,9 +26,9 @@ void Main() {
     GetLineCount(IO::FromStorageFolder("Data/data.csv")); // Sets the linecount, to be used in rendermenu func
     
     FetchManifest(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
-    log("Manifest check completed", LogLevel::InfoG, 29);
+    log("Manifest check completed", LogLevel::InfoG, 29, "Main");
 
-    // log("CDN check completed for new file", LogLevel::InfoG, 31);
+    // log("CDN check completed for new file", LogLevel::InfoG, 31, "Main");
 
     if (Time::Now - startTime > 20) {
         yield();

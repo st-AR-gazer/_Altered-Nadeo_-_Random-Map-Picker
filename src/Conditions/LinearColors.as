@@ -22,7 +22,7 @@ int HexToInt(const string &in hex) {
         } else if (charValue >= 97 && charValue <= 102) { // 'a' to 'f'
             value += 10 + (charValue - 97);
         } else {
-            log("Invalid character in hex string: " + hex[i], LogLevel::Error, 22);
+            log("Invalid character in hex string: " + hex[i], LogLevel::Error, 25, "HexToInt");
             return -1;
         }
     }

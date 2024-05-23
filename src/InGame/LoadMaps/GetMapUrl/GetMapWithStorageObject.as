@@ -4,7 +4,7 @@ void LoadMapFromStorageObject() {
     string mapUrl = FetchRandomMapUrl();
 
     if (mapUrl.Length == 0) {
-        log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 7); // mapUrl will always be empty xdd
+        log("Failed to get map URL from storage objects. URL is: '" + mapUrl + "'", LogLevel::Error, 7, "LoadMapFromStorageObject"); // mapUrl will always be empty xdd
         NotifyWarn("Unable to retrieve the map URL from storage objects. \nThis issue is likely due to the absence of maps matching your specified criteria. Please adjust your selections of alterations and/or seasons to ensure that there are available maps.");
 
         return;
@@ -57,7 +57,7 @@ string FetchRandomMapUrl() {
         }
     }
 
-    log("No maps match the selected criteria", LogLevel::Error, 60);
+    log("No maps match the selected criteria", LogLevel::Error, 60, "FetchRandomMapUrl");
     return "";
 }
 

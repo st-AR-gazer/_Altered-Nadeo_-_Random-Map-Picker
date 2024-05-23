@@ -55,6 +55,13 @@ namespace _IO {
         return path.SubStr(index + 1);
     }
 
+    void OpenFolder(const string &in path) {
+        if (IO::FolderExists(path)) {
+            OpenExplorerPath(path);
+        } else {
+            log("Folder does not exist: " + path, LogLevel::Info, 62, "OpenFolder");
+        }
+    }
 }
 
 namespace _Json {

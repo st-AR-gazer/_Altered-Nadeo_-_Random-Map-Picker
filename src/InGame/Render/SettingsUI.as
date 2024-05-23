@@ -179,9 +179,15 @@ void RenderProfiles() {
     UI::Text("List of Local Profiles: ");
     array<string> profiles = Profiles::GetLocalProfiles();
     for (uint i = 0; i < profiles.Length; i++) {
+        UI::Text("Load Profile " + profiles[i] + ": ");
         if (UI::Button(profiles[i])) {
             Profiles::LoadProfile(profiles[i]);
         }
+    }
+
+    UI::Text("Open Profile Folder: ");
+    if (UI::Button("Open Profile Folder")) {
+        IO::OpenFolder(IO::FromUserDataFolder("Profiles"));
     }
 
     UI::Separator();

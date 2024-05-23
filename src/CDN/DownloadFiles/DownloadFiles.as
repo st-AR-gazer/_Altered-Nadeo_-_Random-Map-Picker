@@ -5,7 +5,7 @@ void DownloadDataFromCDN() {
     g_currentInstalledVersion = GetCurrentInstalledVersion();
 
     if (g_manifestVersion != g_currentInstalledVersion) {
-        log("Manifest Version " + g_manifestVersion + " does not match local version " + g_currentInstalledVersion + ", updating the local file with the version specified in the manifest.", LogLevel::Warn, 8);
+        log("Manifest Version " + g_manifestVersion + " does not match local version " + g_currentInstalledVersion + ", updating the local file with the version specified in the manifest.", 8, "DownloadDataFromCDN");
     } else {
         return;
     }
@@ -13,10 +13,10 @@ void DownloadDataFromCDN() {
     if (!shouldDownloadNewFiles) return;
     
     DownloadData(baseDataUrl + "consolidated_maps.json", "consolidated_maps.json", localSaveLocation);
-    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 16);
+    log("Attempted to download the consolidated maps JSON file", LogLevel::Info, 16, "DownloadDataFromCDN");
 
     DownloadData(baseDataUrl + "data.csv", "data.csv", localSaveLocation);
-    log("Attempted to download the data.csv file", LogLevel::Info, 19);
+    log("Attempted to download the data.csv file", LogLevel::Info, 19, "DownloadDataFromCDN");
 }
 
 void DownloadData(const string &in url, const string &in fileName, const string &in localSaveLocation) {
@@ -35,7 +35,7 @@ void DownloadData(const string &in url, const string &in fileName, const string 
         auto data = req.String();
         StoreDatafile(data, fileName, localSaveLocation);
     } else {
-        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 38);
+        log("Response code " + req.ResponseCode() + " Error URL: " + url, LogLevel::Error, 38, "DownloadData");
     }
 }
 
@@ -51,5 +51,5 @@ void StoreDatafile(const string &in data, const string &in fileName, const strin
     file.Write(data);
     file.Close();
 
-    log("Data written to file: " + fullFilePathName, LogLevel::Info, 54);
+    log("Data written to file: " + fullFilePathName, LogLevel::Info, 54, "StoreDatafile");
 }
