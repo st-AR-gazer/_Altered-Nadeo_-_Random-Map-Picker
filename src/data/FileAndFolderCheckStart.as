@@ -7,16 +7,6 @@ void FileAndFolderCheck() {
     ShouldDeleteDownloadedManifest();
 }
 
-void ShouldDeleteDownloadedManifest() {
-    /*
-    string path = g_dataFolder + "manifest.json";
-    if (IO::FileExists(path)) {
-        log("Deleting downloaded manifest: " + path, LogLevel::Info, 14, "ShouldDeleteDownloadedManifest");
-        IO::Delete(path);
-    }
-    */
-}
-
 void CheckDirs() {
     if (!IO::FolderExists(g_dataFolder)) {
         log("Creating folder: " + g_dataFolder, LogLevel::Dark, 22, "CheckDirs");
