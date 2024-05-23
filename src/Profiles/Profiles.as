@@ -51,11 +51,17 @@ namespace Profiles {
         }
     }
 
+    void DeleteProfile(const string &in name) {
+        string path = profilesFolder + name;
+        if (IO::FileExists(path)) {
+            IO::Delete(path);
+        }
+    }
+
     void ApplyProfile(const Json::Value &in profile) {
         DeselectAllSettings();
         Json::Value userSettings = GetUserSettings();
 
-        // Apply alterations based on the profile
         for (uint i = 0; i < profile.Length; i++) {
             string setting = profile[i];
             if (userSettings["Alteration"]["Surface"].HasKey(setting)) {

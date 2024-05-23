@@ -160,7 +160,6 @@ void RenderDev() {
 
 string profileURL = "";
 string profileName = "";
-
 void RenderProfiles() {
     UI::Text("Download profiles from URL: ");
     profileURL = UI::InputText("Profile URL", profileURL, UI::InputTextFlags::None);
@@ -185,6 +184,10 @@ void RenderProfiles() {
         if (UI::Button("Load " + profiles[i])) {
             Profiles::LoadProfile(profiles[i]);
         }
+        UI::SameLine();
+        if (UI::Button("Delete " + profiles[i])) {
+            Profiles::DeleteProfile(profiles[i]);
+        }
     }
 
     UI::Separator();
@@ -192,6 +195,7 @@ void RenderProfiles() {
         _IO::OpenFolder(IO::FromStorageFolder("Profiles/"));
     }
 }
+
 
 void RenderGeneralSettings() { 
     UI::Text("All the altered nadeo general settings");

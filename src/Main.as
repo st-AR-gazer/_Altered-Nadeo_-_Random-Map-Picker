@@ -10,11 +10,11 @@ void Main() {
     startTime = Time::Now;
 
     if (!CheckRequiredPermissions()) {return;}
-    log("Permissions check completed", LogLevel::InfoG, 10, "Main");
+    log("Permissions check completed", LogLevel::InfoG, 13, "Main");
 
     PopulateAlterationsArrays(); // This will, surprise surprise, populate the alterations arrays, // it is used for the search function in the UI
     FileAndFolderCheck(); // This checks if the files are present, and if not, it will add the not present files to the nonExistingFiles array
-    log("Local file check completed, fixing some files", LogLevel::Info, 19, "Main");
+    log("Local file check completed, fixing some files", LogLevel::Info, 17, "Main");
 
     if (Time::Now - startTime > 20) {
         yield();
@@ -25,9 +25,9 @@ void Main() {
     GetLineCount(IO::FromStorageFolder("Data/data.csv")); // Sets the linecount, to be used in rendermenu func
     
     FetchManifest(); // This will check if the manifest file is up to date, and if not, it will download the new one, and update the local data
-    log("Manifest check completed", LogLevel::InfoG, 30, "Main");
+    log("Manifest check completed", LogLevel::InfoG, 28, "Main");
 
-    // log("CDN check completed for new file", LogLevel::InfoG, 32, "Main");
+    // log("CDN check completed for new file", LogLevel::InfoG, 30, "Main");
 
     if (Time::Now - startTime > 20) {
         yield();
