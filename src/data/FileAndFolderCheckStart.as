@@ -1,4 +1,5 @@
 string g_dataFolder = IO::FromStorageFolder("Data/");
+string g_profilesFolder = IO::FromStorageFolder("Profiles/");
 
 void FileAndFolderCheck() {
     CheckDirs();
@@ -7,9 +8,13 @@ void FileAndFolderCheck() {
 }
 
 void CheckDirs() {
-    if(!IO::FolderExists(g_dataFolder)) {
+    if (!IO::FolderExists(g_dataFolder)) {
         log("Creating folder: " + g_dataFolder, LogLevel::D, 11);
         IO::CreateFolder(g_dataFolder);
+    }
+    if (!IO::FolderExists(g_profilesFolder)) {
+        log("Creating folder: " + g_profilesFolder, LogLevel::D, 11);
+        IO::CreateFolder(g_profilesFolder);
     }
 }
 

@@ -36,6 +36,7 @@ void RenderInterface() {
         if (UI::Button("General Alteration Settings")) activeTab = 0;
         UI::SameLine();
         if (UI::Button("General Settings")) activeTab = 1;
+        UI::SameLine();
         if (UI::Button("Profiles")) activeTab = 98;
         if (shouldOpenDevTab) {
             UI::SameLine();
@@ -168,6 +169,7 @@ void RenderProfiles() {
     UI::Separator();
 
     UI::Text("Create a new profile: ");
+    SimpleTooltip("The profile is created from your current settings.");
     profileName = UI::InputText("Profile Name", profileName, UI::InputTextFlags::None);
     if (UI::Button("Create New Profile")) {
         Profiles::CreateNewProfile(profileName);
@@ -214,7 +216,6 @@ void RenderGeneralAlterationSettings() {
 
     newValue = UI::Checkbox('CumulativeSelections', shoulduseCumulativeSelections);
     if (newValue != shoulduseCumulativeSelections) { shoulduseCumulativeSelections = newValue; }
-    SimpleTooltip("If enabled, the plugin will use the 'consolidated_maps.json' file to extract the URL. This means that when toggled off this setting will not allow you to select what alteration you want.");
 
     UI::Separator();
 
