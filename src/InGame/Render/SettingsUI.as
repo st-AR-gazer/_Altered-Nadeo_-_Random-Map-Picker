@@ -160,6 +160,7 @@ void RenderDev() {
 
 string profileURL = "";
 string profileName = "";
+
 void RenderProfiles() {
     UI::Text("Download profiles from URL: ");
     profileURL = UI::InputText("Profile URL", profileURL, UI::InputTextFlags::None);
@@ -168,11 +169,12 @@ void RenderProfiles() {
     }
     UI::Separator();
 
-    UI::Text("Create a new profile: ");
+    UI::Text("Create or save profile with current settings: ");
     SimpleTooltip("The profile is created from your current settings.");
     profileName = UI::InputText("Profile Name", profileName, UI::InputTextFlags::None);
-    if (UI::Button("Create New Profile")) {
-        Profiles::CreateNewProfile(profileName);
+    if (UI::Button("Save Current Settings as Profile")) {
+        Json::Value settings = Profiles::GetUserSettingsForProfile();
+        Profiles::SaveProfile(profileName, settings);
     }
     UI::Separator();
 
@@ -180,21 +182,14 @@ void RenderProfiles() {
     array<string> profiles = Profiles::GetLocalProfiles();
     for (uint i = 0; i < profiles.Length; i++) {
         UI::Text("Load Profile " + profiles[i] + ": ");
-        if (UI::Button(profiles[i])) {
+        if (UI::Button("Load " + profiles[i])) {
             Profiles::LoadProfile(profiles[i]);
         }
     }
 
-    UI::Text("Open Profile Folder: ");
+    UI::Separator();
     if (UI::Button("Open Profile Folder")) {
         _IO::OpenFolder(IO::FromStorageFolder("Profiles/"));
-    }
-
-    UI::Separator();
-
-    if (UI::Button("Save Current Settings as Profile")) {
-        Json::Value settings = Profiles::GetUserSettingsForProfile();
-        Profiles::SaveProfile(profileName, settings);
     }
 }
 

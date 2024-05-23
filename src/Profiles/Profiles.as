@@ -22,11 +22,6 @@ namespace Profiles {
         }
     }
 
-    void CreateNewProfile(const string &in name) {
-        Json::Value newProfile = Json::Array();
-        SaveProfile(name, newProfile);
-    }
-
     void SaveProfile(const string &in name, const Json::Value &in profile) {
         IO::File file(profilesFolder + name + ".json", IO::FileMode::Write);
         file.Write(Json::Write(profile));
@@ -46,6 +41,7 @@ namespace Profiles {
 
     void LoadProfile(const string &in name) {
         string path = profilesFolder + name;
+        log("Loading profile: " + path, LogLevel::Info, 44, "LoadProfile");
         if (IO::FileExists(path)) {
             IO::File file(path, IO::FileMode::Read);
             string content = file.ReadToEnd();
@@ -57,9 +53,28 @@ namespace Profiles {
 
     void ApplyProfile(const Json::Value &in profile) {
         DeselectAllSettings();
+        Json::Value userSettings = GetUserSettings();
+
+        // Apply alterations based on the profile
         for (uint i = 0; i < profile.Length; i++) {
             string setting = profile[i];
-            SetAlteration(setting, true);
+            if (userSettings["Alteration"]["Surface"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Effects"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Finish Location"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Environment"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Multi"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Other"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Extra Campaigns"].HasKey(setting)) {
+                SetAlteration(setting, true);
+            } else if (userSettings["Alteration"]["Seasons"].HasKey(setting)) {
+                SetSeason(setting, true);
+            }
         }
     }
 
@@ -78,7 +93,6 @@ namespace Profiles {
         Json::Value profile = Json::Array();
         Json::Value userSettings = GetUserSettings();
 
-        // Add logic to flatten userSettings into a JSON array
         AddSettingsToProfile(userSettings["Alteration"]["Surface"], profile);
         AddSettingsToProfile(userSettings["Alteration"]["Effects"], profile);
         AddSettingsToProfile(userSettings["Alteration"]["Finish Location"], profile);
