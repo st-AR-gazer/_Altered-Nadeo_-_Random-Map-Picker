@@ -85,6 +85,7 @@ namespace _Json {
             }
         }
 
+        pretty = "\n" + pretty;
         return pretty;
     }
 
