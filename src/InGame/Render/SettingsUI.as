@@ -151,7 +151,7 @@ void RenderDev() {
     if (UI::Button("Copy User settings to clipboard")) {
         Json::Value settings = GetUserSettings();
 
-        string settingsStr = PrettyPrintJSON(settings);
+        string settingsStr = _Json::PrettyPrint(settings);
 
         IO::SetClipboard(settingsStr);
     }

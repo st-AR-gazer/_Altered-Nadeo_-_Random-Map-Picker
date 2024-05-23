@@ -9,12 +9,15 @@ namespace _Text {
         int index = str.IndexOf(value);
         while (index != -1) {
             lastIndex = index;
-            index = str.IndexOf(value, lastIndex + value.Length);
+            if (index + value.Length >= str.Length) break;
+            index = str.SubStr(index + value.Length).IndexOf(value);
+            if (index != -1) {
+                index += lastIndex + value.Length;
+            }
         }
         return lastIndex;
     }
 }
-
 
 namespace _IO {
     string ReadFileToEnd(const string &in path) {
