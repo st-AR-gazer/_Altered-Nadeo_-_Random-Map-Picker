@@ -14,7 +14,7 @@ namespace Profiles {
             yield();
         }
         if (req.ResponseCode() == 200) {
-            int lastSlashIndex = Text::LastIndexOf(url, "/");
+            int lastSlashIndex = _Text::LastIndexOf(url, "/");
             string profileName = url.SubStr(lastSlashIndex + 1);
             IO::File file(profilesFolder + profileName, IO::FileMode::Write);
             file.Write(req.String());
