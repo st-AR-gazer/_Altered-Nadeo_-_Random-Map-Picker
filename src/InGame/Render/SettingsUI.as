@@ -187,7 +187,7 @@ void RenderProfiles() {
 
     UI::Text("Open Profile Folder: ");
     if (UI::Button("Open Profile Folder")) {
-        IO::OpenFolder(IO::FromUserDataFolder("Profiles"));
+        _IO::OpenFolder(IO::FromStorageFolder("Profiles/"));
     }
 
     UI::Separator();
