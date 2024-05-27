@@ -32,11 +32,11 @@ string FetchRandomMapUrl() {
         Json::Value map = allMaps[i];
         
         if (shoulduseCumulativeSelections) {
-            if (MatchesSeasonalSettings(map)                            && MatchesAlterationSettings(map)                   && MatchesScoreSettings(map)) {
+            if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map) && MatchesScoreSettings(map)) {
                 FilteredMaps.InsertLast(map);
             }
         } else {
-            if ((MatchesSeasonalSettings(map) || MatchesAlterationSettings(map))                            && MatchesScoreSettings(map)) {
+            if ((MatchesSeasonalSettings(map) || MatchesAlterationSettings(map)) && MatchesScoreSettings(map)) {
                 FilteredMaps.InsertLast(map);
             }
         }
@@ -52,7 +52,7 @@ string FetchRandomMapUrl() {
         uint randomIndex = Math::Rand(0, FilteredMaps.Length);
         Json::Value@ selectedMap = FilteredMaps[randomIndex];
 
-        if (selectedMap !is null                            && selectedMap.HasKey("fileUrl")                    && selectedMap["fileUrl"].GetType() == Json::Type::String) {
+        if (selectedMap !is null && selectedMap.HasKey("fileUrl") && selectedMap["fileUrl"].GetType() == Json::Type::String) {
             return string(selectedMap["fileUrl"]);
         }
     }
@@ -256,14 +256,10 @@ bool MatchesScoreSettings(const Json::Value& map) {
     int silverScore = map["silverScore"];
     int bronzeScore = map["bronzeScore"];
 
-    if ((authorScore < IsUsing_authorScoreMin) || (IsUsing_authorScoreMax != -1                             && authorScore > IsUsing_authorScoreMax))
-        return false;
-    if ((goldScore < IsUsing_goldScoreMin) || (IsUsing_goldScoreMax != -1                           && goldScore > IsUsing_goldScoreMax))
-        return false;
-    if ((silverScore < IsUsing_silverScoreMin) || (IsUsing_silverScoreMax != -1                             && silverScore > IsUsing_silverScoreMax))
-        return false;
-    if ((bronzeScore < IsUsing_bronzeScoreMin) || (IsUsing_bronzeScoreMax != -1                             && bronzeScore > IsUsing_bronzeScoreMax))
-        return false;
+    if ((authorScore < IsUsing_authorScoreMin) || (IsUsing_authorScoreMax != -1  && authorScore > IsUsing_authorScoreMax)) return false;
+    if ((goldScore < IsUsing_goldScoreMin) || (IsUsing_goldScoreMax != -1        && goldScore > IsUsing_goldScoreMax))     return false;
+    if ((silverScore < IsUsing_silverScoreMin) || (IsUsing_silverScoreMax != -1  && silverScore > IsUsing_silverScoreMax)) return false;
+    if ((bronzeScore < IsUsing_bronzeScoreMin) || (IsUsing_bronzeScoreMax != -1  && bronzeScore > IsUsing_bronzeScoreMax)) return false;
 
     return true;
 }
