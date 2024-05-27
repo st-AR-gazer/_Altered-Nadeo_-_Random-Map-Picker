@@ -64,28 +64,28 @@ string FetchRandomMapUrl() {
 bool MatchesSeasonalSettings(Json::Value map) {
     if (!IsSeasonSettingActive()) {return true;}
     
-    if (IsUsing_Spring2020Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2020" return true;
-    if (IsUsing_Summer2020Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2020" return true;
-    if (IsUsing_Fall2020Maps   && (map["season"] + "").ToLower() == "fall")   && map["year"] == "2020" return true;
-    if (IsUsing_Winter2021Maps && (map["season"] + "").ToLower() == "winter") && map["year"] == "2021" return true;
-    if (IsUsing_Spring2021Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2021" return true;
-    if (IsUsing_Summer2021Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2021" return true;
-    if (IsUsing_Fall2021Maps   && (map["season"] + "").ToLower() == "fall")   && map["year"] == "2021" return true;
-    if (IsUsing_Winter2022Maps && (map["season"] + "").ToLower() == "winter") && map["year"] == "2022" return true;
-    if (IsUsing_Spring2022Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2022" return true;
-    if (IsUsing_Summer2022Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2022" return true;
-    if (IsUsing_Fall2022Maps   && (map["season"] + "").ToLower() == "fall")   && map["year"] == "2022" return true;
-    if (IsUsing_Winter2023Maps && (map["season"] + "").ToLower() == "winter") && map["year"] == "2023" return true;
-    if (IsUsing_Spring2023Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2023" return true;
-    if (IsUsing_Summer2023Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2023" return true;
-    if (IsUsing_Fall2023Maps   && (map["season"] + "").ToLower() == "fall")   && map["year"] == "2023" return true;
-    if (IsUsing_Winter2024Maps && (map["season"] + "").ToLower() == "winter") && map["year"] == "2024" return true;
-    if (IsUsing_Spring2024Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2024" return true;
-    if (IsUsing_Summer2024Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2024" return true;
-    if (IsUsing_Fall2024Maps   && (map["season"] + "").ToLower() == "fall")   && map["year"] == "2024" return true;
-    if (IsUsing_Winter2025Maps && (map["season"] + "").ToLower() == "winter") && map["year"] == "2025" return true;
-    if (IsUsing_Spring2025Maps && (map["season"] + "").ToLower() == "spring") && map["year"] == "2025" return true;
-    if (IsUsing_Summer2025Maps && (map["season"] + "").ToLower() == "summer") && map["year"] == "2025" return true;
+    if (IsUsing_Spring2020Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2020") return true;
+    if (IsUsing_Summer2020Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2020") return true;
+    if (IsUsing_Fall2020Maps   && ((map["season"] + "").ToLower() == "fall")   && map["year"] == "2020") return true;
+    if (IsUsing_Winter2021Maps && ((map["season"] + "").ToLower() == "winter") && map["year"] == "2021") return true;
+    if (IsUsing_Spring2021Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2021") return true;
+    if (IsUsing_Summer2021Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2021") return true;
+    if (IsUsing_Fall2021Maps   && ((map["season"] + "").ToLower() == "fall")   && map["year"] == "2021") return true;
+    if (IsUsing_Winter2022Maps && ((map["season"] + "").ToLower() == "winter") && map["year"] == "2022") return true;
+    if (IsUsing_Spring2022Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2022") return true;
+    if (IsUsing_Summer2022Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2022") return true;
+    if (IsUsing_Fall2022Maps   && ((map["season"] + "").ToLower() == "fall")   && map["year"] == "2022") return true;
+    if (IsUsing_Winter2023Maps && ((map["season"] + "").ToLower() == "winter") && map["year"] == "2023") return true;
+    if (IsUsing_Spring2023Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2023") return true;
+    if (IsUsing_Summer2023Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2023") return true;
+    if (IsUsing_Fall2023Maps   && ((map["season"] + "").ToLower() == "fall")   && map["year"] == "2023") return true;
+    if (IsUsing_Winter2024Maps && ((map["season"] + "").ToLower() == "winter") && map["year"] == "2024") return true;
+    if (IsUsing_Spring2024Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2024") return true;
+    if (IsUsing_Summer2024Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2024") return true;
+    if (IsUsing_Fall2024Maps   && ((map["season"] + "").ToLower() == "fall")   && map["year"] == "2024") return true;
+    if (IsUsing_Winter2025Maps && ((map["season"] + "").ToLower() == "winter") && map["year"] == "2025") return true;
+    if (IsUsing_Spring2025Maps && ((map["season"] + "").ToLower() == "spring") && map["year"] == "2025") return true;
+    if (IsUsing_Summer2025Maps && ((map["season"] + "").ToLower() == "summer") && map["year"] == "2025") return true;
 
     if (IsUsing_AllSnowDiscovery   && tostring(map["season"]).ToLower() == "allsnowdiscovery")   return true;
     if (IsUsing_AllRallyDiscovery  && tostring(map["season"]).ToLower() == "allrallydiscovery")  return true;
