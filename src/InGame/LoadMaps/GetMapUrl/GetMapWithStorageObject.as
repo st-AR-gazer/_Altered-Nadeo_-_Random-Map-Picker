@@ -64,7 +64,9 @@ string FetchRandomMapUrl() {
 bool MatchesSeasonalSettings(Json::Value map) {
     if (!IsSeasonSettingActive()) { return true; }
 
-    string season = (map["season"] + "").ToLower();
+    string season = map["season"];
+    season = season.ToLower();
+    
     string year = map["year"];
 
     if (IsUsing_Spring2020Maps               && season == "spring"  && year == "2020") return true;
@@ -105,7 +107,8 @@ bool MatchesSeasonalSettings(Json::Value map) {
 bool MatchesAlterationSettings(Json::Value map) {
     if (!IsAlterationSettingActive()) { return true; }
 
-    string alteration = (map["alteration"] + "").ToLower();
+    string alteration = map["alteration"];
+    alteration = alteration.ToLower();
 
     if (IsUsing_Dirt                         && alteration == "dirt") return true;
     if (IsUsing_Fast_Magnet                  && alteration == "fast magnet") return true;
