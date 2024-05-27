@@ -66,8 +66,10 @@ bool MatchesSeasonalSettings(Json::Value map) {
 
     string season = map["season"];
     season = season.ToLower();
-    
     string year = map["year"];
+
+    string alteration = map["alteration"];
+    alteration = alteration.ToLower();
 
     if (IsUsing_Spring2020Maps               && season == "spring"  && year == "2020") return true;
     if (IsUsing_Summer2020Maps               && season == "summer"  && year == "2020") return true;
@@ -96,7 +98,7 @@ bool MatchesSeasonalSettings(Json::Value map) {
     if (IsUsing_AllRallyDiscovery            && season == "allrallydiscovery") return true;
     if (IsUsing_AllDesertDiscovery           && season == "alldesertdiscovery") return true;
 
-    if (IsUsing__AllOfficialCompetitions     && (map["alteration"] + "").ToLower() == "!allofficialcompetitions") return true;
+    if (IsUsing__AllOfficialCompetitions     && alteration == "!allofficialcompetitions") return true;
     if (IsUsing_AllOfficialCompetitions      && season == "allofficialcompetitions") return true;
 
     if (IsUsing_AllTOTD                      && season == "alltotd") return true;
