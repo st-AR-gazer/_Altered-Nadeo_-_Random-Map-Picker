@@ -37,7 +37,7 @@ New API update, added:
 		 	 - Example: `Spring 2021`, `Winter 2023`
      - shouldUse: A boolean flag to enable or disable the selection of maps from the specified season.
    - Return Type: `void`
-	 - Note: The inputs are case insensitive.
+	 - Note: The inputs are case-insensitive.
 
 
 5. `SetAlteration(string alteration, bool shouldUse)`
@@ -45,10 +45,10 @@ New API update, added:
    - Parameters:
      - alteration: The alteration to be enabled or disabled.
 		 	 - Example: `Stunt`, `Wet Icy Wood`.
-			 - **NOTE:** If you do not know how what an alteration is called internally, here is a link to the GH page with the most up to date reference sheet. [Alteration Names](https://github.com/st-AR-gazer/_Altered-Nadeo_-_Random-Map-Picker/blob/83733f9982a7cb07be2c30caaaa13345ecc865a3/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as#L109) (the name can be found inside of the `""`
+			 - **NOTE:** If you do not know how what an alteration is called internally, here is a link to the GH page with the most up-to-date reference sheet. [Alteration Names](https://github.com/st-AR-gazer/_Altered-Nadeo_-_Random-Map-Picker/blob/83733f9982a7cb07be2c30caaaa13345ecc865a3/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as#L109) (the name can be found inside of the `""`
      - shouldUse: A boolean flag indicating whether the alteration should be applied.
    - Return Type: `void`
-	 - Note: The inputs are case insensitive.
+	 - Note: The inputs are case-insensitive.
 
 
 6. `SetFullSeason(string fullSeason, bool shouldUse)`
@@ -67,7 +67,7 @@ Functions are new in the AN namespace, so you need to call them with AN:: before
 New profiles
 You can now save/crate, load and delete profiles to save your settings for later use, the current settings are automatically saved,
 but if you only want specific alterations to be enabled by the press of a button, you can now do that.
-Perfect for trolling a unsuspecting Lars.
+Perfect for trolling an unsuspecting Lars.
 
 Minor bugfixes
-Fixed a bug where you could not load maps from specfiic alterations...
+Fixed a bug where you could not load maps from specific alterations...
