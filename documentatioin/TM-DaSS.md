@@ -27,15 +27,10 @@ Folders:
 `.\TM-DaSS/ByAlteration`
 `.\TM-DaSS/BySeason`
 `.\TM-DaSS/ConsolidatedMaps`
-`.\TM-DaSS/FileStateChecking` // Depricated
-`.\TM-DaSS/OLD`               // Depricated
 
 `.\TM-DaSS/data.csv`
-`.\TM-DaSS/InstalledVersion.json` // Depricated
 `.\TM-DaSS/map_data.json`
 `.\TM-DaSS/processed_uids.txt`
-`.\TM-DaSS/Test-Manifest-All-Instalations-Manual.json` // Depricated
-`.\TM-DaSS/Test-Manifest-All-Instalations-STAR.json`   // Depricated
 
 ### Active
 
@@ -54,15 +49,6 @@ How this is utilized will be explained more in `Part 2: The Python Files`.
 `.\TM-DaSS/processed_uids.txt`, this file is used to keep track of the UIDs that have been processed, this is used to avoid spamming Nadeos API, it's a bit buggy sometimes though...
 
 
-### Depricated
-
-`.\TM-DaSS/FileStateChecking` is used to store the file states of the files (maps) in `ByAlteration` and `BySeason` before and after the download and sorting operations. This is used to compare the states of the files and identify new or updated files. 
-`.\TM-DaSS/OLD` is used to store old files that are no longer used, e.g old versions of data.csv, map_data.josn etc.
-
-`.\TM-DaSS/InstalledVersion.json` is an example of the old way of storing the current state of what should be installed. This was depricated along with FileStateChecking.
-.\TM-DaSS/Test-Manifest-All-Instalations-Manual.json` and `.\TM-DaSS/Test-Manifest-All-Instalations-STAR.json` are test files for the old way of storing the current state of what should be installed. This was depricated along with FileStateChecking.
-
-
 ## Part 2: Python files
 
 `.\TM-DaSS/ConsolidateFilesToOne.py`
@@ -70,14 +56,6 @@ How this is utilized will be explained more in `Part 2: The Python Files`.
 `.\TM-DaSS/SortByAlteration.py`
 `.\TM-DaSS/SortBySeason.py`
 `.\TM-DaSS/SART_V2.py`
-
-`.\TM-DaSS/CompareFileStates.py` // Depricated
-`.\TM-DaSS/CopyUpdatedFiles.py` // Depricated
-`.\TM-DaSS/CreateManifest.py` // Depricated
-`.\TM-DaSS/RecordFileStateToDir.py` // Depricated
-`.\TM-DaSS/RecordNewFileState.py` // Depricated
-`.\TM-DaSS/START.py` // Depricated
-
 
 ### Active
 
@@ -90,18 +68,6 @@ How this is utilized will be explained more in `Part 2: The Python Files`.
 Each alteration / season year are stored individually.
 
 `.\TM-DaSS/START_V2.py` is the main way to interact with `TM-DaSS`, so long as data.csv is propperly updated this should be the only file you have to run. It orchestrates the execution of several other scripts in a specific order to accomplish its tasks. This script is used to run the entire process of downloading and sorting the maps.
-
-
-### Depricated
-
-`.\TM-DaSS/CompareFileStates.py` is used to compare the state of the files before and after the download and sorting operations. This can be used to identify new or updated files. 
-`.\TM-DaSS/CopyUpdatedFiles.py` is used to copy any new or updated files to a separate directory for further processing. 
-`.\TM-DaSS/CreateManifest.py` is used to create a manifest file that provides an overview of the current state of the files in the directory. 
-`.\TM-DaSS/RecordFileStateToDir.py` is used to record the current state of the files in the directory. This is useful for tracking changes over time. 
-`.\TM-DaSS/RecordNewFileState.py` is used to record the state of the files after the download and sorting operations have been completed. 
-`.\TM-DaSS/START.py` is the main entry point for the `TMDownloadingAndSortingMaps` application. 
-
-These files are not used anymore, but the scripts are still here. This was originaly used in a past implementation of the plugin, but it was replaced by the current consolidated_maps implementation.
 
 
 ## Part 3: How to use the scripts
