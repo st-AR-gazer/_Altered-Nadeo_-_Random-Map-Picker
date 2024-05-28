@@ -1,27 +1,117 @@
-# START.py
+# Quick overview of TM-DaSS
 
-This script is the main entry point for the `TMDownloadingAndSortingMaps` application. It orchestrates the execution of several other scripts in a specific order to accomplish its tasks. Here's a brief overview of what each script does:
+This documentation aims to give you a quick overviw of TM-DaSS (TrackMania - Downloading and Sorting Scripts).
 
-1. `RecordFileStateToDir.py`: This script records the current state of the files in the directory. This is useful for tracking changes over time.
+I shall first go over the non python files (`Part 1: Non python files`), the the python files (`Part 2: Python files`).
+Then we go over how to use the scripts (`Part 3: How to use the scripts`).
 
-2. `DownloadFromNadeo.py`: This script downloads map files from Nadeo, the developer of TrackMania.
+### Requirements
 
-3. `SortByAlteration.py`: This script sorts the downloaded files based on their alteration dates.
-
-4. `SortBySeason.py`: This script sorts the downloaded files based on their associated TrackMania season.
-
-5. `RecordNewFileState.py`: This script records the state of the files after the download and sorting operations have been completed.
-
-6. `CompareFileStates.py`: This script compares the state of the files before and after the download and sorting operations. This can be used to identify new or updated files.
-
-7. `CopyUpdatedFiles.py`: This script copies any new or updated files to a separate directory for further processing.
-
-The new files are uploaded to ManiaCDN, this link: `http://maniacdn.net/ar_/Alt-Map-Picker/New-Sorting-System/[SORTING TYPE]/[FILE NAME]` (if this is changed an update to the location the plugin is nessesary this variable needs to be updated `string NewSortingSystemUrl;`)
-
-8. `CreateManifest.py`: This script creates a manifest file that provides an overview of the current state of the files in the directory.
-
-The new manifest file is uploaded to ManiaCDN, this link: `http://maniacdn.net/ar_/Alt-Map-Picker/manifest/manifest.json` (if this is changed an update to the location the plugin is nessesary this variable needs to be updated `string manifestUrl;`)
+- Requests library installed
 
 
-Each script is run in a separate subprocess, and any output or errors from the script are printed to the console. Each script can be run indvidually, and there are cases where you'd want to do this, but generally just using `START.py` will make your life much easier.
+### Startup commands
 
+Some files can start with a starup flag, these files are:
+`STAET_V2.py`,
+`ConsolidateFilesToOne.py`,
+they both take the starup command -v or --verbose
+
+
+## Part 1: Non python files
+
+TM-DaSS has multiple files/folders that are used for different things. Here is the structure:
+
+Folders:
+`.\TM-DaSS/`
+`.\TM-DaSS/ByAlteration`
+`.\TM-DaSS/BySeason`
+`.\TM-DaSS/ConsolidatedMaps`
+`.\TM-DaSS/FileStateChecking` // Depricated
+`.\TM-DaSS/OLD`               // Depricated
+
+`.\TM-DaSS/data.csv`
+`.\TM-DaSS/InstalledVersion.json` // Depricated
+`.\TM-DaSS/map_data.json`
+`.\TM-DaSS/processed_uids.txt`
+`.\TM-DaSS/Test-Manifest-All-Instalations-Manual.json` // Depricated
+`.\TM-DaSS/Test-Manifest-All-Instalations-STAR.json`   // Depricated
+
+### Active
+
+Here is what each of the folders and maps are used for.
+
+`.\TM-DaSS/ByAlteration` stores all the downloaded alteration files, they are sorted into the files with the names of the alterations. This is done to later save them to another file with another script.
+`.\TM-DaSS/BySeason` is much of the same, it stores all the downloaded season file, but this time the downloaded maps are stored by season.
+How this is utilized will be explained more in `Part 2: The Python Files`.
+
+.\TM-DaSS/ConsolidatedMaps is used in conjunction with `ConsolidateFilesToOne.py`, for now you should know that this folder is used to store the final output (as well as error logs for the final merge incase something goes wrong).
+
+`.\TM-DaSS/data.csv` is the file containing a list of all the Altered Nadeo maps tracked by the Altered Nadeo WR bot. This file is gotten from Kovca. (Kovacs).
+
+`.\TM-DaSS/map_data.json`, after running `DownloadFromNadeo.py`, the UIDs from data.csv are converted to the fully downloaded map object, this contains more information that is requied for the plugin to work propperly.
+
+`.\TM-DaSS/processed_uids.txt`, this file is used to keep track of the UIDs that have been processed, this is used to avoid spamming Nadeos API, it's a bit buggy sometimes though...
+
+
+### Depricated
+
+`.\TM-DaSS/FileStateChecking` is used to store the file states of the files (maps) in `ByAlteration` and `BySeason` before and after the download and sorting operations. This is used to compare the states of the files and identify new or updated files. 
+`.\TM-DaSS/OLD` is used to store old files that are no longer used, e.g old versions of data.csv, map_data.josn etc.
+
+`.\TM-DaSS/InstalledVersion.json` is an example of the old way of storing the current state of what should be installed. This was depricated along with FileStateChecking.
+.\TM-DaSS/Test-Manifest-All-Instalations-Manual.json` and `.\TM-DaSS/Test-Manifest-All-Instalations-STAR.json` are test files for the old way of storing the current state of what should be installed. This was depricated along with FileStateChecking.
+
+
+## Part 2: Python files
+
+`.\TM-DaSS/ConsolidateFilesToOne.py`
+`.\TM-DaSS/DownloadFromNadeo.py`
+`.\TM-DaSS/SortByAlteration.py`
+`.\TM-DaSS/SortBySeason.py`
+`.\TM-DaSS/SART_V2.py`
+
+`.\TM-DaSS/CompareFileStates.py` // Depricated
+`.\TM-DaSS/CopyUpdatedFiles.py` // Depricated
+`.\TM-DaSS/CreateManifest.py` // Depricated
+`.\TM-DaSS/RecordFileStateToDir.py` // Depricated
+`.\TM-DaSS/RecordNewFileState.py` // Depricated
+`.\TM-DaSS/START.py` // Depricated
+
+
+### Active
+
+`.\TM-DaSS/ConsolidateFilesToOne.py` is used to consolidate the files in the `ByAlteration` and `BySeason` folders into a single file. This is used to create the final output that is used by the plugin, this includes adding the 'alteratoin' 'season' and 'year' to each json object. This is the final step in the process of downloading and sorting the maps.
+
+`.\TM-DaSS/DownloadFromNadeo.py` is used to download map files from Nadeo. This script uses the UIDs from `data.csv` to download the map files. The downloaded json objects are sotred in the map_data.json file.
+
+`.\TM-DaSS/SortByAlteration.py` is used to sort the downloaded json objects in the map_data.json file based on what is mentationed in their names.
+`.\TM-DaSS/SortBySeason.py` is used to sort the downloaded json objects in the map_data.json file based on what is mentationed in their names, but this time based on what season is in the name.
+Each alteration / season year are stored individually.
+
+`.\TM-DaSS/START_V2.py` is the main way to interact with `TM-DaSS`, so long as data.csv is propperly updated this should be the only file you have to run. It orchestrates the execution of several other scripts in a specific order to accomplish its tasks. This script is used to run the entire process of downloading and sorting the maps.
+
+
+### Depricated
+
+`.\TM-DaSS/CompareFileStates.py` is used to compare the state of the files before and after the download and sorting operations. This can be used to identify new or updated files. 
+`.\TM-DaSS/CopyUpdatedFiles.py` is used to copy any new or updated files to a separate directory for further processing. 
+`.\TM-DaSS/CreateManifest.py` is used to create a manifest file that provides an overview of the current state of the files in the directory. 
+`.\TM-DaSS/RecordFileStateToDir.py` is used to record the current state of the files in the directory. This is useful for tracking changes over time. 
+`.\TM-DaSS/RecordNewFileState.py` is used to record the state of the files after the download and sorting operations have been completed. 
+`.\TM-DaSS/START.py` is the main entry point for the `TMDownloadingAndSortingMaps` application. 
+
+These files are not used anymore, but the scripts are still here. This was originaly used in a past implementation of the plugin, but it was replaced by the current consolidated_maps implementation.
+
+
+## Part 3: How to use the scripts
+
+To use the scripts manually first make sure you 1. have the requests library installed, 2. have the data.csv file updated with the latest maps.
+
+Then you can run the scripts in the following order:
+
+1. `DownloadFromNadeo.py`
+2. `SortByAlteration.py` / `SortBySeason.py`
+3. `ConsolidateFilesToOne.py`
+
+And you are done, this can also be done with just running `START_V2.py` which will do all of the above in the correct order. This is the recommended way to run the scripts.

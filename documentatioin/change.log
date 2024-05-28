@@ -1,0 +1,73 @@
+0.1.0 - 
+Initial release
+
+0.1.1 -
+Added an export "GetARandomAltMapUid" that when called, surprisingly returns a random map UID string. :) Will add some more in the future if it's possible :)
+
+2.2.0 -
+What has changed? Everything, (minus loading map from UID), here are the three major ones.
+
+1. You can now sort anything based on the Alteration, season/year, as well as the medal times.
+2. The UI is massively improved, open it through the Plugins tab
+3. Massively improved exports, other plugins can now set/get/change the settings/current map to load/settings whenever.
+
+New API update, added: 
+1. `GetARandomAltMapUid()`
+   - Description: Returns a random map UID from the Altered Nadeo map data pool and returns it.
+   - Return Type: `string`
+	 - Example: `rEP0VJXacIby1NEYT68pjKwN8va`
+
+
+2. `GetARandomAltMapStorageObject()`
+   - Description: Fetches a random map URL from the Altered Nadeo map data pool and returns it.
+   - Return Type: `string`
+	 - Example: `https://core.trackmania.nadeo.live/storageObjects/a831d6be-0bf9-4afa-b15f-784a7db7097e`
+
+
+3. `GetUserSettings()`
+   - Description: Retrieves a Json::Value object containing all user settings related to the alterations/seasons/scores applicable to the maps. This includes settings for different scores, surfaces, effects, finish locations, environments, and other alterations.
+   - Return Type: `Json::Value`
+	 - Example: ``
+
+
+4. `SetSeason(string season, bool shouldUse)`
+   - Description: Enables or disables maps from being picked for a specific season. For example, setting `shouldUse` to true for "Spring 2020" will enable maps from that season/year.
+   - Parameters: 
+     - season: The season for which the maps should be enabled/disabled.
+		 	 - Example: `Spring 2021`, `Winter 2023`
+     - shouldUse: A boolean flag to enable or disable the selection of maps from the specified season.
+   - Return Type: `void`
+	 - Note: The inputs are case insensitive.
+
+
+5. `SetAlteration(string alteration, bool shouldUse)`
+   - Description: Allows enabling or disabling specific map alterations. If `shouldUse` is set to true, the specified alteration is applied to the map selection criteria.
+   - Parameters:
+     - alteration: The alteration to be enabled or disabled.
+		 	 - Example: `Stunt`, `Wet Icy Wood`.
+			 - **NOTE:** If you do not know how what an alteration is called internally, here is a link to the GH page with the most up to date reference sheet. [Alteration Names](https://github.com/st-AR-gazer/_Altered-Nadeo_-_Random-Map-Picker/blob/83733f9982a7cb07be2c30caaaa13345ecc865a3/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as#L109) (the name can be found inside of the `""`
+     - shouldUse: A boolean flag indicating whether the alteration should be applied.
+   - Return Type: `void`
+	 - Note: The inputs are case insensitive.
+
+
+6. `SetFullSeason(string fullSeason, bool shouldUse)`
+   - Description: Enables or disables all maps from an entire season (e.g., all winter maps) based on the `shouldUse` parameter.
+   - Parameters:
+     - fullSeason: The full season (like "Winter" or "Spring") for which maps should be enabled/disabled.
+		 	 - Example: `Summer`, `Spring`, `Winter`, `Fall`
+     - shouldUse: A boolean to enable or disable map selections for the specified full season.
+   - Return Type: `void`
+	 
+
+3.3.0 -
+New API update
+Functions are new in the AN namespace, so you need to call them with AN:: before the function name.
+
+New profiles
+You can now save/crate, load and delete profiles to save your settings for later use, the current settings are automatically saved,
+but if you only want specific alterations to be enabled by the press of a button, you can now do that.
+Perfect for trolling a unsuspecting Lars.
+
+Minor bugfixes
+Fixed a bug where you could not load maps from specfiic alterations...
