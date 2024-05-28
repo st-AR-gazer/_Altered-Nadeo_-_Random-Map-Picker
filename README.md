@@ -5,12 +5,6 @@
 This repo contains one project split into two parts, the in game Trackmania2020 plugin, and the downloading and sorting python files. 
 The plugin can be found in `.\src/`, and the downloading and sorting can be found in `.\TM-DaSS` (TrackMania-Download and Sorting Scripts).
 
-The plugin and scripts provide a way for players to enhance their Trackmania2020 experience by allowing them to play random maps from a 
-selected pool, and sort these maps based on their preferred style. This adds a new layer of unpredictability and excitement to the game, 
-as players won't know what map they'll be playing next. It also allows players to tailor their game experience to their preferences, by 
-sorting the maps based on style.
-
-
 ## Features
 
 ### Plugin
