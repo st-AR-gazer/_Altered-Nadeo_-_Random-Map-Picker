@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repo contains one project split into two parts, the in game Trackmania2020 plugin, and the downloading and sorting python files. 
+This repo contains one project split into two parts, the in-game Trackmania2020 plugin, and the downloading and sorting Python files. 
 The plugin can be found in `.\src/`, and the downloading and sorting can be found in `.\TM-DaSS` (TrackMania-Download and Sorting Scripts).
 
 ## Features
@@ -21,18 +21,18 @@ The plugin can be found in `.\src/`, and the downloading and sorting can be foun
 
 - Downloads maps from the Nadeo Live Services API using the list of UIDs.
 - Sorts the maps based on the alteration/season.
-- Constructs one massive json file containing all the information about the maps, with the addition of 'alteration', 'season' and 'year'.
+- Constructs one massive JSON file containing all the information about the maps, with the addition of 'alteration', 'season' and 'year'.
 
-(this is talked about more in depth in `/documentation/TM-DaSS.md`)
+(this is talked about more in-depth in `/documentation/TM-DaSS.md`)
 
 
 ## How It Works
 
 ### Plugin
 
-Once the plugins starts up it sends a request to ManiaCDN and gets a manifest file back, this contains info on wheather or not it should update 
-with the latest version og data.csv or consolidation_maps.json. Afterwards it goes through the process of checking permissions checking if folders 
-exist or not, if the current instlation is the new or not etc. The plugin then loads the data.csv file and consolidated_maps.json file, and then 
+Once the plugin starts up it sends a request to ManiaCDN and gets a manifest file back, this contains info on whether or not it should update 
+with the latest version of data.csv or consolidation_maps.json. Afterwards, it goes through the process of checking permissions checking if folders 
+exist or not, if the current installation is new or not etc. The plugin then loads the data.csv file and consolidated_maps.json file, and then 
 it waits for user interaction. 
 
 After the user selects a set of settings the plugin can use to filter maps, the plugin will then go through the process of filtering the maps, based 
@@ -49,14 +49,14 @@ Please see the documentation for TM-DaSS in `/documentation/TM-DaSS.md` for more
 
 ### Plugin
 - [TrackMania](https://trackmania.com) game installed.
-- Plugin requires permissions to play local maps.
+- Plugin requires permission to play local maps.
 
 ### TM-DaSS
 - python installed.
 - requests module installed.
 
 
-## Installation of the plguin
+## Installation of the plugin
 1. **Installation**: Install the latest plugin version through the integrated plugin manager or by getting the latest .op file from this directory and 
 placing it in: `C:\Users\%USERPROFILE%\OpenplanetNext\Plugins`.
 2. **Using the plugin**: Access the plugin through the game's 'plugins' menu after pressing f3. Use the "Load New Altered Map" option to open the 
@@ -70,12 +70,12 @@ All the plugin files are found in the `.\src` directory.
 
 - `.\src\`: Contains the plugin source code.
 - `.\src\CDN`: Contains the code for fetching the manifest and the new maps from ManiaCDN.
-- `.\src\Conditions`: Contains the code for checking perms, the custom logging the plugin uses, as well as some custom namespaces I commonly use that in my oppinion should be in OpenPlanet, but are not...
-- `.\src\Data`: Contains the code for handeling the DefaultData, e.g moving it to storage, checking if the user uses an outdated version of the local manifest file + some utility functions.
+- `.\src\Conditions`: Contains the code for checking perms, the custom logging the plugin uses, as well as some custom namespaces I commonly use that in my opinion should be in OpenPlanet, but are not...
+- `.\src\Data`: Contains the code for handling the DefaultData, e.g. moving it to storage, checking if the user uses an outdated version of the local manifest file + some utility functions.
 - `.\src\DefaultData`: Contains the default data that the plugin uses, including the data.csv file and defaultInstalledVersion.json.
-- `.\src\Exports`: Contains the plugins exports.
-- `.\src\InGame`: Contains the code for the in game UI (`.\src\InGame\Render`), as well as loading the maps and playing them (`.\src\InGame\LoadMaps`).
-- `.\src\Profiles`: Contains the namespace code for loading, creating, deleting profiles, only used in a small part of SettingsUI.as `.\src\InGame\Render\SettingsUI.as`.
+- `.\src\Exports`: Contains the plugin exports.
+- `.\src\InGame`: Contains the code for the in-game UI (`.\src\InGame\Render`), as well as loading the maps and playing them (`.\src\InGame\LoadMaps`).
+- `.\src\Profiles`: Contains the namespace code for loading, creating, and deleting profiles, only used in a small part of SettingsUI.as `.\src\InGame\Render\SettingsUI.as`.
 - `.\src\Settings`: Contains the code for initializing the settings, loading the settings, changing the settings etc.
 
 ## License
