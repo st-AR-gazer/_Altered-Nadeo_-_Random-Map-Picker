@@ -17,13 +17,13 @@ The plugin can be found in `.\src/`, and the downloading and sorting can be foun
 
 ### TM-DaSS
 
-**Prerequisites: ** A file containing all the UIDs (I have gotten this from Kovca.) 
+**Prerequisites:** A file containing all the UIDs (I have gotten this from Kovca.) 
 
 - Downloads maps from the Nadeo Live Services API using the list of UIDs.
 - Sorts the maps based on the alteration/season.
 - Constructs one massive json file containing all the information about the maps, with the addition of 'alteration', 'season' and 'year'.
 
-(this is talked about more in depth in '/documentation/TM-DaSS.md')
+(this is talked about more in depth in `/documentation/TM-DaSS.md`)
 
 
 ## How It Works
