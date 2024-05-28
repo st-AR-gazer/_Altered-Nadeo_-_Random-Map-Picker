@@ -1,11 +1,25 @@
 import json
 import os
 import re
+import argparse
 from collections import defaultdict
 
+parser = argparse.ArgumentParser(description="Process map data and sort by category.")
+parser.add_argument('-v', '--verbose', action='store_true', help="Enable verbose output of all log modifications.")
+args = parser.parse_args()
+verbose = args.verbose
+
+
+
+
 def load_json_data(file_path):
+    if verbose:
+        print(f"Loading JSON data from {file_path}")
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
+
+
+
 
 def is_exact_match(name, map_names, filename, should_normalize_map_names):
     if should_normalize_map_names:
@@ -18,8 +32,11 @@ def is_exact_match(name, map_names, filename, should_normalize_map_names):
            re.search(pattern, filename, re.IGNORECASE) is not None
 
 
+
 def normalize_map_names(map_name):
     return map_name.replace("_", " ")
+
+
 
 def get_special_uid_info(map_data):
     for special in special_uids:
@@ -27,12 +44,15 @@ def get_special_uid_info(map_data):
             return special
     return None
 
+
+
 def sort_key(map_data):
     special_info = get_special_uid_info(map_data)
     if special_info:
         return (True, special_info["season"], special_info["year"], map_data["timestamp"])
     else:
         return (False, map_data["timestamp"])
+
 
 
 def find_season_year(string):
@@ -72,6 +92,8 @@ def find_season_year(string):
 
     return None
 
+
+
 def fix_short_season_name(season):
     if season == "Sp":
         return "Spring"
@@ -83,6 +105,8 @@ def fix_short_season_name(season):
         return "Winter"
     return season
 
+
+
 def fix_ngolo_season_name(season):
     if season == "SpriNgolo":
         return "Spring"
@@ -90,11 +114,15 @@ def fix_ngolo_season_name(season):
         return "Fall"
     return season
 
+
+
 def normalize_season_name(season):
     season = season.capitalize()
     if season.lower() in ["springolo", "falln'golo"]:
         season = season[:-5]
     return season
+
+
 
 def parse_map_category(filename, name, map_data):
     special_info = get_special_uid_info(map_data)
@@ -105,19 +133,43 @@ def parse_map_category(filename, name, map_data):
         year = "20" + year if len(year) == 2 else year
         return special_info["season"].capitalize() + year
     
-    
     season_year = find_season_year(filename) or find_season_year(name)
     if season_year:
         return season_year
+    
     elif "royal" in filename.lower():
+        if verbose:
+            print(f"Royal map found: {name}")
         return "AllRoyal"
+    
     elif is_exact_match(name, snow_discovery_maps, filename, False):
+        if verbose:
+            print(f"Snow Discovery map found: {name}")
         return "AllSnowDiscovery"
+    
+    elif is_exact_match(name, rally_discovery_maps, filename, False):
+        if verbose:
+            print(f"Rally Discovery map found: {name}")
+        return "AllRallyDiscovery"
+    
+    elif is_exact_match(name, desert_discovery_maps, filename, False):
+        if verbose:
+            print(f"Desert Discovery map found: {name}")
+        return "AllDesertDiscovery"
+
     elif is_exact_match(name, all_TOTD_maps, filename, True):
+        if verbose:
+            print(f"TOTD map found: {name}")
         return "AllTOTD"
+    
     elif is_exact_match(name, official_competition_maps, filename, False):
+        if verbose:
+            print(f"Official Competition map found: {name}")
         return "AllOfficialCompetitions"
+    
     return "_AllUnknownMaps"
+
+
 
 def sort_maps_by_category(data):
     sorted_data = defaultdict(dict)
@@ -126,7 +178,11 @@ def sort_maps_by_category(data):
         sorted_data[category][map_info['filename']] = map_info
     return sorted_data
 
+
+
 def save_sorted_data(sorted_data, base_folder):
+    if verbose:
+        print(f"Saving sorted data to {base_folder}")
     if not os.path.exists(base_folder):
         os.makedirs(base_folder)
     for category, maps in sorted_data.items():
@@ -137,20 +193,28 @@ def save_sorted_data(sorted_data, base_folder):
 
 
 
-
-
-
-
-
-
-
-
-
-
 snow_discovery_maps = [
     "SnowIsBack", "IcyHills", "SnowGlider", "WoodForce", "WetWood",
     "BreakOrSlide", "IcySnow", "WoodySlalom", "Temple", "Hairpins",
     "IAmSpeed", "BobLover", "SummerSnow", "SlippySnow", "Rock&Revel"
+]
+
+rally_discovery_maps = [
+    "RallyIsBack", "RallyB1 Reloaded", "BumpyRally", "CastleWall",
+    "GrippyRally", "NightWatch", "NewSlopes", "GreenStage", 
+    "RallyC1 Reloaded", "2laps2cars", "Ralleigh", "Dirt2024",
+    "RallyOnRoad", "TransforMania", "DeepEase", "ClassicRally",
+    "Radium", "WetRally", "FrostyMorning", "Rastic", "Offroad",
+    "MixedStage", "Snolly", "IAmSpeed2", "PowerStage"
+]
+
+desert_discovery_maps = [
+    "DesertIsBack", "PlatformJourney", "Wiggle", "DesertOnRoad", 
+    "Originals", "NewLoops", "DesertC1Reloaded", "A08Lover",
+    "DesertDirt", "2Cars2Laps", "GrassyDesert", "DesTech",
+    "DesertCastle", "Plasert", "Dice", "WoodyDesert", "Narrow",
+    "AmericanSpeed", "Halfpipes", "DesertCity", "WetDesert",
+    "2Wheelers", "DesertLeague", "DeseRPG", "DesertMaster"
 ]
 
 official_competition_maps = [
@@ -490,11 +554,9 @@ special_uids = [
     {"uid": "SxvhvVnlgQHyqmAZsBxQFkarfJj", "name": "Speed E",           "season": "Spring", "year": "2023", "alteration": "AllOfficialCompetitions"},
     {"uid": "r3wmDiuHJS76_8VqCMlS3yX7iSh", "name": "Vortex E",          "season": "Spring", "year": "2023", "alteration": "AllOfficialCompetitions"},
 
-
-
 ]
 
 
-map_data = load_json_data("map_data.json")
+map_data = load_json_data("data/map_data.json")
 sorted_maps = sort_maps_by_category(map_data)
 save_sorted_data(sorted_maps, "bySeason")

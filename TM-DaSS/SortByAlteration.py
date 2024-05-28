@@ -1,13 +1,27 @@
 import json
 import os
 import re
+import argparse
 from collections import defaultdict
 
+parser = argparse.ArgumentParser(description="Process map data and sort by category.")
+parser.add_argument('-v', '--verbose', action='store_true', help="Enable verbose output of all log modifications.")
+args = parser.parse_args()
+verbose = args.verbose
+
+
+
 def load_json_data(file_path):
+    if verbose:
+        print(f"Loading JSON data from {file_path}")
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
+
+
 def normalize_map_names(name):
+    if verbose:
+        print(f"Normalizing map name: {name}")
     return name.lower().replace("_", " ")
 
 
@@ -16,6 +30,9 @@ def parse_map_category(map_info, alterations_dict, exclusion_lists, special_uids
     filename = map_info.get('filename', '')
     map_name = map_info.get('name', '').lower()
     uid = map_info.get('mapUid', '')
+
+    if verbose:
+        print(f"Parsing map category for {filename}")
 
     name_to_use = filename if len(filename) <= 100 else map_name
     normalized_name = name_to_use.lower().replace("_", " ")
@@ -46,6 +63,8 @@ def parse_map_category(map_info, alterations_dict, exclusion_lists, special_uids
 
 
 def handle_special_uids(uid, special_uids):
+    if verbose:
+        print(f"Handling special UIDs for {uid}")
     for special_map in special_uids:
         if uid == special_map.get('uid'):
             if special_map.get('obtainable') == False:
@@ -56,18 +75,23 @@ def handle_special_uids(uid, special_uids):
 
 
 def handle_exclusion_list(normalized_name, exclusion_lists):
+    if verbose:
+        print(f"Handling exclusion list for {normalized_name}")
     for exclusion_list in exclusion_lists:
         for excluded in exclusion_list:
             excluded_lower = excluded.lower()
             if excluded_lower in normalized_name:
+                if verbose:
+                    print(f"Excluding {excluded_lower} from {normalized_name}")
                 if normalized_name != excluded_lower:
                     normalized_name = normalized_name.replace(excluded_lower, "").strip()
     return None, normalized_name
 
 
 
-
 def handle_regular_alterations(name, alterations_dict):
+    if verbose:
+        print(f"Handling regular alterations for {name}")
     special_cases = special_cases_array
     
     normalized_name = name.lower()
@@ -95,6 +119,8 @@ def handle_regular_alterations(name, alterations_dict):
 
 
 def sort_maps_by_category(map_data, alterations_dict, exclusion_lists, special_uids):
+    if verbose:
+        print("Sorting maps by category")
     sorted_maps = defaultdict(list)
     for map_info in map_data:
         categories = parse_map_category(map_info, alterations_dict, exclusion_lists, special_uids)
@@ -105,11 +131,15 @@ def sort_maps_by_category(map_data, alterations_dict, exclusion_lists, special_u
 
 
 def save_sorted_data(sorted_data, base_folder):
+    if verbose:
+        print(f"Saving sorted data to {base_folder}")
     if not os.path.exists(base_folder):
         os.makedirs(base_folder)
     for category, maps in sorted_data.items():
         with open(os.path.join(base_folder, f"{category}.json"), 'w', encoding='utf-8') as file:
             json.dump(maps, file, indent=4, ensure_ascii=False)
+
+
 
 special_cases_array = [
     "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless", "[Rally] CP1 is End", "[Stadium] Wet Wood", "[Snow] Wet-Plastic"
@@ -1328,7 +1358,7 @@ special_uids = [
 
 
 
-map_data = load_json_data("map_data.json")
+map_data = load_json_data("data/map_data.json")
 sorted_maps = defaultdict(list)
 
 for filename, map_info in map_data.items():
