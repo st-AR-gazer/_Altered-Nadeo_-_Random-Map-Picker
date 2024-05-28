@@ -2,7 +2,7 @@
 
 # Quick Guide to Adding an Alteration in Settings (Part 1)
 
-This documentation aims to guide you through the process of adding a new alteration, season, or discovery campaign to your project. It is divided into two main parts. The first part covers the addition of alterations, and the second part delves into updating the python script for sorting maps with alterations.
+This documentation aims to guide you through the process of adding a new alteration, season, or discovery campaign to your project. It is divided into two main parts. The first part covers the addition of alterations, and the second part delves into updating the Python script for sorting maps with alterations.
 
 ## Part 1: Adding an Alteration
 
@@ -25,7 +25,7 @@ bool IsUsing_EXAMPLE = false;
 
 Navigate to `/src/Conditions/Settings/DisableOrEnable`. Here, you will find folders for different categories:
 
-1. **Alterational**: In this folder, add the new alteration to the correct file and function. This is crucial as it's used by the UI buttons. If a new category is created, add a new function with the category name in both enable and disable files, and place this new function in "DisableOrEnable" with the correct `Select[...]` / `Deselect[...]` logic.
+1. **Alterational**: In this folder, add the new alteration to the correct file and function. This is crucial as it's used by the UI buttons. If a new category is created, add a new function with the category name in both enable and disable files and place this new function in "DisableOrEnable" with the correct `Select[...]` / `Deselect[...]` logic.
 
 2. **Seasonal**: Seasonal sorting is similar to alteration-based sorting but doesn't need updates until summer 2025.
 
@@ -43,7 +43,7 @@ if (UI::Button("TAB NAME")) activeTab = -1;
 ``` 
 (if you do not change the active tab for the other ones I will come to your house and move your entire setup 5cm to the left)
 
-2. **Adding the Visual Part**: Navigate to the correct 'tab' location and add the setting, a 'recent' change has made the `newset` obsolete, so we will be adding a "RenderS_{SOMEVOID}" to the location, and then we will add the void under with the correct inforamtion. 
+2. **Adding the Visual Part**: Navigate to the correct 'tab' location and add the setting, a 'recent' change has made the `newset` obsolete, so we will be adding a "RenderS_{SOMEVOID}" to the location, and then we will add the void under with the correct information. 
 
 ```c
 void RenderNN() { 
@@ -53,7 +53,7 @@ void RenderNN() {
 void RenderS_100WetIcyWood() { IsUsing_100WetIcyWood = UI::Checkbox("100% Wet-Icy-Wood", IsUsing_100WetIcyWood); }
 ```
 
-Make sure to ALSO add the name of the alteration to the `alterationNames` and `alterationFuncs` arrays as they are used for the 'search' option, These are found the the bottom of the page.
+Make sure to ALSO add the name of the alteration to the `alterationNames` and `alterationFuncs` arrays as they are used for the 'search' option, These are found the bottom of the page.
 
 **Note:** If a category has changed name, simply update the `TAB NAME` to the new name. If an alteration has moved categories, cut it from its current location and move it to the correct tab.
 
@@ -61,7 +61,7 @@ Make sure to ALSO add the name of the alteration to the `alterationNames` and `a
 ### Step 4: Add the Setting to `bool MatchesAlterationSettings(Json::Value map)`
 
 Got to `/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as`
-This step ensures that the newly added alteration setting is recognized and processed correctly when filtering maps. The `MatchesAlterationSettings` function and `MatchSeasonalSettings` both help with determining whether a map matches the current alteration settings activated by the user. Here is how to add an alteration too them. 
+This step ensures that the newly added alteration setting is recognized and processed correctly when filtering maps. The `MatchesAlterationSettings` function and `MatchSeasonalSettings` both help with determining whether a map matches the current alteration settings activated by the user. Here is how to add an alteration to them. 
 
 This should also be added to "IsAlterationSettingActive", (when it is time to update the seasonal settings, this should also be updated, but for IsSeasonSettingActive instead of alteration)
 
@@ -109,12 +109,12 @@ Ensure that your condition correctly checks both the setting's activation status
 
 ### Step 5: Add the Setting to the Exports
 
-After integrating your new setting into the application's logic, it's also decently important to ensure that this setting is correctly exported so that other plugins can use it. Though I don't think anyone will bother XertroV asked for it, and I'm happy to oblidge xdd. 
+After integrating your new setting into the application's logic, it's also decently important to ensure that this setting is correctly exported so that other plugins can use it. Though I don't think anyone will bother XertroV asked for it, and I'm happy to oblige xdd. 
 To add this new alteration to exports go to `\src\Exports\Export_Impl.as` and find the `GetUserSettings` function, and include your new alteration, ensuring that it's saved and retrievable as part of the user's settings.
 
 #### Update the Settings Structure
 
-Within the `GetUserSettings` function, locate the appropriate section for your new setting. The settings are categorized for better organization (e.g., `Surface`, `Effects`, `Finish Location`, etc.). They are catagorized based on how it is on the Altered Nadeo discord, please use this as reference when adding/moving/removing things PeepoShy.
+Within the `GetUserSettings` function, locate the appropriate section for your new setting. The settings are categorized for better organization (e.g., `Surface`, `Effects`, `Finish Location`, etc.). They are categorised based on how it is on the Altered Nadeo discord, please use this as a reference when adding/moving/removing things PeepoShy.
 
 For example, if you're adding a new `Surface` alteration named "NewSurfaceType", you would add the following line under the `Surface` category:
 
@@ -130,7 +130,7 @@ Make sure to also add the alteration to the  `SetAlteration` function.
 
 # Quick Guide to Adding an Alteration in Settings (Part 2.1)
 
-This part of the documentation tackles how to update the python sorting script, focusing on the alterations part.
+This part of the documentation tackles how to update the Python sorting script, focusing on the alterations part.
 
 ## Step 1
 
@@ -160,7 +160,7 @@ This part of the documentation tackles how to update the python sorting script, 
 
 ## Step 1
 
-The seasonal sorting should work correctly 99% of the time. The only exception is if someone deliberately messes with the filenames. (or if the filenames are non standared like the discovery campaigns)
+The seasonal sorting should work correctly 99% of the time. The only exception is if someone deliberately messes with the filenames. (or if the filenames are non standard like the discovery campaigns)
 
 For example, the Super Sized alteration, with names like "Super{map number}", does not indicate the season of addition. Non-standard naming schemes were manually addressed:
 `{"uid": "2SbX9YGOeEo9OVFErIZYzYGRjh5", "name": "Super01", "season": "summer", "year": "2023", "alteration": "SuperSized"}`
@@ -178,7 +178,7 @@ This section explains the sorting of special maps. The UID was extracted from th
 
 ## Split Names
 
-Issues arise with alterations that have split names, such as `YEET Reverse`. For skill issue reasons on my part these cases must be declared in the `special_cases_array`:
+Issues arise with alterations that have split names, such as `YEET Reverse`. For skill issue reasons on my part, these cases must be declared in the `special_cases_array`:
 
 ```py
 special_cases_array = [
@@ -197,13 +197,13 @@ Sorting XX-But maps can be challenging due to the lack of a predefined naming sc
 
 ## Official Campaigns and Competition Maps (Including Discovery Maps)
 
-Official and competition maps, which do not have an alteration tag but are included as "Official", require manual sorting by obtaining their UID, the same goes for the discovery maps such as "Snow Discovery", "Rally Discovery" and "Desert Discorvery"
+Official and competition maps, which do not have an alteration tag but are included as "Official", require manual sorting by obtaining their UID, the same goes for the discovery maps such as "Snow Discovery", "Rally Discovery" and "Desert Discovery"
 -See #Special Maps Sorting
 
 
 ## Unlabled maps
 
-Some maps lack alteration labels. These were sorted manually after playing through each one. It is now common practice to label maps with names, making this more of an honorable mention. Something important to know, but not really used any more (hopefully).
+Some maps lack alteration labels. These were sorted manually after playing through each one. It is now common practice to label maps with names, making this more of an honourable mention. Something important to know, but not really used any more (hopefully).
 -See #Special Maps Sorting
 
 
