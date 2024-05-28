@@ -15,7 +15,7 @@ def get_access_token(username, password):
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Basic {encode_credentials(username, password)}",
-        "User-Agent": "I'm downloading all the altered nadeo maps to keep a plugin project up to date, this should only happnen once a month or so",
+        "User-Agent": "I'm downloading all the Altered Nadeo maps to keep a plugin project up to date, this should only happnen once, maybe twice a month on avrage, if you see this and have any questions or concerns please contact me, thank you!",
         "From": "@ar___ on discord (or ar@xjk.yt through e-mail, though disocrd is preferred :D)",
     }
     body = {"audience": "NadeoServices"}
@@ -62,8 +62,8 @@ def split_into_batches(uids, max_length):
     if batch:
         yield batch
 
-uids = read_uids("data.csv")
-processed_uids = read_uids("processed_uids.txt")
+uids = read_uids("data/data.csv")
+processed_uids = read_uids("data/processed_uids.txt")
 failed_uids = set()
 
 unprocessed_uids = uids - processed_uids
@@ -87,12 +87,12 @@ for batch in batches:
     for item in response_data:
         filename = item.get('filename', 'Unknown')
         map_data[filename] = item
-    write_processed_uids("processed_uids.txt", batch)
+    write_processed_uids("data/processed_uids.txt", batch)
     time.sleep(0.6)
 
 if failed_uids:
     print(f"Failed to fetch data for {len(failed_uids)} maps. UID list saved to 'failed_uids.txt'")
-    write_processed_uids("failed_uids.txt", failed_uids)
+    write_processed_uids("data/failed_uids.txt", failed_uids)
 
-with open("map_data.json", 'w', encoding='utf-8') as json_file:
+with open("data/map_data.json", 'w', encoding='utf-8') as json_file:
     json.dump(map_data, json_file, indent=4, ensure_ascii=False)
