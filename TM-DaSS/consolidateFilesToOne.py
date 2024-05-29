@@ -77,7 +77,7 @@ for filename in os.listdir(season_dir):
             print(f"Adding season and year to maps from {filename}")
         consolidated_maps.extend(add_season_and_year_to_maps(maps, season, year))
 
-# byAlteration files
+# byAlteration files 
 if args.verbose:
     print("Processing byAlteration files...")
 with open(error_log_path, 'w') as error_log:

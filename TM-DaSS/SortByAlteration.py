@@ -199,7 +199,7 @@ alterations_dict = {
     "CPfull": ["CPfull"],
     "Checkpointless": ["Checkpointless", "CPLess"],
     "Checkpointless Reverse": ["CPLess, Reverse", "Checkpointless Reverse"],
-    "Chinese": ["训练"],
+    "Chinese": ["训练", "\u590f\u5b63\u8d5b"],
     "CPLink": ["CPLink"],
     "Cruise": ["Cruise", "Cruise Control"],
 
