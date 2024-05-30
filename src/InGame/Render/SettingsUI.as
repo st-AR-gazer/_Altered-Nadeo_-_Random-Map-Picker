@@ -180,7 +180,7 @@ void RenderProfiles() {
     UI::Text("List of Local Profiles: ");
     array<string> profiles = Profiles::GetLocalProfiles();
     for (uint i = 0; i < profiles.Length; i++) {
-        UI::Text("Load Profile " + profiles[i] + ": ");
+        UI::Text("Load Profile: '" + profiles[i] + "'");
         if (UI::Button("Load " + profiles[i])) {
             Profiles::LoadProfile(profiles[i]);
         }

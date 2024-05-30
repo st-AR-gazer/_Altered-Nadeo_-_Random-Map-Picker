@@ -97,16 +97,22 @@ namespace Profiles {
 
     Json::Value GetUserSettingsForProfile() {
         Json::Value profile = Json::Array();
+
         Json::Value userSettings = GetUserSettings();
 
-        AddSettingsToProfile(userSettings["Alteration"]["Surface"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Effects"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Finish Location"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Environment"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Multi"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Other"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Extra Campaigns"], profile);
-        AddSettingsToProfile(userSettings["Alteration"]["Seasons"], profile);
+        AddSettingsToProfile(userSettings["Score"]["Author"], profile);
+        AddSettingsToProfile(userSettings["Score"]["Gold"], profile);
+        AddSettingsToProfile(userSettings["Score"]["Silver"], profile);
+        AddSettingsToProfile(userSettings["Score"]["Bronze"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Surface"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Effects"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Finish Location"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Environment"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Multi"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Other"], profile);
+        AddSettingsToProfile(userSettings["Alterations"]["Extra Campaigns"], profile);
+        AddSettingsToProfile(userSettings["Seasons"], profile);
+        AddSettingsToProfile(userSettings["Seasons"]["Discovery"], profile);
 
         return profile;
     }
