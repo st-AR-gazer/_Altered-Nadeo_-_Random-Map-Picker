@@ -114,6 +114,9 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Environment"]["[Rally] CP1 is End"] = IsUsing_Rally_CP1_is_End;
     settings["Alterations"]["Environment"]["[Rally] Underwater"] = IsUsing_Rally_Underwater;
     settings["Alterations"]["Environment"]["[Rally] Ice"] = IsUsing_Rally_Icy;
+    settings["Alterations"]["Environment"]["[Desert]"] = IsUsing_Desert_;
+    settings["Alterations"]["Environment"]["[Desert] Carswitch"] = IsUsing_Desert_Carswitch;
+    settings["Alterations"]["Environment"]["[Desert] Underwater"] = IsUsing_Desert_Underwater;
 
     // Multi Alterationss
     settings["Alterations"]["Multi"] = Json::Object();
@@ -224,6 +227,12 @@ Json::Value GetUserSettings() {
     settings["Seasons"]["Winter 2025"] = IsUsing_Winter2025Maps;
     settings["Seasons"]["Spring 2025"] = IsUsing_Spring2025Maps;
     settings["Seasons"]["Summer 2025"] = IsUsing_Summer2025Maps;
+
+    settings["Seasons"]["Discovery"] = Json::Object();
+
+    settings["Seasons"]["Discovery"]["Snow"] = IsUsing_AllSnowDiscovery;
+    settings["Seasons"]["Discovery"]["Rally"] = IsUsing_AllRallyDiscovery;
+    settings["Seasons"]["Discovery"]["Desert"] = IsUsing_AllDesertDiscovery;
 
     // Not on the discord
     // settings["Alterations"]["Not on Discord"]["Hard"] = IsUsing_Hard; // Is actally Lunatic

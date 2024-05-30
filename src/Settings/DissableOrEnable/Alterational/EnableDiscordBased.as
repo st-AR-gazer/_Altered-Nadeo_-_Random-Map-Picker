@@ -78,6 +78,9 @@ void SelectAlteredEnviroments() {
     IsUsing_Rally_CP1_is_End = true;
     IsUsing_Rally_Underwater = true;
     IsUsing_Rally_Icy = true;
+    IsUsing_Desert_ = true;
+    IsUsing_Desert_Carswitch = true;
+    IsUsing_Desert_Underwater = true;
 }
 
 void SelectAlteredMulti() {

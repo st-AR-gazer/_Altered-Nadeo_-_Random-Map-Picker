@@ -7,9 +7,9 @@ void DeselectOrSelectAllDiscoveryCampaigns(bool shouldSelect) {
 }
 
 void DeselectDiscoveryCampaigns() {
-    IsUsing_AllSnowDiscovery = true;
-    IsUsing_AllRallyDiscovery = true;
-    IsUsing_AllDesertDiscovery = true;
+    IsUsing_AllSnowDiscovery = false;
+    IsUsing_AllRallyDiscovery = false;
+    IsUsing_AllDesertDiscovery = false;
 }
 
 void SelectDiscoveryCampaigns() {

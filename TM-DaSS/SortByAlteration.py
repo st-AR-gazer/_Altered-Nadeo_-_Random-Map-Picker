@@ -163,6 +163,8 @@ alterations_dict = {
     "[Rally] Icy": ["Icy [Rally]", "[Rally] Icy", "Ricy"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
+    "[Desert] Carswitch": ["Desertcarswitch"],
+    "[Desert] Underwater": ["(DesertCar UW)", "(Desert Car UW)", "[Desert] (UW)"],
     
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
     "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
@@ -309,6 +311,15 @@ rally_discovery_maps = [
     "RallyOnRoad", "TransforMania", "DeepEase", "ClassicRally",
     "Radium", "WetRally", "FrostyMorning", "Rastic", "Offroad",
     "MixedStage", "Snolly", "IAmSpeed2", "PowerStage"
+]
+
+desert_discovery_maps = [
+    "DesertIsBack", "PlatformJourney", "Wiggle", "DesertOnRoad", 
+    "Originals", "NewLoops", "DesertC1Reloaded", "A08Lover",
+    "DesertDirt", "2Cars2Laps", "GrassyDesert", "DesTech",
+    "DesertCastle", "Plasert", "Dice", "WoodyDesert", "Narrow",
+    "AmericanSpeed", "Halfpipes", "DesertCity", "WetDesert",
+    "2Wheelers", "DesertLeague", "DeseRPG", "DesertMaster"
 ]
 
 official_competition_maps = [
@@ -1363,7 +1374,7 @@ sorted_maps = defaultdict(list)
 
 for filename, map_info in map_data.items():
     map_info['filename'] = filename
-    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, rally_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
+    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, rally_discovery_maps, desert_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
     if category:
         sorted_maps[category].append(map_info)
 

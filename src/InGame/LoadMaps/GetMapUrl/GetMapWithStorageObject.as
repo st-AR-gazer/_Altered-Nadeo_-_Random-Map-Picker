@@ -182,6 +182,9 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Rally_CP1_is_End             && alteration == "[rally] cp1 is end") return true;
     if (IsUsing_Rally_Underwater             && alteration == "[rally] underwater") return true;
     if (IsUsing_Rally_Icy                    && alteration == "[rally] icy") return true;
+    if (IsUsing_Desert_                      && alteration == "[desert]") return true;
+    if (IsUsing_Desert_Carswitch             && alteration == "[desert] carswitch") return true;
+    if (IsUsing_Desert_Underwater            && alteration == "[desert] underwater") return true;
 
     if (IsUsing_Checkpointless_Reverse       && alteration == "checkpointless reverse") return true;
     if (IsUsing_Ice_Reverse                  && alteration == "ice reverse") return true;

@@ -376,6 +376,7 @@ void RenderDiscoveryCampaigns() {
 
     RenderS_SnowDiscovery();
     RenderS_RallyDiscovery();
+    RenderS_DesertDiscovery();
 
     if (UI::Button("Enable All discovery campaign settings")) { SelectDiscoveryCampaigns(); }
     if (UI::Button("Disable All discovery campaign settings")) { DeselectDiscoveryCampaigns(); }
@@ -383,6 +384,7 @@ void RenderDiscoveryCampaigns() {
 
 void RenderS_SnowDiscovery() {  IsUsing_AllSnowDiscovery =  UI::Checkbox("Snow Discovery", IsUsing_AllSnowDiscovery); }
 void RenderS_RallyDiscovery() { IsUsing_AllRallyDiscovery = UI::Checkbox("Rally Discovery", IsUsing_AllRallyDiscovery); }
+void RenderS_DesertDiscovery() { IsUsing_AllDesertDiscovery = UI::Checkbox("Desert Discovery", IsUsing_AllDesertDiscovery); }
 // ############################################################################################################
 
 
@@ -566,6 +568,9 @@ void RenderS_Snow_Wood() {           IsUsing_Snow_Wood =           UI::Checkbox(
 void RenderS_Rally_() {              IsUsing_Rally_ =              UI::Checkbox("[Rally]", IsUsing_Rally_); }
 void RenderS_Rally_CP1_is_End() {    IsUsing_Rally_CP1_is_End =    UI::Checkbox("[Rally] CP1 is End", IsUsing_Rally_CP1_is_End); }
 void RenderS_Rally_Underwater() {    IsUsing_Rally_Underwater =    UI::Checkbox("[Rally] Underwater", IsUsing_Rally_Underwater); }
+void RenderS_Desert_() {             IsUsing_Desert_ =             UI::Checkbox("[Desert]", IsUsing_Desert_); }
+void RenderS_Desert_Carswitch() {    IsUsing_Desert_Carswitch =    UI::Checkbox("[Desert] Carswitch", IsUsing_Desert_Carswitch); }
+void RenderS_Desert_Underwater() {   IsUsing_Desert_Underwater =   UI::Checkbox("[Desert] Underwater", IsUsing_Desert_Underwater); }
 // ############################################################################################################
 
 
@@ -897,6 +902,12 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Rally_CP1_is_End);
     alterationNames.InsertLast("[Rally] Underwater");
     alterationFuncs.InsertLast(@RenderS_Rally_Underwater);
+    alterationNames.InsertLast("[Desert]");
+    alterationFuncs.InsertLast(@RenderS_Desert_);
+    alterationNames.InsertLast("[Desert] Carswitch");
+    alterationFuncs.InsertLast(@RenderS_Desert_Carswitch);
+    alterationNames.InsertLast("[Desert] Underwater");
+    alterationFuncs.InsertLast(@RenderS_Desert_Underwater);
     
     // Multi
     alterationNames.InsertLast("100% Wet-Icy-Wood");
@@ -1050,6 +1061,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_SnowDiscovery);
     alterationNames.InsertLast("Rally Discovery");
     alterationFuncs.InsertLast(@RenderS_RallyDiscovery);
+    alterationNames.InsertLast("Desert Discovery");
+    alterationFuncs.InsertLast(@RenderS_DesertDiscovery);
 
     // Seasonal
     alterationNames.InsertLast("Spring 2020");

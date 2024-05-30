@@ -134,7 +134,7 @@ This part of the documentation tackles how to update the Python sorting script, 
 
 ## Step 1
 
-Navigate to `TMDownloadingAndSortingMaps/SortByAlteration.py` and locate the dictionary `alterations_dict`. The structure here is similar to what was previously discussed, with each alteration 'sorted' by name. Please add your alteration to the correct location.
+Navigate to `TM-DaSS/SortByAlteration.py` and locate the dictionary `alterations_dict`. The structure here is similar to what was previously discussed, with each alteration 'sorted' by name. Please add your alteration to the correct location.
 
 ```py
 dict = [

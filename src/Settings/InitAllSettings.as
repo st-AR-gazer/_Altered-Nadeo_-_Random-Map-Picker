@@ -205,6 +205,7 @@ bool IsUsing_Stadium_ = false;
 [Setting category="Alteration" name="[Stadium] Wet Wood"]
 bool IsUsing_Stadium_Wet_Wood = false;
 
+
 [Setting category="Alteration" name="[Snow]"]
 bool IsUsing_Snow_ = false;
 
@@ -226,6 +227,7 @@ bool IsUsing_Snow_Wet_Plastic = false;
 [Setting category="Alteration" name="[Snow] Wood"]
 bool IsUsing_Snow_Wood = false;
 
+
 [Setting category="Alteration" name="[Rally]"]
 bool IsUsing_Rally_ = false;
 
@@ -240,6 +242,17 @@ bool IsUsing_Rally_Underwater = false;
 
 [Setting category="Alteration" name="[Rally] Ice"] // Not added yet
 bool IsUsing_Rally_Icy = false;
+
+
+[Setting category="Alteration" name="[Desert]"]
+bool IsUsing_Desert_ = false;
+
+[Setting category="Alteration" name="[Desert] Carswitch"]
+bool IsUsing_Desert_Carswitch = false;
+
+[Setting category="Alteration" name="[Desert] Underwater"]
+bool IsUsing_Desert_Underwater = false;
+
 
 // Multi Alterations
 
