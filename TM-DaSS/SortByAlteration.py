@@ -148,16 +148,16 @@ special_cases_array = [
 alterations_dict = {
     #"xx-But": "XX-But",
 
-    "[Snow]": ["[Snow]", "SnowCar", "CarSnow"],
-    "[Snow] Carswitch": ["Carswitch", "Snowcarswitch"],
+    "[Snow]": ["[Snow]", "SnowCar", "CarSnow", "(SC)", "(Snow)"],
+    "[Snow] Carswitch": ["Carswitch", "Snowcarswitch", "(CS-SC)", "(CS_SC)", "(CS-SC 2)", "Car Switch"],
     "[Snow] Checkpointless": ["Checkpointless snow", "[Snow] Checkpointless", "[Snow] cpless"],
     "[Snow] Icy": ["Icy [Snow]", "[Snow] Icy"],
     "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)"],
     "[Snow] Wet-Plastic": ["(Snow) Wet-Plastic"],
     "[Snow] Wood": ["[Snow] Wood"],
 
-    "[Rally]": ["[Rally]", "RallyCar", "CarRally"],
-    "[Rally] Carswitch": ["Rallycarswitch"],
+    "[Rally]": ["[Rally]", "RallyCar", "CarRally", "(RC)"],
+    "[Rally] Carswitch": ["Rallycarswitch", "(CS-RC)", "(RC-SC)", "(CS-Rally)"],
     "[Rally] CP1 is End": ["[Rally] CP1 is End", "RallyCar CP1 is End", "Rally CP1-End", "Rally CP1End", "Rally CP1 Ends", "Rally Cp1 is End"],
     "[Rally] Underwater": ["[Rally] (UW)"],
     "[Rally] Icy": ["Icy [Rally]", "[Rally] Icy", "Ricy"],
@@ -173,7 +173,7 @@ alterations_dict = {
 
     "1 Down": ["1 Down", "1-Down", "1Down", ],
     # "1 Forward": ["1 Forward", "1-Forward", "1Forward"], # This is not included since it is the same as 1-back
-    "1 Back": ["1 Back", "1-Back", "1Back", "1 Forward", "1-Forward", "1Forward"],
+    "1 Back": ["1 Back", "1-Back", "1Back", "1 Forward", "1-Forward", "1Forward", "1-For"],
     "1 Left": ["1 Left", "1-Left", "1Left"],
     "1 Right": ["1 Right", "1-Right", "1Right"],
     "1 Up": ["1 Up", "1-Up", "1Up"],
@@ -195,13 +195,13 @@ alterations_dict = {
     "Checkpoin't": ["Checkpoin't"],
     "Cleaned": ["Cleaned"],
     "Colours Combined": ["White Combined", "Green Combined", "Blue Combined", "Red Combined", "Black Combined"],
-    "CP_Boost": ["CP-Boost Swap"],
-    "CP1 is End": ["CP1 is End", "CP1isEnd", "CP1-End", "CP1End", "CP1 Ends", "Cp is End"],
+    "CP_Boost": ["CP-Boost Swap", "CP-Boost"],
+    "CP1 is End": ["CP1 is End", "CP1isEnd", "CP1-End", "CP1End", "CP1 Ends", "Cp is End", "(CP1)"],
     "CP1 Kept": ["CP1 Kept"],
     "CPfull": ["CPfull"],
     "Checkpointless": ["Checkpointless", "CPLess"],
     "Checkpointless Reverse": ["CPLess, Reverse", "Checkpointless Reverse"],
-    "Chinese": ["训练", "\u590f\u5b63\u8d5b"],
+    "Chinese": ["训练", "夏季赛", "秋季", "\u590f\u5b63\u8d5b"],
     "CPLink": ["CPLink"],
     "Cruise": ["Cruise", "Cruise Control"],
 
@@ -376,7 +376,7 @@ special_uids = [
     
         {"uid": "7QzByRVA_7pLuA_aFJgJR_Z0wOk", "name": "Spring 2022 - 11 - one back", "season": "spring", "year": "2022", "alteration": "1 Back"},
     
-    
+        {"uid": "b6O3DzBzsbc9UZ5hCh2jPdpOc3m", "name": "Hanging Gardens", "season": "", "year": "", "alteration": "!OfficialNadeo"}, # This map is not altered for some reason, but still tracked by the bot xdd
     
     
     
@@ -511,6 +511,18 @@ special_uids = [
         {"uid": "6bVv4KhilzFHCFk3PClocolZ73m", "name": "Winter 2024 - 02 Sky Route (ft QuentinTM15)",       "season": "Winter",     "year": "2024", "alteration": "XX-But"},
         {"uid": "xJ5VEftIKJarxzgO_BegtM_33q2", "name": "Winter 2024 - 12 Waterblockless",                   "season": "Winter",     "year": "2024", "alteration": "XX-But"},
         {"uid": "wnOFvy3EvZo1MscWfJN6IPyH4qi", "name": "Snowy Spring 2022 - 01",                            "season": "Spring",     "year": "2022", "alteration": "XX-But"},
+        {"uid": "Opeb4xdBhnrV3FmujrSIdanUlKc", "name": "Training - 03", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "XmHewrZgPYuOMdayCqdVC2m9uLc", "name": "Training - 22", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "JJ9Wl4hOLHjDnhdetd6YQVDP7p6", "name": "Training - 04", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "Jy_EycdRYyaiRTNL4NVZXWf5WKi", "name": "Training - 12", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "Acvwm862NSXE269rvVMG3zy5bo1", "name": "Training - 01", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "H8PHUMH09OnMZcXej8qSVz203Hg", "name": "Training - 24", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "m0IWzk7vXtlwKUi2OlxP9_TQx6e", "name": "Training - 02", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "S2WFEsnrvPpv2tihkpzQLnQfSh",  "name": "Training - 21", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "x2csx3ZBLs7aQFgY7lnbaxWTxce", "name": "Training - 14", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "OBbi9iaAyrNHglNAOpEet8b4OTg", "name": "Training - 23", "season": "Training", "year": "2020", "alteration": "XX-But"},
+        {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
@@ -519,6 +531,8 @@ special_uids = [
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
 
     #},
+    # No clue where to sort this one xdd
+    {"uid": "XNwn955QsvkoeeLHWoHsTy5Qf9m", "name": "Wet Stastic", "season": "", "year": "", "alteration": "Wet Plastic"},
 
     # Placeholder Maps
     {"uid": "Vjhu6a1GXWJGJbNJydlZtC2MOtj", "name": "PLACEHOLDER 04", "season": "spring", "year": "2023", "alteration": "1-UP", "obtainable": False},
@@ -607,6 +621,67 @@ special_uids = [
     {"uid": "v0dp0xtQaxrxjKexTFuGWRp6Oh8", "name": "Summer 2021 - 18",   "season": "Summer",    "year": "2021", "alteration": "No-Steer"},
     {"uid": "ZQppf58f_mD3ZZQTyJ_1MEs_sti", "name": "Training - 21 & 24", "season": "Training",  "year": "",     "alteration": "Wood"},
     
+    {"uid": "Zg_1ydkKTRMD4R9UFqsMrMqn4A3", "name": "S03",                "season": "Spring",    "year": "2020", "alteration": "Reverse"},
+    
+    
+    
+    {"uid": "eel8_EPf_Hn1s9sCanaqp1xF4b8", "name": "Summer 2021 - 18", "season": "Summer", "year": "2021", "alteration": "Cruise"},
+    {"uid": "KPGV2ghblPRnxrJkD11yf6qdCkj", "name": "Summer 2021 - 12", "season": "Summer", "year": "2021", "alteration": "Cruise"},
+    {"uid": "u8VoD9rHPv547FJMMazOL_wo6A1", "name": "S12", "season": "Spring", "year": "2020", "alteration": "Reverse"},
+    {"uid": "woXxcPp_GfvauQJaA0wrZO_oIK4", "name": "S08", "season": "Spring", "year": "2020", "alteration": "Reverse"},
+    {"uid": "7WJZaMgVTGVJXjIMKmUoxYfmQMl", "name": "Fall 2021 - 21", "season": "Fall", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "CLwDt0ynEBmFh8MoyVp8UCv2aB9", "name": "Fall 2021 - 25", "season": "Fall", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "6JnllgeKMdKUq5mZaVHw7Dpz1M4", "name": "Summer 2021 - 16", "season": "Summer", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "fnNDpWBRiHad93HfR7kTf7bOW2l", "name": "Summer 2021 - 15", "season": "Summer", "year": "2021", "alteration": "Cruise"},
+    {"uid": "ZY1Gmf1oTCFDONgz_SOhWLLiuSm", "name": "T06", "season": "Spring", "year": "2020", "alteration": "Reverse"},
+    {"uid": "Rf5PtiR_NnuecHydxwA2v6V0Z_a", "name": "Summer 2021 - 17", "season": "Summer", "year": "2021", "alteration": "Reactor Down"},
+    {"uid": "FyUiQPmY5PyE39NFdFBY5fpihM3", "name": "Summer 2021 - 11", "season": "Summer", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "bIitIR1N27OWl3QZLzx9znFgVb",  "name": "Summer 2021 - 21", "season": "Summer", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "AoNcppkcA__lSld73PJ84283Uih", "name": "Fall 2021 - 12", "season": "Fall", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "eq4DGhHB0Se1yRJXdiU2HxltFKb", "name": "Fall 2021 - 18", "season": "Fall", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "joT0AZGpibdmRUmzrIqSmc_Uxjf", "name": "Summer 2021 - 19", "season": "Summer", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "Zzrd_pwXouEVQ05h51CSct7nnOb", "name": "Summer 2021 - 02", "season": "Summer", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "3WXuDt1AhZhXKj2c62Ij2_Bavlf", "name": "Fall 2021 - 13", "season": "Fall", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "mJVEqizH6oQOGPHnLwcQNVbYCBf", "name": "Summer 2021 - 10", "season": "Summer", "year": "2021", "alteration": "Reactor Down"},
+    {"uid": "afK6OKI38xQ6N41xiSBfHw3uIr7", "name": "Summer 2021 - 09", "season": "Summer", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "XFsI6xx8Uc6t3nJFtGhUenPIBre", "name": "Summer 2021 - 23", "season": "Summer", "year": "2021", "alteration": "Reactor Down"},
+    {"uid": "MhJt0P2qbgCZkRD7uqVlYIEEW7h", "name": "Summer 2021 - 05", "season": "Summer", "year": "2021", "alteration": "Glider"},
+    {"uid": "YF5SfwmvkRIEFVzSBmIJhzgaHTf", "name": "Summer 2021 - 08", "season": "Summer", "year": "2021", "alteration": "Cruise"},
+    {"uid": "yPVNLTjIHGWzDuW1ArL4cYjmGb4", "name": "Summer 2021 - 13", "season": "Summer", "year": "2021", "alteration": "Glider"},
+    {"uid": "9rQ4FKhYa5Kr9ZEDeEYfpZxV0Ll", "name": "Fall 2021 - 04", "season": "Fall", "year": "2021", "alteration": "Backwards"},
+    {"uid": "8HY8dhfqtWIhFEGKVJy4TTjMw0j", "name": "Fall 2021 - 08", "season": "Fall", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "ISJJmfYt1nysRW2GDCgbwCgpKig", "name": "Fall 2021 - 07", "season": "Fall", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "2UEXEgsFePjEC9DTfBqkujTdZ5j", "name": "Summer 2021 - 14", "season": "Summer", "year": "2021", "alteration": "Reactor Down"},
+    {"uid": "7t5vFV2J8KmfX0zUVzOpaoGV799", "name": "Summer 2021 - 07", "season": "Summer", "year": "2021", "alteration": "No-Steer"},
+    {"uid": "SGH8YtGFvkbPjcSiT9Ss1n1ptD6", "name": "Summer 2021 - 03", "season": "Summer", "year": "2021", "alteration": "Cruise"},
+    {"uid": "2DRQpwiZdaPQlefieAN9j1D_wjd", "name": "Fall 2021 - 06", "season": "Fall", "year": "2021", "alteration": "Reactor Up"},
+    {"uid": "zQGGtaATdOjBTnRj0znrvMhD7Nf", "name": "T02", "season": "Spring", "year": "2020", "alteration": "Reverse"},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+    
+    
     {"uid": "RzynDC0FdpMgumqZNP8_tZGSrD4", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "alteration": "YEET Down"},
     {"uid": "ohl627uspI_HpN6myP_B4adTrQ3", "name": "Summer 2021 - 03",   "season": "Summer",    "year": "2021", "alteration": "YEET Down"},
     {"uid": "u1Gzq1xplh2YTfrgA8Ql37k4x05", "name": "Summer 2021 - 04",   "season": "Summer",    "year": "2021", "alteration": "YEET Down"},
@@ -646,9 +721,6 @@ special_uids = [
 
 
 
-
-
-
     # Maps that are unsortable...
     {"uid": "CkfEfVakPo2LqnTY3Th5Je9ErU0", "name": "Roady Summer 2022 - 02", "season": "Summer", "year": "2022", "alteration": "Road"}, # Actual name: "$s$666R$777oa$777d$888y $FFFSummer 2022 - 02" Filename is also broken...
 
@@ -657,11 +729,8 @@ special_uids = [
     
     
     
-    
-    
-    
-    
-    
+    # Wanted to be dificult...
+    {"uid": "ebt0BnmMen3fOBxWfQM9joRc1il", "name": "Yumi_05 (CS_SC)", "season": "", "year": "", "alteration": "[Snow] Carswitch"},
     
     
     # a08 maps
@@ -853,12 +922,66 @@ special_uids = [
         {"uid": "GXY3_DkrkGSceiut44HOz8LJP52", "name": "SummerSnow",   "season": "[Snow] Discovery", "year": "", "alteration": "!OfficialNadeo"},
 
 
+        # Rally
+        
+        {"uid": "HGSCrK2nwP2Eh832FcLchg2mlb1", "name": "RallyIsBack", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "xilvEhY102bUWPfViuA5L3R2Kkf", "name": "RallyB1 Reloaded", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "8GlfeTOKo8a6nR4Odck6hkR1QZj", "name": "BumpyRally", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "Bm8fJqCkEQ5mcGpGGKrii14wUqk", "name": "CastleWall", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "IhErO1M1iVnixXq3NApG0RcDcnh", "name": "GrippyRally", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "61Cb4gy3SfeyBKw_j7Se_dyTBQ5", "name": "NightWatch", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "XezcEHaLwsg_fnoLjEFNznnDpw4", "name": "NewSlopes", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "7S_oNjIByPmiGntUVZMELyZ14P3", "name": "GreenStage", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "Q471TU01FyT9VV1FdjGXtfretZk", "name": "RallyC1 Reloaded", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "JaUjuuasJ8RL4gyrMhig4uEwBPa", "name": "2laps2cars", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "VKOlGdlgC7OgToUFIao5co59EH1", "name": "Ralleigh", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "o3D8x7IWMKVgTzhsiyjqmGgbzN3", "name": "Dirt2024", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "ckjTde14KsIc2cHxGlXK75AgQOb", "name": "RallyOnRoad", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "iZCoRIkKAc14rTJRCBjrV6vDBkf", "name": "TransforMania", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "Du_OOTkcbUalZmS7s79ZUkikVF6", "name": "DeepEase", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "bWVms5_bPiwl3H3bNYl07LvM4J6", "name": "ClassicRally", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "3EkrdohP6AJCEzxHJU6uvCQBTec", "name": "Radium", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "QRd2bKEn4YKh1UxbOEnKMCuEGO6", "name": "WetRally", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "IuCucvPFLp52uJZIRqflo3sbYvb", "name": "FrostyMorning", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "l7IW0BUowKNjYrlGXJyA_KpRPae", "name": "Rastic", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "PBDgf2SRll910V3uVWNbLTdnPTh", "name": "Offroad", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "nmMTbUlWA4W1Gu1VkUPBneYC6z2", "name": "MixedStage", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "22YV1ObuEvAlIEpJdc8fBun0lfl", "name": "Snolly", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "9RGxBYGb8VHrIlFrqlxLUOdYRZ6", "name": "IAmSpeed2", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "tnNJA5BXhWlAhEGjIciOp9DsHWd", "name": "PowerStage", "season": "[Rally] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        
+        
+
         # Desert
 
-
-        # Rally
-
-
+        {"uid": "xzY9JKSrP9Wg3qGrunyllyu4fUf", "name": "DesertIsBack", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "O4aWriFTlMtENwKofv2f0BGuCCi", "name": "PlatformJourney", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "ZcracoVBcAu_ldBATdSLtZnwSJ8", "name": "Wiggle", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "HFbt01ySp2kPnmK5kDzEIoutYwe", "name": "DesertOnRoad", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "P8grKUznYVAgi1U3lKo9m3t8OR2", "name": "Originals", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "kBeoGmgo1bqygFui5JGL6MQxlhl", "name": "NewLoops", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "dBvRKMP0Yg4rWiXYT0hRqRDBWP7", "name": "DesertC1Reloaded", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "v1LuD_AGWG3xU8kMzFH6wIzSvd2", "name": "A08Lover", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "KxzNBXNEtZhW3UBow4oHoziA3Gf", "name": "DesertDirt", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "wcBinsz_DydN8VB0Y41vcw3kRvc", "name": "2Cars2Laps", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "Nh1TorW3Q4ZdaXDh_oi_YAEr6E0", "name": "GrassyDesert", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "MfBIJrSNereFEJD0B3VSsIXTnp2", "name": "DesTech", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "aQPGV2uHsqSZSuSlXvwxeNCKU0e", "name": "DesertCastle", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "ve5XEfkftLwJYjDwAhFCAYb7cgg", "name": "Plasert", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "TgjzqTC6qjqcIsOGsHqFJbjhy43", "name": "Dice", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "QmNwqDRyYlggRMraH5kSET2_JA5", "name": "WoodyDesert", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "7d54WAjpiwZqs9bld1Q8tJvLsii", "name": "Narrow", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "s5hzSABb5TADEqpeIxyzIEf_zmj", "name": "AmericanSpeed", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "5mfPYLOvs1kGeVhbJMSBrtmITU1", "name": "Halfpipes", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "bGM9cN_zL72SA471A6ucRYta0Q3", "name": "DesertCity", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "5uAJUkSane6DkjVOzIf8hLuPt_h", "name": "WetDesert", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "UVFFodi3yHv3SxpBT7Ylf31XhV", "name": "2Wheelers", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "ZXGBx5tWeHdQNwGzT2HG79hte6m", "name": "DesertLeague", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "ujHQhw95Lrct1A6oyFEqSU0QcYc", "name": "DeseRPG", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        {"uid": "uV5dbR7b0mgk6JUGYM1wjzlkmw9", "name": "DesertMaster", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
+        
+        
+        
 
         # TM2020 Campaigns
         
