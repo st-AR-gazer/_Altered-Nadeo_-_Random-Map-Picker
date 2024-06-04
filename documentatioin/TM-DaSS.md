@@ -17,7 +17,7 @@ Some files can start with a startup flag, these files are:
 `ConsolidateFilesToOne.py`,
 `SortByAlteration.py`,
 `SortBySeason.py`
-they both take the startup command -v or --verbose
+all of them take the startup command -v or --verbose
 
 
 ## Part 1: Non python files
