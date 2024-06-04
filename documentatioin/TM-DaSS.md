@@ -34,7 +34,7 @@ Files:
 `.\TM-DaSS/data.csv`
 `.\TM-DaSS/map_data.json`
 `.\TM-DaSS/processed_uids.txt`
-`.\TM-DaSS/({Alterations}/{Seasons})/({alteration}/{season}).json
+`.\TM-DaSS/({Alterations}/{Seasons})/({alteration}/{season}).json`
 
 ### Active
 
