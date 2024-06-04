@@ -30,9 +30,11 @@ Folders:
 `.\TM-DaSS/BySeason`
 `.\TM-DaSS/ConsolidatedMaps`
 
+Files:
 `.\TM-DaSS/data.csv`
 `.\TM-DaSS/map_data.json`
 `.\TM-DaSS/processed_uids.txt`
+`.\TM-DaSS/({Alterations}/{Seasons})/({alteration}/{season}).json
 
 ### Active
 
@@ -42,7 +44,7 @@ Here is what each of the folders and maps are used for.
 `.\TM-DaSS/BySeason` is much of the same, it stores all the downloaded season files, but this time the downloaded maps are stored by season.
 How this is utilized will be explained more in `Part 2: The Python Files`.
 
-.\TM-DaSS/ConsolidatedMaps is used in conjunction with `ConsolidateFilesToOne.py`, for now, you should know that this folder is used to store the final output (as well as error logs for the final merge in case something goes wrong).
+`.\TM-DaSS/ConsolidatedMaps` is used in conjunction with `ConsolidateFilesToOne.py`, for now, you should know that this folder is used to store the final output (as well as error logs for the final merge in case something goes wrong).
 
 `.\TM-DaSS/data.csv` is the file containing a list of all the Altered Nadeo maps tracked by the Altered Nadeo WR bot. This file is received from Kovca. (Kovacs).
 
