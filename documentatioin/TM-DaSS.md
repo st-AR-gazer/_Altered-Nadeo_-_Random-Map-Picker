@@ -13,7 +13,7 @@ Then we go over how to use the scripts (`Part 3: How to use the scripts`).
 ### Startup commands
 
 Some files can start with a startup flag, these files are:
-`STAET_V2.py`,
+`START_V2.py`,
 `ConsolidateFilesToOne.py`,
 `SortByAlteration.py`,
 `SortBySeason.py`
