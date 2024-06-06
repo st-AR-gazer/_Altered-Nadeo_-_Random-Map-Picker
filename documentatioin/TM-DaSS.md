@@ -59,7 +59,7 @@ How this is utilized will be explained more in `Part 2: The Python Files`.
 `.\TM-DaSS/DownloadFromNadeo.py`
 `.\TM-DaSS/SortByAlteration.py`
 `.\TM-DaSS/SortBySeason.py`
-`.\TM-DaSS/SART_V2.py`
+`.\TM-DaSS/START_V2.py`
 
 ### Active
 
