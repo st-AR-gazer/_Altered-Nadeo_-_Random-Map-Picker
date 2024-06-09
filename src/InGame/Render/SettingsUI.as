@@ -8,7 +8,7 @@ string g_searchBar = "";
 void RenderInterface() {
     if (!showInterface) return;
 
-    if (UI::Begin(_col::ColorizeString({"Altered", " ", "Nadeo"}) + "\\$z Random Map Picker", showInterface, UI::WindowFlags::AlwaysAutoResize)) {
+    if (UI::Begin(Colorize({"Altered", " ", "Nadeo"}) + "\\$z Random Map Picker", showInterface, UI::WindowFlags::AlwaysAutoResize)) {
 
         if (useStorageObjectOverUID && !IO::FileExists(IO::FromStorageFolder("Data/consolidated_maps.json"))) {
             UI::Text("Using Storage Object is disabled untill consolidated_maps.json is downloaded from ManiaCDN.");
