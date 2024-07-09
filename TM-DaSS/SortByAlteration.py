@@ -147,6 +147,11 @@ special_cases_array = [
 
 alterations_dict = {
     #"xx-But": "XX-But",
+    
+    "[Race]": ["[Race]"],
+    "[Stunt]": ["[Stunt]"],
+    
+    # 
 
     "[Snow]": ["[Snow]", "SnowCar", "CarSnow", "(SC)", "(Snow)"],
     "[Snow] Carswitch": ["Carswitch", "Snowcarswitch", "(CS-SC)", "(CS_SC)", "(CS-SC 2)", "Car Switch"],
@@ -242,6 +247,7 @@ alterations_dict = {
     "No Brakes": ["No-brakes", "NoBrakes", "No Brakes"],
     "No Grip": ["No Grip", "No-grip", "NoGrip"],
     "No Gear 5": ["No gear 5", "NoGear5", "No-Gear5", "No-Gear 5", "No Gear5", "No-Gear-5"],
+    "No Items": ["NoItems"],
     "Penalty": ["Penalty"],
     "Podium": ["Podium"],
     "Pipe": ["Pipe"],
