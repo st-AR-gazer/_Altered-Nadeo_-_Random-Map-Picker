@@ -60,7 +60,7 @@ New API update, added:
    - Return Type: `void`
 	 
 
-3.3.0 -
+3.0.0 -
 New API update
 Functions are new in the AN namespace, so you need to call them with AN:: before the function name.
 

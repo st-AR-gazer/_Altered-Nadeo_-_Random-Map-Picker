@@ -12,6 +12,7 @@ void DeselectAllSettings() {
     DeselectAlteredEffects();
     DeselectAlteredFinishLocation();
     DeselectAlteredEnviroments();
+    DeselectAlteredGameModes();
     DeselectAlteredMulti();
     DeselectAlteredOther();
     DeselectAlteredExtraCampaigns();

@@ -12,6 +12,7 @@ void SelectAllSettings() {
     SelectAlteredEffects();
     SelectAlteredFinishLocation();
     SelectAlteredEnviroments();
+    SelectAlteredGameModes();
     SelectAlteredMulti();
     SelectAlteredOther();
     SelectAlteredExtraCampaigns();
