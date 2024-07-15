@@ -75,11 +75,13 @@ void RenderInterface() {
         UI::SameLine();
         if (UI::Button("Enviroments")) activeTab = 11;
         UI::SameLine();
-        if (UI::Button("Multi")) activeTab = 12;
+        if (UI::Button("Game Mode")) activeTab = 12;
         UI::SameLine();
-        if (UI::Button("Other")) activeTab = 13;
+        if (UI::Button("Multi")) activeTab = 13;
         UI::SameLine();
-        if (UI::Button("Extra")) activeTab = 14;
+        if (UI::Button("Other")) activeTab = 14;
+        UI::SameLine();
+        if (UI::Button("Extra")) activeTab = 15;
 
         UI::Separator();
 
@@ -120,16 +122,19 @@ void RenderInterface() {
             case 11:
                 RenderEnviroments();
                 break;
-            case 12:
-                RenderMulti();
+            case12:
+                RenderGameMode();
                 break;
             case 13:
-                RenderAlterationalOther();
+                RenderMulti();
                 break;
             case 14:
-                RenderExtra();
+                RenderAlterationalOther();
                 break;
             case 15:
+                RenderExtra();
+                break;
+            case 16:
                 RenderSearch();
                 break;
 
@@ -575,6 +580,24 @@ void RenderS_Desert_Underwater() {   IsUsing_Desert_Underwater =   UI::Checkbox(
 
 
 // ############################################################################################################
+
+void RenderGameMode() {
+    UI::Text("All the altered nadeo game mode alterations");
+
+    RenderS_Race_();
+    RenderS_Stunt_();
+
+    if (UI::Button("Enable All game mode settings")) { SelectAlteredGameMode(); }
+    if (UI::Button("Disable All game mode settings")) { DeselectAlteredGameMode(); }
+}
+
+void RenderS_Race_() {  IsUsing_Race_ =  UI::Checkbox("Race", IsUsing_Race_); }
+void RenderS_Stunt_() { IsUsing_Stunt_ = UI::Checkbox("Stunt", IsUsing_Stunt_); }
+
+// ############################################################################################################
+
+
+// ############################################################################################################
 void RenderMulti() { 
     UI::Text('All the altered nadeo multi alterations');
 
@@ -658,6 +681,7 @@ void RenderAlterationalOther() {
     RenderS_Lunatic();
     RenderS_Mini_RPG();
     RenderS_Mirrored();
+    RenderS_No_Items();
     RenderS_Pool_Hunters();
     RenderS_Random();
     RenderS_Ring_CP();
@@ -712,6 +736,7 @@ void RenderS_Holes() {                      IsUsing_Holes =                     
 void RenderS_Lunatic() {                    IsUsing_Lunatic =                    UI::Checkbox("Lunatic", IsUsing_Lunatic); }
 void RenderS_Mini_RPG() {                   IsUsing_Mini_RPG =                   UI::Checkbox("Mini-RPG", IsUsing_Mini_RPG); }
 void RenderS_Mirrored() {                   IsUsing_Mirrored =                   UI::Checkbox("Mirrored", IsUsing_Mirrored); }
+void RenderS_No_Items() {                   IsUsing_No_Items =                   UI::Checkbox("No Items", IsUsing_No_Items); }
 void RenderS_Pool_Hunters() {               IsUsing_Pool_Hunters =               UI::Checkbox("Pool Hunters", IsUsing_Pool_Hunters); }
 void RenderS_Random() {                     IsUsing_Random =                     UI::Checkbox("Random", IsUsing_Random); }
 void RenderS_Ring_CP() {                    IsUsing_Ring_CP =                    UI::Checkbox("Ring CP", IsUsing_Ring_CP); }
@@ -908,6 +933,12 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Desert_Carswitch);
     alterationNames.InsertLast("[Desert] Underwater");
     alterationFuncs.InsertLast(@RenderS_Desert_Underwater);
+
+    // Game Modes
+    alterationNames.InsertLast("Race");
+    alterationFuncs.InsertLast(@RenderS_Race_);
+    alterationNames.InsertLast("Stunt");
+    alterationFuncs.InsertLast(@RenderS_Stunt_);
     
     // Multi
     alterationNames.InsertLast("100% Wet-Icy-Wood");
@@ -1012,6 +1043,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Mini_RPG);
     alterationNames.InsertLast("Mirrored");
     alterationFuncs.InsertLast(@RenderS_Mirrored);
+    alterationNames.InsertLast("No Items");
+    alterationFuncs.InsertLast(@RenderS_No_Items);
     alterationNames.InsertLast("Pool Hunters");
     alterationFuncs.InsertLast(@RenderS_Pool_Hunters);
     alterationNames.InsertLast("Random");

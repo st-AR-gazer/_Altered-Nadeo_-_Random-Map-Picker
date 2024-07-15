@@ -83,6 +83,11 @@ void DeselectAlteredEnviroments() {
     IsUsing_Desert_Underwater = false;
 }
 
+void DeselectAlteredGameModes() {
+    IsUsing_Race_ = false;
+    IsUsing_Stunt_ = false;
+}
+
 void DeselectAlteredMulti() {
     IsUsing_100WetIcyWood = false;
     IsUsing_Checkpointless_Reverse = false;
@@ -136,6 +141,7 @@ void DeselectAlteredOther() {
     IsUsing_Lunatic = false;
     IsUsing_Mini_RPG = false;
     IsUsing_Mirrored = false;
+    IsUsing_No_Items = false;
     IsUsing_Pool_Hunters = false;
     IsUsing_Random = false;
     IsUsing_Ring_CP = false;

@@ -193,6 +193,9 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Desert_Carswitch             && alteration == "[desert] carswitch") return true;
     if (IsUsing_Desert_Underwater            && alteration == "[desert] underwater") return true;
 
+    if (IsUsing_Race_                        && alteration == "[Race]") return true;
+    if (IsUsing_Stunt_                       && alteration == "[Stunt]") return true;
+
     if (IsUsing_Checkpointless_Reverse       && alteration == "checkpointless reverse") return true;
     if (IsUsing_Ice_Reverse                  && alteration == "ice reverse") return true;
     if (IsUsing_Ice_Reverse_Reactor          && alteration == "ice reverse reactor") return true;
@@ -238,6 +241,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Lunatic                      && alteration == "lunatic") return true;
     if (IsUsing_Mini_RPG                     && alteration == "mini rpg") return true;
     if (IsUsing_Mirrored                     && alteration == "mirrored") return true;
+    if (IsUsing_No_Items                     && alteration == "no items") return true;
     if (IsUsing_Pool_Hunters                 && alteration == "pool hunters") return true;
     if (IsUsing_Random                       && alteration == "random") return true;
     if (IsUsing_Ring_CP                      && alteration == "ring cp") return true;
@@ -310,6 +314,8 @@ bool IsAlterationSettingActive() {
         IsUsing_Stadium_ || IsUsing_Stadium_Wet_Wood || IsUsing_Snow_ || IsUsing_Snow_Carswitch || IsUsing_Snow_Checkpointless || 
         IsUsing_Snow_Icy || IsUsing_Snow_Underwater || IsUsing_Snow_Wet_Plastic || IsUsing_Snow_Wood || IsUsing_Rally_ || IsUsing_Rally_Carswitch || 
         IsUsing_Rally_CP1_is_End || IsUsing_Rally_Underwater || IsUsing_Rally_Icy || 
+
+        IsUsing_Race_ || IsUsing_Stunt_ ||
         
         IsUsing_Checkpointless_Reverse || IsUsing_Ice_Reverse || IsUsing_Ice_Reverse_Reactor || IsUsing_Ice_Short || IsUsing_Magnet_Reverse || 
         IsUsing_Plastic_Reverse || IsUsing_Sky_is_the_Finish_Reverse || IsUsing_sw2u1l_cpu_f2d1r || IsUsing_Underwater_Reverse || 
@@ -320,7 +326,7 @@ bool IsAlterationSettingActive() {
         IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
         IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
         IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Ground_Clippers || /*IsUsing_Hard ||  // Is actally Lunatic */IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
-        IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
+        IsUsing_No_Items || IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
         IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Stunt || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
         IsUsing_YEET_Down || 
         

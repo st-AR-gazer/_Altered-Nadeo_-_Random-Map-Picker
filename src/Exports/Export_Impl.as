@@ -118,6 +118,12 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Environment"]["[Desert] Carswitch"] = IsUsing_Desert_Carswitch;
     settings["Alterations"]["Environment"]["[Desert] Underwater"] = IsUsing_Desert_Underwater;
 
+    // Altered Game Modes
+    settings["Alterations"]["Game Modes"] = Json::Object();
+
+    settings["Alterations"]["Game Modes"]["[Race]"] = IsUsing_Race_;
+    settings["Alterations"]["Game Modes"]["[Stunt]"] = IsUsing_Stunt_;
+
     // Multi Alterationss
     settings["Alterations"]["Multi"] = Json::Object();
 
@@ -172,6 +178,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Other"]["Lunatic"] = IsUsing_Lunatic;
     settings["Alterations"]["Other"]["Mini RPG"] = IsUsing_Mini_RPG;
     settings["Alterations"]["Other"]["Mirrored"] = IsUsing_Mirrored;
+    settings["Alterations"]["Other"]["No Itmes"] = IsUsing_No_Items;
     settings["Alterations"]["Other"]["Ngolo / Cacti"] = IsUsing_Ngolo_Cacti;
     settings["Alterations"]["Other"]["No Cut"] = IsUsing_No_Cut;
     settings["Alterations"]["Other"]["Pool Hunters"] = IsUsing_Pool_Hunters;
@@ -339,6 +346,9 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "[rally] underwater") { IsUsing_Rally_Underwater = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] ice") { IsUsing_Rally_Icy = t_shouldUse; }
 
+    else if (t_alteration.ToLower() == "[Race]") { IsUsing_Race_ t_shouldUse; }
+    else if (t_alteration.ToLower() == "[Stunt]") { IsUsing_Stunt_ = t_shouldUse; }
+
     else if (t_alteration.ToLower() == "100% wet icy wood") { IsUsing_100WetIcyWood = t_shouldUse; }
     else if (t_alteration.ToLower() == "checkpointless reverse") { IsUsing_Checkpointless_Reverse = t_shouldUse; }
     else if (t_alteration.ToLower() == "ice reactor") { IsUsing_Icy_Reactor = t_shouldUse; }
@@ -388,6 +398,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "lunatic") { IsUsing_Lunatic = t_shouldUse; }
     else if (t_alteration.ToLower() == "mini rpg") { IsUsing_Mini_RPG = t_shouldUse; }
     else if (t_alteration.ToLower() == "mirrored") { IsUsing_Mirrored = t_shouldUse; }
+    else if (t_alteration.ToLower() == "no itmes") { IsUsing_No_Items = t_shouldUse; }
     else if (t_alteration.ToLower() == "ngolo / cacti") { IsUsing_Ngolo_Cacti = t_shouldUse; }
     else if (t_alteration.ToLower() == "no cut") { IsUsing_No_Cut = t_shouldUse; }
     else if (t_alteration.ToLower() == "pool hunters") { IsUsing_Pool_Hunters = t_shouldUse; }

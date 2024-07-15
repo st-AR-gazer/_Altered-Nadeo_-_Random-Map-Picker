@@ -83,6 +83,11 @@ void SelectAlteredEnviroments() {
     IsUsing_Desert_Underwater = true;
 }
 
+void SelectAlteredGameModes() {
+    IsUsing_Race_ = true;
+    IsUsing_Stunt_ = true;
+}
+
 void SelectAlteredMulti() {
     IsUsing_100WetIcyWood = true;
     IsUsing_Checkpointless_Reverse = true;

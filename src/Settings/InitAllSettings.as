@@ -254,6 +254,15 @@ bool IsUsing_Desert_Carswitch = false;
 bool IsUsing_Desert_Underwater = false;
 
 
+// Altered Game Mode
+
+[Setting category="Alteration" name="Race"]
+bool IsUsing_Race_ = false;
+
+[Setting category="Alteration" name="Stunt"]
+bool IsUsing_Stunt_ = false;
+
+
 // Multi Alterations
 
 [Setting category="Alteration" name="100% Wet Icy Wood"]
@@ -398,6 +407,9 @@ bool IsUsing_Mini_RPG = false;
 
 [Setting category="Alteration" name="Mirrored"]
 bool IsUsing_Mirrored = false;
+
+[Setting category="Alteration" name="No Items"]
+bool IsUsing_No_Items = false;
 
 [Setting category="Alteration" name="Ngolo / Cacti"]
 bool IsUsing_Ngolo_Cacti = false;

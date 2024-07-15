@@ -4,6 +4,7 @@ void DeselectOrSelectAllAlterations(bool shouldSelect) {
         DeselectAlteredEffects();
         DeselectAlteredFinishLocation();
         DeselectAlteredEnviroments();
+        DeselectAlteredGameModes();
         DeselectAlteredMulti();
         DeselectAlteredOther();
             
@@ -15,6 +16,7 @@ void DeselectOrSelectAllAlterations(bool shouldSelect) {
         SelectAlteredEffects();
         SelectAlteredFinishLocation();
         SelectAlteredEnviroments();
+        SelectAlteredGameModes();
         SelectAlteredMulti();
         SelectAlteredOther();
             
