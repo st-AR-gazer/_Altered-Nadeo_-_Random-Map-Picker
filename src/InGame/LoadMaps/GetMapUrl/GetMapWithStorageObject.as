@@ -16,7 +16,14 @@ void LoadMapFromStorageObject() {
 void LoadMapsFromConsolidatedFile() {
     string filePath = IO::FromStorageFolder("Data/consolidated_maps.json");
     
+    startnew(Coro_SetAllMaps, filePath);
+}
+
+void Coro_SetAllMaps(const string &in filePath) {
+    NotifyWarn("Loading maps from the consolidated file, this may take a few moments. Do not select a random map until this process is complete!");
     allMaps = Json::FromFile(filePath);
+    log("Loaded " + allMaps.Length + " maps from the consolidated file", LogLevel::Info, 7, "Coro_SetAllMaps");
+    NotifyInfo("Loaded " + allMaps.Length + " maps from the consolidated file");
 }
 
 string FetchRandomMapUrl() {
