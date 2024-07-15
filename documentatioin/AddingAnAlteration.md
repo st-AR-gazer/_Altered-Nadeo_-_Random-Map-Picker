@@ -63,7 +63,7 @@ Make sure to ALSO add the name of the alteration to the `alterationNames` and `a
 Got to `/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as`
 This step ensures that the newly added alteration setting is recognized and processed correctly when filtering maps. The `MatchesAlterationSettings` function and `MatchSeasonalSettings` both help with determining whether a map matches the current alteration settings activated by the user. Here is how to add an alteration to them. 
 
-This should also be added to "IsAlterationSettingActive", (when it is time to update the seasonal settings, this should also be updated, but for IsSeasonSettingActive instead of alteration)
+**IMPORTANT:** This should also be added to "IsAlterationSettingActive", (when it is time to update the seasonal settings, this should also be updated, but for IsSeasonSettingActive instead of alteration)
 
 #### Add Your Alteration
 
