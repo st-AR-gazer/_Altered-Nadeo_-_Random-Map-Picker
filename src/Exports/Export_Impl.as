@@ -346,7 +346,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "[rally] underwater") { IsUsing_Rally_Underwater = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] ice") { IsUsing_Rally_Icy = t_shouldUse; }
 
-    else if (t_alteration.ToLower() == "[Race]") { IsUsing_Race_ t_shouldUse; }
+    else if (t_alteration.ToLower() == "[Race]") { IsUsing_Race_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[Stunt]") { IsUsing_Stunt_ = t_shouldUse; }
 
     else if (t_alteration.ToLower() == "100% wet icy wood") { IsUsing_100WetIcyWood = t_shouldUse; }

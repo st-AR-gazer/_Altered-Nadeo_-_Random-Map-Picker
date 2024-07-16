@@ -122,7 +122,7 @@ void RenderInterface() {
             case 11:
                 RenderEnviroments();
                 break;
-            case12:
+            case 12:
                 RenderGameMode();
                 break;
             case 13:
@@ -587,8 +587,8 @@ void RenderGameMode() {
     RenderS_Race_();
     RenderS_Stunt_();
 
-    if (UI::Button("Enable All game mode settings")) { SelectAlteredGameMode(); }
-    if (UI::Button("Disable All game mode settings")) { DeselectAlteredGameMode(); }
+    if (UI::Button("Enable All game mode settings")) { SelectAlteredGameModes(); }
+    if (UI::Button("Disable All game mode settings")) { DeselectAlteredGameModes(); }
 }
 
 void RenderS_Race_() {  IsUsing_Race_ =  UI::Checkbox("Race", IsUsing_Race_); }

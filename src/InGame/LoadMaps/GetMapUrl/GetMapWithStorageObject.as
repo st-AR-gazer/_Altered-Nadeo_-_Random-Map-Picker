@@ -20,10 +20,10 @@ void LoadMapsFromConsolidatedFile() {
 }
 
 void Coro_SetAllMaps(const string &in filePath) {
-    NotifyWarn("Loading maps from the consolidated file, this may take a few moments. Do not select a random map until this process is complete!");
+    // NotifyWarn("Loading maps from the consolidated file, this may take a few moments. Do not select a random map until this process is complete!");
     allMaps = Json::FromFile(filePath);
-    log("Loaded " + allMaps.Length + " maps from the consolidated file", LogLevel::Info, 7, "Coro_SetAllMaps");
-    NotifyInfo("Loaded " + allMaps.Length + " maps from the consolidated file");
+    log("Loaded " + allMaps.Length + " maps from the consolidated file", LogLevel::Info, 25, "Coro_SetAllMaps");
+    // NotifyInfo("Loaded " + allMaps.Length + " maps from the consolidated file");
 }
 
 string FetchRandomMapUrl() {
@@ -64,7 +64,7 @@ string FetchRandomMapUrl() {
         }
     }
 
-    log("No maps match the selected criteria", LogLevel::Error, 60, "FetchRandomMapUrl");
+    log("No maps match the selected criteria", LogLevel::Error, 67, "FetchRandomMapUrl");
     return "";
 }
 

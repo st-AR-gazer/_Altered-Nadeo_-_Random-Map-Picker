@@ -1,4 +1,4 @@
-build_name_overwrite = ""
+build_name_overwrite = "AlteredNadeo_RandomMapPicker"
 # Empty = No overwrite by default
 
 import argparse

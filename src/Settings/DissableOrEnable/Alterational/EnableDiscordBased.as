@@ -141,6 +141,7 @@ void SelectAlteredOther() {
     IsUsing_Lunatic = true;
     IsUsing_Mini_RPG = true;
     IsUsing_Mirrored = true;
+    IsUsing_No_Items = true;
     IsUsing_Pool_Hunters = true;
     IsUsing_Random = true;
     IsUsing_Ring_CP = true;
