@@ -166,6 +166,7 @@ alterations_dict = {
     "[Rally] CP1 is End": ["[Rally] CP1 is End", "RallyCar CP1 is End", "Rally CP1-End", "Rally CP1End", "Rally CP1 Ends", "Rally Cp1 is End"],
     "[Rally] Underwater": ["[Rally] (UW)"],
     "[Rally] Icy": ["Icy [Rally]", "[Rally] Icy", "Ricy"],
+    "[Rally] To The Top": ["Rally To The Top"]
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
     "[Desert] Carswitch": ["Desertcarswitch"],
@@ -260,7 +261,7 @@ alterations_dict = {
     "Random Dankness": ["Random Dankness", "RandomDankness", "Random-Dankness"],
     "Random Effects": ["Random Effects", "RandomEffects", "Random-Effects"],
     "Reactor": ["Reactor"],
-    "Reactor Down": ["ReactorDown", "Reactor Down", "Reactor-Down"],
+    "Reactor Down": ["ReactorDown", "Reactor Down", "Reactor-Down", "Reactordown"],
     "Reverse": ["Reverse", "reverse"],
     "Ring CP": ["Ring CP", "RingCP", "Ring-CP", "RingCP%", "Ring CP%", "Ring-CP%"],
     "Road": ["Road", "Asphalt", "Tarmac", "(Tech)"],
