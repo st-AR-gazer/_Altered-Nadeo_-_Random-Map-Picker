@@ -123,6 +123,9 @@ bool IsUsing_Reactor = false;
 [Setting category="Alteration" name="Reactor Down"]
 bool IsUsing_Reactor_Down = false;
 
+[Setting category="Alteration" name="Red Effects"]
+bool IsUsing_Red_Effects;
+
 [Setting category="Alteration" name="RNG Booster"]
 bool IsUsing_RNG_Booster = false;
 

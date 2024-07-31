@@ -11,21 +11,30 @@
    ```
    
 ### Enable/Disable Setting
-1. **Folder**: `/src/Settings/DisableOrEnable/*`
-2. **Files**: `/src/Settings/DisableOrEnable/`
-2. **Files**: `/src/Settings/DisableOrEnable/`
-2. **Files**: `/src/Settings/DisableOrEnable/`
-2. **Files**: `/src/Settings/DisableOrEnable/`
+1. **Folder**: `/src/Settings/DissableOrEnable/*`
+2. **Files**: `/src/Settings/DissableOrEnable/DissableDiscordBased.as`
+3. **Files**: `/src/Settings/DissableOrEnable/EnableDiscordBased.as`
+4. **Files**: `/src/Settings/DissableOrEnable/DissableOrEnableDiscordBased.as`
 
-6. **Add**: Function and logic to enable/disable the new setting.
+(If it's a discovery add it there)
+5. **Files**: `/src/Settings/DissableOrEnable/`
+
+6. **Add**: Variable so that a setting can be dissabled / enabled by the user at the click of a button.
 
 ### Update UI
 1. **File**: `/src/InGame/Render/SettingsUI.as`
 2. **Add**: 
+   Make sure to add to correct location, (if it's an effect alt it should go into effects etc)
+   ```c
+   alterationNames.InsertLast("EXAMPLE");
+   alterationNames.InsertLast(@RenderS_EXAMPLE);
+   ```
+   ```c
+   RenderS_Red_Effects();
+   ```
    ```c
    void RenderS_EXAMPLE() { IsUsing_EXAMPLE = UI::Checkbox("Example", IsUsing_EXAMPLE); }
    ```
-   Also, update `alterationNames` and `alterationFuncs`.
 
 ### MatchesAlterationSettings
 1. **File**: `/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as`
@@ -34,14 +43,21 @@
    if (IsUsing_EXAMPLE && map["alteration"] == "EXAMPLE") return true;
    ```
 3. **Add**:
-   `[Alteration]` to `IsAlterationSettingActive` 
-
+   Make sure to add it in the correct location
+   ```
+   IsUsing_EXAMPLE 
+   ```
    
 ### Exports
 1. **File**: `\src\Exports\Export_Impl.as`
 2. **Add**: 
+   Add this to GetUserSettings
    ```c
-   settings["Alteration"]["Category"]["EXAMPLE"] = IsUsing_EXAMPLE;
+   settings["Alterations"]["Category"]["EXAMPLE"] = IsUsing_EXAMPLE;
+   ```
+   And add this to SetAlteration
+   ```c
+   else if (t_alteration.ToLower() == "example") { IsUsing_EXAMPLE = t_shouldUse; }
    ```
    Update `SetAlteration` function accordingly.
 

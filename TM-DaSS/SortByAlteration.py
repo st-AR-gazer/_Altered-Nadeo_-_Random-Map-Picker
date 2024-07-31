@@ -262,6 +262,7 @@ alterations_dict = {
     "Random Effects": ["Random Effects", "RandomEffects", "Random-Effects"],
     "Reactor": ["Reactor"],
     "Reactor Down": ["ReactorDown", "Reactor Down", "Reactor-Down", "Reactordown"],
+    "Red Effects": ["Red Effects"],
     "Reverse": ["Reverse", "reverse"],
     "Ring CP": ["Ring CP", "RingCP", "Ring-CP", "RingCP%", "Ring CP%", "Ring-CP%"],
     "Road": ["Road", "Asphalt", "Tarmac", "(Tech)"],

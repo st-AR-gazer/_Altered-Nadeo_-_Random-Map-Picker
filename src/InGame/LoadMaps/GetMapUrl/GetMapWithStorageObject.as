@@ -149,6 +149,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Random_Effects               && alteration == "random effects") return true;
     if (IsUsing_Reactor                      && alteration == "reactor") return true;
     if (IsUsing_Reactor_Down                 && alteration == "reactor down") return true;
+    if (IsUsing_Red_Effects                  && alteration == "red effects") return true;
     if (IsUsing_RNG_Booster                  && alteration == "rng booster") return true;
     if (IsUsing_Slowmo                       && alteration == "slowmo") return true;
     if (IsUsing_Wet_Wheels                   && alteration == "wet wheels") return true;
@@ -304,7 +305,7 @@ bool IsAlterationSettingActive() {
         
         IsUsing_Cruise || IsUsing_Fragile || IsUsing_Full_Fragile || IsUsing_Freewheel || IsUsing_Glider || IsUsing_No_Brakes || 
         IsUsing_No_Effects || IsUsing_No_Grip || IsUsing_No_Steer || IsUsing_Random_Dankness || IsUsing_Random_Effects || IsUsing_Reactor || 
-        IsUsing_Reactor_Down || IsUsing_Slowmo || IsUsing_Wet_Wheels || IsUsing_Worn_Tires || 
+        IsUsing_Reactor_Down || IsUsing_Red_Effects || IsUsing_Slowmo || IsUsing_Wet_Wheels || IsUsing_Worn_Tires || 
         
         IsUsing_1Down || IsUsing_1Back || IsUsing_1Left || IsUsing_1Right || IsUsing_1Up || IsUsing_2Up || IsUsing_Better_Reverse || 
         IsUsing_CP1_is_End || IsUsing_Floor_Fin || IsUsing_Inclined || IsUsing_Manslaughter || IsUsing_No_Gear_5 || IsUsing_Podium || 

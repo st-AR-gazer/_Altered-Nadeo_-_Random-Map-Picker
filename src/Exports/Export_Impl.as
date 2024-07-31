@@ -68,6 +68,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Effects"]["Random Effects"] = IsUsing_Random_Effects;
     settings["Alterations"]["Effects"]["Reactor (Up)"] = IsUsing_Reactor;
     settings["Alterations"]["Effects"]["Reactor Down"] = IsUsing_Reactor_Down;
+    settings["Alterations"]["Effects"]["Red Effects"] = IsUsing_Red_Effects;
     settings["Alterations"]["Effects"]["RNG Booster"] = IsUsing_RNG_Booster;
     settings["Alterations"]["Effects"]["Slowmo"] = IsUsing_Slowmo;
     settings["Alterations"]["Effects"]["Wet Wheels"] = IsUsing_Wet_Wheels;
@@ -306,6 +307,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "random effects") { IsUsing_Random_Effects = t_shouldUse; }
     else if (t_alteration.ToLower() == "reactor (up)") { IsUsing_Reactor = t_shouldUse; }
     else if (t_alteration.ToLower() == "reactor down") { IsUsing_Reactor_Down = t_shouldUse; }
+    else if (t_alteration.ToLower() == "red effects") { IsUsing_Red_Effects = t_shouldUse; }
     else if (t_alteration.ToLower() == "slowmo") { IsUsing_Slowmo = t_shouldUse; }
     else if (t_alteration.ToLower() == "wet wheels") { IsUsing_Wet_Wheels = t_shouldUse; }
     else if (t_alteration.ToLower() == "worn tires") { IsUsing_Worn_Tires = t_shouldUse; }
