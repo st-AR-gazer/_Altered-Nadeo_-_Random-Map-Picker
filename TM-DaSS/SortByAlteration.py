@@ -263,6 +263,7 @@ alterations_dict = {
     "Reactor": ["Reactor"],
     "Reactor Down": ["ReactorDown", "Reactor Down", "Reactor-Down", "Reactordown"],
     "Red Effects": ["Red Effects"],
+    "Replay": ["Replay"],
     "Reverse": ["Reverse", "reverse"],
     "Ring CP": ["Ring CP", "RingCP", "Ring-CP", "RingCP%", "Ring CP%", "Ring-CP%"],
     "Road": ["Road", "Asphalt", "Tarmac", "(Tech)"],
@@ -275,6 +276,7 @@ alterations_dict = {
     "Short": ["Short"],
     "Sky is the Finish": ["Sky is the Finish", "skyfinish", "SITF", "skyfin"],
     "Sky is the Finish Reverse": ["Rev Sky Finish", "Rev Sky Fin", "Sky is the Finish Reverse", "SkyFinish Reverse", "SITF Reverse", "SkyistheFinishReverse","Rev Sky is Finish", "Sky is the Finish - Reverse", "Sky-is-the-Finish-Reverse", "Rev  Sky is Finish"],
+    "Slot Track": ["Slot Track", "SlotTrack", "Slot-Track"],
     "Slowmo": ["Slowmo", "Slow-Mo", "Slow Mo"],
 
     "Speedlimit": ["Speedlimit", "Speed-Limit", "Speed Limit"],

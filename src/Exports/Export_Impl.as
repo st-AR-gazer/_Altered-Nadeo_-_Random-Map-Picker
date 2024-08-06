@@ -49,6 +49,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Surface"]["Pipe"] = IsUsing_Pipe;
     settings["Alterations"]["Surface"]["Platform"] = IsUsing_Platform;
     settings["Alterations"]["Surface"]["Sausage"] = IsUsing_Sausage;
+    settings["Alterations"]["Surface"]["Slot Track"] = IsUsing_Slot_Track;
     settings["Alterations"]["Surface"]["Surfaceless"] = IsUsing_Surfaceless;
     settings["Alterations"]["Surface"]["Underwater"] = IsUsing_Underwater;
 
@@ -184,6 +185,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Other"]["No Cut"] = IsUsing_No_Cut;
     settings["Alterations"]["Other"]["Pool Hunters"] = IsUsing_Pool_Hunters;
     settings["Alterations"]["Other"]["Random"] = IsUsing_Random;
+    settings["Alterations"]["Other"]["Replay"] = IsUsing_Replay;
     settings["Alterations"]["Other"]["Ring CP"] = IsUsing_Ring_CP;
     settings["Alterations"]["Other"]["Scuba Diving"] = IsUsing_Scuba_Diving;
     settings["Alterations"]["Other"]["Sections Joined"] = IsUsing_Sections_joined;
@@ -291,6 +293,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "pipe") { IsUsing_Pipe = t_shouldUse; }
     else if (t_alteration.ToLower() == "platform") { IsUsing_Platform = t_shouldUse; }
     else if (t_alteration.ToLower() == "sausage") { IsUsing_Sausage = t_shouldUse; }
+    else if (t_alteration.ToLower() == "slot track") { IsUsing_Slot_Track = t_shouldUse; }
     else if (t_alteration.ToLower() == "surfaceless") { IsUsing_Surfaceless = t_shouldUse; }
     else if (t_alteration.ToLower() == "underwater") { IsUsing_Underwater = t_shouldUse; }
 
@@ -405,6 +408,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "no cut") { IsUsing_No_Cut = t_shouldUse; }
     else if (t_alteration.ToLower() == "pool hunters") { IsUsing_Pool_Hunters = t_shouldUse; }
     else if (t_alteration.ToLower() == "random") { IsUsing_Random = t_shouldUse; }
+    else if (t_alteration.ToLower() == "replay") { IsUsing_Replay = t_shouldUse; }
     else if (t_alteration.ToLower() == "ring cp") { IsUsing_Ring_CP = t_shouldUse; }
     else if (t_alteration.ToLower() == "scuba diving") { IsUsing_Scuba_Diving = t_shouldUse; }
     else if (t_alteration.ToLower() == "sections joined") { IsUsing_Sections_joined = t_shouldUse; }

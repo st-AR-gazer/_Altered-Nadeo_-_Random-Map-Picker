@@ -16,6 +16,7 @@ void DeselectAlteredSurface() {
     IsUsing_Pipe = false;
     IsUsing_Platform = false;
     IsUsing_Sausage = false;
+    IsUsing_Slot_Track = false;
     IsUsing_Surfaceless = false;
     IsUsing_Underwater = false;
 }
@@ -144,6 +145,7 @@ void DeselectAlteredOther() {
     IsUsing_No_Items = false;
     IsUsing_Pool_Hunters = false;
     IsUsing_Random = false;
+    IsUsing_Replay = false;
     IsUsing_Ring_CP = false;
     IsUsing_Scuba_Diving = false;
     IsUsing_Sections_joined = false;

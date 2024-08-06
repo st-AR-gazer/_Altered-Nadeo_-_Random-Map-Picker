@@ -16,6 +16,7 @@ void SelectAlteredSurface() {
     IsUsing_Pipe = true;
     IsUsing_Platform = true;
     IsUsing_Sausage = true;
+    IsUsing_Slot_Track = true;
     IsUsing_Surfaceless = true;
     IsUsing_Underwater = true;
 }
@@ -144,6 +145,7 @@ void SelectAlteredOther() {
     IsUsing_No_Items = true;
     IsUsing_Pool_Hunters = true;
     IsUsing_Random = true;
+    IsUsing_Replay = true;
     IsUsing_Ring_CP = true;
     IsUsing_Scuba_Diving = true;
     IsUsing_Sections_joined = true;

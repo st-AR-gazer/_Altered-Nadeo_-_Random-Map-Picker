@@ -416,6 +416,7 @@ void RenderSurfaces() {
     RenderS_Pipe();
     RenderS_Platform();
     RenderS_Sausage();
+    RenderS_Slot_Track();
     RenderS_Surfaceless();
     RenderS_Underwater();
 
@@ -439,6 +440,7 @@ void RenderS_Bobsleigh() {    IsUsing_Bobsleigh =    UI::Checkbox("Bobsleigh", I
 void RenderS_Pipe() {         IsUsing_Pipe =         UI::Checkbox("Pipe", IsUsing_Pipe); }
 void RenderS_Platform() {     IsUsing_Platform =     UI::Checkbox("Platform", IsUsing_Platform); }
 void RenderS_Sausage() {      IsUsing_Sausage =      UI::Checkbox("Sausage", IsUsing_Sausage); }
+void RenderS_Slot_Track() {   IsUsing_Slot_Track =   UI::Checkbox("Slot Track", IsUsing_Slot_Track); }
 void RenderS_Surfaceless() {  IsUsing_Surfaceless =  UI::Checkbox("Surfaceless", IsUsing_Surfaceless); }
 void RenderS_Underwater() {   IsUsing_Underwater =   UI::Checkbox("Underwater", IsUsing_Underwater); }
 // ############################################################################################################
@@ -686,6 +688,7 @@ void RenderAlterationalOther() {
     RenderS_No_Items();
     RenderS_Pool_Hunters();
     RenderS_Random();
+    RenderS_Replay();
     RenderS_Ring_CP();
     RenderS_Scuba_Diving();
     RenderS_Sections_joined();
@@ -741,6 +744,7 @@ void RenderS_Mirrored() {                   IsUsing_Mirrored =                  
 void RenderS_No_Items() {                   IsUsing_No_Items =                   UI::Checkbox("No Items", IsUsing_No_Items); }
 void RenderS_Pool_Hunters() {               IsUsing_Pool_Hunters =               UI::Checkbox("Pool Hunters", IsUsing_Pool_Hunters); }
 void RenderS_Random() {                     IsUsing_Random =                     UI::Checkbox("Random", IsUsing_Random); }
+void RenderS_Replay() {                     IsUsing_Replay =                     UI::Checkbox("Replay", IsUsing_Replay); }
 void RenderS_Ring_CP() {                    IsUsing_Ring_CP =                    UI::Checkbox("Ring CP", IsUsing_Ring_CP); }
 void RenderS_Scuba_Diving() {               IsUsing_Scuba_Diving =               UI::Checkbox("Scuba Diving", IsUsing_Scuba_Diving); }
 void RenderS_Sections_joined() {            IsUsing_Sections_joined =            UI::Checkbox("Sections joined", IsUsing_Sections_joined); }
@@ -823,6 +827,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Platform);
     alterationNames.InsertLast("Sausage");
     alterationFuncs.InsertLast(@RenderS_Sausage);
+    alterationNames.InsertLast("Slot Track");
+    alterationFuncs.InsertLast(@RenderS_Slot_Track);
     alterationNames.InsertLast("Surfaceless");
     alterationFuncs.InsertLast(@RenderS_Surfaceless);
     alterationNames.InsertLast("Underwater");
@@ -854,7 +860,7 @@ void PopulateAlterationsArrays() {
     alterationNames.InsertLast("Reactor Down");
     alterationFuncs.InsertLast(@RenderS_Reactor_Down);
     alterationNames.InsertLast("Red Effects");
-    alterationNames.InsertLast(@RenderS_Red_Effects);
+    alterationFuncs.InsertLast(@RenderS_Red_Effects);
     alterationNames.InsertLast("RNG Booster");
     alterationFuncs.InsertLast(@RenderS_RNG_Booster);
     alterationNames.InsertLast("Slowmo");
@@ -1053,6 +1059,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Pool_Hunters);
     alterationNames.InsertLast("Random");
     alterationFuncs.InsertLast(@RenderS_Random);
+    alterationNames.InsertLast("Replay");
+    alterationFuncs.InsertLast(@RenderS_Replay);
     alterationNames.InsertLast("Ring CP");
     alterationFuncs.InsertLast(@RenderS_Ring_CP);
     alterationNames.InsertLast("Scuba Diving");

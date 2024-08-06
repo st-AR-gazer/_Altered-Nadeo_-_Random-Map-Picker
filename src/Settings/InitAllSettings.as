@@ -76,6 +76,9 @@ bool IsUsing_Platform = false;
 [Setting category="Alteration" name="Sausage"]
 bool IsUsing_Sausage = false;
 
+[Setting category="Alteration" name="Slot Track"]
+bool IsUsing_Slot_Track = false;
+
 [Setting category="Alteration" name="Surfaceless"]
 bool IsUsing_Surfaceless = false;
 
@@ -425,6 +428,9 @@ bool IsUsing_Pool_Hunters = false;
 
 [Setting category="Alteration" name="Random"]
 bool IsUsing_Random = false;
+
+[Setting category="Alteration" name="Replay"]
+bool IsUsing_Replay = false;
 
 [Setting category="Alteration" name="Ring CP"]
 bool IsUsing_Ring_CP = false;

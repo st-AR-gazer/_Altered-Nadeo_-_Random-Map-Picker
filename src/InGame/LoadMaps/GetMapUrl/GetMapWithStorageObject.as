@@ -134,6 +134,8 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Bobsleigh                    && alteration == "bobsleigh") return true;
     if (IsUsing_Pipe                         && alteration == "pipe") return true;
     if (IsUsing_Sausage                      && alteration == "sausage") return true;
+    if (IsUsing_Slot_Track                   && alteration == "slot track") return true;
+    if (IsUsing_Surfaceless                  && alteration == "surfaceless") return true;
     if (IsUsing_Underwater                   && alteration == "underwater") return true;
 
     if (IsUsing_Cruise                       && alteration == "cruise") return true;
@@ -245,6 +247,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_No_Items                     && alteration == "no items") return true;
     if (IsUsing_Pool_Hunters                 && alteration == "pool hunters") return true;
     if (IsUsing_Random                       && alteration == "random") return true;
+    if (IsUsing_Replay                       && alteration == "replay") return true;
     if (IsUsing_Ring_CP                      && alteration == "ring cp") return true;
     if (IsUsing_Sections_joined              && alteration == "sections joined") return true;
     if (IsUsing_Select_DEL                   && alteration == "select del") return true;
@@ -301,7 +304,7 @@ bool IsAlterationSettingActive() {
     return 
         IsUsing_Dirt || IsUsing_Fast_Magnet || IsUsing_Flooded || IsUsing_Grass || IsUsing_Ice || IsUsing_Magnet || IsUsing_Mixed || 
         IsUsing_Better_Mixed || IsUsing_Penalty || IsUsing_Plastic || IsUsing_Road || IsUsing_Wood || IsUsing_Bobsleigh || IsUsing_Pipe || 
-        IsUsing_Sausage || IsUsing_Underwater || 
+        IsUsing_Sausage || IsUsing_Slot_Track || IsUsing_Surfaceless || IsUsing_Underwater || 
         
         IsUsing_Cruise || IsUsing_Fragile || IsUsing_Full_Fragile || IsUsing_Freewheel || IsUsing_Glider || IsUsing_No_Brakes || 
         IsUsing_No_Effects || IsUsing_No_Grip || IsUsing_No_Steer || IsUsing_Random_Dankness || IsUsing_Random_Effects || IsUsing_Reactor || 
@@ -327,7 +330,7 @@ bool IsAlterationSettingActive() {
         IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
         IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
         IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Ground_Clippers || /*IsUsing_Hard ||  // Is actally Lunatic */IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
-        IsUsing_No_Items || IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
+        IsUsing_No_Items || IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Replay || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
         IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Stunt || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
         IsUsing_YEET_Down || 
         
