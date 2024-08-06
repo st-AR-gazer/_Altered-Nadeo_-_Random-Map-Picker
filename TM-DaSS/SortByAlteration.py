@@ -332,6 +332,15 @@ desert_discovery_maps = [
     "2Wheelers", "DesertLeague", "DeseRPG", "DesertMaster"
 ]
 
+stunt_discovery_maps = [
+    "StuntIsBack", "SimpleFlips", "Arena", "SuperPipe", "Stunt4Ever", 
+    "Freedom", "OriginalPark", "A08Stunter", "Lasagna", "GiveMe5", 
+    "AirMania", "BumpersParadise", "PlatformEdges", "Moustache", 
+    "RedAlert", "Roundabout", "Hiking", "CibusFanaticus", 
+    "SnowSpinning", "Frikandelbroodje", "HighSpeed", "DeserticStunts", 
+    "Foundry", "StuntCity", "ScatterPark"
+]
+
 official_competition_maps = [
     "Gyroscope", "Flip of Faith", "Agility Dash", "Parkour", "Slowdown",
     "Aeropipes", "Freestyle", "Reps", "SlippySlides", "Back'N'Forth",
@@ -990,7 +999,33 @@ special_uids = [
         {"uid": "ujHQhw95Lrct1A6oyFEqSU0QcYc", "name": "DeseRPG", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
         {"uid": "uV5dbR7b0mgk6JUGYM1wjzlkmw9", "name": "DesertMaster", "season": "[Desert] Discovery", "year": "", "alteration": "!OfficialNadeo"},
         
+        # Stunt
         
+        {"uid": "RUtKJQAyRoJY2Dd1H88jZKNjQQh", "name": "StuntIsBack", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "ZSYP2wvZydK9gShhCCfavYo6uDi", "name": "SimpleFlips", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "PZyTcDA0aKTK_J4EkBhx3IxrGDh", "name": "Arena", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "JYoYacRybTAqFTt8oXaqjpGQZv0", "name": "SuperPipe", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "NUzIKsHXm_VPwGANEVv0HoCiJE1", "name": "Stunt4Ever", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "CijqdPOpWTxpcsR4bqmDaptf9W0", "name": "Freedom", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "GFoo4YiNXxWPlPDQyud2Pro2yod", "name": "OriginalPark", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "HlA0kgRikRtGjNb5kXK1xN5QZPm", "name": "A08Stunter", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "4ZKd4m_QN65GfIVwwfS_ngpVHN1", "name": "Lasagna", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "l3rIRzInplK7h8rt3DbhaA84cW9", "name": "GiveMe5", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "e01FPI3AP10bQAlO0U6y6T3AdZd", "name": "AirMania", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "7TXf4NeevMBkT5V_UmXBXteBt5d", "name": "BumpersParadise", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "pELdNmwDUO9rjZkmLlJV69kL9sk", "name": "PlatformEdges", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "LABhYFFOspOrxfbtFjGb_BCOVz", "name": "Moustache", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "TXcdivZhOMwgkSjYznVlyVMLkB", "name": "RedAlert", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "i0lUV_aO60bdvTRWBygLlcQMaub", "name": "Roundabout", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "iVDTSHtMfVZZs7ngVyR2SrS69mf", "name": "Hiking", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "J0gMwvRahlDV720lJqr5lbPAcR2", "name": "CibusFanaticus", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "VR9SLzPxQbokbXlJyKH8PGUw4N8", "name": "SnowSpinning", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "DOG2SVVzy3GD100BweqtVnUEzZa", "name": "Frikandelbroodje", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "tPpjjO0Pvs1FurnWxJKPWPOYf0j", "name": "HighSpeed", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "DF6eDtjnNFE2XecwfQwZ9eNeGP3", "name": "DeserticStunts", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "Qoxw72IS7P8fqdFbE2NtcU2yiFc", "name": "Foundry", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "xHSYw3itOe__vB77Yvs4b0mLwjd", "name": "StuntCity", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
+        {"uid": "6VgMgcU_Bo_rcfUhsBmvzJRuMQi", "name": "ScatterPark", "season": "[Stunt] Discovery", "year": "", "alteration": "!OfficialNadeo", "code": "stunt"},
         
 
         # TM2020 Campaigns
@@ -1507,7 +1542,7 @@ sorted_maps = defaultdict(list)
 
 for filename, map_info in map_data.items():
     map_info['filename'] = filename
-    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, rally_discovery_maps, desert_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
+    category = parse_map_category(map_info, alterations_dict, [snow_discovery_maps, rally_discovery_maps, desert_discovery_maps, stunt_discovery_maps, official_competition_maps, all_TOTD_maps], special_uids)
     if category:
         sorted_maps[category].append(map_info)
 

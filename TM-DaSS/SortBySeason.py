@@ -217,6 +217,15 @@ desert_discovery_maps = [
     "2Wheelers", "DesertLeague", "DeseRPG", "DesertMaster"
 ]
 
+stunt_discovery_maps = [
+    "StuntIsBack", "SimpleFlips", "Arena", "SuperPipe", "Stunt4Ever", 
+    "Freedom", "OriginalPark", "A08Stunter", "Lasagna", "GiveMe5", 
+    "AirMania", "BumpersParadise", "PlatformEdges", "Moustache", 
+    "RedAlert", "Roundabout", "Hiking", "CibusFanaticus", 
+    "SnowSpinning", "Frikandelbroodje", "HighSpeed", "DeserticStunts", 
+    "Foundry", "StuntCity", "ScatterPark"
+]
+
 official_competition_maps = [
     "Gyroscope", "Flip of Faith", "Agility Dash", "Parkour", "Slowdown",
     "Aeropipes", "Freestyle", "Reps", "SlippySlides", "Back'N'Forth",

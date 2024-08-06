@@ -107,10 +107,13 @@ Ensure that your condition correctly checks both the setting's activation status
 }
 ```
 
-### Step 5: Add the Setting to the Exports
+#### Add a new special (discovery) campaign
 
-After integrating your new setting into the application's logic, it's also decently important to ensure that this setting is correctly exported so that other plugins can use it. Though I don't think anyone will bother XertroV asked for it, and I'm happy to oblige xdd. 
-To add this new alteration to exports go to `\src\Exports\Export_Impl.as` and find the `GetUserSettings` function, and include your new alteration, ensuring that it's saved and retrievable as part of the user's settings.
+Go to SortByAlteration and SortBySeason and add EXAMPLE_discovery_maps = [] and place the names of the maps there.
+Also add this:
+{"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+for each official map.
+
 
 #### Update the Settings Structure
 
