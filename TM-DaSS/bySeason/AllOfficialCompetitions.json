@@ -1,5 +1,215 @@
 [
     {
+        "author": "70ea8df2-ddda-4a89-b2b0-301d764cef9d",
+        "authorScore": 23115,
+        "bronzeScore": 35000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "PlatformEdges [Race].Map.Gbx",
+        "goldScore": 25000,
+        "isPlayable": true,
+        "mapId": "9d79f366-1495-4d5f-9083-b8a241d2f7b5",
+        "mapStyle": "TrackMania\\TM_Race",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "8K2hK5QSxjZBL5aD8NtbDOvJ5T7",
+        "name": "PlatformEdges [Race]",
+        "silverScore": 28000,
+        "submitter": "70ea8df2-ddda-4a89-b2b0-301d764cef9d",
+        "timestamp": "2024-07-30T02:11:49+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/9d79f366-1495-4d5f-9083-b8a241d2f7b5/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/9d79f366-1495-4d5f-9083-b8a241d2f7b5/thumbnail.jpg"
+    },
+    {
+        "author": "70ea8df2-ddda-4a89-b2b0-301d764cef9d",
+        "authorScore": 10859,
+        "bronzeScore": 17000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "HighSpeed [Race].Map.Gbx",
+        "goldScore": 12000,
+        "isPlayable": true,
+        "mapId": "4adc3e6e-c2cd-4e62-ace9-7258082e0d96",
+        "mapStyle": "TrackMania\\TM_Race",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "KbE5XpamT4zpuR2nPAjUDpeRJtb",
+        "name": "HighSpeed [Race]",
+        "silverScore": 14000,
+        "submitter": "70ea8df2-ddda-4a89-b2b0-301d764cef9d",
+        "timestamp": "2024-07-30T02:11:46+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/4adc3e6e-c2cd-4e62-ace9-7258082e0d96/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/4adc3e6e-c2cd-4e62-ace9-7258082e0d96/thumbnail.jpg"
+    },
+    {
+        "author": "7cd60a75-609a-4e64-b286-16f329878249",
+        "authorScore": 19435,
+        "bronzeScore": 7190,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "HighSpeed.Map.Gbx",
+        "goldScore": 16510,
+        "isPlayable": true,
+        "mapId": "9f81e412-49d3-4e1e-9203-b11169e6d475",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Stunt",
+        "mapUid": "tPpjjO0Pvs1FurnWxJKPWPOYf0j",
+        "name": "HighSpeed",
+        "silverScore": 11660,
+        "submitter": "7cd60a75-609a-4e64-b286-16f329878249",
+        "timestamp": "2024-07-19T14:41:09+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/9f81e412-49d3-4e1e-9203-b11169e6d475/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/9f81e412-49d3-4e1e-9203-b11169e6d475/thumbnail.jpg"
+    },
+    {
+        "author": "d47ff76c-8750-4eb9-a31c-17390ec0482a",
+        "authorScore": 7220,
+        "bronzeScore": 2670,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "PlatformEdges - CarDesert.Map.Gbx",
+        "goldScore": 6130,
+        "isPlayable": true,
+        "mapId": "bedf109b-a29e-4fc9-81d7-55c7262027ff",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Stunt",
+        "mapUid": "ejA6h4Vp6k7QUaWjmy3323kmiVl",
+        "name": "$<PlatformEdges$> - CarDesert",
+        "silverScore": 4330,
+        "submitter": "6a43df20-cd1a-4b3b-87b9-a6835a9b416d",
+        "timestamp": "2024-07-14T20:34:48+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/bedf109b-a29e-4fc9-81d7-55c7262027ff/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/bedf109b-a29e-4fc9-81d7-55c7262027ff/thumbnail.jpg"
+    },
+    {
+        "author": "d47ff76c-8750-4eb9-a31c-17390ec0482a",
+        "authorScore": 11720,
+        "bronzeScore": 4330,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "PlatformEdges - CarRally.Map.Gbx",
+        "goldScore": 9960,
+        "isPlayable": true,
+        "mapId": "807256bb-61af-4319-b975-a6ad9850b93e",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Stunt",
+        "mapUid": "kqlqxjpWEN1mx54od73Fm3dUhx6",
+        "name": "$<PlatformEdges$> - CarRally",
+        "silverScore": 7030,
+        "submitter": "6a43df20-cd1a-4b3b-87b9-a6835a9b416d",
+        "timestamp": "2024-07-12T14:58:20+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/807256bb-61af-4319-b975-a6ad9850b93e/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/807256bb-61af-4319-b975-a6ad9850b93e/thumbnail.jpg"
+    },
+    {
+        "author": "d47ff76c-8750-4eb9-a31c-17390ec0482a",
+        "authorScore": 5565,
+        "bronzeScore": 2050,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "PlatformEdges - CarSnow.Map.Gbx",
+        "goldScore": 4730,
+        "isPlayable": true,
+        "mapId": "43576698-c663-489b-b66a-b886a9af92a7",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Stunt",
+        "mapUid": "Cr4jz6scdOAS9SGEzJLdjwf2cRd",
+        "name": "$<PlatformEdges$> - CarSnow",
+        "silverScore": 3330,
+        "submitter": "6a43df20-cd1a-4b3b-87b9-a6835a9b416d",
+        "timestamp": "2024-07-12T14:50:06+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/43576698-c663-489b-b66a-b886a9af92a7/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/43576698-c663-489b-b66a-b886a9af92a7/thumbnail.jpg"
+    },
+    {
+        "author": "7cd60a75-609a-4e64-b286-16f329878249",
+        "authorScore": 20050,
+        "bronzeScore": 7410,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "PlatformEdges.Map.Gbx",
+        "goldScore": 17040,
+        "isPlayable": true,
+        "mapId": "4418b84d-74d6-41f7-bdca-f1ca89e73132",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Stunt",
+        "mapUid": "pELdNmwDUO9rjZkmLlJV69kL9sk",
+        "name": "PlatformEdges",
+        "silverScore": 12030,
+        "submitter": "7cd60a75-609a-4e64-b286-16f329878249",
+        "timestamp": "2024-07-08T14:05:32+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/4418b84d-74d6-41f7-bdca-f1ca89e73132/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/4418b84d-74d6-41f7-bdca-f1ca89e73132/thumbnail.jpg"
+    },
+    {
+        "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
+        "authorScore": 63904,
+        "bronzeScore": 96000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "Diversion (Carswitch DesertCar).Map.Gbx",
+        "goldScore": 68000,
+        "isPlayable": true,
+        "mapId": "a2201be7-9a92-4327-a41e-0909af81c0ac",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "nEk9__RBnXTJCAcr3i58nhMQe34",
+        "name": "Diversion (Carswitch DesertCar)",
+        "silverScore": 77000,
+        "submitter": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
+        "timestamp": "2024-06-15T21:06:58+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/a2201be7-9a92-4327-a41e-0909af81c0ac/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/a2201be7-9a92-4327-a41e-0909af81c0ac/thumbnail.jpg"
+    },
+    {
+        "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
+        "authorScore": 83233,
+        "bronzeScore": 125000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "Diversion (DesertCar).Map.Gbx",
+        "goldScore": 89000,
+        "isPlayable": true,
+        "mapId": "34f371b2-eb84-4576-bdef-a86f0cb6144b",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "2JSG50ldnaOZOWmY3Ax29j42Mk",
+        "name": "Diversion (DesertCar)",
+        "silverScore": 100000,
+        "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
+        "timestamp": "2024-06-01T09:43:09+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/34f371b2-eb84-4576-bdef-a86f0cb6144b/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/34f371b2-eb84-4576-bdef-a86f0cb6144b/thumbnail.jpg"
+    },
+    {
+        "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
+        "authorScore": 115154,
+        "bronzeScore": 173000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "Diversion (1-Down).Map.Gbx",
+        "goldScore": 123000,
+        "isPlayable": true,
+        "mapId": "62514e03-e223-4d17-9e0b-98dbeefac152",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "75jw1B56dQRIUoaCYHyvkaEffB3",
+        "name": "Diversion (1-Down)",
+        "silverScore": 139000,
+        "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
+        "timestamp": "2024-05-30T17:13:11+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/62514e03-e223-4d17-9e0b-98dbeefac152/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/62514e03-e223-4d17-9e0b-98dbeefac152/thumbnail.jpg"
+    },
+    {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "authorScore": 161022,
         "bronzeScore": 242000,
@@ -17,8 +227,8 @@
         "silverScore": 194000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-28T16:14:59+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/99ca6b84-4585-416a-b58d-ca5720644468",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/03c70365-7b64-4a3a-82cd-b5907c517633.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/ddec9b5a-aa4f-4a37-b8ce-d91a99702bec/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/ddec9b5a-aa4f-4a37-b8ce-d91a99702bec/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -38,8 +248,8 @@
         "silverScore": 116000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-28T16:01:54+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/90da9478-abf0-4a6a-b995-7b92880988cf",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3fba5d9f-bd0d-49dc-90a9-7e45f905e091.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/4483f8ab-85b9-4b20-8853-50bb37a8f0bf/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/4483f8ab-85b9-4b20-8853-50bb37a8f0bf/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -59,8 +269,8 @@
         "silverScore": 109000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T23:25:51+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c4de84eb-e01d-4c40-8cfa-2244f37f93d0",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/c680e7e2-387f-4c2d-b109-5fe6f0f69073.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/415ec951-38ce-4140-b660-adbe202f6166/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/415ec951-38ce-4140-b660-adbe202f6166/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -80,8 +290,8 @@
         "silverScore": 280000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T23:22:19+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/19c8a3bc-6ad6-4c83-8ad6-c39be918de6b",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1276daec-e86c-4ebf-aacf-4372135d9861.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/dd0fcaa1-89be-4b27-9708-f006c7b158d6/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/dd0fcaa1-89be-4b27-9708-f006c7b158d6/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -101,8 +311,8 @@
         "silverScore": 90000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T22:18:40+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/b02ffb60-f239-4e87-b745-fc2bf3e61eb1",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4621b74f-32f5-4722-ad7f-411eaf66a51c.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/e9212460-ef3f-489e-84ab-cb6f7d501fe2/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/e9212460-ef3f-489e-84ab-cb6f7d501fe2/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -122,8 +332,8 @@
         "silverScore": 4321000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T22:06:43+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e175446a-3c24-456f-9546-4f272aebe971",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0e88481f-ec0b-4e0e-a423-e2f0c0b69c95.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/a76c9e83-7f57-4613-8251-9b4bbdc0d446/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/a76c9e83-7f57-4613-8251-9b4bbdc0d446/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -143,8 +353,8 @@
         "silverScore": 19000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T21:29:14+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/67162ca2-0380-4a5c-8b54-7a9d86258f49",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7dc35dce-728b-4b73-a31f-9ff9cde9aacd.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/8807645e-3e2d-47a4-b02c-9a41dadc6e66/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/8807645e-3e2d-47a4-b02c-9a41dadc6e66/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -164,8 +374,8 @@
         "silverScore": 85000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T21:04:24+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/1b1c43e6-4257-4f77-8651-d0bf77c58fc0",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ca1e093e-92d1-47bb-9697-ed010bb99255.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/4067ac26-5b5d-4be1-bd9d-0531b76db9b3/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/4067ac26-5b5d-4be1-bd9d-0531b76db9b3/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -185,8 +395,8 @@
         "silverScore": 4321000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T20:48:17+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/375ade1d-a1bb-4832-bb0c-5c1cc33ef881",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1e7a4afe-5836-46f9-b9a0-ace2d1a6d148.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/558e02ea-3ffb-44a5-add7-70d3270c1410/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/558e02ea-3ffb-44a5-add7-70d3270c1410/thumbnail.jpg"
     },
     {
         "author": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
@@ -206,8 +416,8 @@
         "silverScore": 133000,
         "submitter": "9d358eec-96ee-4fc7-92fe-b67c7afab159",
         "timestamp": "2024-04-27T20:20:22+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/840963b4-2e7b-407a-bee6-bf64bace2888",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/85a18042-499b-4814-879b-a07d8644f72c.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/cbf0ff0b-9d9f-4b41-9ecc-09b79305ce41/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/cbf0ff0b-9d9f-4b41-9ecc-09b79305ce41/thumbnail.jpg"
     },
     {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
@@ -216,7 +426,7 @@
         "collectionName": "Stadium",
         "createdWithGamepadEditor": false,
         "createdWithSimpleEditor": false,
-        "filename": "Vortex_-_Podium.Map.Gbx",
+        "filename": "Vortex - Podium.Map.Gbx",
         "goldScore": 44000,
         "isPlayable": true,
         "mapId": "829093e1-a25a-460b-a8db-f8c5463fdc95",
@@ -227,8 +437,8 @@
         "silverScore": 50000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-06-04T14:47:47+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/53fc07c6-9c2a-474b-b847-7ff433bec040",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/31021a6c-0967-4e7b-a65b-9548be3da66c.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/829093e1-a25a-460b-a8db-f8c5463fdc95/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/829093e1-a25a-460b-a8db-f8c5463fdc95/thumbnail.jpg"
     },
     {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
@@ -237,7 +447,7 @@
         "collectionName": "Stadium",
         "createdWithGamepadEditor": false,
         "createdWithSimpleEditor": false,
-        "filename": "Speed_-_Podium.Map.Gbx",
+        "filename": "Speed - Podium.Map.Gbx",
         "goldScore": 29000,
         "isPlayable": true,
         "mapId": "842a641a-4e4f-482c-8146-0c48b57b73fb",
@@ -248,8 +458,8 @@
         "silverScore": 33000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-06-04T14:47:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e1bb1bbb-e2f2-445f-9125-cfdf372395e7",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/86544758-a8f5-452f-b86c-6f1329566937.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/842a641a-4e4f-482c-8146-0c48b57b73fb/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/842a641a-4e4f-482c-8146-0c48b57b73fb/thumbnail.jpg"
     },
     {
         "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
@@ -258,7 +468,7 @@
         "collectionName": "Stadium",
         "createdWithGamepadEditor": false,
         "createdWithSimpleEditor": false,
-        "filename": "Grip_-_Podium.Map.Gbx",
+        "filename": "Grip - Podium.Map.Gbx",
         "goldScore": 37000,
         "isPlayable": true,
         "mapId": "3df9d65c-d5cf-465f-9af9-a085ddd8e638",
@@ -269,8 +479,8 @@
         "silverScore": 41000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-06-04T14:47:33+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/273f24d6-850d-49b6-bcb0-db84a49cdc3d",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/ee47621b-b9b3-46b6-a35b-ddf1ff7a5c13.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/3df9d65c-d5cf-465f-9af9-a085ddd8e638/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/3df9d65c-d5cf-465f-9af9-a085ddd8e638/thumbnail.jpg"
     },
     {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
@@ -290,8 +500,8 @@
         "silverScore": 43000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:55+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/5012ac9c-d2b6-471b-9e16-07a9dd97a40b",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/0b37aa30-570d-4347-a3bd-8f46416deaf5.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/654b56f7-e02f-47e1-b257-c3b66449c789/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/654b56f7-e02f-47e1-b257-c3b66449c789/thumbnail.jpg"
     },
     {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
@@ -311,8 +521,8 @@
         "silverScore": 73000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:51+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e970ca19-1b33-4458-8349-95b3b66c6723",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/68a50269-1476-4f78-bb38-467441086223.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/8970c13b-9f54-41df-ac35-833c2bc2b41f/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/8970c13b-9f54-41df-ac35-833c2bc2b41f/thumbnail.jpg"
     },
     {
         "author": "a8fd6f21-aa72-48d1-8f0a-8848661a283f",
@@ -332,8 +542,8 @@
         "silverScore": 12000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:46+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7e13bef4-6ed4-485a-9cb0-a33f7ecde7ea",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/1e8b7e83-435a-4307-8f50-bd8f3f548c09.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/38e823b0-1697-44e1-899d-9d961ab0acd5/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/38e823b0-1697-44e1-899d-9d961ab0acd5/thumbnail.jpg"
     },
     {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
@@ -353,8 +563,8 @@
         "silverScore": 7000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:22+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f2cc05b2-75ac-4464-bf4b-240c3bd7677f",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/df890f3c-1800-45de-bdc3-b448d98ce500.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/cd8f6677-d6f9-45d0-a8af-9805ae35f633/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/cd8f6677-d6f9-45d0-a8af-9805ae35f633/thumbnail.jpg"
     },
     {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
@@ -374,8 +584,8 @@
         "silverScore": 12000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:17+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7b18fb36-eef7-40bc-8f1d-7a9f5bcb649f",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/dbdeb724-ee92-4fc6-96ce-e7f351e63daa.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/7466c031-a029-4b5e-86f4-a795e71b7e79/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/7466c031-a029-4b5e-86f4-a795e71b7e79/thumbnail.jpg"
     },
     {
         "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
@@ -395,8 +605,8 @@
         "silverScore": 16000,
         "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
         "timestamp": "2023-05-26T16:31:11+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/adff30df-1a47-4eb8-b6e6-2b1a09dc2af0",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/a2c05331-4144-44a1-99ad-120c9d095113.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/944e3489-b781-488d-8a49-9ca6dc547ddd/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/944e3489-b781-488d-8a49-9ca6dc547ddd/thumbnail.jpg"
     },
     {
         "author": "e2e18b4d-f9df-42fb-ae97-5bcc0de70d51",
@@ -416,8 +626,8 @@
         "silverScore": 120000,
         "submitter": "e2e18b4d-f9df-42fb-ae97-5bcc0de70d51",
         "timestamp": "2023-04-02T01:34:49+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ff766bb0-5ec8-446d-94e9-c5aa58b7ca58",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8db91909-1940-4b98-864e-143433944b31.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/90248bd1-db4f-4e62-8752-0f0f34023717/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/90248bd1-db4f-4e62-8752-0f0f34023717/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -437,8 +647,8 @@
         "silverScore": 80000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-03-26T22:55:03+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6cfc5f1f-69d3-4841-81e9-05bb5a40afc3",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9aad9427-d5f0-47bf-87b5-05aa6cb15a31.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/2b58ad97-e15f-43e6-8268-61327c95d326/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/2b58ad97-e15f-43e6-8268-61327c95d326/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -458,8 +668,8 @@
         "silverScore": 77000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-03-25T19:41:17+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/e49e445e-b259-4587-9093-22f42250ddd5",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/564e593e-acc8-482c-a03b-753f6d7e6f3c.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/c79d36fd-a5ff-4202-ad50-497f42883c9f/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/c79d36fd-a5ff-4202-ad50-497f42883c9f/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -479,8 +689,8 @@
         "silverScore": 75000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-03-14T21:18:16+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7aba08d5-b617-4554-8525-b1be95ed8e1c",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3b3e7949-cdbc-4dea-b135-76ac3c774c36.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/ddf50972-678d-4c56-af13-f006630ef36c/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/ddf50972-678d-4c56-af13-f006630ef36c/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -500,8 +710,8 @@
         "silverScore": 77000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-03-11T21:28:20+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/60a0c269-29f4-48e6-8cb1-ebbf58cb8b97",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/7add1922-c911-4b1b-bbee-868787c78ad7.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/85bc82c1-20b7-4a37-80d6-488239027785/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/85bc82c1-20b7-4a37-80d6-488239027785/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -521,8 +731,8 @@
         "silverScore": 78000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T10:20:51+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/3415f3bb-11e9-48f2-999f-afa614506f44",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/91bf4bb5-bd10-4b7e-91d7-df0c739e5990.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/00f98c42-add5-42a0-9f93-55843befc457/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/00f98c42-add5-42a0-9f93-55843befc457/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -542,8 +752,8 @@
         "silverScore": 75000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T10:08:46+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/0f282228-82d4-443a-aae4-2dd13057ccfa",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/f1751410-f6ba-4448-a3a2-9759aeef0d2b.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/ef99747f-557e-4001-9a9a-3614f37b0fd0/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/ef99747f-557e-4001-9a9a-3614f37b0fd0/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -563,50 +773,8 @@
         "silverScore": 73000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T10:01:42+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/8105afe5-8aeb-4937-9111-42678bb9693f",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/93712de7-0fd5-469d-b128-c05e320158b3.jpg"
-    },
-    {
-        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "authorScore": 73197,
-        "bronzeScore": 110000,
-        "collectionName": "Stadium",
-        "createdWithGamepadEditor": null,
-        "createdWithSimpleEditor": null,
-        "filename": "Touchdown [EASY MODE].Map.Gbx",
-        "goldScore": 78000,
-        "isPlayable": true,
-        "mapId": "dcb54d3a-840f-41ac-9655-279914e6fc20",
-        "mapStyle": "",
-        "mapType": "TrackMania\\TM_Race",
-        "mapUid": "CdlqhiIJ4MM72vWMacX39IYp4P5",
-        "name": "Touchdown [EASY MODE]",
-        "silverScore": 88000,
-        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/7c8537ce-2d6d-4d37-ade7-40885b6178d1",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/62b1a1df-d92e-457d-bffd-cf33e0114c5f.jpg"
-    },
-    {
-        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "authorScore": 56721,
-        "bronzeScore": 86000,
-        "collectionName": "Stadium",
-        "createdWithGamepadEditor": null,
-        "createdWithSimpleEditor": null,
-        "filename": "Grassline [EASY MODE].Map.Gbx",
-        "goldScore": 61000,
-        "isPlayable": true,
-        "mapId": "2d499122-4bcf-44ea-8032-b29542010963",
-        "mapStyle": "",
-        "mapType": "TrackMania\\TM_Race",
-        "mapUid": "Bc7RPfeR_v8tHirO4uM5LNueEz4",
-        "name": "Grassline [EASY MODE]",
-        "silverScore": 69000,
-        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f67c02c0-88e3-4131-9f49-f0d9875484bf",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e8d081c2-e1ae-4031-bc1a-ea18dae94bc7.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/452abd50-f6c7-489d-8b05-dda123bd6279/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/452abd50-f6c7-489d-8b05-dda123bd6279/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -626,8 +794,8 @@
         "silverScore": 71000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c4db5d29-89c9-4a7a-87c8-9cc8b832d5fb",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/09b8e4dc-c01a-4dde-acd0-c4c6294f132c.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/376fb008-b658-4d18-a077-79feb1aaecd5/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/376fb008-b658-4d18-a077-79feb1aaecd5/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -647,8 +815,29 @@
         "silverScore": 68000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/2719c488-76a5-4953-9708-3ab1c51f9d19",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/4c24cbd4-83fe-48bf-948f-d199e6ca0f5e.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/85de2e5a-5b7f-46e8-9a1f-a322cc7dce39/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/85de2e5a-5b7f-46e8-9a1f-a322cc7dce39/thumbnail.jpg"
+    },
+    {
+        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "authorScore": 73197,
+        "bronzeScore": 110000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": null,
+        "createdWithSimpleEditor": null,
+        "filename": "Touchdown [EASY MODE].Map.Gbx",
+        "goldScore": 78000,
+        "isPlayable": true,
+        "mapId": "dcb54d3a-840f-41ac-9655-279914e6fc20",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "CdlqhiIJ4MM72vWMacX39IYp4P5",
+        "name": "Touchdown [EASY MODE]",
+        "silverScore": 88000,
+        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "timestamp": "2022-02-19T09:32:41+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/dcb54d3a-840f-41ac-9655-279914e6fc20/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/dcb54d3a-840f-41ac-9655-279914e6fc20/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -668,8 +857,8 @@
         "silverScore": 71000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/08f35121-065d-43af-96b1-db319cc8c621",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/06799bb9-ca06-4503-832a-7c866838ff73.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/8473859d-350d-4970-ad0e-480675a38110/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/8473859d-350d-4970-ad0e-480675a38110/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -689,8 +878,29 @@
         "silverScore": 72000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2022-02-19T09:32:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a2d12a91-86a8-4d84-af80-b6c9a1f5a8b4",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/08304774-36f8-4d6f-92b9-73601087d5d7.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/bb53ba0b-78c4-45d8-9f8e-285d554d170d/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/bb53ba0b-78c4-45d8-9f8e-285d554d170d/thumbnail.jpg"
+    },
+    {
+        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "authorScore": 56721,
+        "bronzeScore": 86000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": null,
+        "createdWithSimpleEditor": null,
+        "filename": "Grassline [EASY MODE].Map.Gbx",
+        "goldScore": 61000,
+        "isPlayable": true,
+        "mapId": "2d499122-4bcf-44ea-8032-b29542010963",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "Bc7RPfeR_v8tHirO4uM5LNueEz4",
+        "name": "Grassline [EASY MODE]",
+        "silverScore": 69000,
+        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "timestamp": "2022-02-19T09:32:41+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/2d499122-4bcf-44ea-8032-b29542010963/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/2d499122-4bcf-44ea-8032-b29542010963/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -710,8 +920,8 @@
         "silverScore": 120000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-30T22:24:41+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/6bec0a3a-56e5-4ea2-bae2-2082b925e5f6",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e27c8176-3e3a-4292-ba8d-2d93e9e82bce.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/73f6e45c-aee9-4511-b38e-0b8b6a8f3a56/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/73f6e45c-aee9-4511-b38e-0b8b6a8f3a56/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -731,8 +941,8 @@
         "silverScore": 138000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-25T19:49:03+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/382d886a-b004-49e9-b9a9-140b9048f045",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/622c517d-bb7b-416b-9e41-8641bf5ab080.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/9608c3b4-76e4-4abd-ba2f-d9a31410a835/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/9608c3b4-76e4-4abd-ba2f-d9a31410a835/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -752,8 +962,8 @@
         "silverScore": 133000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-17T21:35:49+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/4c74627e-ae15-4498-ba4a-d6ce3ab030e6",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/9eebae23-8e1f-4f4a-8a6a-65a59beff81e.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/d0016e10-aa08-4da5-8550-642869694419/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/d0016e10-aa08-4da5-8550-642869694419/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -773,8 +983,8 @@
         "silverScore": 144000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-11T15:31:29+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/16102f06-b4b3-483f-8ed7-73d90022c7e9",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/240180a4-2959-4282-9009-7e3c9ce594df.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/41fa19a4-6365-422c-85f5-0dc2a74ae7f3/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/41fa19a4-6365-422c-85f5-0dc2a74ae7f3/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -794,8 +1004,8 @@
         "silverScore": 145000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-04T22:40:25+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/f9bdb5cd-c526-4967-bbbf-04781c3a36e8",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/befeaa48-8830-4185-8a44-cd192e590f1a.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/f28b2109-071b-4f60-a49e-55df592d8ac2/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/f28b2109-071b-4f60-a49e-55df592d8ac2/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -815,8 +1025,8 @@
         "silverScore": 123000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-04T20:36:39+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/03a3244e-ea0e-4de2-9b46-113ee5e3a322",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/47b27bc5-c658-40a7-8e55-b6627399ac4f.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/f779ad79-85e4-407e-8557-8a7fe6f28ebf/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/f779ad79-85e4-407e-8557-8a7fe6f28ebf/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -836,29 +1046,8 @@
         "silverScore": 114000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-11-02T21:06:52+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/45b6ec83-b44c-41db-978f-2e8c26b326b8",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/b0267bd5-1486-469d-9fde-e4cef4e2122a.jpg"
-    },
-    {
-        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "authorScore": 101838,
-        "bronzeScore": 153000,
-        "collectionName": "Stadium",
-        "createdWithGamepadEditor": null,
-        "createdWithSimpleEditor": null,
-        "filename": "OnTheEdge [EASY MODE].Map.Gbx",
-        "goldScore": 108000,
-        "isPlayable": true,
-        "mapId": "9e6cbfb9-b309-456e-90e3-0ba525154211",
-        "mapStyle": "",
-        "mapType": "TrackMania\\TM_Race",
-        "mapUid": "ht3CDlXMRd7iyCCd1HGpliEq1tf",
-        "name": "OnTheEdge [EASY MODE]",
-        "silverScore": 123000,
-        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "timestamp": "2021-10-31T16:41:30+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ab5cc19c-0fa0-44d0-9446-4f5ba27d5322",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/8ef2ae1d-1540-41a3-b3f6-e6be00b65cbb.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/ac26d66a-ee82-43fd-b657-9df7d86d844d/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/ac26d66a-ee82-43fd-b657-9df7d86d844d/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -878,8 +1067,29 @@
         "silverScore": 176000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-10-31T16:41:30+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/ad72247c-b84a-4b1d-ac45-c5cd4f4326f0",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/3ba0df12-6dd0-4fe0-a2e6-69391969a9c7.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/68e9d130-5ec3-409c-872a-0ae785b1285b/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/68e9d130-5ec3-409c-872a-0ae785b1285b/thumbnail.jpg"
+    },
+    {
+        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "authorScore": 101838,
+        "bronzeScore": 153000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": null,
+        "createdWithSimpleEditor": null,
+        "filename": "OnTheEdge [EASY MODE].Map.Gbx",
+        "goldScore": 108000,
+        "isPlayable": true,
+        "mapId": "9e6cbfb9-b309-456e-90e3-0ba525154211",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "ht3CDlXMRd7iyCCd1HGpliEq1tf",
+        "name": "OnTheEdge [EASY MODE]",
+        "silverScore": 123000,
+        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "timestamp": "2021-10-31T16:41:30+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/9e6cbfb9-b309-456e-90e3-0ba525154211/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/9e6cbfb9-b309-456e-90e3-0ba525154211/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -899,29 +1109,8 @@
         "silverScore": 142000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-10-31T16:41:29+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/a8e83b5b-2f66-458d-95be-149185349494",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/635163c9-89b8-4f5d-90d5-00a499399d08.jpg"
-    },
-    {
-        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "authorScore": 120578,
-        "bronzeScore": 181000,
-        "collectionName": "Stadium",
-        "createdWithGamepadEditor": null,
-        "createdWithSimpleEditor": null,
-        "filename": "AirBridge II [EASY MODE].Map.Gbx",
-        "goldScore": 128000,
-        "isPlayable": true,
-        "mapId": "3359fc08-02fc-4ef7-be8e-d911f01797eb",
-        "mapStyle": "",
-        "mapType": "TrackMania\\TM_Race",
-        "mapUid": "3VvP2j5CqBC18wH1HvpmBMqoAEj",
-        "name": "AirBridge II [EASY MODE]",
-        "silverScore": 145000,
-        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
-        "timestamp": "2021-10-31T16:41:29+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/fe45fc7f-20ce-473a-a565-7dfbc7ae44e1",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/e91b8794-3802-4800-b3db-afa919251046.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/33c8b84b-84cc-409f-91ef-5835ada1f8b6/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/33c8b84b-84cc-409f-91ef-5835ada1f8b6/thumbnail.jpg"
     },
     {
         "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
@@ -941,7 +1130,28 @@
         "silverScore": 129000,
         "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
         "timestamp": "2021-10-31T16:41:29+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/storageObjects/c82caa5c-5edd-433f-b086-0da15ba3c226",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/storageObjects/39672184-9965-4337-ad0f-8cd1a6ae065f.jpg"
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/170d6080-e188-458a-80e4-0da7466ac7ea/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/170d6080-e188-458a-80e4-0da7466ac7ea/thumbnail.jpg"
+    },
+    {
+        "author": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "authorScore": 120578,
+        "bronzeScore": 181000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": null,
+        "createdWithSimpleEditor": null,
+        "filename": "AirBridge II [EASY MODE].Map.Gbx",
+        "goldScore": 128000,
+        "isPlayable": true,
+        "mapId": "3359fc08-02fc-4ef7-be8e-d911f01797eb",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "3VvP2j5CqBC18wH1HvpmBMqoAEj",
+        "name": "AirBridge II [EASY MODE]",
+        "silverScore": 145000,
+        "submitter": "d0b9515a-6fa0-40ea-ae56-393e6ca6731a",
+        "timestamp": "2021-10-31T16:41:29+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/3359fc08-02fc-4ef7-be8e-d911f01797eb/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/3359fc08-02fc-4ef7-be8e-d911f01797eb/thumbnail.jpg"
     }
 ]
