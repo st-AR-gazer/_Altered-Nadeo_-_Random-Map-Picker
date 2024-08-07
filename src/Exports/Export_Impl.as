@@ -249,6 +249,7 @@ Json::Value GetUserSettings() {
     settings["Seasons"]["Discovery"]["Snow"] = IsUsing_AllSnowDiscovery;
     settings["Seasons"]["Discovery"]["Rally"] = IsUsing_AllRallyDiscovery;
     settings["Seasons"]["Discovery"]["Desert"] = IsUsing_AllDesertDiscovery;
+    settings["Seasons"]["Discovery"]["Stunt"] = IsUsing_AllStuntDiscovery;
 
     // Not on the discord
     // settings["Alterations"]["Not on Discord"]["Hard"] = IsUsing_Hard; // Is actally Lunatic
@@ -279,6 +280,11 @@ void SetSeason(const string &in t_season, bool t_shouldUse) {
     else if (t_season.ToLower() == "winter 2025") { IsUsing_Winter2025Maps = t_shouldUse; }
     else if (t_season.ToLower() == "spring 2025") { IsUsing_Spring2025Maps = t_shouldUse; }
     else if (t_season.ToLower() == "summer 2025") { IsUsing_Summer2025Maps = t_shouldUse; }
+
+    else if (t_season.ToLower() == "snow discovery") { IsUsing_AllSnowDiscovery = t_shouldUse; }
+    else if (t_season.ToLower() == "rally discovery") { IsUsing_AllRallyDiscovery = t_shouldUse; }
+    else if (t_season.ToLower() == "desert discovery") { IsUsing_AllDesertDiscovery = t_shouldUse; }
+    else if (t_season.ToLower() == "stunt discovery") { IsUsing_AllStuntDiscovery = t_shouldUse; }
 }
 
 void SetAlteration(const string &in t_alteration, bool t_shouldUse) {

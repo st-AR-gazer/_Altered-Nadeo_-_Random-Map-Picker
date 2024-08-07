@@ -391,6 +391,7 @@ void RenderDiscoveryCampaigns() {
     RenderS_SnowDiscovery();
     RenderS_RallyDiscovery();
     RenderS_DesertDiscovery();
+    RenderS_StuntDiscovery();
 
     if (UI::Button("Enable All discovery campaign settings")) { SelectDiscoveryCampaigns(); }
     if (UI::Button("Disable All discovery campaign settings")) { DeselectDiscoveryCampaigns(); }
@@ -399,6 +400,7 @@ void RenderDiscoveryCampaigns() {
 void RenderS_SnowDiscovery() {  IsUsing_AllSnowDiscovery =  UI::Checkbox("Snow Discovery", IsUsing_AllSnowDiscovery); }
 void RenderS_RallyDiscovery() { IsUsing_AllRallyDiscovery = UI::Checkbox("Rally Discovery", IsUsing_AllRallyDiscovery); }
 void RenderS_DesertDiscovery() { IsUsing_AllDesertDiscovery = UI::Checkbox("Desert Discovery", IsUsing_AllDesertDiscovery); }
+void RenderS_StuntDiscovery() { IsUsing_AllStuntDiscovery = UI::Checkbox("Stunt Discovery", IsUsing_AllStuntDiscovery); }
 // ############################################################################################################
 
 

@@ -93,3 +93,50 @@
 
 
 (there is probably more but I cannot be bothered to write it all out rn, will do it later, maybe when the next category is added I guess xdd)
+
+
+
+
+# QuickAddingANewDiscovery
+
+## Files to Update
+
+### Initialize Setting
+1. **File**: `/src/Settings/InitAllSettings.as`
+2. **Add**: 
+   ```c
+   [Setting category="Alteration" name="EXAMPLE Discovery"]
+   bool IsUsing_AllEXAMPLEDiscovery = false;
+   ```
+   
+### Enable/Disable Setting
+Add the discovery too `DeselectDiscoveryCampaigns` and `SelectDiscoveryCampaigns`.
+
+### Update UI
+1. **File**: `/src/InGame/Render/SettingsUI.as`
+2. **Add**: 
+   Got to `RenderDiscoveryCampaigns()` and add:
+   ```c
+   void RenderS_EXAMPLEDiscovery() { IsUsing_AllEXAMPLEDiscovery = UI::Checkbox("EXAMPLE Discovery", IsUsing_AllEXAMPLEDiscovery); }
+   ```
+
+### MatchesAlterationSettings
+1. **File**: `/src/InGame/LoadMaps/GetMapUrl/GetMapWithStorageObject.as`
+2. **Add**: 
+   ```c
+   if (IsUsing_AllEXAMPLEDiscovery && season == "allEZAMPLEdiscovery") return true;
+   ```
+   To: `MatchesSeasonalSettings()`
+   
+### Exports
+1. **File**: `\src\Exports\Export_Impl.as`
+2. **Add**: 
+   Add this to GetUserSettings
+   ```c
+   settings["Seasons"]["Discovery"]["EXAMPLE"] = IsUsing_AllEXAMPLEDiscovery;
+   ```
+   And add this to SetAlteration
+   ```c
+   else if (t_season.ToLower() == "example discovery") { IsUsing_AllEXAMPLEDiscovery = t_shouldUse; }
+   ```
+   Update `SetAlteration` function accordingly.

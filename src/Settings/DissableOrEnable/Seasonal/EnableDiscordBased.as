@@ -43,4 +43,5 @@ void SelectSeasonalOther() {
     IsUsing_AllSnowDiscovery = true;
     IsUsing_AllRallyDiscovery = true;
     IsUsing_AllDesertDiscovery = true;
+    IsUsing_AllStuntDiscovery = true;
 }

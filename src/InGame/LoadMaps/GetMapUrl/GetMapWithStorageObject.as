@@ -123,6 +123,7 @@ bool MatchesSeasonalSettings(Json::Value map) {
     if (IsUsing_AllSnowDiscovery             && season == "allsnowdiscovery") return true;
     if (IsUsing_AllRallyDiscovery            && season == "allrallydiscovery") return true;
     if (IsUsing_AllDesertDiscovery           && season == "alldesertdiscovery") return true;
+    if (IsUsing_AllStuntDiscovery            && season == "allstuntdiscovery") return true;
 
     if (IsUsing__AllOfficialCompetitions     && alteration == "!allofficialcompetitions") return true;
     if (IsUsing_AllOfficialCompetitions      && season == "allofficialcompetitions") return true;
@@ -315,7 +316,7 @@ bool IsSeasonSettingActive() {
         IsUsing_Winter2024Maps || IsUsing_Spring2024Maps || IsUsing_Summer2024Maps || IsUsing_Fall2024Maps || 
         IsUsing_Winter2025Maps || IsUsing_Spring2025Maps || IsUsing_Summer2025Maps || 
         
-        IsUsing_AllSnowDiscovery || IsUsing_AllRallyDiscovery || IsUsing_AllDesertDiscovery || 
+        IsUsing_AllSnowDiscovery || IsUsing_AllRallyDiscovery || IsUsing_AllDesertDiscovery || IsUsing_AllStuntDiscovery || 
         IsUsing__AllOfficialCompetitions || IsUsing_AllOfficialCompetitions || IsUsing_AllTOTD;
 }
 

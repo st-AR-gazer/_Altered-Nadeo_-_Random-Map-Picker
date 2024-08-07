@@ -593,3 +593,5 @@ bool IsUsing_AllRallyDiscovery = false;
 [Setting category="Alteration" name="Desert Discovery"]
 bool IsUsing_AllDesertDiscovery = false;
 
+[Setting category="Alteration" name="Stunt Discovery"]
+bool IsUsing_AllStuntDiscovery = false;
