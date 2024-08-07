@@ -80,9 +80,11 @@ Made indexing the consolidated_maps json a coroutine so lower end computers _sho
 Added More Alterations:
 - Slot Track
 - Red Effects
-- Race (Type)
-- Stunt (Type)
 - Race (Alteration)
 - Stunt (Alteration)
 - No Items
 - Replay
+Other:
+- Race (Type)
+- Stunt (Type)
+- Stunt Discovery Campaign
