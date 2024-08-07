@@ -84,6 +84,7 @@ bool MatchesMapTypeSettings(Json::Value map) {
     }
 
     return isMapTypeCorrect;
+    // don't forget to also add this to exports
 }
 
 bool MatchesSeasonalSettings(Json::Value map) {

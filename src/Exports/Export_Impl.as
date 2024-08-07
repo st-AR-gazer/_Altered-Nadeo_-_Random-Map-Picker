@@ -11,6 +11,12 @@ string GetARandomAltMapStorageObject() {
 Json::Value GetUserSettings() {
     Json::Value settings = Json::Object();
 
+    // Type
+
+    settings["Type"] = Json::Object();
+    settings["Type"]["Race"] = IsUsing_Race_Maps;
+    settings["Type"]["Stunt"] = IsUsing_Stunt_Maps;
+
     // Score
     settings["Score"] = Json::Object();
     settings["Score"]["Author"] = Json::Object();
