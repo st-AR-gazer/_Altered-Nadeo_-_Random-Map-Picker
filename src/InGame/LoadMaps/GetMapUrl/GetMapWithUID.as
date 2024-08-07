@@ -39,6 +39,7 @@ void GetMapUrl(const string &in map_uid) {
 
     Json::Value res = Json::Parse(req.String());
     globalMapUrl = res["downloadUrl"];
+    g_currentMapType = res["type"];
 }
 
 string GetRandomUID() {

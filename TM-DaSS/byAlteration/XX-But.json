@@ -504,6 +504,27 @@
         "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/7b48b896-c19a-4923-b49f-e2e63333b52e/thumbnail.jpg"
     },
     {
+        "author": "d10cdccd-31e7-491f-9504-d72ee3a70de6",
+        "authorScore": 58756,
+        "bronzeScore": 89000,
+        "collectionName": "Stadium",
+        "createdWithGamepadEditor": false,
+        "createdWithSimpleEditor": false,
+        "filename": "Spring 2024 - 11 (Very Hidden Finish).Map.Gbx",
+        "goldScore": 63000,
+        "isPlayable": true,
+        "mapId": "f67a9c0a-d532-43d6-a53f-f50f4f3f4dc2",
+        "mapStyle": "",
+        "mapType": "TrackMania\\TM_Race",
+        "mapUid": "pJjsY1gvXM50RFOdVwhcj8h_0Rd",
+        "name": "Spring 2024 - 11 (Very Hidden Finish)",
+        "silverScore": 71000,
+        "submitter": "0a2d1bc0-4aaa-4374-b2db-3d561bdab1c9",
+        "timestamp": "2024-05-29T04:18:18+00:00",
+        "fileUrl": "https://core.trackmania.nadeo.live/maps/f67a9c0a-d532-43d6-a53f-f50f4f3f4dc2/file",
+        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/f67a9c0a-d532-43d6-a53f-f50f4f3f4dc2/thumbnail.jpg"
+    },
+    {
         "author": "27af4475-0ba8-44cc-8757-42ba3341d882",
         "authorScore": 15290,
         "bronzeScore": 23000,

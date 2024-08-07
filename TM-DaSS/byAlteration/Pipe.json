@@ -544,26 +544,5 @@
         "timestamp": "2023-05-09T14:15:12+00:00",
         "fileUrl": "https://core.trackmania.nadeo.live/maps/98bfbaa1-7fcf-4bd7-9388-479c68128023/file",
         "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/98bfbaa1-7fcf-4bd7-9388-479c68128023/thumbnail.jpg"
-    },
-    {
-        "author": "7cd60a75-609a-4e64-b286-16f329878249",
-        "authorScore": 12120,
-        "bronzeScore": 4480,
-        "collectionName": "Stadium",
-        "createdWithGamepadEditor": false,
-        "createdWithSimpleEditor": false,
-        "filename": "SuperPipe.Map.Gbx",
-        "goldScore": 10300,
-        "isPlayable": true,
-        "mapId": "8a2d0d5d-8f00-4835-9923-a4b7d08b7204",
-        "mapStyle": "",
-        "mapType": "TrackMania\\TM_Stunt",
-        "mapUid": "JYoYacRybTAqFTt8oXaqjpGQZv0",
-        "name": "SuperPipe",
-        "silverScore": 7270,
-        "submitter": "7cd60a75-609a-4e64-b286-16f329878249",
-        "timestamp": "2024-07-01T10:23:07+00:00",
-        "fileUrl": "https://core.trackmania.nadeo.live/maps/8a2d0d5d-8f00-4835-9923-a4b7d08b7204/file",
-        "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/8a2d0d5d-8f00-4835-9923-a4b7d08b7204/thumbnail.jpg"
     }
 ]

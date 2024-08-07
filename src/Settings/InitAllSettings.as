@@ -1,3 +1,11 @@
+// Map Type
+
+[Setting category="Map Type" name="Race Maps"]
+bool IsUsing_Race_Maps = true;
+
+[Setting category="Map Type" name="Stunt Maps"]
+bool IsUsing_Stunt_Maps = false;
+
 // Map Score
 
 [Setting category="Map Score" name="Author Score Min"]

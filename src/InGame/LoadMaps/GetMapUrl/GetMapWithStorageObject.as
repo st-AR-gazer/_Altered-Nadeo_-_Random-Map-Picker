@@ -39,11 +39,11 @@ string FetchRandomMapUrl() {
         Json::Value map = allMaps[i];
         
         if (shoulduseCumulativeSelections) {
-            if (MatchesSeasonalSettings(map) && MatchesAlterationSettings(map) && MatchesScoreSettings(map)) {
+            if (MatchesMapTypeSettings(map) && MatchesSeasonalSettings(map) && MatchesAlterationSettings(map) && MatchesScoreSettings(map)) {
                 FilteredMaps.InsertLast(map);
             }
         } else {
-            if ((MatchesSeasonalSettings(map) || MatchesAlterationSettings(map)) && MatchesScoreSettings(map)) {
+            if ((MatchesMapTypeSettings(map) || MatchesSeasonalSettings(map) || MatchesAlterationSettings(map)) && MatchesScoreSettings(map)) {
                 FilteredMaps.InsertLast(map);
             }
         }
@@ -52,7 +52,6 @@ string FetchRandomMapUrl() {
             startTime = Time::Now;
         }
     }
-
 
     // Select random from filtered
     if (!FilteredMaps.IsEmpty()) {
@@ -64,8 +63,27 @@ string FetchRandomMapUrl() {
         }
     }
 
-    log("No maps match the selected criteria", LogLevel::Error, 67, "FetchRandomMapUrl");
+    log("No maps match the selected criteria", LogLevel::Error, 66, "FetchRandomMapUrl");
     return "";
+}
+
+bool MatchesMapTypeSettings(Json::Value map) {
+    string mapType = map["mapType"];
+    mapType = mapType.ToLower();
+
+    bool isMapTypeCorrect = false;
+
+    if (IsUsing_Race_Maps && mapType == "trackmania\\tm_race") {
+        g_currentMapType = "race";
+        isMapTypeCorrect = true;
+    }
+    
+    if (IsUsing_Stunt_Maps && mapType == "trackmania\\tm_stunt") {
+        g_currentMapType = "stunt";
+        isMapTypeCorrect = true;
+    }
+
+    return isMapTypeCorrect;
 }
 
 bool MatchesSeasonalSettings(Json::Value map) {

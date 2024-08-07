@@ -21,7 +21,7 @@ void RenderInterface() {
 
         g_searchBar = UI::InputText("##Alteration Search Bar", g_searchBar, UI::InputTextFlags::None);
         UI::SameLine();
-        if (UI::Button("Search " + Icons::Search)) activeTab = 15;
+        if (UI::Button("Search " + Icons::Search)) activeTab = 16;
         UI::SameLine();
         if (UI::Button("Clear Search " + Icons::TimesCircleO)) g_searchBar = "";
 
@@ -226,6 +226,15 @@ void RenderGeneralAlterationSettings() {
 
     newValue = UI::Checkbox('CumulativeSelections', shoulduseCumulativeSelections);
     if (newValue != shoulduseCumulativeSelections) { shoulduseCumulativeSelections = newValue; }
+    SimpleTooltip("Enable to combine all your selections. For example, selecting 'winter 2023' and 'ring cp' will only show 'winter 2023 ring cp' maps. Disable to see either 'winter 2023' or 'ring cp' maps individually, but not combined.");
+
+    UI::Separator();
+
+    // Set map types
+    UI::Text("Map Types:");
+    SimpleTooltip("Select what types of maps you want to be able to select from");
+    IsUsing_Race_Maps = UI::Checkbox("Race Maps", IsUsing_Race_Maps);
+    IsUsing_Stunt_Maps = UI::Checkbox("Stunt Maps", IsUsing_Stunt_Maps);
 
     UI::Separator();
 

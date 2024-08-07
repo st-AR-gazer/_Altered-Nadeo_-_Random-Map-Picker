@@ -1,3 +1,8 @@
+### Important:
+
+If a new mode is added officially, e.g puzzle or something, this has to be added to: `MatchesMapTypeSettings` in `GetMapWithStorageObject.as`
+
+
 ## Adding an alteration in SettingUI is outdated
 
 # Quick Guide to Adding an Alteration in Settings (Part 1)

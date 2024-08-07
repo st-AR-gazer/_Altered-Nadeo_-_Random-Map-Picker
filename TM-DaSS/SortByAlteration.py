@@ -140,6 +140,12 @@ def save_sorted_data(sorted_data, base_folder):
             json.dump(maps, file, indent=4, ensure_ascii=False)
 
 
+# How does special cases work?
+# The special_cases_array is used to identify maps that belong to specific categories based on disjointed words in their names.
+# Each entry in the array represents a special case where the map name contains all specified words in any order.
+# This allows for the identification of maps that may not have an exact match but contain all required keywords for a specific category.
+# The handle_regular_alterations function checks if all words in any of the special cases are present in the normalized map name.
+# In contrast, the alterations_dict looks for exact matches or keywords within the map names.
 
 special_cases_array = [
     "YEET Reverse", "[Snow] Wood", "[Snow] Checkpointless", "[Rally] CP1 is End", "[Stadium] Wet Wood", "[Snow] Wet-Plastic"
@@ -157,7 +163,7 @@ alterations_dict = {
     "[Snow] Carswitch": ["Carswitch", "Snowcarswitch", "(CS-SC)", "(CS_SC)", "(CS-SC 2)", "Car Switch"],
     "[Snow] Checkpointless": ["Checkpointless snow", "[Snow] Checkpointless", "[Snow] cpless"],
     "[Snow] Icy": ["Icy [Snow]", "[Snow] Icy"],
-    "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)"],
+    "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)", "[Snow] (UW)"],
     "[Snow] Wet-Plastic": ["(Snow) Wet-Plastic"],
     "[Snow] Wood": ["[Snow] Wood"],
 
@@ -169,8 +175,8 @@ alterations_dict = {
     "[Rally] To The Top": ["Rally To The Top"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
-    "[Desert] Carswitch": ["Desertcarswitch"],
-    "[Desert] Underwater": ["(DesertCar UW)", "(Desert Car UW)", "[Desert] (UW)"],
+    "[Desert] Carswitch": ["Desertcarswitch", "(CS-DC)", "(DC-SC)", "(CS-Desert)", "(CarSwitch - DC)"],
+    "[Desert] Underwater": ["(DesertCar UW)", "(Desert Car UW)", "[Desert] (UW)", "(Desert) (UW)"],
     
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
     "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
@@ -179,7 +185,7 @@ alterations_dict = {
 
     "1 Down": ["1 Down", "1-Down", "1Down", ],
     # "1 Forward": ["1 Forward", "1-Forward", "1Forward"], # This is not included since it is the same as 1-back
-    "1 Back": ["1 Back", "1-Back", "1Back", "1 Forward", "1-Forward", "1Forward", "1-For"],
+    "1 Back": ["1 Back", "1-Back", "1Back", "1 Forward", "1-Forward", "1Forward", "1-For", "one back"],
     "1 Left": ["1 Left", "1-Left", "1Left"],
     "1 Right": ["1 Right", "1-Right", "1Right"],
     "1 Up": ["1 Up", "1-Up", "1Up"],
@@ -274,7 +280,7 @@ alterations_dict = {
     "Select DEL": ["Select DEL", "Select-DEL", "SelectDEL"],
     "Scuba Diving": ["Scuba Diving", "ScubaDiving", "Scuba-Diving"],
     "Short": ["Short"],
-    "Sky is the Finish": ["Sky is the Finish", "skyfinish", "SITF", "skyfin"],
+    "Sky is the Finish": ["Sky is the Finish", "skyfinish", "SITF", "skyfin", "Sky Finish"],
     "Sky is the Finish Reverse": ["Rev Sky Finish", "Rev Sky Fin", "Sky is the Finish Reverse", "SkyFinish Reverse", "SITF Reverse", "SkyistheFinishReverse","Rev Sky is Finish", "Sky is the Finish - Reverse", "Sky-is-the-Finish-Reverse", "Rev  Sky is Finish"],
     "Slot Track": ["Slot Track", "SlotTrack", "Slot-Track"],
     "Slowmo": ["Slowmo", "Slow-Mo", "Slow Mo"],
@@ -491,7 +497,6 @@ special_uids = [
         {"uid": "_SdU5BlwMuvcR2_7ZAqCUQi1tB4", "name": "Fall 2022 - 01 but you take finishes instead of checkpoints", "season": "Fall", "year": "2022", "alteration": "XX-But"},
 
         {"uid": "6tYGxxpsQFyqSULaDZIP1nHaLG8", "name": "Spring 2022 - 15 Endurance",                        "season": "Spring",     "year": "2022", "alteration": "XX-But"},
-        {"uid": "7QzByRVA_7pLuA_aFJgJR_Z0wOk", "name": "Spring 2022 - 11 - one back",                       "season": "Spring",     "year": "2022", "alteration": "XX-But"},
         {"uid": "iNovMY7spLbfzoUSiFo5g9Dfey4", "name": "Training - 01 4 effects",                           "season": "Training",   "year": "",     "alteration": "XX-But"},
         {"uid": "JSa9qlCCu44BvZP9z_d5Rbf9bp7", "name": "Spring 2021 - 01 But It's Global warmings fault?",  "season": "Spring",     "year": "2021", "alteration": "XX-But"},
         {"uid": "X4yHWGvdvpYj5xBEr5AhQ9RI4M6", "name": "Summer 2022 - 08 - Extreme Tilt",                   "season": "Summer",     "year": "2022", "alteration": "XX-But"},
@@ -541,7 +546,7 @@ special_uids = [
         {"uid": "x2csx3ZBLs7aQFgY7lnbaxWTxce", "name": "Training - 14", "season": "Training", "year": "2020", "alteration": "XX-But"},
         {"uid": "OBbi9iaAyrNHglNAOpEet8b4OTg", "name": "Training - 23", "season": "Training", "year": "2020", "alteration": "XX-But"},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
-        {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
+        {"uid": "pJjsY1gvXM50RFOdVwhcj8h_0Rd", "name": "Spring 2024 - 11 (Very Hidden Finish)", "season": "Spring", "year": "2024", "alteration": "XX-But"},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "alteration": ""},
