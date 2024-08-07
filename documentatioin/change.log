@@ -71,3 +71,18 @@ Perfect for trolling an unsuspecting Lars.
 
 Minor bugfixes
 Fixed a bug where you could not load maps from specific alterations...
+
+3.1.0 -
+Added support for stunt type maps
+Updated the local maps to the newest version
+Made indexing the consolidated_maps json a coroutine so lower end computers _should_ struggle less
+
+Added More Alterations:
+- Slot Track
+- Red Effects
+- Race (Type)
+- Stunt (Type)
+- Race (Alteration)
+- Stunt (Alteration)
+- No Items
+- Replay
