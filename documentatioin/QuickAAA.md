@@ -11,15 +11,15 @@
    ```
    
 ### Enable/Disable Setting
-1. **Folder**: `/src/Settings/DissableOrEnable/*`
-2. **Files**: `/src/Settings/DissableOrEnable/DissableDiscordBased.as`
-3. **Files**: `/src/Settings/DissableOrEnable/EnableDiscordBased.as`
-4. **Files**: `/src/Settings/DissableOrEnable/DissableOrEnableDiscordBased.as`
+1. **Folder**: `/src/Settings/DisableOrEnable/*`
+2. **Files**: `/src/Settings/DisableOrEnable/DisableDiscordBased.as`
+3. **Files**: `/src/Settings/DisableOrEnable/EnableDiscordBased.as`
+4. **Files**: `/src/Settings/DisableOrEnable/DisableOrEnableDiscordBased.as`
 
 (If it's a discovery add it there)
-5. **Files**: `/src/Settings/DissableOrEnable/`
+5. **Files**: `/src/Settings/DisableOrEnable/`
 
-6. **Add**: Variable so that a setting can be dissabled / enabled by the user at the click of a button.
+6. **Add**: Variable so that a setting can be disabled / enabled by the user at the click of a button.
 
 ### Update UI
 1. **File**: `/src/InGame/Render/SettingsUI.as`
@@ -75,7 +75,7 @@
 ### Enable/Disable Setting
 1. **Files**: `/src/Settings/DisableOrEnable/All/*`
 2. **Add**:
-   Add the new category function to both DissableAll and EnableAll. e.g `Select[CATEGORY]`.
+   Add the new category function to both DisableAll and EnableAll. e.g `Select[CATEGORY]`.
 
 ### Update UI
 
