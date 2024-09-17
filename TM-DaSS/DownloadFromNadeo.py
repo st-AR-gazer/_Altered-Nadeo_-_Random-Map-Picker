@@ -16,11 +16,7 @@ verbose = args.verbose
 
 def encode_credentials(username, password):
     credentials = f"{username}:{password}"
-    credentials_bytes = credentials.encode('ascii')
-    base64_bytes = base64.b64encode(credentials_bytes)
-    return base64_bytes.decode('ascii')
-
-
+    return base64.b64encode(credentials.encode('ascii')).decode('ascii')
 
 def get_access_token(username, password):
     url = "https://prod.trackmania.core.nadeo.online/v2/authentication/token/basic"
@@ -41,7 +37,7 @@ def get_access_token(username, password):
         if verbose:
             print(f"Error obtaining token: {response.status_code}")
         return None
-    
+
 
 
 def fetch_map_info(uid_batch, access_token):
@@ -66,7 +62,7 @@ def read_uids(file_path):
         if verbose:
             print(f"Reading UIDs from {file_path}")
         return set(line.strip() for line in file)
-    
+
 
 
 def write_processed_uids(file_path, uids):
@@ -78,12 +74,12 @@ def write_processed_uids(file_path, uids):
 
 
 
-def split_into_batches(uids, max_length):
+def split_into_batches(uids, max_length, max_uid_count=220):
     batch = []
     current_length = 0
     for uid in uids:
         added_length = len(uid) + 1
-        if current_length + added_length > max_length:
+        if current_length + added_length > max_length or len(batch) >= max_uid_count:
             yield batch
             batch = []
             current_length = 0
