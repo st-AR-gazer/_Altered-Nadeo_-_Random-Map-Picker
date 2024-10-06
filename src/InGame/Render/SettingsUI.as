@@ -685,6 +685,7 @@ void RenderAlterationalOther() {
     RenderS_CPfull();
     RenderS_Checkpointless();
     RenderS_CPLink();
+    RenderS_DragonYeet();
     RenderS_Got_Rotated_CPs_Rotated_90__();
     RenderS_Earthquake();
     RenderS_Egocentrism();
@@ -741,6 +742,7 @@ void RenderS_CP1_Kept() {                   IsUsing_CP1_Kept =                  
 void RenderS_CPfull() {                     IsUsing_CPfull =                     UI::Checkbox("CPfull", IsUsing_CPfull); }
 void RenderS_Checkpointless() {             IsUsing_Checkpointless =             UI::Checkbox("Checkpointless", IsUsing_Checkpointless); }
 void RenderS_CPLink() {                     IsUsing_CPLink =                     UI::Checkbox("CPLink", IsUsing_CPLink); }
+void RenderS_DragonYeet() {                 IsUsing_DragonYeet =                 UI::Checkbox("DragonYeet", IsUsing_DragonYeet); }
 void RenderS_Got_Rotated_CPs_Rotated_90__() { IsUsing_Got_Rotated_CPs_Rotated_90__ = UI::Checkbox("Got Rotated CPs Rotated 90°", IsUsing_Got_Rotated_CPs_Rotated_90__); }
 void RenderS_Earthquake() {                 IsUsing_Earthquake =                 UI::Checkbox("Earthquake", IsUsing_Earthquake); }
 void RenderS_Egocentrism() {                IsUsing_Egocentrism =                UI::Checkbox("Egocentrism", IsUsing_Egocentrism); }
@@ -1042,6 +1044,8 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Checkpointless);
     alterationNames.InsertLast("CPLink");
     alterationFuncs.InsertLast(@RenderS_CPLink);
+    alterationNames.InsertLast("DragonYeet");
+    alterationFuncs.InsertLast(@RenderS_DragonYeet);
     alterationNames.InsertLast("Got Rotated CPs Rotated 90°");
     alterationFuncs.InsertLast(@RenderS_Got_Rotated_CPs_Rotated_90__);
     alterationNames.InsertLast("Earthquake");

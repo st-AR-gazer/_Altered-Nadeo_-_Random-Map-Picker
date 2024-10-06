@@ -175,6 +175,7 @@ alterations_dict = {
     "[Rally] To The Top": ["Rally To The Top"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
+    "[Desert] Ice": ["[Desert] Ice", "Dicy"], 
     "[Desert] Carswitch": ["Desertcarswitch", "(CS-DC)", "(DC-SC)", "(CS-Desert)", "(CarSwitch - DC)"],
     "[Desert] Underwater": ["(DesertCar UW)", "(Desert Car UW)", "[Desert] (UW)", "(Desert) (UW)"],
     
@@ -218,6 +219,7 @@ alterations_dict = {
     "Cruise": ["Cruise", "Cruise Control"],
 
     "Dirt": ["Dirt", "Dirty"],
+    "DragonYeet": ["DragonYeet"],
     "Road Dirt": ["Road Dirt"],
 
     "Earthquake": ["Earthquake"],

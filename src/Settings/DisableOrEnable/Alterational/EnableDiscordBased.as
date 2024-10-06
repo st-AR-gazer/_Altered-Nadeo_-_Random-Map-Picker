@@ -130,6 +130,7 @@ void SelectAlteredOther() {
     IsUsing_CPfull = true;
     IsUsing_Checkpointless = true;
     IsUsing_CPLink = true;
+    IsUsing_DragonYeet = true;
     IsUsing_Egocentrism = true;
     IsUsing_Flat_2D = true;
     IsUsing_Got_Rotated_CPs_Rotated_90__ = true;

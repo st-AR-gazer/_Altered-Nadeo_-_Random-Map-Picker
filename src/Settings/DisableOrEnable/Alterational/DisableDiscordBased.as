@@ -130,6 +130,7 @@ void DeselectAlteredOther() {
     IsUsing_CPfull = false;
     IsUsing_Checkpointless = false;
     IsUsing_CPLink = false;
+    IsUsing_DragonYeet = false;
     IsUsing_Egocentrism = false;
     IsUsing_Flat_2D = false;
     IsUsing_Got_Rotated_CPs_Rotated_90__ = false;

@@ -176,6 +176,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Other"]["CPfull"] = IsUsing_CPfull;
     settings["Alterations"]["Other"]["CPLess"] = IsUsing_Checkpointless;
     settings["Alterations"]["Other"]["CPLink"] = IsUsing_CPLink;
+    settings["Alterations"]["Other"]["DragonYeet"] = IsUsing_DragonYeet;
     settings["Alterations"]["Other"]["Got Rotated / CPs Rotated 90°"] = IsUsing_Got_Rotated_CPs_Rotated_90__;
     settings["Alterations"]["Other"]["Earthquake"] = IsUsing_Earthquake;
     settings["Alterations"]["Other"]["Egocentrism (Altered Camera)"] = IsUsing_Egocentrism;
@@ -405,6 +406,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "cpfull") { IsUsing_CPfull = t_shouldUse; }
     else if (t_alteration.ToLower() == "cpless") { IsUsing_Checkpointless = t_shouldUse; }
     else if (t_alteration.ToLower() == "cplink") { IsUsing_CPLink = t_shouldUse; }
+    else if (t_alteration.ToLower() == "dragonyeet") { IsUsing_DragonYeet = t_shouldUse; }
     else if (t_alteration.ToLower() == "got rotated / cps rotated 90°") { IsUsing_Got_Rotated_CPs_Rotated_90__ = t_shouldUse; }
     else if (t_alteration.ToLower() == "earthquake") { IsUsing_Earthquake = t_shouldUse; }
     else if (t_alteration.ToLower() == "egocentrism (altered camera)") { IsUsing_Egocentrism = t_shouldUse; }

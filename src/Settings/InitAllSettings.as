@@ -36,6 +36,9 @@ int IsUsing_bronzeScoreMax = -1;
 [Setting category="Alteration" name="Dirt"]
 bool IsUsing_Dirt = false;
 
+[Setting category="Alteration" name="DragonYeet"]
+bool IsUsing_DragonYeet = false;
+
 [Setting category="Alteration" name="Fast Magnet"]
 bool IsUsing_Fast_Magnet = false;
 

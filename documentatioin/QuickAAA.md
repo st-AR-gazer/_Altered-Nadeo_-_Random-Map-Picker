@@ -11,6 +11,7 @@
    ```
    
 ### Enable/Disable Setting
+These are for seasonal and others (ctrl + p defaults to seasonal), check 'Alterational' folder too if you're adding an 'Alt' not just a season.
 1. **Folder**: `/src/Settings/DisableOrEnable/*`
 2. **Files**: `/src/Settings/DisableOrEnable/DisableDiscordBased.as`
 3. **Files**: `/src/Settings/DisableOrEnable/EnableDiscordBased.as`

@@ -254,6 +254,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_CP1_Kept                     && alteration == "cp1 kept") return true;
     if (IsUsing_CPfull                       && alteration == "cpfull") return true;
     if (IsUsing_CPLink                       && alteration == "cpLink") return true;
+    if (IsUsing_DragonYeet                   && alteration == "dragonyeet") return true;
     if (IsUsing_Earthquake                   && alteration == "earthquake") return true;
     if (IsUsing_Fast                         && alteration == "fast") return true;
     if (IsUsing_Flipped                      && alteration == "flipped") return true;
@@ -348,7 +349,7 @@ bool IsAlterationSettingActive() {
         
         IsUsing_XX_But || IsUsing_Flat_2D || IsUsing_A08 || IsUsing_Antibooster || IsUsing_Backwards || IsUsing_Boosterless || IsUsing_BOSS || 
         IsUsing_Broken || IsUsing_Bumper || IsUsing_Ngolo_Cacti || IsUsing_Checkpoin_t || IsUsing_Cleaned || IsUsing_Colours_Combined || 
-        IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_Earthquake || IsUsing_Fast || 
+        IsUsing_CP_Boost || IsUsing_CP1_Kept || IsUsing_CPfull || IsUsing_Checkpointless || IsUsing_CPLink || IsUsing_DragonYeet || IsUsing_Earthquake || IsUsing_Fast || 
         IsUsing_Flipped || IsUsing_Got_Rotated_CPs_Rotated_90__ || IsUsing_Ground_Clippers || /*IsUsing_Hard ||  // Is actally Lunatic */IsUsing_Holes || IsUsing_Lunatic || IsUsing_Mini_RPG || IsUsing_Mirrored || 
         IsUsing_No_Items || IsUsing_Pool_Hunters || IsUsing_Random || IsUsing_Replay || IsUsing_Ring_CP || IsUsing_Sections_joined || IsUsing_Select_DEL || IsUsing_Speedlimit || 
         IsUsing_Start_1_Down || IsUsing_Supersized || IsUsing_Straight_to_the_Finish || IsUsing_Stunt || IsUsing_Symmetrical || IsUsing_Tilted || IsUsing_YEET || 
