@@ -214,6 +214,7 @@ bool MatchesAlterationSettings(Json::Value map) {
     if (IsUsing_Rally_Icy                    && alteration == "[rally] icy") return true;
     if (IsUsing_Desert_                      && alteration == "[desert]") return true;
     if (IsUsing_Desert_Carswitch             && alteration == "[desert] carswitch") return true;
+    if (IsUsing_Desert_Icy                   && alteration == "[desert] icy") return true;
     if (IsUsing_Desert_Underwater            && alteration == "[desert] underwater") return true;
 
     if (IsUsing_Race_                        && alteration == "[Race]") return true;
@@ -336,9 +337,10 @@ bool IsAlterationSettingActive() {
         IsUsing_Puzzle || IsUsing_Reverse || IsUsing_Roofing || IsUsing_Short || IsUsing_Sky_is_the_Finish || IsUsing_There_and_Back_Boomerang || 
         IsUsing_YEP_Tree_Puzzle || 
         
-        IsUsing_Stadium_ || IsUsing_Stadium_Wet_Wood || IsUsing_Snow_ || IsUsing_Snow_Carswitch || IsUsing_Snow_Checkpointless || 
-        IsUsing_Snow_Icy || IsUsing_Snow_Underwater || IsUsing_Snow_Wet_Plastic || IsUsing_Snow_Wood || IsUsing_Rally_ || IsUsing_Rally_Carswitch || 
-        IsUsing_Rally_CP1_is_End || IsUsing_Rally_Underwater || IsUsing_Rally_Icy || 
+        IsUsing_Stadium_ || IsUsing_Stadium_Wet_Wood || 
+        IsUsing_Snow_ || IsUsing_Snow_Carswitch || IsUsing_Snow_Checkpointless || IsUsing_Snow_Icy || IsUsing_Snow_Underwater || IsUsing_Snow_Wet_Plastic || IsUsing_Snow_Wood || 
+        IsUsing_Rally_ || IsUsing_Rally_Carswitch || IsUsing_Rally_CP1_is_End || IsUsing_Rally_Underwater || IsUsing_Rally_Icy || 
+        IsUsing_Desert_ || IsUsing_Desert_Carswitch || IsUsing_Desert_Icy || IsUsing_Desert_Underwater ||
 
         IsUsing_Race_ || IsUsing_Stunt_ ||
         

@@ -264,6 +264,9 @@ bool IsUsing_Rally_Icy = false;
 [Setting category="Alteration" name="[Desert]"]
 bool IsUsing_Desert_ = false;
 
+[Setting category="Alteration" name="[Desert] Ice"]
+bool IsUsing_Desert_Icy = false;
+
 [Setting category="Alteration" name="[Desert] Carswitch"]
 bool IsUsing_Desert_Carswitch = false;
 

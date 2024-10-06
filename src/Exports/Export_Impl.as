@@ -124,6 +124,7 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Environment"]["[Rally] Ice"] = IsUsing_Rally_Icy;
     settings["Alterations"]["Environment"]["[Desert]"] = IsUsing_Desert_;
     settings["Alterations"]["Environment"]["[Desert] Carswitch"] = IsUsing_Desert_Carswitch;
+    settings["Alterations"]["Environment"]["[Desert] Ice"] = IsUsing_Desert_Icy;
     settings["Alterations"]["Environment"]["[Desert] Underwater"] = IsUsing_Desert_Underwater;
 
     // Altered Game Modes
@@ -363,6 +364,10 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "[rally] cp1 is end") { IsUsing_Rally_CP1_is_End = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] underwater") { IsUsing_Rally_Underwater = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] ice") { IsUsing_Rally_Icy = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[desert]") { IsUsing_Desert_ = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[desert] carswitch") { IsUsing_Desert_Carswitch = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[desert] ice") { IsUsing_Desert_Icy = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[desert] underwater") { IsUsing_Desert_Underwater = t_shouldUse; }
 
     else if (t_alteration.ToLower() == "[Race]") { IsUsing_Race_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[Stunt]") { IsUsing_Stunt_ = t_shouldUse; }

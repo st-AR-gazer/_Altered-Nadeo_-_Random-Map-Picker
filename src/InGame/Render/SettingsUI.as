@@ -561,6 +561,7 @@ void RenderEnviroments() {
 
     RenderS_Stadium_();
     RenderS_Stadium_Wet_Wood();
+
     RenderS_Snow_();
     RenderS_Snow_Carswitch();
     RenderS_Snow_Checkpointless();
@@ -568,9 +569,17 @@ void RenderEnviroments() {
     RenderS_Snow_Underwater();
     RenderS_Snow_Wet_Plastic();
     RenderS_Snow_Wood();
+
     RenderS_Rally_();
+    RenderS_Rally_Carswitch();
     RenderS_Rally_CP1_is_End();
+    RenderS_Rally_Icy();
     RenderS_Rally_Underwater();
+
+    RenderS_Desert_();
+    RenderS_Desert_Carswitch();
+    RenderS_Desert_Icy();
+    RenderS_Desert_Underwater();
 
     if (UI::Button("Enable All enviroment settings")) { SelectAlteredEnviroments(); }
     if (UI::Button("Disable All enviroment settings")) { DeselectAlteredEnviroments(); }
@@ -578,6 +587,7 @@ void RenderEnviroments() {
 
 void RenderS_Stadium_() {            IsUsing_Stadium_ =            UI::Checkbox("[Stadium]", IsUsing_Stadium_); }
 void RenderS_Stadium_Wet_Wood() {    IsUsing_Stadium_Wet_Wood =    UI::Checkbox("[Stadium] Wet Wood", IsUsing_Stadium_Wet_Wood); }
+
 void RenderS_Snow_() {               IsUsing_Snow_ =               UI::Checkbox("[Snow]", IsUsing_Snow_); }
 void RenderS_Snow_Carswitch() {      IsUsing_Snow_Carswitch =      UI::Checkbox("[Snow] Carswitch", IsUsing_Snow_Carswitch); }
 void RenderS_Snow_Checkpointless() { IsUsing_Snow_Checkpointless = UI::Checkbox("[Snow] Checkpointless", IsUsing_Snow_Checkpointless); }
@@ -585,11 +595,16 @@ void RenderS_Snow_Icy() {            IsUsing_Snow_Icy =            UI::Checkbox(
 void RenderS_Snow_Underwater() {     IsUsing_Snow_Underwater =     UI::Checkbox("[Snow] Underwater", IsUsing_Snow_Underwater); }
 void RenderS_Snow_Wet_Plastic() {    IsUsing_Snow_Wet_Plastic =    UI::Checkbox("[Snow] Wet-Plastic", IsUsing_Snow_Wet_Plastic); }
 void RenderS_Snow_Wood() {           IsUsing_Snow_Wood =           UI::Checkbox("[Snow] Wood", IsUsing_Snow_Wood); }
+
 void RenderS_Rally_() {              IsUsing_Rally_ =              UI::Checkbox("[Rally]", IsUsing_Rally_); }
+void RenderS_Rally_Carswitch() {     IsUsing_Rally_Carswitch =     UI::Checkbox("[Rally] Carswitch", IsUsing_Rally_Carswitch); }
 void RenderS_Rally_CP1_is_End() {    IsUsing_Rally_CP1_is_End =    UI::Checkbox("[Rally] CP1 is End", IsUsing_Rally_CP1_is_End); }
+void RenderS_Rally_Icy() {           IsUsing_Rally_Icy =           UI::Checkbox("[Rally] Icy", IsUsing_Rally_Icy); }
 void RenderS_Rally_Underwater() {    IsUsing_Rally_Underwater =    UI::Checkbox("[Rally] Underwater", IsUsing_Rally_Underwater); }
+
 void RenderS_Desert_() {             IsUsing_Desert_ =             UI::Checkbox("[Desert]", IsUsing_Desert_); }
 void RenderS_Desert_Carswitch() {    IsUsing_Desert_Carswitch =    UI::Checkbox("[Desert] Carswitch", IsUsing_Desert_Carswitch); }
+void RenderS_Desert_Icy() {          IsUsing_Desert_Icy =          UI::Checkbox("[Desert] Icy", IsUsing_Desert_Icy); }
 void RenderS_Desert_Underwater() {   IsUsing_Desert_Underwater =   UI::Checkbox("[Desert] Underwater", IsUsing_Desert_Underwater); }
 // ############################################################################################################
 
@@ -946,14 +961,20 @@ void PopulateAlterationsArrays() {
     alterationFuncs.InsertLast(@RenderS_Snow_Wood);
     alterationNames.InsertLast("[Rally]");
     alterationFuncs.InsertLast(@RenderS_Rally_);
+    alterationNames.InsertLast("[Rally] Carswitch");
+    alterationFuncs.InsertLast(@RenderS_Rally_Carswitch);
     alterationNames.InsertLast("[Rally] CP1 is End");
     alterationFuncs.InsertLast(@RenderS_Rally_CP1_is_End);
+    alterationNames.InsertLast("[Rally] Icy");
+    alterationFuncs.InsertLast(@RenderS_Rally_Icy);
     alterationNames.InsertLast("[Rally] Underwater");
     alterationFuncs.InsertLast(@RenderS_Rally_Underwater);
     alterationNames.InsertLast("[Desert]");
     alterationFuncs.InsertLast(@RenderS_Desert_);
     alterationNames.InsertLast("[Desert] Carswitch");
     alterationFuncs.InsertLast(@RenderS_Desert_Carswitch);
+    alterationNames.InsertLast("[Desert] Icy");
+    alterationFuncs.InsertLast(@RenderS_Desert_Icy);
     alterationNames.InsertLast("[Desert] Underwater");
     alterationFuncs.InsertLast(@RenderS_Desert_Underwater);
 

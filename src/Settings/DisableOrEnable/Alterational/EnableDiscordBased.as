@@ -81,6 +81,7 @@ void SelectAlteredEnviroments() {
     IsUsing_Rally_Icy = true;
     IsUsing_Desert_ = true;
     IsUsing_Desert_Carswitch = true;
+    IsUsing_Desert_Icy = true;
     IsUsing_Desert_Underwater = true;
 }
 
