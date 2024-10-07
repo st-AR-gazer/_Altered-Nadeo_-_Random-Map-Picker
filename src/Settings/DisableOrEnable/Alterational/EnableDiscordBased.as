@@ -67,6 +67,7 @@ void SelectAlteredFinishLocation() {
 void SelectAlteredEnviroments() {
     IsUsing_Stadium_ = true;
     IsUsing_Stadium_Wet_Wood = true;
+    IsUsing_Stadium_To_The_Top = true;
     IsUsing_Snow_ = true;
     IsUsing_Snow_Carswitch = true;
     IsUsing_Snow_Checkpointless = true;
@@ -74,15 +75,18 @@ void SelectAlteredEnviroments() {
     IsUsing_Snow_Underwater = true;
     IsUsing_Snow_Wet_Plastic = true;
     IsUsing_Snow_Wood = true;
+    IsUsing_Snow_To_The_Top = true;
     IsUsing_Rally_ = true;
     IsUsing_Rally_Carswitch = true;
     IsUsing_Rally_CP1_is_End = true;
     IsUsing_Rally_Underwater = true;
     IsUsing_Rally_Icy = true;
+    IsUsing_Rally_To_The_Top = true;
     IsUsing_Desert_ = true;
     IsUsing_Desert_Carswitch = true;
     IsUsing_Desert_Icy = true;
     IsUsing_Desert_Underwater = true;
+    IsUsing_Desert_To_The_Top = true;
 }
 
 void SelectAlteredGameModes() {

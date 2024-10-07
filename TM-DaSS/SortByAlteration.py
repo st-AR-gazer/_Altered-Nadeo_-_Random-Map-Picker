@@ -166,21 +166,24 @@ alterations_dict = {
     "[Snow] Underwater": ["(SnowCar UW)", "(Snow Car UW)", "[Snow] (UW)"],
     "[Snow] Wet-Plastic": ["(Snow) Wet-Plastic"],
     "[Snow] Wood": ["[Snow] Wood"],
+    "[Snow] To The Top": ["SnowTTT"],
 
     "[Rally]": ["[Rally]", "RallyCar", "CarRally", "(RC)"],
     "[Rally] Carswitch": ["Rallycarswitch", "(CS-RC)", "(RC-SC)", "(CS-Rally)", "(CarSwitch - RC)"],
     "[Rally] CP1 is End": ["[Rally] CP1 is End", "RallyCar CP1 is End", "Rally CP1-End", "Rally CP1End", "Rally CP1 Ends", "Rally Cp1 is End"],
     "[Rally] Underwater": ["[Rally] (UW)"],
     "[Rally] Icy": ["Icy [Rally]", "[Rally] Icy", "Ricy"],
-    "[Rally] To The Top": ["Rally To The Top"],
+    "[Rally] To The Top": ["RTTT"],
 
     "[Desert]": ["[Desert]", "DesertCar", "CarDesert"],
     "[Desert] Ice": ["[Desert] Ice", "Dicy"], 
     "[Desert] Carswitch": ["Desertcarswitch", "(CS-DC)", "(DC-SC)", "(CS-Desert)", "(CarSwitch - DC)"],
     "[Desert] Underwater": ["(DesertCar UW)", "(Desert Car UW)", "[Desert] (UW)", "(Desert) (UW)"],
+    "[Desert] To The Top": ["DTTT"],
     
     "[Stadium]": ["[Stadium]", "StadiumCar", "CarStadium", "CarSport"],
     "[Stadium] Wet Wood": ["Wet Wood Stadium Car", "[Stadium] Wet Wood", "Wet Wood CarSport"],
+    "[Stadium] To The Top": ["STTT"],
     
     "100% Wet Icy Wheels": ["100% Wet Icy Wheels", "100% Wet-Icy-Wheels", "100% WetIcyWheels", "100%WetIcyWheels"],
 

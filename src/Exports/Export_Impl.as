@@ -110,6 +110,7 @@ Json::Value GetUserSettings() {
 
     settings["Alterations"]["Environment"]["[Stadium]"] = IsUsing_Stadium_;
     settings["Alterations"]["Environment"]["[Stadium] Wet Wood"] = IsUsing_Stadium_Wet_Wood;
+    settings["Alterations"]["Environment"]["[Stadium] To The Top"] = IsUsing_Stadium_To_The_Top;
     settings["Alterations"]["Environment"]["[Snow]"] = IsUsing_Snow_;
     settings["Alterations"]["Environment"]["[Snow] Carswitch"] = IsUsing_Snow_Carswitch;
     settings["Alterations"]["Environment"]["[Snow] Checkpointless"] = IsUsing_Snow_Checkpointless;
@@ -117,15 +118,18 @@ Json::Value GetUserSettings() {
     settings["Alterations"]["Environment"]["[Snow] Underwater"] = IsUsing_Snow_Underwater;
     settings["Alterations"]["Environment"]["[Snow] Wet Plastic"] = IsUsing_Snow_Wet_Plastic;
     settings["Alterations"]["Environment"]["[Snow] Wood"] = IsUsing_Snow_Wood;
+    settings["Alterations"]["Environment"]["[Snow] To The Top"] = IsUsing_Snow_To_The_Top;
     settings["Alterations"]["Environment"]["[Rally]"] = IsUsing_Rally_;
     settings["Alterations"]["Environment"]["[Rally] Carswitch"] = IsUsing_Rally_Carswitch;
     settings["Alterations"]["Environment"]["[Rally] CP1 is End"] = IsUsing_Rally_CP1_is_End;
     settings["Alterations"]["Environment"]["[Rally] Underwater"] = IsUsing_Rally_Underwater;
     settings["Alterations"]["Environment"]["[Rally] Ice"] = IsUsing_Rally_Icy;
+    settings["Alterations"]["Environment"]["[Rally] To The Top"] = IsUsing_Rally_To_The_Top;
     settings["Alterations"]["Environment"]["[Desert]"] = IsUsing_Desert_;
     settings["Alterations"]["Environment"]["[Desert] Carswitch"] = IsUsing_Desert_Carswitch;
     settings["Alterations"]["Environment"]["[Desert] Ice"] = IsUsing_Desert_Icy;
     settings["Alterations"]["Environment"]["[Desert] Underwater"] = IsUsing_Desert_Underwater;
+    settings["Alterations"]["Environment"]["[Desert] To The Top"] = IsUsing_Desert_To_The_Top;
 
     // Altered Game Modes
     settings["Alterations"]["Game Modes"] = Json::Object();
@@ -352,6 +356,7 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
 
     else if (t_alteration.ToLower() == "[stadium]") { IsUsing_Stadium_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[stadium] wet wood") { IsUsing_Stadium_Wet_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[stadium] to the top") { IsUsing_Stadium_To_The_Top = t_shouldUse; }
     else if (t_alteration.ToLower() == "[snow]") { IsUsing_Snow_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[snow] carswitch") { IsUsing_Snow_Carswitch = t_shouldUse; }
     else if (t_alteration.ToLower() == "[snow] checkpointless") { IsUsing_Snow_Checkpointless = t_shouldUse; }
@@ -359,15 +364,18 @@ void SetAlteration(const string &in t_alteration, bool t_shouldUse) {
     else if (t_alteration.ToLower() == "[snow] underwater") { IsUsing_Snow_Underwater; }
     else if (t_alteration.ToLower() == "[snow] wet plastic") { IsUsing_Snow_Wet_Plastic = t_shouldUse; }
     else if (t_alteration.ToLower() == "[snow] wood") { IsUsing_Snow_Wood = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[snow] to the top") { IsUsing_Snow_To_The_Top = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally]") { IsUsing_Rally_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] carswitch") { IsUsing_Rally_Carswitch = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] cp1 is end") { IsUsing_Rally_CP1_is_End = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] underwater") { IsUsing_Rally_Underwater = t_shouldUse; }
     else if (t_alteration.ToLower() == "[rally] ice") { IsUsing_Rally_Icy = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[rally] to the top") { IsUsing_Rally_To_The_Top = t_shouldUse; }
     else if (t_alteration.ToLower() == "[desert]") { IsUsing_Desert_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[desert] carswitch") { IsUsing_Desert_Carswitch = t_shouldUse; }
     else if (t_alteration.ToLower() == "[desert] ice") { IsUsing_Desert_Icy = t_shouldUse; }
     else if (t_alteration.ToLower() == "[desert] underwater") { IsUsing_Desert_Underwater = t_shouldUse; }
+    else if (t_alteration.ToLower() == "[desert] to the top") { IsUsing_Desert_To_The_Top = t_shouldUse; }
 
     else if (t_alteration.ToLower() == "[Race]") { IsUsing_Race_ = t_shouldUse; }
     else if (t_alteration.ToLower() == "[Stunt]") { IsUsing_Stunt_ = t_shouldUse; }
