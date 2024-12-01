@@ -12,7 +12,7 @@ official_competition_maps = [
     "Frosty", "Pool", "Grip", "Control", "Heart", "IcyJump", "TinyGap", 
     "WaterGlider", "IcySnake", "Throttling Act", "GrassHopper", "BoltHoles",
     "Vertigo", "LaunchPad", "Bowl", "Clock Tower", "TightRope", "Quicksand",
-    "Grassline", "Touchdown", "Turnover"
+    "Grassline", "Touchdown", "Turnover", "EuroSky II"
 ]
 
 special_uids = [
