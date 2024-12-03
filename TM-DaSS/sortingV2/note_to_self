@@ -1,30 +1,4 @@
-# This map is marked as plaform discovery since it contains "deja vu", but it shouldn't be marked as such
-{
-    "author": "d5bfdb9f-552d-4cd7-ab2b-83279d3f16a6",
-    "authorScore": 44298,
-    "bronzeScore": 67000,
-    "collectionName": "Stadium",
-    "createdWithGamepadEditor": null,
-    "createdWithSimpleEditor": null,
-    "filename": "fall 02 Deja vu.Map.Gbx",
-    "goldScore": 47000,
-    "isPlayable": true,
-    "mapId": "57a5d43b-9bec-443d-a69d-b976f737bf93",
-    "mapStyle": "",
-    "mapType": "TrackMania\\TM_Race",
-    "mapUid": "vdhc9NcrxcEbSkr2ScufFKB7Uxk",
-    "name": "fall 02 Deja vu",
-    "silverScore": 54000,
-    "submitter": "bdc082ec-e5ca-4644-b20d-2eb1e5c91914",
-    "timestamp": "2021-12-14T18:16:55+00:00",
-    "fileUrl": "https://core.trackmania.nadeo.live/maps/57a5d43b-9bec-443d-a69d-b976f737bf93/file",
-    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/57a5d43b-9bec-443d-a69d-b976f737bf93/thumbnail.jpg",
-    "isPlatformDiscovery": true,
-    "season": "fall",
-    "year": "2024",
-    "mapNumber": null
-}
-
+imp: an update fuckered with discovery so season year an map number are now null on all of em, this gotta get fix in the morrow...
 
 # Freedom is both a totd map name, and a stunt discovery map name
 {
@@ -47,16 +21,12 @@
     "timestamp": "2024-07-12T14:49:58+00:00",
     "fileUrl": "https://core.trackmania.nadeo.live/maps/2c78c5f8-49c7-4e2e-9454-4116e23182db/file",
     "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/2c78c5f8-49c7-4e2e-9454-4116e23182db/thumbnail.jpg",
-    "isTOTD": true,
-    "isStuntDiscovery": true,
     "season": null,
     "year": null,
     "mapNumber": null,
-    "additionalInfo": [
-        "Freedom",
-        "CarSnow"
-    ]
-}
+    "additionalInfo": [],
+    "isType": "stunt discovery"
+},
 
 # CarRally is in the map name yet the "additionalInfo" field is empty
 {
@@ -114,34 +84,36 @@
     "additionalInfo": []
 },
 
-# AT by [name] can also be used as a ft' replacement
-{
-    "author": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
-    "authorScore": 36652,
-    "bronzeScore": 55000,
+# Too much information is here
+"Originals (100% Wet Icy Wood).Map.Gbx": {
+    "author": "c9874601-4a6d-47f2-989d-f5ffee02ee4d",
+    "authorScore": 30576,
+    "bronzeScore": 46000,
     "collectionName": "Stadium",
-    "createdWithGamepadEditor": null,
-    "createdWithSimpleEditor": null,
-    "filename": "Dirty Fall 2022 - 13 (AT by mime).Map.Gbx",
-    "goldScore": 39000,
+    "createdWithGamepadEditor": false,
+    "createdWithSimpleEditor": false,
+    "filename": "Originals (100% Wet Icy Wood).Map.Gbx",
+    "goldScore": 33000,
     "isPlayable": true,
-    "mapId": "66e1eec7-0637-45e1-a841-aa61d342c183",
+    "mapId": "0a8089e2-1222-47e6-a742-fe36af6c97a5",
     "mapStyle": "",
     "mapType": "TrackMania\\TM_Race",
-    "mapUid": "FBnzwmU7AFZ_LAnD0vKJEL0JpC9",
-    "name": "Dirty Fall 2022 - 13 (AT by mime)",
-    "silverScore": 44000,
-    "submitter": "868051bb-2e54-4c5e-a611-2fabcb1c0077",
-    "timestamp": "2022-11-07T16:10:15+00:00",
-    "fileUrl": "https://core.trackmania.nadeo.live/maps/66e1eec7-0637-45e1-a841-aa61d342c183/file",
-    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/66e1eec7-0637-45e1-a841-aa61d342c183/thumbnail.jpg",
-    "season": "fall",
-    "year": "2022",
-    "mapNumber": "13",
+    "mapUid": "Vtu9qj3_oE08k59bd2mxDTHQcW1",
+    "name": "Originals (100% Wet Icy Wood)",
+    "silverScore": 37000,
+    "submitter": "c9874601-4a6d-47f2-989d-f5ffee02ee4d",
+    "timestamp": "2024-06-17T08:11:34+00:00",
+    "fileUrl": "https://core.trackmania.nadeo.live/maps/0a8089e2-1222-47e6-a742-fe36af6c97a5/file",
+    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/0a8089e2-1222-47e6-a742-fe36af6c97a5/thumbnail.jpg",
+    "season": null,
+    "year": null,
+    "mapNumber": null,
     "additionalInfo": [
-        "AT",
-        "Dirty",
-        "by",
-        "mime"
-    ]
+        "Wood",
+        "Icy",
+        "100",
+        "100% Wet Icy Wood",
+        "Wet"
+    ],
+    "isType": "desert discovery"
 },
