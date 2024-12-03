@@ -1,693 +1,1017 @@
-2024-12-01 05:52:56,262 - WARNING - No valid year found in name: 'FlatWinter'23 - 17' (season: winter)
-2024-12-01 05:52:56,278 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-Down)' (season: summer)
-2024-12-01 05:52:56,278 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-Down)'
-2024-12-01 05:52:56,284 - WARNING - No valid year found in name: 'FlatFall'22 - 21' (season: fall)
-2024-12-01 05:52:56,285 - WARNING - No valid year found in name: 'Fall 21 (Mirror)' (season: fall)
-2024-12-01 05:52:56,317 - WARNING - No valid year found in name: 'Fall 08 (Mirror)' (season: fall)
-2024-12-01 05:52:56,325 - WARNING - No valid year found in name: 'Green BOSS - Summer'23' (season: summer)
-2024-12-01 05:52:56,329 - WARNING - No season found in name: 'Super24'
-2024-12-01 05:52:56,329 - WARNING - No valid year found in name: 'Super24' (season: None)
-2024-12-01 05:52:56,330 - WARNING - No valid map number found in name: 'Super24'
-2024-12-01 05:52:56,340 - WARNING - No valid year found in name: 'Red BOSS - Summer'23' (season: summer)
-2024-12-01 05:52:56,378 - WARNING - No valid year found in name: 'Winter 2024 - Section 3 Joined' (season: winter)
-2024-12-01 05:52:56,378 - WARNING - No valid map number found in name: 'Winter 2024 - Section 3 Joined'
-2024-12-01 05:52:56,403 - WARNING - No valid year found in name: 'Spring 2023 - Section 8 Joined' (season: spring)
-2024-12-01 05:52:56,404 - WARNING - No valid map number found in name: 'Spring 2023 - Section 8 Joined'
-2024-12-01 05:52:56,421 - WARNING - No valid map number found in name: 'Fall 2022 poolhunter $eb7Featuring TnTree'
-2024-12-01 05:52:56,452 - WARNING - No valid year found in name: '2D-Summer2022-20' (season: summer)
-2024-12-01 05:52:56,506 - WARNING - No valid year found in name: 'FlatWinter'23 - 10' (season: winter)
-2024-12-01 05:52:56,508 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 06'
-2024-12-01 05:52:56,510 - WARNING - No valid year found in name: 'Summer 23 - 21 - Bumper' (season: summer)
-2024-12-01 05:52:56,523 - WARNING - No season found in name: 'RPG Su21 - 11'
-2024-12-01 05:52:56,523 - WARNING - No valid year found in name: 'RPG Su21 - 11' (season: None)
-2024-12-01 05:52:56,527 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-For)' (season: summer)
-2024-12-01 05:52:56,527 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-For)'
-2024-12-01 05:52:56,535 - WARNING - No valid map number found in name: 'Fall 2021 - White Combined'
-2024-12-01 05:52:56,551 - WARNING - No valid year found in name: 'White BOSS - Summer'23' (season: summer)
-2024-12-01 05:52:56,569 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (Underwater)' (season: summer)
-2024-12-01 05:52:56,570 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (Underwater)'
-2024-12-01 05:52:56,637 - WARNING - No valid year found in name: '2D-Summer2022-17' (season: summer)
-2024-12-01 05:52:56,656 - WARNING - No season found in name: 'RPG Su21 - 01'
-2024-12-01 05:52:56,657 - WARNING - No valid year found in name: 'RPG Su21 - 01' (season: None)
-2024-12-01 05:52:56,658 - WARNING - No valid year found in name: 'FlatFall'22 - 14' (season: fall)
-2024-12-01 05:52:56,675 - WARNING - No season found in name: 'RPG Su21 - 08'
-2024-12-01 05:52:56,675 - WARNING - No valid year found in name: 'RPG Su21 - 08' (season: None)
-2024-12-01 05:52:56,684 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 02'
-2024-12-01 05:52:56,711 - WARNING - No valid year found in name: 'FlatWinter'23 - 02' (season: winter)
-2024-12-01 05:52:56,748 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 01'
-2024-12-01 05:52:56,764 - WARNING - No season found in name: 'Super21'
-2024-12-01 05:52:56,764 - WARNING - No valid year found in name: 'Super21' (season: None)
-2024-12-01 05:52:56,764 - WARNING - No valid map number found in name: 'Super21'
-2024-12-01 05:52:56,793 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 03'
-2024-12-01 05:52:56,804 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 17'
-2024-12-01 05:52:56,828 - WARNING - No season found in name: 'EuroSky II [EASY MODE]'
-2024-12-01 05:52:56,828 - WARNING - No valid year found in name: 'EuroSky II [EASY MODE]' (season: None)
-2024-12-01 05:52:56,828 - WARNING - No valid map number found in name: 'EuroSky II [EASY MODE]'
-2024-12-01 05:52:56,842 - WARNING - No valid year found in name: 'Summer 2023 - Section 1 Joined' (season: summer)
-2024-12-01 05:52:56,842 - WARNING - No valid map number found in name: 'Summer 2023 - Section 1 Joined'
-2024-12-01 05:52:56,846 - WARNING - No season found in name: 'Grip - Podium'
-2024-12-01 05:52:56,846 - WARNING - No valid year found in name: 'Grip - Podium' (season: None)
-2024-12-01 05:52:56,846 - WARNING - No valid map number found in name: 'Grip - Podium'
-2024-12-01 05:52:56,869 - WARNING - No valid map number found in name: 'Fall 2023 - Section 16 Joined'
-2024-12-01 05:52:56,885 - WARNING - No valid year found in name: 'Fall 14 (Mirror)' (season: fall)
-2024-12-01 05:52:56,913 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 19'
-2024-12-01 05:52:56,917 - WARNING - No valid year found in name: 'FlatFall'22 - 18' (season: fall)
-2024-12-01 05:52:56,920 - WARNING - No valid year found in name: 'FlatWinter'23 - 25' (season: winter)
-2024-12-01 05:52:56,956 - WARNING - No valid year found in name: 'Winter 2024 - Section 1 Joined' (season: winter)
-2024-12-01 05:52:56,956 - WARNING - No valid map number found in name: 'Winter 2024 - Section 1 Joined'
-2024-12-01 05:52:56,979 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D10$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:56,984 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 11'
-2024-12-01 05:52:56,999 - WARNING - No season found in name: '\u8bad\u7ec3 - 15'
-2024-12-01 05:52:56,999 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 15' (season: None)
-2024-12-01 05:52:57,053 - WARNING - No valid map number found in name: 'Fall 2023 - Section 12 Joined'
-2024-12-01 05:52:57,061 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 22'
-2024-12-01 05:52:57,076 - WARNING - No valid year found in name: 'Winter 2024 - Section 4 Joined' (season: winter)
-2024-12-01 05:52:57,076 - WARNING - No valid map number found in name: 'Winter 2024 - Section 4 Joined'
-2024-12-01 05:52:57,094 - WARNING - No season found in name: 'Super19'
-2024-12-01 05:52:57,094 - WARNING - No valid year found in name: 'Super19' (season: None)
-2024-12-01 05:52:57,094 - WARNING - No valid map number found in name: 'Super19'
-2024-12-01 05:52:57,098 - WARNING - No season found in name: 'Frosty - Podium'
-2024-12-01 05:52:57,098 - WARNING - No valid year found in name: 'Frosty - Podium' (season: None)
-2024-12-01 05:52:57,098 - WARNING - No valid map number found in name: 'Frosty - Podium'
-2024-12-01 05:52:57,103 - WARNING - No valid year found in name: 'Spring 2023 - Section 6 Joined' (season: spring)
-2024-12-01 05:52:57,103 - WARNING - No valid map number found in name: 'Spring 2023 - Section 6 Joined'
-2024-12-01 05:52:57,115 - WARNING - No season found in name: '\u8bad\u7ec3 - 19'
-2024-12-01 05:52:57,115 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 19' (season: None)
-2024-12-01 05:52:57,173 - WARNING - No valid map number found in name: 'Summer 2023 - Section 12 Joined'
-2024-12-01 05:52:57,209 - WARNING - No season found in name: 'RPG Su21 - 07'
-2024-12-01 05:52:57,209 - WARNING - No valid year found in name: 'RPG Su21 - 07' (season: None)
-2024-12-01 05:52:57,224 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D17$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:57,227 - WARNING - No valid year found in name: 'FlatWinter'23 - 15' (season: winter)
-2024-12-01 05:52:57,237 - WARNING - No valid year found in name: 'Fall 03 (BLIND)' (season: fall)
-2024-12-01 05:52:57,246 - WARNING - No season found in name: 'final boss'
-2024-12-01 05:52:57,246 - WARNING - No valid year found in name: 'final boss' (season: summer)
-2024-12-01 05:52:57,246 - WARNING - No valid map number found in name: 'final boss'
-2024-12-01 05:52:57,280 - WARNING - No valid year found in name: 'Spring 2023 - Section 4 Joined' (season: spring)
-2024-12-01 05:52:57,280 - WARNING - No valid map number found in name: 'Spring 2023 - Section 4 Joined'
-2024-12-01 05:52:57,374 - WARNING - No valid year found in name: 'Fall 01 But It's Rearranged' (season: fall)
-2024-12-01 05:52:57,380 - WARNING - No valid year found in name: 'Summer 23 - 08 - Bumper' (season: summer)
-2024-12-01 05:52:57,385 - WARNING - No valid year found in name: 'Summer 2023 - Section 6 Joined' (season: summer)
-2024-12-01 05:52:57,385 - WARNING - No valid map number found in name: 'Summer 2023 - Section 6 Joined'
-2024-12-01 05:52:57,395 - WARNING - No valid year found in name: 'Fall 25 (Mirror)' (season: fall)
-2024-12-01 05:52:57,411 - WARNING - No season found in name: 'RPG Su21 - 09'
-2024-12-01 05:52:57,411 - WARNING - No valid year found in name: 'RPG Su21 - 09' (season: None)
-2024-12-01 05:52:57,420 - WARNING - No valid year found in name: 'FlatFall'22 - 06' (season: fall)
-2024-12-01 05:52:57,468 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CS-SC)' (season: summer)
-2024-12-01 05:52:57,468 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CS-SC)'
-2024-12-01 05:52:57,476 - WARNING - No valid year found in name: 'FlatFall'22 - 10' (season: fall)
-2024-12-01 05:52:57,479 - WARNING - No season found in name: 'Wntr 22 2 bt ony hlf te blks'
-2024-12-01 05:52:57,479 - WARNING - No valid year found in name: 'Wntr 22 2 bt ony hlf te blks' (season: winter)
-2024-12-01 05:52:57,481 - WARNING - No valid year found in name: 'Fall 19 (Mirror)' (season: fall)
-2024-12-01 05:52:57,498 - WARNING - No valid year found in name: 'Spring 2023 - Section 5 Joined' (season: spring)
-2024-12-01 05:52:57,498 - WARNING - No valid map number found in name: 'Spring 2023 - Section 5 Joined'
-2024-12-01 05:52:57,509 - WARNING - No valid map number found in name: 'Training - White Combined'
-2024-12-01 05:52:57,510 - WARNING - No valid year found in name: 'FlatFall'22 - 02' (season: fall)
-2024-12-01 05:52:57,517 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:57,550 - WARNING - No season found in name: 'Super02'
-2024-12-01 05:52:57,550 - WARNING - No valid year found in name: 'Super02' (season: None)
-2024-12-01 05:52:57,550 - WARNING - No valid map number found in name: 'Super02'
-2024-12-01 05:52:57,577 - WARNING - No valid map number found in name: 'Training - Rainbow Combined'
-2024-12-01 05:52:57,579 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-up)' (season: summer)
-2024-12-01 05:52:57,579 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (1-up)'
-2024-12-01 05:52:57,670 - WARNING - No season found in name: 'Pool - Podium'
-2024-12-01 05:52:57,670 - WARNING - No valid year found in name: 'Pool - Podium' (season: None)
-2024-12-01 05:52:57,670 - WARNING - No valid map number found in name: 'Pool - Podium'
-2024-12-01 05:52:57,671 - WARNING - No season found in name: 'Icy Stally'
-2024-12-01 05:52:57,671 - WARNING - No valid year found in name: 'Icy Stally' (season: None)
-2024-12-01 05:52:57,671 - WARNING - No valid map number found in name: 'Icy Stally'
-2024-12-01 05:52:57,675 - WARNING - No valid year found in name: 'Summer 23 - 13 - Bumper' (season: summer)
-2024-12-01 05:52:57,679 - WARNING - No valid year found in name: 'Fall 2023 - Section 3 Joined' (season: fall)
-2024-12-01 05:52:57,679 - WARNING - No valid map number found in name: 'Fall 2023 - Section 3 Joined'
-2024-12-01 05:52:57,721 - WARNING - No season found in name: 'Vortex - Podium'
-2024-12-01 05:52:57,722 - WARNING - No valid year found in name: 'Vortex - Podium' (season: None)
-2024-12-01 05:52:57,722 - WARNING - No valid map number found in name: 'Vortex - Podium'
-2024-12-01 05:52:57,789 - WARNING - No valid year found in name: 'Fall 10 but you're in a downward spiral' (season: fall)
-2024-12-01 05:52:57,803 - WARNING - No valid year found in name: '2D-Summer2022-07' (season: summer)
-2024-12-01 05:52:57,804 - WARNING - No season found in name: 'Grassline [EASY MODE]'
-2024-12-01 05:52:57,804 - WARNING - No valid year found in name: 'Grassline [EASY MODE]' (season: None)
-2024-12-01 05:52:57,804 - WARNING - No valid map number found in name: 'Grassline [EASY MODE]'
-2024-12-01 05:52:57,822 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 21'
-2024-12-01 05:52:57,824 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 22'
-2024-12-01 05:52:57,833 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 07'
-2024-12-01 05:52:57,868 - WARNING - No valid year found in name: 'Fall 15 (Mirror)' (season: fall)
-2024-12-01 05:52:57,872 - WARNING - No season found in name: 'idk'
-2024-12-01 05:52:57,872 - WARNING - No valid year found in name: 'idk' (season: training)
-2024-12-01 05:52:57,872 - WARNING - No valid map number found in name: 'idk'
-2024-12-01 05:52:57,876 - WARNING - No season found in name: 'Bowl [EASY MODE]'
-2024-12-01 05:52:57,876 - WARNING - No valid year found in name: 'Bowl [EASY MODE]' (season: None)
-2024-12-01 05:52:57,876 - WARNING - No valid map number found in name: 'Bowl [EASY MODE]'
-2024-12-01 05:52:57,897 - WARNING - No valid year found in name: 'Fall 23 (Mirror)' (season: fall)
-2024-12-01 05:52:57,920 - WARNING - No valid map number found in name: 'Winter 2024 - Section 15 Joined'
-2024-12-01 05:52:57,927 - WARNING - No valid year found in name: 'FlatFall'22 - 08' (season: fall)
-2024-12-01 05:52:57,944 - WARNING - No season found in name: 'OnTheEdge [EASY MODE]'
-2024-12-01 05:52:57,944 - WARNING - No valid year found in name: 'OnTheEdge [EASY MODE]' (season: None)
-2024-12-01 05:52:57,944 - WARNING - No valid map number found in name: 'OnTheEdge [EASY MODE]'
-2024-12-01 05:52:57,956 - WARNING - No valid map number found in name: 'BOSS White of Spring 2023'
-2024-12-01 05:52:57,965 - WARNING - No season found in name: '\u8bad\u7ec3 - 17'
-2024-12-01 05:52:57,965 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 17' (season: None)
-2024-12-01 05:52:57,969 - WARNING - No valid year found in name: 'Summer 23 - 02 - Bumper' (season: summer)
-2024-12-01 05:52:57,974 - WARNING - No valid map number found in name: 'Winter 2022 - Black Combined'
-2024-12-01 05:52:57,981 - WARNING - No valid year found in name: 'Winter 2024 - Section 8 Joined' (season: winter)
-2024-12-01 05:52:57,982 - WARNING - No valid map number found in name: 'Winter 2024 - Section 8 Joined'
-2024-12-01 05:52:57,991 - WARNING - No valid map number found in name: 'Fall 2023 - Section 17 Joined'
-2024-12-01 05:52:58,005 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 12'
-2024-12-01 05:52:58,027 - WARNING - No valid year found in name: 'FlatFall'22 - 05' (season: fall)
-2024-12-01 05:52:58,029 - WARNING - No valid year found in name: 'Fall 2023 - Section 2 Joined' (season: fall)
-2024-12-01 05:52:58,029 - WARNING - No valid map number found in name: 'Fall 2023 - Section 2 Joined'
-2024-12-01 05:52:58,046 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:58,122 - WARNING - No season found in name: 'Touchdown [EASY MODE]'
-2024-12-01 05:52:58,122 - WARNING - No valid year found in name: 'Touchdown [EASY MODE]' (season: None)
-2024-12-01 05:52:58,122 - WARNING - No valid map number found in name: 'Touchdown [EASY MODE]'
-2024-12-01 05:52:58,132 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (cpless)' (season: summer)
-2024-12-01 05:52:58,132 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (cpless)'
-2024-12-01 05:52:58,155 - WARNING - No valid year found in name: 'Fall 2023 - Section 7 Joined' (season: fall)
-2024-12-01 05:52:58,156 - WARNING - No valid map number found in name: 'Fall 2023 - Section 7 Joined'
-2024-12-01 05:52:58,222 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D10$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:58,226 - WARNING - No season found in name: 'Control - Podium'
-2024-12-01 05:52:58,226 - WARNING - No valid year found in name: 'Control - Podium' (season: None)
-2024-12-01 05:52:58,226 - WARNING - No valid map number found in name: 'Control - Podium'
-2024-12-01 05:52:58,233 - WARNING - No season found in name: 'Sinuous - Podium'
-2024-12-01 05:52:58,233 - WARNING - No valid year found in name: 'Sinuous - Podium' (season: None)
-2024-12-01 05:52:58,233 - WARNING - No valid map number found in name: 'Sinuous - Podium'
-2024-12-01 05:52:58,253 - WARNING - No valid map number found in name: 'Fall 2023 - Section 11 Joined'
-2024-12-01 05:52:58,265 - WARNING - No season found in name: 'Super23'
-2024-12-01 05:52:58,265 - WARNING - No valid year found in name: 'Super23' (season: None)
-2024-12-01 05:52:58,265 - WARNING - No valid map number found in name: 'Super23'
-2024-12-01 05:52:58,282 - WARNING - No valid year found in name: '2D-Summer2022-13' (season: summer)
-2024-12-01 05:52:58,289 - WARNING - No valid year found in name: 'Summer 23 - 01 - Bumper' (season: summer)
-2024-12-01 05:52:58,309 - WARNING - No season found in name: 'RPG Su21 - 18'
-2024-12-01 05:52:58,309 - WARNING - No valid year found in name: 'RPG Su21 - 18' (season: None)
-2024-12-01 05:52:58,341 - WARNING - No season found in name: 'Super16'
-2024-12-01 05:52:58,341 - WARNING - No valid year found in name: 'Super16' (season: None)
-2024-12-01 05:52:58,342 - WARNING - No valid map number found in name: 'Super16'
-2024-12-01 05:52:58,418 - WARNING - No valid year found in name: 'Spring 23 poolhunters - 05' (season: spring)
-2024-12-01 05:52:58,442 - WARNING - No valid year found in name: '2D-Summer2022-19' (season: summer)
-2024-12-01 05:52:58,444 - WARNING - No valid year found in name: 'FlatWinter'23 - 19' (season: winter)
-2024-12-01 05:52:58,467 - WARNING - No valid year found in name: '2D-Summer2022-18' (season: summer)
-2024-12-01 05:52:58,505 - WARNING - No season found in name: 'Super10'
-2024-12-01 05:52:58,505 - WARNING - No valid year found in name: 'Super10' (season: None)
-2024-12-01 05:52:58,505 - WARNING - No valid map number found in name: 'Super10'
-2024-12-01 05:52:58,509 - WARNING - No season found in name: 'RPG Su21 - 19'
-2024-12-01 05:52:58,509 - WARNING - No valid year found in name: 'RPG Su21 - 19' (season: None)
-2024-12-01 05:52:58,539 - WARNING - No valid year found in name: 'FlatFall'22 - 12' (season: fall)
-2024-12-01 05:52:58,540 - WARNING - No valid year found in name: 'FlatFall'22 - 25' (season: fall)
-2024-12-01 05:52:58,552 - WARNING - No season found in name: '\u8bad\u7ec3 - 11'
-2024-12-01 05:52:58,552 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 11' (season: None)
-2024-12-01 05:52:58,553 - WARNING - No valid year found in name: 'Black BOSS - Summer'23' (season: summer)
-2024-12-01 05:52:58,554 - WARNING - No season found in name: 'Super12'
-2024-12-01 05:52:58,554 - WARNING - No valid year found in name: 'Super12' (season: None)
-2024-12-01 05:52:58,554 - WARNING - No valid map number found in name: 'Super12'
-2024-12-01 05:52:58,568 - WARNING - No valid year found in name: 'Fall 20 (Mirror)' (season: fall)
-2024-12-01 05:52:58,577 - WARNING - No valid year found in name: '2D-Summer2022-15' (season: summer)
-2024-12-01 05:52:58,634 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 18'
-2024-12-01 05:52:58,711 - WARNING - No valid year found in name: 'Summer 23 - 24 - Bumper' (season: summer)
-2024-12-01 05:52:58,713 - WARNING - No valid year found in name: 'Summer 23 - 05 - Bumper' (season: summer)
-2024-12-01 05:52:58,745 - WARNING - No valid year found in name: 'Fall 18 (Mirror)' (season: fall)
-2024-12-01 05:52:58,776 - WARNING - No season found in name: '\u8bad\u7ec3 - 03'
-2024-12-01 05:52:58,776 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 03' (season: None)
-2024-12-01 05:52:58,777 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 12'
-2024-12-01 05:52:58,793 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 23'
-2024-12-01 05:52:58,808 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 07'
-2024-12-01 05:52:58,814 - WARNING - No season found in name: 'Super13'
-2024-12-01 05:52:58,814 - WARNING - No valid year found in name: 'Super13' (season: None)
-2024-12-01 05:52:58,814 - WARNING - No valid map number found in name: 'Super13'
-2024-12-01 05:52:58,865 - WARNING - No valid year found in name: 'FlatFall'22 - 04' (season: fall)
-2024-12-01 05:52:58,880 - WARNING - No valid year found in name: 'Fall 03 (Mirror)' (season: fall)
-2024-12-01 05:52:58,881 - WARNING - No season found in name: '\u8bad\u7ec3 - 08'
-2024-12-01 05:52:58,881 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 08' (season: None)
-2024-12-01 05:52:58,883 - WARNING - No valid year found in name: 'FlatWinter'23 - 13' (season: winter)
-2024-12-01 05:52:58,908 - WARNING - No valid year found in name: 'FlatWinter'23 - 20' (season: winter)
-2024-12-01 05:52:58,913 - WARNING - No valid map number found in name: 'Winter 2024 - Section 10 Joined'
-2024-12-01 05:52:58,967 - WARNING - No valid year found in name: 'Fall 01 - Tilted' (season: fall)
-2024-12-01 05:52:59,041 - WARNING - No valid year found in name: 'Summer 23 - 03 - Bumper' (season: summer)
-2024-12-01 05:52:59,092 - WARNING - No valid year found in name: 'FlatFall'22 - 07' (season: fall)
-2024-12-01 05:52:59,097 - WARNING - No valid map number found in name: 'Blue BOSS Winter 2024'
-2024-12-01 05:52:59,100 - WARNING - No valid year found in name: 'Fall 11 (Mirror)' (season: fall)
-2024-12-01 05:52:59,126 - WARNING - No valid map number found in name: 'Fall 2023 - Last Section Joined'
-2024-12-01 05:52:59,130 - WARNING - No valid year found in name: 'Summer 2023 - Section 3 Joined' (season: summer)
-2024-12-01 05:52:59,130 - WARNING - No valid map number found in name: 'Summer 2023 - Section 3 Joined'
-2024-12-01 05:52:59,140 - WARNING - No season found in name: '\u8bad\u7ec3 - 23'
-2024-12-01 05:52:59,140 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 23' (season: None)
-2024-12-01 05:52:59,148 - WARNING - No valid year found in name: '2D-Summer2022-22' (season: summer)
-2024-12-01 05:52:59,153 - WARNING - No valid year found in name: 'FlatFall'22 - 09' (season: fall)
-2024-12-01 05:52:59,157 - WARNING - No valid year found in name: 'FlatFall'22 - 16' (season: fall)
-2024-12-01 05:52:59,189 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 11'
-2024-12-01 05:52:59,199 - WARNING - No valid year found in name: 'Summer 23 - 14 - Bumper' (season: summer)
-2024-12-01 05:52:59,253 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 05'
-2024-12-01 05:52:59,270 - WARNING - No season found in name: '\u8bad\u7ec3 - 24'
-2024-12-01 05:52:59,271 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 24' (season: None)
-2024-12-01 05:52:59,276 - WARNING - No season found in name: 'Wait a minute!?'
-2024-12-01 05:52:59,276 - WARNING - No valid year found in name: 'Wait a minute!?' (season: spring)
-2024-12-01 05:52:59,276 - WARNING - No valid map number found in name: 'Wait a minute!?'
-2024-12-01 05:52:59,281 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:59,293 - WARNING - No valid year found in name: 'Summer 23 - 22 - Bumper' (season: summer)
-2024-12-01 05:52:59,323 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 08'
-2024-12-01 05:52:59,359 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:59,367 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 15'
-2024-12-01 05:52:59,419 - WARNING - No season found in name: '\u8bad\u7ec3 - 04'
-2024-12-01 05:52:59,427 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 04' (season: None)
-2024-12-01 05:52:59,435 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (DesertCar)' (season: summer)
-2024-12-01 05:52:59,435 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (DesertCar)'
-2024-12-01 05:52:59,441 - WARNING - No season found in name: '\u8bad\u7ec3 - 09'
-2024-12-01 05:52:59,441 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 09' (season: None)
-2024-12-01 05:52:59,497 - WARNING - No valid year found in name: '2D-Summer2022-05' (season: summer)
-2024-12-01 05:52:59,504 - WARNING - No season found in name: 'TightRope [EASY MODE]'
-2024-12-01 05:52:59,504 - WARNING - No valid year found in name: 'TightRope [EASY MODE]' (season: None)
-2024-12-01 05:52:59,505 - WARNING - No valid map number found in name: 'TightRope [EASY MODE]'
-2024-12-01 05:52:59,510 - WARNING - No valid year found in name: 'Summer 23 - 18 - Bumper' (season: summer)
-2024-12-01 05:52:59,511 - WARNING - No valid year found in name: 'FlatFall'22 - 13' (season: fall)
-2024-12-01 05:52:59,517 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:59,528 - WARNING - No season found in name: 'PoleParty [EASY MODE]'
-2024-12-01 05:52:59,528 - WARNING - No valid year found in name: 'PoleParty [EASY MODE]' (season: None)
-2024-12-01 05:52:59,528 - WARNING - No valid map number found in name: 'PoleParty [EASY MODE]'
-2024-12-01 05:52:59,530 - WARNING - No valid year found in name: 'Summer 2023 - Section 4 Joined' (season: summer)
-2024-12-01 05:52:59,530 - WARNING - No valid map number found in name: 'Summer 2023 - Section 4 Joined'
-2024-12-01 05:52:59,553 - WARNING - No valid year found in name: 'Fall 12 (Mirror)' (season: fall)
-2024-12-01 05:52:59,563 - WARNING - No season found in name: 'Super20'
-2024-12-01 05:52:59,563 - WARNING - No valid year found in name: 'Super20' (season: None)
-2024-12-01 05:52:59,563 - WARNING - No valid map number found in name: 'Super20'
-2024-12-01 05:52:59,595 - WARNING - No season found in name: '\u8bad\u7ec3 - 14'
-2024-12-01 05:52:59,595 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 14' (season: None)
-2024-12-01 05:52:59,621 - WARNING - No valid year found in name: 'Supersized_Spring_2024_-_12' (season: spring)
-2024-12-01 05:52:59,621 - WARNING - No valid map number found in name: 'Supersized_Spring_2024_-_12'
-2024-12-01 05:52:59,627 - WARNING - No valid year found in name: 'Summer 2023 - Section 5 Joined' (season: summer)
-2024-12-01 05:52:59,627 - WARNING - No valid map number found in name: 'Summer 2023 - Section 5 Joined'
-2024-12-01 05:52:59,637 - WARNING - No season found in name: 'LaunchPad [EASY MODE]'
-2024-12-01 05:52:59,637 - WARNING - No valid year found in name: 'LaunchPad [EASY MODE]' (season: None)
-2024-12-01 05:52:59,637 - WARNING - No valid map number found in name: 'LaunchPad [EASY MODE]'
-2024-12-01 05:52:59,640 - WARNING - No valid year found in name: 'Fall 06 (Mirror)' (season: fall)
-2024-12-01 05:52:59,643 - WARNING - No season found in name: '\u8bad\u7ec3 - 20'
-2024-12-01 05:52:59,643 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 20' (season: None)
-2024-12-01 05:52:59,646 - WARNING - No valid year found in name: 'Spring 01 But its combined with 02' (season: spring)
-2024-12-01 05:52:59,655 - WARNING - No valid year found in name: 'FlatWinter'23 - 11' (season: winter)
-2024-12-01 05:52:59,659 - WARNING - No valid year found in name: 'Fall 02 (Mirror)' (season: fall)
-2024-12-01 05:52:59,665 - WARNING - No season found in name: 'Super09'
-2024-12-01 05:52:59,665 - WARNING - No valid year found in name: 'Super09' (season: None)
-2024-12-01 05:52:59,665 - WARNING - No valid map number found in name: 'Super09'
-2024-12-01 05:52:59,689 - WARNING - No season found in name: 'super06'
-2024-12-01 05:52:59,689 - WARNING - No valid year found in name: 'super06' (season: None)
-2024-12-01 05:52:59,689 - WARNING - No valid map number found in name: 'super06'
-2024-12-01 05:52:59,712 - WARNING - No season found in name: 'Super15'
-2024-12-01 05:52:59,712 - WARNING - No valid year found in name: 'Super15' (season: None)
-2024-12-01 05:52:59,712 - WARNING - No valid map number found in name: 'Super15'
-2024-12-01 05:52:59,718 - WARNING - No valid year found in name: 'FlatFall'22 - 24' (season: fall)
-2024-12-01 05:52:59,736 - WARNING - No season found in name: '\u8bad\u7ec3 - 12'
-2024-12-01 05:52:59,736 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 12' (season: None)
-2024-12-01 05:52:59,764 - WARNING - No valid year found in name: '2D-Summer2022-03' (season: summer)
-2024-12-01 05:52:59,774 - WARNING - No valid year found in name: 'Summer 2023 - Section 2 Joined' (season: summer)
-2024-12-01 05:52:59,774 - WARNING - No valid map number found in name: 'Summer 2023 - Section 2 Joined'
-2024-12-01 05:52:59,786 - WARNING - No season found in name: 'RPG Su21 - 06'
-2024-12-01 05:52:59,786 - WARNING - No valid year found in name: 'RPG Su21 - 06' (season: None)
-2024-12-01 05:52:59,790 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 25'
-2024-12-01 05:52:59,795 - WARNING - No season found in name: 'IcyJump [EASY MODE]'
-2024-12-01 05:52:59,795 - WARNING - No valid year found in name: 'IcyJump [EASY MODE]' (season: None)
-2024-12-01 05:52:59,795 - WARNING - No valid map number found in name: 'IcyJump [EASY MODE]'
-2024-12-01 05:52:59,798 - WARNING - No season found in name: 'RPG Su21 - 03'
-2024-12-01 05:52:59,798 - WARNING - No valid year found in name: 'RPG Su21 - 03' (season: None)
-2024-12-01 05:52:59,807 - WARNING - No season found in name: '\u8bad\u7ec3 - 06'
-2024-12-01 05:52:59,807 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 06' (season: None)
-2024-12-01 05:52:59,808 - WARNING - No season found in name: 'EDINGBURGH (1-Forward)'
-2024-12-01 05:52:59,808 - WARNING - No valid year found in name: 'EDINGBURGH (1-Forward)' (season: None)
-2024-12-01 05:52:59,809 - WARNING - No valid map number found in name: 'EDINGBURGH (1-Forward)'
-2024-12-01 05:52:59,813 - WARNING - No valid year found in name: 'Fall 04 (Mirror)' (season: fall)
-2024-12-01 05:52:59,832 - WARNING - No valid year found in name: 'Summer 23 - 12 - Bumper' (season: summer)
-2024-12-01 05:52:59,845 - WARNING - No valid year found in name: 'Summer 23 - 15 - Bumper' (season: summer)
-2024-12-01 05:52:59,871 - WARNING - No valid year found in name: 'FlatWinter'23 - 12' (season: winter)
-2024-12-01 05:52:59,885 - WARNING - No season found in name: 'Trash map'
-2024-12-01 05:52:59,885 - WARNING - No valid year found in name: 'Trash map' (season: fall)
-2024-12-01 05:52:59,885 - WARNING - No valid map number found in name: 'Trash map'
-2024-12-01 05:52:59,907 - WARNING - No valid year found in name: 'Fall 07 (Mirror)' (season: fall)
-2024-12-01 05:52:59,926 - WARNING - No season found in name: 'BoltHoles [EASY MODE]'
-2024-12-01 05:52:59,926 - WARNING - No valid year found in name: 'BoltHoles [EASY MODE]' (season: None)
-2024-12-01 05:52:59,926 - WARNING - No valid map number found in name: 'BoltHoles [EASY MODE]'
-2024-12-01 05:52:59,930 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D17$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:52:59,983 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 17'
-2024-12-01 05:53:00,001 - WARNING - No valid map number found in name: 'BOSS Black of Spring 2023'
-2024-12-01 05:53:00,036 - WARNING - No valid year found in name: 'Summer 23 - 06 - Bumper' (season: summer)
-2024-12-01 05:53:00,042 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D19$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:00,059 - WARNING - No valid map number found in name: 'Fall 2021 check'
-2024-12-01 05:53:00,089 - WARNING - No valid year found in name: 'Fall 2023 - Section 8 Joined' (season: fall)
-2024-12-01 05:53:00,089 - WARNING - No valid map number found in name: 'Fall 2023 - Section 8 Joined'
-2024-12-01 05:53:00,090 - WARNING - No valid year found in name: 'FlatWinter'23 - 21' (season: winter)
-2024-12-01 05:53:00,109 - WARNING - No season found in name: '\u8bad\u7ec3 - 18'
-2024-12-01 05:53:00,110 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 18' (season: None)
-2024-12-01 05:53:00,131 - WARNING - No valid map number found in name: 'Winter 2024 - Section 14 Joined'
-2024-12-01 05:53:00,154 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 01'
-2024-12-01 05:53:00,203 - WARNING - No valid year found in name: 'Summer 2023 - Section 9 Joined' (season: summer)
-2024-12-01 05:53:00,203 - WARNING - No valid map number found in name: 'Summer 2023 - Section 9 Joined'
-2024-12-01 05:53:00,224 - WARNING - No valid year found in name: 'Fall 17 (Mirror)' (season: fall)
-2024-12-01 05:53:00,231 - WARNING - No valid map number found in name: 'Training - Red Combined'
-2024-12-01 05:53:00,261 - WARNING - No valid year found in name: '2D-Summer2022-09' (season: summer)
-2024-12-01 05:53:00,264 - WARNING - No season found in name: 'IcySnake [EASY MODE]'
-2024-12-01 05:53:00,264 - WARNING - No valid year found in name: 'IcySnake [EASY MODE]' (season: None)
-2024-12-01 05:53:00,264 - WARNING - No valid map number found in name: 'IcySnake [EASY MODE]'
-2024-12-01 05:53:00,273 - WARNING - No season found in name: '\u8bad\u7ec3 - 02'
-2024-12-01 05:53:00,273 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 02' (season: None)
-2024-12-01 05:53:00,296 - WARNING - No valid year found in name: 'FlatWinter'23 - 05' (season: winter)
-2024-12-01 05:53:00,301 - WARNING - No season found in name: 'Breaking - Podium'
-2024-12-01 05:53:00,302 - WARNING - No valid year found in name: 'Breaking - Podium' (season: None)
-2024-12-01 05:53:00,302 - WARNING - No valid map number found in name: 'Breaking - Podium'
-2024-12-01 05:53:00,316 - WARNING - No season found in name: 'Throttling Act [EASY MODE]'
-2024-12-01 05:53:00,316 - WARNING - No valid year found in name: 'Throttling Act [EASY MODE]' (season: None)
-2024-12-01 05:53:00,316 - WARNING - No valid map number found in name: 'Throttling Act [EASY MODE]'
-2024-12-01 05:53:00,419 - WARNING - No season found in name: 'RPG Su21 - 25'
-2024-12-01 05:53:00,419 - WARNING - No valid year found in name: 'RPG Su21 - 25' (season: None)
-2024-12-01 05:53:00,421 - WARNING - No valid year found in name: 'Fall 2023 - Section 4 Joined' (season: fall)
-2024-12-01 05:53:00,421 - WARNING - No valid map number found in name: 'Fall 2023 - Section 4 Joined'
-2024-12-01 05:53:00,423 - WARNING - No valid year found in name: 'Summer 23 - 25 - Bumper' (season: summer)
-2024-12-01 05:53:00,453 - WARNING - No valid year found in name: 'Fall 02 (BLIND)' (season: fall)
-2024-12-01 05:53:00,460 - WARNING - No season found in name: 'RPG Su21 - 17'
-2024-12-01 05:53:00,460 - WARNING - No valid year found in name: 'RPG Su21 - 17' (season: None)
-2024-12-01 05:53:00,561 - WARNING - No valid year found in name: 'Fall 10 But i miss 02' (season: fall)
-2024-12-01 05:53:00,563 - WARNING - No valid year found in name: 'Winter 2024 - Section 2 Joined' (season: winter)
-2024-12-01 05:53:00,563 - WARNING - No valid map number found in name: 'Winter 2024 - Section 2 Joined'
-2024-12-01 05:53:00,569 - WARNING - No season found in name: 'PLACEHOLDER 04'
-2024-12-01 05:53:00,569 - WARNING - No valid year found in name: 'PLACEHOLDER 04' (season: spring)
-2024-12-01 05:53:00,571 - WARNING - No valid year found in name: 'FlatWinter'23 - 23' (season: winter)
-2024-12-01 05:53:00,629 - WARNING - No valid year found in name: 'Winter 2024 - Section 9 Joined' (season: winter)
-2024-12-01 05:53:00,630 - WARNING - No valid map number found in name: 'Winter 2024 - Section 9 Joined'
-2024-12-01 05:53:00,656 - WARNING - No season found in name: 'PoolSide [EASY MODE]'
-2024-12-01 05:53:00,656 - WARNING - No valid year found in name: 'PoolSide [EASY MODE]' (season: None)
-2024-12-01 05:53:00,656 - WARNING - No valid map number found in name: 'PoolSide [EASY MODE]'
-2024-12-01 05:53:00,666 - WARNING - No valid year found in name: 'Summer 23 - 04 - Bumper' (season: summer)
-2024-12-01 05:53:00,718 - WARNING - No season found in name: 'Super18'
-2024-12-01 05:53:00,719 - WARNING - No valid year found in name: 'Super18' (season: None)
-2024-12-01 05:53:00,719 - WARNING - No valid map number found in name: 'Super18'
-2024-12-01 05:53:00,737 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:00,763 - WARNING - No valid map number found in name: 'Summer 2023 - Last Section Joined'
-2024-12-01 05:53:00,775 - WARNING - No season found in name: 'Super22'
-2024-12-01 05:53:00,775 - WARNING - No valid year found in name: 'Super22' (season: None)
-2024-12-01 05:53:00,775 - WARNING - No valid map number found in name: 'Super22'
-2024-12-01 05:53:00,782 - WARNING - No valid year found in name: '2D-Summer2022-25' (season: summer)
-2024-12-01 05:53:00,787 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (yeet)' (season: summer)
-2024-12-01 05:53:00,787 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (yeet)'
-2024-12-01 05:53:00,811 - WARNING - No valid year found in name: 'FlatWinter'23 - 14' (season: winter)
-2024-12-01 05:53:00,818 - WARNING - No valid year found in name: 'Summer 23 - 19 - Bumper' (season: summer)
-2024-12-01 05:53:00,820 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 05'
-2024-12-01 05:53:00,851 - WARNING - No valid map number found in name: 'Fall 2021 - Green Combined'
-2024-12-01 05:53:00,872 - WARNING - No season found in name: 'Heart [EASY MODE]'
-2024-12-01 05:53:00,872 - WARNING - No valid year found in name: 'Heart [EASY MODE]' (season: None)
-2024-12-01 05:53:00,872 - WARNING - No valid map number found in name: 'Heart [EASY MODE]'
-2024-12-01 05:53:00,883 - WARNING - No season found in name: 'RPG Su21 - 02'
-2024-12-01 05:53:00,883 - WARNING - No valid year found in name: 'RPG Su21 - 02' (season: None)
-2024-12-01 05:53:00,886 - WARNING - No valid year found in name: 'Summer 23 - 10 - Bumper' (season: summer)
-2024-12-01 05:53:00,887 - WARNING - No valid year found in name: '2D-Summer2022-04' (season: summer)
-2024-12-01 05:53:00,909 - WARNING - No valid year found in name: 'Spring 01 but its a one lapper' (season: spring)
-2024-12-01 05:53:00,909 - WARNING - No valid map number found in name: 'Winter 2024 - Section 13 Joined'
-2024-12-01 05:53:00,917 - WARNING - No valid year found in name: '2D-Summer2022-16' (season: summer)
-2024-12-01 05:53:00,925 - WARNING - No valid year found in name: 'Blue BOSS - Summer'23' (season: summer)
-2024-12-01 05:53:00,961 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 02'
-2024-12-01 05:53:00,961 - WARNING - No valid year found in name: '2D-Summer2022-02' (season: summer)
-2024-12-01 05:53:00,987 - WARNING - No season found in name: 'Speed - Podium'
-2024-12-01 05:53:00,987 - WARNING - No valid year found in name: 'Speed - Podium' (season: None)
-2024-12-01 05:53:00,987 - WARNING - No valid map number found in name: 'Speed - Podium'
-2024-12-01 05:53:00,999 - WARNING - No valid year found in name: 'Summer 23 - 07 - Bumper' (season: summer)
-2024-12-01 05:53:01,026 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 09'
-2024-12-01 05:53:01,048 - WARNING - No valid year found in name: '2D-Summer2022-10' (season: summer)
-2024-12-01 05:53:01,056 - WARNING - No season found in name: 'Déjà vu'
-2024-12-01 05:53:01,056 - WARNING - No valid year found in name: 'Déjà vu' (season: summer)
-2024-12-01 05:53:01,056 - WARNING - No valid map number found in name: 'Déjà vu'
-2024-12-01 05:53:01,076 - WARNING - No season found in name: 'the fatal ending'
-2024-12-01 05:53:01,076 - WARNING - No valid year found in name: 'the fatal ending' (season: summer)
-2024-12-01 05:53:01,076 - WARNING - No valid map number found in name: 'the fatal ending'
-2024-12-01 05:53:01,092 - WARNING - No valid year found in name: 'Spring 2023 - Section 7 Joined' (season: spring)
-2024-12-01 05:53:01,092 - WARNING - No valid map number found in name: 'Spring 2023 - Section 7 Joined'
-2024-12-01 05:53:01,102 - WARNING - No season found in name: 'Moutain Pass (1-up)'
-2024-12-01 05:53:01,102 - WARNING - No valid year found in name: 'Moutain Pass (1-up)' (season: None)
-2024-12-01 05:53:01,102 - WARNING - No valid map number found in name: 'Moutain Pass (1-up)'
-2024-12-01 05:53:01,105 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 04'
-2024-12-01 05:53:01,111 - WARNING - No season found in name: '\u8bad\u7ec3 - 01'
-2024-12-01 05:53:01,111 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 01' (season: None)
-2024-12-01 05:53:01,147 - WARNING - No season found in name: 'Super11'
-2024-12-01 05:53:01,147 - WARNING - No valid year found in name: 'Super11' (season: None)
-2024-12-01 05:53:01,147 - WARNING - No valid map number found in name: 'Super11'
-2024-12-01 05:53:01,149 - WARNING - No season found in name: 'RPG Su21 - 23'
-2024-12-01 05:53:01,149 - WARNING - No valid year found in name: 'RPG Su21 - 23' (season: None)
-2024-12-01 05:53:01,169 - WARNING - No season found in name: 'Speed Up [EASY MODE]'
-2024-12-01 05:53:01,169 - WARNING - No valid year found in name: 'Speed Up [EASY MODE]' (season: None)
-2024-12-01 05:53:01,169 - WARNING - No valid map number found in name: 'Speed Up [EASY MODE]'
-2024-12-01 05:53:01,177 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D18$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:01,179 - WARNING - No valid year found in name: 'FlatWinter'23 - 03' (season: winter)
-2024-12-01 05:53:01,199 - WARNING - No season found in name: 'Barrelistic [EASY MODE]'
-2024-12-01 05:53:01,199 - WARNING - No valid year found in name: 'Barrelistic [EASY MODE]' (season: None)
-2024-12-01 05:53:01,199 - WARNING - No valid map number found in name: 'Barrelistic [EASY MODE]'
-2024-12-01 05:53:01,211 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 13'
-2024-12-01 05:53:01,229 - WARNING - No valid map number found in name: 'Summer 2023 - Section 11 Joined'
-2024-12-01 05:53:01,231 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CP1-End)' (season: summer)
-2024-12-01 05:53:01,231 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CP1-End)'
-2024-12-01 05:53:01,258 - WARNING - No valid year found in name: 'Summer 23 - 09 - Bumper' (season: summer)
-2024-12-01 05:53:01,280 - WARNING - No valid year found in name: 'Fall 24 (Mirror)' (season: fall)
-2024-12-01 05:53:01,320 - WARNING - No valid year found in name: 'Fall 2023 - Section 5 Joined' (season: fall)
-2024-12-01 05:53:01,320 - WARNING - No valid map number found in name: 'Fall 2023 - Section 5 Joined'
-2024-12-01 05:53:01,328 - WARNING - No valid year found in name: 'FlatFall'22 - 20' (season: fall)
-2024-12-01 05:53:01,372 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 20'
-2024-12-01 05:53:01,377 - WARNING - No valid year found in name: 'Summer 23 - 11 - Bumper' (season: summer)
-2024-12-01 05:53:01,386 - WARNING - No valid year found in name: 'Spring 2023 - Section 1 Joined (All Starts)' (season: spring)
-2024-12-01 05:53:01,386 - WARNING - No valid map number found in name: 'Spring 2023 - Section 1 Joined (All Starts)'
-2024-12-01 05:53:01,414 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:01,436 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (STTF)' (season: summer)
-2024-12-01 05:53:01,436 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (STTF)'
-2024-12-01 05:53:01,439 - WARNING - No valid year found in name: '2D-Summer2022-23' (season: summer)
-2024-12-01 05:53:01,444 - WARNING - No valid year found in name: '2D-Summer2022-14' (season: summer)
-2024-12-01 05:53:01,450 - WARNING - No valid year found in name: 'Summer 23 - 20 - Bumper' (season: summer)
-2024-12-01 05:53:01,471 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (RallyCar)' (season: summer)
-2024-12-01 05:53:01,471 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (RallyCar)'
-2024-12-01 05:53:01,480 - WARNING - No valid year found in name: 'FlatWinter'23 - 08' (season: winter)
-2024-12-01 05:53:01,486 - WARNING - No season found in name: 'Super05'
-2024-12-01 05:53:01,486 - WARNING - No valid year found in name: 'Super05' (season: None)
-2024-12-01 05:53:01,486 - WARNING - No valid map number found in name: 'Super05'
-2024-12-01 05:53:01,488 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D18$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:01,504 - WARNING - No valid year found in name: 'Spring 2023 - Section 3 Joined' (season: spring)
-2024-12-01 05:53:01,504 - WARNING - No valid map number found in name: 'Spring 2023 - Section 3 Joined'
-2024-12-01 05:53:01,532 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 21'
-2024-12-01 05:53:01,538 - WARNING - No valid map number found in name: 'Winter 2024 - Section 11 Joined'
-2024-12-01 05:53:01,560 - WARNING - No valid map number found in name: 'Winter 2024 - Section 12 Joined'
-2024-12-01 05:53:01,568 - WARNING - No valid map number found in name: 'Training - Green Combined'
-2024-12-01 05:53:01,579 - WARNING - No valid map number found in name: 'Spring 2023 - Section 10 Joined'
-2024-12-01 05:53:01,607 - WARNING - No season found in name: '\u8bad\u7ec3 - 16'
-2024-12-01 05:53:01,607 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 16' (season: None)
-2024-12-01 05:53:01,629 - WARNING - No season found in name: 'GrassHopper [EASY MODE]'
-2024-12-01 05:53:01,630 - WARNING - No valid year found in name: 'GrassHopper [EASY MODE]' (season: None)
-2024-12-01 05:53:01,630 - WARNING - No valid map number found in name: 'GrassHopper [EASY MODE]'
-2024-12-01 05:53:01,630 - WARNING - No season found in name: 'RPG Su21 - 15'
-2024-12-01 05:53:01,630 - WARNING - No valid year found in name: 'RPG Su21 - 15' (season: None)
-2024-12-01 05:53:01,662 - WARNING - No valid year found in name: '2D-Summer2022-12' (season: summer)
-2024-12-01 05:53:01,677 - WARNING - No valid year found in name: 'Fall 01 (Mirror)' (season: fall)
-2024-12-01 05:53:01,691 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (SnowCar)' (season: summer)
-2024-12-01 05:53:01,691 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (SnowCar)'
-2024-12-01 05:53:01,692 - WARNING - No valid map number found in name: 'Summer 2021 - Black Combined'
-2024-12-01 05:53:01,705 - WARNING - No valid year found in name: '2D-Summer2022-24' (season: summer)
-2024-12-01 05:53:01,722 - WARNING - No valid year found in name: 'FlatWinter'23 - 07' (season: winter)
-2024-12-01 05:53:01,740 - WARNING - No valid map number found in name: 'Red BOSS Winter 2024'
-2024-12-01 05:53:01,752 - WARNING - No valid map number found in name: 'Green BOSS Winter 2024'
-2024-12-01 05:53:01,810 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 08'
-2024-12-01 05:53:01,828 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost - Reverse' (season: summer)
-2024-12-01 05:53:01,828 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost - Reverse'
-2024-12-01 05:53:01,850 - WARNING - No valid map number found in name: 'Icy Spring 2021 - 9'
-2024-12-01 05:53:01,872 - WARNING - No valid year found in name: 'FlatWinter'23 - 16' (season: winter)
-2024-12-01 05:53:01,906 - WARNING - No season found in name: 'TinyGap [EASY MODE]'
-2024-12-01 05:53:01,907 - WARNING - No valid year found in name: 'TinyGap [EASY MODE]' (season: None)
-2024-12-01 05:53:01,907 - WARNING - No valid map number found in name: 'TinyGap [EASY MODE]'
-2024-12-01 05:53:01,936 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (Carswitch DesertCar)' (season: summer)
-2024-12-01 05:53:01,937 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (Carswitch DesertCar)'
-2024-12-01 05:53:01,938 - WARNING - No valid year found in name: 'Spring 2023 - Section 9 Joined' (season: spring)
-2024-12-01 05:53:01,938 - WARNING - No valid map number found in name: 'Spring 2023 - Section 9 Joined'
-2024-12-01 05:53:01,938 - WARNING - No valid year found in name: 'Fall 05 (Mirror)' (season: fall)
-2024-12-01 05:53:02,028 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D19$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:02,030 - WARNING - No valid map number found in name: 'BOSS Green of Spring 2023'
-2024-12-01 05:53:02,045 - WARNING - No valid year found in name: 'Fall 2023 - Section 1 Joined' (season: fall)
-2024-12-01 05:53:02,046 - WARNING - No valid map number found in name: 'Fall 2023 - Section 1 Joined'
-2024-12-01 05:53:02,093 - WARNING - No valid year found in name: 'Fall 09 (Mirror)' (season: fall)
-2024-12-01 05:53:02,118 - WARNING - No valid year found in name: 'Fall 13 (Mirror)' (season: fall)
-2024-12-01 05:53:02,153 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CS-RC)' (season: summer)
-2024-12-01 05:53:02,153 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (CS-RC)'
-2024-12-01 05:53:02,181 - WARNING - No valid year found in name: 'FlatWinter'23 - 09' (season: winter)
-2024-12-01 05:53:02,198 - WARNING - No valid map number found in name: 'Summer 2021 - Blue combined'
-2024-12-01 05:53:02,238 - WARNING - No valid year found in name: 'FlatWinter'23 - 22' (season: winter)
-2024-12-01 05:53:02,260 - WARNING - No season found in name: 'RPG Su21 - 05'
-2024-12-01 05:53:02,260 - WARNING - No valid year found in name: 'RPG Su21 - 05' (season: None)
-2024-12-01 05:53:02,296 - WARNING - No valid year found in name: 'FlatWinter'23 - 04' (season: winter)
-2024-12-01 05:53:02,299 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 19'
-2024-12-01 05:53:02,305 - WARNING - No valid year found in name: 'FlatWinter'23 - 01' (season: winter)
-2024-12-01 05:53:02,324 - WARNING - No season found in name: 'Super03'
-2024-12-01 05:53:02,324 - WARNING - No valid year found in name: 'Super03' (season: None)
-2024-12-01 05:53:02,324 - WARNING - No valid map number found in name: 'Super03'
-2024-12-01 05:53:02,339 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 09'
-2024-12-01 05:53:02,369 - WARNING - No valid year found in name: 'Fall 22 (Mirror)' (season: fall)
-2024-12-01 05:53:02,429 - WARNING - No valid map number found in name: 'Winter 2022 - White Combined'
-2024-12-01 05:53:02,442 - WARNING - No valid year found in name: '2D-Summer2022-21' (season: summer)
-2024-12-01 05:53:02,447 - WARNING - No valid year found in name: 'Winter 2024 - Section 6 Joined' (season: winter)
-2024-12-01 05:53:02,447 - WARNING - No valid map number found in name: 'Winter 2024 - Section 6 Joined'
-2024-12-01 05:53:02,507 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:02,517 - WARNING - No season found in name: 'Super01'
-2024-12-01 05:53:02,517 - WARNING - No valid year found in name: 'Super01' (season: None)
-2024-12-01 05:53:02,518 - WARNING - No valid map number found in name: 'Super01'
-2024-12-01 05:53:02,525 - WARNING - No valid year found in name: 'Fall 16 (Mirror)' (season: fall)
-2024-12-01 05:53:02,540 - WARNING - No valid year found in name: 'Summer 23 - 23 - Bumper' (season: summer)
-2024-12-01 05:53:02,559 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 10'
-2024-12-01 05:53:02,574 - WARNING - No valid year found in name: 'FlatFall'22 - 19' (season: fall)
-2024-12-01 05:53:02,583 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 14'
-2024-12-01 05:53:02,608 - WARNING - No valid year found in name: '2D-Summer2022-08' (season: summer)
-2024-12-01 05:53:02,652 - WARNING - No valid map number found in name: 'Summer 2021 - Red Combined'
-2024-12-01 05:53:02,653 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 23'
-2024-12-01 05:53:02,663 - WARNING - No valid year found in name: 'Summer 23 - 17 - Bumper' (season: summer)
-2024-12-01 05:53:02,671 - WARNING - No season found in name: 'Super25'
-2024-12-01 05:53:02,671 - WARNING - No valid year found in name: 'Super25' (season: None)
-2024-12-01 05:53:02,671 - WARNING - No valid map number found in name: 'Super25'
-2024-12-01 05:53:02,721 - WARNING - No season found in name: '\u8bad\u7ec3 - 10'
-2024-12-01 05:53:02,721 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 10' (season: None)
-2024-12-01 05:53:02,752 - WARNING - No valid year found in name: '2D-Summer2022-01' (season: summer)
-2024-12-01 05:53:02,776 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:02,789 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost $zMagnet' (season: summer)
-2024-12-01 05:53:02,789 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost $zMagnet'
-2024-12-01 05:53:02,802 - WARNING - No valid year found in name: 'FlatFall'22 - 15' (season: fall)
-2024-12-01 05:53:02,888 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 15'
-2024-12-01 05:53:02,891 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 03'
-2024-12-01 05:53:02,903 - WARNING - No season found in name: 'Super07'
-2024-12-01 05:53:02,903 - WARNING - No valid year found in name: 'Super07' (season: None)
-2024-12-01 05:53:02,903 - WARNING - No valid map number found in name: 'Super07'
-2024-12-01 05:53:02,942 - WARNING - No season found in name: 'WaterGlider [EASY MODE]'
-2024-12-01 05:53:02,942 - WARNING - No valid year found in name: 'WaterGlider [EASY MODE]' (season: None)
-2024-12-01 05:53:02,942 - WARNING - No valid map number found in name: 'WaterGlider [EASY MODE]'
-2024-12-01 05:53:02,978 - WARNING - No valid year found in name: 'FlatWinter'23 - 06' (season: winter)
-2024-12-01 05:53:03,003 - WARNING - No season found in name: '\u8bad\u7ec3 - 22'
-2024-12-01 05:53:03,003 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 22' (season: None)
-2024-12-01 05:53:03,005 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 16'
-2024-12-01 05:53:03,022 - WARNING - No season found in name: 'RPG Su21 - 22'
-2024-12-01 05:53:03,023 - WARNING - No valid year found in name: 'RPG Su21 - 22' (season: None)
-2024-12-01 05:53:03,074 - WARNING - No valid year found in name: 'Fall 10 (Mirror)' (season: fall)
-2024-12-01 05:53:03,087 - WARNING - No valid year found in name: 'Spring 01 But It's Sideways' (season: spring)
-2024-12-01 05:53:03,109 - WARNING - No valid map number found in name: 'Summer 2023 - Section 13 Joined'
-2024-12-01 05:53:03,110 - WARNING - No valid map number found in name: 'Spring 2023 - Section 11 Joined'
-2024-12-01 05:53:03,129 - WARNING - No season found in name: 'Quicksand [EASY MODE]'
-2024-12-01 05:53:03,130 - WARNING - No valid year found in name: 'Quicksand [EASY MODE]' (season: None)
-2024-12-01 05:53:03,130 - WARNING - No valid map number found in name: 'Quicksand [EASY MODE]'
-2024-12-01 05:53:03,132 - WARNING - No valid map number found in name: 'BOSS Blue of Spring 2023'
-2024-12-01 05:53:03,135 - WARNING - No season found in name: 'RPG Su21 - 16'
-2024-12-01 05:53:03,135 - WARNING - No valid year found in name: 'RPG Su21 - 16' (season: None)
-2024-12-01 05:53:03,187 - WARNING - No season found in name: 'Super04'
-2024-12-01 05:53:03,187 - WARNING - No valid year found in name: 'Super04' (season: None)
-2024-12-01 05:53:03,187 - WARNING - No valid map number found in name: 'Super04'
-2024-12-01 05:53:03,216 - WARNING - No valid map number found in name: 'Training - Black Combined'
-2024-12-01 05:53:03,234 - WARNING - No season found in name: 'Turnover [EASY MODE]'
-2024-12-01 05:53:03,234 - WARNING - No valid year found in name: 'Turnover [EASY MODE]' (season: None)
-2024-12-01 05:53:03,234 - WARNING - No valid map number found in name: 'Turnover [EASY MODE]'
-2024-12-01 05:53:03,239 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D16$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:03,283 - WARNING - No valid year found in name: 'Spring 01 But honey I shrunk the car' (season: spring)
-2024-12-01 05:53:03,301 - WARNING - No season found in name: 'Super08'
-2024-12-01 05:53:03,301 - WARNING - No valid year found in name: 'Super08' (season: None)
-2024-12-01 05:53:03,301 - WARNING - No valid map number found in name: 'Super08'
-2024-12-01 05:53:03,321 - WARNING - No valid year found in name: '2D-Summer2022-11' (season: summer)
-2024-12-01 05:53:03,328 - WARNING - No valid map number found in name: 'Summer 2023 - Section 10 Joined'
-2024-12-01 05:53:03,348 - WARNING - No season found in name: 'RPG Su21 - 20'
-2024-12-01 05:53:03,349 - WARNING - No valid year found in name: 'RPG Su21 - 20' (season: None)
-2024-12-01 05:53:03,359 - WARNING - No valid year found in name: 'FlatFall'22 - 11' (season: fall)
-2024-12-01 05:53:03,369 - WARNING - No valid year found in name: 'FlatFall'22 - 01' (season: fall)
-2024-12-01 05:53:03,424 - WARNING - No season found in name: '\u8bad\u7ec3 - 25'
-2024-12-01 05:53:03,424 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 25' (season: None)
-2024-12-01 05:53:03,447 - WARNING - No valid year found in name: 'FlatFall'22 - 23' (season: fall)
-2024-12-01 05:53:03,449 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 04'
-2024-12-01 05:53:03,483 - WARNING - No valid map number found in name: 'Winter 2024 - Last Section Joined'
-2024-12-01 05:53:03,490 - WARNING - No valid year found in name: 'Fall 01 (BLIND)' (season: fall)
-2024-12-01 05:53:03,566 - WARNING - No season found in name: 'Airwalk - Podium'
-2024-12-01 05:53:03,567 - WARNING - No valid year found in name: 'Airwalk - Podium' (season: None)
-2024-12-01 05:53:03,567 - WARNING - No valid map number found in name: 'Airwalk - Podium'
-2024-12-01 05:53:03,570 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:03,572 - WARNING - No season found in name: 'RPG Su21 - 24'
-2024-12-01 05:53:03,572 - WARNING - No valid year found in name: 'RPG Su21 - 24' (season: None)
-2024-12-01 05:53:03,593 - WARNING - No valid year found in name: 'FlatFall'22 - 22' (season: fall)
-2024-12-01 05:53:03,599 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 24'
-2024-12-01 05:53:03,603 - WARNING - No valid map number found in name: 'Fall 2023 - Section 14 Joined'
-2024-12-01 05:53:03,608 - WARNING - No valid map number found in name: 'Black BOSS Winter 2024'
-2024-12-01 05:53:03,620 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D16$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:03,628 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:03,634 - WARNING - No valid map number found in name: 'BOSS Red of Spring 2023'
-2024-12-01 05:53:03,688 - WARNING - No valid year found in name: 'FlatWinter'23 - 24' (season: winter)
-2024-12-01 05:53:03,701 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 24'
-2024-12-01 05:53:03,763 - WARNING - No valid year found in name: 'Winter 2024 - Section 5 Joined' (season: winter)
-2024-12-01 05:53:03,763 - WARNING - No valid map number found in name: 'Winter 2024 - Section 5 Joined'
-2024-12-01 05:53:03,771 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 06'
-2024-12-01 05:53:03,800 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 25'
-2024-12-01 05:53:03,807 - WARNING - No valid map number found in name: 'Fall 2021 - Red Combined'
-2024-12-01 05:53:03,830 - WARNING - No valid year found in name: 'Fall 2023 - Section 9 Joined' (season: fall)
-2024-12-01 05:53:03,830 - WARNING - No valid map number found in name: 'Fall 2023 - Section 9 Joined'
-2024-12-01 05:53:03,869 - WARNING - No season found in name: 'Super14'
-2024-12-01 05:53:03,869 - WARNING - No valid year found in name: 'Super14' (season: None)
-2024-12-01 05:53:03,869 - WARNING - No valid map number found in name: 'Super14'
-2024-12-01 05:53:03,870 - WARNING - No valid year found in name: '2D-Summer2022-06' (season: summer)
-2024-12-01 05:53:03,878 - WARNING - No valid year found in name: 'Summer 2023 - Section 8 Joined' (season: summer)
-2024-12-01 05:53:03,878 - WARNING - No valid map number found in name: 'Summer 2023 - Section 8 Joined'
-2024-12-01 05:53:03,883 - WARNING - No valid year found in name: 'Winter 2024 - Section 7 Joined' (season: winter)
-2024-12-01 05:53:03,883 - WARNING - No valid map number found in name: 'Winter 2024 - Section 7 Joined'
-2024-12-01 05:53:03,892 - WARNING - No season found in name: 'Super17'
-2024-12-01 05:53:03,892 - WARNING - No valid year found in name: 'Super17' (season: None)
-2024-12-01 05:53:03,892 - WARNING - No valid map number found in name: 'Super17'
-2024-12-01 05:53:03,918 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 10'
-2024-12-01 05:53:03,919 - WARNING - No valid map number found in name: 'Winter 2022 - Green Combined'
-2024-12-01 05:53:03,930 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:03,959 - WARNING - No season found in name: 'RPG Su21 - 04'
-2024-12-01 05:53:03,959 - WARNING - No valid year found in name: 'RPG Su21 - 04' (season: None)
-2024-12-01 05:53:03,980 - WARNING - No valid map number found in name: 'Fall 2021 - Black Combined'
-2024-12-01 05:53:03,984 - WARNING - No valid year found in name: 'Summer 23 - 16 - Bumper' (season: summer)
-2024-12-01 05:53:04,030 - WARNING - No season found in name: 'KnifeEdge [EASY MODE]'
-2024-12-01 05:53:04,030 - WARNING - No valid year found in name: 'KnifeEdge [EASY MODE]' (season: None)
-2024-12-01 05:53:04,030 - WARNING - No valid map number found in name: 'KnifeEdge [EASY MODE]'
-2024-12-01 05:53:04,046 - WARNING - No valid year found in name: 'Supersized_Spring_2024_-_05' (season: spring)
-2024-12-01 05:53:04,046 - WARNING - No valid map number found in name: 'Supersized_Spring_2024_-_05'
-2024-12-01 05:53:04,049 - WARNING - No valid map number found in name: 'White BOSS Winter 2024'
-2024-12-01 05:53:04,052 - WARNING - No valid year found in name: 'FlatFall'22 - 03' (season: fall)
-2024-12-01 05:53:04,071 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:04,110 - WARNING - No valid year found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (grass)' (season: summer)
-2024-12-01 05:53:04,110 - WARNING - No valid map number found in name: '$w$i$o$s$ff0S$fffummer $0ffF$fffrost (grass)'
-2024-12-01 05:53:04,114 - WARNING - No season found in name: 'RPG Su21 - 10'
-2024-12-01 05:53:04,114 - WARNING - No valid year found in name: 'RPG Su21 - 10' (season: None)
-2024-12-01 05:53:04,207 - WARNING - No season found in name: 'RPG Su21 - 14'
-2024-12-01 05:53:04,207 - WARNING - No valid year found in name: 'RPG Su21 - 14' (season: None)
-2024-12-01 05:53:04,228 - WARNING - No valid year found in name: 'FlatFall'22 - 17' (season: fall)
-2024-12-01 05:53:04,261 - WARNING - No valid map number found in name: 'Fall 2023 - Section 15 Joined'
-2024-12-01 05:53:04,291 - WARNING - No valid year found in name: 'FlatWinter'23 - 18' (season: winter)
-2024-12-01 05:53:04,342 - WARNING - No season found in name: 'RPG Su21 - 13'
-2024-12-01 05:53:04,342 - WARNING - No valid year found in name: 'RPG Su21 - 13' (season: None)
-2024-12-01 05:53:04,358 - WARNING - No valid map number found in name: 'Training - Blue Combined'
-2024-12-01 05:53:04,381 - WARNING - No season found in name: '\u8bad\u7ec3 - 07'
-2024-12-01 05:53:04,381 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 07' (season: None)
-2024-12-01 05:53:04,416 - WARNING - No season found in name: '\u8bad\u7ec3 - 21'
-2024-12-01 05:53:04,416 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 21' (season: None)
-2024-12-01 05:53:04,442 - WARNING - No season found in name: 'Clock Tower [EASY MODE]'
-2024-12-01 05:53:04,442 - WARNING - No valid year found in name: 'Clock Tower [EASY MODE]' (season: None)
-2024-12-01 05:53:04,442 - WARNING - No valid map number found in name: 'Clock Tower [EASY MODE]'
-2024-12-01 05:53:04,479 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 20'
-2024-12-01 05:53:04,506 - WARNING - No season found in name: 'GreenCity (SnowCar)'
-2024-12-01 05:53:04,507 - WARNING - No valid year found in name: 'GreenCity (SnowCar)' (season: None)
-2024-12-01 05:53:04,507 - WARNING - No valid map number found in name: 'GreenCity (SnowCar)'
-2024-12-01 05:53:04,604 - WARNING - No valid map number found in name: 'Fall 2023 - Section 10 Joined'
-2024-12-01 05:53:04,627 - WARNING - No valid map number found in name: 'Fall 2023 - Section 13 Joined'
-2024-12-01 05:53:04,648 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 13'
-2024-12-01 05:53:04,650 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 16'
-2024-12-01 05:53:04,665 - WARNING - No valid map number found in name: 'Winter 2022 - Red Combined'
-2024-12-01 05:53:04,670 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 18'
-2024-12-01 05:53:04,671 - WARNING - No season found in name: 'RPG Su21 - 21'
-2024-12-01 05:53:04,671 - WARNING - No valid year found in name: 'RPG Su21 - 21' (season: None)
-2024-12-01 05:53:04,673 - WARNING - No season found in name: '\u8bad\u7ec3 - 05'
-2024-12-01 05:53:04,673 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 05' (season: None)
-2024-12-01 05:53:04,707 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:04,724 - WARNING - No valid map number found in name: 'Summer 2021 - Green Combined'
-2024-12-01 05:53:04,738 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 14'
-2024-12-01 05:53:04,754 - WARNING - No season found in name: 'RPG Su21 - 12'
-2024-12-01 05:53:04,755 - WARNING - No valid year found in name: 'RPG Su21 - 12' (season: None)
-2024-12-01 05:53:04,767 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
-2024-12-01 05:53:04,783 - WARNING - No valid map number found in name: 'Spring 2023 - Last Section Joined (All Ends)'
-2024-12-01 05:53:04,816 - WARNING - No season found in name: 'Wet Stastic'
-2024-12-01 05:53:04,816 - WARNING - No valid year found in name: 'Wet Stastic' (season: None)
-2024-12-01 05:53:04,816 - WARNING - No valid map number found in name: 'Wet Stastic'
-2024-12-01 05:53:04,846 - WARNING - No valid map number found in name: 'Summer 2021 - White Combined'
-2024-12-01 05:53:04,855 - WARNING - No valid map number found in name: 'Winter 2022 - Blue Combined'
-2024-12-01 05:53:04,856 - WARNING - No valid year found in name: 'Spring 2023 - Section 2 Joined' (season: spring)
-2024-12-01 05:53:04,856 - WARNING - No valid map number found in name: 'Spring 2023 - Section 2 Joined'
-2024-12-01 05:53:04,861 - WARNING - No valid year found in name: 'Fall 2023 - Section 6 Joined' (season: fall)
-2024-12-01 05:53:04,861 - WARNING - No valid map number found in name: 'Fall 2023 - Section 6 Joined'
-2024-12-01 05:53:04,892 - WARNING - No valid map number found in name: 'Fall 2021 - Blue Combined'
-2024-12-01 05:53:04,903 - WARNING - No valid year found in name: 'Summer 2023 - Section 7 Joined' (season: summer)
-2024-12-01 05:53:04,903 - WARNING - No valid map number found in name: 'Summer 2023 - Section 7 Joined'
-2024-12-01 05:53:04,910 - WARNING - No season found in name: '\u8bad\u7ec3 - 13'
-2024-12-01 05:53:04,910 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 13' (season: None)
+2024-12-02 14:14:24,343 - WARNING - No valid year found in filename: 'FlatWinter'23 - 17.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,343 - WARNING - No valid year found in name: 'FlatWinter'23 - 17' (season: winter)
+2024-12-02 14:14:24,362 - WARNING - No valid year found in filename: 'FlatFall'22 - 21.Map.Gbx' (season: fall)
+2024-12-02 14:14:24,362 - WARNING - No valid year found in name: 'FlatFall'22 - 21' (season: fall)
+2024-12-02 14:14:24,362 - WARNING - No valid year found in filename: 'Fall 21 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:24,362 - WARNING - No valid year found in name: 'Fall 21 (Mirror)' (season: fall)
+2024-12-02 14:14:24,398 - WARNING - No valid year found in filename: 'Fall 08 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:24,398 - WARNING - No valid year found in name: 'Fall 08 (Mirror)' (season: fall)
+2024-12-02 14:14:24,407 - WARNING - No valid year found in filename: 'Green BOSS - Summer'23.Map.Gbx' (season: summer)
+2024-12-02 14:14:24,407 - WARNING - No valid year found in name: 'Green BOSS - Summer'23' (season: summer)
+2024-12-02 14:14:24,411 - WARNING - No season found in name: 'Super24'
+2024-12-02 14:14:24,411 - WARNING - No valid year found in name: 'Super24' (season: None)
+2024-12-02 14:14:24,412 - WARNING - No valid map number found in name: 'Super24'
+2024-12-02 14:14:24,425 - WARNING - No valid year found in filename: 'Red BOSS - Summer'23.Map.Gbx' (season: summer)
+2024-12-02 14:14:24,425 - WARNING - No valid year found in name: 'Red BOSS - Summer'23' (season: summer)
+2024-12-02 14:14:24,459 - WARNING - No valid year found in filename: 'Winter 2024 - Section 3 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,459 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 3 Joined.Map.Gbx'
+2024-12-02 14:14:24,459 - WARNING - No valid year found in name: 'Winter 2024 - Section 3 Joined' (season: winter)
+2024-12-02 14:14:24,459 - WARNING - No valid map number found in name: 'Winter 2024 - Section 3 Joined'
+2024-12-02 14:14:24,482 - WARNING - No valid year found in filename: 'Spring 2023 - Section 8 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:24,482 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 8 Joined.Map.Gbx'
+2024-12-02 14:14:24,482 - WARNING - No valid year found in name: 'Spring 2023 - Section 8 Joined' (season: spring)
+2024-12-02 14:14:24,482 - WARNING - No valid map number found in name: 'Spring 2023 - Section 8 Joined'
+2024-12-02 14:14:24,502 - WARNING - No valid map number found in filename: 'Fall 2022 poolhunter Featuring TnTree.Map.Gbx'
+2024-12-02 14:14:24,502 - WARNING - No valid map number found in name: 'Fall 2022 poolhunter $eb7Featuring TnTree'
+2024-12-02 14:14:24,577 - WARNING - No valid year found in filename: 'FlatWinter'23 - 10.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,577 - WARNING - No valid year found in name: 'FlatWinter'23 - 10' (season: winter)
+2024-12-02 14:14:24,579 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 06.Map.Gbx'
+2024-12-02 14:14:24,579 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 06'
+2024-12-02 14:14:24,581 - WARNING - No valid year found in filename: 'Summer 23 - 21 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:24,582 - WARNING - No valid year found in name: 'Summer 23 - 21 - Bumper' (season: summer)
+2024-12-02 14:14:24,592 - WARNING - No season found in filename: 'RPG Su21 - 11.Map.Gbx'
+2024-12-02 14:14:24,593 - WARNING - No valid year found in filename: 'RPG Su21 - 11.Map.Gbx' (season: None)
+2024-12-02 14:14:24,593 - WARNING - No season found in name: 'RPG Su21 - 11'
+2024-12-02 14:14:24,593 - WARNING - No valid year found in name: 'RPG Su21 - 11' (season: None)
+2024-12-02 14:14:24,605 - WARNING - No valid map number found in filename: 'Fall 2021 - White Combined.Map.Gbx'
+2024-12-02 14:14:24,605 - WARNING - No valid map number found in name: 'Fall 2021 - White Combined'
+2024-12-02 14:14:24,620 - WARNING - No valid year found in filename: 'White BOSS - Summer'23.Map.Gbx' (season: summer)
+2024-12-02 14:14:24,620 - WARNING - No valid year found in name: 'White BOSS - Summer'23' (season: summer)
+2024-12-02 14:14:24,718 - WARNING - No season found in filename: 'RPG Su21 - 01.Map.Gbx'
+2024-12-02 14:14:24,718 - WARNING - No valid year found in filename: 'RPG Su21 - 01.Map.Gbx' (season: None)
+2024-12-02 14:14:24,718 - WARNING - No season found in name: 'RPG Su21 - 01'
+2024-12-02 14:14:24,718 - WARNING - No valid year found in name: 'RPG Su21 - 01' (season: None)
+2024-12-02 14:14:24,720 - WARNING - No valid year found in filename: 'FlatFall'22 - 14.Map.Gbx' (season: fall)
+2024-12-02 14:14:24,720 - WARNING - No valid year found in name: 'FlatFall'22 - 14' (season: fall)
+2024-12-02 14:14:24,735 - WARNING - No season found in filename: 'RPG Su21 - 08.Map.Gbx'
+2024-12-02 14:14:24,735 - WARNING - No valid year found in filename: 'RPG Su21 - 08.Map.Gbx' (season: None)
+2024-12-02 14:14:24,735 - WARNING - No season found in name: 'RPG Su21 - 08'
+2024-12-02 14:14:24,735 - WARNING - No valid year found in name: 'RPG Su21 - 08' (season: None)
+2024-12-02 14:14:24,742 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 02.Map.Gbx'
+2024-12-02 14:14:24,742 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 02'
+2024-12-02 14:14:24,767 - WARNING - No valid year found in filename: 'FlatWinter'23 - 02.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,767 - WARNING - No valid year found in name: 'FlatWinter'23 - 02' (season: winter)
+2024-12-02 14:14:24,804 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 01.Map.Gbx'
+2024-12-02 14:14:24,804 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 01'
+2024-12-02 14:14:24,817 - WARNING - No season found in name: 'Super21'
+2024-12-02 14:14:24,817 - WARNING - No valid year found in name: 'Super21' (season: None)
+2024-12-02 14:14:24,817 - WARNING - No valid map number found in name: 'Super21'
+2024-12-02 14:14:24,846 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 03.Map.Gbx'
+2024-12-02 14:14:24,846 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 03'
+2024-12-02 14:14:24,857 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 17.Map.Gbx'
+2024-12-02 14:14:24,857 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 17'
+2024-12-02 14:14:24,876 - WARNING - No season found in name: 'EuroSky II [EASY MODE]'
+2024-12-02 14:14:24,877 - WARNING - No valid year found in name: 'EuroSky II [EASY MODE]' (season: None)
+2024-12-02 14:14:24,877 - WARNING - No valid map number found in name: 'EuroSky II [EASY MODE]'
+2024-12-02 14:14:24,888 - WARNING - No valid year found in filename: 'Summer 2023 - Section 1 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:24,888 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 1 Joined.Map.Gbx'
+2024-12-02 14:14:24,888 - WARNING - No valid year found in name: 'Summer 2023 - Section 1 Joined' (season: summer)
+2024-12-02 14:14:24,888 - WARNING - No valid map number found in name: 'Summer 2023 - Section 1 Joined'
+2024-12-02 14:14:24,891 - WARNING - No season found in name: 'Grip - Podium'
+2024-12-02 14:14:24,891 - WARNING - No valid year found in name: 'Grip - Podium' (season: None)
+2024-12-02 14:14:24,891 - WARNING - No valid map number found in name: 'Grip - Podium'
+2024-12-02 14:14:24,914 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 16 Joined.Map.Gbx'
+2024-12-02 14:14:24,915 - WARNING - No valid map number found in name: 'Fall 2023 - Section 16 Joined'
+2024-12-02 14:14:24,927 - WARNING - No valid year found in filename: 'Fall 14 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:24,927 - WARNING - No valid year found in name: 'Fall 14 (Mirror)' (season: fall)
+2024-12-02 14:14:24,950 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 19.Map.Gbx'
+2024-12-02 14:14:24,950 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 19'
+2024-12-02 14:14:24,954 - WARNING - No valid year found in filename: 'FlatFall'22 - 18.Map.Gbx' (season: fall)
+2024-12-02 14:14:24,954 - WARNING - No valid year found in name: 'FlatFall'22 - 18' (season: fall)
+2024-12-02 14:14:24,959 - WARNING - No valid year found in filename: 'FlatWinter'23 - 25.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,959 - WARNING - No valid year found in name: 'FlatWinter'23 - 25' (season: winter)
+2024-12-02 14:14:24,988 - WARNING - No valid year found in filename: 'Winter 2024 - Section 1 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:24,988 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 1 Joined.Map.Gbx'
+2024-12-02 14:14:24,988 - WARNING - No valid year found in name: 'Winter 2024 - Section 1 Joined' (season: winter)
+2024-12-02 14:14:24,988 - WARNING - No valid map number found in name: 'Winter 2024 - Section 1 Joined'
+2024-12-02 14:14:25,013 - WARNING - No valid year found in filename: 'Spring 20 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,013 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D10$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:25,017 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 11.Map.Gbx'
+2024-12-02 14:14:25,018 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 11'
+2024-12-02 14:14:25,030 - WARNING - No season found in filename: '\u8bad\u7ec3 - 15.Map.Gbx'
+2024-12-02 14:14:25,030 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 15.Map.Gbx' (season: None)
+2024-12-02 14:14:25,031 - WARNING - No season found in name: '\u8bad\u7ec3 - 15'
+2024-12-02 14:14:25,031 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 15' (season: None)
+2024-12-02 14:14:25,073 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 12 Joined.Map.Gbx'
+2024-12-02 14:14:25,073 - WARNING - No valid map number found in name: 'Fall 2023 - Section 12 Joined'
+2024-12-02 14:14:25,080 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 22.Map.Gbx'
+2024-12-02 14:14:25,080 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 22'
+2024-12-02 14:14:25,092 - WARNING - No valid year found in filename: 'Winter 2024 - Section 4 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:25,092 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 4 Joined.Map.Gbx'
+2024-12-02 14:14:25,092 - WARNING - No valid year found in name: 'Winter 2024 - Section 4 Joined' (season: winter)
+2024-12-02 14:14:25,092 - WARNING - No valid map number found in name: 'Winter 2024 - Section 4 Joined'
+2024-12-02 14:14:25,114 - WARNING - No season found in name: 'Super19'
+2024-12-02 14:14:25,114 - WARNING - No valid year found in name: 'Super19' (season: None)
+2024-12-02 14:14:25,114 - WARNING - No valid map number found in name: 'Super19'
+2024-12-02 14:14:25,117 - WARNING - No season found in name: 'Frosty - Podium'
+2024-12-02 14:14:25,117 - WARNING - No valid year found in name: 'Frosty - Podium' (season: None)
+2024-12-02 14:14:25,117 - WARNING - No valid map number found in name: 'Frosty - Podium'
+2024-12-02 14:14:25,121 - WARNING - No valid year found in filename: 'Spring 2023 - Section 6 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,122 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 6 Joined.Map.Gbx'
+2024-12-02 14:14:25,122 - WARNING - No valid year found in name: 'Spring 2023 - Section 6 Joined' (season: spring)
+2024-12-02 14:14:25,122 - WARNING - No valid map number found in name: 'Spring 2023 - Section 6 Joined'
+2024-12-02 14:14:25,137 - WARNING - No season found in filename: '\u8bad\u7ec3 - 19.Map.Gbx'
+2024-12-02 14:14:25,137 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 19.Map.Gbx' (season: None)
+2024-12-02 14:14:25,137 - WARNING - No season found in name: '\u8bad\u7ec3 - 19'
+2024-12-02 14:14:25,138 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 19' (season: None)
+2024-12-02 14:14:25,195 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 12 Joined.Map.Gbx'
+2024-12-02 14:14:25,195 - WARNING - No valid map number found in name: 'Summer 2023 - Section 12 Joined'
+2024-12-02 14:14:25,240 - WARNING - No season found in filename: 'RPG Su21 - 07.Map.Gbx'
+2024-12-02 14:14:25,241 - WARNING - No valid year found in filename: 'RPG Su21 - 07.Map.Gbx' (season: None)
+2024-12-02 14:14:25,242 - WARNING - No season found in name: 'RPG Su21 - 07'
+2024-12-02 14:14:25,243 - WARNING - No valid year found in name: 'RPG Su21 - 07' (season: None)
+2024-12-02 14:14:25,272 - WARNING - No valid year found in filename: 'Spring 17 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,273 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D17$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:25,278 - WARNING - No valid year found in filename: 'FlatWinter'23 - 15.Map.Gbx' (season: winter)
+2024-12-02 14:14:25,280 - WARNING - No valid year found in name: 'FlatWinter'23 - 15' (season: winter)
+2024-12-02 14:14:25,298 - WARNING - No valid year found in filename: 'Fall 03 (BLIND).Map.Gbx' (season: fall)
+2024-12-02 14:14:25,298 - WARNING - No valid year found in name: 'Fall 03 (BLIND)' (season: fall)
+2024-12-02 14:14:25,384 - WARNING - No valid year found in filename: 'Spring 2023 - Section 4 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,385 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 4 Joined.Map.Gbx'
+2024-12-02 14:14:25,385 - WARNING - No valid year found in name: 'Spring 2023 - Section 4 Joined' (season: spring)
+2024-12-02 14:14:25,385 - WARNING - No valid map number found in name: 'Spring 2023 - Section 4 Joined'
+2024-12-02 14:14:25,577 - WARNING - No valid year found in filename: 'Summer 23 - 08 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:25,578 - WARNING - No valid year found in name: 'Summer 23 - 08 - Bumper' (season: summer)
+2024-12-02 14:14:25,585 - WARNING - No valid year found in filename: 'Summer 2023 - Section 6 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:25,585 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 6 Joined.Map.Gbx'
+2024-12-02 14:14:25,585 - WARNING - No valid year found in name: 'Summer 2023 - Section 6 Joined' (season: summer)
+2024-12-02 14:14:25,585 - WARNING - No valid map number found in name: 'Summer 2023 - Section 6 Joined'
+2024-12-02 14:14:25,600 - WARNING - No valid year found in filename: 'Fall 25 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:25,601 - WARNING - No valid year found in name: 'Fall 25 (Mirror)' (season: fall)
+2024-12-02 14:14:25,624 - WARNING - No season found in filename: 'RPG Su21 - 09.Map.Gbx'
+2024-12-02 14:14:25,624 - WARNING - No valid year found in filename: 'RPG Su21 - 09.Map.Gbx' (season: None)
+2024-12-02 14:14:25,625 - WARNING - No season found in name: 'RPG Su21 - 09'
+2024-12-02 14:14:25,625 - WARNING - No valid year found in name: 'RPG Su21 - 09' (season: None)
+2024-12-02 14:14:25,641 - WARNING - No valid year found in filename: 'FlatFall'22 - 06.Map.Gbx' (season: fall)
+2024-12-02 14:14:25,642 - WARNING - No valid year found in name: 'FlatFall'22 - 06' (season: fall)
+2024-12-02 14:14:25,730 - WARNING - No valid year found in filename: 'FlatFall'22 - 10.Map.Gbx' (season: fall)
+2024-12-02 14:14:25,730 - WARNING - No valid year found in name: 'FlatFall'22 - 10' (season: fall)
+2024-12-02 14:14:25,742 - WARNING - No valid year found in filename: 'Fall 19 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:25,743 - WARNING - No valid year found in name: 'Fall 19 (Mirror)' (season: fall)
+2024-12-02 14:14:25,761 - WARNING - No valid year found in filename: 'Spring 2023 - Section 5 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,761 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 5 Joined.Map.Gbx'
+2024-12-02 14:14:25,761 - WARNING - No valid year found in name: 'Spring 2023 - Section 5 Joined' (season: spring)
+2024-12-02 14:14:25,761 - WARNING - No valid map number found in name: 'Spring 2023 - Section 5 Joined'
+2024-12-02 14:14:25,772 - WARNING - No valid map number found in filename: 'Training - White Combined.Map.Gbx'
+2024-12-02 14:14:25,773 - WARNING - No valid map number found in name: 'Training - White Combined'
+2024-12-02 14:14:25,774 - WARNING - No valid year found in filename: 'FlatFall'22 - 02.Map.Gbx' (season: fall)
+2024-12-02 14:14:25,774 - WARNING - No valid year found in name: 'FlatFall'22 - 02' (season: fall)
+2024-12-02 14:14:25,782 - WARNING - No valid year found in filename: 'Spring 24 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:25,782 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:25,819 - WARNING - No season found in name: 'Super02'
+2024-12-02 14:14:25,819 - WARNING - No valid year found in name: 'Super02' (season: None)
+2024-12-02 14:14:25,820 - WARNING - No valid map number found in name: 'Super02'
+2024-12-02 14:14:25,957 - WARNING - No season found in name: 'Pool - Podium'
+2024-12-02 14:14:25,957 - WARNING - No valid year found in name: 'Pool - Podium' (season: None)
+2024-12-02 14:14:25,957 - WARNING - No valid map number found in name: 'Pool - Podium'
+2024-12-02 14:14:25,959 - WARNING - No season found in name: 'Icy Stally'
+2024-12-02 14:14:25,959 - WARNING - No valid year found in name: 'Icy Stally' (season: None)
+2024-12-02 14:14:25,959 - WARNING - No valid map number found in name: 'Icy Stally'
+2024-12-02 14:14:25,965 - WARNING - No valid year found in filename: 'Summer 23 - 13 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:25,965 - WARNING - No valid year found in name: 'Summer 23 - 13 - Bumper' (season: summer)
+2024-12-02 14:14:25,968 - WARNING - No valid year found in filename: 'Fall 2023 - Section 3 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:25,968 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 3 Joined.Map.Gbx'
+2024-12-02 14:14:25,968 - WARNING - No valid year found in name: 'Fall 2023 - Section 3 Joined' (season: fall)
+2024-12-02 14:14:25,969 - WARNING - No valid map number found in name: 'Fall 2023 - Section 3 Joined'
+2024-12-02 14:14:26,010 - WARNING - No season found in name: 'Vortex - Podium'
+2024-12-02 14:14:26,010 - WARNING - No valid year found in name: 'Vortex - Podium' (season: None)
+2024-12-02 14:14:26,010 - WARNING - No valid map number found in name: 'Vortex - Podium'
+2024-12-02 14:14:26,107 - WARNING - No season found in name: 'Grassline [EASY MODE]'
+2024-12-02 14:14:26,108 - WARNING - No valid year found in name: 'Grassline [EASY MODE]' (season: None)
+2024-12-02 14:14:26,108 - WARNING - No valid map number found in name: 'Grassline [EASY MODE]'
+2024-12-02 14:14:26,122 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 21.Map.Gbx'
+2024-12-02 14:14:26,122 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 21'
+2024-12-02 14:14:26,124 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 22.Map.Gbx'
+2024-12-02 14:14:26,124 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 22'
+2024-12-02 14:14:26,131 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 07.Map.Gbx'
+2024-12-02 14:14:26,131 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 07'
+2024-12-02 14:14:26,160 - WARNING - No valid year found in filename: 'Fall 15 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,160 - WARNING - No valid year found in name: 'Fall 15 (Mirror)' (season: fall)
+2024-12-02 14:14:26,167 - WARNING - No season found in name: 'Bowl [EASY MODE]'
+2024-12-02 14:14:26,167 - WARNING - No valid year found in name: 'Bowl [EASY MODE]' (season: None)
+2024-12-02 14:14:26,167 - WARNING - No valid map number found in name: 'Bowl [EASY MODE]'
+2024-12-02 14:14:26,181 - WARNING - No valid year found in filename: 'Fall 23 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,182 - WARNING - No valid year found in name: 'Fall 23 (Mirror)' (season: fall)
+2024-12-02 14:14:26,192 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 15 Joined.Map.Gbx'
+2024-12-02 14:14:26,192 - WARNING - No valid map number found in name: 'Winter 2024 - Section 15 Joined'
+2024-12-02 14:14:26,198 - WARNING - No valid year found in filename: 'FlatFall'22 - 08.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,199 - WARNING - No valid year found in name: 'FlatFall'22 - 08' (season: fall)
+2024-12-02 14:14:26,213 - WARNING - No season found in name: 'OnTheEdge [EASY MODE]'
+2024-12-02 14:14:26,213 - WARNING - No valid year found in name: 'OnTheEdge [EASY MODE]' (season: None)
+2024-12-02 14:14:26,213 - WARNING - No valid map number found in name: 'OnTheEdge [EASY MODE]'
+2024-12-02 14:14:26,224 - WARNING - No valid map number found in filename: 'BOSS White of Spring 2023.Map.Gbx'
+2024-12-02 14:14:26,224 - WARNING - No valid map number found in name: 'BOSS White of Spring 2023'
+2024-12-02 14:14:26,233 - WARNING - No season found in filename: '\u8bad\u7ec3 - 17.Map.Gbx'
+2024-12-02 14:14:26,233 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 17.Map.Gbx' (season: None)
+2024-12-02 14:14:26,233 - WARNING - No season found in name: '\u8bad\u7ec3 - 17'
+2024-12-02 14:14:26,233 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 17' (season: None)
+2024-12-02 14:14:26,235 - WARNING - No valid year found in filename: 'Summer 23 - 02 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,235 - WARNING - No valid year found in name: 'Summer 23 - 02 - Bumper' (season: summer)
+2024-12-02 14:14:26,240 - WARNING - No valid map number found in filename: 'Winter 2022 - Black Combined.Map.Gbx'
+2024-12-02 14:14:26,241 - WARNING - No valid map number found in name: 'Winter 2022 - Black Combined'
+2024-12-02 14:14:26,247 - WARNING - No valid year found in filename: 'Winter 2024 - Section 8 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:26,247 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 8 Joined.Map.Gbx'
+2024-12-02 14:14:26,247 - WARNING - No valid year found in name: 'Winter 2024 - Section 8 Joined' (season: winter)
+2024-12-02 14:14:26,247 - WARNING - No valid map number found in name: 'Winter 2024 - Section 8 Joined'
+2024-12-02 14:14:26,254 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 17 Joined.Map.Gbx'
+2024-12-02 14:14:26,254 - WARNING - No valid map number found in name: 'Fall 2023 - Section 17 Joined'
+2024-12-02 14:14:26,264 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 12.Map.Gbx'
+2024-12-02 14:14:26,264 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 12'
+2024-12-02 14:14:26,283 - WARNING - No valid year found in filename: 'FlatFall'22 - 05.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,283 - WARNING - No valid year found in name: 'FlatFall'22 - 05' (season: fall)
+2024-12-02 14:14:26,284 - WARNING - No valid year found in filename: 'Fall 2023 - Section 2 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,284 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 2 Joined.Map.Gbx'
+2024-12-02 14:14:26,284 - WARNING - No valid year found in name: 'Fall 2023 - Section 2 Joined' (season: fall)
+2024-12-02 14:14:26,284 - WARNING - No valid map number found in name: 'Fall 2023 - Section 2 Joined'
+2024-12-02 14:14:26,296 - WARNING - No valid year found in filename: 'Spring 11 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:26,297 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:26,357 - WARNING - No season found in name: 'Touchdown [EASY MODE]'
+2024-12-02 14:14:26,357 - WARNING - No valid year found in name: 'Touchdown [EASY MODE]' (season: None)
+2024-12-02 14:14:26,357 - WARNING - No valid map number found in name: 'Touchdown [EASY MODE]'
+2024-12-02 14:14:26,382 - WARNING - No valid year found in filename: 'Fall 2023 - Section 7 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,382 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 7 Joined.Map.Gbx'
+2024-12-02 14:14:26,382 - WARNING - No valid year found in name: 'Fall 2023 - Section 7 Joined' (season: fall)
+2024-12-02 14:14:26,382 - WARNING - No valid map number found in name: 'Fall 2023 - Section 7 Joined'
+2024-12-02 14:14:26,432 - WARNING - No valid year found in filename: 'Spring 10 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:26,432 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D10$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:26,435 - WARNING - No season found in name: 'Control - Podium'
+2024-12-02 14:14:26,435 - WARNING - No valid year found in name: 'Control - Podium' (season: None)
+2024-12-02 14:14:26,435 - WARNING - No valid map number found in name: 'Control - Podium'
+2024-12-02 14:14:26,440 - WARNING - No season found in name: 'Sinuous - Podium'
+2024-12-02 14:14:26,440 - WARNING - No valid year found in name: 'Sinuous - Podium' (season: None)
+2024-12-02 14:14:26,441 - WARNING - No valid map number found in name: 'Sinuous - Podium'
+2024-12-02 14:14:26,454 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 11 Joined.Map.Gbx'
+2024-12-02 14:14:26,454 - WARNING - No valid map number found in name: 'Fall 2023 - Section 11 Joined'
+2024-12-02 14:14:26,463 - WARNING - No season found in name: 'Super23'
+2024-12-02 14:14:26,463 - WARNING - No valid year found in name: 'Super23' (season: None)
+2024-12-02 14:14:26,463 - WARNING - No valid map number found in name: 'Super23'
+2024-12-02 14:14:26,481 - WARNING - No valid year found in filename: 'Summer 23 - 01 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,481 - WARNING - No valid year found in name: 'Summer 23 - 01 - Bumper' (season: summer)
+2024-12-02 14:14:26,490 - WARNING - No season found in filename: 'RPG Su21 - 18.Map.Gbx'
+2024-12-02 14:14:26,490 - WARNING - No valid year found in filename: 'RPG Su21 - 18.Map.Gbx' (season: None)
+2024-12-02 14:14:26,490 - WARNING - No season found in name: 'RPG Su21 - 18'
+2024-12-02 14:14:26,490 - WARNING - No valid year found in name: 'RPG Su21 - 18' (season: None)
+2024-12-02 14:14:26,502 - WARNING - No season found in name: 'Super16'
+2024-12-02 14:14:26,502 - WARNING - No valid year found in name: 'Super16' (season: None)
+2024-12-02 14:14:26,502 - WARNING - No valid map number found in name: 'Super16'
+2024-12-02 14:14:26,541 - WARNING - No valid year found in filename: 'Spring 23 poolhunters - 05.Map.Gbx' (season: spring)
+2024-12-02 14:14:26,541 - WARNING - No valid year found in name: 'Spring 23 poolhunters - 05' (season: spring)
+2024-12-02 14:14:26,562 - WARNING - No valid year found in filename: 'FlatWinter'23 - 19.Map.Gbx' (season: winter)
+2024-12-02 14:14:26,562 - WARNING - No valid year found in name: 'FlatWinter'23 - 19' (season: winter)
+2024-12-02 14:14:26,599 - WARNING - No season found in name: 'Super10'
+2024-12-02 14:14:26,599 - WARNING - No valid year found in name: 'Super10' (season: None)
+2024-12-02 14:14:26,599 - WARNING - No valid map number found in name: 'Super10'
+2024-12-02 14:14:26,601 - WARNING - No season found in filename: 'RPG Su21 - 19.Map.Gbx'
+2024-12-02 14:14:26,601 - WARNING - No valid year found in filename: 'RPG Su21 - 19.Map.Gbx' (season: None)
+2024-12-02 14:14:26,601 - WARNING - No season found in name: 'RPG Su21 - 19'
+2024-12-02 14:14:26,601 - WARNING - No valid year found in name: 'RPG Su21 - 19' (season: None)
+2024-12-02 14:14:26,624 - WARNING - No valid year found in filename: 'FlatFall'22 - 12.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,624 - WARNING - No valid year found in name: 'FlatFall'22 - 12' (season: fall)
+2024-12-02 14:14:26,625 - WARNING - No valid year found in filename: 'FlatFall'22 - 25.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,625 - WARNING - No valid year found in name: 'FlatFall'22 - 25' (season: fall)
+2024-12-02 14:14:26,633 - WARNING - No season found in filename: '\u8bad\u7ec3 - 11.Map.Gbx'
+2024-12-02 14:14:26,634 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 11.Map.Gbx' (season: None)
+2024-12-02 14:14:26,634 - WARNING - No season found in name: '\u8bad\u7ec3 - 11'
+2024-12-02 14:14:26,634 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 11' (season: None)
+2024-12-02 14:14:26,634 - WARNING - No valid year found in filename: 'Black BOSS - Summer'23.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,634 - WARNING - No valid year found in name: 'Black BOSS - Summer'23' (season: summer)
+2024-12-02 14:14:26,635 - WARNING - No season found in name: 'Super12'
+2024-12-02 14:14:26,635 - WARNING - No valid year found in name: 'Super12' (season: None)
+2024-12-02 14:14:26,635 - WARNING - No valid map number found in name: 'Super12'
+2024-12-02 14:14:26,645 - WARNING - No valid year found in filename: 'Fall 20 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,646 - WARNING - No valid year found in name: 'Fall 20 (Mirror)' (season: fall)
+2024-12-02 14:14:26,684 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 18.Map.Gbx'
+2024-12-02 14:14:26,684 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 18'
+2024-12-02 14:14:26,725 - WARNING - No valid year found in filename: 'Summer 23 - 24 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,726 - WARNING - No valid year found in name: 'Summer 23 - 24 - Bumper' (season: summer)
+2024-12-02 14:14:26,727 - WARNING - No valid year found in filename: 'Summer 23 - 05 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,727 - WARNING - No valid year found in name: 'Summer 23 - 05 - Bumper' (season: summer)
+2024-12-02 14:14:26,744 - WARNING - No valid year found in filename: 'Fall 18 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,744 - WARNING - No valid year found in name: 'Fall 18 (Mirror)' (season: fall)
+2024-12-02 14:14:26,769 - WARNING - No season found in filename: '\u8bad\u7ec3 - 03.Map.Gbx'
+2024-12-02 14:14:26,769 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 03.Map.Gbx' (season: None)
+2024-12-02 14:14:26,769 - WARNING - No season found in name: '\u8bad\u7ec3 - 03'
+2024-12-02 14:14:26,769 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 03' (season: None)
+2024-12-02 14:14:26,771 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 12.Map.Gbx'
+2024-12-02 14:14:26,771 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 12'
+2024-12-02 14:14:26,782 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 23.Map.Gbx'
+2024-12-02 14:14:26,782 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 23'
+2024-12-02 14:14:26,794 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 07.Map.Gbx'
+2024-12-02 14:14:26,795 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 07'
+2024-12-02 14:14:26,797 - WARNING - No season found in name: 'Super13'
+2024-12-02 14:14:26,797 - WARNING - No valid year found in name: 'Super13' (season: None)
+2024-12-02 14:14:26,797 - WARNING - No valid map number found in name: 'Super13'
+2024-12-02 14:14:26,825 - WARNING - No valid year found in filename: 'FlatFall'22 - 04.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,825 - WARNING - No valid year found in name: 'FlatFall'22 - 04' (season: fall)
+2024-12-02 14:14:26,835 - WARNING - No valid year found in filename: 'Fall 03 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,835 - WARNING - No valid year found in name: 'Fall 03 (Mirror)' (season: fall)
+2024-12-02 14:14:26,836 - WARNING - No season found in filename: '\u8bad\u7ec3 - 08.Map.Gbx'
+2024-12-02 14:14:26,836 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 08.Map.Gbx' (season: None)
+2024-12-02 14:14:26,836 - WARNING - No season found in name: '\u8bad\u7ec3 - 08'
+2024-12-02 14:14:26,836 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 08' (season: None)
+2024-12-02 14:14:26,837 - WARNING - No valid year found in filename: 'FlatWinter'23 - 13.Map.Gbx' (season: winter)
+2024-12-02 14:14:26,837 - WARNING - No valid year found in name: 'FlatWinter'23 - 13' (season: winter)
+2024-12-02 14:14:26,855 - WARNING - No valid year found in filename: 'FlatWinter'23 - 20.Map.Gbx' (season: winter)
+2024-12-02 14:14:26,856 - WARNING - No valid year found in name: 'FlatWinter'23 - 20' (season: winter)
+2024-12-02 14:14:26,859 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 10 Joined.Map.Gbx'
+2024-12-02 14:14:26,859 - WARNING - No valid map number found in name: 'Winter 2024 - Section 10 Joined'
+2024-12-02 14:14:26,897 - WARNING - No valid year found in filename: 'Fall 01 - Tilted.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,899 - WARNING - No valid year found in name: 'Fall 01 - Tilted' (season: fall)
+2024-12-02 14:14:26,947 - WARNING - No valid year found in filename: 'Summer 23 - 03 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:26,947 - WARNING - No valid year found in name: 'Summer 23 - 03 - Bumper' (season: summer)
+2024-12-02 14:14:26,979 - WARNING - No valid year found in filename: 'FlatFall'22 - 07.Map.Gbx' (season: fall)
+2024-12-02 14:14:26,979 - WARNING - No valid year found in name: 'FlatFall'22 - 07' (season: fall)
+2024-12-02 14:14:26,983 - WARNING - No valid map number found in filename: 'Blue BOSS Winter 2024.Map.Gbx'
+2024-12-02 14:14:26,983 - WARNING - No valid map number found in name: 'Blue BOSS Winter 2024'
+2024-12-02 14:14:26,985 - WARNING - No valid year found in filename: 'Fall 11 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:26,985 - WARNING - No valid year found in name: 'Fall 11 (Mirror)' (season: fall)
+2024-12-02 14:14:27,002 - WARNING - No valid map number found in filename: 'Fall 2023 - Last Section Joined.Map.Gbx'
+2024-12-02 14:14:27,002 - WARNING - No valid map number found in name: 'Fall 2023 - Last Section Joined'
+2024-12-02 14:14:27,004 - WARNING - No valid year found in filename: 'Summer 2023 - Section 3 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,004 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 3 Joined.Map.Gbx'
+2024-12-02 14:14:27,004 - WARNING - No valid year found in name: 'Summer 2023 - Section 3 Joined' (season: summer)
+2024-12-02 14:14:27,004 - WARNING - No valid map number found in name: 'Summer 2023 - Section 3 Joined'
+2024-12-02 14:14:27,012 - WARNING - No season found in filename: '\u8bad\u7ec3 - 23.Map.Gbx'
+2024-12-02 14:14:27,012 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 23.Map.Gbx' (season: None)
+2024-12-02 14:14:27,013 - WARNING - No season found in name: '\u8bad\u7ec3 - 23'
+2024-12-02 14:14:27,013 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 23' (season: None)
+2024-12-02 14:14:27,021 - WARNING - No valid year found in filename: 'FlatFall'22 - 09.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,022 - WARNING - No valid year found in name: 'FlatFall'22 - 09' (season: fall)
+2024-12-02 14:14:27,024 - WARNING - No valid year found in filename: 'FlatFall'22 - 16.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,024 - WARNING - No valid year found in name: 'FlatFall'22 - 16' (season: fall)
+2024-12-02 14:14:27,042 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 11.Map.Gbx'
+2024-12-02 14:14:27,043 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 11'
+2024-12-02 14:14:27,048 - WARNING - No valid year found in filename: 'Summer 23 - 14 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,048 - WARNING - No valid year found in name: 'Summer 23 - 14 - Bumper' (season: summer)
+2024-12-02 14:14:27,082 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 05.Map.Gbx'
+2024-12-02 14:14:27,083 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 05'
+2024-12-02 14:14:27,094 - WARNING - No season found in filename: '\u8bad\u7ec3 - 24.Map.Gbx'
+2024-12-02 14:14:27,094 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 24.Map.Gbx' (season: None)
+2024-12-02 14:14:27,094 - WARNING - No season found in name: '\u8bad\u7ec3 - 24'
+2024-12-02 14:14:27,094 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 24' (season: None)
+2024-12-02 14:14:27,102 - WARNING - No valid year found in filename: 'Spring 22 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,102 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:27,109 - WARNING - No valid year found in filename: 'Summer 23 - 22 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,109 - WARNING - No valid year found in name: 'Summer 23 - 22 - Bumper' (season: summer)
+2024-12-02 14:14:27,126 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 08.Map.Gbx'
+2024-12-02 14:14:27,127 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 08'
+2024-12-02 14:14:27,151 - WARNING - No valid year found in filename: 'Spring 21 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,151 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:27,157 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 15.Map.Gbx'
+2024-12-02 14:14:27,157 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 15'
+2024-12-02 14:14:27,192 - WARNING - No season found in filename: '\u8bad\u7ec3 - 04.Map.Gbx'
+2024-12-02 14:14:27,192 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 04.Map.Gbx' (season: None)
+2024-12-02 14:14:27,192 - WARNING - No season found in name: '\u8bad\u7ec3 - 04'
+2024-12-02 14:14:27,193 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 04' (season: None)
+2024-12-02 14:14:27,202 - WARNING - No season found in filename: '\u8bad\u7ec3 - 09.Map.Gbx'
+2024-12-02 14:14:27,202 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 09.Map.Gbx' (season: None)
+2024-12-02 14:14:27,202 - WARNING - No season found in name: '\u8bad\u7ec3 - 09'
+2024-12-02 14:14:27,202 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 09' (season: None)
+2024-12-02 14:14:27,247 - WARNING - No season found in name: 'TightRope [EASY MODE]'
+2024-12-02 14:14:27,248 - WARNING - No valid year found in name: 'TightRope [EASY MODE]' (season: None)
+2024-12-02 14:14:27,248 - WARNING - No valid map number found in name: 'TightRope [EASY MODE]'
+2024-12-02 14:14:27,252 - WARNING - No valid year found in filename: 'Summer 23 - 18 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,252 - WARNING - No valid year found in name: 'Summer 23 - 18 - Bumper' (season: summer)
+2024-12-02 14:14:27,253 - WARNING - No valid year found in filename: 'FlatFall'22 - 13.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,253 - WARNING - No valid year found in name: 'FlatFall'22 - 13' (season: fall)
+2024-12-02 14:14:27,257 - WARNING - No valid year found in filename: 'Spring 13 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,257 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:27,265 - WARNING - No season found in name: 'PoleParty [EASY MODE]'
+2024-12-02 14:14:27,265 - WARNING - No valid year found in name: 'PoleParty [EASY MODE]' (season: None)
+2024-12-02 14:14:27,265 - WARNING - No valid map number found in name: 'PoleParty [EASY MODE]'
+2024-12-02 14:14:27,267 - WARNING - No valid year found in filename: 'Summer 2023 - Section 4 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,267 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 4 Joined.Map.Gbx'
+2024-12-02 14:14:27,267 - WARNING - No valid year found in name: 'Summer 2023 - Section 4 Joined' (season: summer)
+2024-12-02 14:14:27,267 - WARNING - No valid map number found in name: 'Summer 2023 - Section 4 Joined'
+2024-12-02 14:14:27,284 - WARNING - No valid year found in filename: 'Fall 12 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,284 - WARNING - No valid year found in name: 'Fall 12 (Mirror)' (season: fall)
+2024-12-02 14:14:27,290 - WARNING - No season found in name: 'Super20'
+2024-12-02 14:14:27,291 - WARNING - No valid year found in name: 'Super20' (season: None)
+2024-12-02 14:14:27,291 - WARNING - No valid map number found in name: 'Super20'
+2024-12-02 14:14:27,316 - WARNING - No season found in filename: '\u8bad\u7ec3 - 14.Map.Gbx'
+2024-12-02 14:14:27,316 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 14.Map.Gbx' (season: None)
+2024-12-02 14:14:27,316 - WARNING - No season found in name: '\u8bad\u7ec3 - 14'
+2024-12-02 14:14:27,316 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 14' (season: None)
+2024-12-02 14:14:27,337 - WARNING - No valid year found in filename: 'Supersized_Spring_2024_-_12.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,337 - WARNING - No valid map number found in filename: 'Supersized_Spring_2024_-_12.Map.Gbx'
+2024-12-02 14:14:27,337 - WARNING - No valid year found in name: 'Supersized_Spring_2024_-_12' (season: spring)
+2024-12-02 14:14:27,337 - WARNING - No valid map number found in name: 'Supersized_Spring_2024_-_12'
+2024-12-02 14:14:27,340 - WARNING - No valid year found in filename: 'Summer 2023 - Section 5 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,340 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 5 Joined.Map.Gbx'
+2024-12-02 14:14:27,340 - WARNING - No valid year found in name: 'Summer 2023 - Section 5 Joined' (season: summer)
+2024-12-02 14:14:27,341 - WARNING - No valid map number found in name: 'Summer 2023 - Section 5 Joined'
+2024-12-02 14:14:27,348 - WARNING - No season found in name: 'LaunchPad [EASY MODE]'
+2024-12-02 14:14:27,348 - WARNING - No valid year found in name: 'LaunchPad [EASY MODE]' (season: None)
+2024-12-02 14:14:27,348 - WARNING - No valid map number found in name: 'LaunchPad [EASY MODE]'
+2024-12-02 14:14:27,351 - WARNING - No valid year found in filename: 'Fall 06 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,351 - WARNING - No valid year found in name: 'Fall 06 (Mirror)' (season: fall)
+2024-12-02 14:14:27,352 - WARNING - No season found in filename: '\u8bad\u7ec3 - 20.Map.Gbx'
+2024-12-02 14:14:27,352 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 20.Map.Gbx' (season: None)
+2024-12-02 14:14:27,352 - WARNING - No season found in name: '\u8bad\u7ec3 - 20'
+2024-12-02 14:14:27,353 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 20' (season: None)
+2024-12-02 14:14:27,361 - WARNING - No valid year found in filename: 'FlatWinter'23 - 11.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,361 - WARNING - No valid year found in name: 'FlatWinter'23 - 11' (season: winter)
+2024-12-02 14:14:27,362 - WARNING - No valid year found in filename: 'Fall 02 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,362 - WARNING - No valid year found in name: 'Fall 02 (Mirror)' (season: fall)
+2024-12-02 14:14:27,365 - WARNING - No season found in name: 'Super09'
+2024-12-02 14:14:27,365 - WARNING - No valid year found in name: 'Super09' (season: None)
+2024-12-02 14:14:27,365 - WARNING - No valid map number found in name: 'Super09'
+2024-12-02 14:14:27,384 - WARNING - No season found in name: 'super06'
+2024-12-02 14:14:27,384 - WARNING - No valid year found in name: 'super06' (season: None)
+2024-12-02 14:14:27,384 - WARNING - No valid map number found in name: 'super06'
+2024-12-02 14:14:27,401 - WARNING - No season found in name: 'Super15'
+2024-12-02 14:14:27,401 - WARNING - No valid year found in name: 'Super15' (season: None)
+2024-12-02 14:14:27,401 - WARNING - No valid map number found in name: 'Super15'
+2024-12-02 14:14:27,407 - WARNING - No valid year found in filename: 'FlatFall'22 - 24.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,407 - WARNING - No valid year found in name: 'FlatFall'22 - 24' (season: fall)
+2024-12-02 14:14:27,420 - WARNING - No season found in filename: '\u8bad\u7ec3 - 12.Map.Gbx'
+2024-12-02 14:14:27,420 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 12.Map.Gbx' (season: None)
+2024-12-02 14:14:27,420 - WARNING - No season found in name: '\u8bad\u7ec3 - 12'
+2024-12-02 14:14:27,420 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 12' (season: None)
+2024-12-02 14:14:27,446 - WARNING - No valid year found in filename: 'Summer 2023 - Section 2 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,447 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 2 Joined.Map.Gbx'
+2024-12-02 14:14:27,447 - WARNING - No valid year found in name: 'Summer 2023 - Section 2 Joined' (season: summer)
+2024-12-02 14:14:27,447 - WARNING - No valid map number found in name: 'Summer 2023 - Section 2 Joined'
+2024-12-02 14:14:27,456 - WARNING - No season found in filename: 'RPG Su21 - 06.Map.Gbx'
+2024-12-02 14:14:27,456 - WARNING - No valid year found in filename: 'RPG Su21 - 06.Map.Gbx' (season: None)
+2024-12-02 14:14:27,456 - WARNING - No season found in name: 'RPG Su21 - 06'
+2024-12-02 14:14:27,456 - WARNING - No valid year found in name: 'RPG Su21 - 06' (season: None)
+2024-12-02 14:14:27,458 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 25.Map.Gbx'
+2024-12-02 14:14:27,458 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 25'
+2024-12-02 14:14:27,462 - WARNING - No season found in name: 'IcyJump [EASY MODE]'
+2024-12-02 14:14:27,462 - WARNING - No valid year found in name: 'IcyJump [EASY MODE]' (season: None)
+2024-12-02 14:14:27,462 - WARNING - No valid map number found in name: 'IcyJump [EASY MODE]'
+2024-12-02 14:14:27,465 - WARNING - No season found in filename: 'RPG Su21 - 03.Map.Gbx'
+2024-12-02 14:14:27,466 - WARNING - No valid year found in filename: 'RPG Su21 - 03.Map.Gbx' (season: None)
+2024-12-02 14:14:27,466 - WARNING - No season found in name: 'RPG Su21 - 03'
+2024-12-02 14:14:27,466 - WARNING - No valid year found in name: 'RPG Su21 - 03' (season: None)
+2024-12-02 14:14:27,470 - WARNING - No season found in filename: '\u8bad\u7ec3 - 06.Map.Gbx'
+2024-12-02 14:14:27,471 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 06.Map.Gbx' (season: None)
+2024-12-02 14:14:27,471 - WARNING - No season found in name: '\u8bad\u7ec3 - 06'
+2024-12-02 14:14:27,471 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 06' (season: None)
+2024-12-02 14:14:27,472 - WARNING - No season found in name: 'EDINGBURGH (1-Forward)'
+2024-12-02 14:14:27,472 - WARNING - No valid year found in name: 'EDINGBURGH (1-Forward)' (season: None)
+2024-12-02 14:14:27,472 - WARNING - No valid map number found in name: 'EDINGBURGH (1-Forward)'
+2024-12-02 14:14:27,475 - WARNING - No valid year found in filename: 'Fall 04 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,475 - WARNING - No valid year found in name: 'Fall 04 (Mirror)' (season: fall)
+2024-12-02 14:14:27,488 - WARNING - No valid year found in filename: 'Summer 23 - 12 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,489 - WARNING - No valid year found in name: 'Summer 23 - 12 - Bumper' (season: summer)
+2024-12-02 14:14:27,498 - WARNING - No valid year found in filename: 'Summer 23 - 15 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,498 - WARNING - No valid year found in name: 'Summer 23 - 15 - Bumper' (season: summer)
+2024-12-02 14:14:27,517 - WARNING - No valid year found in filename: 'FlatWinter'23 - 12.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,517 - WARNING - No valid year found in name: 'FlatWinter'23 - 12' (season: winter)
+2024-12-02 14:14:27,545 - WARNING - No valid year found in filename: 'Fall 07 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,545 - WARNING - No valid year found in name: 'Fall 07 (Mirror)' (season: fall)
+2024-12-02 14:14:27,559 - WARNING - No season found in name: 'BoltHoles [EASY MODE]'
+2024-12-02 14:14:27,559 - WARNING - No valid year found in name: 'BoltHoles [EASY MODE]' (season: None)
+2024-12-02 14:14:27,559 - WARNING - No valid map number found in name: 'BoltHoles [EASY MODE]'
+2024-12-02 14:14:27,563 - WARNING - No valid year found in filename: 'Spring 07 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,563 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D17$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:27,599 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 17.Map.Gbx'
+2024-12-02 14:14:27,600 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 17'
+2024-12-02 14:14:27,612 - WARNING - No valid map number found in filename: 'BOSS Black of Spring 2023.Map.Gbx'
+2024-12-02 14:14:27,612 - WARNING - No valid map number found in name: 'BOSS Black of Spring 2023'
+2024-12-02 14:14:27,636 - WARNING - No valid year found in filename: 'Summer 23 - 06 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,636 - WARNING - No valid year found in name: 'Summer 23 - 06 - Bumper' (season: summer)
+2024-12-02 14:14:27,639 - WARNING - No valid year found in filename: 'Spring 19 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:27,640 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D19$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:27,673 - WARNING - No valid year found in filename: 'Fall 2023 - Section 8 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,673 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 8 Joined.Map.Gbx'
+2024-12-02 14:14:27,674 - WARNING - No valid year found in name: 'Fall 2023 - Section 8 Joined' (season: fall)
+2024-12-02 14:14:27,674 - WARNING - No valid map number found in name: 'Fall 2023 - Section 8 Joined'
+2024-12-02 14:14:27,674 - WARNING - No valid year found in filename: 'FlatWinter'23 - 21.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,674 - WARNING - No valid year found in name: 'FlatWinter'23 - 21' (season: winter)
+2024-12-02 14:14:27,687 - WARNING - No season found in filename: '\u8bad\u7ec3 - 18.Map.Gbx'
+2024-12-02 14:14:27,687 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 18.Map.Gbx' (season: None)
+2024-12-02 14:14:27,687 - WARNING - No season found in name: '\u8bad\u7ec3 - 18'
+2024-12-02 14:14:27,687 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 18' (season: None)
+2024-12-02 14:14:27,702 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 14 Joined.Map.Gbx'
+2024-12-02 14:14:27,702 - WARNING - No valid map number found in name: 'Winter 2024 - Section 14 Joined'
+2024-12-02 14:14:27,717 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 01.Map.Gbx'
+2024-12-02 14:14:27,717 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 01'
+2024-12-02 14:14:27,751 - WARNING - No valid year found in filename: 'Summer 2023 - Section 9 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,751 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 9 Joined.Map.Gbx'
+2024-12-02 14:14:27,751 - WARNING - No valid year found in name: 'Summer 2023 - Section 9 Joined' (season: summer)
+2024-12-02 14:14:27,751 - WARNING - No valid map number found in name: 'Summer 2023 - Section 9 Joined'
+2024-12-02 14:14:27,764 - WARNING - No valid year found in filename: 'Fall 17 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,764 - WARNING - No valid year found in name: 'Fall 17 (Mirror)' (season: fall)
+2024-12-02 14:14:27,768 - WARNING - No valid map number found in filename: 'Training - Red Combined.Map.Gbx'
+2024-12-02 14:14:27,768 - WARNING - No valid map number found in name: 'Training - Red Combined'
+2024-12-02 14:14:27,792 - WARNING - No season found in name: 'IcySnake [EASY MODE]'
+2024-12-02 14:14:27,792 - WARNING - No valid year found in name: 'IcySnake [EASY MODE]' (season: None)
+2024-12-02 14:14:27,792 - WARNING - No valid map number found in name: 'IcySnake [EASY MODE]'
+2024-12-02 14:14:27,797 - WARNING - No season found in filename: '\u8bad\u7ec3 - 02.Map.Gbx'
+2024-12-02 14:14:27,797 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 02.Map.Gbx' (season: None)
+2024-12-02 14:14:27,797 - WARNING - No season found in name: '\u8bad\u7ec3 - 02'
+2024-12-02 14:14:27,797 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 02' (season: None)
+2024-12-02 14:14:27,813 - WARNING - No valid year found in filename: 'FlatWinter'23 - 05.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,814 - WARNING - No valid year found in name: 'FlatWinter'23 - 05' (season: winter)
+2024-12-02 14:14:27,817 - WARNING - No season found in name: 'Breaking - Podium'
+2024-12-02 14:14:27,817 - WARNING - No valid year found in name: 'Breaking - Podium' (season: None)
+2024-12-02 14:14:27,817 - WARNING - No valid map number found in name: 'Breaking - Podium'
+2024-12-02 14:14:27,827 - WARNING - No season found in name: 'Throttling Act [EASY MODE]'
+2024-12-02 14:14:27,827 - WARNING - No valid year found in name: 'Throttling Act [EASY MODE]' (season: None)
+2024-12-02 14:14:27,827 - WARNING - No valid map number found in name: 'Throttling Act [EASY MODE]'
+2024-12-02 14:14:27,896 - WARNING - No season found in filename: 'RPG Su21 - 25.Map.Gbx'
+2024-12-02 14:14:27,896 - WARNING - No valid year found in filename: 'RPG Su21 - 25.Map.Gbx' (season: None)
+2024-12-02 14:14:27,896 - WARNING - No season found in name: 'RPG Su21 - 25'
+2024-12-02 14:14:27,896 - WARNING - No valid year found in name: 'RPG Su21 - 25' (season: None)
+2024-12-02 14:14:27,897 - WARNING - No valid year found in filename: 'Fall 2023 - Section 4 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:27,897 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 4 Joined.Map.Gbx'
+2024-12-02 14:14:27,898 - WARNING - No valid year found in name: 'Fall 2023 - Section 4 Joined' (season: fall)
+2024-12-02 14:14:27,898 - WARNING - No valid map number found in name: 'Fall 2023 - Section 4 Joined'
+2024-12-02 14:14:27,898 - WARNING - No valid year found in filename: 'Summer 23 - 25 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:27,899 - WARNING - No valid year found in name: 'Summer 23 - 25 - Bumper' (season: summer)
+2024-12-02 14:14:27,920 - WARNING - No valid year found in filename: 'Fall 02 (BLIND).Map.Gbx' (season: fall)
+2024-12-02 14:14:27,920 - WARNING - No valid year found in name: 'Fall 02 (BLIND)' (season: fall)
+2024-12-02 14:14:27,925 - WARNING - No season found in filename: 'RPG Su21 - 17.Map.Gbx'
+2024-12-02 14:14:27,925 - WARNING - No valid year found in filename: 'RPG Su21 - 17.Map.Gbx' (season: None)
+2024-12-02 14:14:27,925 - WARNING - No season found in name: 'RPG Su21 - 17'
+2024-12-02 14:14:27,925 - WARNING - No valid year found in name: 'RPG Su21 - 17' (season: None)
+2024-12-02 14:14:27,978 - WARNING - No valid year found in filename: 'Winter 2024 - Section 2 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,978 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 2 Joined.Map.Gbx'
+2024-12-02 14:14:27,978 - WARNING - No valid year found in name: 'Winter 2024 - Section 2 Joined' (season: winter)
+2024-12-02 14:14:27,978 - WARNING - No valid map number found in name: 'Winter 2024 - Section 2 Joined'
+2024-12-02 14:14:27,983 - WARNING - No valid year found in filename: 'FlatWinter'23 - 23.Map.Gbx' (season: winter)
+2024-12-02 14:14:27,983 - WARNING - No valid year found in name: 'FlatWinter'23 - 23' (season: winter)
+2024-12-02 14:14:28,017 - WARNING - No valid year found in filename: 'Winter 2024 - Section 9 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,018 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 9 Joined.Map.Gbx'
+2024-12-02 14:14:28,018 - WARNING - No valid year found in name: 'Winter 2024 - Section 9 Joined' (season: winter)
+2024-12-02 14:14:28,018 - WARNING - No valid map number found in name: 'Winter 2024 - Section 9 Joined'
+2024-12-02 14:14:28,035 - WARNING - No season found in name: 'PoolSide [EASY MODE]'
+2024-12-02 14:14:28,035 - WARNING - No valid year found in name: 'PoolSide [EASY MODE]' (season: None)
+2024-12-02 14:14:28,035 - WARNING - No valid map number found in name: 'PoolSide [EASY MODE]'
+2024-12-02 14:14:28,042 - WARNING - No valid year found in filename: 'Summer 23 - 04 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,043 - WARNING - No valid year found in name: 'Summer 23 - 04 - Bumper' (season: summer)
+2024-12-02 14:14:28,073 - WARNING - No season found in name: 'Super18'
+2024-12-02 14:14:28,074 - WARNING - No valid year found in name: 'Super18' (season: None)
+2024-12-02 14:14:28,074 - WARNING - No valid map number found in name: 'Super18'
+2024-12-02 14:14:28,086 - WARNING - No valid year found in filename: 'Spring 23 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,086 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:28,103 - WARNING - No valid map number found in filename: 'Summer 2023 - Last Section Joined.Map.Gbx'
+2024-12-02 14:14:28,104 - WARNING - No valid map number found in name: 'Summer 2023 - Last Section Joined'
+2024-12-02 14:14:28,111 - WARNING - No season found in name: 'Super22'
+2024-12-02 14:14:28,111 - WARNING - No valid year found in name: 'Super22' (season: None)
+2024-12-02 14:14:28,111 - WARNING - No valid map number found in name: 'Super22'
+2024-12-02 14:14:28,135 - WARNING - No valid year found in filename: 'FlatWinter'23 - 14.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,135 - WARNING - No valid year found in name: 'FlatWinter'23 - 14' (season: winter)
+2024-12-02 14:14:28,139 - WARNING - No valid year found in filename: 'Summer 23 - 19 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,139 - WARNING - No valid year found in name: 'Summer 23 - 19 - Bumper' (season: summer)
+2024-12-02 14:14:28,141 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 05.Map.Gbx'
+2024-12-02 14:14:28,141 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 05'
+2024-12-02 14:14:28,160 - WARNING - No valid map number found in filename: 'Fall 2021 - Green Combined.Map.Gbx'
+2024-12-02 14:14:28,160 - WARNING - No valid map number found in name: 'Fall 2021 - Green Combined'
+2024-12-02 14:14:28,174 - WARNING - No season found in name: 'Heart [EASY MODE]'
+2024-12-02 14:14:28,174 - WARNING - No valid year found in name: 'Heart [EASY MODE]' (season: None)
+2024-12-02 14:14:28,174 - WARNING - No valid map number found in name: 'Heart [EASY MODE]'
+2024-12-02 14:14:28,181 - WARNING - No season found in filename: 'RPG Su21 - 02.Map.Gbx'
+2024-12-02 14:14:28,181 - WARNING - No valid year found in filename: 'RPG Su21 - 02.Map.Gbx' (season: None)
+2024-12-02 14:14:28,181 - WARNING - No season found in name: 'RPG Su21 - 02'
+2024-12-02 14:14:28,181 - WARNING - No valid year found in name: 'RPG Su21 - 02' (season: None)
+2024-12-02 14:14:28,183 - WARNING - No valid year found in filename: 'Summer 23 - 10 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,183 - WARNING - No valid year found in name: 'Summer 23 - 10 - Bumper' (season: summer)
+2024-12-02 14:14:28,198 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 13 Joined.Map.Gbx'
+2024-12-02 14:14:28,198 - WARNING - No valid map number found in name: 'Winter 2024 - Section 13 Joined'
+2024-12-02 14:14:28,207 - WARNING - No valid year found in filename: 'Blue BOSS - Summer'23.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,208 - WARNING - No valid year found in name: 'Blue BOSS - Summer'23' (season: summer)
+2024-12-02 14:14:28,231 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 02.Map.Gbx'
+2024-12-02 14:14:28,231 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 02'
+2024-12-02 14:14:28,240 - WARNING - No season found in name: 'Speed - Podium'
+2024-12-02 14:14:28,240 - WARNING - No valid year found in name: 'Speed - Podium' (season: None)
+2024-12-02 14:14:28,240 - WARNING - No valid map number found in name: 'Speed - Podium'
+2024-12-02 14:14:28,256 - WARNING - No valid year found in filename: 'Summer 23 - 07 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,256 - WARNING - No valid year found in name: 'Summer 23 - 07 - Bumper' (season: summer)
+2024-12-02 14:14:28,274 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 09.Map.Gbx'
+2024-12-02 14:14:28,274 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 09'
+2024-12-02 14:14:28,316 - WARNING - No valid year found in filename: 'Spring 2023 - Section 7 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,316 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 7 Joined.Map.Gbx'
+2024-12-02 14:14:28,316 - WARNING - No valid year found in name: 'Spring 2023 - Section 7 Joined' (season: spring)
+2024-12-02 14:14:28,316 - WARNING - No valid map number found in name: 'Spring 2023 - Section 7 Joined'
+2024-12-02 14:14:28,323 - WARNING - No season found in name: 'Moutain Pass (1-up)'
+2024-12-02 14:14:28,323 - WARNING - No valid year found in name: 'Moutain Pass (1-up)' (season: None)
+2024-12-02 14:14:28,323 - WARNING - No valid map number found in name: 'Moutain Pass (1-up)'
+2024-12-02 14:14:28,325 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 04.Map.Gbx'
+2024-12-02 14:14:28,325 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 04'
+2024-12-02 14:14:28,328 - WARNING - No season found in filename: '\u8bad\u7ec3 - 01.Map.Gbx'
+2024-12-02 14:14:28,328 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 01.Map.Gbx' (season: None)
+2024-12-02 14:14:28,328 - WARNING - No season found in name: '\u8bad\u7ec3 - 01'
+2024-12-02 14:14:28,328 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 01' (season: None)
+2024-12-02 14:14:28,352 - WARNING - No season found in name: 'Super11'
+2024-12-02 14:14:28,352 - WARNING - No valid year found in name: 'Super11' (season: None)
+2024-12-02 14:14:28,352 - WARNING - No valid map number found in name: 'Super11'
+2024-12-02 14:14:28,354 - WARNING - No season found in filename: 'RPG Su21 - 23.Map.Gbx'
+2024-12-02 14:14:28,354 - WARNING - No valid year found in filename: 'RPG Su21 - 23.Map.Gbx' (season: None)
+2024-12-02 14:14:28,354 - WARNING - No season found in name: 'RPG Su21 - 23'
+2024-12-02 14:14:28,354 - WARNING - No valid year found in name: 'RPG Su21 - 23' (season: None)
+2024-12-02 14:14:28,367 - WARNING - No season found in name: 'Speed Up [EASY MODE]'
+2024-12-02 14:14:28,367 - WARNING - No valid year found in name: 'Speed Up [EASY MODE]' (season: None)
+2024-12-02 14:14:28,367 - WARNING - No valid map number found in name: 'Speed Up [EASY MODE]'
+2024-12-02 14:14:28,372 - WARNING - No valid year found in filename: 'Spring 08 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,372 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D18$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:28,374 - WARNING - No valid year found in filename: 'FlatWinter'23 - 03.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,374 - WARNING - No valid year found in name: 'FlatWinter'23 - 03' (season: winter)
+2024-12-02 14:14:28,387 - WARNING - No season found in name: 'Barrelistic [EASY MODE]'
+2024-12-02 14:14:28,387 - WARNING - No valid year found in name: 'Barrelistic [EASY MODE]' (season: None)
+2024-12-02 14:14:28,387 - WARNING - No valid map number found in name: 'Barrelistic [EASY MODE]'
+2024-12-02 14:14:28,394 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 13.Map.Gbx'
+2024-12-02 14:14:28,394 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 13'
+2024-12-02 14:14:28,402 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 11 Joined.Map.Gbx'
+2024-12-02 14:14:28,403 - WARNING - No valid map number found in name: 'Summer 2023 - Section 11 Joined'
+2024-12-02 14:14:28,422 - WARNING - No valid year found in filename: 'Summer 23 - 09 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,422 - WARNING - No valid year found in name: 'Summer 23 - 09 - Bumper' (season: summer)
+2024-12-02 14:14:28,435 - WARNING - No valid year found in filename: 'Fall 24 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:28,435 - WARNING - No valid year found in name: 'Fall 24 (Mirror)' (season: fall)
+2024-12-02 14:14:28,462 - WARNING - No valid year found in filename: 'Fall 2023 - Section 5 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:28,462 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 5 Joined.Map.Gbx'
+2024-12-02 14:14:28,462 - WARNING - No valid year found in name: 'Fall 2023 - Section 5 Joined' (season: fall)
+2024-12-02 14:14:28,462 - WARNING - No valid map number found in name: 'Fall 2023 - Section 5 Joined'
+2024-12-02 14:14:28,462 - WARNING - No valid year found in filename: 'FlatFall'22 - 20.Map.Gbx' (season: fall)
+2024-12-02 14:14:28,462 - WARNING - No valid year found in name: 'FlatFall'22 - 20' (season: fall)
+2024-12-02 14:14:28,494 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 20.Map.Gbx'
+2024-12-02 14:14:28,494 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 20'
+2024-12-02 14:14:28,497 - WARNING - No valid year found in filename: 'Summer 23 - 11 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,497 - WARNING - No valid year found in name: 'Summer 23 - 11 - Bumper' (season: summer)
+2024-12-02 14:14:28,503 - WARNING - No valid year found in filename: 'Spring 2023 - Section 1 Joined (All Starts).Map.Gbx' (season: spring)
+2024-12-02 14:14:28,504 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 1 Joined (All Starts).Map.Gbx'
+2024-12-02 14:14:28,504 - WARNING - No valid year found in name: 'Spring 2023 - Section 1 Joined (All Starts)' (season: spring)
+2024-12-02 14:14:28,504 - WARNING - No valid map number found in name: 'Spring 2023 - Section 1 Joined (All Starts)'
+2024-12-02 14:14:28,524 - WARNING - No valid year found in filename: 'Spring 15 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,524 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:28,549 - WARNING - No valid year found in filename: 'Summer 23 - 20 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:28,550 - WARNING - No valid year found in name: 'Summer 23 - 20 - Bumper' (season: summer)
+2024-12-02 14:14:28,570 - WARNING - No valid year found in filename: 'FlatWinter'23 - 08.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,570 - WARNING - No valid year found in name: 'FlatWinter'23 - 08' (season: winter)
+2024-12-02 14:14:28,575 - WARNING - No season found in name: 'Super05'
+2024-12-02 14:14:28,575 - WARNING - No valid year found in name: 'Super05' (season: None)
+2024-12-02 14:14:28,575 - WARNING - No valid map number found in name: 'Super05'
+2024-12-02 14:14:28,577 - WARNING - No valid year found in filename: 'Spring 18 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,577 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D18$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:28,588 - WARNING - No valid year found in filename: 'Spring 2023 - Section 3 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,588 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 3 Joined.Map.Gbx'
+2024-12-02 14:14:28,588 - WARNING - No valid year found in name: 'Spring 2023 - Section 3 Joined' (season: spring)
+2024-12-02 14:14:28,588 - WARNING - No valid map number found in name: 'Spring 2023 - Section 3 Joined'
+2024-12-02 14:14:28,607 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 21.Map.Gbx'
+2024-12-02 14:14:28,607 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 21'
+2024-12-02 14:14:28,612 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 11 Joined.Map.Gbx'
+2024-12-02 14:14:28,612 - WARNING - No valid map number found in name: 'Winter 2024 - Section 11 Joined'
+2024-12-02 14:14:28,627 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 12 Joined.Map.Gbx'
+2024-12-02 14:14:28,627 - WARNING - No valid map number found in name: 'Winter 2024 - Section 12 Joined'
+2024-12-02 14:14:28,632 - WARNING - No valid map number found in filename: 'Training - Green Combined.Map.Gbx'
+2024-12-02 14:14:28,632 - WARNING - No valid map number found in name: 'Training - Green Combined'
+2024-12-02 14:14:28,641 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 10 Joined.Map.Gbx'
+2024-12-02 14:14:28,641 - WARNING - No valid map number found in name: 'Spring 2023 - Section 10 Joined'
+2024-12-02 14:14:28,660 - WARNING - No season found in filename: '\u8bad\u7ec3 - 16.Map.Gbx'
+2024-12-02 14:14:28,660 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 16.Map.Gbx' (season: None)
+2024-12-02 14:14:28,660 - WARNING - No season found in name: '\u8bad\u7ec3 - 16'
+2024-12-02 14:14:28,660 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 16' (season: None)
+2024-12-02 14:14:28,674 - WARNING - No season found in name: 'GrassHopper [EASY MODE]'
+2024-12-02 14:14:28,674 - WARNING - No valid year found in name: 'GrassHopper [EASY MODE]' (season: None)
+2024-12-02 14:14:28,674 - WARNING - No valid map number found in name: 'GrassHopper [EASY MODE]'
+2024-12-02 14:14:28,676 - WARNING - No season found in filename: 'RPG Su21 - 15.Map.Gbx'
+2024-12-02 14:14:28,676 - WARNING - No valid year found in filename: 'RPG Su21 - 15.Map.Gbx' (season: None)
+2024-12-02 14:14:28,676 - WARNING - No season found in name: 'RPG Su21 - 15'
+2024-12-02 14:14:28,676 - WARNING - No valid year found in name: 'RPG Su21 - 15' (season: None)
+2024-12-02 14:14:28,707 - WARNING - No valid year found in filename: 'Fall 01 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:28,707 - WARNING - No valid year found in name: 'Fall 01 (Mirror)' (season: fall)
+2024-12-02 14:14:28,717 - WARNING - No valid map number found in filename: 'Summer 2021 - Black Combined.Map.Gbx'
+2024-12-02 14:14:28,717 - WARNING - No valid map number found in name: 'Summer 2021 - Black Combined'
+2024-12-02 14:14:28,738 - WARNING - No valid year found in filename: 'FlatWinter'23 - 07.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,738 - WARNING - No valid year found in name: 'FlatWinter'23 - 07' (season: winter)
+2024-12-02 14:14:28,751 - WARNING - No valid map number found in filename: 'Red BOSS Winter 2024.Map.Gbx'
+2024-12-02 14:14:28,751 - WARNING - No valid map number found in name: 'Red BOSS Winter 2024'
+2024-12-02 14:14:28,760 - WARNING - No valid map number found in filename: 'Green BOSS Winter 2024.Map.Gbx'
+2024-12-02 14:14:28,760 - WARNING - No valid map number found in name: 'Green BOSS Winter 2024'
+2024-12-02 14:14:28,800 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 08.Map.Gbx'
+2024-12-02 14:14:28,800 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 08'
+2024-12-02 14:14:28,826 - WARNING - No valid map number found in filename: 'Icy Spring 2021 - 9.Map.Gbx'
+2024-12-02 14:14:28,827 - WARNING - No valid map number found in name: 'Icy Spring 2021 - 9'
+2024-12-02 14:14:28,843 - WARNING - No valid year found in filename: 'FlatWinter'23 - 16.Map.Gbx' (season: winter)
+2024-12-02 14:14:28,843 - WARNING - No valid year found in name: 'FlatWinter'23 - 16' (season: winter)
+2024-12-02 14:14:28,864 - WARNING - No season found in name: 'TinyGap [EASY MODE]'
+2024-12-02 14:14:28,864 - WARNING - No valid year found in name: 'TinyGap [EASY MODE]' (season: None)
+2024-12-02 14:14:28,865 - WARNING - No valid map number found in name: 'TinyGap [EASY MODE]'
+2024-12-02 14:14:28,884 - WARNING - No valid year found in filename: 'Spring 2023 - Section 9 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,884 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 9 Joined.Map.Gbx'
+2024-12-02 14:14:28,884 - WARNING - No valid year found in name: 'Spring 2023 - Section 9 Joined' (season: spring)
+2024-12-02 14:14:28,884 - WARNING - No valid map number found in name: 'Spring 2023 - Section 9 Joined'
+2024-12-02 14:14:28,884 - WARNING - No valid year found in filename: 'Fall 05 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:28,884 - WARNING - No valid year found in name: 'Fall 05 (Mirror)' (season: fall)
+2024-12-02 14:14:28,957 - WARNING - No valid year found in filename: 'Spring 09 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:28,957 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D19$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:28,959 - WARNING - No valid map number found in filename: 'BOSS Green of Spring 2023.Map.Gbx'
+2024-12-02 14:14:28,960 - WARNING - No valid map number found in name: 'BOSS Green of Spring 2023'
+2024-12-02 14:14:28,976 - WARNING - No valid year found in filename: 'Fall 2023 - Section 1 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:28,976 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 1 Joined.Map.Gbx'
+2024-12-02 14:14:28,976 - WARNING - No valid year found in name: 'Fall 2023 - Section 1 Joined' (season: fall)
+2024-12-02 14:14:28,977 - WARNING - No valid map number found in name: 'Fall 2023 - Section 1 Joined'
+2024-12-02 14:14:29,011 - WARNING - No valid year found in filename: 'Fall 09 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,011 - WARNING - No valid year found in name: 'Fall 09 (Mirror)' (season: fall)
+2024-12-02 14:14:29,029 - WARNING - No valid year found in filename: 'Fall 13 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,029 - WARNING - No valid year found in name: 'Fall 13 (Mirror)' (season: fall)
+2024-12-02 14:14:29,072 - WARNING - No valid year found in filename: 'FlatWinter'23 - 09.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,072 - WARNING - No valid year found in name: 'FlatWinter'23 - 09' (season: winter)
+2024-12-02 14:14:29,083 - WARNING - No valid map number found in filename: 'Summer 2021 - Blue combined.Map.Gbx'
+2024-12-02 14:14:29,083 - WARNING - No valid map number found in name: 'Summer 2021 - Blue combined'
+2024-12-02 14:14:29,109 - WARNING - No valid year found in filename: 'FlatWinter'23 - 22.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,110 - WARNING - No valid year found in name: 'FlatWinter'23 - 22' (season: winter)
+2024-12-02 14:14:29,125 - WARNING - No season found in filename: 'RPG Su21 - 05.Map.Gbx'
+2024-12-02 14:14:29,125 - WARNING - No valid year found in filename: 'RPG Su21 - 05.Map.Gbx' (season: None)
+2024-12-02 14:14:29,125 - WARNING - No season found in name: 'RPG Su21 - 05'
+2024-12-02 14:14:29,125 - WARNING - No valid year found in name: 'RPG Su21 - 05' (season: None)
+2024-12-02 14:14:29,149 - WARNING - No valid year found in filename: 'FlatWinter'23 - 04.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,149 - WARNING - No valid year found in name: 'FlatWinter'23 - 04' (season: winter)
+2024-12-02 14:14:29,151 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 19.Map.Gbx'
+2024-12-02 14:14:29,151 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 19'
+2024-12-02 14:14:29,155 - WARNING - No valid year found in filename: 'FlatWinter'23 - 01.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,155 - WARNING - No valid year found in name: 'FlatWinter'23 - 01' (season: winter)
+2024-12-02 14:14:29,169 - WARNING - No season found in name: 'Super03'
+2024-12-02 14:14:29,169 - WARNING - No valid year found in name: 'Super03' (season: None)
+2024-12-02 14:14:29,169 - WARNING - No valid map number found in name: 'Super03'
+2024-12-02 14:14:29,178 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 09.Map.Gbx'
+2024-12-02 14:14:29,178 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 09'
+2024-12-02 14:14:29,195 - WARNING - No valid year found in filename: 'Fall 22 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,195 - WARNING - No valid year found in name: 'Fall 22 (Mirror)' (season: fall)
+2024-12-02 14:14:29,229 - WARNING - No valid map number found in filename: 'Winter 2022 - White Combined.Map.Gbx'
+2024-12-02 14:14:29,230 - WARNING - No valid map number found in name: 'Winter 2022 - White Combined'
+2024-12-02 14:14:29,242 - WARNING - No valid year found in filename: 'Winter 2024 - Section 6 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,242 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 6 Joined.Map.Gbx'
+2024-12-02 14:14:29,242 - WARNING - No valid year found in name: 'Winter 2024 - Section 6 Joined' (season: winter)
+2024-12-02 14:14:29,242 - WARNING - No valid map number found in name: 'Winter 2024 - Section 6 Joined'
+2024-12-02 14:14:29,283 - WARNING - No valid year found in filename: 'Spring 25 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:29,283 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D12$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:29,289 - WARNING - No season found in name: 'Super01'
+2024-12-02 14:14:29,289 - WARNING - No valid year found in name: 'Super01' (season: None)
+2024-12-02 14:14:29,289 - WARNING - No valid map number found in name: 'Super01'
+2024-12-02 14:14:29,294 - WARNING - No valid year found in filename: 'Fall 16 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,295 - WARNING - No valid year found in name: 'Fall 16 (Mirror)' (season: fall)
+2024-12-02 14:14:29,304 - WARNING - No valid year found in filename: 'Summer 23 - 23 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:29,305 - WARNING - No valid year found in name: 'Summer 23 - 23 - Bumper' (season: summer)
+2024-12-02 14:14:29,322 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 10.Map.Gbx'
+2024-12-02 14:14:29,322 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 10'
+2024-12-02 14:14:29,332 - WARNING - No valid year found in filename: 'FlatFall'22 - 19.Map.Gbx' (season: fall)
+2024-12-02 14:14:29,332 - WARNING - No valid year found in name: 'FlatFall'22 - 19' (season: fall)
+2024-12-02 14:14:29,338 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 14.Map.Gbx'
+2024-12-02 14:14:29,338 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 14'
+2024-12-02 14:14:29,390 - WARNING - No valid map number found in filename: 'Summer 2021 - Red Combined.Map.Gbx'
+2024-12-02 14:14:29,390 - WARNING - No valid map number found in name: 'Summer 2021 - Red Combined'
+2024-12-02 14:14:29,391 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 23.Map.Gbx'
+2024-12-02 14:14:29,391 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 23'
+2024-12-02 14:14:29,400 - WARNING - No valid year found in filename: 'Summer 23 - 17 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:29,400 - WARNING - No valid year found in name: 'Summer 23 - 17 - Bumper' (season: summer)
+2024-12-02 14:14:29,406 - WARNING - No season found in name: 'Super25'
+2024-12-02 14:14:29,406 - WARNING - No valid year found in name: 'Super25' (season: None)
+2024-12-02 14:14:29,406 - WARNING - No valid map number found in name: 'Super25'
+2024-12-02 14:14:29,439 - WARNING - No season found in filename: '\u8bad\u7ec3 - 10.Map.Gbx'
+2024-12-02 14:14:29,439 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 10.Map.Gbx' (season: None)
+2024-12-02 14:14:29,439 - WARNING - No season found in name: '\u8bad\u7ec3 - 10'
+2024-12-02 14:14:29,440 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 10' (season: None)
+2024-12-02 14:14:29,480 - WARNING - No valid year found in filename: 'Spring 05 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:29,480 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D15$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:29,498 - WARNING - No valid year found in filename: 'FlatFall'22 - 15.Map.Gbx' (season: fall)
+2024-12-02 14:14:29,498 - WARNING - No valid year found in name: 'FlatFall'22 - 15' (season: fall)
+2024-12-02 14:14:29,559 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 15.Map.Gbx'
+2024-12-02 14:14:29,559 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 15'
+2024-12-02 14:14:29,563 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 03.Map.Gbx'
+2024-12-02 14:14:29,563 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 03'
+2024-12-02 14:14:29,571 - WARNING - No season found in name: 'Super07'
+2024-12-02 14:14:29,571 - WARNING - No valid year found in name: 'Super07' (season: None)
+2024-12-02 14:14:29,571 - WARNING - No valid map number found in name: 'Super07'
+2024-12-02 14:14:29,597 - WARNING - No season found in name: 'WaterGlider [EASY MODE]'
+2024-12-02 14:14:29,597 - WARNING - No valid year found in name: 'WaterGlider [EASY MODE]' (season: None)
+2024-12-02 14:14:29,597 - WARNING - No valid map number found in name: 'WaterGlider [EASY MODE]'
+2024-12-02 14:14:29,622 - WARNING - No valid year found in filename: 'FlatWinter'23 - 06.Map.Gbx' (season: winter)
+2024-12-02 14:14:29,622 - WARNING - No valid year found in name: 'FlatWinter'23 - 06' (season: winter)
+2024-12-02 14:14:29,639 - WARNING - No season found in filename: '\u8bad\u7ec3 - 22.Map.Gbx'
+2024-12-02 14:14:29,639 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 22.Map.Gbx' (season: None)
+2024-12-02 14:14:29,639 - WARNING - No season found in name: '\u8bad\u7ec3 - 22'
+2024-12-02 14:14:29,639 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 22' (season: None)
+2024-12-02 14:14:29,641 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 16.Map.Gbx'
+2024-12-02 14:14:29,641 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 16'
+2024-12-02 14:14:29,654 - WARNING - No season found in filename: 'RPG Su21 - 22.Map.Gbx'
+2024-12-02 14:14:29,654 - WARNING - No valid year found in filename: 'RPG Su21 - 22.Map.Gbx' (season: None)
+2024-12-02 14:14:29,654 - WARNING - No season found in name: 'RPG Su21 - 22'
+2024-12-02 14:14:29,654 - WARNING - No valid year found in name: 'RPG Su21 - 22' (season: None)
+2024-12-02 14:14:29,688 - WARNING - No valid year found in filename: 'Fall 10 (Mirror).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,688 - WARNING - No valid year found in name: 'Fall 10 (Mirror)' (season: fall)
+2024-12-02 14:14:29,711 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 13 Joined.Map.Gbx'
+2024-12-02 14:14:29,711 - WARNING - No valid map number found in name: 'Summer 2023 - Section 13 Joined'
+2024-12-02 14:14:29,712 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 11 Joined.Map.Gbx'
+2024-12-02 14:14:29,712 - WARNING - No valid map number found in name: 'Spring 2023 - Section 11 Joined'
+2024-12-02 14:14:29,721 - WARNING - No season found in name: 'Quicksand [EASY MODE]'
+2024-12-02 14:14:29,721 - WARNING - No valid year found in name: 'Quicksand [EASY MODE]' (season: None)
+2024-12-02 14:14:29,721 - WARNING - No valid map number found in name: 'Quicksand [EASY MODE]'
+2024-12-02 14:14:29,723 - WARNING - No valid map number found in filename: 'BOSS Blue of Spring 2023.Map.Gbx'
+2024-12-02 14:14:29,723 - WARNING - No valid map number found in name: 'BOSS Blue of Spring 2023'
+2024-12-02 14:14:29,725 - WARNING - No season found in filename: 'RPG Su21 - 16.Map.Gbx'
+2024-12-02 14:14:29,725 - WARNING - No valid year found in filename: 'RPG Su21 - 16.Map.Gbx' (season: None)
+2024-12-02 14:14:29,725 - WARNING - No season found in name: 'RPG Su21 - 16'
+2024-12-02 14:14:29,725 - WARNING - No valid year found in name: 'RPG Su21 - 16' (season: None)
+2024-12-02 14:14:29,760 - WARNING - No season found in name: 'Super04'
+2024-12-02 14:14:29,760 - WARNING - No valid year found in name: 'Super04' (season: None)
+2024-12-02 14:14:29,760 - WARNING - No valid map number found in name: 'Super04'
+2024-12-02 14:14:29,778 - WARNING - No valid map number found in filename: 'Training - Black Combined.Map.Gbx'
+2024-12-02 14:14:29,778 - WARNING - No valid map number found in name: 'Training - Black Combined'
+2024-12-02 14:14:29,789 - WARNING - No season found in name: 'Turnover [EASY MODE]'
+2024-12-02 14:14:29,790 - WARNING - No valid year found in name: 'Turnover [EASY MODE]' (season: None)
+2024-12-02 14:14:29,790 - WARNING - No valid map number found in name: 'Turnover [EASY MODE]'
+2024-12-02 14:14:29,793 - WARNING - No valid year found in filename: 'Spring 16 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:29,793 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D16$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:29,834 - WARNING - No season found in name: 'Super08'
+2024-12-02 14:14:29,834 - WARNING - No valid year found in name: 'Super08' (season: None)
+2024-12-02 14:14:29,834 - WARNING - No valid map number found in name: 'Super08'
+2024-12-02 14:14:29,851 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 10 Joined.Map.Gbx'
+2024-12-02 14:14:29,851 - WARNING - No valid map number found in name: 'Summer 2023 - Section 10 Joined'
+2024-12-02 14:14:29,864 - WARNING - No season found in filename: 'RPG Su21 - 20.Map.Gbx'
+2024-12-02 14:14:29,864 - WARNING - No valid year found in filename: 'RPG Su21 - 20.Map.Gbx' (season: None)
+2024-12-02 14:14:29,864 - WARNING - No season found in name: 'RPG Su21 - 20'
+2024-12-02 14:14:29,864 - WARNING - No valid year found in name: 'RPG Su21 - 20' (season: None)
+2024-12-02 14:14:29,871 - WARNING - No valid year found in filename: 'FlatFall'22 - 11.Map.Gbx' (season: fall)
+2024-12-02 14:14:29,872 - WARNING - No valid year found in name: 'FlatFall'22 - 11' (season: fall)
+2024-12-02 14:14:29,878 - WARNING - No valid year found in filename: 'FlatFall'22 - 01.Map.Gbx' (season: fall)
+2024-12-02 14:14:29,878 - WARNING - No valid year found in name: 'FlatFall'22 - 01' (season: fall)
+2024-12-02 14:14:29,910 - WARNING - No season found in filename: '\u8bad\u7ec3 - 25.Map.Gbx'
+2024-12-02 14:14:29,910 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 25.Map.Gbx' (season: None)
+2024-12-02 14:14:29,910 - WARNING - No season found in name: '\u8bad\u7ec3 - 25'
+2024-12-02 14:14:29,910 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 25' (season: None)
+2024-12-02 14:14:29,924 - WARNING - No valid year found in filename: 'FlatFall'22 - 23.Map.Gbx' (season: fall)
+2024-12-02 14:14:29,924 - WARNING - No valid year found in name: 'FlatFall'22 - 23' (season: fall)
+2024-12-02 14:14:29,926 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 04.Map.Gbx'
+2024-12-02 14:14:29,926 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 04'
+2024-12-02 14:14:29,947 - WARNING - No valid map number found in filename: 'Winter 2024 - Last Section Joined.Map.Gbx'
+2024-12-02 14:14:29,947 - WARNING - No valid map number found in name: 'Winter 2024 - Last Section Joined'
+2024-12-02 14:14:29,951 - WARNING - No valid year found in filename: 'Fall 01 (BLIND).Map.Gbx' (season: fall)
+2024-12-02 14:14:29,951 - WARNING - No valid year found in name: 'Fall 01 (BLIND)' (season: fall)
+2024-12-02 14:14:30,006 - WARNING - No season found in name: 'Airwalk - Podium'
+2024-12-02 14:14:30,006 - WARNING - No valid year found in name: 'Airwalk - Podium' (season: None)
+2024-12-02 14:14:30,006 - WARNING - No valid map number found in name: 'Airwalk - Podium'
+2024-12-02 14:14:30,009 - WARNING - No valid year found in filename: 'Spring 12 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,009 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,010 - WARNING - No season found in filename: 'RPG Su21 - 24.Map.Gbx'
+2024-12-02 14:14:30,010 - WARNING - No valid year found in filename: 'RPG Su21 - 24.Map.Gbx' (season: None)
+2024-12-02 14:14:30,011 - WARNING - No season found in name: 'RPG Su21 - 24'
+2024-12-02 14:14:30,011 - WARNING - No valid year found in name: 'RPG Su21 - 24' (season: None)
+2024-12-02 14:14:30,024 - WARNING - No valid year found in filename: 'FlatFall'22 - 22.Map.Gbx' (season: fall)
+2024-12-02 14:14:30,024 - WARNING - No valid year found in name: 'FlatFall'22 - 22' (season: fall)
+2024-12-02 14:14:30,027 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 24.Map.Gbx'
+2024-12-02 14:14:30,027 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 24'
+2024-12-02 14:14:30,031 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 14 Joined.Map.Gbx'
+2024-12-02 14:14:30,031 - WARNING - No valid map number found in name: 'Fall 2023 - Section 14 Joined'
+2024-12-02 14:14:30,034 - WARNING - No valid map number found in filename: 'Black BOSS Winter 2024.Map.Gbx'
+2024-12-02 14:14:30,034 - WARNING - No valid map number found in name: 'Black BOSS Winter 2024'
+2024-12-02 14:14:30,040 - WARNING - No valid year found in filename: 'Spring 06 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,040 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D16$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,045 - WARNING - No valid year found in filename: 'Spring 04 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,045 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,051 - WARNING - No valid map number found in filename: 'BOSS Red of Spring 2023.Map.Gbx'
+2024-12-02 14:14:30,051 - WARNING - No valid map number found in name: 'BOSS Red of Spring 2023'
+2024-12-02 14:14:30,083 - WARNING - No valid year found in filename: 'FlatWinter'23 - 24.Map.Gbx' (season: winter)
+2024-12-02 14:14:30,084 - WARNING - No valid year found in name: 'FlatWinter'23 - 24' (season: winter)
+2024-12-02 14:14:30,093 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 24.Map.Gbx'
+2024-12-02 14:14:30,093 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 24'
+2024-12-02 14:14:30,134 - WARNING - No valid year found in filename: 'Winter 2024 - Section 5 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:30,134 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 5 Joined.Map.Gbx'
+2024-12-02 14:14:30,134 - WARNING - No valid year found in name: 'Winter 2024 - Section 5 Joined' (season: winter)
+2024-12-02 14:14:30,134 - WARNING - No valid map number found in name: 'Winter 2024 - Section 5 Joined'
+2024-12-02 14:14:30,140 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 06.Map.Gbx'
+2024-12-02 14:14:30,140 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 06'
+2024-12-02 14:14:30,157 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 25.Map.Gbx'
+2024-12-02 14:14:30,157 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 25'
+2024-12-02 14:14:30,162 - WARNING - No valid map number found in filename: 'Fall 2021 - Red Combined.Map.Gbx'
+2024-12-02 14:14:30,162 - WARNING - No valid map number found in name: 'Fall 2021 - Red Combined'
+2024-12-02 14:14:30,176 - WARNING - No valid year found in filename: 'Fall 2023 - Section 9 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:30,176 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 9 Joined.Map.Gbx'
+2024-12-02 14:14:30,177 - WARNING - No valid year found in name: 'Fall 2023 - Section 9 Joined' (season: fall)
+2024-12-02 14:14:30,177 - WARNING - No valid map number found in name: 'Fall 2023 - Section 9 Joined'
+2024-12-02 14:14:30,200 - WARNING - No season found in name: 'Super14'
+2024-12-02 14:14:30,200 - WARNING - No valid year found in name: 'Super14' (season: None)
+2024-12-02 14:14:30,200 - WARNING - No valid map number found in name: 'Super14'
+2024-12-02 14:14:30,207 - WARNING - No valid year found in filename: 'Summer 2023 - Section 8 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:30,207 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 8 Joined.Map.Gbx'
+2024-12-02 14:14:30,207 - WARNING - No valid year found in name: 'Summer 2023 - Section 8 Joined' (season: summer)
+2024-12-02 14:14:30,207 - WARNING - No valid map number found in name: 'Summer 2023 - Section 8 Joined'
+2024-12-02 14:14:30,209 - WARNING - No valid year found in filename: 'Winter 2024 - Section 7 Joined.Map.Gbx' (season: winter)
+2024-12-02 14:14:30,209 - WARNING - No valid map number found in filename: 'Winter 2024 - Section 7 Joined.Map.Gbx'
+2024-12-02 14:14:30,209 - WARNING - No valid year found in name: 'Winter 2024 - Section 7 Joined' (season: winter)
+2024-12-02 14:14:30,210 - WARNING - No valid map number found in name: 'Winter 2024 - Section 7 Joined'
+2024-12-02 14:14:30,215 - WARNING - No season found in name: 'Super17'
+2024-12-02 14:14:30,215 - WARNING - No valid year found in name: 'Super17' (season: None)
+2024-12-02 14:14:30,215 - WARNING - No valid map number found in name: 'Super17'
+2024-12-02 14:14:30,230 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 10.Map.Gbx'
+2024-12-02 14:14:30,231 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 10'
+2024-12-02 14:14:30,231 - WARNING - No valid map number found in filename: 'Winter 2022 - Green Combined.Map.Gbx'
+2024-12-02 14:14:30,231 - WARNING - No valid map number found in name: 'Winter 2022 - Green Combined'
+2024-12-02 14:14:30,238 - WARNING - No valid year found in filename: 'Spring 14 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,238 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D11$9D14$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,256 - WARNING - No season found in filename: 'RPG Su21 - 04.Map.Gbx'
+2024-12-02 14:14:30,257 - WARNING - No valid year found in filename: 'RPG Su21 - 04.Map.Gbx' (season: None)
+2024-12-02 14:14:30,257 - WARNING - No season found in name: 'RPG Su21 - 04'
+2024-12-02 14:14:30,257 - WARNING - No valid year found in name: 'RPG Su21 - 04' (season: None)
+2024-12-02 14:14:30,270 - WARNING - No valid map number found in filename: 'Fall 2021 - Black Combined.Map.Gbx'
+2024-12-02 14:14:30,271 - WARNING - No valid map number found in name: 'Fall 2021 - Black Combined'
+2024-12-02 14:14:30,273 - WARNING - No valid year found in filename: 'Summer 23 - 16 - Bumper.Map.Gbx' (season: summer)
+2024-12-02 14:14:30,273 - WARNING - No valid year found in name: 'Summer 23 - 16 - Bumper' (season: summer)
+2024-12-02 14:14:30,301 - WARNING - No season found in name: 'KnifeEdge [EASY MODE]'
+2024-12-02 14:14:30,301 - WARNING - No valid year found in name: 'KnifeEdge [EASY MODE]' (season: None)
+2024-12-02 14:14:30,301 - WARNING - No valid map number found in name: 'KnifeEdge [EASY MODE]'
+2024-12-02 14:14:30,311 - WARNING - No valid year found in filename: 'Supersized_Spring_2024_-_05.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,312 - WARNING - No valid map number found in filename: 'Supersized_Spring_2024_-_05.Map.Gbx'
+2024-12-02 14:14:30,312 - WARNING - No valid year found in name: 'Supersized_Spring_2024_-_05' (season: spring)
+2024-12-02 14:14:30,312 - WARNING - No valid map number found in name: 'Supersized_Spring_2024_-_05'
+2024-12-02 14:14:30,313 - WARNING - No valid map number found in filename: 'White BOSS Winter 2024.Map.Gbx'
+2024-12-02 14:14:30,313 - WARNING - No valid map number found in name: 'White BOSS Winter 2024'
+2024-12-02 14:14:30,315 - WARNING - No valid year found in filename: 'FlatFall'22 - 03.Map.Gbx' (season: fall)
+2024-12-02 14:14:30,315 - WARNING - No valid year found in name: 'FlatFall'22 - 03' (season: fall)
+2024-12-02 14:14:30,329 - WARNING - No valid year found in filename: 'Spring 02 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,329 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D12$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,356 - WARNING - No season found in filename: 'RPG Su21 - 10.Map.Gbx'
+2024-12-02 14:14:30,356 - WARNING - No valid year found in filename: 'RPG Su21 - 10.Map.Gbx' (season: None)
+2024-12-02 14:14:30,357 - WARNING - No season found in name: 'RPG Su21 - 10'
+2024-12-02 14:14:30,357 - WARNING - No valid year found in name: 'RPG Su21 - 10' (season: None)
+2024-12-02 14:14:30,413 - WARNING - No season found in filename: 'RPG Su21 - 14.Map.Gbx'
+2024-12-02 14:14:30,414 - WARNING - No valid year found in filename: 'RPG Su21 - 14.Map.Gbx' (season: None)
+2024-12-02 14:14:30,414 - WARNING - No season found in name: 'RPG Su21 - 14'
+2024-12-02 14:14:30,414 - WARNING - No valid year found in name: 'RPG Su21 - 14' (season: None)
+2024-12-02 14:14:30,423 - WARNING - No valid year found in filename: 'FlatFall'22 - 17.Map.Gbx' (season: fall)
+2024-12-02 14:14:30,424 - WARNING - No valid year found in name: 'FlatFall'22 - 17' (season: fall)
+2024-12-02 14:14:30,439 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 15 Joined.Map.Gbx'
+2024-12-02 14:14:30,439 - WARNING - No valid map number found in name: 'Fall 2023 - Section 15 Joined'
+2024-12-02 14:14:30,455 - WARNING - No valid year found in filename: 'FlatWinter'23 - 18.Map.Gbx' (season: winter)
+2024-12-02 14:14:30,455 - WARNING - No valid year found in name: 'FlatWinter'23 - 18' (season: winter)
+2024-12-02 14:14:30,486 - WARNING - No season found in filename: 'RPG Su21 - 13.Map.Gbx'
+2024-12-02 14:14:30,486 - WARNING - No valid year found in filename: 'RPG Su21 - 13.Map.Gbx' (season: None)
+2024-12-02 14:14:30,486 - WARNING - No season found in name: 'RPG Su21 - 13'
+2024-12-02 14:14:30,486 - WARNING - No valid year found in name: 'RPG Su21 - 13' (season: None)
+2024-12-02 14:14:30,495 - WARNING - No valid map number found in filename: 'Training - Blue Combined.Map.Gbx'
+2024-12-02 14:14:30,495 - WARNING - No valid map number found in name: 'Training - Blue Combined'
+2024-12-02 14:14:30,509 - WARNING - No season found in filename: '\u8bad\u7ec3 - 07.Map.Gbx'
+2024-12-02 14:14:30,509 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 07.Map.Gbx' (season: None)
+2024-12-02 14:14:30,509 - WARNING - No season found in name: '\u8bad\u7ec3 - 07'
+2024-12-02 14:14:30,509 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 07' (season: None)
+2024-12-02 14:14:30,531 - WARNING - No season found in filename: '\u8bad\u7ec3 - 21.Map.Gbx'
+2024-12-02 14:14:30,531 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 21.Map.Gbx' (season: None)
+2024-12-02 14:14:30,531 - WARNING - No season found in name: '\u8bad\u7ec3 - 21'
+2024-12-02 14:14:30,531 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 21' (season: None)
+2024-12-02 14:14:30,545 - WARNING - No season found in name: 'Clock Tower [EASY MODE]'
+2024-12-02 14:14:30,545 - WARNING - No valid year found in name: 'Clock Tower [EASY MODE]' (season: None)
+2024-12-02 14:14:30,545 - WARNING - No valid map number found in name: 'Clock Tower [EASY MODE]'
+2024-12-02 14:14:30,568 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 20.Map.Gbx'
+2024-12-02 14:14:30,568 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 20'
+2024-12-02 14:14:30,584 - WARNING - No season found in name: 'GreenCity (SnowCar)'
+2024-12-02 14:14:30,584 - WARNING - No valid year found in name: 'GreenCity (SnowCar)' (season: None)
+2024-12-02 14:14:30,584 - WARNING - No valid map number found in name: 'GreenCity (SnowCar)'
+2024-12-02 14:14:30,644 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 10 Joined.Map.Gbx'
+2024-12-02 14:14:30,644 - WARNING - No valid map number found in name: 'Fall 2023 - Section 10 Joined'
+2024-12-02 14:14:30,657 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 13 Joined.Map.Gbx'
+2024-12-02 14:14:30,657 - WARNING - No valid map number found in name: 'Fall 2023 - Section 13 Joined'
+2024-12-02 14:14:30,671 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 13.Map.Gbx'
+2024-12-02 14:14:30,671 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 13'
+2024-12-02 14:14:30,672 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 16.Map.Gbx'
+2024-12-02 14:14:30,672 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 16'
+2024-12-02 14:14:30,682 - WARNING - No valid map number found in filename: 'Winter 2022 - Red Combined.Map.Gbx'
+2024-12-02 14:14:30,682 - WARNING - No valid map number found in name: 'Winter 2022 - Red Combined'
+2024-12-02 14:14:30,685 - WARNING - No season found in filename: '\u79cb\u5b63 2020 - 18.Map.Gbx'
+2024-12-02 14:14:30,685 - WARNING - No season found in name: '\u79cb\u5b63 2020 - 18'
+2024-12-02 14:14:30,685 - WARNING - No season found in filename: 'RPG Su21 - 21.Map.Gbx'
+2024-12-02 14:14:30,685 - WARNING - No valid year found in filename: 'RPG Su21 - 21.Map.Gbx' (season: None)
+2024-12-02 14:14:30,685 - WARNING - No season found in name: 'RPG Su21 - 21'
+2024-12-02 14:14:30,685 - WARNING - No valid year found in name: 'RPG Su21 - 21' (season: None)
+2024-12-02 14:14:30,687 - WARNING - No season found in filename: '\u8bad\u7ec3 - 05.Map.Gbx'
+2024-12-02 14:14:30,687 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 05.Map.Gbx' (season: None)
+2024-12-02 14:14:30,687 - WARNING - No season found in name: '\u8bad\u7ec3 - 05'
+2024-12-02 14:14:30,687 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 05' (season: None)
+2024-12-02 14:14:30,707 - WARNING - No valid year found in filename: 'Spring 03 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,707 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D13$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,718 - WARNING - No valid map number found in filename: 'Summer 2021 - Green Combined.Map.Gbx'
+2024-12-02 14:14:30,718 - WARNING - No valid map number found in name: 'Summer 2021 - Green Combined'
+2024-12-02 14:14:30,726 - WARNING - No season found in filename: '\u590f\u5b63\u8d5b 2020 - 14.Map.Gbx'
+2024-12-02 14:14:30,726 - WARNING - No season found in name: '\u590f\u5b63\u8d5b 2020 - 14'
+2024-12-02 14:14:30,736 - WARNING - No season found in filename: 'RPG Su21 - 12.Map.Gbx'
+2024-12-02 14:14:30,736 - WARNING - No valid year found in filename: 'RPG Su21 - 12.Map.Gbx' (season: None)
+2024-12-02 14:14:30,736 - WARNING - No season found in name: 'RPG Su21 - 12'
+2024-12-02 14:14:30,736 - WARNING - No valid year found in name: 'RPG Su21 - 12' (season: None)
+2024-12-02 14:14:30,743 - WARNING - No valid year found in filename: 'Spring 01 - Tilted.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,743 - WARNING - No valid year found in name: '$3C0S$4C0pr$5D1i$6D1n$7D1g $8D10$9D11$9E2 $AE2-$BE2 T$CE2i$DE2l$EF3te$FF3d' (season: spring)
+2024-12-02 14:14:30,753 - WARNING - No valid map number found in filename: 'Spring 2023 - Last Section Joined (All Ends).Map.Gbx'
+2024-12-02 14:14:30,753 - WARNING - No valid map number found in name: 'Spring 2023 - Last Section Joined (All Ends)'
+2024-12-02 14:14:30,790 - WARNING - No valid map number found in filename: 'Summer 2021 - White Combined.Map.Gbx'
+2024-12-02 14:14:30,790 - WARNING - No valid map number found in name: 'Summer 2021 - White Combined'
+2024-12-02 14:14:30,795 - WARNING - No valid map number found in filename: 'Winter 2022 - Blue Combined.Map.Gbx'
+2024-12-02 14:14:30,795 - WARNING - No valid map number found in name: 'Winter 2022 - Blue Combined'
+2024-12-02 14:14:30,796 - WARNING - No valid year found in filename: 'Spring 2023 - Section 2 Joined.Map.Gbx' (season: spring)
+2024-12-02 14:14:30,796 - WARNING - No valid map number found in filename: 'Spring 2023 - Section 2 Joined.Map.Gbx'
+2024-12-02 14:14:30,796 - WARNING - No valid year found in name: 'Spring 2023 - Section 2 Joined' (season: spring)
+2024-12-02 14:14:30,796 - WARNING - No valid map number found in name: 'Spring 2023 - Section 2 Joined'
+2024-12-02 14:14:30,801 - WARNING - No valid year found in filename: 'Fall 2023 - Section 6 Joined.Map.Gbx' (season: fall)
+2024-12-02 14:14:30,802 - WARNING - No valid map number found in filename: 'Fall 2023 - Section 6 Joined.Map.Gbx'
+2024-12-02 14:14:30,802 - WARNING - No valid year found in name: 'Fall 2023 - Section 6 Joined' (season: fall)
+2024-12-02 14:14:30,802 - WARNING - No valid map number found in name: 'Fall 2023 - Section 6 Joined'
+2024-12-02 14:14:30,820 - WARNING - No valid map number found in filename: 'Fall 2021 - Blue Combined.Map.Gbx'
+2024-12-02 14:14:30,820 - WARNING - No valid map number found in name: 'Fall 2021 - Blue Combined'
+2024-12-02 14:14:30,827 - WARNING - No valid year found in filename: 'Summer 2023 - Section 7 Joined.Map.Gbx' (season: summer)
+2024-12-02 14:14:30,827 - WARNING - No valid map number found in filename: 'Summer 2023 - Section 7 Joined.Map.Gbx'
+2024-12-02 14:14:30,827 - WARNING - No valid year found in name: 'Summer 2023 - Section 7 Joined' (season: summer)
+2024-12-02 14:14:30,827 - WARNING - No valid map number found in name: 'Summer 2023 - Section 7 Joined'
+2024-12-02 14:14:30,830 - WARNING - No season found in filename: '\u8bad\u7ec3 - 13.Map.Gbx'
+2024-12-02 14:14:30,830 - WARNING - No valid year found in filename: '\u8bad\u7ec3 - 13.Map.Gbx' (season: None)
+2024-12-02 14:14:30,830 - WARNING - No season found in name: '\u8bad\u7ec3 - 13'
+2024-12-02 14:14:30,830 - WARNING - No valid year found in name: '\u8bad\u7ec3 - 13' (season: None)
