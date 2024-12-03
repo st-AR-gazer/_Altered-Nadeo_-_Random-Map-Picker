@@ -1,6 +1,39 @@
 imp: an update fuckered with discovery so season year an map number are now null on all of em, this gotta get fix in the morrow...
 
+# season year mapnumber and additionalinfo is wrong
+{
+    "author": "5e952216-e1ab-4808-bb8b-7daffa556d04",
+    "authorScore": 24967,
+    "bronzeScore": 38000,
+    "collectionName": "Stadium",
+    "createdWithGamepadEditor": null,
+    "createdWithSimpleEditor": null,
+    "filename": "FlatFall'22 - 04.Map.Gbx",
+    "goldScore": 27000,
+    "isPlayable": true,
+    "mapId": "cc1fba41-c870-4c8d-a461-1bf4654d1a06",
+    "mapStyle": "",
+    "mapType": "TrackMania\\TM_Race",
+    "mapUid": "tNEBl0yIMuEacDBKfBHPm8elmxk",
+    "name": "FlatFall'22 - 04",
+    "silverScore": 30000,
+    "submitter": "5e952216-e1ab-4808-bb8b-7daffa556d04",
+    "timestamp": "2022-10-22T16:14:50+00:00",
+    "fileUrl": "https://core.trackmania.nadeo.live/maps/cc1fba41-c870-4c8d-a461-1bf4654d1a06/file",
+    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/cc1fba41-c870-4c8d-a461-1bf4654d1a06/thumbnail.jpg",
+    "matched_map_names": [],
+    "season": null,
+    "year": null,
+    "mapNumber": "22",
+    "additionalInfo": [
+        "FlatFall"
+    ]
+},
+
+
+
 # Freedom is both a totd map name, and a stunt discovery map name
+# we should prioritize setting it as a stunt discovery map
 {
     "author": "d47ff76c-8750-4eb9-a31c-17390ec0482a",
     "authorScore": 3570,
@@ -21,40 +54,18 @@ imp: an update fuckered with discovery so season year an map number are now null
     "timestamp": "2024-07-12T14:49:58+00:00",
     "fileUrl": "https://core.trackmania.nadeo.live/maps/2c78c5f8-49c7-4e2e-9454-4116e23182db/file",
     "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/2c78c5f8-49c7-4e2e-9454-4116e23182db/thumbnail.jpg",
-    "season": null,
-    "year": null,
-    "mapNumber": null,
-    "additionalInfo": [],
-    "isType": "stunt discovery"
-},
-
-# CarRally is in the map name yet the "additionalInfo" field is empty
-{
-    "author": "6cb92061-2d5e-4e6a-bfb2-f5ceeff9c39b",
-    "authorScore": 57198,
-    "bronzeScore": 86000,
-    "collectionName": "Stadium",
-    "createdWithGamepadEditor": false,
-    "createdWithSimpleEditor": false,
-    "filename": "Snolly - CarRally.Map.Gbx",
-    "goldScore": 61000,
-    "isPlayable": true,
-    "mapId": "4b065c14-1ad4-4cfa-902b-3e3b0b07f19f",
-    "mapStyle": "",
-    "mapType": "TrackMania\\TM_Race",
-    "mapUid": "fKdpc_yrqxi5PhAT6gOUMHcdvq8",
-    "name": "$<Snolly$> - CarRally",
-    "silverScore": 69000,
-    "submitter": "aebe685d-31ca-408c-87a5-8fe74f8d6250",
-    "timestamp": "2024-03-02T20:02:51+00:00",
-    "fileUrl": "https://core.trackmania.nadeo.live/maps/4b065c14-1ad4-4cfa-902b-3e3b0b07f19f/file",
-    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/4b065c14-1ad4-4cfa-902b-3e3b0b07f19f/thumbnail.jpg",
-    "isRallyDiscovery": true,
-    "season": "winter",
+    "season": "summer",
     "year": "2024",
-    "mapNumber": null,
-    "additionalInfo": []
-}
+    "mapNumber": "06",
+    "isType": "totd",
+    "matched_map_names": [
+        "freedom",
+        "freedom"
+    ],
+    "additionalInfo": [
+        "CarSnow"
+    ]
+},
 
 # No Reverse can be found in additionalInfo
 "FuN - Reverse.Map.Gbx": {
@@ -116,4 +127,67 @@ imp: an update fuckered with discovery so season year an map number are now null
         "Wet"
     ],
     "isType": "desert discovery"
+},
+
+# No % sign in the "100" text feild:
+"Summer 2020 - 18 (100% Wet Icy Wood).Map.Gbx": {
+    "author": "c9874601-4a6d-47f2-989d-f5ffee02ee4d",
+    "authorScore": 39511,
+    "bronzeScore": 60000,
+    "collectionName": "Stadium",
+    "createdWithGamepadEditor": false,
+    "createdWithSimpleEditor": false,
+    "filename": "Summer 2020 - 18 (100% Wet Icy Wood).Map.Gbx",
+    "goldScore": 42000,
+    "isPlayable": true,
+    "mapId": "02f4cb14-6b07-443a-9fa5-1080f457b7c3",
+    "mapStyle": "",
+    "mapType": "TrackMania\\TM_Race",
+    "mapUid": "TwePQ6hc3jiocWMYBZnoeFdIssd",
+    "name": "Summer 2020 - 18 (100% Wet Icy Wood)",
+    "silverScore": 48000,
+    "submitter": "c9874601-4a6d-47f2-989d-f5ffee02ee4d",
+    "timestamp": "2024-08-23T18:43:49+00:00",
+    "fileUrl": "https://core.trackmania.nadeo.live/maps/02f4cb14-6b07-443a-9fa5-1080f457b7c3/file",
+    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/02f4cb14-6b07-443a-9fa5-1080f457b7c3/thumbnail.jpg",
+    "season": "summer",
+    "year": "2020",
+    "mapNumber": "18",
+    "additionalInfo": [
+        "Wood",
+        "Wet",
+        "Icy",
+        "100"
+    ]
+},
+
+# SpriNgolo (and maybe fallngolo) needs to converted to spring ngolo and fall ngolo
+"SpriNgolo 2023 - 10.Map.Gbx": {
+    "author": "a4bd2a2e-ac60-4dff-b6d6-6f0feb566573",
+    "authorScore": 43792,
+    "bronzeScore": 66000,
+    "collectionName": "Stadium",
+    "createdWithGamepadEditor": false,
+    "createdWithSimpleEditor": false,
+    "filename": "SpriNgolo 2023 - 10.Map.Gbx",
+    "goldScore": 47000,
+    "isPlayable": true,
+    "mapId": "74a8908c-273c-4a7f-a521-4a9f9644902e",
+    "mapStyle": "TrackMania\\TM_Race",
+    "mapType": "TrackMania\\TM_Race",
+    "mapUid": "7RWUG0Q5m4J2LKzioRdaScd4hHk",
+    "name": "SpriNgolo 2023 - 10",
+    "silverScore": 53000,
+    "submitter": "a4bd2a2e-ac60-4dff-b6d6-6f0feb566573",
+    "timestamp": "2023-04-10T03:55:56+00:00",
+    "fileUrl": "https://core.trackmania.nadeo.live/maps/74a8908c-273c-4a7f-a521-4a9f9644902e/file",
+    "thumbnailUrl": "https://core.trackmania.nadeo.live/maps/74a8908c-273c-4a7f-a521-4a9f9644902e/thumbnail.jpg",
+    "isType": null,
+    "season": null,
+    "year": null,
+    "mapNumber": "10",
+    "additionalInfo": [
+        "2023",
+        "SpriNgolo"
+    ]
 },

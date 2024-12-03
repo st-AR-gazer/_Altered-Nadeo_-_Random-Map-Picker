@@ -1213,7 +1213,7 @@ special_uids = [
         {"uid": "8AAJstK0fIhQO0_AO8RkRgQCzB3", "name": "Winter 2024 - 24", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": "24"},
         {"uid": "V0HLAzazg1MRNvFaUJiff_X_jo0", "name": "Winter 2024 - 25", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": "25"},
 
-        # Spring 2024
+        # Spring
         {"uid": "yQ4ktCXu3SAxyRx9gar8hj7kVBb", "name": "Spring 2024 - 01", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": "01"},
         {"uid": "6y_26o7fxz0Es3t0e0EPBE7vF_k", "name": "Spring 2024 - 02", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": "02"},
         {"uid": "Qu0RAm2OEVhA8PtlHygSvwAP6af", "name": "Spring 2024 - 03", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": "03"},
