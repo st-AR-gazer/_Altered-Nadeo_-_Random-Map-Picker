@@ -1,5 +1,7 @@
 imp: an update fuckered with discovery so season year an map number are now null on all of em, this gotta get fix in the morrow...
 
+# Change it so that 'subbmitter' is also taken into account when looking for 'official nadeo maps'
+
 # season year mapnumber and additionalinfo is wrong
 {
     "author": "5e952216-e1ab-4808-bb8b-7daffa556d04",
