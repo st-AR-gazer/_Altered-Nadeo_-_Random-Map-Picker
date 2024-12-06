@@ -78,6 +78,16 @@ for campaign in DISCOVERY_CAMPAIGNS:
     if isinstance(campaign['maps'], dict):
         campaign['maps'] = {k.lower(): v for k, v in campaign['maps'].items()}
 
+types_priority = [
+    'snow discovery',
+    'rally discovery',
+    'desert discovery',
+    'stunt discovery',
+    'platform discovery',
+    'competition discovery',
+    'totd'
+]
+
 def setup_logging(log_file):
     logging.basicConfig(
         filename=log_file,
@@ -127,7 +137,7 @@ def extract_season_year_mapnumber(name):
             map_number = str(number).zfill(2)
         season = 'spring'
         year = '2020'
-        spring2020_matched = spring2020_match.group(1)
+        spring2020_matched = spring2020_match.group(1).lower()
     else:
         season_match = SEASON_PATTERN.search(name)
         if season_match:
@@ -162,29 +172,40 @@ def extract_additional_info(name, chinese, excluded_words):
         additional_info.append("Chinese")
     return list(set(additional_info))
 
-def add_special_flags(map_info, sanitized_name, discovery_campaigns, automaton):
+def add_special_flags(map_info, sanitized_name, discovery_campaigns, automaton, official_competition_maps):
     matched_map_names = []
     for campaign in discovery_campaigns:
         maps = campaign['maps']
         if isinstance(maps, dict):
             for map_name, map_number in maps.items():
                 if map_name.lower() in sanitized_name.lower():
-                    map_info["season"] = campaign['season']
-                    map_info["year"] = campaign['year']
-                    map_info["mapNumber"] = map_number.zfill(2) if map_number else None
-                    map_info["isType"] = campaign['name'].replace('_', ' ').lower()
                     matched_map_names.append(map_name)
         elif isinstance(maps, list):
             for map_name in maps:
                 if map_name.lower() in sanitized_name.lower():
+                    matched_map_names.append(map_name)
+    for campaign in discovery_campaigns:
+        if campaign['name'].replace('_', ' ').lower() in types_priority:
+            for map_name, map_number in campaign['maps'].items() if isinstance(campaign['maps'], dict) else [(name, None) for name in campaign['maps']]:
+                if map_name.lower() in sanitized_name.lower():
                     map_info["season"] = campaign['season']
                     map_info["year"] = campaign['year']
-                    map_info["mapNumber"] = None
+                    if map_number:
+                        map_info["mapNumber"] = map_number.zfill(2)
+                    else:
+                        map_info["mapNumber"] = None
                     map_info["isType"] = campaign['name'].replace('_', ' ').lower()
                     matched_map_names.append(map_name)
+                    break
+    for comp_map in official_competition_maps:
+        if comp_map.lower() in sanitized_name.lower():
+            map_info["isType"] = 'competition discovery'
+            matched_map_names.append(comp_map)
+            break
     totd_matched_map_names = [value for _, value in automaton.iter(sanitized_name.lower())]
     if totd_matched_map_names:
-        map_info['isType'] = 'totd'
+        if 'isType' not in map_info:
+            map_info['isType'] = 'totd'
         matched_map_names.extend(totd_matched_map_names)
     map_info['matched_map_names'] = matched_map_names
 
@@ -202,9 +223,23 @@ def process_maps(map_data, special_uids_dict, discovery_campaigns, automaton, of
     t.start()
     try:
         for map_key, map_info in map_data.items():
+            map_uid = map_info.get("mapUid", "").lower()
+            if map_uid in special_uids_dict:
+                special_entry = special_uids_dict[map_uid]
+                map_info["season"] = special_entry.get("season", map_info.get("season"))
+                map_info["year"] = special_entry.get("year", map_info.get("year"))
+                map_number = special_entry.get("mapNumber")
+                if map_number:
+                    map_info["mapNumber"] = map_number.zfill(2)
+                alteration = special_entry.get("alteration")
+                if alteration:
+                    additional_info = map_info.get("additionalInfo", [])
+                    additional_info.append(alteration)
+                    map_info["additionalInfo"] = list(set(additional_info))
+                continue
             map_name = map_info.get("name", "")
             sanitized_name = sanitize_name(map_name)
-            add_special_flags(map_info, sanitized_name, discovery_campaigns, automaton)
+            add_special_flags(map_info, sanitized_name, discovery_campaigns, automaton, official_competition_maps_set)
             matched_map_names = map_info.get('matched_map_names', [])
             season, year, map_number, chinese, spring2020_matched = extract_season_year_mapnumber(sanitized_name)
             map_info["season"] = season or map_info.get("season")
@@ -212,7 +247,7 @@ def process_maps(map_data, special_uids_dict, discovery_campaigns, automaton, of
             map_info["mapNumber"] = map_number or map_info.get("mapNumber")
             excluded_words = [word.lower() for name in matched_map_names for word in re.findall(r'\b[\w&%#]+\b', name) if isinstance(name, str)]
             if spring2020_matched:
-                excluded_words.extend([spring2020_matched.lower()])
+                excluded_words.append(spring2020_matched.lower())
             additional_info = extract_additional_info(sanitized_name, chinese, excluded_words)
             if map_info.get("isType") == "totd":
                 additional_info = extract_additional_info(sanitized_name, chinese, excluded_words)
@@ -223,6 +258,22 @@ def process_maps(map_data, special_uids_dict, discovery_campaigns, automaton, of
                 map_info["additionalInfo"].append("!AllOfficialCompetitions")
             if map_info.get("season") == "training" and not map_info.get("year"):
                 map_info["year"] = "2020"
+            if map_info.get("isType") and map_info.get("isType") in types_priority[:-1]:
+                pass
+            elif map_info.get("isType") == "totd":
+                pass
+            else:
+                missing_fields = []
+                if not map_info.get("season"):
+                    missing_fields.append("season")
+                if not map_info.get("year"):
+                    missing_fields.append("year")
+                if not map_info.get("mapNumber"):
+                    missing_fields.append("mapNumber")
+                if missing_fields:
+                    logging.warning(f"No {' ,'.join(missing_fields)} found in name: '{map_name}'")
+            if map_info.get("isType") and map_info.get("isType") in types_priority:
+                pass
             author_uid = map_info.get("author", "").lower()
             if author_uid in OFFICIAL_NADEO_AUTHOR_UIDS:
                 map_info["additionalInfo"].append(OFFICIAL_NADEO_TAG)
