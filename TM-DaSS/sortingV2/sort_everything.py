@@ -2,7 +2,7 @@ import json
 import os
 import logging
 import re
-import ahocorasick
+import ahocorasick  # type: ignore
 import sys
 import time
 import threading
