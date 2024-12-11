@@ -23,7 +23,7 @@ logging.basicConfig(
     filemode='a',
     format='%(asctime)s %(levelname)s: %(message)s',
     datefmt='%Y-%m-%dT%H:%M:%S%z',
-    level=logging.WARNING
+    level=logging.DEBUG # set to "WARNING" when done with debugging...
 )
 
 console_handler = logging.StreamHandler()
@@ -432,9 +432,9 @@ oneforward_training_pattern_1 = re.compile(
 oneforward_spring2020_pattern_1 = re.compile(
     r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>1-forward)$",
     re.IGNORECASE)
-# Pattern totd: "<totdname> (1-forward)"
+# Pattern totd: "<totdname> (1-Forward)"
 oneforward_totd_pattern_1 = re.compile(
-    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-forward)\)$",
+    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-Forward)\)$",
     re.IGNORECASE)
 
 # -------- 1 Down ---------- #
@@ -824,6 +824,14 @@ desertreverse_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 
 
+# -------- All Cars ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> all cars"
+allcars_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>all cars)$",
+    re.IGNORECASE)
+
+
+
 # ################ Altered Game Mode ################ #
 
 # -------- [Race] ---------- #
@@ -1117,18 +1125,22 @@ checkpointfull_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPfull)$",
     re.IGNORECASE)
 
-# -------- Checkpointless ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - Checkpointless"
+# -------- Checkpointless ---------- # (cpless)
+# Pattern seasonal: "<season> <year> - <mapnumber> - Checkpointless"
 checkpointless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Checkpointless)$",
     re.IGNORECASE)
-# Pattern2: "Training - <mapnumber> - Checkpointless"
-checkpointless_training_pattern_2 = re.compile(
+# Pattern training: "Training - <mapnumber> - Checkpointless"
+checkpointless_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Checkpointless)$",
     re.IGNORECASE)
-# Pattern3: "<spring2020><mapnumber> - Checkpointless"
-checkpointless_spring2020_pattern_3 = re.compile(
+# Pattern spring2020: "<spring2020><mapnumber> - Checkpointless"
+checkpointless_spring2020_pattern_1 = re.compile(
     r"^(?P<code>[STst][0-1]\d)\s+-\s+(?P<alteration>Checkpointless)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (cpless)"
+checkpointless_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>cpless)\)$",
     re.IGNORECASE)
 
 # -------- Checkpointlink ---------- #
@@ -1428,6 +1440,7 @@ ALL_PATTERNS = [
     deserttothetop_seasonal_pattern_1,
     desertunderwater_seasonal_pattern_1,
     desertreverse_seasonal_pattern_1,
+    allcars_seasonal_pattern_1,
     
     race_seasonal_pattern_1,
     stunt_seasonal_pattern_1,
@@ -1466,7 +1479,7 @@ ALL_PATTERNS = [
     checkpointboostswap_seasonal_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
     checkpointfull_seasonal_pattern_1,
-    checkpointless_seasonal_pattern_1, checkpointless_training_pattern_2, checkpointless_spring2020_pattern_3,
+    checkpointless_seasonal_pattern_1, checkpointless_training_pattern_1, checkpointless_spring2020_pattern_1, checkpointless_totd_pattern_1,
     checkpointlink_seasonal_pattern_1,
     checkpointsrotated90_seasonal_pattern_1, gotrotated_seasonal_pattern_1,
     dragonyeet_seasonal_pattern_1,
