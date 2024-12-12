@@ -103,9 +103,13 @@ fastmagnet_training_pattern_2 = re.compile(
 flooded_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Flooded)$",
     re.IGNORECASE)
-# Pattern training: "Training - <mapnumber> Flooded"
-flooded_training_pattern_2 = re.compile(
-    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Flooded)$",
+# Pattern training: "Training - <mapnumber> - Flooded"
+flooded_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Flooded)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> Flooded"
+flooded_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Flooded)$",
     re.IGNORECASE)
 
     # --------- Grass ---------- #
@@ -124,7 +128,7 @@ ice_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Icy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 # Pattern training: "Icy Training - <mapnumber>"
-ice_training_pattern_2 = re.compile(
+ice_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Icy)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
@@ -138,74 +142,79 @@ magnet_training_pattern_2 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Magnet)$",
     re.IGNORECASE)
 
-# --------- Mixed ---------- #
+    # --------- Mixed ---------- #
 # Pattern seasonal: "Mixed <season> <year> - <mapnumber>"
 mixed_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Mixed)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 # Pattern training: "Mixed Training - <mapnumber>"
-mixed_training_pattern_2 = re.compile(
+mixed_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Mixed)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# --------- Penalty ---------- #
+    # --------- Penalty ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Penalty"
 penalty_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Penalty)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> Penalty"
-penalty_training_pattern_2 = re.compile(
+penalty_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Penalty)$",
     re.IGNORECASE)
 
-# --------- Platic ---------- #
+    # --------- Plastic ---------- #
 # Pattern seasonal: "Plastic <season> <year> - <mapnumber>"
 plastic_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Plastic)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 # Pattern training: "Plastic Training - <mapnumber>"
-plastic_training_pattern_2 = re.compile(
+plastic_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Plastic)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# --------- Road ---------- #
+    # --------- Road ---------- #
 # Pattern seasonal: "Roady <season> <year> - <mapnumber>"
 road_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Roady)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> Road - <mapnumber>"
+road_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>Road)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
 # Pattern training: "Roady Training - <mapnumber>"
-road_training_pattern_2 = re.compile(
+road_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Roady)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# --------- Wood ---------- #
+    # --------- Wood ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Wood"
 wood_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Wood)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> Wood"
-wood_training_pattern_2 = re.compile(
+wood_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Wood)$",
     re.IGNORECASE)
 # Pattern spring2020: "Wood <spring2020><mapnumber>"
-wood_spring2020_pattern_3 = re.compile(
-    rf"^(?P<alteration>Wood)\s+(?P<code>\b([STst][0-1][0-9])\b\d)$",
+wood_spring2020_pattern_1 = re.compile(
+    r"^(?P<alteration>Wood)\s+(?P<code>[STst][0-1]\d)$",
     re.IGNORECASE)
+
 ####################################################################################################################################################
 
-# --------- Bobsleigh ---------- #
+    # --------- Bobsleigh ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (bobsleigh)"
 bobsleigh_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>bobsleigh)\)$",
     re.IGNORECASE)
 
-# --------- Pipe ---------- #
+    # --------- Pipe ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Pipe)"
 pipe_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Pipe)\)$",
     re.IGNORECASE)
 
-# --------- Sausage ---------- #
+    # --------- Sausage ---------- #
 # Pattern seasonal: "Saussage <season> <year> - <mapnumber>"
 sausage_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Sausage)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
@@ -215,19 +224,19 @@ sausage_training_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Sausage)$",
     re.IGNORECASE)
 
-# --------- Slot Track ---------- #
+    # --------- Slot Track ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Slot Track"
 slottrack_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Slot Track)$",
     re.IGNORECASE)
 
-# --------- Surfaceless ---------- #
+    # --------- Surfaceless ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Surfaceless"
 surfaceless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Surfaceless)$",
     re.IGNORECASE)
 
-# --------- Underwater ---------- #
+    # --------- Underwater ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Underwater)"
 underwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Underwater)\)$",
@@ -236,37 +245,41 @@ underwater_seasonal_pattern_1 = re.compile(
 
 # ################ Altered Effects ################ #
 
-# -------- Antibooster ---------- #
+    # -------- Antibooster ---------- #
 # Pattern1: "<season> <year> - <mapnumber> AntiBoosters"
 antibooster_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>AntiBoosters)$",
     re.IGNORECASE)
 
-# -------- Boosterless ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (Boosterless)"
+    # -------- Boosterless ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (Boosterless)"
 boosterless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Boosterless)\)$",
     re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> Boosterless"
+boosterless_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Boosterless)$",
+    re.IGNORECASE)
 
-# -------- Broken ---------- #
+    # -------- Broken ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Broken"
 broken_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Broken)$",
     re.IGNORECASE)
 
-# -------- Cleaned ---------- #
+    # -------- Cleaned ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Cleaned"
 cleaned_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Cleaned)$",
     re.IGNORECASE)
 
-# -------- Cruise Control ---------- #
+    # -------- Cruise Control ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Cruise Control"
 cruisecontrol_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Cruise Control)$",
     re.IGNORECASE)
 
-# -------- Cruise Effects ---------- #
+    # -------- Cruise Effects ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Cruise Effects"
 cruiseeffects_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Cruise Effects)$",
@@ -276,13 +289,13 @@ cruiseeffects_training_pattern_2 = re.compile(
     rf"^<season>{SEASON_REGEX}\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Cruise Effects)$",
     re.IGNORECASE)
 
-# -------- Fast ---------- #
+    # -------- Fast ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Fast)"
 fast_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Fast)\)$",
     re.IGNORECASE)
 
-# -------- Fragile ---------- #
+    # -------- Fragile ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Fragile)"
 fragile_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Fragile)\)$",
@@ -292,25 +305,25 @@ fragile_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Fragile)$",
     re.IGNORECASE)
 
-# -------- Full Fragile ---------- #
+    # -------- Full Fragile ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Full Fragile)"
 fullfragile_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Full Fragile)\)$",
     re.IGNORECASE)
 
-# -------- FreeWheel ---------- #
+    # -------- FreeWheel ---------- #
 # Pattern1: "<season> <year> - <mapnumber> FreeWheel"
 freewheel_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>FreeWheel)$",
     re.IGNORECASE)
 
-# -------- Glider ---------- #
+    # -------- Glider ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Glider"
 glider_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Glider)$",
     re.IGNORECASE)
 
-# -------- No Brakes ---------- #
+    # -------- No Brakes ---------- #
 # Pattern1: "No Brakes - <season> <year> - <mapnumber>"
 nobrakes_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>No Brakes)\s*-\s*(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
@@ -320,13 +333,13 @@ nobrakes_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>NoBrakes)$",
     re.IGNORECASE)
 
-# -------- No Effects ---------- #
+    # -------- No Effects ---------- #
 # Pattern1: "<season> <year> Effectless - <mapnumber>"
 noeffects_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>Effectless)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- No Grip ---------- #
+    # -------- No Grip ---------- #
 # Pattern1: "<season> <year> No Grip - <mapnumber>"
 nogrip_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>No Grip)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
@@ -336,31 +349,39 @@ nogrip_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>No Grip)$",
     re.IGNORECASE)
 
-# -------- No Steering ---------- #
-# Pattern1: "<season> <year> No Steering - <mapnumber>"
+    # -------- No Steering ---------- #
+# Pattern seasonal: "<season> <year> No Steering - <mapnumber>"
 nosteering_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>No Steering)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> No Steering"
+nosteering_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>No Steering)$",
+    re.IGNORECASE)
 
-# -------- Random Dankness ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - Random Dankness"
+    # -------- Random Dankness ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> - Random Dankness"
 randomdankness_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Random Dankness)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Random Dankness"
+randomdankness_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Random Dankness)$",
+    re.IGNORECASE)
 
-# -------- Random Effects ---------- #
+    # -------- Random Effects ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Random Effects"
 randomeffects_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Random Effects)$",
     re.IGNORECASE)
 
-# -------- Reactor ---------- #
+    # -------- Reactor ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Reactor"
 reactor_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Reactor)$",
     re.IGNORECASE)
 
-# -------- Reactor Down ---------- #
+    # -------- Reactor Down ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Reactor Down)"
 reactordown_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Reactor Down)\)$",
@@ -370,39 +391,43 @@ reactordown_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Reactordown)$",
     re.IGNORECASE)
 
-# -------- Red Effects ---------- #
+    # -------- Red Effects ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Red Effects"
 redeffects_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Red Effects)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> Red Effects"
-redeffects_training_pattern_2 = re.compile(
+redeffects_training_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Red Effects)$",
     re.IGNORECASE)
 
-# -------- RNG Boosters ---------- #
-# Pattern1: "<season> <year> - <mapnumber> RNG Booster"
+    # -------- RNG Boosters ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> RNG Booster"
 rngboosters_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>RNG Booster)$",
     re.IGNORECASE)
-# Pattern2: "<spring2020season><mapnumber> RNG Boosters"
-rngboosters_spring2020_pattern_2 = re.compile(
-    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>RNG Boosters)$",
+# Pattern spring2020: "<spring2020season><mapnumber> RNG Booster"
+rngboosters_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>RNG Booster)$",
     re.IGNORECASE)
 
-# -------- Slowmo ---------- #
-# Pattern1: "<season> <year> - <mapnumber> slowmo"
+    # -------- Slowmo ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> slowmo"
 slowmo_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>slowmo)$",
     re.IGNORECASE)
+# Pattern training: "<season> <year> - <mapnumber> slow mo"
+slowmo_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>slow mo)$",
+    re.IGNORECASE)
 
-# -------- Wet Wheels ---------- #
+    # -------- Wet Wheels ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Wet-Wheels)"
 wetwheels_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet-Wheels)\)$",
     re.IGNORECASE)
 
-# -------- Worn Tires ---------- #
+    # -------- Worn Tires ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Worn Tires)"
 worntires_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Worn Tires)\)$",
@@ -411,7 +436,7 @@ worntires_seasonal_pattern_1 = re.compile(
 
 # ################ Altered Finish Location ################ #
 
-# -------- 1Back/1Forwards ---------- #
+    # -------- 1Back/1Forwards ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (1-back)"
 oneback_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>1-back)\)$",
@@ -424,9 +449,9 @@ oneback_seasonal_pattern_2 = re.compile(
 oneback_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>1-back)$",
     re.IGNORECASE)
-# Pattern training: "Training <year> 1-forward - <mapnumber>"
+# Pattern training: "Training 1-forward - <mapnumber>"
 oneforward_training_pattern_1 = re.compile(
-    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>1-forward)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<alteration>1-forward)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 # Pattern spring2020: "<spring2020><mapnumber> 1-forward"
 oneforward_spring2020_pattern_1 = re.compile(
@@ -437,13 +462,25 @@ oneforward_totd_pattern_1 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-Forward)\)$",
     re.IGNORECASE)
 
-# -------- 1 Down ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (1-DOWN)"
+    # -------- 1 Down ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (1-DOWN)"
 onedown_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>1-DOWN)\)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> (1-DOWN)"
+onedown_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>1-DOWN)\)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> (1-DOWN)"
+onedown_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+\((?P<alteration>1-DOWN)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (1-Down)"
+onedown_totd_pattern_1 = re.compile(
+    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-DOWN)\)$",
+    re.IGNORECASE)
 
-# -------- 1 Left/1 Right ---------- #
+    # -------- 1 Left/1 Right ---------- #
 # Pattern1: "<season> <year> - <mapnumber> 1 Left"
 oneleft_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>1 Left)$",
@@ -453,24 +490,31 @@ oneright_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>1 Right)$",
     re.IGNORECASE)
 
-# -------- 1 Up ---------- #
+    # -------- 1 Up ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (1-UP)"
 oneup_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>1-UP)\)$",
     re.IGNORECASE)
-
+# Pattern training: "Training - <mapnumber> - 1UP"
+oneup_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>1UP)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> (1-UP)"
+oneup_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+\((?P<alteration>1-UP)\)$",
+    re.IGNORECASE)
 # Pattern totd: "<totdname> (1-up)"
 oneup_totd_pattern_1 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-up)\)$",
     re.IGNORECASE)
 
-# -------- 2 Up ---------- #
+    # -------- 2 Up ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (2-UP)"
 twoup_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>2-UP)\)$",
     re.IGNORECASE)
 
-# -------- Better Reverse ---------- #
+    # -------- Better Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (BeVerse)"
 betterreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>BeVerse)\)$",
@@ -484,107 +528,126 @@ betterreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Reverse Magna)$",
     re.IGNORECASE)
 
-# -------- CP1 is End ---------- #
-# Pattern1: "<season> <year> - <mapnumber> CP1 Ends"
+    # -------- CP1 is End ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> CP1 Ends"
 cp1isend_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP1 Ends)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> CP1 is End"
+# Pattern seasonal: "<season> <year> - <mapnumber> CP1 is End"
 cp1isend_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP1 is End)$",
     re.IGNORECASE)
-# Pattern3: "<spring2020><mapnumber> CP1 is End"
-cp1isend_spring2020_pattern_3 = re.compile(
+# Pattern training: "Training - <mapnumber> CP1 is End"
+cp1isend_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP1 is End)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> CP1 is End"
+cp1isend_spring2020_pattern_1 = re.compile(
     r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>CP1 is End)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (CP1-End)"
+cp1isend_totd_pattern_1 = re.compile(
+    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>CP1-End)\)$",
+    re.IGNORECASE)
 
-# -------- Floor Fin ---------- #
+    # -------- Floor Fin ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Floor-fin"
 floorfin_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Floor-fin)$",
     re.IGNORECASE)
 
-# -------- Ground Clippers ---------- #
+    # -------- Ground Clippers ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Ground Clippers)"
 groundclippers_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Ground Clippers)\)$",
     re.IGNORECASE)
 
-# -------- Inclined ---------- #
+    # -------- Inclined ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Inclined"
 inclined_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Inclined)$",
     re.IGNORECASE)
 
-# -------- Manslaughter ---------- #
+    # -------- Manslaughter ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Manslaughter"
 manslaughter_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Manslaughter)$",
     re.IGNORECASE)
 
-# -------- No Gear 5 ---------- #
+    # -------- No Gear 5 ---------- #
 # Pattern1: "<season> <year> - <mapnumber> No Gear 5"
 nogear5_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>No Gear 5)$",
     re.IGNORECASE)
 
-# -------- Podium ---------- #
+    # -------- Podium ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Podium"
 podium_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Podium)$",
     re.IGNORECASE)
 
-# -------- Puzzle ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (Puzzle)"
+    # -------- Puzzle ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (Puzzle)"
 puzzle_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Puzzle)\)$",
     re.IGNORECASE)
-# Pattern2: "Training Puzzle - <mapnumber>"
-puzzle_training_pattern_2 = re.compile(
+# Pattern training: "Training Puzzle - <mapnumber>"
+puzzle_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s+(?P<alteration>Puzzle)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Reverse ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - Reverse"
+    # -------- Reverse ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> - Reverse"
 reverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Reverse)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> - Reverse"
+reverse_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Reverse)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> - Reverse"
+reverse_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+-\s+(?P<alteration>Reverse)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (Reverse)"
+reverse_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>Reverse)\)$",
+    re.IGNORECASE)
 
-# -------- Roofing ---------- #
+    # -------- Roofing ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Roofing)"
 roofing_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Roofing)\)$",
     re.IGNORECASE)
 
-# --------- SHORT ---------- #
-# Pattern1: "<season> <year> - <mapnumber> | Short"
+    # --------- SHORT ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> | Short"
 short_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s*\|\s*(?P<alteration>Short)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> Short"
+# Pattern seasonal: "<season> <year> - <mapnumber> Short"
 short_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Short)$",
     re.IGNORECASE)
-# Pattern3: "<season> <year> - <mapnumber> shorts"
+# Pattern seasonal: "<season> <year> - <mapnumber> shorts"
 short_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>shorts)$",
     re.IGNORECASE)
-# Pattern4: "S06 Short" or "T13 Short"
-# If starts with 'S': season='Spring', year=2020, mapnumber=06
-# If starts with 'T': season='Spring', year=2020, mapnumber=13+10=23
-short_spring2020_pattern_4 = re.compile(
-    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Short)$",
-    re.IGNORECASE)
-# Pattern5: "<season> <year> Short - <mapnumber>"
-short_seasonal_pattern_5 = re.compile(
+short_seasonal_pattern_4 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>Short)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-
-# --------- Sky is the Finish ---------- #
-# Pattern1: "<spring2020><mapnumber> Sky Finish"
-skyfinish_spring2020_pattern_1 = re.compile(
-    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Sky Finish)$",
+# Pattern training: "Training - <mapnumber> Short"
+short_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Short)$",
     re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> Short"
+short_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Short)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> Short - <mapnumber>"
+
+
+    # --------- Sky is the Finish ---------- #
 # Pattern2: "<season> <year> - <mapnumber> Sky Finish"
 skyfinish_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Sky Finish)$",
@@ -593,16 +656,20 @@ skyfinish_seasonal_pattern_2 = re.compile(
 skyfinish_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>SITF)\)$",
     re.IGNORECASE)
-# Pattern4: "<season> <year> - <mapnumber> - Sky is the Finish"
+# Pattern seasonal: "<season> <year> - <mapnumber> - Sky is the Finish"
 skyfinish_seasonal_pattern_4 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Sky is the Finish)$",
     re.IGNORECASE)
-# Pattern5: "<totdname> (SITF)"
+# Pattern spring2020: "<spring2020><mapnumber> Sky Finish"
+skyfinish_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>Sky Finish)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (SITF)"
 skyfinish_totd_pattern_5 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>SITF)\)$",
     re.IGNORECASE)
 
-# --------- There&Back/Boomerang ---------- #
+    # --------- There&Back/Boomerang ---------- #
 # Pattern1: "<season> <year> - There&Back <mapnumber>"
 thereandback_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<alteration>There&Back)\s+(?P<mapnumber>\d{{1,2}})$",
@@ -612,7 +679,7 @@ thereandback_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Boomerang)$",
     re.IGNORECASE)
 
-# --------- YEP Tree Puzzle ---------- #
+    # --------- YEP Tree Puzzle ---------- #
 # Pattern1: "<season> <year> - <mapnumber> YEP TREE PUZZLE"
 yeptreepuzzle_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>YEP TREE PUZZLE)$",
@@ -621,7 +688,7 @@ yeptreepuzzle_seasonal_pattern_1 = re.compile(
 
 # ################ Altered Enviroments ################ #
 
-# -------- [Stadium] ---------- #
+    # -------- [Stadium] ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Stadium]"
 stadium_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Stadium\])$",
@@ -636,19 +703,19 @@ stadium_seasonal_pattern_2 = re.compile(
 #    re.IGNORECASE
 #)
 
-# -------- [Stadium] To The Top ---------- #
+    # -------- [Stadium] To The Top ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Stadium To The Top"
 stadiumtothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Stadium To The Top)$",
     re.IGNORECASE)
 
-# -------- [Stadium] Wet Wood ---------- #
+    # -------- [Stadium] Wet Wood ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Wet Wood Stadium Car)"
 stadiumwetwood_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet Wood Stadium Car)\)$",
     re.IGNORECASE)
 
-# -------- [Snow] ---------- #
+    # -------- [Snow] ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> [Snow]"
 snow_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Snow\])$",
@@ -670,43 +737,51 @@ snow_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>SnowCar)\)$",
     re.IGNORECASE)
 
-# -------- [Snow] Carswitch ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Snowcarswitch"
+    # -------- [Snow] Carswitch ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> Snowcarswitch"
 snowcarswitch_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Snowcarswitch)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (CS-SC)"
+snowcarswitch_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>CS-SC)\)$",
+    re.IGNORECASE)
 
-# -------- [Snow] Checkpointless ---------- #
+    # -------- [Snow] Checkpointless ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Checkpointless snow"
 snowcheckpointless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Checkpointless snow)$",
     re.IGNORECASE)
 
-# -------- [Snow] Ice ---------- #
+    # -------- [Snow] Ice ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Icy [Snow])"
 snowice_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Icy \[Snow\])\)$",
     re.IGNORECASE)
 
-# -------- [Snow] Underwater ---------- #
-# Pattern1: "<season> <year> - <mapnumber> [Snow] (UW)"
+    # -------- [Snow] Underwater ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> [Snow] (UW)"
 snowunderwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Snow\]\s+\(UW\))$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> [Snow] (UW)"
+snowunderwater_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Snow\]\s+\(UW\))$",
+    re.IGNORECASE)
 
-# -------- [Snow] Wet Plastic ---------- #
+    # -------- [Snow] Wet Plastic ---------- #
 # Pattern1: "(Snow) Wet Plastic <season> <year> - <mapnumber>"
 snowwetplastic_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>\(Snow\) Wet Plastic)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- [Snow] Wood ---------- #
+    # -------- [Snow] Wood ---------- #
 # Pattern1: "[Snow] <season> <year> - <mapnumber> Wood"
 snowwood_seasonal_pattern_1 = re.compile(
     rf"^\[Snow\]\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Wood)$",
     re.IGNORECASE)
 
-# -------- [Rally] ---------- #
+    # -------- [Rally] ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> [Rally]"
 rally_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Rally\])$",
@@ -724,7 +799,7 @@ rally_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>RallyCar)\)$",
     re.IGNORECASE)
 
-# -------- [Rally] Carswitch ---------- #
+    # -------- [Rally] Carswitch ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Rallycarswitch"
 rallycarswitch_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Rallycarswitch)$",
@@ -733,57 +808,85 @@ rallycarswitch_seasonal_pattern_1 = re.compile(
 rallycarswitch_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>CS-RC)\)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (Carswitch RallyCar)"
+rallycarswitch_totd_pattern_2 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>Carswitch RallyCar)\)$",
+    re.IGNORECASE)
 
-# -------- [Rally] CP1 is End ---------- #
-# Pattern1: "[Rally] <season> <year> - <mapnumber> Cp1 is End"
+    # -------- [Rally] CP1 is End ---------- #
+# Pattern seasonal: "[Rally] <season> <year> - <mapnumber> Cp1 is End"
 rallycp1isend_seasonal_pattern_1 = re.compile(
     rf"^(?P<environment>\[Rally\])\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Cp1 is End)$",
     re.IGNORECASE)
+# Pattern spring2020: "[Rally] <spring2020><mapnumber> - Cp1 is End"
+rallycp1isend_spring2020_pattern_1 = re.compile(
+    r"^(?P<environment>\[Rally\])\s+(?P<code>[STst][0-1]\d)\s*-\s*(?P<alteration>Cp1 is End)$",
+    re.IGNORECASE)
 
-# -------- [Rally] Ice ---------- #
+    # -------- [Rally] Ice ---------- #
 # Pattern1: "Ricy <season> <year> - <mapnumber>"
 rallyice_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Ricy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- [Rally] To The Top ---------- #
+    # -------- [Rally] To The Top ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Rally to the Top"
 rallytothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Rally to the Top)$",
     re.IGNORECASE)
 
-# -------- [Rally] Underwater ---------- #
-# Pattern1: "<season> <year> - <mapnumber> [Rally] (Underwater)"
+    # -------- [Rally] Underwater ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> [Rally] (Underwater)"
 rallyunderwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\[Rally\]\s+\((?P<alteration>Underwater)\)$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> [Rally] (UW)"
+rallyunderwater_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\[Rally\]\s+\((?P<alteration>UW)\)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> [Rally] (UW)"
+rallyunderwater_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\[Rally\]\s+\((?P<alteration>UW)\)$",
+    re.IGNORECASE)
 
-# -------- [Desert] ---------- #
-# Pattern seasonal 1: "<season> <year> - <mapnumber> [Desert]"
+    # -------- [Desert] ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> [Desert]"
 desert_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Desert\])$",
     re.IGNORECASE)
-# Pattern seasonal 2: "<season> <year> - <mapnumber> - CarDesert"
+# Pattern seasonal: "<season> <year> - <mapnumber> - CarDesert"
 desert_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>CarDesert)$",
     re.IGNORECASE)
-# Pattern training: "Training <mapnumber> - CarDesert"
-desert_training_pattern_1 = re.compile(
-    rf"^(?P<season>Training)\s+(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>CarDesert)$",
+# Pattern seasonal: "<season> <year> - <mapnumber> - DesertCar"
+desert_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>DesertCar)$",
     re.IGNORECASE)
-# Pattern spring2002: "<spring2020><mapnumber> - CarDesert"
+# Pattern seasonal: "<season> <year> - <mapnumber> (DesertCar)"
+desert_seasonal_pattern_4 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>DesertCar)\)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> - CarDesert"
+desert_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>CarDesert)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> - CarDesert"
 desert_spring2020_pattern_1 = re.compile(
     r"^(?P<code>[STst][0-1]\d)\s+-\s+(?P<alteration>CarDesert)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (DesertCar)"
+desert_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>DesertCar)\)$",
+    re.IGNORECASE)
 
 
-# -------- [Desert] Antiboost ---------- #
+    # -------- [Desert] Antiboost ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - DAB"
 desertantiboost_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>DAB)$",
     re.IGNORECASE)
 
-# -------- [Desert] Carswitch ---------- #
+    # -------- [Desert] Carswitch ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Desertcarswitch"
 desertcarswitch_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Desertcarswitch)$",
@@ -799,32 +902,32 @@ desertcarswitch_totd_pattern_2 = re.compile(
 
 
 
-# -------- [Desert] Ice ---------- #
+    # -------- [Desert] Ice ---------- #
 # Pattern1: "Dicy <season> <year> - <mapnumber>"
 desertice_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Dicy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- [Desert] To The Top ---------- #
+    # -------- [Desert] To The Top ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Desert to the Top"
 deserttothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Desert to the Top)$",
     re.IGNORECASE)
 
-# -------- [Desert] Underwater ---------- #
+    # -------- [Desert] Underwater ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Desert] (UW)"
 desertunderwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Desert\]\s+\(UW\))$",
     re.IGNORECASE)
 
-# -------- [Desert] Reverse ---------- #
+    # -------- [Desert] Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Reverse Desert"
 desertreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Reverse Desert)$",
     re.IGNORECASE)
 
 
-# -------- All Cars ---------- #
+    # -------- All Cars ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> all cars"
 allcars_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>all cars)$",
@@ -834,7 +937,7 @@ allcars_seasonal_pattern_1 = re.compile(
 
 # ################ Altered Game Mode ################ #
 
-# -------- [Race] ---------- #
+    # -------- [Race] ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Race]"
 race_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Race\])$",
@@ -845,13 +948,13 @@ race_seasonal_pattern_1 = re.compile(
 #    re.IGNORECASE
 #)   
 
-# -------- [Stunt] ---------- #
+    # -------- [Stunt] ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Stunt]"
 stunt_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Stunt\])$",
     re.IGNORECASE)
 
-# -------- [Platform] ---------- #
+    # -------- [Platform] ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Platform]"
 platform_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Platform\])$",
@@ -860,7 +963,7 @@ platform_seasonal_pattern_1 = re.compile(
 
 # ################ Multi Alterations ################ #
 
-# -------- Checkpointless Reverse ---------- #
+    # -------- Checkpointless Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Checkpointless Reverse)"
 checkpointlessreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Checkpointless Reverse)\)$",
@@ -882,43 +985,43 @@ checkpointlessreverse_seasonal_pattern_5 = re.compile(
     rf"^(?P<alteration>\(G\))\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_suffix>CPLess, Reverse)$",
     re.IGNORECASE)
 
-# -------- DEET To The Top ---------- #
+    # -------- DEET To The Top ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (DEET to the Top)"
 deettothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>DEET to the Top)\)$",
     re.IGNORECASE)
 
-# -------- Ice Reverse ---------- #
+    # -------- Ice Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> IR"
 icereverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>IR)$",
     re.IGNORECASE)
 
-# -------- Ice Reverse Reactor ---------- #
-# Pattern1: "Icy RR <season> <year> - <mapnumber>"
+    # -------- Ice Reverse Reactor ---------- #
+# Pattern seasonal: "Icy RR <season> <year> <mapnumber>"
 icereversereactor_seasonal_pattern_1 = re.compile(
-    rf"^(?P<alteration>Icy RR)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    rf"^(?P<alteration>Icy RR)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Ice Short ---------- #
-# Pattern1: "short - Icy <season> <year> - <mapnumber>"
+    # -------- Ice Short ---------- #
+# Pattern seasonal: "short - Icy <season> <year> - <mapnumber>" short - Icy Winter 2023 - 17
 iceshort_seasonal_pattern_1 = re.compile(
-    rf"^(?P<alteration>short)\s+-\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    rf"^(?P<alteration_prefix>short)\s+-\s+(?P<alteration>Icy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-
-# -------- Magner Reverse ---------- #
+    
+    # -------- Magner Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Magnet Reverse"
 magnetreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Magnet Reverse)$",
     re.IGNORECASE)
 
-# -------- Plastic Reverse ---------- #
+    # -------- Plastic Reverse ---------- #
 # Pattern1: "<season> <year> - <mapnumber> PR"
 plasticreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>PR)$",
     re.IGNORECASE)
 
-# -------- Reverse Sky is the Finish ---------- #
+    # -------- Reverse Sky is the Finish ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Rev Sky is Finish"
 reverseskyfinish_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Rev Sky is Finish)$",
@@ -932,29 +1035,37 @@ reverseskyfinish_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Rev Sky Fin)$",
     re.IGNORECASE)
 
-# -------- Start Water 2 UP 1 Left - Checkpoints Unlinked - Finish 2 Down 1 Right ---------- #
+    # -------- Start Water 2 UP 1 Left - Checkpoints Unlinked - Finish 2 Down 1 Right ---------- #
 # Pattern1: "<season> <year> - <mapnumber> sw2u1l-cpu-f2d1r"
 sw2u1lcpuf2d1r_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>sw2u1l-cpu-f2d1r)$",
     re.IGNORECASE)
 
-# -------- Underwater Reverse ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (UW Reverse)"
+    # -------- Underwater Reverse ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (UW Reverse)"
 underwaterreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>UW Reverse)\)$",
     re.IGNORECASE)
-# Pattern2: "Training - <mapnumber> (UW Reverse)"
-underwaterreverse_training_pattern_2 = re.compile(
+# Pattern seasonal: "<season> <year> - <mapnumber> UW Reverse"
+underwaterreverse_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>UW Reverse)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> (UW Reverse)"
+underwaterreverse_training_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>UW Reverse)\)$",
     re.IGNORECASE)
 
-# -------- Wet Plastic ---------- #
-# Pattern1: "Wet Plastic <season> <year> - <mapnumber>"
+    # -------- Wet Plastic ---------- #
+# Pattern seasonal: "Wet Plastic <season> <year> - <mapnumber>"
 wetplastic_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Wet Plastic)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern training: "Wet Plastic Training - <mapnumber>"
+wetplastic_training_pattern_1 = re.compile(
+    rf"^(?P<alteration>Wet Plastic)\s+Training\s+-\s+(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
 
-# -------- Wet Wood ---------- #
+    # -------- Wet Wood ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Wet Wood)"
 wetwood_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet Wood)\)$",
@@ -968,27 +1079,39 @@ wetwood_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet Wood Yellow Reactor Down)\)$",
     re.IGNORECASE)
 
-# -------- Wet Icy Wood ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (Wet Icy Wood)"
+    # -------- Wet Icy Wood ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (Wet Icy Wood)"
 weticywood_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet Icy Wood)\)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> (100% Wet Icy Wood)"
+# Pattern seasonal: "<season> <year> - <mapnumber> (100% Wet Icy Wood)"
 weticywood_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>100% Wet Icy Wood)\)$",
     re.IGNORECASE)
-# Pattern3: "<season> <year> - <mapnumber> (Pure Wet Icy Wood)"
+# Pattern seasonal: "<season> <year> - <mapnumber> (Pure Wet Icy Wood)"
 weticywood_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Pure Wet Icy Wood)\)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> (Wet Icy Wood)"
+weticywood_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> (Wet Icy Wood)"
+weticywood_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+\((?P<alteration>Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (Wet Icy Wood)"
+weticywood_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>Wet Icy Wood)\)$",
+    re.IGNORECASE)
 
-# -------- YEET Max-Up ---------- #
+    # -------- YEET Max-Up ---------- #
 # Pattern1: "YEET <season> <year> - <mapnumber> Max-up"
 yeetmaxup_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>YEET)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{2,4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_suffix>Max-up)$",
     re.IGNORECASE)
 
-# -------- YEET (Random) Puzzle ---------- #
+    # -------- YEET (Random) Puzzle ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (YEET Puzzle)"
 yeetpuzzle_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Yeet Puzzle)\)$",
@@ -998,7 +1121,7 @@ yeetpuzzle_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Yeet Random Puzzle)\)$",
     re.IGNORECASE)
 
-# -------- YEET Reverse ---------- #
+    # -------- YEET Reverse ---------- #
 # Pattern1: "YEET <season> <year> - <mapnumber> Reverse"
 yeetreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>YEET)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{2,4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_suffix>Reverse)$",
@@ -1007,44 +1130,48 @@ yeetreverse_seasonal_pattern_1 = re.compile(
 
 # ################ Other Alterations ################ #
 
-# -------- XX-But ---------- #
+    # -------- XX-But ---------- #
 # Pattern1: ""
 #xxbut_seasonal_pattern_1 = re.compile(
 #    rf"",
 #    re.IGNORECASE
 #)
 
-# -------- Flat/2D ---------- #
-# Pattern1: "FLAT <season> <year> - <mapnumber>"
+    # -------- Flat/2D ---------- #
+# Pattern seasonal: "FLAT <season> <year> - <mapnumber>"
 flat_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>FLAT)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{2,4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-# Pattern2: "Flat Training - <mapnumber>"
-flat_training_pattern_2 = re.compile(
-    rf"^(?P<alteration>Flat)\s(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
-    re.IGNORECASE)
-# Pattern3: "Training - <mapnumber> Flat"
-flat_training_pattern_3 = re.compile(
-    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Flat)$",
-    re.IGNORECASE)
-# Pattern4: "Flat<season>'<year> - <mapnumber>"
-flat_seasonal_pattern_3 = re.compile(
+# Pattern seasonal: "Flat<season>'<year> - <mapnumber>"
+flat_seasonal_pattern_2 = re.compile(
     rf"^(?P<alteration>Flat)(?P<season>{SEASON_REGEX})'(?P<year>\d{{2}})\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern seasonal: "2D-<season><year>-<mapnumber>"
+flat_seasonal_pattern_3 = re.compile(
+    rf"^(?P<alteration>2D)-(?P<season>{SEASON_REGEX})(?P<year>\d{{4}})-(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)    
+# Pattern training: "Flat Training - <mapnumber>"
+flat_training_pattern_1 = re.compile(
+    rf"^(?P<alteration>Flat)\s(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Flat"
+flat_training_pattern_2 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Flat)$",
+    re.IGNORECASE)
 
-# -------- A08 ---------- #
+    # -------- A08 ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - 08"
 a08_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>08)$",
     re.IGNORECASE)
 
-# -------- Backwards ---------- #
+    # -------- Backwards ---------- #
 # Pattern1: "<season> <year> - <mapnumber> backwards"
 backwards_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>backwards)$",
     re.IGNORECASE)
 
-# -------- BOSS ---------- #
+    # -------- BOSS ---------- #
 # FIXME: This alteration is fundamentally different regarding "mapnumber", as it applies to multiple maps, this is the reason that map number is in an array...
 # Pattern1: "BOSS <each map number in sets from 1-5 shown in sets using colours, white = 1-5, green = 6-10, blue = 11-15, red 16-20 black 21-25> of <season> <year>"
 #boss_seasonal_pattern_1 = re.compile(
@@ -1057,7 +1184,7 @@ backwards_seasonal_pattern_1 = re.compile(
 #    re.IGNORECASE
 #)
 
-# -------- Bumper ---------- #
+    # -------- Bumper ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - Bumper"
 bumper_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Bumper)$",
@@ -1068,24 +1195,28 @@ bumper_training_pattern_2 = re.compile(
     re.IGNORECASE)
 
 # #### Altered Camera #### #
-# -------- Blind ---------- #
-# Pattern1: "<season> <mapnumber> (Blind)"
+    # -------- Blind ---------- #
+# Pattern seasonal: "<season> <mapnumber> (Blind)"
 blind_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Blind)\)$",
     re.IGNORECASE)
-# -------- Egocentrism ---------- #
+# Pattern training: "Blind Training - <mapnumber>"
+blind_training_pattern_1 = re.compile(
+    rf"^(?P<alteration>Blind)\s+(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
+    # -------- Egocentrism ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Egocentrism"
 egocentrism_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Egocentrism)$",
     re.IGNORECASE)
-# -------- Replay ---------- #
+    # -------- Replay ---------- #
 # Pattern1: "<season> <year> - Replay <mapnumber>"
 replay_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s+(?P<alteration>Replay)\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 # #### End of Altered Camera #### #
 
-# -------- N'golo ---------- #
+    # -------- N'golo ---------- #
 # Pattern1: "<season>N'golo <year> - <mapnumber>"
 ngolo_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})N'golo\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
@@ -1095,37 +1226,45 @@ ngolo_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>Spring)olo\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Checkpoin't ---------- #
+    # -------- Checkpoin't ---------- #
 # Pattern1: "<season> <year> Checkpoin't - <mapnumber>"
 checkpoin_t_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>Checkpoin't)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Colour Combined ---------- #
+    # -------- Colour Combined ---------- #
 # Pattern1: "<season> <year> - <each map number in sets from 1-5 shown in sets using colours, white = 1-5, green = 6-10, blue = 11-15, red 16-20 black 21-25> Combined"
 colourcombined_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Combined)$",
     re.IGNORECASE)
 
-# -------- Checkpoint Boost Swap ---------- #
-# Pattern1: "<season> <year> - <mapnumber> CP-Boost Swap"
+    # -------- Checkpoint Boost Swap ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> CP-Boost Swap"
 checkpointboostswap_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP-Boost Swap)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> (CP-Boost)"
+checkpointboostswap_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>CP-Boost)\)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> CP-Boost"
+checkpointboostswap_spring2020_pattern_1 = re.compile(
+    r"^(?P<code>[STst][0-1]\d)\s+(?P<alteration>CP-Boost)$",
+    re.IGNORECASE)
 
-# -------- Checkpoint 1 Kept ---------- #
+    # -------- Checkpoint 1 Kept ---------- #
 # Pattern1: "<season> <year> - <mapnumber> CP1 Kept"
 checkpoint1kept_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP1 Kept)$",
     re.IGNORECASE)
 
-# -------- Checkpointfull ---------- #
+    # -------- Checkpointfull ---------- #
 # Pattern1: "<season> <year> - <mapnumber> CPfull"
 checkpointfull_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPfull)$",
     re.IGNORECASE)
 
-# -------- Checkpointless ---------- # (cpless)
+    # -------- Checkpointless ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> - Checkpointless"
 checkpointless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Checkpointless)$",
@@ -1143,13 +1282,13 @@ checkpointless_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>cpless)\)$",
     re.IGNORECASE)
 
-# -------- Checkpointlink ---------- #
+    # -------- Checkpointlink ---------- #
 # Pattern1: "<season> <year> - <mapnumber> CPLink"
 checkpointlink_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPLink)$",
     re.IGNORECASE)
 
-# -------- Checkpoints Rotated 90° / Got Rotated ---------- #
+    # -------- Checkpoints Rotated 90° / Got Rotated ---------- #
 # Pattern1: "<season> <year> - <mapnumber> - CPs Rotated 90°"
 checkpointsrotated90_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>CPs Rotated 90°)$",
@@ -1159,25 +1298,25 @@ gotrotated_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Got Rotated)$",
     re.IGNORECASE)
 
-# -------- DragonYeet ---------- #
+    # -------- DragonYeet ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (DragonYeet)"
 dragonyeet_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>DragonYeet)\)$",
     re.IGNORECASE)
 
-# -------- Earthquake ---------- #
+    # -------- Earthquake ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Earthquake"
 earthquake_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Earthquake)$",
     re.IGNORECASE)
 
-# -------- Extra Checkpoint ---------- #
+    # -------- Extra Checkpoint ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Extra CP"
 extracheckpoint_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Extra CP)$",
     re.IGNORECASE)
 
-# -------- Flipped ---------- #
+    # -------- Flipped ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Flipped)"
 flipped_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Flipped)\)$",
@@ -1187,13 +1326,17 @@ flipped_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})(?P<year>\d{{4}})(?P<alteration_suffix>UpsideDown)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Holes ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (Holes)"
+    # -------- Holes ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (Holes)"
 holes_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Holes)\)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Holes"
+holes_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Holes)$",
+    re.IGNORECASE)
 
-# -------- Lunatic ---------- #
+    # -------- Lunatic ---------- #
 # Pattern1: "Lunatic <season> <year> - <mapnumber>"
 lunatic_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Lunatic)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
@@ -1203,37 +1346,49 @@ lunatic_seasonal_pattern_2 = re.compile(
     rf"^(?P<alteration>Harder)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Mini-RPG ---------- #
-# Pattern1: "RPG <season><year> - <mapnumber>"
+    # -------- Mini-RPG ---------- #
+# Pattern seasonal: "RPG <season><year> - <mapnumber>"
 minirpg_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>RPG)\s+(?P<season>{SEASON_REGEX})(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> Mini RPG"
+minirpg_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Mini RPG)$",
+    re.IGNORECASE)
 
-# -------- Mirrored ---------- #
-# Pattern1: "<season> <mapnumber> (Mirror)"
+    # -------- Mirrored ---------- #
+# Pattern seasonal: "<season> <mapnumber> (Mirror)"
 mirrored_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Mirror)\)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Mirrored"
+mirrored_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Mirrored)$",
+    re.IGNORECASE)
 
-# -------- No Items ---------- #
+    # -------- No Items ---------- #
 # Pattern1: "<season> <year> - <mapnumber> NoItems"
 noitems_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>NoItems)$",
     re.IGNORECASE)
 
-# -------- Pool Hunters ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Pool Hunters"
+    # -------- Pool Hunters ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> Pool Hunters"
 poolhunters_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Pool Hunters)$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> poolhunter - <mapnumber>"
+poolhunters_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration>poolhunter)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
 
-# -------- Random ---------- #
+    # -------- Random ---------- #
 # Pattern1: "Random <season> <year> - <mapnumber>"
 random_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Random)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Ring Checkpoint ---------- #
+    # -------- Ring Checkpoint ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Ring CP"
 ringcheckpoint_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Ring CP)$",
@@ -1243,20 +1398,20 @@ ringcheckpoint_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Ring CP)\)$",
     re.IGNORECASE)
 
-# -------- Sections Joined ---------- #
+    # -------- Sections Joined ---------- #
 # FIXME: This alteration is fundamentally different regarding "mapnumber", as it applies to multiple maps, I will likely say that 'map 1 is the first section of each set' etc
-# Pattern1: "<season> <year> - Section [index] joined"
+# Pattern seasonal: "<season> <year> - Section [Index] joined"
 sectionsjoined_seasonal_pattern_1 = re.compile(
-    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<alteration>Section \[\d+\] joined)$",
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<alteration>Section\s*(?P<mapnumber>\d{{1,2}})\s*joined)$",
     re.IGNORECASE)
 
-# -------- Select DEL ---------- #
+    # -------- Select DEL ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Select DEL)"
 selectdel_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Select DEL)\)$",
     re.IGNORECASE)
 
-# -------- Speedlimit ---------- #
+    # -------- Speedlimit ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (Speedlimit)"
 speedlimit_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Speedlimit)\)$",
@@ -1266,14 +1421,14 @@ speedlimit_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Speed Limit)$",
     re.IGNORECASE)
 
-# -------- Start 1-Down ---------- #
+    # -------- Start 1-Down ---------- #
 # there are a bunch of maps that are just taggen "1-down" without the "start" part, so I have to use 'special uids' to individually identify them
 # Pattern1: "<season> <year> - <mapnumber> (Start 1-Down)"
 start1down_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Start 1-Down)\)$",
     re.IGNORECASE)
 
-# -------- Supersized ---------- #
+    # -------- Supersized ---------- #
 # FIXME: Supersized_Spring_2024_-_05 just found out that cases like <--- exist, so I have to replace "_" with " " before doing any regex? (or is this also counted as a whitespace?)
 # Pattern1: "Supersized <season> <year> - <mapnumber>"
 supersized_seasonal_pattern_1 = re.compile(
@@ -1292,10 +1447,14 @@ supersized_seasonal_pattern_4 = re.compile(
     rf"^(?P<alteration>Super)(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Straigt to the Finish ---------- #
+    # -------- Straight to the Finish ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Straight to the Finish"
 straighttothefinish_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Straight to the Finish)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> STTF"
+straighttothefinish_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>STTF)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> STTF"
 straighttothefinish_training_pattern_1 = re.compile(
@@ -1310,7 +1469,7 @@ straighttothefinish_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>STTF)\)$",
     re.IGNORECASE)
 
-# -------- Stunt Mode ---------- #
+    # -------- Stunt Mode ---------- #
 # Pattern1: "<season> <year> - <mapnumber> Stunt"
 stuntmode_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Stunt)$",
@@ -1320,25 +1479,25 @@ stuntmode_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Stunt Mode)$",
     re.IGNORECASE)
 
-# -------- Symmetrical ---------- #
+    # -------- Symmetrical ---------- #
 # Pattern1: "Symmetrical <season> <year> - <mapnumber>"
 symmetrical_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>Symmetrical)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- Tilted ---------- #
+    # -------- Tilted ---------- #
 # Pattern1: "<season> <mapnumber> - Tilted"
 tilted_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Tilted)$",
     re.IGNORECASE)
 
-# -------- YEET ---------- #
+    # -------- YEET ---------- #
 # Pattern1: "YEET <season> <year> - <mapnumber>"
 yeet_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration>YEET)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
-# -------- YEET Down ---------- #
+    # -------- YEET Down ---------- #
 # Pattern1: "<season> <year> - <mapnumber> (DEET)"
 yeetdown_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>DEET)\)$",
@@ -1349,21 +1508,36 @@ yeetdown_seasonal_pattern_2 = re.compile(
     re.IGNORECASE)
 
 
+# ################ Sorted as only training ################ #
+
+    # -------- Walmart Mini ---------- #
+# Pattern training: "Training - <mapnumber> Walmart Mini"
+wallmartmini_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Walmart Mini)$",
+    re.IGNORECASE)
+
+    # -------- Staircase ---------- #
+# Pattern training: "Training Staircase - <mapnumber>"
+staircase_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+(?P<alteration>Staircase)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
+    
+
 
 
 
 ALL_PATTERNS = [
     dirt_seasonal_pattern_1, 
     fastmagnet_seasonal_pattern_1,
-    flooded_seasonal_pattern_1,
+    flooded_seasonal_pattern_1, flooded_training_pattern_1, flooded_spring2020_pattern_1,
     grass_seasonal_pattern_1,
-    ice_seasonal_pattern_1,
+    ice_seasonal_pattern_1, ice_training_pattern_1,
     magnet_seasonal_pattern_1, magnet_training_pattern_2,
-    mixed_seasonal_pattern_1,
-    penalty_seasonal_pattern_1,
+    mixed_seasonal_pattern_1, mixed_training_pattern_1,
+    penalty_seasonal_pattern_1, penalty_training_pattern_1,
     plastic_seasonal_pattern_1,
-    road_seasonal_pattern_1,
-    wood_seasonal_pattern_1,
+    road_seasonal_pattern_1, road_seasonal_pattern_2, road_training_pattern_1,
+    wood_seasonal_pattern_1, wood_training_pattern_1, wood_spring2020_pattern_1,
     bobsleigh_seasonal_pattern_1,
     pipe_seasonal_pattern_1,
     sausage_seasonal_pattern_1, sausage_training_pattern_2,
@@ -1372,7 +1546,7 @@ ALL_PATTERNS = [
     underwater_seasonal_pattern_1,
     
     antibooster_seasonal_pattern_1,
-    boosterless_seasonal_pattern_1,
+    boosterless_seasonal_pattern_1, boosterless_spring2020_pattern_1,
     broken_seasonal_pattern_1,
     cleaned_seasonal_pattern_1,
     cruisecontrol_seasonal_pattern_1,
@@ -1385,34 +1559,34 @@ ALL_PATTERNS = [
     nobrakes_seasonal_pattern_1, nobrakes_seasonal_pattern_2,
     noeffects_seasonal_pattern_1, 
     nogrip_seasonal_pattern_1, nogrip_seasonal_pattern_2,
-    nosteering_seasonal_pattern_1,
-    randomdankness_seasonal_pattern_1,
+    nosteering_seasonal_pattern_1, nosteering_training_pattern_1,
+    randomdankness_seasonal_pattern_1, randomdankness_training_pattern_1,
     randomeffects_seasonal_pattern_1,
     reactor_seasonal_pattern_1,
     reactordown_seasonal_pattern_1, reactordown_seasonal_pattern_2,
-    redeffects_seasonal_pattern_1,
-    rngboosters_seasonal_pattern_1, rngboosters_spring2020_pattern_2,
-    slowmo_seasonal_pattern_1,
+    redeffects_seasonal_pattern_1, redeffects_training_pattern_1,
+    rngboosters_seasonal_pattern_1, rngboosters_spring2020_pattern_1,
+    slowmo_seasonal_pattern_1, slowmo_seasonal_pattern_2,
     wetwheels_seasonal_pattern_1,
     worntires_seasonal_pattern_1,
     
-    oneback_seasonal_pattern_1, oneback_seasonal_pattern_2, oneback_seasonal_pattern_3, oneforward_training_pattern_1, oneforward_spring2020_pattern_1,
-    onedown_seasonal_pattern_1,
+    oneback_seasonal_pattern_1, oneback_seasonal_pattern_2, oneback_seasonal_pattern_3, oneforward_training_pattern_1, oneforward_spring2020_pattern_1, oneforward_totd_pattern_1,
+    onedown_seasonal_pattern_1, onedown_training_pattern_1, onedown_spring2020_pattern_1, onedown_totd_pattern_1,
     oneleft_seasonal_pattern_1, oneright_seasonal_pattern_1,
-    oneup_seasonal_pattern_1, oneup_totd_pattern_1,
+    oneup_seasonal_pattern_1, oneup_training_pattern_1, oneup_spring2020_pattern_1, oneup_totd_pattern_1,
     twoup_seasonal_pattern_1,
     betterreverse_seasonal_pattern_1, betterreverse_seasonal_pattern_2,
-    cp1isend_seasonal_pattern_1, cp1isend_seasonal_pattern_2, cp1isend_spring2020_pattern_3,
+    cp1isend_seasonal_pattern_1, cp1isend_seasonal_pattern_2, cp1isend_training_pattern_1, cp1isend_spring2020_pattern_1, cp1isend_totd_pattern_1,
     floorfin_seasonal_pattern_1,
     groundclippers_seasonal_pattern_1,
     inclined_seasonal_pattern_1,
     manslaughter_seasonal_pattern_1,
     nogear5_seasonal_pattern_1,
     podium_seasonal_pattern_1,
-    puzzle_seasonal_pattern_1,
-    reverse_seasonal_pattern_1,
+    puzzle_seasonal_pattern_1, puzzle_training_pattern_1,
+    reverse_seasonal_pattern_1, reverse_training_pattern_1, reverse_spring2020_pattern_1, reverse_totd_pattern_1,
     roofing_seasonal_pattern_1,
-    short_seasonal_pattern_1, short_seasonal_pattern_2, short_seasonal_pattern_3, short_spring2020_pattern_4, short_seasonal_pattern_5,
+    short_seasonal_pattern_1, short_seasonal_pattern_2, short_seasonal_pattern_3, short_seasonal_pattern_4, short_training_pattern_1, short_spring2020_pattern_1,
     skyfinish_spring2020_pattern_1, skyfinish_seasonal_pattern_2, skyfinish_seasonal_pattern_3, skyfinish_seasonal_pattern_4, skyfinish_totd_pattern_5,
     thereandback_seasonal_pattern_1, thereandback_seasonal_pattern_2,
     yeptreepuzzle_seasonal_pattern_1,
@@ -1421,19 +1595,19 @@ ALL_PATTERNS = [
     stadiumtothetop_seasonal_pattern_1,
     stadiumwetwood_seasonal_pattern_1,
     snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_totd_pattern_1,
-    snowcarswitch_seasonal_pattern_1,
+    snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1,
     snowcheckpointless_seasonal_pattern_1,
     snowice_seasonal_pattern_1,
-    snowunderwater_seasonal_pattern_1,
+    snowunderwater_seasonal_pattern_1,snowunderwater_training_pattern_1,
     snowwetplastic_seasonal_pattern_1,
     snowwood_seasonal_pattern_1,
     rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
-    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1,
-    rallycp1isend_seasonal_pattern_1,
+    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2,
+    rallycp1isend_seasonal_pattern_1, rallycp1isend_spring2020_pattern_1,
     rallyice_seasonal_pattern_1,
     rallytothetop_seasonal_pattern_1,
-    rallyunderwater_seasonal_pattern_1,
-    desert_seasonal_pattern_1, desert_seasonal_pattern_2, desert_training_pattern_1, desert_spring2020_pattern_1,
+    rallyunderwater_seasonal_pattern_1, rallyunderwater_seasonal_pattern_2, rallyunderwater_training_pattern_1, 
+    desert_seasonal_pattern_1, desert_seasonal_pattern_2, desert_seasonal_pattern_3, desert_seasonal_pattern_4, desert_training_pattern_1, desert_spring2020_pattern_1, desert_totd_pattern_1,
     desertantiboost_seasonal_pattern_1,
     desertcarswitch_seasonal_pattern_1, desertcarswitch_totd_pattern_1, desertcarswitch_totd_pattern_2,
     desertice_seasonal_pattern_1,
@@ -1450,33 +1624,34 @@ ALL_PATTERNS = [
     deettothetop_seasonal_pattern_1,
     icereverse_seasonal_pattern_1,
     icereversereactor_seasonal_pattern_1,
+    iceshort_seasonal_pattern_1,
     magnetreverse_seasonal_pattern_1,
     plasticreverse_seasonal_pattern_1,
     reverseskyfinish_seasonal_pattern_1, reverseskyfinish_seasonal_pattern_2, reverseskyfinish_seasonal_pattern_3,
     sw2u1lcpuf2d1r_seasonal_pattern_1, 
-    underwaterreverse_seasonal_pattern_1, underwaterreverse_training_pattern_2,
-    wetplastic_seasonal_pattern_1,
+    underwaterreverse_seasonal_pattern_1, underwaterreverse_seasonal_pattern_2, underwaterreverse_training_pattern_1,
+    wetplastic_seasonal_pattern_1, wetplastic_training_pattern_1,
     wetwood_seasonal_pattern_1, wetwood_seasonal_pattern_2, wetwood_seasonal_pattern_3,
-    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3,
+    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_training_pattern_1, weticywood_spring2020_pattern_1, weticywood_totd_pattern_1,
     yeetmaxup_seasonal_pattern_1,
     yeetpuzzle_seasonal_pattern_1, yeetpuzzle_seasonal_pattern_2,
     yeetreverse_seasonal_pattern_1,
     
     # xxbut_seasonal_pattern_1,
-    flat_seasonal_pattern_1, flat_training_pattern_2, flat_training_pattern_3, flat_seasonal_pattern_3,
+    flat_seasonal_pattern_1, flat_training_pattern_2, flat_seasonal_pattern_3, flat_training_pattern_1, flat_training_pattern_2,
     a08_seasonal_pattern_1,
     backwards_seasonal_pattern_1,
     #boss_seasonal_pattern_1, boss_seasonal_pattern_2,
     bumper_seasonal_pattern_1, bumper_training_pattern_2,
     # Camera
-    blind_seasonal_pattern_1,
+    blind_seasonal_pattern_1, blind_training_pattern_1,
     egocentrism_seasonal_pattern_1,
     replay_seasonal_pattern_1,
     #
     ngolo_seasonal_pattern_1, ngolo_seasonal_pattern_2,
     checkpoin_t_seasonal_pattern_1,
     colourcombined_seasonal_pattern_1,
-    checkpointboostswap_seasonal_pattern_1,
+    checkpointboostswap_seasonal_pattern_1, checkpointboostswap_training_pattern_1, checkpointboostswap_spring2020_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
     checkpointfull_seasonal_pattern_1,
     checkpointless_seasonal_pattern_1, checkpointless_training_pattern_1, checkpointless_spring2020_pattern_1, checkpointless_totd_pattern_1,
@@ -1486,12 +1661,12 @@ ALL_PATTERNS = [
     earthquake_seasonal_pattern_1,
     extracheckpoint_seasonal_pattern_1,
     flipped_seasonal_pattern_1, flipped_seasonal_pattern_2,
-    holes_seasonal_pattern_1,
+    holes_seasonal_pattern_1, holes_training_pattern_1,
     lunatic_seasonal_pattern_1, lunatic_seasonal_pattern_2,
-    minirpg_seasonal_pattern_1,
-    mirrored_seasonal_pattern_1,
+    minirpg_seasonal_pattern_1, minirpg_seasonal_pattern_2,
+    mirrored_seasonal_pattern_1, mirrored_training_pattern_1,
     noitems_seasonal_pattern_1,
-    poolhunters_seasonal_pattern_1,
+    poolhunters_seasonal_pattern_1, poolhunters_seasonal_pattern_2,
     random_seasonal_pattern_1,
     ringcheckpoint_seasonal_pattern_1, ringcheckpoint_seasonal_pattern_2,
     sectionsjoined_seasonal_pattern_1,
@@ -1499,16 +1674,20 @@ ALL_PATTERNS = [
     speedlimit_seasonal_pattern_1, speedlimit_seasonal_pattern_2,
     start1down_seasonal_pattern_1,
     supersized_seasonal_pattern_1, supersized_training_pattern_2, supersized_seasonal_pattern_3, supersized_seasonal_pattern_4,
-    straighttothefinish_seasonal_pattern_1, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_totd_pattern_1,
+    straighttothefinish_seasonal_pattern_1, straighttothefinish_seasonal_pattern_2, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_totd_pattern_1,
     stuntmode_seasonal_pattern_1, stuntmode_seasonal_pattern_2,
     symmetrical_seasonal_pattern_1,
     tilted_seasonal_pattern_1,
     yeet_seasonal_pattern_1,
     yeetdown_seasonal_pattern_1, yeetdown_seasonal_pattern_2,
+    
+    # Sorted as only training (as of rn)
+    wallmartmini_training_pattern_1,
+    staircase_training_pattern_1
 ]
 
 ft_pattern = re.compile(
-    r"(?:ft[' ]|ft |featuring |AT by )(\w+)",
+    r"(?:ft' |ft |featuring |AT by )(\w+)",
     re.IGNORECASE
 )
 
@@ -1520,9 +1699,19 @@ def check_discovery_map_name(map_name: str) -> str:
     return ""
 
 def check_totd_map_name(map_name: str) -> bool:
+    sanitized_map_name = SANITIZE_PATTERN.sub('', map_name).strip().lower()
+    
     for totd_name in all_TOTD_map_names:
-        if totd_name.lower() in map_name.lower():
+        totd_name_lower = totd_name.lower()
+        start_match = sanitized_map_name.startswith(totd_name_lower + ' ')
+        end_match = sanitized_map_name.endswith(' ' + totd_name_lower)
+        exact_match = sanitized_map_name == totd_name_lower
+        middle_match = f' {totd_name_lower} ' in sanitized_map_name
+
+        if start_match or end_match or exact_match or middle_match:
+            # logger.critical(f"Found TOTD map: {totd_name} in {map_name}")
             return True
+    
     return False
 
 def try_special_uids(map_uid: str):
@@ -1546,9 +1735,17 @@ def extract_and_remove_ft(map_name: str):
     if match:
         username = match.group(1)
         start, end = match.span()
-        cleaned_name = map_name[:start] + map_name[end:]
-        return cleaned_name, username
-    return map_name, None
+        map_name = map_name[:start] + map_name[end:]
+
+    map_name = map_name.strip()
+    if map_name.endswith('()'):
+        map_name = map_name[:-2].strip()
+
+    if map_name.startswith('(') and map_name.endswith(')'):
+        map_name = map_name[1:-1].strip()
+
+    return map_name, username if match else None
+
 
 def normalize_whitespace(map_name: str):
     return re.sub(r'\s+', ' ', map_name).strip()
@@ -1574,6 +1771,8 @@ def match_known_patterns(map_name: str):
                 season = 'Spring'
                 year = 2020
                 map_num = int(code[1:])
+                # If starts with 'S': season='Spring', year=2020, mapnumber=mapnumber=mapnumber
+                # If starts with 'T': season='Spring', year=2020, mapnumber=mapnumber+10=mapnumber
                 if code.startswith('T'):
                     map_num += 10
                 valid_mapnums = validate_mapnumber([map_num])
@@ -1676,7 +1875,7 @@ def assign_attributes(item_data: dict) -> dict:
         item_data.get('submitter') in OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS
     ):
         attributes['alteration'] = OFFICIAL_NADEO_TAG
-
+    
     return attributes
 
 def process_item(item: tuple) -> tuple:
@@ -1699,6 +1898,14 @@ def main():
     items = list(map_data.items())
 
     results = {}
+
+    try:
+        with open('totd_pattern_group.txt', 'w', encoding='utf-8') as f:
+            f.write(totd_pattern_group)
+        logger.info("totd_pattern_group written to pattern_dings.txt")
+    except Exception as e:
+        logger.error(f"Error writing to pattern_dings.txt: {e}")
+
     with ThreadPoolExecutor(max_workers=16) as executor:
         futures = [executor.submit(process_item, item) for item in items]
         for future in futures:
@@ -1706,7 +1913,8 @@ def main():
                 key, value = future.result()
                 results[key] = value
             except Exception as e:
-                logger.error(f"Error processing item: {e}")
+                x="x"
+                #logger.error(f"Error processing item: {e}")
 
     try:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
