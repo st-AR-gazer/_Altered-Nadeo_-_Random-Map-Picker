@@ -7,7 +7,8 @@ from uids import (
     DISCOVERY_CAMPAIGNS,
     OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS,
     special_uids,
-    all_TOTD_map_names
+    ALL_TOTD_MAP_NAMES,
+    ALL_COMPETITION_MAP_NAMES
 )
 
 INPUT_FILE = 'map_data.json'
@@ -72,7 +73,7 @@ def validate_mapnumber(map_nums: list) -> list:
 # ------------------------------------------------------------
 
 # TOTD pattern creation
-escaped_totd_names = [re.escape(name) for name in all_TOTD_map_names]
+escaped_totd_names = [re.escape(name) for name in ALL_TOTD_MAP_NAMES]
 totd_pattern_group = "(?:" + "|".join(escaped_totd_names) + ")"
 totd_full_pattern = re.compile(rf"^{totd_pattern_group}$", re.IGNORECASE)
 
@@ -83,6 +84,15 @@ for campaign in DISCOVERY_CAMPAIGNS:
 escaped_discovery_names = [re.escape(name) for name in discovery_map_names]
 discovery_pattern_group = "(?:" + "|".join(escaped_discovery_names) + ")"
 discovery_full_pattern = re.compile(rf"^{discovery_pattern_group}$", re.IGNORECASE)
+
+# Competition pattern creation
+competition_map_names = []
+for competition in ALL_COMPETITION_MAP_NAMES:
+    competition_map_names.extend(competition["maps"])
+
+escaped_competition_names = [re.escape(name) for name in competition_map_names]
+competition_pattern_group = "(?:" + "|".join(escaped_competition_names) + ")"
+
 
 
 # ################ Altered Surface ################ #
@@ -140,6 +150,14 @@ ice_seasonal_pattern_1 = re.compile(
 ice_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Icy)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern spring2020: "Icy <spring2020><mapnumber>"
+ice_spring2020_pattern_1 = re.compile(
+    r"^(?P<alteration>Icy)\s+(?P<spring2020>[STst][0-1]\d)$",
+    re.IGNORECASE)
+# Pattern discovery: Icy "<discoveryname>"
+ice_discovery_pattern_1 = re.compile(
+    rf"^(?P<alteration>Icy)\s+(?P<discoveryname>{discovery_pattern_group})$",
+    re.IGNORECASE)
 
     # --------- Magnet ---------- #
 # Pattern season: "<season> <year> - <mapnumber> Magnet"
@@ -192,6 +210,14 @@ plastic_seasonal_pattern_1 = re.compile(
 plastic_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Plastic)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern spring2020: "Plastic <spring2020><mapnumber>"
+plastic_spring2020_pattern_1 = re.compile(
+    r"^(?P<alteration>Plastic)\s+(?P<spring2020>[STst][0-1]\d)$",
+    re.IGNORECASE)
+# Pattern discovery: "Plastic <discoveryname>"
+plastic_discovery_pattern_1 = re.compile(
+    rf"^(?P<alteration>Plastic)\s+(?P<discoveryname>{discovery_pattern_group})$",
+    re.IGNORECASE)
 
     # --------- Road ---------- #
 # Pattern seasonal: "Roady <season> <year> - <mapnumber>"
@@ -219,6 +245,10 @@ wood_training_pattern_1 = re.compile(
 # Pattern spring2020: "Wood <spring2020><mapnumber>"
 wood_spring2020_pattern_1 = re.compile(
     r"^(?P<alteration>Wood)\s+(?P<spring2020>[STst][0-1]\d)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> Wood"
+wood_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration>Wood)$",
     re.IGNORECASE)
 
 ####################################################################################################################################################
@@ -264,11 +294,23 @@ slottrack_seasonal_pattern_1 = re.compile(
 surfaceless_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Surfaceless)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Surfaceless"
+surfaceless_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Surfaceless)$",
+    re.IGNORECASE)
+# Pattern training 16 17 18 19: "<season> <year> - <mapnumber> <mapnumber> <mapnumber> <mapnumber> Surfaceless"
+surfaceless_training_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber1>16)\s+(?P<mapnumber2>17)\s+(?P<mapnumber3>18)\s+(?P<mapnumber4>19)\s+(?P<alteration>Surfaceless)$",
+    re.IGNORECASE)
 
     # --------- Underwater ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Underwater)"
 underwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Underwater)\)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Underwater"
+underwater_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Underwater)$",
     re.IGNORECASE)
 
 
@@ -403,9 +445,13 @@ randomdankness_training_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Random Effects ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - Random Effects"
+# Pattern seasonal: "<season> <year> - <mapnumber> - Random Effects"
 randomeffects_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Random Effects)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> - Random Effects <additionalinfo>"
+randomeffects_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Random Effects)\s+(?P<additionalinfo>.+)$",
     re.IGNORECASE)
 
     # -------- Reactor ---------- #
@@ -544,6 +590,10 @@ oneup_training_pattern_1 = re.compile(
 oneup_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+\((?P<alteration>1-UP)\)$",
     re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (1-UP)"
+oneup_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration>1-UP)\)$",
+    re.IGNORECASE)
 # Pattern totd: "<totdname> (1-up)"
 oneup_totd_pattern_1 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration>1-up)\)$",
@@ -622,9 +672,13 @@ nogear5_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Podium ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - Podium"
+# Pattern seasonal: "<season> <year> - <mapnumber> - Podium"
 podium_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Podium)$",
+    re.IGNORECASE)
+# Pattern competition: "<competitionname> - Podium"
+podium_competition_pattern_1 = re.compile(
+    rf"^(?P<competitionname>{competition_pattern_group})\s+-\s+(?P<alteration>Podium)$",
     re.IGNORECASE)
 
     # -------- Puzzle ---------- #
@@ -719,13 +773,17 @@ skyfinish_totd_pattern_5 = re.compile(
     re.IGNORECASE)
 
     # --------- There&Back/Boomerang ---------- #
-# Pattern1: "<season> <year> - There&Back <mapnumber>"
+# Pattern seasonal: "<season> <year> - There&Back <mapnumber>"
 thereandback_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<alteration>There&Back)\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> Boomerang"
+# Pattern seasonal: "<season> <year> - <mapnumber> Boomerang"
 thereandback_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Boomerang)$",
+    re.IGNORECASE)
+# Pattern training: "Training There and Back - <mapnumber>"
+thereandback_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<alteration>There and Back)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
     # --------- YEP Tree Puzzle ---------- #
@@ -783,6 +841,10 @@ snow_seasonal_pattern_3 = re.compile(
 # Pattern training: "Training <mapnumber> - CarSnow"
 snow_training_pattern_1 = re.compile(
     rf"^(?P<special_map_name>.*?)\s*-\s*(?P<alteration>CarSnow)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> [Snow]"
+snow_discovery_pattern_1 = re.compile(
+    rf"^{discovery_pattern_group}\s+\[Snow\]$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (SnowCar)"
 snow_totd_pattern_1 = re.compile(
@@ -1054,9 +1116,13 @@ deettothetop_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Ice Reverse ---------- #
-# Pattern1: "<season> <year> - <mapnumber> IR"
+# Pattern seasonal: "<season> <year> - <mapnumber> IR"
 icereverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>IR)$",
+    re.IGNORECASE)
+# Pattern seasonal: "Icy <season> <year> - <mapnumber> Reverse"
+icereverse_seasonal_pattern_2 = re.compile(
+    rf"^(?P<alteration>Icy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_suffix>Reverse)$",
     re.IGNORECASE)
 
     # -------- Ice Reverse Reactor ---------- #
@@ -1161,6 +1227,18 @@ weticywood_training_pattern_1 = re.compile(
 # Pattern spring2020: "<spring2020><mapnumber> (Wet Icy Wood)"
 weticywood_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+\((?P<alteration>Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (Wet Icy Wood)"
+weticywood_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration>Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (100% Wet Icy Wood)"
+weticywood_discovery_pattern_2 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration>100% Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (Pure Wet Icy Wood)"
+weticywood_discovery_pattern_3 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration>Pure Wet Icy Wood)\)$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (Wet Icy Wood)"
 weticywood_totd_pattern_1 = re.compile(
@@ -1315,15 +1393,19 @@ checkpointboostswap_spring2020_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Checkpoint 1 Kept ---------- #
-# Pattern1: "<season> <year> - <mapnumber> CP1 Kept"
+# Pattern seasonal: "<season> <year> - <mapnumber> CP1 Kept"
 checkpoint1kept_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CP1 Kept)$",
     re.IGNORECASE)
 
     # -------- Checkpointfull ---------- #
-# Pattern1: "<season> <year> - <mapnumber> CPfull"
+# Pattern seasonal: "<season> <year> - <mapnumber> CPfull (-NN)"
 checkpointfull_seasonal_pattern_1 = re.compile(
-    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPfull)$",
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPfull)\s+\((?P<alterationinfo>-?\d+)\)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> CPfull"
+checkpointfull_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPfull)$",
     re.IGNORECASE)
 
     # -------- Checkpointless ---------- #
@@ -1338,6 +1420,14 @@ checkpointless_training_pattern_1 = re.compile(
 # Pattern spring2020: "<spring2020><mapnumber> - Checkpointless"
 checkpointless_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+-\s+(?P<alteration>Checkpointless)$",
+    re.IGNORECASE)
+# Pattern spring2020: "<spring2020><mapnumber> cpless"
+checkpointless_spring2020_pattern_2 = re.compile(
+    r"^(?P<spring2020>[STst][0-1]\d)\s+(?P<alteration>cpless)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> - Checkpointless"
+checkpointless_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+-\s+(?P<alteration>Checkpointless)$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (cpless)"
 checkpointless_totd_pattern_1 = re.compile(
@@ -1367,9 +1457,13 @@ dragonyeet_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Earthquake ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Earthquake"
+# Pattern seasonal: "<season> <year> - <mapnumber> Earthquake"
 earthquake_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Earthquake)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Earthquake"
+earthquake_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Earthquake)$",
     re.IGNORECASE)
 
     # -------- Extra Checkpoint ---------- #
@@ -1484,7 +1578,7 @@ speedlimit_seasonal_pattern_2 = re.compile(
     re.IGNORECASE)
 
     # -------- Start 1-Down ---------- #
-# there are a bunch of maps that are just taggen "1-down" without the "start" part, so I have to use 'special uids' to individually identify them
+# FIXME: there are a bunch of maps that are just taggen "1-down" without the "start" part, so I have to use 'special uids' to individually identify them
 # Pattern1: "<season> <year> - <mapnumber> (Start 1-Down)"
 start1down_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>Start 1-Down)\)$",
@@ -1562,9 +1656,13 @@ yeet_seasonal_pattern_1 = re.compile(
 yeet_training_pattern_1 = re.compile(
     rf"^(?P<alteration>YEET)\s+(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-# Pattern spring2020: "<spring2020><mapnumber> YEET"
+# Pattern spring2020: "YEET <spring2020><mapnumber>"
 yeet_spring2020_pattern_1 = re.compile(
-    r"^(?P<spring2020>[STst][0-1]\d)\s+(?P<alteration>YEET)$",
+    r"^(?P<alteration>YEET)\s+(?P<spring2020>[STst][0-1]\d)$",
+    re.IGNORECASE)
+# Pattern discovery: "YEET <discoveryname>"
+yeet_discovery_pattern_1 = re.compile(
+    rf"^(?P<alteration>YEET)\s+(?P<discoveryname>{discovery_pattern_group})$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (Yeet)"
 yeet_totd_pattern_1 = re.compile(
@@ -1582,6 +1680,15 @@ yeetdown_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>Deet)$",
     re.IGNORECASE)
 
+
+
+# ################ Competition Alterations
+
+    # -------- Easy Mode ---------- #
+# Pattern competition: "<competitionname> [Easy Mode]"
+easymode_competition_pattern_1 = re.compile(
+    rf"^(?P<competitionname>{competition_pattern_group})\s+\[(?P<alteration>Easy Mode)\]$",
+    re.IGNORECASE)
 
 # ################ Sorted as only training ################ #
 
@@ -1603,28 +1710,46 @@ icereactor_training_pattern_1 = re.compile(
     rf"^(?P<alteration>Icy Reactor)\s+(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
+    # -------- Better Mixed ---------- #
+# Pattern training: "Training - <mapnumber> Better Mixed"
+bettermixed_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Better Mixed)$",
+    re.IGNORECASE)
+
+    # -------- No Cut ---------- #
+# Pattern training: "Training - <mapnumber> No-Cut"
+nocut_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>No-Cut)$",
+    re.IGNORECASE)
+
+    # -------- Platform ---------- #
+# Pattern training: "Training - <mapnumber> Platform"
+platform_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Platform)$",
+    re.IGNORECASE)
+
 
 
 
 
 ALL_PATTERNS = [
-    dirt_seasonal_pattern_1, 
+    dirt_seasonal_pattern_1, dirt_training_pattern_2, 
     fastmagnet_seasonal_pattern_1,
     flooded_seasonal_pattern_1, flooded_training_pattern_1, flooded_spring2020_pattern_1,
-    grass_seasonal_pattern_1,
-    ice_seasonal_pattern_1, ice_training_pattern_1,
-    magnet_seasonal_pattern_1, magnet_training_pattern_2,magnet_spring2020_pattern_1, magnet_discovery_pattern_1, magnet_totd_pattern_1,
+    grass_seasonal_pattern_1, grass_training_pattern_2, 
+    ice_seasonal_pattern_1, ice_training_pattern_1, ice_spring2020_pattern_1, ice_discovery_pattern_1,
+    magnet_seasonal_pattern_1, magnet_training_pattern_2, magnet_spring2020_pattern_1, magnet_discovery_pattern_1, magnet_totd_pattern_1,
     mixed_seasonal_pattern_1, mixed_training_pattern_1,
     penalty_seasonal_pattern_1, penalty_training_pattern_1,
-    plastic_seasonal_pattern_1, plastic_training_pattern_1,
+    plastic_seasonal_pattern_1, plastic_training_pattern_1, plastic_spring2020_pattern_1, plastic_discovery_pattern_1,
     road_seasonal_pattern_1, road_seasonal_pattern_2, road_training_pattern_1,
-    wood_seasonal_pattern_1, wood_training_pattern_1, wood_spring2020_pattern_1,
+    wood_seasonal_pattern_1, wood_training_pattern_1, wood_spring2020_pattern_1, wood_discovery_pattern_1,
     bobsleigh_seasonal_pattern_1, bobsleigh_seasonal_pattern_2, bobsleigh_training_pattern_1,
     pipe_seasonal_pattern_1,
     sausage_seasonal_pattern_1, sausage_training_pattern_2,
     slottrack_seasonal_pattern_1,
-    surfaceless_seasonal_pattern_1,
-    underwater_seasonal_pattern_1,
+    surfaceless_seasonal_pattern_1, surfaceless_training_pattern_1, surfaceless_training_pattern_2,
+    underwater_seasonal_pattern_1, underwater_training_pattern_1,
     
     antibooster_seasonal_pattern_1,
     boosterless_seasonal_pattern_1, boosterless_training_pattern_1, boosterless_spring2020_pattern_1,
@@ -1642,7 +1767,7 @@ ALL_PATTERNS = [
     nogrip_seasonal_pattern_1, nogrip_seasonal_pattern_2,
     nosteering_seasonal_pattern_1, nosteering_training_pattern_1,
     randomdankness_seasonal_pattern_1, randomdankness_training_pattern_1,
-    randomeffects_seasonal_pattern_1,
+    randomeffects_seasonal_pattern_1, randomeffects_seasonal_pattern_2,
     reactor_seasonal_pattern_1,
     reactordown_seasonal_pattern_1, reactordown_seasonal_pattern_2,
     redeffects_seasonal_pattern_1, redeffects_training_pattern_1,
@@ -1654,7 +1779,7 @@ ALL_PATTERNS = [
     oneback_seasonal_pattern_1, oneback_seasonal_pattern_2, oneback_seasonal_pattern_3, oneforward_training_pattern_1, oneforward_spring2020_pattern_1, oneforward_totd_pattern_1,
     onedown_seasonal_pattern_1, onedown_training_pattern_1, onedown_spring2020_pattern_1, onedown_discovery_pattern_1, onedown_totd_pattern_1,
     oneleft_seasonal_pattern_1, oneright_seasonal_pattern_1,
-    oneup_seasonal_pattern_1, oneup_training_pattern_1, oneup_spring2020_pattern_1, oneup_totd_pattern_1,
+    oneup_seasonal_pattern_1, oneup_training_pattern_1, oneup_spring2020_pattern_1, oneup_discovery_pattern_1, oneup_totd_pattern_1,
     twoup_seasonal_pattern_1,
     betterreverse_seasonal_pattern_1, betterreverse_seasonal_pattern_2,
     cp1isend_seasonal_pattern_1, cp1isend_seasonal_pattern_2, cp1isend_training_pattern_1, cp1isend_spring2020_pattern_1, cp1isend_totd_pattern_1,
@@ -1663,19 +1788,19 @@ ALL_PATTERNS = [
     inclined_seasonal_pattern_1,
     manslaughter_seasonal_pattern_1,
     nogear5_seasonal_pattern_1,
-    podium_seasonal_pattern_1,
+    podium_seasonal_pattern_1, podium_competition_pattern_1,
     puzzle_seasonal_pattern_1, puzzle_training_pattern_1,
     reverse_seasonal_pattern_1, reverse_training_pattern_1, reverse_spring2020_pattern_1, reverse_discovery_pattern_1, reverse_totd_pattern_1, reverse_totd_pattern_2,
     roofing_seasonal_pattern_1,
     short_seasonal_pattern_1, short_seasonal_pattern_2, short_seasonal_pattern_3, short_seasonal_pattern_4, short_training_pattern_1, short_spring2020_pattern_1,
     skyfinish_spring2020_pattern_1, skyfinish_seasonal_pattern_2, skyfinish_seasonal_pattern_3, skyfinish_seasonal_pattern_4, skyfinish_totd_pattern_5,
-    thereandback_seasonal_pattern_1, thereandback_seasonal_pattern_2,
+    thereandback_seasonal_pattern_1, thereandback_seasonal_pattern_2, thereandback_training_pattern_1,
     yeptreepuzzle_seasonal_pattern_1,
     
     stadium_seasonal_pattern_1, stadium_seasonal_pattern_2, stadium_discovery_pattern_1, stadium_discovery_pattern_2,
     stadiumtothetop_seasonal_pattern_1,
     stadiumwetwood_seasonal_pattern_1,
-    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_totd_pattern_1,
+    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1,
     snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1,
     snowcheckpointless_seasonal_pattern_1,
     snowice_seasonal_pattern_1,
@@ -1703,7 +1828,7 @@ ALL_PATTERNS = [
     
     checkpointlessreverse_seasonal_pattern_1, checkpointlessreverse_spring2020_pattern_2, checkpointlessreverse_seasonal_pattern_3, checkpointlessreverse_seasonal_pattern_4, checkpointlessreverse_seasonal_pattern_5,
     deettothetop_seasonal_pattern_1,
-    icereverse_seasonal_pattern_1,
+    icereverse_seasonal_pattern_1, icereverse_seasonal_pattern_2,
     icereversereactor_seasonal_pattern_1, reactor_training_pattern_1,
     iceshort_seasonal_pattern_1,
     magnetreverse_seasonal_pattern_1,
@@ -1713,7 +1838,7 @@ ALL_PATTERNS = [
     underwaterreverse_seasonal_pattern_1, underwaterreverse_seasonal_pattern_2, underwaterreverse_training_pattern_1,
     wetplastic_seasonal_pattern_1, wetplastic_training_pattern_1,
     wetwood_seasonal_pattern_1, wetwood_seasonal_pattern_2, wetwood_seasonal_pattern_3,
-    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_training_pattern_1, weticywood_spring2020_pattern_1, weticywood_totd_pattern_1,
+    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_training_pattern_1, weticywood_spring2020_pattern_1, weticywood_discovery_pattern_1, weticywood_discovery_pattern_2, weticywood_discovery_pattern_3, weticywood_totd_pattern_1,
     yeetmaxup_seasonal_pattern_1,
     yeetpuzzle_seasonal_pattern_1, yeetpuzzle_seasonal_pattern_2,
     yeetreverse_seasonal_pattern_1,
@@ -1734,12 +1859,12 @@ ALL_PATTERNS = [
     colourcombined_seasonal_pattern_1,
     checkpointboostswap_seasonal_pattern_1, checkpointboostswap_training_pattern_1, checkpointboostswap_spring2020_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
-    checkpointfull_seasonal_pattern_1,
-    checkpointless_seasonal_pattern_1, checkpointless_training_pattern_1, checkpointless_spring2020_pattern_1, checkpointless_totd_pattern_1,
+    checkpointfull_seasonal_pattern_1, checkpointfull_training_pattern_1,
+    checkpointless_seasonal_pattern_1, checkpointless_training_pattern_1, checkpointless_spring2020_pattern_1, checkpointless_spring2020_pattern_2, checkpointless_discovery_pattern_1, checkpointless_totd_pattern_1,
     checkpointlink_seasonal_pattern_1,
     checkpointsrotated90_seasonal_pattern_1, gotrotated_seasonal_pattern_1,
-    dragonyeet_seasonal_pattern_1, yeet_training_pattern_1, yeet_spring2020_pattern_1, yeet_totd_pattern_1,
-    earthquake_seasonal_pattern_1,
+    dragonyeet_seasonal_pattern_1,
+    earthquake_seasonal_pattern_1, earthquake_training_pattern_1,
     extracheckpoint_seasonal_pattern_1,
     flipped_seasonal_pattern_1, flipped_seasonal_pattern_2,
     holes_seasonal_pattern_1, holes_training_pattern_1,
@@ -1759,17 +1884,22 @@ ALL_PATTERNS = [
     stuntmode_seasonal_pattern_1, stuntmode_seasonal_pattern_2,
     symmetrical_seasonal_pattern_1,
     tilted_seasonal_pattern_1,
-    yeet_seasonal_pattern_1,
+    yeet_seasonal_pattern_1, yeet_training_pattern_1, yeet_spring2020_pattern_1, yeet_discovery_pattern_1, yeet_totd_pattern_1,
     yeetdown_seasonal_pattern_1, yeetdown_seasonal_pattern_2,
+    
+    easymode_competition_pattern_1,
     
     # Sorted as only training (as of rn)
     wallmartmini_training_pattern_1,
     staircase_training_pattern_1,
-    icereactor_training_pattern_1
+    icereactor_training_pattern_1,
+    bettermixed_training_pattern_1,
+    nocut_training_pattern_1,
+    platform_training_pattern_1
 ]
 
 ft_pattern = re.compile(
-    r"(?:ft' |ft |featuring |AT by )(\w+)",
+    r"(?:ft' |ft |featuring |AT by |Feat )(\w+)",
     re.IGNORECASE
 )
 
@@ -1798,18 +1928,26 @@ def check_totd_map_name(map_name: str) -> bool:
 def try_special_uids(map_uid: str):
     for entry in special_uids:
         if entry['uid'].lower() == map_uid.lower():
-            year = int(entry['year']) if entry['year'] else None
+            year = int(entry['year']) if 'year' in entry and entry['year'] else None
             year = validate_year(year) if year else None
+
             map_nums = []
-            if entry['mapNumber']:
-                map_nums = validate_mapnumber([int(entry['mapNumber'])])
-            return {
-                'season': entry['season'].capitalize() if entry['season'] else None,
+            if 'mapNumber' in entry and entry['mapNumber']:
+                valid_map_nums = validate_mapnumber([int(m) for m in entry['mapNumber']])
+                if valid_map_nums:
+                    map_nums = valid_map_nums
+
+            attributes = {
+                'season': entry['season'].capitalize() if 'season' in entry and entry['season'] else None,
                 'year': year,
                 'mapnumber': map_nums,
-                'alteration': entry['alteration'] if entry['alteration'] else ''
+                'alteration': entry['alteration'] if 'alteration' in entry and entry['alteration'] else ''
             }
+
+            attributes['pass_special'] = entry.get('pass', False)
+            return attributes
     return None
+
 
 def extract_and_remove_ft(map_name: str):
     match = ft_pattern.search(map_name)
@@ -1846,6 +1984,20 @@ def match_known_patterns(map_name: str):
                     attrs['alteration'] = ''
                 return attrs
             
+            if 'competitionname' in attrs and attrs['competitionname']:
+                competition_name = attrs['competitionname']
+                for competition in ALL_COMPETITION_MAP_NAMES:
+                    if competition_name in competition["maps"]:
+                        attrs['season'] = competition['season'] if competition['season'] != '_' else None
+                        attrs['year'] = validate_year(int(competition['year']))
+                        attrs['type'] = competition['competition']
+                        attrs['mapnumber'] = []
+                        
+                        if 'alteration' not in attrs or not attrs['alteration']:
+                            attrs['alteration'] = ''
+                        
+                        return attrs
+                
             if 'discoveryname' in attrs and attrs['discoveryname']:
                 discovery_name = attrs['discoveryname']
                 for campaign in DISCOVERY_CAMPAIGNS:
@@ -1888,7 +2040,7 @@ def match_known_patterns(map_name: str):
                 attrs['year'] = y
             else:
                 attrs['year'] = None
-
+            
             if 'mapnumber' in attrs and attrs['mapnumber']:
                 m = validate_mapnumber([int(attrs['mapnumber'])])
                 if not m:
@@ -1897,25 +2049,28 @@ def match_known_patterns(map_name: str):
             else:
                 attrs['mapnumber'] = []
 
-            alteration = attrs.get('alteration', '').strip()
-            alteration_suffix = attrs.get('alteration_suffix', '').strip() if 'alteration_suffix' in attrs else ''
-
-            if alteration and alteration_suffix:
-                combined_alteration = f"{alteration} {alteration_suffix}".strip()
-            else:
-                combined_alteration = alteration or alteration_suffix
-
             if 'season' in attrs and attrs['season']:
                 attrs['season'] = attrs['season'].capitalize()
             else:
                 attrs['season'] = None
 
+            alteration = attrs.get('alteration', '').strip()
+            alteration_suffix = attrs.get('alteration_suffix', '').strip() if 'alteration_suffix' in attrs else ''
+            alteration_prefix = attrs.get('alteration_prefix', '').strip() if 'alteration_prefix' in attrs else ''
+            combined_alteration = ' '.join(filter(None, [alteration_prefix, alteration, alteration_suffix])).strip()
+            
             attrs['alteration'] = combined_alteration
+            
             if 'alteration_suffix' in attrs:
                 del attrs['alteration_suffix']
+            if 'alteration_prefix' in attrs:
+                del attrs['alteration_prefix']
 
             if 'type' not in attrs:
                 attrs['type'] = None
+            
+            if 'alteration_additional_info' in attrs:
+                attrs['alterationinfo'] = attrs['alteration_additional_info']
 
             return attrs
     return None
@@ -1931,12 +2086,24 @@ def assign_attributes(item_data: dict) -> dict:
     filename = normalize_whitespace(filename)
 
     attributes = match_known_patterns(sanitized_name)
-
+    
     if not attributes:
-        attributes = try_special_uids(map_uid)
+        special_attrs = try_special_uids(map_uid)
+        if special_attrs:
+            if not special_attrs.pop('pass_special', False):
+                attributes = special_attrs
+            else:
+                attributes = {**special_attrs}
+        else:
+            pass
 
     if not attributes and sanitized_name != filename:
-        attributes = match_known_patterns(filename)
+        filename_attrs = match_known_patterns(filename)
+        if filename_attrs:
+            if 'attributes' in locals() and attributes:
+                attributes = {**attributes, **filename_attrs}
+            else:
+                attributes = filename_attrs
 
     if not attributes:
         attributes = {
@@ -1946,8 +2113,10 @@ def assign_attributes(item_data: dict) -> dict:
             'alteration': '',
             'type': None
         }
-        logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name})")
-    
+        logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name}), totd: {check_totd_map_name(sanitized_name)}, discovery: {check_discovery_map_name(sanitized_name)}")
+    else:
+        pass
+
     if attributes.get('alteration', '').lower() == 'super':
         attributes['alteration'] = 'Supersized'
 
@@ -1984,12 +2153,16 @@ def main():
 
     results = {}
 
+
+    # Write totd pattern groups to files
     try:
         with open('totd_pattern_group.txt', 'w', encoding='utf-8') as f:
             f.write(totd_pattern_group)
         logger.info("totd_pattern_group written to pattern_dings.txt")
     except Exception as e:
         logger.error(f"Error writing to pattern_dings.txt: {e}")
+    
+    # Write discovery pattern groups to files
     try:
         discovery_map_names = []
         for campaign in DISCOVERY_CAMPAIGNS:
@@ -2000,6 +2173,15 @@ def main():
         logger.info("discovery_pattern_group written to discovery_pattern_group.txt")
     except Exception as e:
         logger.error(f"Error writing discovery_pattern_group.txt: {e}")
+        
+    # Write competition pattern groups to files
+    try:
+        with open('competition_pattern_group.txt', 'w', encoding='utf-8') as f:
+            f.write(competition_pattern_group)
+        logger.info("competition_pattern_group written to competition_pattern_group.txt")
+    except Exception as e:
+        logger.error(f"Error writing competition_pattern_group.txt: {e}")
+
 
     with ThreadPoolExecutor(max_workers=16) as executor:
         futures = [executor.submit(process_item, item) for item in items]
