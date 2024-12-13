@@ -71,9 +71,18 @@ def validate_mapnumber(map_nums: list) -> list:
 # REGEX PATTERNS (defined here for centralized attribute assignment)
 # ------------------------------------------------------------
 
-# for totd names
+# TOTD pattern creation
 escaped_totd_names = [re.escape(name) for name in all_TOTD_map_names]
 totd_pattern_group = "(?:" + "|".join(escaped_totd_names) + ")"
+totd_full_pattern = re.compile(rf"^{totd_pattern_group}$", re.IGNORECASE)
+
+# Discovery pattern creation
+discovery_map_names = []
+for campaign in DISCOVERY_CAMPAIGNS:
+    discovery_map_names.extend(campaign['maps'].keys())
+escaped_discovery_names = [re.escape(name) for name in discovery_map_names]
+discovery_pattern_group = "(?:" + "|".join(escaped_discovery_names) + ")"
+discovery_full_pattern = re.compile(rf"^{discovery_pattern_group}$", re.IGNORECASE)
 
 
 # ################ Altered Surface ################ #
@@ -938,15 +947,15 @@ allcars_seasonal_pattern_1 = re.compile(
 # ################ Altered Game Mode ################ #
 
     # -------- [Race] ---------- #
-# Pattern1: "<season> <year> - <mapnumber> [Race]"
+# Pattern seasonal: "<season> <year> - <mapnumber> [Race]"
 race_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>\[Race\])$",
     re.IGNORECASE)
-# Pattern
-#race_discovery_pattern_1 = re.compile(
-#    rf"^(?P<discovery>{escaped_discovery_name})\s+(?P<alteration>\[Race\])$",
-#    re.IGNORECASE
-#)   
+# Pattern discovery: "<discovery> [Race]"
+race_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration>\[Race\])$",
+    re.IGNORECASE
+)
 
     # -------- [Stunt] ---------- #
 # Pattern1: "<season> <year> - <mapnumber> [Stunt]"
@@ -1616,7 +1625,7 @@ ALL_PATTERNS = [
     desertreverse_seasonal_pattern_1,
     allcars_seasonal_pattern_1,
     
-    race_seasonal_pattern_1,
+    race_seasonal_pattern_1, race_discovery_pattern_1,
     stunt_seasonal_pattern_1,
     platform_seasonal_pattern_1,
     
@@ -1691,28 +1700,27 @@ ft_pattern = re.compile(
     re.IGNORECASE
 )
 
-def check_discovery_map_name(map_name: str) -> str:
-    for campaign in DISCOVERY_CAMPAIGNS:
-        for dmap in campaign['maps'].keys():
-            if dmap.lower() in map_name.lower():
-                return campaign['name']
-    return ""
+def check_discovery_map_name(map_name: str) -> dict:
+    match = discovery_full_pattern.match(map_name)
+    if match:
+        discovery_name = match.group()
+        for campaign in DISCOVERY_CAMPAIGNS:
+            for dmap_name, dmap_number in campaign['maps'].items():
+                if dmap_name.lower() == discovery_name.lower():
+                    year = validate_year(int(campaign['year']))
+                    mapnumber = validate_mapnumber([int(dmap_number)])
+                    return {
+                        'discoveryname': discovery_name,
+                        'season': campaign['season'].capitalize(),
+                        'year': year,
+                        'mapnumber': mapnumber,
+                        'type': campaign['name']
+                    }
+    return {}
+
 
 def check_totd_map_name(map_name: str) -> bool:
-    sanitized_map_name = SANITIZE_PATTERN.sub('', map_name).strip().lower()
-    
-    for totd_name in all_TOTD_map_names:
-        totd_name_lower = totd_name.lower()
-        start_match = sanitized_map_name.startswith(totd_name_lower + ' ')
-        end_match = sanitized_map_name.endswith(' ' + totd_name_lower)
-        exact_match = sanitized_map_name == totd_name_lower
-        middle_match = f' {totd_name_lower} ' in sanitized_map_name
-
-        if start_match or end_match or exact_match or middle_match:
-            # logger.critical(f"Found TOTD map: {totd_name} in {map_name}")
-            return True
-    
-    return False
+    return bool(totd_full_pattern.match(map_name))
 
 def try_special_uids(map_uid: str):
     for entry in special_uids:
@@ -1756,16 +1764,30 @@ def match_known_patterns(map_name: str):
         if match:
             attrs = match.groupdict()
 
-            if pattern == oneup_totd_pattern_1:
-                alteration = attrs.get('alteration', '').strip()
-                return {
-                    'season': None,
-                    'year': None,
-                    'mapnumber': [],
-                    'alteration': alteration,
-                    'type': 'totd'
-                }
-
+            if totd_full_pattern.match(map_name):
+                attrs['season'] = None
+                attrs['year'] = None
+                attrs['mapnumber'] = []
+                attrs['type'] = 'totd'
+                if 'alteration' not in attrs:
+                    attrs['alteration'] = ''
+                return attrs
+            
+            if 'discoveryname' in attrs and attrs['discoveryname']:
+                discovery_name = attrs['discoveryname']
+                for campaign in DISCOVERY_CAMPAIGNS:
+                    for dmap_name, dmap_number in campaign['maps'].items():
+                        if dmap_name.lower() == discovery_name.lower():
+                            year = validate_year(int(campaign['year']))
+                            mapnumber = validate_mapnumber([int(dmap_number)])
+                            attrs['year'] = year
+                            attrs['mapnumber'] = mapnumber
+                            attrs['season'] = campaign['season'].capitalize()
+                            attrs['type'] = campaign['name']
+                            if 'alteration' not in attrs:
+                                attrs['alteration'] = ''
+                            return attrs
+            
             if 'code' in attrs and attrs['code']:
                 code = attrs['code'].upper()
                 season = 'Spring'
@@ -1818,6 +1840,9 @@ def match_known_patterns(map_name: str):
             if 'alteration_suffix' in attrs:
                 del attrs['alteration_suffix']
 
+            if 'type' not in attrs:
+                attrs['type'] = None
+
             return attrs
     return None
 
@@ -1832,10 +1857,10 @@ def assign_attributes(item_data: dict) -> dict:
     filename = normalize_whitespace(filename)
 
     attributes = match_known_patterns(sanitized_name)
-    
+
     if not attributes:
         attributes = try_special_uids(map_uid)
-    
+
     if not attributes and sanitized_name != filename:
         attributes = match_known_patterns(filename)
 
@@ -1847,23 +1872,8 @@ def assign_attributes(item_data: dict) -> dict:
             'alteration': '',
             'type': None
         }
-        logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name}) (totd: {check_totd_map_name(raw_name)})")
-    else:
-        discovery_type = check_discovery_map_name(raw_name)
-        if discovery_type:
-            attributes['type'] = discovery_type
-        else:
-            if attributes.get('type') != 'totd':
-                if check_totd_map_name(raw_name):
-                    if attributes.get('season') or attributes.get('year') or attributes.get('mapnumber'):
-                        logger.error(f"TOTD map '{raw_name}' has season/year/mapnumber assigned, which should not happen!")
-                        attributes['type'] = 'totd'
-                    else:
-                        attributes['type'] = 'totd'
-                else:
-                    if 'type' not in attributes:
-                        attributes['type'] = None
-
+        logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name})")
+    
     if attributes.get('alteration', '').lower() == 'super':
         attributes['alteration'] = 'Supersized'
 
@@ -1875,8 +1885,9 @@ def assign_attributes(item_data: dict) -> dict:
         item_data.get('submitter') in OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS
     ):
         attributes['alteration'] = OFFICIAL_NADEO_TAG
-    
-    return attributes
+
+    return {**item_data, **attributes}
+
 
 def process_item(item: tuple) -> tuple:
     key, data = item
@@ -1905,6 +1916,16 @@ def main():
         logger.info("totd_pattern_group written to pattern_dings.txt")
     except Exception as e:
         logger.error(f"Error writing to pattern_dings.txt: {e}")
+    try:
+        discovery_map_names = []
+        for campaign in DISCOVERY_CAMPAIGNS:
+            discovery_map_names.extend(campaign['maps'].keys())
+        discovery_pattern_group = "(?:" + "|".join([re.escape(name) for name in discovery_map_names]) + ")"
+        with open('discovery_pattern_group.txt', 'w', encoding='utf-8') as f:
+            f.write(discovery_pattern_group)
+        logger.info("discovery_pattern_group written to discovery_pattern_group.txt")
+    except Exception as e:
+        logger.error(f"Error writing discovery_pattern_group.txt: {e}")
 
     with ThreadPoolExecutor(max_workers=16) as executor:
         futures = [executor.submit(process_item, item) for item in items]
@@ -1913,7 +1934,7 @@ def main():
                 key, value = future.result()
                 results[key] = value
             except Exception as e:
-                x="x"
+                pass
                 #logger.error(f"Error processing item: {e}")
 
     try:
