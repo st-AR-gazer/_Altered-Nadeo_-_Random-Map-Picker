@@ -1,324 +1,153 @@
-2024-12-16T10:57:28+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2024-12-16T10:57:28+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2024-12-16T10:57:28+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2024-12-16T10:57:28+0100 WARNING: Unmatched map name: Training - 10 (sanitized: Training - 10), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Jungle House (cpless) (sanitized: Jungle House (cpless)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 17 (sanitized: Training - 17), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 08 (sanitized: Training - 08), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: RPG Su21 - 11 (sanitized: RPG Su21 - 11), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 13 - CPs Rotated 90ï¿½ (sanitized: [UNVALIDATED] Spring 2023 - 13 - CPs Rotated 90ï¿½), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: RPG Su21 - 01 (sanitized: RPG Su21 - 01), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: RPG Su21 - 08 (sanitized: RPG Su21 - 08), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 02 (sanitized: (Tech) Summer 2020 - 02), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 17 YEET Puzzle (sanitized: Training - 17 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 01 (sanitized: (Tech) Summer 2020 - 01), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: [Snow] $<Training - 21 & 24 Wood$> (sanitized: [Snow] Training - 21 & 24 Wood), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: $o$ Nigh88FArctictrush (Wet Wood) (sanitized: Arctic Nightrush (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2024 - 08 Remixed (sanitized: Winter 2024 - 08 Remixed), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 14 (Wet Wood) (sanitized: Training - 14 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2023 - 06 CPs Rotated 90ï¿½ (sanitized: Winter 2023 - 06 CPs Rotated 90ï¿½), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: S04 (sanitized: S04), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Tatooine Magnet (sanitized: Tatooine Magnet), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 15 (Wet Wood) (sanitized: Training - 15 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 10 (Wet Wood) (sanitized: Training - 10 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2023 - 01 - Podium (unvalidated) (sanitized: Winter 2023 - 01 - Podium (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training Reactor - 03 (sanitized: Training Reactor - 03), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Wet Plastic Training - 21 & 24 (sanitized: Wet Plastic Training - 21 & 24), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: RPG Su21 - 07 (sanitized: RPG Su21 - 07), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2023 - 24 Bobsleigh (sanitized: Winter 2023 - 24 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: IceFall 2020 - 12 (sanitized: IceFall 2020 - 12), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: RPG Su21 - 09 (sanitized: RPG Su21 - 09), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Training - 23 (1-UP) (sanitized: Training - 23 (1-UP)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 14(Feat (sanitized: Wet Plastic Fall 2023 - 14(Feat), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2024 - 03 No-Grip! (sanitized: Winter 2024 - 03 No-Grip!), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Diversion (CPLess-STTF) (sanitized: Diversion (CPLess-STTF)), totd: False, discovery: {}
-2024-12-16T10:57:29+0100 WARNING: Unmatched map name: Winter 2022 - 03 Asphalt (sanitized: Winter 2022 - 03 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Training - White Combined (sanitized: Training - White Combined), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: IceFall 2020 - 19 (sanitized: IceFall 2020 - 19), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 09 Asphalt  (sanitized: Winter 2022 - 09 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Icy Cavern (CPLess-STTF) (sanitized: Icy Cavern (CPLess-STTF)), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: $n$s$o$2fBHa$4f9n$6f7gi$8f5ng $2FBGa$4f9rd$6f7en$8f5s (CP1) (sanitized: Hanging Gardens (CP1)), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2023 - 03 Bobsleigh (sanitized: Winter 2023 - 03 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 25 Asphalt  (sanitized: Winter 2022 - 25 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: winter 2020 01 slowmo (sanitized: winter 2020 01 slowmo), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - Black Combined (sanitized: Winter 2022 - Black Combined), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 05(Feat (sanitized: Wet Plastic Fall 2023 - 05(Feat), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Training - 25 YEET Puzzle (sanitized: Training - 25 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: IceFall 2020 - 18 (sanitized: IceFall 2020 - 18), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: IceFall 2020 - 22 (sanitized: IceFall 2020 - 22), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2024 - 08 Multilap (sanitized: Winter 2024 - 08 Multilap), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Touchdown [EASY MODE] (sanitized: Touchdown [EASY MODE]), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2023 - 05 - Roofing (sanitized: Winter 2023 - 05 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Training - 14 Fragile (sanitized: Training - 14 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: S01 Reverse (sanitized: S01 Reverse), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2023 - 09 Bobsleigh (sanitized: Winter 2023 - 09 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 05 Asphalt (sanitized: Winter 2022 - 05 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 19 Asphalt  (sanitized: Winter 2022 - 19 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: RPG Su21 - 18 (sanitized: RPG Su21 - 18), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: T03 (sanitized: T03), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 07 (sanitized: (Tech) Summer 2020 - 07), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 20 Asphalt  (sanitized: Winter 2022 - 20 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2023 - 10 - Roofing (sanitized: Winter 2023 - 10 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2023 - 12 Bobsleigh (sanitized: Winter 2023 - 12 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: AirBridge II [EASY MODE] (sanitized: AirBridge II [EASY MODE]), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: Winter 2022 - 16 Asphalt  (sanitized: Winter 2022 - 16 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: $i$s$o$f50A$f60m$f70a$f80r$f90o$fa0k (CS-RallyCar) (sanitized: Amarok (CS-RallyCar)), totd: False, discovery: {}
-2024-12-16T10:57:30+0100 WARNING: Unmatched map name: RPG Su21 - 19 (sanitized: RPG Su21 - 19), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 10 (sanitized: IceFall 2020 - 10), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 09 Scuba Diving (sanitized: Training - 09 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 21 & 24 (Wet Wood) (sanitized: Training - 21 & 24 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 20 Scuba Diving (sanitized: Training - 20 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: $n$o$s$5a0G$4a1r$3a2e$2a3e$1a4n $5a0C$4a1ity v2 - Reverse (sanitized: Green City v2 - Reverse), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2023 - 17 Bobsleigh (sanitized: Winter 2023 - 17 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 17 (sanitized: IceFall 2020 - 17), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 12 (Wet Wood) (sanitized: Training - 12 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2023 - 18 - Roofing (sanitized: Winter 2023 - 18 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Symmetrical Summer 2022 - 15 (unvalidated) (sanitized: Symmetrical Summer 2022 - 15 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2024 - 24 - Podium (unvalidated) (sanitized: Winter 2024 - 24 - Podium (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: T01 (sanitized: T01), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 07 (sanitized: IceFall 2020 - 07), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 23 (Wet Wood) (sanitized: Training - 23 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 16(Feat (sanitized: Wet Plastic Fall 2023 - 16(Feat), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 20 YEET Puzzle (sanitized: Training - 20 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2023 - 06 Bobsleigh (sanitized: Winter 2023 - 06 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2022 - 21 Asphalt  (sanitized: Winter 2022 - 21 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 24 (unvalidated) (sanitized: Symmetrical Winter 2023 - 24 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2023 - 23 - Roofing (sanitized: Winter 2023 - 23 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Symmetrixx (1-For) (sanitized: Symmetrixx (1-For)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 25 (sanitized: IceFall 2020 - 25), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 24 YEET Puzzle (sanitized: Training - 24 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2022 - 24 Asphalt  (sanitized: Winter 2022 - 24 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2022 - 23 Asphalt  (sanitized: Winter 2022 - 23 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 20 (sanitized: IceFall 2020 - 20), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 11 Scuba Diving (sanitized: Training - 11 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 23 (sanitized: IceFall 2020 - 23), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: S06 Reverse (sanitized: S06 Reverse), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2023 - 16 - Roofing (sanitized: Winter 2023 - 16 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: The wormhole $zMagnet (sanitized: The wormhole Magnet), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 11 (unvalidated) (sanitized: Symmetrical Winter 2023 - 11 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2021 - 18 - snowcar (unvalidated) (sanitized: Winter 2021 - 18 - snowcar (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Winter 2022 - 22 Asphalt (sanitized: Winter 2022 - 22 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Plastic Winter 2023 - 11 (ft' Kek_DreamZ (sanitized: Plastic Winter 2023 - 11 (), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Training - 13 Scuba Diving (sanitized: Training - 13 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Plastic Summer 2021 - 25 (Fixed) (sanitized: Plastic Summer 2021 - 25 (Fixed)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: $i$s$o$f50A$f60m$f70a$f80r$f90o$fa0k (CS-SnowCar) (sanitized: Amarok (CS-SnowCar)), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_12 (sanitized: Supersized_Spring_2024_-_12), totd: False, discovery: {}
-2024-12-16T10:57:31+0100 WARNING: Unmatched map name: IceFall 2020 - 16 (sanitized: IceFall 2020 - 16), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 21 & 24 Wood (sanitized: Training - 21 & 24 Wood), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: $w$fffSic $999Trackmanius $666Creatus $333Est $zMagnet (sanitized: Sic Trackmanius Creatus Est Magnet), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 04 (Wet Wood) (sanitized: Training - 04 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 01 - Roofing (sanitized: Winter 2023 - 01 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: RPG Su21 - 06 (sanitized: RPG Su21 - 06), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: IceFall 2020 - 11 (sanitized: IceFall 2020 - 11), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: RPG Su21 - 03 (sanitized: RPG Su21 - 03), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: $i$o$s$630Woodslide $0ff2045 $zby NebulaTM (100% WIW) (sanitized: Woodslide 2045 by NebulaTM (100% WIW)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: EDINGBURGH (1-Forward) (sanitized: EDINGBURGH (1-Forward)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Plastice Winter 2024 - 20 (sanitized: Plastice Winter 2024 - 20), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: IceFall 2020 - 06 (sanitized: IceFall 2020 - 06), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 13 Bobsleigh (sanitized: Winter 2023 - 13 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 06 Scuba Diving (sanitized: Training - 06 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 19(Feat (sanitized: Wet Plastic Fall 2023 - 19(Feat), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 06 (sanitized: (Tech) Summer 2020 - 06), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 12 - Roofing (sanitized: Winter 2023 - 12 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Mixed Training - 21-24 (sanitized: Mixed Training - 21-24), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: $F3FH$f9fa$fccn$ffca$cf9m$6f6i $zMagnet (sanitized: Hanami Magnet), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: $o$b$s$f05H$f15i$f16b$f26i$f27s$f37c$f38u$f48s (CS-SnowCar) (sanitized: Hibiscus (CS-SnowCar)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 17 (Stadium) (sanitized: Wet Plastic Spring 2024 - 17 (Stadium)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 12 (1-UP) (sanitized: Training - 12 (1-UP)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2022 - 11 Asphalt  (sanitized: Winter 2022 - 11 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 20 - Roofing (sanitized: Winter 2023 - 20 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 16 Scuba Diving (sanitized: Training - 16 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 08 (Wet Wood) (sanitized: Training - 08 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: YEET S13- (sanitized: YEET S13-), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: IceFall 2020 - 09 (sanitized: IceFall 2020 - 09), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: IceFall 2020 - 03 (sanitized: IceFall 2020 - 03), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 07 - Roofing (sanitized: Winter 2023 - 07 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2022 - 02 Asphalt (sanitized: Winter 2022 - 02 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - Red Combined (sanitized: Training - Red Combined), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Poolhunter Spring 2024 - 02 (sanitized: Poolhunter Spring 2024 - 02), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 07 (Wet Wood) (sanitized: Training - 07 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 09 (Wet Wood) (sanitized: Training - 09 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 13 - Roofing (sanitized: Winter 2023 - 13 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: S07 Reverse (sanitized: S07 Reverse), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: RPG Su21 - 25 (sanitized: RPG Su21 - 25), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 22 Bobsleigh (sanitized: Winter 2023 - 22 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: RPG Su21 - 17 (sanitized: RPG Su21 - 17), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 15 Bobsleigh (sanitized: Winter 2023 - 15 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 02 - Roofing (sanitized: Winter 2023 - 02 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 08 YEET Puzzle (sanitized: Training - 08 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Winter 2023 - 22 - Roofing (sanitized: Winter 2023 - 22 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 04 (sanitized: (Tech) Summer 2020 - 04), totd: False, discovery: {}
-2024-12-16T10:57:32+0100 WARNING: Unmatched map name: Training - 21 YEET Puzzle (sanitized: Training - 21 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 21 Fragile (sanitized: Training - 21 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 11 Bobsleigh (sanitized: Winter 2023 - 11 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 23 YEET Puzzle (sanitized: Training - 23 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: $i$sU-Turn (CS-Rally) (sanitized: U-Turn (CS-Rally)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 24 Fragile (sanitized: Training - 24 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 03 - Podium (unvalidated) (sanitized: Winter 2023 - 03 - Podium (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: RPG Su21 - 02 (sanitized: RPG Su21 - 02), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 21 Bobsleigh (sanitized: Winter 2023 - 21 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 19 - Roofing (sanitized: Winter 2023 - 19 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Plastic Training - 21 & 24 (sanitized: Plastic Training - 21 & 24), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: $o$w$0f0M$2f2o$4f4u$6f6nt$afaai$cfcne$efeer (CS-SnowCar) (sanitized: Mountaineer (CS-SnowCar)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 12 Scuba Diving (sanitized: Training - 12 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 07 Bobsleigh (sanitized: Winter 2023 - 07 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 18 YEET Puzzle (sanitized: Training - 18 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 10(Feat (sanitized: Wet Plastic Fall 2023 - 10(Feat), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Moutain Pass (1-up) (sanitized: Moutain Pass (1-up)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 15(Feat (sanitized: Wet Plastic Fall 2023 - 15(Feat), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: RPG Su21 - 23 (sanitized: RPG Su21 - 23), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Speed Up [EASY MODE] (sanitized: Speed Up [EASY MODE]), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 08 - Roofing (sanitized: Winter 2023 - 08 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 19 (Wet Wood) (sanitized: Training - 19 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 05 (Wet Wood) (sanitized: Training - 05 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2022 - 07 Asphalt  (sanitized: Winter 2022 - 07 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2024 - 21 Wrong Car (sanitized: Winter 2024 - 21 Wrong Car), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 13 (unvalidated) (sanitized: Symmetrical Fall 2022 - 13 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - Checkpoin't - 01 (sanitized: Winter 2023 - Checkpoin't - 01), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training1-forward - 11 (sanitized: Training1-forward - 11), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 08 (sanitized: (Tech) Summer 2020 - 08), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Jungle House (yeet) (sanitized: Jungle House (yeet)), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2023 - 02 Bobsleigh (sanitized: Winter 2023 - 02 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Training - 23 Fragile (sanitized: Training - 23 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:33+0100 WARNING: Unmatched map name: Winter 2024 - 04 Backwards Reverse (sanitized: Winter 2024 - 04 Backwards Reverse), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2023 - 25 Bobsleigh (sanitized: Winter 2023 - 25 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - Green Combined (sanitized: Training - Green Combined), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2023 - 09 - Roofing (sanitized: Winter 2023 - 09 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2023 - There&Back 20 (unvalidated) (sanitized: Winter 2023 - There&Back 20 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: RPG Su21 - 15 (sanitized: RPG Su21 - 15), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 13 (Wet Wood) (sanitized: Training - 13 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: IceFall 2020 - 05 (sanitized: IceFall 2020 - 05), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: IceFall 2020 - 04 (sanitized: IceFall 2020 - 04), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 18(Feat (sanitized: Wet Plastic Fall 2023 - 18(Feat), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 25 (Wet Wood) (sanitized: Training - 25 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Jungle House (1-up) (sanitized: Jungle House (1-up)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2024 - 22 Roofing via Reactor (sanitized: Winter 2024 - 22 Roofing via Reactor), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 25 (unvalidated) (sanitized: Symmetrical Winter 2023 - 25 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: S13 Reverse (sanitized: S13 Reverse), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 16 (sanitized: Training - 16), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 18 (sanitized: Training - 18), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 07 (unvalidated) (sanitized: Symmetrical Fall 2022 - 07 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2022 - 10 Asphalt  (sanitized: Winter 2022 - 10 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 08 Scuba Diving (sanitized: Training - 08 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2022 - 15 Asphalt  (sanitized: Winter 2022 - 15 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Training - 16 (Wet Wood) (sanitized: Training - 16 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:34+0100 WARNING: Unmatched map name: Winter 2024 - 13 Multilap (ft ARï¿½) (sanitized: Winter 2024 - 13 Multilap (ï¿½)), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Vertigo [EASY MODE] (sanitized: Vertigo [EASY MODE]), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Winter 2023 - 04 Bobsleigh (sanitized: Winter 2023 - 04 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 17(Feat (sanitized: Wet Plastic Fall 2023 - 17(Feat), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: $o$w$0f0M$2f2o$4f4u$6f6nt$afaai$cfcne$efeer (CS-RallyCar) (sanitized: Mountaineer (CS-RallyCar)), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: IceFall 2020 - 24 (sanitized: IceFall 2020 - 24), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: RPG Su21 - 05 (sanitized: RPG Su21 - 05), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 10 (sanitized: (Tech) Summer 2020 - 10), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Winter 2023 - 17 - Podium (unvalidated) (sanitized: Winter 2023 - 17 - Podium (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
-2024-12-16T10:57:35+0100 WARNING: Unmatched map name: Winter 2022 - 12 Asphalt  (sanitized: Winter 2022 - 12 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: RGB-Road Magnet (sanitized: RGB-Road Magnet), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Training - 20 Fragile (sanitized: Training - 20 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Training - 07 Scuba Diving (sanitized: Training - 07 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2022 - White Combined (sanitized: Winter 2022 - White Combined), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2024 - 05 but you are in the mud! (sanitized: Winter 2024 - 05 but you are in the mud!), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2023 - 07 - CPs Rotated 90 (sanitized: Winter 2023 - 07 - CPs Rotated 90), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2022 - 01 But Flat (sanitized: Winter 2022 - 01 But Flat), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2022 - 08 Asphalt  (sanitized: Winter 2022 - 08 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2023 - 24 - Roofing (sanitized: Winter 2023 - 24 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Training - 03 (Wet Wood) (sanitized: Training - 03 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2023 - 17 - Roofing (sanitized: Winter 2023 - 17 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: The Wormhole (CPLess - STTF) (sanitized: The Wormhole (CPLess - STTF)), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: IceFall 2020 - 15 (sanitized: IceFall 2020 - 15), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Winter 2022 - 13 Asphalt  (sanitized: Winter 2022 - 13 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:36+0100 WARNING: Unmatched map name: Training - 03 Scuba Diving (sanitized: Training - 03 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 17 (unvalidated) (sanitized: Symmetrical Winter 2023 - 17 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Training - 22 YEET Puzzle (sanitized: Training - 22 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Winter 2024 - 23 Multilap (sanitized: Winter 2024 - 23 Multilap), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 08 (Stadium) (sanitized: Wet Plastic Spring 2024 - 08 (Stadium)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Winter 2023 - 20 - Podium (unvalidated) (sanitized: Winter 2023 - 20 - Podium (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 25 (Stadium) (sanitized: Wet Plastic Spring 2024 - 25 (Stadium)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Training - 20 (Wet Wood) (sanitized: Training - 20 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Training - 15 YEET Puzzle (sanitized: Training - 15 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: temple of unknown (CPLess) (sanitized: temple of unknown (CPLess)), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: IceFall 2020 - 21 (sanitized: IceFall 2020 - 21), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Winter 2022 - 17 Asphalt (sanitized: Winter 2022 - 17 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: T09 Reverse (sanitized: T09 Reverse), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: RPG Su21 - 22 (sanitized: RPG Su21 - 22), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Training - 12 Fragile (sanitized: Training - 12 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 03 (sanitized: (Tech) Summer 2020 - 03), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Training - 17 cpless (sanitized: Training - 17 cpless), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 21 - CPs Rotated 90ï¿½ (sanitized: [UNVALIDATED] Spring 2023 - 21 - CPs Rotated 90ï¿½), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: RPG Su21 - 16 (sanitized: RPG Su21 - 16), totd: False, discovery: {}
-2024-12-16T10:57:37+0100 WARNING: Unmatched map name: Green City V2 (cpless) (sanitized: Green City V2 (cpless)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Icy  ReactorTraining - 19 (sanitized: Icy ReactorTraining - 19), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Training - Black Combined (sanitized: Training - Black Combined), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: S06 but you need to get onto the surfaceless blocks (sanitized: S06 but you need to get onto the surfaceless blocks), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 01 (Stadium) (sanitized: Wet Plastic Spring 2024 - 01 (Stadium)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: IceFall 2020 - 01 (sanitized: IceFall 2020 - 01), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Winter 2022 - 18 Asphalt  (sanitized: Winter 2022 - 18 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Wet Plastic Winter 2024 - 08 (B side) (sanitized: Wet Plastic Winter 2024 - 08 (B side)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: RPG Su21 - 20 (sanitized: RPG Su21 - 20), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Suburbia (CPLess-STTF) (sanitized: Suburbia (CPLess-STTF)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: IceFall 2020 - 02 (sanitized: IceFall 2020 - 02), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Winter 2023 - 06 - Roofing (sanitized: Winter 2023 - 06 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Training - 11 (Wet Wood) (sanitized: Training - 11 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Winter 2024 - Last Section Joined (sanitized: Winter 2024 - Last Section Joined), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Training - 18 (Wet Wood) (sanitized: Training - 18 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: $O$S$FFFc$BFFo$7FFl$3FFd $3FFh$6FFa$9FFn$CFFd$FFFs (RallyCar (sanitized: cold hands (RallyCar), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: handpan stadium Magnet (sanitized: handpan stadium Magnet), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: Training - 04 Scuba Diving (sanitized: Training - 04 Scuba Diving), totd: False, discovery: {}
-2024-12-16T10:57:38+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 25 - CPs Rotated 90ï¿½ (sanitized: [UNVALIDATED] Spring 2023 - 25 - CPs Rotated 90ï¿½), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: RPG Su21 - 24 (sanitized: RPG Su21 - 24), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Training - 16 Walmart Mini 'AT  by BlueJinx (sanitized: Training - 16 Walmart Mini 'AT by BlueJinx), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2023 - 15 - Roofing (sanitized: Winter 2023 - 15 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Training - 13 Fragile (sanitized: Training - 13 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2023 - 11 - Roofing (sanitized: Winter 2023 - 11 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: $o$b$s$f05H$f15i$f16b$f26i$f27s$f37c$f38u$f48s (CS-RallyCar) (sanitized: Hibiscus (CS-RallyCar)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2022 - 04 Asphalt (sanitized: Winter 2022 - 04 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: IceFall 2020 - 08 (sanitized: IceFall 2020 - 08), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2021 - 16 - snowcar (unvalidated) (sanitized: Winter 2021 - 16 - snowcar (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: IceFall 2020 - 13 (sanitized: IceFall 2020 - 13), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 21 (Validated) (sanitized: Symmetrical Fall 2022 - 21 (Validated)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Mighty Desert (Cawswitch DesertCar) (sanitized: Mighty Desert (Cawswitch DesertCar)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 04(Feat (sanitized: Wet Plastic Fall 2023 - 04(Feat), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: $o$88FArctic Nightrush (Wood) (sanitized: Arctic Nightrush (Wood)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2022 - Green Combined (sanitized: Winter 2022 - Green Combined), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Training - 01 Scuba diving (sanitized: Training - 01 Scuba diving), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: RPG Su21 - 04 (sanitized: RPG Su21 - 04), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Training - 22 (Wet Wood) (sanitized: Training - 22 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2023 - 04 - Roofing (sanitized: Winter 2023 - 04 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Winter 2022 - 06 Asphalt (sanitized: Winter 2022 - 06 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: Training - 17 (Wet Wood) (sanitized: Training - 17 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:39+0100 WARNING: Unmatched map name: KnifeEdge [EASY MODE] (sanitized: KnifeEdge [EASY MODE]), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_05 (sanitized: Supersized_Spring_2024_-_05), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Training - 22 Fragile (sanitized: Training - 22 Fragile), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: RPG Su21 - 10 (sanitized: RPG Su21 - 10), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Training - 02 (Wet Wood) (sanitized: Training - 02 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Winter 2022 - 14 Asphalt  (sanitized: Winter 2022 - 14 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: RPG Su21 - 14 (sanitized: RPG Su21 - 14), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Winter 2023 - 14 - Roofing (sanitized: Winter 2023 - 14 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Symmetrical Summer 2022 - 21 (unvalidated) (sanitized: Symmetrical Summer 2022 - 21 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Symmetrixx Magnet (sanitized: Symmetrixx Magnet), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 09 (sanitized: (Tech) Summer 2020 - 09), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: WoodyDesert Plastic (sanitized: WoodyDesert Plastic), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: $oDesert Fest (STTF-CPLess) (sanitized: Desert Fest (STTF-CPLess)), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: RPG Su21 - 13 (sanitized: RPG Su21 - 13), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Training - Blue Combined (sanitized: Training - Blue Combined), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Winter 2023 - There&Back 11 (unvalidated) (sanitized: Winter 2023 - There&Back 11 (unvalidated)), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Training - 16 YEET Puzzle (sanitized: Training - 16 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:40+0100 WARNING: Unmatched map name: Training - 01 (Wet Wood) (sanitized: Training - 01 (Wet Wood)), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: $i$sU-Turn (Snow) (sanitized: U-Turn (Snow)), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: Winter 2022 - 01 Asphalt (sanitized: Winter 2022 - 01 Asphalt), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: GreenCity (SnowCar) (sanitized: GreenCity (SnowCar)), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 09(Feat (sanitized: Wet Plastic Fall 2023 - 09(Feat), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: Training - 19 YEET Puzzle (sanitized: Training - 19 YEET Puzzle), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: Winter 2023 - 25 - Roofing (sanitized: Winter 2023 - 25 - Roofing), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: IceFall 2020 - 14 (sanitized: IceFall 2020 - 14), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: (Tech) Summer 2020 - 05 (sanitized: (Tech) Summer 2020 - 05), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: Winter 2022 - Red Combined (sanitized: Winter 2022 - Red Combined), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: $f70Joy$80fRide $zMagnet (sanitized: JoyRide Magnet), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: RPG Su21 - 21 (sanitized: RPG Su21 - 21), totd: False, discovery: {}
-2024-12-16T10:57:41+0100 WARNING: Unmatched map name: RPG Su21 - 12 (sanitized: RPG Su21 - 12), totd: False, discovery: {}
-2024-12-16T10:57:42+0100 WARNING: Unmatched map name: Winter 2023 - 19 Bobsleigh (sanitized: Winter 2023 - 19 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:42+0100 WARNING: Unmatched map name: Winter 2023 - 05 Bobsleigh (sanitized: Winter 2023 - 05 Bobsleigh), totd: False, discovery: {}
-2024-12-16T10:57:42+0100 WARNING: Unmatched map name: Winter 2022 - Blue Combined (sanitized: Winter 2022 - Blue Combined), totd: False, discovery: {}
-2024-12-16T10:57:43+0100 INFO: Parsed data written to parsed_map_data.json
+2024-12-16T16:53:20+0100 INFO: totd_pattern_group written to pattern_dings.txt
+2024-12-16T16:53:20+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2024-12-16T16:53:20+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Training - 10 (sanitized: Training - 10), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Training - 17 (sanitized: Training - 17), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Training - 08 (sanitized: Training - 08), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: $fd7The Speedster (CP1-End) (sanitized: The Speedster (CP1-End)), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 13 - CPs Rotated 90° (sanitized: [UNVALIDATED] Spring 2023 - 13 - CPs Rotated 90°), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: $fd7The Speedster (SnowCar) (sanitized: The Speedster (SnowCar)), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: [Snow] $<Training - 21 & 24 Wood$> (sanitized: [Snow] Training - 21 & 24 Wood), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: $o$88FArctic Nightrush (Wet Wood) (sanitized: Arctic Nightrush (Wet Wood)), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Winter 2024 - 08 Remixed (sanitized: Winter 2024 - 08 Remixed), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Winter 2023 - 06 CPs Rotated 90° (sanitized: Winter 2023 - 06 CPs Rotated 90°), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: S04 (sanitized: S04), totd: False, discovery: {}
+2024-12-16T16:53:21+0100 WARNING: Unmatched map name: Winter 2023 - 01 - Podium (unvalidated) (sanitized: Winter 2023 - 01 - Podium (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Wet Plastic Training - 21 & 24 (sanitized: Wet Plastic Training - 21 & 24), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: IceFall 2020 - 12 (sanitized: IceFall 2020 - 12), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: $fd7The Speedster (Carswitch DesertCar) (sanitized: The Speedster (Carswitch DesertCar)), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 14(Feat (sanitized: Wet Plastic Fall 2023 - 14(Feat), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Diversion (CPLess-STTF) (sanitized: Diversion (CPLess-STTF)), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Training - White Combined (sanitized: Training - White Combined), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: IceFall 2020 - 19 (sanitized: IceFall 2020 - 19), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Icy Cavern (CPLess-STTF) (sanitized: Icy Cavern (CPLess-STTF)), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
+2024-12-16T16:53:22+0100 WARNING: Unmatched map name: $n$s$o$2fBHa$4f9n$6f7gi$8f5ng $2FBGa$4f9rd$6f7en$8f5s (CP1) (sanitized: Hanging Gardens (CP1)), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: Winter 2022 - Black Combined (sanitized: Winter 2022 - Black Combined), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: $fd7The Speedster (1-Forward) (sanitized: The Speedster (1-Forward)), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 05(Feat (sanitized: Wet Plastic Fall 2023 - 05(Feat), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: IceFall 2020 - 18 (sanitized: IceFall 2020 - 18), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: IceFall 2020 - 22 (sanitized: IceFall 2020 - 22), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: Winter 2024 - 08 Multilap (sanitized: Winter 2024 - 08 Multilap), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: Touchdown [EASY MODE] (sanitized: Touchdown [EASY MODE]), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: T03 (sanitized: T03), totd: False, discovery: {}
+2024-12-16T16:53:23+0100 WARNING: Unmatched map name: AirBridge II [EASY MODE] (sanitized: AirBridge II [EASY MODE]), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: IceFall 2020 - 10 (sanitized: IceFall 2020 - 10), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: $n$o$s$5a0G$4a1r$3a2e$2a3e$1a4n $5a0C$4a1ity v2 - Reverse (sanitized: Green City v2 - Reverse), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: IceFall 2020 - 17 (sanitized: IceFall 2020 - 17), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: $fd7The Speedster - Reverse (sanitized: The Speedster - Reverse), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: Symmetrical Summer 2022 - 15 (unvalidated) (sanitized: Symmetrical Summer 2022 - 15 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: Winter 2024 - 24 - Podium (unvalidated) (sanitized: Winter 2024 - 24 - Podium (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: T01 (sanitized: T01), totd: False, discovery: {}
+2024-12-16T16:53:24+0100 WARNING: Unmatched map name: IceFall 2020 - 07 (sanitized: IceFall 2020 - 07), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 16(Feat (sanitized: Wet Plastic Fall 2023 - 16(Feat), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 24 (unvalidated) (sanitized: Symmetrical Winter 2023 - 24 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Symmetrixx (1-For) (sanitized: Symmetrixx (1-For)), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: IceFall 2020 - 25 (sanitized: IceFall 2020 - 25), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: IceFall 2020 - 20 (sanitized: IceFall 2020 - 20), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: IceFall 2020 - 23 (sanitized: IceFall 2020 - 23), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 11 (unvalidated) (sanitized: Symmetrical Winter 2023 - 11 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Winter 2021 - 18 - snowcar (unvalidated) (sanitized: Winter 2021 - 18 - snowcar (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Plastic Winter 2023 - 11 (ft' Kek_DreamZ (sanitized: Plastic Winter 2023 - 11 (), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Plastic Summer 2021 - 25 (Fixed) (sanitized: Plastic Summer 2021 - 25 (Fixed)), totd: False, discovery: {}
+2024-12-16T16:53:25+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_12 (sanitized: Supersized_Spring_2024_-_12), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: IceFall 2020 - 16 (sanitized: IceFall 2020 - 16), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Training - 21 & 24 Wood (sanitized: Training - 21 & 24 Wood), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: IceFall 2020 - 11 (sanitized: IceFall 2020 - 11), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: $i$o$s$630Woodslide $0ff2045 $zby NebulaTM (100% WIW) (sanitized: Woodslide 2045 by NebulaTM (100% WIW)), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: EDINGBURGH (1-Forward) (sanitized: EDINGBURGH (1-Forward)), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Plastice Winter 2024 - 20 (sanitized: Plastice Winter 2024 - 20), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: IceFall 2020 - 06 (sanitized: IceFall 2020 - 06), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 19(Feat (sanitized: Wet Plastic Fall 2023 - 19(Feat), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 17 (Stadium) (sanitized: Wet Plastic Spring 2024 - 17 (Stadium)), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: YEET S13- (sanitized: YEET S13-), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: IceFall 2020 - 09 (sanitized: IceFall 2020 - 09), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: IceFall 2020 - 03 (sanitized: IceFall 2020 - 03), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: $fd7The Speedster (1-up) (sanitized: The Speedster (1-up)), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Training - Red Combined (sanitized: Training - Red Combined), totd: False, discovery: {}
+2024-12-16T16:53:26+0100 WARNING: Unmatched map name: Poolhunter Spring 2024 - 02 (sanitized: Poolhunter Spring 2024 - 02), totd: False, discovery: {}
+2024-12-16T16:53:27+0100 WARNING: Unmatched map name: $fd7The Speedster (1-Down) (sanitized: The Speedster (1-Down)), totd: False, discovery: {}
+2024-12-16T16:53:27+0100 WARNING: Unmatched map name: Winter 2023 - 03 - Podium (unvalidated) (sanitized: Winter 2023 - 03 - Podium (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 10(Feat (sanitized: Wet Plastic Fall 2023 - 10(Feat), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Moutain Pass (1-up) (sanitized: Moutain Pass (1-up)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 15(Feat (sanitized: Wet Plastic Fall 2023 - 15(Feat), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Speed Up [EASY MODE] (sanitized: Speed Up [EASY MODE]), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: $fd7The Speedster (STTF) (sanitized: The Speedster (STTF)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Winter 2024 - 21 Wrong Car (sanitized: Winter 2024 - 21 Wrong Car), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 13 (unvalidated) (sanitized: Symmetrical Fall 2022 - 13 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Winter 2023 - Checkpoin't - 01 (sanitized: Winter 2023 - Checkpoin't - 01), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Training1-forward - 11 (sanitized: Training1-forward - 11), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Winter 2024 - 04 Backwards Reverse (sanitized: Winter 2024 - 04 Backwards Reverse), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Training - Green Combined (sanitized: Training - Green Combined), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: $fd7The Speedster (DesertCar) (sanitized: The Speedster (DesertCar)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: $fd7The Speedster (cpless) (sanitized: The Speedster (cpless)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: Winter 2023 - There&Back 20 (unvalidated) (sanitized: Winter 2023 - There&Back 20 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: IceFall 2020 - 05 (sanitized: IceFall 2020 - 05), totd: False, discovery: {}
+2024-12-16T16:53:28+0100 WARNING: Unmatched map name: IceFall 2020 - 04 (sanitized: IceFall 2020 - 04), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 18(Feat (sanitized: Wet Plastic Fall 2023 - 18(Feat), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Winter 2024 - 22 Roofing via Reactor (sanitized: Winter 2024 - 22 Roofing via Reactor), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 25 (unvalidated) (sanitized: Symmetrical Winter 2023 - 25 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Training - 16 (sanitized: Training - 16), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Training - 18 (sanitized: Training - 18), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 07 (unvalidated) (sanitized: Symmetrical Fall 2022 - 07 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Winter 2024 - 13 Multilap (ft AR…) (sanitized: Winter 2024 - 13 Multilap (…)), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Vertigo [EASY MODE] (sanitized: Vertigo [EASY MODE]), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 17(Feat (sanitized: Wet Plastic Fall 2023 - 17(Feat), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: IceFall 2020 - 24 (sanitized: IceFall 2020 - 24), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Winter 2023 - 17 - Podium (unvalidated) (sanitized: Winter 2023 - 17 - Podium (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:29+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2022 - White Combined (sanitized: Winter 2022 - White Combined), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2024 - 05 but you are in the mud! (sanitized: Winter 2024 - 05 but you are in the mud!), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2023 - 07 - CPs Rotated 90 (sanitized: Winter 2023 - 07 - CPs Rotated 90), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2022 - 01 But Flat (sanitized: Winter 2022 - 01 But Flat), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: The Wormhole (CPLess - STTF) (sanitized: The Wormhole (CPLess - STTF)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: IceFall 2020 - 15 (sanitized: IceFall 2020 - 15), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Symmetrical Winter 2023 - 17 (unvalidated) (sanitized: Symmetrical Winter 2023 - 17 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2024 - 23 Multilap (sanitized: Winter 2024 - 23 Multilap), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 08 (Stadium) (sanitized: Wet Plastic Spring 2024 - 08 (Stadium)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Winter 2023 - 20 - Podium (unvalidated) (sanitized: Winter 2023 - 20 - Podium (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 25 (Stadium) (sanitized: Wet Plastic Spring 2024 - 25 (Stadium)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: temple of unknown (CPLess) (sanitized: temple of unknown (CPLess)), totd: False, discovery: {}
+2024-12-16T16:53:30+0100 WARNING: Unmatched map name: IceFall 2020 - 21 (sanitized: IceFall 2020 - 21), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Training - 17 cpless (sanitized: Training - 17 cpless), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 21 - CPs Rotated 90° (sanitized: [UNVALIDATED] Spring 2023 - 21 - CPs Rotated 90°), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: $fd7The Speedster (yeet) (sanitized: The Speedster (yeet)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Green City V2 (cpless) (sanitized: Green City V2 (cpless)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Icy  ReactorTraining - 19 (sanitized: Icy ReactorTraining - 19), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Training - Black Combined (sanitized: Training - Black Combined), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: S06 but you need to get onto the surfaceless blocks (sanitized: S06 but you need to get onto the surfaceless blocks), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Wet Plastic Spring 2024 - 01 (Stadium) (sanitized: Wet Plastic Spring 2024 - 01 (Stadium)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: IceFall 2020 - 01 (sanitized: IceFall 2020 - 01), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Wet Plastic Winter 2024 - 08 (B side) (sanitized: Wet Plastic Winter 2024 - 08 (B side)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Suburbia (CPLess-STTF) (sanitized: Suburbia (CPLess-STTF)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: IceFall 2020 - 02 (sanitized: IceFall 2020 - 02), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Winter 2024 - Last Section Joined (sanitized: Winter 2024 - Last Section Joined), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: $O$S$FFFc$BFFo$7FFl$3FFd $3FFh$6FFa$9FFn$CFFd$FFFs (RallyCar (sanitized: cold hands (RallyCar), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: [UNVALIDATED] Spring 2023 - 25 - CPs Rotated 90° (sanitized: [UNVALIDATED] Spring 2023 - 25 - CPs Rotated 90°), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Training - 16 Walmart Mini 'AT  by BlueJinx (sanitized: Training - 16 Walmart Mini 'AT by BlueJinx), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: Winter 2021 - 16 - snowcar (unvalidated) (sanitized: Winter 2021 - 16 - snowcar (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:31+0100 WARNING: Unmatched map name: IceFall 2020 - 08 (sanitized: IceFall 2020 - 08), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: $fd7The Speedster (Underwater) (sanitized: The Speedster (Underwater)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: IceFall 2020 - 13 (sanitized: IceFall 2020 - 13), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 21 (Validated) (sanitized: Symmetrical Fall 2022 - 21 (Validated)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Mighty Desert (Cawswitch DesertCar) (sanitized: Mighty Desert (Cawswitch DesertCar)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 04(Feat (sanitized: Wet Plastic Fall 2023 - 04(Feat), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: $fd7The Speedster (CS-RC) (sanitized: The Speedster (CS-RC)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: $o$88FArctic Nightrush (Wood) (sanitized: Arctic Nightrush (Wood)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Winter 2022 - Green Combined (sanitized: Winter 2022 - Green Combined), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: KnifeEdge [EASY MODE] (sanitized: KnifeEdge [EASY MODE]), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_05 (sanitized: Supersized_Spring_2024_-_05), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Symmetrical Summer 2022 - 21 (unvalidated) (sanitized: Symmetrical Summer 2022 - 21 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: WoodyDesert Plastic (sanitized: WoodyDesert Plastic), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: $oDesert Fest (STTF-CPLess) (sanitized: Desert Fest (STTF-CPLess)), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Training - Blue Combined (sanitized: Training - Blue Combined), totd: False, discovery: {}
+2024-12-16T16:53:32+0100 WARNING: Unmatched map name: Winter 2023 - There&Back 11 (unvalidated) (sanitized: Winter 2023 - There&Back 11 (unvalidated)), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: Wet Plastic Fall 2023 - 09(Feat (sanitized: Wet Plastic Fall 2023 - 09(Feat), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: GreenCity (SnowCar) (sanitized: GreenCity (SnowCar)), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: IceFall 2020 - 14 (sanitized: IceFall 2020 - 14), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: Winter 2022 - Red Combined (sanitized: Winter 2022 - Red Combined), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: $fd7The Speedster (RallyCar) (sanitized: The Speedster (RallyCar)), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: $fd7The Speedster (CS-SC) (sanitized: The Speedster (CS-SC)), totd: False, discovery: {}
+2024-12-16T16:53:33+0100 WARNING: Unmatched map name: Winter 2022 - Blue Combined (sanitized: Winter 2022 - Blue Combined), totd: False, discovery: {}
+2024-12-16T16:53:34+0100 INFO: Parsed data written to parsed_map_data.json

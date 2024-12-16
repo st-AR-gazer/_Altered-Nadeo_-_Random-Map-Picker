@@ -38,6 +38,7 @@ logging.getLogger().addHandler(console_handler)
 logger = logging.getLogger(__name__)
 
 VALID_SEASONS = ["winter", "spring", "summer", "fall", "training"]
+VALID_SEASONS_SHORT = ["wi", "sp", "su", "fa"]
 VALID_MAPNUMBER_COLORS = ["white", "green", "blue", "red", "black"]
 CHINESE_SEASON_MAP = {
     "\u590f\u5b63\u8d5b": "summer", # "夏季赛"
@@ -46,6 +47,7 @@ CHINESE_SEASON_MAP = {
 }
 MAPNUMBER_COLOR_REGEX = '|'.join(VALID_MAPNUMBER_COLORS)
 SEASON_REGEX = '|'.join(VALID_SEASONS)
+SEASON_SHORT_REGEX = '|'.join(VALID_SEASONS_SHORT)
 SEASON_CHINESE_REGEX = '|'.join(CHINESE_SEASON_MAP.keys())
 
 SANITIZE_PATTERN = re.compile(
@@ -343,7 +345,18 @@ def match_known_patterns(map_name: str):
                     logger.warning(f"Unknown Chinese season '{season_chinese_value}'")
                 del attrs['season_chinese']
 
-            # Training = 2020 always
+            # Set abbreviations to full season name
+            if attrs.get('season', None):
+                season_abbr = attrs['season'].lower()
+                if season_abbr == 'su':
+                    attrs['season'] = 'summer'
+                elif season_abbr == 'fa':
+                    attrs['season'] = 'fall'
+                elif season_abbr == 'sp':
+                    attrs['season'] = 'spring'
+                elif season_abbr == 'wi':
+                    attrs['season'] = 'winter'
+
             if attrs['season'] and attrs['season'].lower() == 'training':
                 attrs['year'] = 2020
 
