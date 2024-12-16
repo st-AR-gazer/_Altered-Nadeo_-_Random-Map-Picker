@@ -984,6 +984,14 @@ rallycarswitch_totd_pattern_3 = re.compile(
 rallycarswitch_totd_pattern_4 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration>CS-RallyCar)\)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (RallyCar)"
+rallycarswitch_totd_pattern_5 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>RallyCar)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (RallyCar"
+rallycarswitch_totd_pattern_6 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration>RallyCar)$",
+    re.IGNORECASE)
 
     # -------- [Rally] CP1 is End ---------- #
 # Pattern seasonal: "[Rally] <season> <year> - <mapnumber> Cp1 is End"
@@ -1944,7 +1952,7 @@ ALL_PATTERNS = [
     snowwetplastic_seasonal_pattern_1,
     snowwood_seasonal_pattern_1, snowwood_training_pattern_1,
     rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
-    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4,
+    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6,
     rallycp1isend_seasonal_pattern_1, rallycp1isend_seasonal_pattern_2, rallycp1isend_spring2020_pattern_1,
     rallyice_seasonal_pattern_1,
     rallytothetop_seasonal_pattern_1,
