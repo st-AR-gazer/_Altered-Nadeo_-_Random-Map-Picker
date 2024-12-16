@@ -1635,7 +1635,7 @@ ALL_TOTD_MAP_NAMES = {
     "Fresh Air",
     "Paprika V2",
     "THERMALTECH",
-    "Junglehouse",
+    "Junglehouse", "Jungle House", # Note this was added manually, as it seems like someone (not pointing figers here, but def hugo) that it's written Junglehouse and not Jungle House xdd (or it's my fault, I'd never know :xpp:)
     "Amethyst Castle",
     "C o d a",
     "Morocco",

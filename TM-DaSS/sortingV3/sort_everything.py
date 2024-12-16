@@ -38,7 +38,15 @@ logging.getLogger().addHandler(console_handler)
 logger = logging.getLogger(__name__)
 
 VALID_SEASONS = ["winter", "spring", "summer", "fall", "training"]
+VALID_MAPNUMBER_COLORS = ["white", "green", "blue", "red", "black"]
+CHINESE_SEASON_MAP = {
+    "\u590f\u5b63\u8d5b": "summer", # "夏季赛"
+    "\u79cb\u5b63": "fall",         # "秋季"
+    "\u8bad\u7ec3": "training"      # "训练"
+}
+MAPNUMBER_COLOR_REGEX = '|'.join(VALID_MAPNUMBER_COLORS)
 SEASON_REGEX = '|'.join(VALID_SEASONS)
+SEASON_CHINESE_REGEX = '|'.join(CHINESE_SEASON_MAP.keys())
 
 SANITIZE_PATTERN = re.compile(
     r'\$([0-9a-fA-F]{1,3}|[iIoOnNmMwWsSzZtTgG<>]|[lLhHpP](\[[^\]]+\])?)'
@@ -149,34 +157,19 @@ def normalize_whitespace(map_name: str):
     return re.sub(r'\s+', ' ', map_name).strip()
 
 def match_known_patterns(map_name: str):
+    # See top of file for pattern definitions
+    # CHINESE_SEASON_MAP = {
+    #     "\u590f\u5b63\u8d5b": "summer", # "夏季赛"
+    #     "\u79cb\u5b63": "fall",         # "秋季"
+    #     "\u8bad\u7ec3": "training"      # "训练"
+    # }
+
     for pattern in ALL_PATTERNS:
         match = pattern.match(map_name)
         if match:
             attrs = match.groupdict()
-
-            if totd_full_pattern.match(map_name):
-                attrs['season'] = None
-                attrs['year'] = None
-                attrs['mapnumber'] = []
-                attrs['type'] = 'totd'
-                if 'alteration' not in attrs:
-                    attrs['alteration'] = ''
-                return attrs
             
-            if 'competitionname' in attrs and attrs['competitionname']:
-                competition_name = attrs['competitionname']
-                for competition in ALL_COMPETITION_MAP_NAMES:
-                    if competition_name in competition["maps"]:
-                        attrs['season'] = competition['season'] if competition['season'] != '_' else None
-                        attrs['year'] = validate_year(int(competition['year']))
-                        attrs['type'] = competition['competition']
-                        attrs['mapnumber'] = []
-                        
-                        if 'alteration' not in attrs or not attrs['alteration']:
-                            attrs['alteration'] = ''
-                        
-                        return attrs
-                
+            # Check discovery
             if 'discoveryname' in attrs and attrs['discoveryname']:
                 discovery_name = attrs['discoveryname']
                 for campaign in DISCOVERY_CAMPAIGNS:
@@ -191,14 +184,38 @@ def match_known_patterns(map_name: str):
                             if 'alteration' not in attrs:
                                 attrs['alteration'] = ''
                             return attrs
+            
+            # Check TOTD
+            if totd_full_pattern.match(map_name):
+                attrs['season'] = None
+                attrs['year'] = None
+                attrs['mapnumber'] = []
+                attrs['type'] = 'totd'
+                if 'alteration' not in attrs:
+                    attrs['alteration'] = ''
+                return attrs
+            
+            # Check competitions
+            if 'competitionname' in attrs and attrs['competitionname']:
+                competition_name = attrs['competitionname']
+                for competition in ALL_COMPETITION_MAP_NAMES:
+                    if competition_name in competition["maps"]:
+                        attrs['season'] = competition['season'] if competition['season'] != '_' else None
+                        attrs['year'] = validate_year(int(competition['year']))
+                        attrs['type'] = competition['competition']
+                        attrs['mapnumber'] = []
                         
+                        if 'alteration' not in attrs or not attrs['alteration']:
+                            attrs['alteration'] = ''
+                        
+                        return attrs
+            
+            # Check spring2020
             if 'spring2020' in attrs and attrs['spring2020']:
                 code = attrs['spring2020'].upper()
                 season = 'Spring'
                 year = 2020
                 map_num = int(code[1:])
-                # If starts with 'S': season='Spring', year=2020, mapnumber=mapnumber=mapnumber
-                # If starts with 'T': season='Spring', year=2020, mapnumber=mapnumber+10=mapnumber
                 if code.startswith('T'):
                     map_num += 10
                 valid_mapnums = validate_mapnumber([map_num])
@@ -212,6 +229,7 @@ def match_known_patterns(map_name: str):
                     'type': None
                 }
 
+            # Validate year
             if 'year' in attrs and attrs['year']:
                 y = validate_year(int(attrs['year']))
                 if y is None:
@@ -220,13 +238,114 @@ def match_known_patterns(map_name: str):
             else:
                 attrs['year'] = None
             
+            # Handle single mapnumber
+            single_mapnumber = []
             if 'mapnumber' in attrs and attrs['mapnumber']:
-                m = validate_mapnumber([int(attrs['mapnumber'])])
-                if not m:
-                    return None
-                attrs['mapnumber'] = m
+                try:
+                    m = validate_mapnumber([int(attrs['mapnumber'])])
+                    if not m:
+                        return None
+                    single_mapnumber = m
+                except ValueError:
+                    logger.warning(f"Non-numeric single mapnumber: {attrs['mapnumber']}")
+                    single_mapnumber = []
             else:
-                attrs['mapnumber'] = []
+                single_mapnumber = []
+
+            multiple_mapnumbers = []
+
+            # Handle colour-coded sets
+            if 'mapnumber_color' in attrs and attrs['mapnumber_color']:
+                colour_map = {
+                    'white': range(1, 6),
+                    'green': range(6, 11),
+                    'blue': range(11, 16),
+                    'red': range(16, 21),
+                    'black': range(21, 26)
+                }
+                c = attrs['mapnumber_color'].lower()
+                if c in colour_map:
+                    multiple_mapnumbers.extend(colour_map[c])
+                else:
+                    logger.warning(f"Unknown colour '{attrs['mapnumber_color']}' for map numbers.")
+
+            # Handle "Sections X joined"
+            if 'mapnumber_section' in attrs and attrs['mapnumber_section']:
+                try:
+                    sec_num = int(attrs['mapnumber_section'])
+                    if not single_mapnumber and not multiple_mapnumbers:
+                        single_mapnumber = validate_mapnumber([sec_num])
+                    else:
+                        combined = multiple_mapnumbers + single_mapnumber
+                        combined.append(sec_num)
+                        multiple_mapnumbers = validate_mapnumber(combined)
+                        single_mapnumber = []
+                except ValueError:
+                    logger.warning(f"Non-numeric sections value: {attrs['mapnumber_section']}")
+
+            # Handle mapnumber_1 [...] mapnumber_25
+            for i in range(1, 26):
+                key = f'mapnumber_{i}'
+                if key in attrs and attrs[key]:
+                    try:
+                        val = int(attrs[key])
+                        if single_mapnumber and not multiple_mapnumbers:
+                            multiple_mapnumbers = single_mapnumber[:]
+                            single_mapnumber = []
+                        multiple_mapnumbers.append(val)
+                    except ValueError:
+                        logger.warning(f"Non-numeric map number found in {key}: {attrs[key]}")
+
+            # Handle mapnumber_multiple
+            if 'mapnumber_multiple' in attrs and attrs['mapnumber_multiple']:
+                raw_multiple = attrs['mapnumber_multiple'].strip()
+                raw_nums = re.split(r'[&\s]+', raw_multiple)
+                found_nums = []
+                for raw_num in raw_nums:
+                    if raw_num.isdigit():
+                        found_nums.append(int(raw_num))
+                    else:
+                        if raw_num:
+                            logger.warning(f"Non-numeric mapnumber found: {raw_num}")
+                if single_mapnumber and not multiple_mapnumbers:
+                    multiple_mapnumbers = single_mapnumber[:]
+                    single_mapnumber = []
+                multiple_mapnumbers.extend(found_nums)
+
+            if multiple_mapnumbers:
+                multiple_mapnumbers = validate_mapnumber(multiple_mapnumbers)
+
+            if single_mapnumber and multiple_mapnumbers:
+                combined = multiple_mapnumbers + single_mapnumber
+                combined = validate_mapnumber(combined)
+                multiple_mapnumbers = combined
+                single_mapnumber = []
+
+            if multiple_mapnumbers:
+                attrs['mapnumber'] = multiple_mapnumbers
+            else:
+                attrs['mapnumber'] = single_mapnumber
+
+            # Clean up
+            fields_to_remove = ['mapnumber_color', 'mapnumber_section', 'mapnumber_multiple', 'spring2020', 'discoveryname', 'competitionname']
+            for i in range(1, 26):
+                fields_to_remove.append(f'mapnumber_{i}')
+            for field in fields_to_remove:
+                if field in attrs:
+                    del attrs[field]
+
+            # Handle Chinese season names from season_chinese
+            if 'season_chinese' in attrs and attrs['season_chinese']:
+                season_chinese_value = attrs['season_chinese']
+                if season_chinese_value in CHINESE_SEASON_MAP:
+                    attrs['season'] = CHINESE_SEASON_MAP[season_chinese_value]
+                else:
+                    logger.warning(f"Unknown Chinese season '{season_chinese_value}'")
+                del attrs['season_chinese']
+
+            # Training = 2020 always
+            if attrs['season'] and attrs['season'].lower() == 'training':
+                attrs['year'] = 2020
 
             if 'season' in attrs and attrs['season']:
                 attrs['season'] = attrs['season'].capitalize()
