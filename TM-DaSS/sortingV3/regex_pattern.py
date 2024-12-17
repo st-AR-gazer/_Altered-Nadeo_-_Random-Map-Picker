@@ -944,6 +944,10 @@ snowwood_seasonal_pattern_1 = re.compile(
 snowwood_training_pattern_1 = re.compile(
     rf"^(?P<alteration_prefix>\[Snow\])\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Wood)$",
     re.IGNORECASE)
+# Pattern training: "[Snow] Training - <mapnumber_1> & <mapnumber_2> - Wood"
+snowwood_training_pattern_2124 = re.compile(
+    rf"^(?P<alteration_prefix>\[Snow\])\s+(?P<season>Training)\s*-\s*(?P<mapnumber_1>\d{{1,2}})\s*&\s*(?P<mapnumber_2>\d{{1,2}})\s+-\s+(?P<alteration>Wood)$",
+    re.IGNORECASE)
 
     # -------- [Rally] ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> [Rally]"
@@ -1466,9 +1470,13 @@ checkpoin_t_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- Colour Combined ---------- #
-# Pattern1: "<season> <year> - <each map number in sets from 1-5 shown in sets using colours, white = 1-5, green = 6-10, blue = 11-15, red 16-20 black 21-25> Combined"
+# Pattern seasonal: "<season> <year> - <each map number in sets from 1-5 shown in sets using colours, white = 1-5, green = 6-10, blue = 11-15, red 16-20 black 21-25> Combined"
 colourcombined_seasonal_pattern_1 = re.compile(
-    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Combined)$",
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s+(?P<mapnumber_color>{MAPNUMBER_COLOR_REGEX})\s+(?P<alteration>Combined)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber_color> Combined"
+colourcombined_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber_color>{MAPNUMBER_COLOR_REGEX})\s+(?P<alteration>Combined)$",
     re.IGNORECASE)
 
     # -------- Checkpoint Boost Swap ---------- #
@@ -1544,23 +1552,28 @@ checkpointless_totd_pattern_3 = re.compile(
     re.IGNORECASE)
 
     # -------- Checkpointlink ---------- #
-# Pattern1: "<season> <year> - <mapnumber> CPLink"
+# Pattern seasonal: "<season> <year> - <mapnumber> CPLink"
 checkpointlink_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPLink)$",
     re.IGNORECASE)
 
     # -------- Checkpoints Rotated 90° / Got Rotated ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - CPs Rotated 90°"
+# Pattern seasonal: "<season> <year> - <mapnumber> - CPs Rotated 90°"
 checkpointsrotated90_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration>CPs Rotated 90°)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> Got Rotated"
+# Pattern seasonal: "<season> <year> - <mapnumber> CPs Rotated 90°"
+checkpointsrotated90_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>CPs Rotated 90°)$",
+    re.IGNORECASE)
+
+# Pattern seasonal: "<season> <year> - <mapnumber> Got Rotated"
 gotrotated_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration>Got Rotated)$",
     re.IGNORECASE)
 
     # -------- DragonYeet ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (DragonYeet)"
+# Pattern seasonal: "<season> <year> - <mapnumber> (DragonYeet)"
 dragonyeet_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration>DragonYeet)\)$",
     re.IGNORECASE)
@@ -1950,7 +1963,7 @@ ALL_PATTERNS = [
     snowice_seasonal_pattern_1,
     snowunderwater_seasonal_pattern_1,snowunderwater_training_pattern_1,
     snowwetplastic_seasonal_pattern_1,
-    snowwood_seasonal_pattern_1, snowwood_training_pattern_1,
+    snowwood_seasonal_pattern_1, snowwood_training_pattern_1, snowwood_training_pattern_2124,
     rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
     rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6,
     rallycp1isend_seasonal_pattern_1, rallycp1isend_seasonal_pattern_2, rallycp1isend_spring2020_pattern_1,
@@ -2000,13 +2013,13 @@ ALL_PATTERNS = [
     #
     ngolo_seasonal_pattern_1, ngolo_seasonal_pattern_2,
     checkpoin_t_seasonal_pattern_1,
-    colourcombined_seasonal_pattern_1,
+    colourcombined_seasonal_pattern_1, colourcombined_training_pattern_1,
     checkpointboostswap_seasonal_pattern_1, checkpointboostswap_training_pattern_1, checkpointboostswap_spring2020_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
     checkpointfull_seasonal_pattern_1, checkpointfull_seasonal_pattern_2, checkpointfull_training_pattern_1,
     checkpointless_seasonal_pattern_1, checkpointless_training_pattern_1, checkpointless_training_pattern_2, checkpointless_spring2020_pattern_1, checkpointless_spring2020_pattern_2, checkpointless_discovery_pattern_1, checkpointless_totd_pattern_1, checkpointless_totd_pattern_2, checkpointless_totd_pattern_3,
     checkpointlink_seasonal_pattern_1,
-    checkpointsrotated90_seasonal_pattern_1, gotrotated_seasonal_pattern_1,
+    checkpointsrotated90_seasonal_pattern_1, checkpointsrotated90_seasonal_pattern_2, gotrotated_seasonal_pattern_1,
     dragonyeet_seasonal_pattern_1,
     earthquake_seasonal_pattern_1, earthquake_training_pattern_1,
     extracheckpoint_seasonal_pattern_1,

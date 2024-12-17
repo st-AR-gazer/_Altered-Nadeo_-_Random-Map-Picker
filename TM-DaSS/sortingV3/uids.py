@@ -258,10 +258,31 @@ special_uids = [
     
     
     
-    ## Maps that are not meant to be obtained
+    ## Maps that are not meant to be obtained (e.g they are unvalidated, or they are just placeholders)
     {"uid": "Vjhu6a1GXWJGJbNJydlZtC2MOtj", "name": "PLACEHOLDER 04", "season": "spring", "year": "2023", "alteration": "1-UP", "mapNumber": [ "04" ], "obtainable": False},
-
-
+    
+    {"uid": "ZTzEFGOHphwZAcilY3dTNwuU59g", "name": "[UNVALIDATED] Spring 2023 - 13 - CPs Rotated 90°", "season": "spring", "year": "2023", "mapNumber": [ "13" ], "alteration": "CPs Rotated 90°", "validated": False},
+    {"uid": "BRmW3tYmLIAp5TNg73rnz5D62Gm", "name": "[UNVALIDATED] Spring 2023 - 21 - CPs Rotated 90°", "season": "spring", "year": "2023", "mapNumber": [ "21" ], "alteration": "CPs Rotated 90°", "validated": False},
+    {"uid": "XQ8nYm4VSiLF4gC7y_N4NWS6BGk", "name": "[UNVALIDATED] Spring 2023 - 25 - CPs Rotated 90°", "season": "spring", "year": "2023", "mapNumber": [ "25" ], "alteration": "CPs Rotated 90°", "validated": False},
+    {"uid": "aCiovBWPS3UrI3KPMNSXcVHOK90", "name": "Winter 2023 - 01 - Podium (unvalidated)",    "season": "winter", "year": "2023", "mapNumber": [ "01" ], "alteration": "Podium",      "validated": False},
+    {"uid": "28N0D1w0S6gWaJOVP1E3252Atu5", "name": "Winter 2023 - 03 - Podium (unvalidated)",    "season": "winter", "year": "2023", "mapNumber": [ "03" ], "alteration": "Podium", "validated": False},
+    {"uid": "j5514adrufCc6zkLSA6QX3hk2gm", "name": "Winter 2023 - 17 - Podium (unvalidated)",    "season": "winter", "year": "2023", "mapNumber": [ "17" ], "alteration": "Podium", "validated": False},
+    {"uid": "fxMxqA2gIMEx5p9Knh5rTgYT1Dd", "name": "Winter 2023 - 20 - Podium (unvalidated)",    "season": "winter", "year": "2023", "mapNumber": [ "20" ], "alteration": "Podium", "validated": False},
+    {"uid": "vgvkF1tvOsNQAC7RleCqwW2UZw3", "name": "Winter 2024 - 24 - Podium (unvalidated)",    "season": "winter", "year": "2024", "mapNumber": [ "24" ], "alteration": "Podium",      "validated": False},
+    {"uid": "XYKaQ8JOx637xj8jQyVQ6lucX_9", "name": "Symmetrical Fall 2022 - 07 (unvalidated)",   "season": "fall",   "year": "2022", "mapNumber": [ "07" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "GGilCH_KRDD0bRP51WK0u7hVYe3", "name": "Symmetrical Fall 2022 - 13 (unvalidated)",   "season": "fall",   "year": "2022", "mapNumber": [ "13" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "KY3O37LLLyeyO93svmiNqsDYGBi", "name": "Symmetrical Summer 2022 - 15 (unvalidated)", "season": "summer", "year": "2022", "mapNumber": [ "15" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "A9dTg03j0reRWyFrWKdMnN3gOMe", "name": "Symmetrical Summer 2022 - 21 (unvalidated)", "season": "summer", "year": "2022", "mapNumber": [ "21" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "Xu9OY_B1xdTwvTzwBgzMSqw9knm", "name": "Symmetrical Winter 2023 - 11 (unvalidated)", "season": "winter", "year": "2023", "mapNumber": [ "11" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "NBpJRU6eAi5RSWoXWPOI5QryHF9", "name": "Symmetrical Winter 2023 - 17 (unvalidated)", "season": "winter", "year": "2023", "mapNumber": [ "17" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "0ihs49BGNv4WgpV_baJhso6brB",  "name": "Symmetrical Winter 2023 - 24 (unvalidated)", "season": "winter", "year": "2023", "mapNumber": [ "24" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "DoorQsokujjKShodabDE2k6IdE7", "name": "Symmetrical Winter 2023 - 25 (unvalidated)", "season": "winter", "year": "2023", "mapNumber": [ "25" ], "alteration": "Symmetrical", "validated": False},
+    {"uid": "3ptWlEBt2Wm7JtjCcqAOioD9ILa", "name": "Winter 2021 - 18 - snowcar (unvalidated)",   "season": "winter", "year": "2021", "mapNumber": [ "18" ], "alteration": "[Snow]", "validated": False},
+    {"uid": "cEYNLMgxhjRPhSFinGsbYV1X8K3", "name": "Winter 2021 - 16 - snowcar (unvalidated)",   "season": "winter", "year": "2021", "mapNumber": [ "16" ], "alteration": "[Snow]", "validated": False},
+    {"uid": "DgZ4cNaXuq8kJ74X7h6GOecAiqm", "name": "Winter 2023 - There&Back 11 (unvalidated)",  "season": "winter", "year": "2023", "mapNumber": [ "11" ], "alteration": "There&Back", "validated": False},
+    {"uid": "Obpa020ZES5c0rpWkyi7Lk1QI2n", "name": "Winter 2023 - There&Back 20 (unvalidated)",  "season": "winter", "year": "2023", "mapNumber": [ "20" ], "alteration": "There&Back", "validated": False},
+    {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": "", "validated": False},
+    {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": "", "validated": False},
 
 
     ## ----------------
