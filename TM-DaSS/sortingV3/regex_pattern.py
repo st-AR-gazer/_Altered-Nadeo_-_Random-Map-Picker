@@ -1771,7 +1771,7 @@ yeet_training_pattern_1 = re.compile(
     re.IGNORECASE)
 # Pattern spring2020: "YEET <spring2020><mapnumber>"
 yeet_spring2020_pattern_1 = re.compile(
-    r"^(?P<alteration>YEET)\s+(?P<spring2020>[STst][0-1]\d)$",
+    r"^(?P<alteration>YEET)\s+(?P<spring2020>[STst][0-1]\d).*$",
     re.IGNORECASE)
 # Pattern discovery: "YEET <discoveryname>"
 yeet_discovery_pattern_1 = re.compile(
