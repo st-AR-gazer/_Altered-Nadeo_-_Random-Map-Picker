@@ -227,7 +227,7 @@ def match_known_patterns(map_name: str):
                     'season': season,
                     'year': year,
                     'mapnumber': valid_mapnums,
-                    'alteration': '',
+                    'alteration': attrs.get('alteration', ''),
                     'type': None
                 }
 
