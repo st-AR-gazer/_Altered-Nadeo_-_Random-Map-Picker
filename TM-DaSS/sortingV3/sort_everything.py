@@ -2,6 +2,7 @@ import json
 import re
 import logging
 import os
+import traceback
 from concurrent.futures import ThreadPoolExecutor
 from uids import (
     DISCOVERY_CAMPAIGNS,
@@ -99,14 +100,14 @@ def check_discovery_map_name(map_name: str) -> dict:
         for campaign in DISCOVERY_CAMPAIGNS:
             for dmap_name, dmap_number in campaign['maps'].items():
                 if dmap_name.lower() == discovery_name.lower():
-                    year = validate_year(int(campaign['year']))
+                    year = validate_year(int(campaign.get('year', 0)))
                     mapnumber = validate_mapnumber([int(dmap_number)])
                     return {
                         'discoveryname': discovery_name,
-                        'season': campaign['season'].capitalize(),
+                        'season': campaign.get('season', '').capitalize(),
                         'year': year,
                         'mapnumber': mapnumber,
-                        'type': campaign['name']
+                        'type': campaign.get('name', '')
                     }
     return {}
 
@@ -170,6 +171,12 @@ def match_known_patterns(map_name: str):
         match = pattern.match(map_name)
         if match:
             attrs = match.groupdict()
+            logger.debug(f"Pattern matched for map '{map_name}': {attrs}")
+            if 'season' not in attrs:
+                attrs['season'] = None
+                logger.debug(f"'season' key missing in matched pattern for map: {map_name}. Setting to None.")
+            
+
             
             # Check discovery
             if 'discoveryname' in attrs and attrs['discoveryname']:
@@ -357,15 +364,19 @@ def match_known_patterns(map_name: str):
                 elif season_abbr == 'wi':
                     attrs['season'] = 'winter'
 
-            if attrs['season'] and attrs['season'].lower() == 'training':
+            if attrs.get('season') and attrs.get('season').lower() == 'training':
                 attrs['year'] = 2020
-
-            if 'season' in attrs and attrs['season']:
+                
+            if 'season' in attrs and attrs.get('season'):
                 attrs['season'] = attrs['season'].capitalize()
             else:
                 attrs['season'] = None
+                
+            if 'season' not in attrs:
+                attrs['season'] = None
+                logger.debug(f"'season' key missing in matched pattern for map: {map_name}. Setting to None.")
 
-            alteration = attrs.get('alteration', '').strip()
+            alteration = attrs.get('alteration', '')
             alteration_suffix = attrs.get('alteration_suffix', '').strip() if 'alteration_suffix' in attrs else ''
             alteration_prefix = attrs.get('alteration_prefix', '').strip() if 'alteration_prefix' in attrs else ''
             combined_alteration = ' '.join(filter(None, [alteration_prefix, alteration, alteration_suffix])).strip()
@@ -382,8 +393,10 @@ def match_known_patterns(map_name: str):
             
             if 'alteration_additional_info' in attrs:
                 attrs['alterationinfo'] = attrs['alteration_additional_info']
+            logger.debug(f"Final attrs after processing for map: '{map_name}': {attrs}")
 
             return attrs
+    logger.warning(f"No pattern matched for map: {map_name}")
     return None
 
 def assign_attributes(item_data: dict) -> dict:
@@ -428,6 +441,10 @@ def assign_attributes(item_data: dict) -> dict:
     else:
         pass
 
+    if 'season' not in attributes:
+        attributes['season'] = None
+        logger.debug(f"'season' key missing for item: {raw_name}. Setting to None.")
+
     if attributes.get('alteration', '').lower() == 'super':
         attributes['alteration'] = 'Supersized'
 
@@ -439,6 +456,8 @@ def assign_attributes(item_data: dict) -> dict:
         item_data.get('submitter') in OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS
     ):
         attributes['alteration'] = OFFICIAL_NADEO_TAG
+
+    logger.debug(f"Assigned attributes for {raw_name}: {attributes}")
 
     return {**item_data, **attributes}
 
@@ -501,8 +520,7 @@ def main():
                 key, value = future.result()
                 results[key] = value
             except Exception as e:
-                pass
-                #logger.error(f"Error processing item: {e}")
+                logger.exception("Error processing item")
 
     try:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:

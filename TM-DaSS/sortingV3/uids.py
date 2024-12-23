@@ -42,6 +42,14 @@ special_uids = [
         {"uid": "KKNIQ1YCZFlb_B2vdiRLsmkpURi", "name": "Training - 16",                         "season": "Training",   "year": "2020", "mapNumber": [ "16" ], "alteration": "XX-But"},
         {"uid": "S56_TXvc8GttF9tSvBjeZ8Jrs7m", "name": "Training - 18",                         "season": "Training",   "year": "2020", "mapNumber": [ "18" ], "alteration": "XX-But"},
         
+        {"uid": "2TV02W1YnvcLEJM5goYRWqNPTDc", "name": "Training - 07 But it's a slow-mo",      "season": "Training",   "year": "2020", "mapNumber": [ "07" ], "alteration": "XX-But"},
+        {"uid": "H_2r3MUFLqLdCryNe5hqIGm46_0", "name": "Training - 14 but reactor up",          "season": "Training",   "year": "2020", "mapNumber": [ "09" ], "alteration": "XX-But"},
+        {"uid": "VGp7lENZ9Zd0O7puIVwazmPnkU9", "name": "Training - 03 Gapped",                  "season": "Training",   "year": "2020", "mapNumber": [ "03" ], "alteration": "XX-But"},
+        {"uid": "kpOLuGFTMICPkW7gp383PEQ_0A2", "name": "Training - 10 Long",                    "season": "Training",   "year": "2020", "mapNumber": [ "10" ], "alteration": "XX-But"},
+        {"uid": "9amJDNigOGfZttxKLglnveTfn3d", "name": "Training 14 nocut reactor up",          "season": "Training",   "year": "2020", "mapNumber": [ "14" ], "alteration": "XX-But"},
+        {"uid": "d3QP5EMxcSPyxgZbb_fzkh4Abb3", "name": "Winter 2024 - 08 Remixed",              "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
+        {"uid": "CNn0bfNJcrPA_6f2OwDBTHFUio1", "name": "Symmetrical Training - 01",             "season": "Training",   "year": "2020", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        
         # Spring 2020
         
         
@@ -220,9 +228,27 @@ special_uids = [
         {"uid": "1kheFwohy7HlxKkmio19OY0hDQb", "name": "Winter 2024 - 13 Multilap (ft AR…)",                "season": "Winter",     "year": "2024", "mapNumber": [ "13" ], "alteration": "XX-But"},
         {"uid": "qipHoylF2XhDb44xwUtrL5n7H3n", "name": "Winter 2024 - 05 but you are in the mud!",          "season": "Winter",     "year": "2024", "mapNumber": [ "05" ], "alteration": "XX-But"},
         {"uid": "EwzL3kzpa0N2xk6lgbP70KIg2gi", "name": "Winter 2024 - 23 Multilap",                         "season": "Winter",     "year": "2024", "mapNumber": [ "23" ], "alteration": "XX-But"},
+        {"uid": "y5vye6YYR_oVSP5Akxr5vLOEVO0", "name": "Winter 2024 - 04 Backwards Reverse",                "season": "Winter",     "year": "2024", "mapNumber": [ "04" ], "alteration": "XX-But"},
+        {"uid": "B5VL_a4auyjppnXne0hkQ36MXR3", "name": "Winter 2024 - 22 Roofing via Reactor",              "season": "Winter",     "year": "2024", "mapNumber": [ "22" ], "alteration": "XX-But"},
         
 
         
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
@@ -1627,6 +1653,10 @@ ALL_COMPETITION_MAP_NAMES = [
 ]
 
 ALL_TOTD_MAP_NAMES = {
+    
+    "Moutain Pass", # added manually
+    
+    # Added through tm.io:
     "U-Turn",
     "Formule Gou1",
     "Desert & Forest",
