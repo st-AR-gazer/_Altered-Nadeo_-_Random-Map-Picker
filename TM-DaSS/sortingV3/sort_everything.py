@@ -85,13 +85,17 @@ def validate_mapnumber(map_nums: list) -> list:
 # REGEX PATTERNS (defined here for centralized attribute assignment)
 # ------------------------------------------------------------
 # see "regex_pattern.py"
-    
+
 
 
 ft_pattern = re.compile(
-    r"(?:ft' |ft |featuring |AT by |Feat )(\w+)",
+    r"(?:ft' |ft, |ft. |ft |featuring |AT by | AT  by |Feat )(\w+)",
     re.IGNORECASE
 )
+
+unvalidated_pattern = re.compile(
+    r"(?:unvalidated|not validated)",
+    re.IGNORECASE)
 
 def check_discovery_map_name(map_name: str) -> dict:
     match = discovery_full_pattern.match(map_name)
@@ -111,7 +115,6 @@ def check_discovery_map_name(map_name: str) -> dict:
                     }
     return {}
 
-
 def check_totd_map_name(map_name: str) -> bool:
     return bool(totd_full_pattern.match(map_name))
 
@@ -127,16 +130,21 @@ def try_special_uids(map_uid: str):
                 if valid_map_nums:
                     map_nums = valid_map_nums
 
+            is_unvalidated = entry.get('validated', True) is False
+
             attributes = {
                 'season': entry['season'].capitalize() if 'season' in entry and entry['season'] else None,
                 'year': year,
                 'mapnumber': map_nums,
-                'alteration': entry['alteration'] if 'alteration' in entry and entry['alteration'] else ''
+                'alteration_mix': [entry['alteration']] if entry.get('alteration') else [],
+                'unvalidated': is_unvalidated,
+                'ft': None
             }
 
             attributes['pass_special'] = entry.get('pass', False)
             return attributes
     return None
+
 
 
 def extract_and_remove_ft(map_name: str):
@@ -155,11 +163,26 @@ def extract_and_remove_ft(map_name: str):
 
     return map_name, username if match else None
 
+def extract_and_remove_unvalidated(map_name: str):
+    match = unvalidated_pattern.search(map_name)
+    is_unvalidated = False
+    if match:
+        is_unvalidated = True
+        map_name = unvalidated_pattern.sub('', map_name).strip()
+
+    if map_name.endswith('()'):
+        map_name = map_name[:-2].strip()
+
+    if map_name.startswith('(') and map_name.endswith(')'):
+        map_name = map_name[1:-1].strip()
+
+    return map_name, is_unvalidated
+
 
 def normalize_whitespace(map_name: str):
     return re.sub(r'\s+', ' ', map_name).strip()
 
-def match_known_patterns(map_name: str):
+def match_known_patterns(map_name: str, map_uid: str = None):
     # See top of file for pattern definitions
     # CHINESE_SEASON_MAP = {
     #     "\u590f\u5b63\u8d5b": "summer", # "夏季赛"
@@ -171,14 +194,8 @@ def match_known_patterns(map_name: str):
         match = pattern.match(map_name)
         if match:
             attrs = match.groupdict()
-            logger.debug(f"Pattern matched for map '{map_name}': {attrs}")
-            if 'season' not in attrs:
-                attrs['season'] = None
-                logger.debug(f"'season' key missing in matched pattern for map: {map_name}. Setting to None.")
             
-
-            
-            # Check discovery
+            # Handle discovery
             if 'discoveryname' in attrs and attrs['discoveryname']:
                 discovery_name = attrs['discoveryname']
                 for campaign in DISCOVERY_CAMPAIGNS:
@@ -190,21 +207,20 @@ def match_known_patterns(map_name: str):
                             attrs['mapnumber'] = mapnumber
                             attrs['season'] = campaign['season'].capitalize()
                             attrs['type'] = campaign['name']
-                            if 'alteration' not in attrs:
-                                attrs['alteration'] = ''
+                            if 'alteration_mix' not in attrs:
+                                attrs['alteration_mix'] = []
                             return attrs
             
-            # Check TOTD
+            # Handle TOTD
             if totd_full_pattern.match(map_name):
                 attrs['season'] = None
                 attrs['year'] = None
                 attrs['mapnumber'] = []
                 attrs['type'] = 'totd'
-                if 'alteration' not in attrs:
-                    attrs['alteration'] = ''
+                attrs['alteration_mix'] = []
                 return attrs
             
-            # Check competitions
+            # Handle competitions
             if 'competitionname' in attrs and attrs['competitionname']:
                 competition_name = attrs['competitionname']
                 for competition in ALL_COMPETITION_MAP_NAMES:
@@ -213,13 +229,10 @@ def match_known_patterns(map_name: str):
                         attrs['year'] = validate_year(int(competition['year']))
                         attrs['type'] = competition['competition']
                         attrs['mapnumber'] = []
-                        
-                        if 'alteration' not in attrs or not attrs['alteration']:
-                            attrs['alteration'] = ''
-                        
+                        attrs['alteration_mix'] = []
                         return attrs
             
-            # Check spring2020
+            # Handle spring2020
             if 'spring2020' in attrs and attrs['spring2020']:
                 code = attrs['spring2020'].upper()
                 season = 'Spring'
@@ -230,13 +243,12 @@ def match_known_patterns(map_name: str):
                 valid_mapnums = validate_mapnumber([map_num])
                 if not valid_mapnums:
                     return None
-                return {
-                    'season': season,
-                    'year': year,
-                    'mapnumber': valid_mapnums,
-                    'alteration': attrs.get('alteration', ''),
-                    'type': None
-                }
+                attrs['season'] = season
+                attrs['year'] = year
+                attrs['mapnumber'] = valid_mapnums
+                attrs['alteration_mix'] = []
+                attrs['type'] = None
+                return attrs
 
             # Validate year
             if 'year' in attrs and attrs['year']:
@@ -247,7 +259,7 @@ def match_known_patterns(map_name: str):
             else:
                 attrs['year'] = None
             
-            # Handle single mapnumber
+            # Handle map numbers
             single_mapnumber = []
             if 'mapnumber' in attrs and attrs['mapnumber']:
                 try:
@@ -258,12 +270,10 @@ def match_known_patterns(map_name: str):
                 except ValueError:
                     logger.warning(f"Non-numeric single mapnumber: {attrs['mapnumber']}")
                     single_mapnumber = []
-            else:
-                single_mapnumber = []
 
             multiple_mapnumbers = []
 
-            # Handle colour-coded sets
+            # Handle color-coded sets
             if 'mapnumber_color' in attrs and attrs['mapnumber_color']:
                 colour_map = {
                     'white': range(1, 6),
@@ -352,7 +362,7 @@ def match_known_patterns(map_name: str):
                     logger.warning(f"Unknown Chinese season '{season_chinese_value}'")
                 del attrs['season_chinese']
 
-            # Set abbreviations to full season name
+            # Expand season abbreviations
             if attrs.get('season', None):
                 season_abbr = attrs['season'].lower()
                 if season_abbr == 'su':
@@ -366,37 +376,37 @@ def match_known_patterns(map_name: str):
 
             if attrs.get('season') and attrs.get('season').lower() == 'training':
                 attrs['year'] = 2020
-                
+
             if 'season' in attrs and attrs.get('season'):
                 attrs['season'] = attrs['season'].capitalize()
             else:
                 attrs['season'] = None
-                
-            if 'season' not in attrs:
-                attrs['season'] = None
-                logger.debug(f"'season' key missing in matched pattern for map: {map_name}. Setting to None.")
 
-            alteration = attrs.get('alteration', '')
-            alteration_suffix = attrs.get('alteration_suffix', '').strip() if 'alteration_suffix' in attrs else ''
-            alteration_prefix = attrs.get('alteration_prefix', '').strip() if 'alteration_prefix' in attrs else ''
-            combined_alteration = ' '.join(filter(None, [alteration_prefix, alteration, alteration_suffix])).strip()
-            
-            attrs['alteration'] = combined_alteration
-            
-            if 'alteration_suffix' in attrs:
-                del attrs['alteration_suffix']
-            if 'alteration_prefix' in attrs:
-                del attrs['alteration_prefix']
+            # Collect all alterations into alteration_mix
+            alterations = []
+            for key in list(attrs.keys()):
+                if key.startswith('alteration_'):
+                    alterations.append(attrs[key].strip())
+                    del attrs[key]
 
-            if 'type' not in attrs:
-                attrs['type'] = None
-            
-            if 'alteration_additional_info' in attrs:
-                attrs['alterationinfo'] = attrs['alteration_additional_info']
-            logger.debug(f"Final attrs after processing for map: '{map_name}': {attrs}")
+            # Handle plain 'alteration' if present
+            plain_alt = attrs.get("alteration", "").strip()
+            if plain_alt:
+                alterations.append(plain_alt)
+                del attrs["alteration"]
+
+            if alterations:
+                attrs["alteration_mix"] = alterations
+            else:
+                attrs["alteration_mix"] = []
+
+            if "alteration_additional_info" in attrs:
+                attrs["alterationinfo"] = attrs["alteration_additional_info"]
+                del attrs["alteration_additional_info"]
+
+            attrs.setdefault('type', None)
 
             return attrs
-    logger.warning(f"No pattern matched for map: {map_name}")
     return None
 
 def assign_attributes(item_data: dict) -> dict:
@@ -406,58 +416,48 @@ def assign_attributes(item_data: dict) -> dict:
     map_uid = item_data.get('mapUid', '')
 
     sanitized_name, ft_username = extract_and_remove_ft(sanitized_name)
+    sanitized_name, is_unvalidated_name = extract_and_remove_unvalidated(sanitized_name)
+
     sanitized_name = normalize_whitespace(sanitized_name)
     filename = normalize_whitespace(filename)
 
-    attributes = match_known_patterns(sanitized_name)
-    
+    attributes = match_known_patterns(sanitized_name, map_uid)
+
     if not attributes:
         special_attrs = try_special_uids(map_uid)
         if special_attrs:
-            if not special_attrs.pop('pass_special', False):
-                attributes = special_attrs
-            else:
-                attributes = {**special_attrs}
-        else:
-            pass
+            attributes = special_attrs
 
     if not attributes and sanitized_name != filename:
-        filename_attrs = match_known_patterns(filename)
-        if filename_attrs:
-            if 'attributes' in locals() and attributes:
-                attributes = {**attributes, **filename_attrs}
-            else:
-                attributes = filename_attrs
+        attributes = match_known_patterns(filename)
 
     if not attributes:
         attributes = {
             'season': None,
             'year': None,
             'mapnumber': [],
-            'alteration': '',
-            'type': None
+            'alteration_mix': [],
+            'type': None,
+            'ft': None,
+            'unvalidated': False
         }
         logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name}), totd: {check_totd_map_name(sanitized_name)}, discovery: {check_discovery_map_name(sanitized_name)}")
-    else:
-        pass
-
-    if 'season' not in attributes:
-        attributes['season'] = None
-        logger.debug(f"'season' key missing for item: {raw_name}. Setting to None.")
-
-    if attributes.get('alteration', '').lower() == 'super':
-        attributes['alteration'] = 'Supersized'
 
     if ft_username:
         attributes['ft'] = ft_username
+
+    if is_unvalidated_name:
+        attributes['unvalidated'] = True
+
+    special_attrs = try_special_uids(map_uid)
+    if special_attrs and special_attrs.get('unvalidated', False):
+        attributes['unvalidated'] = True
 
     if (
         item_data.get('author') in OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS or
         item_data.get('submitter') in OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS
     ):
-        attributes['alteration'] = OFFICIAL_NADEO_TAG
-
-    logger.debug(f"Assigned attributes for {raw_name}: {attributes}")
+        attributes['alteration_mix'] = [OFFICIAL_NADEO_TAG]
 
     return {**item_data, **attributes}
 
@@ -520,7 +520,8 @@ def main():
                 key, value = future.result()
                 results[key] = value
             except Exception as e:
-                logger.exception("Error processing item")
+                # logger.exception("Error processing item")
+                pass
 
     try:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:

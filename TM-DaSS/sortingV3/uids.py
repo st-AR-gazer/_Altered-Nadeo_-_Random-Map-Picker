@@ -47,8 +47,9 @@ special_uids = [
         {"uid": "VGp7lENZ9Zd0O7puIVwazmPnkU9", "name": "Training - 03 Gapped",                  "season": "Training",   "year": "2020", "mapNumber": [ "03" ], "alteration": "XX-But"},
         {"uid": "kpOLuGFTMICPkW7gp383PEQ_0A2", "name": "Training - 10 Long",                    "season": "Training",   "year": "2020", "mapNumber": [ "10" ], "alteration": "XX-But"},
         {"uid": "9amJDNigOGfZttxKLglnveTfn3d", "name": "Training 14 nocut reactor up",          "season": "Training",   "year": "2020", "mapNumber": [ "14" ], "alteration": "XX-But"},
-        {"uid": "d3QP5EMxcSPyxgZbb_fzkh4Abb3", "name": "Winter 2024 - 08 Remixed",              "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
         {"uid": "CNn0bfNJcrPA_6f2OwDBTHFUio1", "name": "Symmetrical Training - 01",             "season": "Training",   "year": "2020", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "EmgDdEKryrpRPZaARnOsSpdbqT2", "name": "Training 16 but no brakes + fragile",   "season": "Training",   "year": "2020", "mapNumber": [ "16" ], "alteration": "XX-But"},
+        {"uid": "CX9rIBuKXjE_uGwgmOkkNs9aFcg", "name": "Tiny Training - 01",                    "season": "Training",   "year": "2020", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Spring 2020
         
@@ -76,10 +77,12 @@ special_uids = [
         {"uid": "AVgW30_SiQrL4J_GofCiGnzOnB3", "name": "Spring 2021 - 01 But its a looping dream",          "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "sTSD0LDNins2V_YOIqxlKXnGS12", "name": "Spring 2021 - 01 Troll",                            "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "pPym4VzkAFcWUinNkWcrwPzPsSj", "name": "Spring 2021 - 01 but its straight!",                "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "faLLzEZ46UQOiJYxkVBRSGXoVga", "name": "Spring 2021 - 01 But i was once a bobsled champion", "season": "Spring",    "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "faLLzEZ46UQOiJYxkVBRSGXoVga", "name": "Spring 2021 - 01 But i was once a bobsled champion","season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "JSa9qlCCu44BvZP9z_d5Rbf9bp7", "name": "Spring 2021 - 01 But It's Global warmings fault?",  "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "Z2N8Gt_e6fWNNGJH76nR1LW2hha", "name": "Spring 2021 - 01 But It's on the same elevation",   "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "_6iGaKk3aCQ1m_trarWMSJm8FS4", "name": "Spring 2021 - 01 but its a waterpark",              "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "nVDkL8_DLwhHSud3MUBVspI9tNf", "name": "Spring 2021 - 01 But the blocks got randomized",    "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "8_1PV9D7K3Rcl6ng6BKSNGm_gid", "name": "Spring 2021 - 01 But its only pipes",               "season": "Spring",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Summer 2021
         
@@ -92,7 +95,8 @@ special_uids = [
         {"uid": "8i5RpJHkAKUBVjnKE4EV74n3ZBb", "name": "Summer 2021 - 01 But It's More Water",              "season": "Summer",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "Gw8NeV7IRtgRHip6KFMDRVaCuri", "name": "Summer 2021 - 01 But its a bumpy ride",             "season": "Summer",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "Uapf_ani8FZU3NyDef0UpLfJAIl", "name": "Summer 2021 - 01 But It's a trip down memory lane", "season": "Summer",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        
+        {"uid": "GI2tqeZqgAPhwkrHmqNsHxUTtgl", "name": "Summer 2021 - 01 But It's Sausage city",            "season": "Summer",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "F1LzNcBxkNZbekpgOngqXB25DL2", "name": "Summer 2021 - 01 But It's basicly just press gas",  "season": "Summer",     "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Fall 2021
         
@@ -122,11 +126,19 @@ special_uids = [
         {"uid": "bBkj9f01uRQxA_PGIz7w4Go3cD3", "name": "Fall 2021 - 01 (Way down)",                         "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "eNjUKz0MERM_fipExjBcEo1mYo5", "name": "Fall 2021 - 01 But It's x36",                       "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "T_Y6pFuH9b9feIbjknbwfpGr_Nf", "name": "Fall 2021 - 10",                                    "season": "Fall",       "year": "2021", "mapNumber": [ "10" ], "alteration": "XX-But"},
-        
+        {"uid": "_i1StyBsp6Z20b5F2NqV0l967W2", "name": "Fall 2021 yeetrial - 01",                           "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "6VhSaeFdQFI2tzaKrpPjBe_qCnc", "name": "Fall 2021 - 01 But it's dirt pipes",                "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "lFeyhF8HOvudoN8CG5yKqc19jEf", "name": "Fall 2021 - 01 but it's slow-mo, fragile, no-brakes","season": "Fall",      "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "KGdrsmfZMN_BOejdi7sgjdCBfnk", "name": "Fall 2021 - 01 But it's no-grip",                   "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "6O5ucpjixhubKNzHMAQyCRaUMK8", "name": "Fall 2021 - 01 Iced out pipes",                     "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "9KjKnCvmvvgFZPfqzsTA4sWZOY7", "name": "Fall 2021 - 01 But it's magnetic pipes",            "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "GAY6zTXgaUvJS5Jp0czj0JZ1rPl", "name": "Fall 2021 - 01 But it's magnetic",                  "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "_XhxEve1JyP09Vmmx6d9YRYJpOg", "name": "Fall 2021 - 01 But It's Sausage",                   "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "RIbwPTfGZHPrRAzbGWCzfyR82I3", "name": "Fall 2021 - 01 But it's concrete pipes",            "season": "Fall",       "year": "2021", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Winter 2022
         
-        
+        {"uid": "83ioAJscyTn5ZkxjK8eSdLrJxVh", "name": "Winter 2022 - 01 But Flat",                         "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Spring 2022
         
@@ -156,6 +168,7 @@ special_uids = [
         {"uid": "lzrJD23IwcBXL4a77Y3h5QjhLX4", "name": "Fall 2022 - 01 Orbit",                              "season": "Fall",       "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "wtJtT6prSNybTHBlmcC1XID_nv",  "name": "Fall 2022 - 14 But 69 laps",                        "season": "Fall",       "year": "2022", "mapNumber": [ "14" ], "alteration": "XX-But"},
         {"uid": "_SdU5BlwMuvcR2_7ZAqCUQi1tB4", "name": "Fall 2022 - 01 but you take finishes instead of checkpoints", "season": "Fall", "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "aFHW8obzLGUA7vn9YbwjNLnXTei", "name": "Fall 2022 - 04 but litterally sttf",                "season": "Fall",       "year": "2022", "mapNumber": [ "04" ], "alteration": "XX-But"},
         
         # Winter 2022
         
@@ -197,6 +210,7 @@ special_uids = [
         {"uid": "h0kJym6CV6e8Pa9HFzXQodnMMM",  "name": "Fall 2023 - 01 Driving on the scenery",             "season": "Fall",       "year": "2023", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "Yf70o4QSpOgprB0S4N2_wo4Bf1h", "name": "Fall 2023 - 07 (but the start is insane)",          "season": "Fall",       "year": "2023", "mapNumber": [ "07" ], "alteration": "XX-But"},
         {"uid": "dLXftXVA5cy9EPwQpgtwEvks5P7", "name": "Fall 2023 - 24 From The Top",                       "season": "Fall",       "year": "2023", "mapNumber": [ "24" ], "alteration": "XX-But"},
+        {"uid": "_XhxEve1JyP09Vmmx6d9YRYJpOg", "name": "Fall 2023 - 08 (Reverse but with reactor down)",    "season": "Fall",       "year": "2023", "mapNumber": [ "08" ], "alteration": "XX-But"},
         
         # Winter 2023
         
@@ -230,10 +244,11 @@ special_uids = [
         {"uid": "EwzL3kzpa0N2xk6lgbP70KIg2gi", "name": "Winter 2024 - 23 Multilap",                         "season": "Winter",     "year": "2024", "mapNumber": [ "23" ], "alteration": "XX-But"},
         {"uid": "y5vye6YYR_oVSP5Akxr5vLOEVO0", "name": "Winter 2024 - 04 Backwards Reverse",                "season": "Winter",     "year": "2024", "mapNumber": [ "04" ], "alteration": "XX-But"},
         {"uid": "B5VL_a4auyjppnXne0hkQ36MXR3", "name": "Winter 2024 - 22 Roofing via Reactor",              "season": "Winter",     "year": "2024", "mapNumber": [ "22" ], "alteration": "XX-But"},
-        
+        {"uid": "d3QP5EMxcSPyxgZbb_fzkh4Abb3", "name": "Winter 2024 - 08 Remixed",                          "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
+        {"uid": "aNrJFKRUUPWRtRdJfgd3iUHga70", "name": "Plastice Winter 2024 - 20",                         "season": "Winter",     "year": "2024", "mapNumber": [ "20" ], "alteration": "XX-But"},
+        {"uid": "gevAR4blc3PHHQbmPh7hNBDJrl2", "name": "Wet Plastic Winter 2024 - 08 (B side)",             "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
 
         
-        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
@@ -271,7 +286,9 @@ special_uids = [
         {"uid": "_WOsZZgiUuOUpzo1uQWSD3N41p3", "name": "Summer 2023 - 09 (Scenery DEL)",    "season": "Summer",   "year": "2023", "mapNumber": [ "09" ], "alteration": "Select DEL"},
         {"uid": "XNwn955QsvkoeeLHWoHsTy5Qf9m", "name": "Wet Stastic",                       "season": "winter",   "year": "2024", "mapNumber": [ "19" ], "alteration": "[Stadium] Wet Plastic"}, # Might be sorted under xx-but
         {"uid": "lUCieW880_2TNphWqoaKd19LQLi", "name": "Training Puzzzle - 16",             "season": "Training", "year": "2020", "mapNumber": [ "16" ], "alteration": "Puzzle"},
-        {"uid": "ebt0BnmMen3fOBxWfQM9joRc1il", "name": "Yumi_05 (CS_SC)",                   "season": "",         "year": "",     "mapNumber": [ "05" ], "alteration": "[Snow] Carswitch"},
+        {"uid": "CX9rIBuKXjE_uGwgmOkkNs9aFcg", "name": "Icy  ReactorTraining - 19",         "season": "Training", "year": "2020", "mapNumber": [ "19" ], "alteration": "Reactor"},
+        {"uid": "gevAR4blc3PHHQbmPh7hNBDJrl2", "name": "Supersized_Spring_2024_-_12",       "season": "Spring",   "year": "2024", "mapNumber": [ "12" ], "alteration": "Supersized"},
+        {"uid": "H_rq865deBHEqhDo1OK1M86HSi8", "name": "Spring 2024 - 25 - Reverse (Rally)","season": "Spring",   "year": "2024", "mapNumber": [ "25" ], "alteration": "[Rally] Reverse"},
     
     ## End weird names
     
@@ -350,14 +367,17 @@ special_uids = [
         {"uid": "t0DqO4AQTaHZsxpsNRgRgcOn45d", "name": "Fall 2021 - 23",     "season": "Fall",      "year": "2021", "mapNumber": [ "23" ], "alteration": "Backwards"},
         {"uid": "BXgsnWOz7UI0mxCaf10T4AvJRUe", "name": "Fall 2021 - 24",     "season": "Fall",      "year": "2021", "mapNumber": [ "24" ], "alteration": "Backwards"},
         {"uid": "gd6gvjmr5gIKMCQY25jinh30bzi", "name": "Fall 2021 - 25",     "season": "Fall",      "year": "2021", "mapNumber": [ "25" ], "alteration": "Backwards"},
+        
         # Summer 2021 - Backwards
         {"uid": "sH1AyugzgU7RnrgE7USb11nLZxb", "name": "Summer 2021 - 01",   "season": "Summer",    "year": "2021", "mapNumber": [ "01" ], "alteration": "Backwards"},
+        
         # Summer 2021 - Glider
         {"uid": "kf3ZUiaYI8kv_L5sbtgdq1meHx2", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "mapNumber": [ "02" ], "alteration": "Glider"}, 
         {"uid": "GfE32ssQZQNYwcvmqOFLvZgV6t",  "name": "Summer 2021 - 03",   "season": "Summer",    "year": "2021", "mapNumber": [ "03" ], "alteration": "Glider"},  # Check if these are glider or engine off
         {"uid": "MhJt0P2qbgCZkRD7uqVlYIEEW7h", "name": "Summer 2021 - 05",   "season": "Summer",    "year": "2021", "mapNumber": [ "05" ], "alteration": "Glider"},
         {"uid": "yPVNLTjIHGWzDuW1ArL4cYjmGb4", "name": "Summer 2021 - 13",   "season": "Summer",    "year": "2021", "mapNumber": [ "13" ], "alteration": "Glider"},
         {"uid": "7V_e2BX7VFtnERenCklJnNe8T4m", "name": "Summer 2021 - 18",   "season": "Summer",    "year": "2021", "mapNumber": [ "18" ], "alteration": "Glider"},
+        
         # Summer 2021 - Cruise
         {"uid": "SGH8YtGFvkbPjcSiT9Ss1n1ptD6", "name": "Summer 2021 - 03",   "season": "Summer",    "year": "2021", "mapNumber": [ "03" ], "alteration": "Cruise"},
         {"uid": "ydT2UJI8qoRZDWx3mKM5kmY_G7d", "name": "Summer 2021 - 05",   "season": "Summer",    "year": "2021", "mapNumber": [ "05" ], "alteration": "Cruise"},
@@ -371,7 +391,6 @@ special_uids = [
         {"uid": "q2AowFttoWs7y8chHg1iCv0ay_1", "name": "Summer 2021 - 21",   "season": "Summer",    "year": "2021", "mapNumber": [ "21" ], "alteration": "Cruise"},
         {"uid": "Fq5KiEolTkKxQc8htbLTr5cuQ3b", "name": "Summer 2021 - 23",   "season": "Summer",    "year": "2021", "mapNumber": [ "23" ], "alteration": "Cruise"},
         {"uid": "IL109lMYdQtZ26EuDwKQOv0ubrg", "name": "Summer 2021 - 25",   "season": "Summer",    "year": "2021", "mapNumber": [ "25" ], "alteration": "Cruise"},
-        
         
         # Fall 2021 - Reactor
         {"uid": "J6sGLNkzAe70tpGzpsRMaHqsbri", "name": "Fall 2021 - 01",     "season": "Fall",      "year": "2021", "mapNumber": [ "01" ], "alteration": "Reactor"},
@@ -392,6 +411,7 @@ special_uids = [
         {"uid": "rdtf7SZ1r0qO1yvI5QqwYuU1Wmj", "name": "Fall 2021 - 22",     "season": "Fall",      "year": "2021", "mapNumber": [ "22" ], "alteration": "Reactor"},
         {"uid": "Hl3aela5O8qypKOcesfSslKMS07", "name": "Fall 2021 - 23",     "season": "Fall",      "year": "2021", "mapNumber": [ "23" ], "alteration": "Reactor"},
         {"uid": "CLwDt0ynEBmFh8MoyVp8UCv2aB9", "name": "Fall 2021 - 25",     "season": "Fall",      "year": "2021", "mapNumber": [ "25" ], "alteration": "Reactor"},
+
         # Summer 2021 - Reactor
         {"uid": "Zzrd_pwXouEVQ05h51CSct7nnOb", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "mapNumber": [ "02" ], "alteration": "Reactor"},
         {"uid": "R70h3wSZiNV4hkqnIcv40aze9v6", "name": "Summer 2021 - 06",   "season": "Summer",    "year": "2021", "mapNumber": [ "06" ], "alteration": "Reactor"},
@@ -435,7 +455,6 @@ special_uids = [
         {"uid": "1sfY5xfuPCt9pRUg5Z9_n70tl0g", "name": "Summer 2021 - 22",   "season": "Summer",    "year": "2021", "mapNumber": [ "22" ], "alteration": "Reactor Down"},
         {"uid": "XFsI6xx8Uc6t3nJFtGhUenPIBre", "name": "Summer 2021 - 23",   "season": "Summer",    "year": "2021", "mapNumber": [ "23" ], "alteration": "Reactor Down"},
         
-        
         # Fall 2021 - No-Steer
         {"uid": "L8eko452MXxnjPVvwNEUdyILnyk", "name": "Fall 2021 - 01",     "season": "Fall",      "year": "2021", "mapNumber": [ "01" ], "alteration": "No-Steer"},
         {"uid": "vz0nkLwmuCjUBbMfNvUFQVqkNO8", "name": "Fall 2021 - 02",     "season": "Fall",      "year": "2021", "mapNumber": [ "02" ], "alteration": "No-Steer"},
@@ -454,7 +473,6 @@ special_uids = [
         {"uid": "0Vpb30aSpQ9eFWCxmU4fMXExeR4", "name": "Fall 2021 - 19",     "season": "Fall",      "year": "2021", "mapNumber": [ "19" ], "alteration": "No-Steer"},
         {"uid": "n0xktqGhqmAfqCfqV_8hidDjHLk", "name": "Fall 2021 - 24",     "season": "Fall",      "year": "2021", "mapNumber": [ "24" ], "alteration": "No-Steer"},
         
-        
         # Summer 2021 - No-Steer
         {"uid": "hTxqlK1dm6IDKBW5VAHWipx09p8", "name": "Summer 2021 - 01",   "season": "Summer",    "year": "2021", "mapNumber": [ "01" ], "alteration": "No-Steer"},
         {"uid": "fEgu6l1d5fQIzQfcQssdei4jbKk", "name": "Summer 2021 - 02",   "season": "Summer",    "year": "2021", "mapNumber": [ "02" ], "alteration": "No-Steer"},
@@ -471,9 +489,8 @@ special_uids = [
         {"uid": "bIitIR1N27OWl3QZLzx9znFgVb",  "name": "Summer 2021 - 21",   "season": "Summer",    "year": "2021", "mapNumber": [ "21" ], "alteration": "No-Steer"},
         
         # Training - Wood
-        {"uid": "ZQppf58f_mD3ZZQTyJ_1MEs_sti", "name": "Training - 21 & 24", "season": "Training",  "year": "2020", "mapNumber": [ "21 & 24" ], "alteration": "Wood"},
+        {"uid": "ZQppf58f_mD3ZZQTyJ_1MEs_sti", "name": "Training - 21 & 24", "season": "Training",  "year": "2020", "mapNumber": [ "21", "24" ], "alteration": "Wood"},
     
-
         # Fall 2024 - Extra CP
         {"uid": "bu_Kwoc3SyShpTD5NxoNBcMlYU0", "name": "Fall 2024 - 01", "season": "Fall", "year": "2024", "mapNumber": [ "01" ], "alteration": "Extra CP"},
         {"uid": "_OW28EWj58NTaqvevQxKBouMSzl", "name": "Fall 2024 - 02", "season": "Fall", "year": "2024", "mapNumber": [ "02" ], "alteration": "Extra CP"},
@@ -527,9 +544,7 @@ special_uids = [
         {"uid": "VPcloJMWR7zWrk8vMHe11AlvhGk", "name": "Summer 2021 - 24",   "season": "Summer",    "year": "2021", "mapNumber": [ "24" ], "alteration": "YEET Down"},
         {"uid": "YtHBV98BcNGOqszdD0DpPC8B2Ib", "name": "Summer 2021 - 25",   "season": "Summer",    "year": "2021", "mapNumber": [ "25" ], "alteration": "YEET Down"},
     
-    
-    
-        # a08 maps
+        # Fall 2021 a08 - maps
         {"uid": "eikAwfT7vpgUzX0kgeOqwoJIGv3", "name": "Fall 2021 - 01 - 08", "season": "Fall", "year": "2021", "alteration": "A08", "mapNumber": [ "01" ]},
         {"uid": "cukWZwilgZiOUiHeQSQLdV28PWi", "name": "Fall 2021 - 02 - 08", "season": "Fall", "year": "2021", "alteration": "A08", "mapNumber": [ "02" ]},
         {"uid": "YTIEtoH8aWDKN8uHTGgAIDGlhGm", "name": "Fall 2021 - 03 - 08", "season": "Fall", "year": "2021", "alteration": "A08", "mapNumber": [ "03" ]},
@@ -556,7 +571,35 @@ special_uids = [
         {"uid": "gU06zzSIiMGiVDCSrUHKztZ9qKj", "name": "Fall 2021 - 24 - 08", "season": "Fall", "year": "2021", "alteration": "A08", "mapNumber": [ "24" ]},
         {"uid": "jVF04wEIULCDgMBs0kjDBQBfSL",  "name": "Fall 2021 - 25 - 08", "season": "Fall", "year": "2021", "alteration": "A08", "mapNumber": [ "25" ]},
 
+        # Fall 2021 - Start 1-Down
+        {"uid": "tUYGduuOuPlmwxKoFGTLdb94ldm", "name": "Fall 2021 1-Down - 01", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "01" ]},
+        {"uid": "ZHirN8Rkrdu0Q7iTKIi3ganj47g", "name": "Fall 2021 1-down - 04", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "04" ]},
+        {"uid": "LWnzB3F9CDNsAYQ8lkA2tJ_CNg9", "name": "Fall 2021 1-down - 06", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "06" ]},
+        {"uid": "tRRciir756sInPGQQnnkxZLSzz4", "name": "Fall 2021 1-down - 07", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "07" ]},
+        {"uid": "mVoMSijdaGjIOuOvMIglAuOPcO7", "name": "Fall 2021 1-down - 08", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "08" ]},
+        {"uid": "X6gQxuAY6iRkTJRiXfDvq7PDoMg", "name": "Fall 2021 1-Down - 09", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "09" ]},
+        {"uid": "kEdvpldHV4uer3SpvucGQqrz5J4", "name": "Fall 2021 1-Down - 10", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "10" ]},
+        {"uid": "yQqxR5bZ6QY_XK5G7bUCCuW3D05", "name": "Fall 2021 1-Down - 11", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "11" ]},
+        {"uid": "CSsaMz7awTHEqAoW2ljW3Pz7cXb", "name": "Fall 2021 1-down - 12", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "12" ]},
+        {"uid": "a2SOR2wgyg1l4w4edUtLYmye9Ya", "name": "Fall 2021 1-down - 13", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "13" ]},
+        {"uid": "RSlpBvem9HmTIerFFe0YwkSaIM8", "name": "Fall 2021 1-Down - 15", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "15" ]},
+        {"uid": "ayvTj2uv6fQPfRLD2huUkorp5Lg", "name": "Fall 2021 1-down - 17", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "17" ]},
+        {"uid": "U1lALbH9faO3JizwnolKl7yRo1c", "name": "Fall 2021 1-down - 18", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "18" ]},
+        {"uid": "_uXoXGdCVJxzE6lmOurTJmhgge2", "name": "Fall 2021 1-down - 20", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "20" ]},
+        {"uid": "ogtx339GQuYTvwDjATAlXzc2MLb", "name": "Fall 2021 1-down - 22", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "22" ]},
+        {"uid": "0Wt6Vqqcph_JotNnRks342P8Rj",  "name": "Fall 2021 1-down - 23", "season": "Fall", "year": "2021", "alteration": "Start 1-Down", "mapNumber": [ "23" ]},
 
+        # Fall 2023 - Wet Plastic "(Feat" issues
+        {"uid": "byIazQ5GmHnMFrXLZG7vKgp9658", "name": "Wet Plastic Fall 2023 - 04(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "04" ]},
+        {"uid": "5Ji7ikoO0c9iBbtuSDA0EfLSzDf", "name": "Wet Plastic Fall 2023 - 05(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "05" ]},
+        {"uid": "hrl3h5PvpK3vWEplZa50RoFXu_h", "name": "Wet Plastic Fall 2023 - 09(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "09" ]},
+        {"uid": "XGDh6bTiXaGa4v_TeSK3CxeFe7b", "name": "Wet Plastic Fall 2023 - 10(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "10" ]},
+        {"uid": "OfGQ0DXGmT1FCwDQDLZxrLIZcfg", "name": "Wet Plastic Fall 2023 - 14(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "14" ]},
+        {"uid": "IMy0bfiAte_hfLqTLQQS23qLg8d", "name": "Wet Plastic Fall 2023 - 15(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "15" ]},
+        {"uid": "NrHFX2rFp9VtEIdFUDSkhX0bhV6", "name": "Wet Plastic Fall 2023 - 16(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "16" ]},
+        {"uid": "HbCR8bRQYxfTMB5vjB37o_eHh3m", "name": "Wet Plastic Fall 2023 - 17(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "17" ]},
+        {"uid": "JjlLH8pLrgF5WZEY7lUgdG33bxg", "name": "Wet Plastic Fall 2023 - 18(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "18" ]},
+        {"uid": "qJYqpfpeDqD6nbCclbatOCyYaR4", "name": "Wet Plastic Fall 2023 - 19(Feat", "season": "Fall", "year": "2023", "alteration": "Wet Plastic", "mapNumber": [ "19" ]},
 
 
     ## ----------------
@@ -1269,7 +1312,7 @@ special_uids = [
         {"uid": "8AAJstK0fIhQO0_AO8RkRgQCzB3", "name": "Winter 2024 - 24", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
         {"uid": "V0HLAzazg1MRNvFaUJiff_X_jo0", "name": "Winter 2024 - 25", "season": "Winter", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]},
 
-        # Spring
+        # Spring 2024
         {"uid": "yQ4ktCXu3SAxyRx9gar8hj7kVBb", "name": "Spring 2024 - 01", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
         {"uid": "6y_26o7fxz0Es3t0e0EPBE7vF_k", "name": "Spring 2024 - 02", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
         {"uid": "Qu0RAm2OEVhA8PtlHygSvwAP6af", "name": "Spring 2024 - 03", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
@@ -1294,7 +1337,88 @@ special_uids = [
         {"uid": "23TjgtcgWtsOT8c8_YXmStk9yT1", "name": "Spring 2024 - 22", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "22" ]},
         {"uid": "zNvVW_NnRdxDIQm6T6EbPDkYg20", "name": "Spring 2024 - 23", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "23" ]},
         {"uid": "dQHEGKXg1PcUDL8pI5YGOfHtyum", "name": "Spring 2024 - 24", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
-        {"uid": "bPpUQZuGgy56BE4ST2e9lb3Ln66", "name": "Spring 2024 - 25", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]}
+        {"uid": "bPpUQZuGgy56BE4ST2e9lb3Ln66", "name": "Spring 2024 - 25", "season": "Spring", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]},
+
+        # Summer 2024
+        {"uid": "AmpiaayY57VnImgBMLMcWjxbOSh", "name": "Summer 2024 - 01", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
+        {"uid": "DUzLndlMvwhFmzDkp4JSQFuuj1b", "name": "Summer 2024 - 02", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
+        {"uid": "eaat8KYNipnW9LTnyeF5b3SP5O1", "name": "Summer 2024 - 03", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
+        {"uid": "mdgN731icasa6UJz2xMhuuGp9pa", "name": "Summer 2024 - 04", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "04" ]},
+        {"uid": "xmefxgBBYybybCTR61gE55JfZ2e", "name": "Summer 2024 - 05", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "05" ]},
+        {"uid": "OHhZEEW1Ly5nNvoEnwUZoz6ybdh", "name": "Summer 2024 - 06", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "06" ]},
+        {"uid": "kXqFTKz_vffAWYqyWE_2NwFCtBf", "name": "Summer 2024 - 07", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "07" ]},
+        {"uid": "88db6i9B_8peTY2zx_FYZzMsWd4", "name": "Summer 2024 - 08", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "08" ]},
+        {"uid": "__g8iWcCCZYme_ZkPWDapvUDL_2", "name": "Summer 2024 - 09", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "09" ]},
+        {"uid": "liHJc0b7adqKCo6ra9Sxv257UM0", "name": "Summer 2024 - 10", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "10" ]},
+        {"uid": "aWmFvwIFZTnNOe1gR2sbEjbTeEl", "name": "Summer 2024 - 11", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "11" ]},
+        {"uid": "J6BRqbjArSidm0EW52kGPuOyLW8", "name": "Summer 2024 - 12", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "12" ]},
+        {"uid": "Nub2tB4j4rpdQ2M9LSUmuHegTV8", "name": "Summer 2024 - 13", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "13" ]},
+        {"uid": "diZZFuAQHepR8lZQYqNy7ogs_s2", "name": "Summer 2024 - 14", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "14" ]},
+        {"uid": "YzTFETagiqGYvGYtuQN2EyY60K3", "name": "Summer 2024 - 15", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "15" ]},
+        {"uid": "kAogsDZpfntyin3GuQWI8VfCAIc", "name": "Summer 2024 - 16", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "16" ]},
+        {"uid": "kld8u7DegB2TZihhocwqU04pmqg", "name": "Summer 2024 - 17", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "17" ]},
+        {"uid": "ZbPCXmP2MsVvURucRPP1cQnQXhb", "name": "Summer 2024 - 18", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "18" ]},
+        {"uid": "snEiZmH8YmFRE6Qu3rFpPHB81K",  "name": "Summer 2024 - 19", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "19" ]},
+        {"uid": "drAd2cABjEReAoKsVoC3wpZm6Nh", "name": "Summer 2024 - 20", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "20" ]},
+        {"uid": "j3OZZrs99TWKZwUBYHKqPifQLbg", "name": "Summer 2024 - 21", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "21" ]},
+        {"uid": "lAZgKXuitTB4JEllDdA3GZt87T3", "name": "Summer 2024 - 22", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "22" ]},
+        {"uid": "z9kDwhhJhVLS4td4mECAixxaVVd", "name": "Summer 2024 - 23", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "23" ]},
+        {"uid": "tspxUJekxkF7td_dMKmtJX6cJEe", "name": "Summer 2024 - 24", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
+        {"uid": "qGS_eZRJejfv0VGmGPavl5WEDnj", "name": "Summer 2024 - 25", "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]},
+        
+        # Fall 2024
+        {"uid": "rw7jr8WlTrYor0vN0A0PiKzgg78", "name": "Fall 2024 - 01", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
+        {"uid": "tl_RqArUrUQ9KQDe0U5fskzdrpj", "name": "Fall 2024 - 02", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
+        {"uid": "6h3gOaF9HJBCnQbxtBopC_IMs10", "name": "Fall 2024 - 03", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
+        {"uid": "ecpLvJZCuyoAJj1LhfZZwhoHfSa", "name": "Fall 2024 - 04", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "04" ]},
+        {"uid": "d83GbrV9SN7kfY3ftaK8FRVB44b", "name": "Fall 2024 - 05", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "05" ]},
+        {"uid": "trDIbaxC_9IVdg6yen9q7zISZbk", "name": "Fall 2024 - 06", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "06" ]},
+        {"uid": "q5L8T_fy0w5MkZfJO1gQ_my87bj", "name": "Fall 2024 - 07", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "07" ]},
+        {"uid": "2msqSkfJP683MmDGhfpkJM4q7Sk", "name": "Fall 2024 - 08", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "08" ]},
+        {"uid": "ti8ot1biy4yCUdi7lPmGqFE6aRj", "name": "Fall 2024 - 09", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "09" ]},
+        {"uid": "BKwVaqdgCe4PCWQwluvi99iLe5b", "name": "Fall 2024 - 10", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "10" ]},
+        {"uid": "3sDimlZCd0QPmmRiGASA1Pbtv05", "name": "Fall 2024 - 11", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "11" ]},
+        {"uid": "MXCtvB4zmW3iliJ48Jti6luY9Zi", "name": "Fall 2024 - 12", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "12" ]},
+        {"uid": "glysLJbIhBkhDFRB7zhvhatgIqa", "name": "Fall 2024 - 13", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "13" ]},
+        {"uid": "SnLRynzusvgCyqlu9X0Ux_NkcMd", "name": "Fall 2024 - 14", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "14" ]},
+        {"uid": "WGEcRcfn0NGxxrodXzshYdwzfIg", "name": "Fall 2024 - 15", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "15" ]},
+        {"uid": "5BretnXASvk2RoKa2WqFOcnW9x7", "name": "Fall 2024 - 16", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "16" ]},
+        {"uid": "yCaeXB3t3c8_SrsIBefjDws5hqg", "name": "Fall 2024 - 17", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "17" ]},
+        {"uid": "DrJSswMXezYuYTS8bEjjQmdWDVa", "name": "Fall 2024 - 18", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "18" ]},
+        {"uid": "JndUMBgeR4vQ2zadb164PFOBS9",  "name": "Fall 2024 - 19", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "19" ]},
+        {"uid": "uTRn1j2ZvRr02krtvKJQJqEGwH7", "name": "Fall 2024 - 20", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "20" ]},
+        {"uid": "p5tWnXUzwNxyxgsg7m8ZoaUbqAa", "name": "Fall 2024 - 21", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "21" ]},
+        {"uid": "S927zT5HCIybPpRgh5RY79Zcb5h", "name": "Fall 2024 - 22", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "22" ]},
+        {"uid": "WxCghen5pI7lbDKigtekKq0Uut3", "name": "Fall 2024 - 23", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "23" ]},
+        {"uid": "9fEY2mqkUY50nhtj9c0NXWax5xk", "name": "Fall 2024 - 24", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
+        {"uid": "End5ikYJa8pgN8RI347E6l4i7lg", "name": "Fall 2024 - 25", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]},
+
+        # Winter 2025
+        {"uid": "J3RyKSumRDcpqxza1y8PzvRitLl", "name": "Winter 2025 - 01", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
+        {"uid": "OzeeWxmRNIeCiHEPQHiHaffNjEj", "name": "Winter 2025 - 02", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
+        {"uid": "eRmIWJCuiWwX9NQg1KFlDN4xHQ5", "name": "Winter 2025 - 03", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
+        {"uid": "CzxNtcIISxZKRVQld2lZ03L0aTk", "name": "Winter 2025 - 04", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "04" ]},
+        {"uid": "AE7_zP1gkPgDdcsXCAYYR5vZ6Cl", "name": "Winter 2025 - 05", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "05" ]},
+        {"uid": "0BamDdxAKgFr7mA6Hzn_PvbLRwj", "name": "Winter 2025 - 06", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "06" ]},
+        {"uid": "SsgXNqeuBxXHoX1n9Xlhb5GE4Hj", "name": "Winter 2025 - 07", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "07" ]},
+        {"uid": "X6bqMI1hjzi4W6Aaq7ez5OUm53n", "name": "Winter 2025 - 08", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "08" ]},
+        {"uid": "KGc7ypcwFGKyXYBfP7tucaNYzp",  "name": "Winter 2025 - 09", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "09" ]},
+        {"uid": "Kv9SfUfcVZdolegF9I4_9uR4rSj", "name": "Winter 2025 - 10", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "10" ]},
+        {"uid": "seWTzkzWDC5fkuT3BgfbYSSPi2l", "name": "Winter 2025 - 11", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "11" ]},
+        {"uid": "UGdWedcMtwlGLwJL7X3e1cFoSMi", "name": "Winter 2025 - 12", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "12" ]},
+        {"uid": "q5jKUEbwIgxKP2JTU7bdiATPpO9", "name": "Winter 2025 - 13", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "13" ]},
+        {"uid": "k2WAjfJE_9VlZgVuXRlo94O6AFm", "name": "Winter 2025 - 14", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "14" ]},
+        {"uid": "xwC7aMxYHSKUJ_k7YKx4LRsNn0",  "name": "Winter 2025 - 15", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "15" ]},
+        {"uid": "6KmT3hfLF3iT_VZ6Hnzd5XZLNXg", "name": "Winter 2025 - 16", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "16" ]},
+        {"uid": "b8sxfGYEu6NeRVcNjkpm9fcd6vh", "name": "Winter 2025 - 17", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "17" ]},
+        {"uid": "5Ksp2SBBsMFubBCCiUjcfhKoXK8", "name": "Winter 2025 - 18", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "18" ]},
+        {"uid": "Dbq8WNL5ciR9p6SBPO0TUhzJUql", "name": "Winter 2025 - 19", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "19" ]},
+        {"uid": "E4ExGzLXcS2vw3v4rVNWgjn70E0", "name": "Winter 2025 - 20", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "20" ]},
+        {"uid": "3hbtLjlYnsbqINhkEGoOv9AdBsk", "name": "Winter 2025 - 21", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "21" ]},
+        {"uid": "esEjfhqZnR0ZAhcaVBO2uBWq0J0", "name": "Winter 2025 - 22", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "22" ]},
+        {"uid": "z6UqvSvJKoKArG7OHbG5pPy49bj", "name": "Winter 2025 - 23", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "23" ]},
+        {"uid": "_JVbO1yXn64hMsRyLXPTZDKk9e9", "name": "Winter 2025 - 24", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
+        {"uid": "FSZ5MrkybhBkxSwaKUamqrDqUV8", "name": "Winter 2025 - 25", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]}
 ]
 
 
@@ -1467,19 +1591,20 @@ ALL_COMPETITION_MAP_NAMES = [
         "year": "2020",
         "competition": "TMGL Fall 2020",
         "maps": [
-            "BumpyJumpy",
+            "Paradice",
+            "Semiramis (Feat Firestorrm)",
+            "StarGlide",
             "Circles",
+            "Halfpipe",
+            
+            "BumpyJumpy",
             "Dune",
             "Eurostep",
             "FlyBack",
             "GlacierHiking",
-            "Halfpipe",
             "Hoverboard",
-            "Paradice",
-            "Semiramis (Feat Firestorrm)",
             "SideWave",
             "SnowStep ft Tona",
-            "StarGlide",
             "SwitchBridge",
             "TreeJump"
         ]
@@ -1489,37 +1614,22 @@ ALL_COMPETITION_MAP_NAMES = [
         "year": "2021",
         "competition": "TMGL Winter 2021",
         "maps": [
-            "Arctic Split",
-            "Bookcase",
-            "Frozen Fridges",
-            "GapJumper",
-            "Leap of Faith",
-            "Picicle",
-            "SkiJump",
-            "Slalom",
-            "SlowmoForest",
-            "Switcheroo",
-            "ToThePeak",
             "VantaNeo",
+            "WallRider", # Erm wasen't here before checking YT xdd
+            "Leap of Faith",
+            "GapJumper",
+            "Picicle",
+            "Bookcase",
+            "Slalom",
+            "Switcheroo",
+            "Frozen Fridges",
+            "ToThePeak",
+            "Whoops",
+            "Reversing", # Erm wasen't here before checking YT xdd
+            "Arctic Split",
             "WhirlPool",
-            "Whoops"
-        ]
-    },
-    {
-        "season": "Fall",
-        "year": "2021",
-        "competition": "TMGL Fall 2021",
-        "maps": [
-            "Barrelistic",
-            "BoltHoles",
-            "EuroSky II",
-            "Grasshopper",
-            "IcySnake",
-            "LaunchPad",
-            "OnTheEdge",
-            "PoleParty",
-            "Poolside",
-            "Throttling Act"
+            "SlowmoForest",
+            "SkiJump",
         ]
     },
     {
@@ -1527,14 +1637,35 @@ ALL_COMPETITION_MAP_NAMES = [
         "year": "2021",
         "competition": "TMWC 2021",
         "maps": [
-            "Arctic Split",
-            "Halfpipe",
-            "Paradice",
-            "Reversing",
-            "Semiramis",
-            "Slalom",
+            # "Arctic Split", # Already in Winter 2021
+            # "Circles", # Already in Fall 2020
+            # "Halfpipe", # Already in Fall 2020
+            # "Paradice", # Already in Fall 2020
+            # "Picicle", # Already in Winter 2021
+            # "Reversing", # Already in Winter 2021
+            # "Semiramis", # Already in Fall 2020
+            # "Slalom", # Already in Winter 2021
             "TurboStairs",
             "Zazigzag"
+        ]
+    },
+    {
+        "season": "Fall",
+        "year": "2021",
+        "competition": "TMGL Fall 2021",
+        "maps": [
+            "AirBridge II", # Erm wasen't here before checking YT xdd
+            "EuroSky II",
+            "Barrelistic",
+            "OnTheEdge",
+            "PoleParty",
+            "Vertigo" # Erm wasen't here before checking YT xdd
+            "Poolside",
+            "LaunchPad",
+            "BoltHoles",
+            "Grasshopper",
+            "Throttling Act",
+            "IcySnake"
         ]
     },
     {
@@ -1542,15 +1673,19 @@ ALL_COMPETITION_MAP_NAMES = [
         "year": "2022",
         "competition": "TMGL Spring 2022",
         "maps": [
-            "Bowl",
-            "Clock Tower",
-            "Grassline",
-            "Heart",
+            "QuictSand", # Erm wasen't here before checking YT xdd
             "IcyJump",
             "TightRope",
-            "TinyGap",
-            "Turnover",
             "WaterGlider"
+            "Grassline",
+            "Touchdown", # Erm wasen't here before checking YT xdd
+            "Clock Tower",
+            "Speed Up", # Erm wasen't here before checking YT xdd
+            "TinyGap",
+            "Bowl",
+            "KnifeEdge", # Erm wasen't here before checking YT xdd
+            "Turnover",
+            "Heart"
         ]
     },
     {
@@ -1558,12 +1693,16 @@ ALL_COMPETITION_MAP_NAMES = [
         "year": "2022",
         "competition": "TMWC 2022",
         "maps": [
-            "BoltHoles",
-            "Heart",
-            "Poolside",
-            "QuickSand",
-            "Slalom",
-            "TinyGap"
+            # "Slalom", # Already in Winter 2021
+            # "BoltHoles", # Already in Fall 2021
+            # "Heart", # Already in Spring 2022
+            # "Poolside", # Already in Fall 2021
+            # "QuickSand", # Already in Spring 2022
+            # "TinyGap", # Already in Spring 2022
+            "NewSchool", # Erm wasen't here before checking YT xdd
+            "RedLanding", # Erm wasen't here before checking YT xdd
+            "BobZag", # Erm wasen't here before checking YT xdd
+            "ForestClimbing" # Erm wasen't here before checking YT xdd
         ]
     },
     {
@@ -1655,6 +1794,7 @@ ALL_COMPETITION_MAP_NAMES = [
 ALL_TOTD_MAP_NAMES = {
     
     "Moutain Pass", # added manually
+    "temple of unknown", # added manually
     
     # Added through tm.io:
     "U-Turn",
@@ -1717,7 +1857,7 @@ ALL_TOTD_MAP_NAMES = {
     "Amethyst Castle",
     "C o d a",
     "Morocco",
-    "Green City",
+    "Green City", "Green City v2", # Why wasn't Green City v2 added previously?? :xdd:
     "Juniper",
     "Hillside Highway",
     "Antarctica",
@@ -1737,7 +1877,7 @@ ALL_TOTD_MAP_NAMES = {
     "Invasion",
     "Desert Dunes",
     "Road Made Of Bread",
-    "Edinburgh",
+    "Edinburgh", "EDINGBURGH",
     "Skyline City",
     "BAY OF ISLANDS",
     "Time Warp",

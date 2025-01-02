@@ -1,34 +1,49 @@
 /
+    .gitignore
     a.py
+    AlteredNadeo_RandomMapPicker.op
+    debug.log
     directory_structure.txt
     info.toml
     LICENSE
+    manifest.json
     README.md
     _build.py
-    _log() modifier.py
+    _log().py
+documentatioin/
+    AddingAnAlteration.md
+    change.log
+    QuickAAA.md
+    TM-DaSS.md
 other/
+    Altered Nadeo - Random Map Picker - Thumbnail - 14 000.png
+    Altered Nadeo - Random Map Picker - Thumbnail - 17 000.png
+    Altered Nadeo - Random Map Picker - Thumbnail - 19 000.png
     Altered Nadeo - Random Map Picker - Thumbnail.png
     Altered Nadeo - Random Map Picker.psd
+    directory_structure.txt
     fileNamesOnCDN/
+        AllAlterations.txt
         FileNameAlteration.txt
         FileNameSeason.txt
+        manifest.json
+        manifestExample.json
 src/
+    globVar.as
     Main.as
-    ArrayPopulation/
-        PopulateArrays.as
-        _AlterationArray.as
-        _DataArray.as
-        _SeasonalArray.as
     CDN/
         DownloadFiles/
             DownloadFiles.as
         Manifest/
             Manifest.as
     Conditions/
+        arUtils.as
         CheckPerms.as
-        LogInfo.as
-    Data/
-        FileCheckStart.as
+        Colors.as
+        Logging.as
+    data/
+        0.1.1UserCheck.as
+        FileAndFolderCheckStart.as
         MoveDefaultData.as
     DefaultData/
         data.csv
@@ -38,7 +53,259 @@ src/
         Export_Impl.as
     InGame/
         LoadMaps/
-            LoadMapWithStorageObject.as
-            LoadMapWIthUID.as
-        RenderMenu/
+            GetMapUrl/
+                GetMapWithStorageObject.as
+                GetMapWithUID.as
+            OpenMap/
+                OpenMap.as
+        Render/
             RenderMenu.as
+            SettingsUI.as
+    Profiles/
+        Profiles.as
+    Settings/
+        GeneralSettings.as
+        InitAllSettings.as
+        DisableOrEnable/
+            README
+            All/
+                DisableAll.as
+                EnableAll.as
+            Alterational/
+                DisableDiscordBased.as
+                DisableOrEnableDiscordBased.as
+                EnableDiscordBased.as
+            Discovery/
+                DisableOrEnableDiscordBased.as
+            Seasonal/
+                DisableDiscordBased.as
+                DisableOrEnableDiscordBased.as
+                EnableDiscordBased.as
+TM-DaSS/
+    DownloadFromNadeo.py
+    data/
+        data.csv
+        map_data.json
+        processed_uids.txt
+    scripts/
+        filtered_maps_01-25.json
+        map_name_filter_01-25.py
+        map_number_missmatch_with_hyphen_check.py
+        mismatched_maps.csv
+        mismatched_maps.txt
+        scrape_totd_names_from_tmio.py
+    sortingV1/
+        ConsolidateFilesToOne.py
+        SortByAlteration.py
+        SortBySeason.py
+        START_V2.py
+        byAlteration/
+            !AllOfficialCompetitions.json
+            !MapIsNotInAlterationsDict.json
+            !MapIsNotObtainable.json
+            !OfficialNadeo.json
+            1 Back.json
+            1 Down.json
+            1 Left.json
+            1 Right.json
+            1 Up.json
+            2 Up.json
+            A08.json
+            Antibooster.json
+            Backwards.json
+            Better Mixed.json
+            Better Reverse.json
+            Blind.json
+            Bobsleigh.json
+            Boosterless.json
+            BOSS.json
+            Broken.json
+            Bumper.json
+            Checkpoin't.json
+            Checkpointless Reverse.json
+            Checkpointless.json
+            Chinese.json
+            Cleaned.json
+            Colours Combined.json
+            CP1 is End.json
+            CP1 Kept.json
+            CPfull.json
+            CPLink.json
+            CP_Boost.json
+            Cruise.json
+            Dirt.json
+            Earthquake.json
+            Egocentrism.json
+            Fast Magnet.json
+            Fast.json
+            Flat_2D.json
+            Flipped.json
+            Flooded.json
+            Floor Fin.json
+            Fragile.json
+            Freewheel.json
+            Glider.json
+            Got Rotated_CPs Rotated 90�.json
+            Grass.json
+            Ground Clippers.json
+            Hard.json
+            Holes.json
+            Ice Reverse Reactor.json
+            Ice Reverse.json
+            Ice Short.json
+            Ice.json
+            Icy Reactor.json
+            Inclined.json
+            Lunatic.json
+            Magnet Reverse.json
+            Magnet.json
+            Manslaughter.json
+            Mini RPG.json
+            Mirrored.json
+            Mixed.json
+            Ngolo_Cacti.json
+            No Brakes.json
+            No Cut.json
+            No Effects.json
+            No gear 5.json
+            No Grip.json
+            No Items.json
+            No Steer.json
+            No-Steer.json
+            Penalty.json
+            Pipe.json
+            Plastic Reverse.json
+            Plastic.json
+            Platform.json
+            Podium.json
+            Pool Hunters.json
+            Puzzle.json
+            Random Dankness.json
+            Random Effects.json
+            Random.json
+            Reactor Down.json
+            Reactor Up.json
+            Reactor.json
+            Red Effects.json
+            Replay.json
+            Reverse.json
+            Ring CP.json
+            RNG Booster.json
+            Road Dirt.json
+            Road.json
+            Roofing.json
+            Sausage.json
+            Scuba Diving.json
+            Sections Joined.json
+            Select DEL.json
+            Short.json
+            Sky is the Finish Reverse.json
+            Sky is the Finish.json
+            Slot Track.json
+            Slowmo.json
+            Speedlimit.json
+            Staircase.json
+            Start 1-Down.json
+            Straight to the Finish.json
+            Stunt.json
+            Supersized.json
+            Surfaceless.json
+            sw2u1l-cpu-f2d1r.json
+            Symmetrical.json
+            There and Back_Boomerang.json
+            Tilted.json
+            TMGL Easy.json
+            Underwater Reverse.json
+            Underwater.json
+            Walmart Mini.json
+            Wet Icy Wood.json
+            Wet Plastic.json
+            Wet Wheels.json
+            Wet Wood.json
+            Wood.json
+            Worn Tires.json
+            XX-But.json
+            YEET Down.json
+            Yeet Max-Up.json
+            YEET Puzzle.json
+            YEET Random Puzzle.json
+            YEET Reverse.json
+            YEET.json
+            YEP Tree Puzzle.json
+            [Desert] Carswitch.json
+            [Desert] Underwater.json
+            [Desert].json
+            [Race].json
+            [Rally] Carswitch.json
+            [Rally] CP1 is End.json
+            [Rally] Icy.json
+            [Rally] To The Top.json
+            [Rally] Underwater.json
+            [Rally].json
+            [Snow] Carswitch.json
+            [Snow] Checkpointless.json
+            [Snow] Icy.json
+            [Snow] Underwater.json
+            [Snow] Wood.json
+            [Snow].json
+            [Stadium] Wet Wood.json
+            [Stadium].json
+            [Stunt].json
+        bySeason/
+            AllDesertDiscovery.json
+            AllOfficialCompetitions.json
+            AllRallyDiscovery.json
+            AllSnowDiscovery.json
+            AllTOTD.json
+            Fall2020.json
+            Fall2021.json
+            Fall2022.json
+            Fall2023.json
+            Spring2020.json
+            Spring2021.json
+            Spring2022.json
+            Spring2023.json
+            Spring2024.json
+            Summer2020.json
+            Summer2021.json
+            Summer2022.json
+            Summer2023.json
+            Summer2024.json
+            Training.json
+            Winter2021.json
+            Winter2022.json
+            Winter2023.json
+            Winter2024.json
+            _AllUnknownMaps.json
+        ConsolidatedMaps/
+            consolidated_maps.json
+            HowManyMapsHaveYOUMade.py
+            mapUidNameMatchErrors.txt
+    sortingV2/
+        alteration_dictionary.py
+        ft_matches.csv
+        note_to_self.txt
+        processing_errors.log
+        sort_everything.py
+        special_uids.py
+        totd_names.csv
+        __pycache__/
+            special_uids.cpython-311.pyc
+    sortingV3/
+        alteration_dictionary.py
+        competition_pattern_group.txt
+        discovery_pattern_group.txt
+        map_data.json
+        parsed_map_data.json
+        regex_pattern.py
+        sort_everything.py
+        testing.py
+        totd_pattern_group.txt
+        uids.py
+        unmatched_maps.log
+        __pycache__/
+            regex_pattern.cpython-311.pyc
+            sort_everything.cpython-311.pyc
+            uids.cpython-311.pyc
+    testing/
+        test_name_in_totd.py
