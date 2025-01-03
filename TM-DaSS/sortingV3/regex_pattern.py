@@ -10,7 +10,7 @@ from uids import (
     ALL_TOTD_MAP_NAMES,
     ALL_COMPETITION_MAP_NAMES
 )
-from sort_everything import (
+from assign_mix_attrs import (
     VALID_SEASONS,
     VALID_MAPNUMBER_COLORS,
     CHINESE_SEASON_MAP,
