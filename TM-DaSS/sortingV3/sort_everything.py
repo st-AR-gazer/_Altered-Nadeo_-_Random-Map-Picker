@@ -89,7 +89,7 @@ def validate_mapnumber(map_nums: list) -> list:
 
 
 ft_pattern = re.compile(
-    r"(?:ft' |ft, |ft. |ft |featuring |AT by | AT  by |Feat )(\w+)",
+    r"(?:ft' |ft, |ft. |ft |featuring |AT by | AT  by |'AT  by |Feat )(\w+)",
     re.IGNORECASE
 )
 
@@ -207,9 +207,9 @@ def match_known_patterns(map_name: str, map_uid: str = None):
                             attrs['mapnumber'] = mapnumber
                             attrs['season'] = campaign['season'].capitalize()
                             attrs['type'] = campaign['name']
-                            if 'alteration_mix' not in attrs:
-                                attrs['alteration_mix'] = []
-                            return attrs
+                            attrs['alteration_mix'] = [attrs['alteration_mix']]
+                            break
+                return attrs
             
             # Handle TOTD
             if totd_full_pattern.match(map_name):
@@ -217,20 +217,21 @@ def match_known_patterns(map_name: str, map_uid: str = None):
                 attrs['year'] = None
                 attrs['mapnumber'] = []
                 attrs['type'] = 'totd'
-                attrs['alteration_mix'] = []
+                attrs['alteration_mix'] = [attrs['alteration_mix']]
                 return attrs
             
             # Handle competitions
             if 'competitionname' in attrs and attrs['competitionname']:
                 competition_name = attrs['competitionname']
                 for competition in ALL_COMPETITION_MAP_NAMES:
-                    if competition_name in competition["maps"]:
+                    if competition_name.lower() in [m.lower() for m in competition["maps"]]:
                         attrs['season'] = competition['season'] if competition['season'] != '_' else None
                         attrs['year'] = validate_year(int(competition['year']))
                         attrs['type'] = competition['competition']
                         attrs['mapnumber'] = []
-                        attrs['alteration_mix'] = []
-                        return attrs
+                        attrs['alteration_mix'] = [attrs['alteration_mix']]
+                        break
+                return attrs
             
             # Handle spring2020
             if 'spring2020' in attrs and attrs['spring2020']:

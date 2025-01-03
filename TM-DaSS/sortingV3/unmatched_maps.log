@@ -1,143 +1,30 @@
-2025-01-02T16:17:59+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2025-01-02T16:17:59+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2025-01-02T16:17:59+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2025-01-02T16:17:59+0100 WARNING: Unmatched map name: Summer 2021 - 21 (sanitized: Summer 2021 - 21), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Summer 2021 - 03 (sanitized: Summer 2021 - 03), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Spring 2024 - 21 (UW) (Reverse) (sanitized: Spring 2024 - 21 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Summer 2021 - 15 (sanitized: Summer 2021 - 15), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Summer 2021 - 01 (sanitized: Summer 2021 - 01), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Summer 2021 - 19 (sanitized: Summer 2021 - 19), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Fall 2023 - 14 Carswitch (sanitized: Fall 2023 - 14 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:00+0100 WARNING: Unmatched map name: Summer 2021 - 11 (sanitized: Summer 2021 - 11), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Summer 2021 - 04 (sanitized: Summer 2021 - 04), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Summer 2021 - 08 (sanitized: Summer 2021 - 08), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Fall 2022 - 15 [Snow] (Snow) (sanitized: Fall 2022 - 15 [Snow] (Snow)), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_12 (sanitized: Supersized_Spring_2024_-_12), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Summer 2021 - 17 (sanitized: Summer 2021 - 17), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: $s$o$3FFHieme $FFFIter (STTF-CPLess) (sanitized: Hieme Iter (STTF-CPLess)), totd: False, discovery: {}
-2025-01-02T16:18:01+0100 WARNING: Unmatched map name: Fall 2023 - 06 Carswitch (sanitized: Fall 2023 - 06 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Summer 2021 - 22 (sanitized: Summer 2021 - 22), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Spring 2022 - 02 Speed Limit | Not Validated (sanitized: Spring 2022 - 02 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Fall 2021 - 17 (sanitized: Fall 2021 - 17), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Fall 2021 - 16 (sanitized: Fall 2021 - 16), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Spring 2024 - 11 (UW) (Reverse) (sanitized: Spring 2024 - 11 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Spring 2024 - 12 (UW) (Reverse) (sanitized: Spring 2024 - 12 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Summer 2021 - 14 (sanitized: Summer 2021 - 14), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Spring 2024 - 25 (UW) (Reverse) (sanitized: Spring 2024 - 25 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:02+0100 WARNING: Unmatched map name: Training 13 But it's a climb (sanitized: Training 13 But it's a climb), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Summer 2021 - 24 (sanitized: Summer 2021 - 24), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Spring 2022 - 01 Speed Limit | Not Validated (sanitized: Spring 2022 - 01 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Spring 2023 - 01 Magnet 2up (sanitized: Spring 2023 - 01 Magnet 2up), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Spring 2024 - 15 (UW) (Reverse) (sanitized: Spring 2024 - 15 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Fall 2023 - 17 Carswitch (sanitized: Fall 2023 - 17 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:03+0100 WARNING: Unmatched map name: Fall 2024 - 18 (sanitized: Fall 2024 - 18), totd: False, discovery: {}
-2025-01-02T16:18:04+0100 WARNING: Unmatched map name: Grassline [EASY MODE] (sanitized: Grassline [EASY MODE]), totd: False, discovery: {}
-2025-01-02T16:18:04+0100 WARNING: Unmatched map name: Fall 2023 - 16 Carswitch (sanitized: Fall 2023 - 16 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:04+0100 WARNING: Unmatched map name: Fall 2023 - 08 Carswitch (sanitized: Fall 2023 - 08 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:04+0100 WARNING: Unmatched map name: Spring 2022 - 17 Speed Limit | Not Validated (sanitized: Spring 2022 - 17 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:04+0100 WARNING: Unmatched map name: Fall 2021 - 04 (sanitized: Fall 2021 - 04), totd: False, discovery: {}
-2025-01-02T16:18:05+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
-2025-01-02T16:18:05+0100 WARNING: Unmatched map name: Fall 2022 - 22 Magnetic Pipes (sanitized: Fall 2022 - 22 Magnetic Pipes), totd: False, discovery: {}
-2025-01-02T16:18:05+0100 WARNING: Unmatched map name: Suburbia (CPLess-STTF) (sanitized: Suburbia (CPLess-STTF)), totd: False, discovery: {}
-2025-01-02T16:18:05+0100 WARNING: Unmatched map name: Quicksand [EASY MODE] (sanitized: Quicksand [EASY MODE]), totd: False, discovery: {}
-2025-01-02T16:18:05+0100 WARNING: Unmatched map name: Spring 2024 - 16 (UW) (Reverse) (sanitized: Spring 2024 - 16 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:06+0100 WARNING: Unmatched map name: Summer 2021 - 16 (sanitized: Summer 2021 - 16), totd: False, discovery: {}
-2025-01-02T16:18:06+0100 WARNING: Unmatched map name: Spring 2024 - 07 (UW) (Reverse) (sanitized: Spring 2024 - 07 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:06+0100 WARNING: Unmatched map name: Spring 2024 - 23 (Desert) (UW) (sanitized: Spring 2024 - 23 (Desert) (UW)), totd: False, discovery: {}
-2025-01-02T16:18:06+0100 WARNING: Unmatched map name: Spring 2024 - 18 (UW) (Reverse) (sanitized: Spring 2024 - 18 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:07+0100 WARNING: Unmatched map name: Fall 2023 - 19 Carswitch (sanitized: Fall 2023 - 19 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:07+0100 WARNING: Unmatched map name: Fall 2023 - 05 Carswitch (sanitized: Fall 2023 - 05 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:07+0100 WARNING: Unmatched map name: Fall 2023 - 22 Carswitch (sanitized: Fall 2023 - 22 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:07+0100 WARNING: Unmatched map name: Spring 2022 - 21 Speed Limit | Not Validated (sanitized: Spring 2022 - 21 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:07+0100 WARNING: Unmatched map name: Summer 2021 - 10 (sanitized: Summer 2021 - 10), totd: False, discovery: {}
-2025-01-02T16:18:08+0100 WARNING: Unmatched map name: Spring 2023 - Last Section Joined (All Ends) (sanitized: Spring 2023 - Last Section Joined (All Ends)), totd: False, discovery: {}
-2025-01-02T16:18:08+0100 WARNING: Unmatched map name: Spring 2024 - 14 (UW) (Reverse) (sanitized: Spring 2024 - 14 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:08+0100 WARNING: Unmatched map name: Fall 2021 - 01 But It's Bobsleigh (sanitized: Fall 2021 - 01 But It's Bobsleigh), totd: False, discovery: {}
-2025-01-02T16:18:08+0100 WARNING: Unmatched map name: Fall 2023 - 12 Carswitch (sanitized: Fall 2023 - 12 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:08+0100 WARNING: Unmatched map name: Fall 2023 - 07 Carswitch (sanitized: Fall 2023 - 07 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:09+0100 WARNING: Unmatched map name: Summer 2023 - Last Section Joined (sanitized: Summer 2023 - Last Section Joined), totd: False, discovery: {}
-2025-01-02T16:18:09+0100 WARNING: Unmatched map name: Training - 06 (sanitized: Training - 06), totd: False, discovery: {}
-2025-01-02T16:18:09+0100 WARNING: Unmatched map name: Spring 2024 - 01 (UW) (Reverse) (sanitized: Spring 2024 - 01 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:09+0100 WARNING: Unmatched map name: GreenCity (SnowCar) (sanitized: GreenCity (SnowCar)), totd: False, discovery: {}
-2025-01-02T16:18:10+0100 WARNING: Unmatched map name: Winter 2023 - 07 - CPs Rotated 90 (sanitized: Winter 2023 - 07 - CPs Rotated 90), totd: False, discovery: {}
-2025-01-02T16:18:10+0100 WARNING: Unmatched map name: Summer 2023 - 20 (Chekpointless Reverse) (sanitized: Summer 2023 - 20 (Chekpointless Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:10+0100 WARNING: Unmatched map name: Fall 2023 - 20 Carswitch (sanitized: Fall 2023 - 20 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: Fall 2023 - 24 cpless2Top (sanitized: Fall 2023 - 24 cpless2Top), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: Symmetrical Fall 2022 - 21 (Validated) (sanitized: Symmetrical Fall 2022 - 21 (Validated)), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: $o$88FArctic Nightrush (Wet Wood) (sanitized: Arctic Nightrush (Wet Wood)), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: Fall 2021 - 01 But the elevation is reverse (sanitized: Fall 2021 - 01 But the elevation is reverse), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: Spring 2024 09 Supersized (sanitized: Spring 2024 09 Supersized), totd: False, discovery: {}
-2025-01-02T16:18:11+0100 WARNING: Unmatched map name: Fall 2023 - 03 Carswitch (sanitized: Fall 2023 - 03 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Winter 2024 - Last Section Joined (sanitized: Winter 2024 - Last Section Joined), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Fall 2023 - 23 Carswitch (sanitized: Fall 2023 - 23 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Spring 2022 - 10 Speed Limit | Not Validated (sanitized: Spring 2022 - 10 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Fall 2023 - Last Section Joined (sanitized: Fall 2023 - Last Section Joined), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Spring 2024 - 13 (UW) (Reverse) (sanitized: Spring 2024 - 13 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:12+0100 WARNING: Unmatched map name: Diversion (CPLess-STTF) (sanitized: Diversion (CPLess-STTF)), totd: False, discovery: {}
-2025-01-02T16:18:13+0100 WARNING: Unmatched map name: Icy Cavern (CPLess-STTF) (sanitized: Icy Cavern (CPLess-STTF)), totd: False, discovery: {}
-2025-01-02T16:18:13+0100 WARNING: Unmatched map name: PoolSide [EASY MODE] (sanitized: PoolSide [EASY MODE]), totd: False, discovery: {}
-2025-01-02T16:18:13+0100 WARNING: Unmatched map name: $s$ff0Summer 2023 $fffRoad - 12 (by Dark_Kirby) (sanitized: Summer 2023 Road - 12 (by Dark_Kirby)), totd: False, discovery: {}
-2025-01-02T16:18:13+0100 WARNING: Unmatched map name: Summer 2021 - 10 but its Fragile (1) (sanitized: Summer 2021 - 10 but its Fragile (1)), totd: False, discovery: {}
-2025-01-02T16:18:13+0100 WARNING: Unmatched map name: SPRING 2022 - 01 BUT PIPE (sanitized: SPRING 2022 - 01 BUT PIPE), totd: False, discovery: {}
-2025-01-02T16:18:14+0100 WARNING: Unmatched map name: Spring 2022 - 20 Speed Limit | Not Validated (sanitized: Spring 2022 - 20 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:14+0100 WARNING: Unmatched map name: Plastic Winter 2023 - 11 (ft' Kek_DreamZ (sanitized: Plastic Winter 2023 - 11 (), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Fall 2022 - 25 (sanitized: Fall 2022 - 25), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: S06 but you need to get onto the surfaceless blocks (sanitized: S06 but you need to get onto the surfaceless blocks), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Fall 2022 poolhunter $eb7Featuring TnTree (sanitized: Fall 2022 poolhunter), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Fall 2023 - 04 Carswitch (sanitized: Fall 2023 - 04 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Training - 16 Walmart Mini 'AT  by BlueJinx (sanitized: Training - 16 Walmart Mini 'AT by BlueJinx), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Spring 2023 - 01 Pain Puzzle (sanitized: Spring 2023 - 01 Pain Puzzle), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Spring 2024 - 01 (100% Wet Icy Wood (sanitized: Spring 2024 - 01 (100% Wet Icy Wood), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Spring 2024 - 03 (UW) (Reverse) (sanitized: Spring 2024 - 03 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:15+0100 WARNING: Unmatched map name: Summer 2021 - 10 but its Fragile (2) (sanitized: Summer 2021 - 10 but its Fragile (2)), totd: False, discovery: {}
-2025-01-02T16:18:16+0100 WARNING: Unmatched map name: WaterGlider [EASY MODE] (sanitized: WaterGlider [EASY MODE]), totd: False, discovery: {}
-2025-01-02T16:18:16+0100 WARNING: Unmatched map name: Spring 2021 - 01 But its all Plastic! (sanitized: Spring 2021 - 01 But its all Plastic!), totd: False, discovery: {}
-2025-01-02T16:18:16+0100 WARNING: Unmatched map name: Spring 2024 - 04 (UW) (Reverse) (sanitized: Spring 2024 - 04 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:17+0100 WARNING: Unmatched map name: $i$o$s$630Woodslide $0ff2045 $zby NebulaTM (100% WIW) (sanitized: Woodslide 2045 by NebulaTM (100% WIW)), totd: False, discovery: {}
-2025-01-02T16:18:17+0100 WARNING: Unmatched map name: Fall 2023 - 02 Carswitch (sanitized: Fall 2023 - 02 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:17+0100 WARNING: Unmatched map name: Spring 2022 - 21 But Sink Fast (sanitized: Spring 2022 - 21 But Sink Fast), totd: False, discovery: {}
-2025-01-02T16:18:17+0100 WARNING: Unmatched map name: Vertigo [EASY MODE] (sanitized: Vertigo [EASY MODE]), totd: False, discovery: {}
-2025-01-02T16:18:17+0100 WARNING: Unmatched map name: $n$s$o$2fBHa$4f9n$6f7gi$8f5ng $2FBGa$4f9rd$6f7en$8f5s (CP1) (sanitized: Hanging Gardens (CP1)), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Fall 2023 - 09 Carswitch (sanitized: Fall 2023 - 09 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Fall 2021 - 01 but it's pipes (sanitized: Fall 2021 - 01 but it's pipes), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Spring 2023 - 22 - slowmow (sanitized: Spring 2023 - 22 - slowmow), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Spring 2024 - 10 (UW) (Reverse) (sanitized: Spring 2024 - 10 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Spring 2021 - 01 Mirrored (sanitized: Spring 2021 - 01 Mirrored), totd: False, discovery: {}
-2025-01-02T16:18:18+0100 WARNING: Unmatched map name: Fall 2023 - 25 Carswitch (sanitized: Fall 2023 - 25 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:19+0100 WARNING: Unmatched map name: Fall 2021 boosterless (fixed) - 17 (sanitized: Fall 2021 boosterless (fixed) - 17), totd: False, discovery: {}
-2025-01-02T16:18:19+0100 WARNING: Unmatched map name: Fall 2023 - 15 Carswitch (sanitized: Fall 2023 - 15 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:19+0100 WARNING: Unmatched map name: Spring 2024 - 20 (UW) (Reverse) (sanitized: Spring 2024 - 20 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:19+0100 WARNING: Unmatched map name: $oDesert Fest (STTF-CPLess) (sanitized: Desert Fest (STTF-CPLess)), totd: False, discovery: {}
-2025-01-02T16:18:19+0100 WARNING: Unmatched map name: Fall 2023 - 18 Carswitch (sanitized: Fall 2023 - 18 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:20+0100 WARNING: Unmatched map name: Spring 2024 - 24 (UW) (Reverse) (sanitized: Spring 2024 - 24 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:20+0100 WARNING: Unmatched map name: Fall 2021 - 25 but it's Fragile !! (sanitized: Fall 2021 - 25 but it's Fragile !!), totd: False, discovery: {}
-2025-01-02T16:18:20+0100 WARNING: Unmatched map name: Invisible Training - 08 (sanitized: Invisible Training - 08), totd: False, discovery: {}
-2025-01-02T16:18:20+0100 WARNING: Unmatched map name: Fall 2023 - 13 Carswitch (sanitized: Fall 2023 - 13 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:20+0100 WARNING: Unmatched map name: Fall 2021 - 01 But it's grass pipes (sanitized: Fall 2021 - 01 But it's grass pipes), totd: False, discovery: {}
-2025-01-02T16:18:21+0100 WARNING: Unmatched map name: Icy  ReactorTraining - 19 (sanitized: Icy ReactorTraining - 19), totd: False, discovery: {}
-2025-01-02T16:18:21+0100 WARNING: Unmatched map name: Spring 2024 - 19 (UW) (Reverse) (sanitized: Spring 2024 - 19 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:21+0100 WARNING: Unmatched map name: Fall 2023 - 10 Carswitch (sanitized: Fall 2023 - 10 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:21+0100 WARNING: Unmatched map name: Spring 2023 - Section 1 Joined (All Starts) (sanitized: Spring 2023 - Section 1 Joined (All Starts)), totd: False, discovery: {}
-2025-01-02T16:18:22+0100 WARNING: Unmatched map name: Fall 2022 - 01 but litterally sttf (sanitized: Fall 2022 - 01 but litterally sttf), totd: False, discovery: {}
-2025-01-02T16:18:22+0100 WARNING: Unmatched map name: Supersized_Spring_2024_-_05 (sanitized: Supersized_Spring_2024_-_05), totd: False, discovery: {}
-2025-01-02T16:18:22+0100 WARNING: Unmatched map name: Fall 2022 - 04 -fast magnet (sanitized: Fall 2022 - 04 -fast magnet), totd: False, discovery: {}
-2025-01-02T16:18:23+0100 WARNING: Unmatched map name: Spring 23 poolhunters - 05 (sanitized: Spring 23 poolhunters - 05), totd: False, discovery: {}
-2025-01-02T16:18:23+0100 WARNING: Unmatched map name: Fall 2023 - 21 Carswitch (sanitized: Fall 2023 - 21 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:23+0100 WARNING: Unmatched map name: Fall 2023 - 11 Carswitch (sanitized: Fall 2023 - 11 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:24+0100 WARNING: Unmatched map name: Fall 2023 - 01 Carswitch (sanitized: Fall 2023 - 01 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:24+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
-2025-01-02T16:18:24+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
-2025-01-02T16:18:25+0100 WARNING: Unmatched map name: The Wormhole (CPLess - STTF) (sanitized: The Wormhole (CPLess - STTF)), totd: False, discovery: {}
-2025-01-02T16:18:25+0100 WARNING: Unmatched map name: Spring 2024 - 08 (UW) (Reverse) (sanitized: Spring 2024 - 08 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:25+0100 WARNING: Unmatched map name: Spring 2022 - 15 Speed Limit | Not Validated (sanitized: Spring 2022 - 15 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:25+0100 WARNING: Unmatched map name: $<Fall 2023 - 02$> -snowcar (sanitized: Fall 2023 - 02 -snowcar), totd: False, discovery: {}
-2025-01-02T16:18:26+0100 WARNING: Unmatched map name: Mighty Desert (Cawswitch DesertCar) (sanitized: Mighty Desert (Cawswitch DesertCar)), totd: False, discovery: {}
-2025-01-02T16:18:26+0100 WARNING: Unmatched map name: Spring 2024 - 09 (UW) (Reverse) (sanitized: Spring 2024 - 09 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:26+0100 WARNING: Unmatched map name: Spring 2024 - 06 (UW) (Reverse) (sanitized: Spring 2024 - 06 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:26+0100 WARNING: Unmatched map name: Spring 2022 - 24 Speed Limit | Not Validated (sanitized: Spring 2022 - 24 Speed Limit |), totd: False, discovery: {}
-2025-01-02T16:18:26+0100 WARNING: Unmatched map name: Journey - High Gardens (STTF-CPLess) (sanitized: Journey - High Gardens (STTF-CPLess)), totd: False, discovery: {}
-2025-01-02T16:18:27+0100 WARNING: Unmatched map name: Spring 2024 - 17 (UW) (Reverse) (sanitized: Spring 2024 - 17 (UW) (Reverse)), totd: False, discovery: {}
-2025-01-02T16:18:27+0100 WARNING: Unmatched map name: Fall 2023 - 24 Carswitch (sanitized: Fall 2023 - 24 Carswitch), totd: False, discovery: {}
-2025-01-02T16:18:27+0100 WARNING: Unmatched map name: Fall 2021 - 01 But It's Sausage (sanitized: Fall 2021 - 01 But It's Sausage), totd: False, discovery: {}
-2025-01-02T16:18:27+0100 WARNING: Unmatched map name: Plastic Summer 2021 - 25 (Fixed) (sanitized: Plastic Summer 2021 - 25 (Fixed)), totd: False, discovery: {}
-2025-01-02T16:18:30+0100 INFO: Parsed data written to parsed_map_data.json
+2025-01-03T13:53:24+0100 INFO: totd_pattern_group written to pattern_dings.txt
+2025-01-03T13:53:24+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2025-01-03T13:53:24+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
+2025-01-03T13:53:24+0100 WARNING: Unmatched map name: Summer 2021 - 21 (sanitized: Summer 2021 - 21), totd: False, discovery: {}
+2025-01-03T13:53:24+0100 WARNING: Unmatched map name: Summer 2021 - 03 (sanitized: Summer 2021 - 03), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 15 (sanitized: Summer 2021 - 15), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 01 (sanitized: Summer 2021 - 01), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 19 (sanitized: Summer 2021 - 19), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 11 (sanitized: Summer 2021 - 11), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 04 (sanitized: Summer 2021 - 04), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 08 (sanitized: Summer 2021 - 08), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Fall 2022 - 15 [Snow] (Snow) (sanitized: Fall 2022 - 15 [Snow] (Snow)), totd: False, discovery: {}
+2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 17 (sanitized: Summer 2021 - 17), totd: False, discovery: {}
+2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 22 (sanitized: Summer 2021 - 22), totd: False, discovery: {}
+2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Fall 2021 - 17 (sanitized: Fall 2021 - 17), totd: False, discovery: {}
+2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Fall 2021 - 16 (sanitized: Fall 2021 - 16), totd: False, discovery: {}
+2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 14 (sanitized: Summer 2021 - 14), totd: False, discovery: {}
+2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 24 (sanitized: Summer 2021 - 24), totd: False, discovery: {}
+2025-01-03T13:53:27+0100 WARNING: Unmatched map name: Fall 2024 - 18 (sanitized: Fall 2024 - 18), totd: False, discovery: {}
+2025-01-03T13:53:28+0100 WARNING: Unmatched map name: Fall 2021 - 04 (sanitized: Fall 2021 - 04), totd: False, discovery: {}
+2025-01-03T13:53:28+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
+2025-01-03T13:53:29+0100 WARNING: Unmatched map name: Summer 2021 - 16 (sanitized: Summer 2021 - 16), totd: False, discovery: {}
+2025-01-03T13:53:30+0100 WARNING: Unmatched map name: Summer 2021 - 10 (sanitized: Summer 2021 - 10), totd: False, discovery: {}
+2025-01-03T13:53:31+0100 WARNING: Unmatched map name: Training - 06 (sanitized: Training - 06), totd: False, discovery: {}
+2025-01-03T13:53:36+0100 WARNING: Unmatched map name: Fall 2022 - 25 (sanitized: Fall 2022 - 25), totd: False, discovery: {}
+2025-01-03T13:53:36+0100 WARNING: Unmatched map name: Fall 2022 poolhunter $eb7Featuring TnTree (sanitized: Fall 2022 poolhunter), totd: False, discovery: {}
+2025-01-03T13:53:40+0100 WARNING: Unmatched map name: Invisible Training - 08 (sanitized: Invisible Training - 08), totd: False, discovery: {}
+2025-01-03T13:53:43+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
+2025-01-03T13:53:43+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
+2025-01-03T13:53:48+0100 INFO: Parsed data written to parsed_map_data.json
