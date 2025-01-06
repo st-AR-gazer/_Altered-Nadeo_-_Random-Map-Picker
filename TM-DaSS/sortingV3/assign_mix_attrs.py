@@ -44,7 +44,10 @@ VALID_MAPNUMBER_COLORS = ["white", "green", "blue", "red", "black"]
 CHINESE_SEASON_MAP = {
     "\u590f\u5b63\u8d5b": "summer", # "夏季赛"
     "\u79cb\u5b63": "fall",         # "秋季"
-    "\u8bad\u7ec3": "training"      # "训练"
+    "\u8bad\u7ec3": "training",     # "训练"
+    "夏季赛": "summer",
+    "秋季": "fall",
+    "训练": "training"   
 }
 MAPNUMBER_COLOR_REGEX = '|'.join(VALID_MAPNUMBER_COLORS)
 SEASON_REGEX = '|'.join(VALID_SEASONS)
@@ -377,12 +380,20 @@ def match_known_patterns(map_name: str, map_uid: str = None):
 
             if attrs.get('season') and attrs.get('season').lower() == 'training':
                 attrs['year'] = 2020
+                
+            if attrs.get('season') and attrs.get('season').lower() == '训练':
+                attrs['season'] = 'training'
+                attrs['year'] = 2020
+            if attrs.get('season') and attrs.get('season').lower() == '夏季赛':
+                attrs['season'] = 'summer'
+            if attrs.get('season') and attrs.get('season').lower() == '秋季':
+                attrs['season'] = 'fall'
 
             if 'season' in attrs and attrs.get('season'):
                 attrs['season'] = attrs['season'].capitalize()
             else:
                 attrs['season'] = None
-
+                
             # Collect all alterations into alteration_mix
             alterations = []
             for key in list(attrs.keys()):

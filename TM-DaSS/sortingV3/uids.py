@@ -241,6 +241,7 @@ special_uids = [
         # Spring 2024
         
         {"uid": "pJjsY1gvXM50RFOdVwhcj8h_0Rd", "name": "Spring 2024 - 11 (Very Hidden Finish)",             "season": "Spring",     "year": "2024", "mapNumber": [ "11" ], "alteration": "XX-But"},
+        {"uid": "H_rq865deBHEqhDo1OK1M86HSi8", "name": "Spring 2024 - 25 - Reverse (Rally)",                "season": "Spring",     "year": "2024", "mapNumber": [ "25" ], "alteration": "XX-But"},
         
         # Summer 2024
         
@@ -306,7 +307,7 @@ special_uids = [
     
         {"uid": "7QzByRVA_7pLuA_aFJgJR_Z0wOk", "name": "Spring 2022 - 11 - one back",              "season": "spring",   "year": "2022", "mapNumber": [ "11" ], "alteration": "1 Back"},
         {"uid": "_WOsZZgiUuOUpzo1uQWSD3N41p3", "name": "Summer 2023 - 09 (Scenery DEL)",           "season": "Summer",   "year": "2023", "mapNumber": [ "09" ], "alteration": "Select DEL"},
-        {"uid": "XNwn955QsvkoeeLHWoHsTy5Qf9m", "name": "Wet Stastic",                              "season": "winter",   "year": "2024", "mapNumber": [ "19" ], "alteration": "[Stadium] Wet Plastic"}, # Might be sorted under xx-but
+        {"uid": "XNwn955QsvkoeeLHWoHsTy5Qf9m", "name": "Wet Stastic",                              "season": "winter",   "year": "2024", "mapNumber": [ "19" ], "alteration": "Wet Plastic"}, # Might be sorted under xx-but, or just wet plastic...
         {"uid": "lUCieW880_2TNphWqoaKd19LQLi", "name": "Training Puzzzle - 16",                    "season": "Training", "year": "2020", "mapNumber": [ "16" ], "alteration": "Puzzle"},
         {"uid": "CX9rIBuKXjE_uGwgmOkkNs9aFcg", "name": "Icy  ReactorTraining - 19",                "season": "Training", "year": "2020", "mapNumber": [ "19" ], "alteration": "Reactor"},
         {"uid": "0TWrceiPf7tAW1DPTReZKhv2tJc", "name": "Supersized_Spring_2024_-_05",              "season": "Spring",   "year": "2024", "mapNumber": [ "05" ], "alteration": "Supersized"},

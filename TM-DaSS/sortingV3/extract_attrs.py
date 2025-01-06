@@ -21,7 +21,7 @@ def extract_unique_alteration_mix(input_file, output_file):
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             for alteration in unique_alterations:
-                f.write(', '.join(alteration) + '\n')
+                f.write('; '.join(alteration) + '\n')
         print(f"Successfully wrote {len(unique_alterations)} unique alteration_mix variations to '{output_file}'.")
     except IOError as e:
         print(f"Error: Failed to write to '{output_file}'. {e}")

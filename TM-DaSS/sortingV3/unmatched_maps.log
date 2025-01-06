@@ -1,30 +1,30 @@
-2025-01-03T13:53:24+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2025-01-03T13:53:24+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2025-01-03T13:53:24+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2025-01-03T13:53:24+0100 WARNING: Unmatched map name: Summer 2021 - 21 (sanitized: Summer 2021 - 21), totd: False, discovery: {}
-2025-01-03T13:53:24+0100 WARNING: Unmatched map name: Summer 2021 - 03 (sanitized: Summer 2021 - 03), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 15 (sanitized: Summer 2021 - 15), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 01 (sanitized: Summer 2021 - 01), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 19 (sanitized: Summer 2021 - 19), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 11 (sanitized: Summer 2021 - 11), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 04 (sanitized: Summer 2021 - 04), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 08 (sanitized: Summer 2021 - 08), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Fall 2022 - 15 [Snow] (Snow) (sanitized: Fall 2022 - 15 [Snow] (Snow)), totd: False, discovery: {}
-2025-01-03T13:53:25+0100 WARNING: Unmatched map name: Summer 2021 - 17 (sanitized: Summer 2021 - 17), totd: False, discovery: {}
-2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 22 (sanitized: Summer 2021 - 22), totd: False, discovery: {}
-2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Fall 2021 - 17 (sanitized: Fall 2021 - 17), totd: False, discovery: {}
-2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Fall 2021 - 16 (sanitized: Fall 2021 - 16), totd: False, discovery: {}
-2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 14 (sanitized: Summer 2021 - 14), totd: False, discovery: {}
-2025-01-03T13:53:26+0100 WARNING: Unmatched map name: Summer 2021 - 24 (sanitized: Summer 2021 - 24), totd: False, discovery: {}
-2025-01-03T13:53:27+0100 WARNING: Unmatched map name: Fall 2024 - 18 (sanitized: Fall 2024 - 18), totd: False, discovery: {}
-2025-01-03T13:53:28+0100 WARNING: Unmatched map name: Fall 2021 - 04 (sanitized: Fall 2021 - 04), totd: False, discovery: {}
-2025-01-03T13:53:28+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
-2025-01-03T13:53:29+0100 WARNING: Unmatched map name: Summer 2021 - 16 (sanitized: Summer 2021 - 16), totd: False, discovery: {}
-2025-01-03T13:53:30+0100 WARNING: Unmatched map name: Summer 2021 - 10 (sanitized: Summer 2021 - 10), totd: False, discovery: {}
-2025-01-03T13:53:31+0100 WARNING: Unmatched map name: Training - 06 (sanitized: Training - 06), totd: False, discovery: {}
-2025-01-03T13:53:36+0100 WARNING: Unmatched map name: Fall 2022 - 25 (sanitized: Fall 2022 - 25), totd: False, discovery: {}
-2025-01-03T13:53:36+0100 WARNING: Unmatched map name: Fall 2022 poolhunter $eb7Featuring TnTree (sanitized: Fall 2022 poolhunter), totd: False, discovery: {}
-2025-01-03T13:53:40+0100 WARNING: Unmatched map name: Invisible Training - 08 (sanitized: Invisible Training - 08), totd: False, discovery: {}
-2025-01-03T13:53:43+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
-2025-01-03T13:53:43+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
-2025-01-03T13:53:48+0100 INFO: Parsed data written to parsed_map_data.json
+2025-01-06T10:14:10+0100 INFO: totd_pattern_group written to pattern_dings.txt
+2025-01-06T10:14:10+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2025-01-06T10:14:10+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
+2025-01-06T10:14:10+0100 WARNING: Unmatched map name: Summer 2021 - 21 (sanitized: Summer 2021 - 21), totd: False, discovery: {}
+2025-01-06T10:14:10+0100 WARNING: Unmatched map name: Summer 2021 - 03 (sanitized: Summer 2021 - 03), totd: False, discovery: {}
+2025-01-06T10:14:10+0100 WARNING: Unmatched map name: Summer 2021 - 15 (sanitized: Summer 2021 - 15), totd: False, discovery: {}
+2025-01-06T10:14:10+0100 WARNING: Unmatched map name: Summer 2021 - 01 (sanitized: Summer 2021 - 01), totd: False, discovery: {}
+2025-01-06T10:14:10+0100 WARNING: Unmatched map name: Summer 2021 - 19 (sanitized: Summer 2021 - 19), totd: False, discovery: {}
+2025-01-06T10:14:11+0100 WARNING: Unmatched map name: Summer 2021 - 11 (sanitized: Summer 2021 - 11), totd: False, discovery: {}
+2025-01-06T10:14:11+0100 WARNING: Unmatched map name: Summer 2021 - 04 (sanitized: Summer 2021 - 04), totd: False, discovery: {}
+2025-01-06T10:14:11+0100 WARNING: Unmatched map name: Summer 2021 - 08 (sanitized: Summer 2021 - 08), totd: False, discovery: {}
+2025-01-06T10:14:11+0100 WARNING: Unmatched map name: Fall 2022 - 15 [Snow] (Snow) (sanitized: Fall 2022 - 15 [Snow] (Snow)), totd: False, discovery: {}
+2025-01-06T10:14:12+0100 WARNING: Unmatched map name: Summer 2021 - 17 (sanitized: Summer 2021 - 17), totd: False, discovery: {}
+2025-01-06T10:14:12+0100 WARNING: Unmatched map name: Summer 2021 - 22 (sanitized: Summer 2021 - 22), totd: False, discovery: {}
+2025-01-06T10:14:12+0100 WARNING: Unmatched map name: Fall 2021 - 17 (sanitized: Fall 2021 - 17), totd: False, discovery: {}
+2025-01-06T10:14:12+0100 WARNING: Unmatched map name: Fall 2021 - 16 (sanitized: Fall 2021 - 16), totd: False, discovery: {}
+2025-01-06T10:14:12+0100 WARNING: Unmatched map name: Summer 2021 - 14 (sanitized: Summer 2021 - 14), totd: False, discovery: {}
+2025-01-06T10:14:13+0100 WARNING: Unmatched map name: Summer 2021 - 24 (sanitized: Summer 2021 - 24), totd: False, discovery: {}
+2025-01-06T10:14:13+0100 WARNING: Unmatched map name: Fall 2024 - 18 (sanitized: Fall 2024 - 18), totd: False, discovery: {}
+2025-01-06T10:14:14+0100 WARNING: Unmatched map name: Fall 2021 - 04 (sanitized: Fall 2021 - 04), totd: False, discovery: {}
+2025-01-06T10:14:14+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
+2025-01-06T10:14:15+0100 WARNING: Unmatched map name: Summer 2021 - 16 (sanitized: Summer 2021 - 16), totd: False, discovery: {}
+2025-01-06T10:14:16+0100 WARNING: Unmatched map name: Summer 2021 - 10 (sanitized: Summer 2021 - 10), totd: False, discovery: {}
+2025-01-06T10:14:17+0100 WARNING: Unmatched map name: Training - 06 (sanitized: Training - 06), totd: False, discovery: {}
+2025-01-06T10:14:24+0100 WARNING: Unmatched map name: Fall 2022 - 25 (sanitized: Fall 2022 - 25), totd: False, discovery: {}
+2025-01-06T10:14:24+0100 WARNING: Unmatched map name: Fall 2022 poolhunter $eb7Featuring TnTree (sanitized: Fall 2022 poolhunter), totd: False, discovery: {}
+2025-01-06T10:14:28+0100 WARNING: Unmatched map name: Invisible Training - 08 (sanitized: Invisible Training - 08), totd: False, discovery: {}
+2025-01-06T10:14:31+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
+2025-01-06T10:14:31+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
+2025-01-06T10:14:36+0100 INFO: Parsed data written to parsed_map_data.json
