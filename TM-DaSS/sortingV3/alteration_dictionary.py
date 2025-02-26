@@ -59,7 +59,7 @@ alterations_dict = {
     "Roofing": [ "Roofing" ],
     "Short": [ "Short", "short", "Shorts", "shorts" ],
     "Sky is the Finish": [ "Sky is the Finish", "Sky Finish", "SITF" ],
-    "There and Back/Boomerang": [ "There and Back", "There And Back", "There&Back", "Boomerang" ],
+    "There and Back": [ "There and Back", "There And Back", "There&Back", "Boomerang" ],
     "YEP Tree Puzzle": [ "YEP TREE PUZZLE" ],
     
     # Altered Enviroment

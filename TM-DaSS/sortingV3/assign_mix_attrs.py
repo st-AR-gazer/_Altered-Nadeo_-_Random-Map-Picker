@@ -378,12 +378,12 @@ def match_known_patterns(map_name: str, map_uid: str = None):
                 elif season_abbr == 'wi':
                     attrs['season'] = 'winter'
 
-            if attrs.get('season') and attrs.get('season').lower() == 'training':
+            # Updated logic: treat "training" as type, use "Spring 2020" for season.
+            if attrs.get('season') and attrs.get('season').lower() in ['training', '训练']:
+                attrs['type'] = 'training'
+                attrs['season'] = 'Spring'
                 attrs['year'] = 2020
-                
-            if attrs.get('season') and attrs.get('season').lower() == '训练':
-                attrs['season'] = 'training'
-                attrs['year'] = 2020
+
             if attrs.get('season') and attrs.get('season').lower() == '夏季赛':
                 attrs['season'] = 'summer'
             if attrs.get('season') and attrs.get('season').lower() == '秋季':
